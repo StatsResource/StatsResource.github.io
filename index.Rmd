@@ -1,0 +1,297 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+
+Statistics {data-navmenu="Introductory Statistics"}
+=====================================
+
+Column 
+--------------------
+
+
+
+
+Measures of Centrality {data-navmenu="Introductory Statistics"}
+==============================================================
+
+Column
+-------------------------------------------------------------
+
+
+Random Variables {data-navmenu="Probability"}
+==================================================
+Column
+----------------------------------------------
+
+### Random Variables
+
+Correlation Of Random Variables 
+StatsResource.github.io | Probability | Random Variables
+https://studio.youtube.com/video/UVukG1mRN_8/edit
+
+
+Joint Random Variables {data-navmenu="Probability"}
+====================================
+Column
+-------------------------------
+
+
+### Joint Probability Distributions
+
+
+Moment Generating Functions {data-navmenu="Probability"}
+====================================
+
+Column
+-------------------------------------------------------------
+
+### Moment Generating Functions
+
+Random Variables
+
+ 	  	
+
+
+
+
+
+Discrete Probability Distributions {data-navmenu="Probability Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Binomial Distribution
+
+<h5> Binomial Distribution </h5>
+
+
+
+
+
+### Poisson Distribution
+
+<h5> Poisson Distribution</h5>
+
+* Poisson Distribution - Probability Mass Function
+
+* <a href= "https://www.youtube.com/watch?v=nc4vErCoo0w">Confidence Intervals for Poisson Variables </a>
+
+
+### Bernouilli Distribution
+
+<hline>
+
+<p>
+
+
+
+Continuous Distributions {data-navmenu="Probability Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Normal Distribution
+
+<h5> Normal Distribution </h5> 
+
+* Computing the Z-Score
+
+<hline>
+
+
+### Exponential Distribution
+
+<h5>  Machine learning and high-performance computing with PyCall </h5>
+
+* Presenter: Paul Palmes (IBM Dublin)
+* Taking place in De Lacey Room  - Venue Capacity : Approx 10
+
+### Uniform Distribution
+
+<h5>Uniform Distribution</h5>
+
+* <a href= "https://www.youtube.com/watch?v=lxQEM8J8VrU">Uniform Random Variables</a>
+
+### Exponential Distribution
+
+<h5>Exponential Distribution</h5>
+
+### Approximations 
+
+* < a href = "https://www.youtube.com/watch?v=sFGd4LSGQ0U">Poisson Distribution - Normal Approximation</a> 
+
+* < a href = "https://www.youtube.com/watch?v=093X1SWd1cg">Normal Approximation of Poisson Distribution</a>
+
+### Compound Distributions
+
+* <a href = "https://www.youtube.com/watch?v=ElBP4fuUxM8">Compound Probability Distributions (using the Central Limit Theorem) </a>
+
+
+
+
+
+Compound Distributions  {data-navmenu="Probability Distributions"}
+====================================
+
+Column
+----------------------------------------------
+
+### Probability
+
+
+
+
+
+
+Sampling Distribution {data-navmenu="Inference Procedures"}
+==================================================
+
+### Sampling Distribution
+
+Sampling Distribution - Worked Example 2 
+StatsResource.github.io | Inference Procedures | Sampling Distributions
+https://studio.youtube.com/video/uMxmxnIcfvo/edit
+
+
+
+Sample Size Estimation {data-navmenu="Inference Procedures"}
+==================================================
+Sample Size Estimation For Proportions Worked Example 
+StatsResource.github.io |Inference Procedures | Sample Size Estimation
+https://studio.youtube.com/video/ayErcU5xUQI/edit
+
+Linear Models {data-navmenu="Linear Models"}
+==================================
+
+Column {.tabset}
+-----------------------------
+
+### Correlation
+
+
+* <a href= https://www.youtube.com/watch?v=3Y3pJaLcXdc">Correlation Coefficient - Hypothesis Testing </a>
+
+
+### Multiple regression
+
+
+<li>Variable Selection Procedures: Use of Forwards and Backwards elimination in multiple regression.</li>
+	<li>Use of F tests.</li>
+	<li>The Akaike Information Criterion</li>
+	<li>Polynomial regression. (<em>Simple cases only.</em>)</li>
+	<li>Use of indicator variables to model factors or qualitative variables (<em>Simple cases only.</em>)</li>
+
+
+### Model Selection
+
+<ul>
+
+	<li>Variable Selection Procedures: Use of Forwards and Backwards elimination in multiple regression.</li>
+	<li>The Akaike Information Criterion</li>
+	<li>Polynomial regression. (<em>Simple cases only.</em>)</li>
+
+</ul>
+
+
+```{r, eval=FALSE}
+<iframe width="270" height="135" src="https://www.youtube.com/embed/YMC2Z6LpNXI" frameborder="0" allowfullscreen></iframe>
+```
+
+#### Model Selection With AIC
+
+```{r, eval=FALSE}
+<iframe width="270" height="135" src="https://www.youtube.com/embed/SMShpSGEUG4" frameborder="0" allowfullscreen></iframe>
+```
+
+
+```{r, eval=FALSE}
+<iframe width="270" height="135" src="https://www.youtube.com/embed/SMShpSGEUG4" frameborder="0" allowfullscreen></iframe>
+```
+
+### Residual Analysis
+
+<h5> Analysis of Residuals of Linear Models</h5>
+
+* 
+* 
+* 
+
+
+ANOVA  {data-navmenu="Linear Models"}
+==================================
+
+Experimental Design  {data-navmenu="Linear Models"}
+==================================
+
+Column {.tabset}
+-----------------------------
+
+### Design and analysis of experiments 
+
+<ul>
+ * Principles of design including randomisation, blinding, pairing and blocking.</li>
+ * Reasons for using these.</li>
+ * Randomised block designs. Latin squares.</li>
+ * Analysis of variance, inference for means and for differences in means.</li>
+ * Factorial treatment structure with two factors. Advantages of factorial experimentation. Diagrammatic explanation of interaction.</li>
+ * Two-way analysis of variance.</li>
+ * Diagrams of means of treatment combinations and their use for explaining interactions of two factors.</li>
+ * Analysis of variance, inference for means and for differences in means.</li>
+ * Residuals and their use in checking assumptions.</li>
+</ul>
+<p>
+
+### Multiple regression 
+<ul>
+ * Least squares estimation for multiple regression.</li>
+ * Derivation of normal equations in simple cases. Matrix notation will not be required. Solution of simultaneous equations in simple cases only.</li>
+ * Regression through the origin.</li>
+ * Including multiple regression with zero intercept.</li>
+ * Use of backwards elimination in multiple regression.</li>
+ * Use of F tests.</li>
+ * Polynomial regression.</li>
+ * Simple cases only.</li>
+ * Use of indicator variables to model factors or qualitative variables.(Simple cases only.)</li>
+ * Residuals and their use in checking assumptions.</li>
+</ul>
+<p>
+
+
+
+
+Statistical Process Control {data-navmenu="Advanced Methods"}
+=======================================
+
+---------------------------
+
+### Attribute Data
+
+Attribute data is also known as "count" data. Typically, we will count the number of times we observe some condition (usually something we do not like, such as an error) in a given sample from the process. This is different from measurement data in its resolution.
+Attribute data has less resolution, since we only count if something occurs, rather than taking a measurement to see how close we are to the condition. For example, Attributes data for a health care process might include the number of patients with a fever, whereas Variables data for the same process might be the measurement of the patient temperature.
+
+Thus, Attributes data generally provides us with less information than measurement (variables) data would for the same process. Thus, for attributes data, we will generally not be able to predict if the process is trending towards an undesirable state, since it is already in this condition.
+
+#### Summary
+
+* Attribute data is purely binary in nature. Good or Bad, Yes or No. No analysis can be performed on attribute data.
+* Attribute data must be converted to a form of Variable data called discrete data in order to be counted or useful.
+* Attribute data is qualitative data that can be counted for recording and analysis.
+* Examples include the presence or absence of a required label, the installation of all required fasteners.
+* Attribute data is not acceptable for production part submissions unless variable data cannot be obtained.
+* The control charts based on attribute data are percent chart, number of affected units chart, count chart, count-per-unit chart, quality score chart and demerit chart.
+
+
