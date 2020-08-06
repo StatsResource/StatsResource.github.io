@@ -25,7 +25,8 @@ Measures of Centrality {data-navmenu="Introductory Statistics"}
 Column
 -------------------------------------------------------------
 
-
+```{r child = 'probability/Probability.Rmd'}
+```
 
 ```{r child = 'probability/RandomVariables.Rmd'}
 ```
@@ -130,3 +131,34 @@ Column {.tabset}
 
 ```{r child = 'specialtopics/NetworkAnalysis.Rmd'}
 ```
+
+#### Unsorted
+
+<ul>
+<li>	<a href="https://youtu.be/Qs4lOegQNbA/">	One-Way ANOVA - Calculating the Least Significant Difference	</a>	</li>
+<li>	<a href="https://youtu.be/g666XEXVpL0/">	Rules of Probability - Mutually Exclusive and Independent Events	</a>	</li>
+				
+				
+<li>	<a href="https://youtu.be/5F0jSp1bOEU/">	Computing Sample Variance	</a>	</li>
+				
+				
+				
+				
+				
+<li>	<a href="https://youtu.be/24PPecNK7NI/">	Mixed Probability Distributions	</a>	</li>
+<li>	<a href="https://youtu.be/jdpHIFyX-6g/">	The Sign Test : Hearing Test Example (Non Parametric Hypothesis Testing)	</a>	</li>
+<li>	<a href="https://youtu.be/_Ob48DhL4Yo/">	Normal Random Variables - Bicycle Journey Example	</a>	</li>
+				
+				
+<li>	<a href="https://youtu.be/4fOcxafPHow/">	Survival Analysis - Kaplan Meier Estimates of the Survival Function	</a>	</li>
+<li>	<a href="https://youtu.be/HJ4DR79XRa8/">	Computing the Z score	</a>	</li>
+<li>	<a href="https://youtu.be/droO8NykzY8/">	Expected Value of Sample Variance	</a>	</li>
+<li>	<a href="https://youtu.be/pIAZmkRvKPo/">	Geometric Distribution with Chi Square Test for Goodness of Fit	</a>	</li>
+<li>	<a href="https://youtu.be/ay-Y_SUslP8/">	Hypergeometric Distribution - Worked Example	</a>	</li>
+<li>	<a href="https://studio.youtube.com/channel/UCU8y8xt6IcvARijbLzx2txw/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D"	Joint Density Functions for Discrete Random Variables	</a>	</li>
+				
+				
+<li>	<a href="https://youtu.be/URzJiQP9E3c/">	Linear Regression   Part B	</a>	</li>
+<li>	<a href="https://youtu.be/093X1SWd1cg/">	Uniform Random Variables	</a>	</li>
+<li>	<a href="https://youtu.be/5DY3j8nw5sg/">	Working With Small Samples	</a>	</li>
+</ul>
