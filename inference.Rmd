@@ -1,0 +1,34 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r child = 'main/introduction.Rmd'}
+```
+
+Sampling Distributions
+===============================
+
+Column {.tabset}
+-------------------------
+
+```{r child = 'inference/students_t_distribution.Rmd'}
+```
+
+
+```{r child = 'inference/Proportions.Rmd'}
+```
+
+```{r child = 'inference/testingmodelassumptions.Rmd'}
+```
+
+```{r child = 'inference/NonParametricTests.Rmd'}

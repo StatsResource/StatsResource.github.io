@@ -1,4 +1,17 @@
-Introduction {data-navmenu="Exploratory Data Analysis"}
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+Main
 ====================================================================
 
 Column {.tabset}
@@ -13,5 +26,6 @@ Column {.tabset}
 * <a href = "probability.html">Random Variables</a>
 * Inference Procedures
 * Modelling Data
-* Special Topics
+* <a href="experimentaldesign.html">Experimental Design</a>
 * <a href = "gametheory.html">Game Theory</a>
+* Special Topics

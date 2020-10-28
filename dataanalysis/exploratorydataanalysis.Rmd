@@ -46,7 +46,11 @@ Column {.tabset}
 * Coefficient of Variation – <a title="Coefficient of Variation" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Coefficient%20of%20Variation.pdf" target="_blank">Here</a>
 * Percentiles, Quartiles and the IQR – <a title="Percentiles and Quartiles" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Percentiles%20and%20IQR.pdf" target="_blank">Here</a>
 
- 
+Measures of Centrality {data-navmenu="Exploratory Data Analysis"}
+==============================================================
+
+Column {.tabset}
+----------------------------------
 
 ### Medians
 

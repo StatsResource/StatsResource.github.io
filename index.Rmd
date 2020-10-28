@@ -27,6 +27,8 @@ Column {.tabset}
 * Inference Procedures
 * Modelling Data
 * <a href="experimentaldesign.html">Experimental Design</a>
+* <a href = "timeseries.html">Time Series</a>
+* <a href = "susrvivalanalysis.html">Survival Analysis</a>
 * <a href = "gametheory.html">Game Theory</a>
 * Special Topics
 

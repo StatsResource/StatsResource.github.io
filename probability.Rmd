@@ -11,16 +11,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-```{r child = 'introductorystatistics/introduction.Rmd'}
+```{r child = 'main/introduction.Rmd'}
 ```
 
 ```{r child = 'introductorystatistics/Probability.Rmd'}
 ```
 
-
-
-```{r child = 'introductorystatistics/Probability.Rmd'}
-```
 
 ```{r child = 'introductorystatistics/countingproblems.Rmd'}
 ```
@@ -45,20 +41,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-```{r child = 'probabilitydistributions/PoissonDistribution.Rmd'}
+```{r child = 'probabilitydistributions/CompoundDistributions.Rmd'}
 ```
 
-```{r child = 'probabilitydistributions/ExponentialDistribution.Rmd'}
-```
-
-```{r child = 'probabilitydistributions/GammaDistribution.Rmd'}
-```
-
-```{r child = 'probabilitydistributions/LognormalDistribution.Rmd'}
-```
-
-```{r child = 'probabilitydistributions/WeibullDistribution.Rmd'}
-```
-
-```{r child = 'probabilitydistributions/JointDistributions.Rmd'}
+ 	  	
+```{r child = 'randomvariables/MomentGeneratingFunctions.Rmd'}
 ```

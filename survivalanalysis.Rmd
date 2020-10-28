@@ -1,0 +1,41 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r child = 'main/introduction.Rmd'}
+```
+
+
+Survival Curves
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Kaplan Meier Cruves
+
+
+Cox Regression
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Cox Regression
+
+<h5> Cox Regression </h5>
+
+
+
+```{r child = 'modellingdata/SurvivalAnalysis.Rmd'}
+```
