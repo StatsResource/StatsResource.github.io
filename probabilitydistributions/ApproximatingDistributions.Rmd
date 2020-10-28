@@ -1,5 +1,5 @@
 
-Approximating Distribution {data-navmenu="Probability"}
+Approximating Distribution {data-navmenu="Probability Distributions"}
 ===========================================================
 
 Column {.tabset}

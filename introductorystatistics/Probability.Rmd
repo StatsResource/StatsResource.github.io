@@ -1,5 +1,5 @@
-Probability {data-navmenu="Probability"}
-=====================================
+Probability {data-navmenu="Introductory Statistics"}
+====================================================================
 
 Column {.tabset}
 -------------------------------------------------
@@ -23,19 +23,9 @@ event with a probability near to 1 is very likely to occur.
 
 
 
-###  Counting Problems
 
 
-* <a href="https://youtu.be/LyEyrwP00-I/">	Contingency Tables	</a>	
-* <a href="https://youtu.be/o2W64UlLKPE/">	Counting Problems  -   Birds Legs	</a>	
-* <a href="https://youtu.be/WTRbqDWK72o/">	Counting Problems - Random Selection of Defective Bulbs	</a>	
-* <a href="https://youtu.be/OFpbYmenB8g/">	Counting Problems & Probability - The Maths and Stats exam example	</a>	
-
-
-
-
-
-### Probability
+### Probability Videos
 
 * <a href = "https://youtu.be/jH0YFR15w3c/">Probability Question - Ace of Diamonds</a>
 

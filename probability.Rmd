@@ -1,0 +1,64 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+```{r child = 'introductorystatistics/introduction.Rmd'}
+```
+
+```{r child = 'introductorystatistics/Probability.Rmd'}
+```
+
+
+
+```{r child = 'introductorystatistics/Probability.Rmd'}
+```
+
+```{r child = 'introductorystatistics/countingproblems.Rmd'}
+```
+
+
+```{r child = 'probability/RandomVariables.Rmd'}
+```
+
+
+
+
+
+```{r child = 'probability/DiscreteDistributions.Rmd'}
+```
+
+```{r child = 'probability/NormalDistribution.Rmd'}
+```
+
+```{r child = 'probability/ContinuousDistributions.Rmd'}
+```
+
+
+
+
+```{r child = 'probabilitydistributions/PoissonDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/ExponentialDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/GammaDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/LognormalDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/WeibullDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/JointDistributions.Rmd'}
+```

@@ -1,0 +1,17 @@
+Introduction {data-navmenu="Exploratory Data Analysis"}
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### StatsResource
+
+<h5> Contents </h5>
+
+* Exploratory Data Analysis
+* <a href = "probability.html">Probability and Probability Distributions</a>
+* <a href = "probability.html">Random Variables</a>
+* Inference Procedures
+* Modelling Data
+* Special Topics
+* <a href = "gametheory.html">Game Theory</a>

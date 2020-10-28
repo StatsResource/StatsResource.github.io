@@ -1,7 +1,5 @@
-﻿
 Exploratory Data Analysis {data-navmenu="Exploratory Data Analysis"}
 ==============================================================
-
 
 Column {.tabset}
 ----------------------------------
@@ -27,7 +25,7 @@ Column {.tabset}
 * Computing the Median of a Data Set.
 * Sample Mean, Median and Skewness for Financial Data - <a href="http://youtu.be/gJQv0R0YPPQ" target="_blank">Here </a>- [<em>8.55]</em>
 * Descriptive Statistics - Adjustment of Data and Effect on sample statistics - <a href="http://youtu.be/nNOTCpW0ED8" target="_blank">Here </a>- 3.34
-* The Geometric Mean - <a href="https://youtu.be/Bz-YwUMk_mk" target="_blank">HERE</a> [ ]
+* The Geometric Mean - <a href="https://youtu.be/Bz-YwUMk_mk" target="_blank">HERE</a>
 
 <strong>Section 2a: Descriptive Statistics</strong>
 

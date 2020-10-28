@@ -11,53 +11,32 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-```{r child = 'dataanalysis/introduction.Rmd'}
-```
+Introduction 
+====================================================================
 
-```{r child = 'dataanalysis/exploratorydataanalysis.Rmd'}
-```
+Column {.tabset}
+-------------------------------------------------
+
+### StatsResource
+
+<h5> Contents </h5>
+
+* Exploratory Data Analysis
+* <a href = "probability.html">Probability and Probability Distributions</a>
+* <a href = "probability.html">Random Variables</a>
+* Inference Procedures
+* Modelling Data
+* <a href="experimentaldesign.html">Experimental Design</a>
+* <a href = "gametheory.html">Game Theory</a>
+* Special Topics
+
+
 
 ```{r child = 'dataanalysis/descriptivestatistics.Rmd'}
 ```
 
-
-```{r child = 'probability/Probability.Rmd'}
+```{r child = 'dataanalysis/exploratorydataanalysis.Rmd'}
 ```
-
-```{r child = 'probability/RandomVariables.Rmd'}
-```
-
-Joint Random Variables {data-navmenu="Probability"}
-====================================
-Column
--------------------------------
-
-### Joint Probability Distributions
-
-```{r child = 'probability/DiscreteDistributions.Rmd'}
-```
-
-```{r child = 'probability/NormalDistribution.Rmd'}
-```
-
-```{r child = 'probability/ContinuousDistributions.Rmd'}
-```
-
-```{r child = 'probability/ApproximatingDistributions.Rmd'}
-```
-
-```{r child = 'probability/CompoundDistributions.Rmd'}
-```
-
-
-
-
- 	  	
-```{r child = 'randomvariables/MomentGeneratingFunctions.Rmd'}
-```
-
-
-
 
 ```{r child = 'inference/SamplingDistributions.Rmd'}
 ```
@@ -106,8 +85,7 @@ Column {.tabset}
 ```{r child = 'modellingdata/ResidualAnalysis.Rmd'}
 ```
 
-```{r child = 'modellingdata/RegressionANOVA.Rmd'}
-```
+
 
 ```{r child = 'modellingdata/chisquare.Rmd'}
 ```
@@ -117,8 +95,7 @@ Column {.tabset}
 ```{r child = 'modellingdata/SurvivalAnalysis.Rmd'}
 ```
 
-```{r child = 'specialtopics/GameTheory.Rmd'}
-```
+
 
 ```{r child = 'specialtopics/RandomNumberGeneration.Rmd'}
 ```
@@ -126,8 +103,7 @@ Column {.tabset}
 ```{r child = 'specialtopics/StatisticalProcessControl.Rmd'}
 ```
 
-```{r child = 'specialtopics/ExperimentalDesign.Rmd'}
-```
+
 
 ```{r child = 'specialtopics/DecisionTheory.Rmd'}
 ```

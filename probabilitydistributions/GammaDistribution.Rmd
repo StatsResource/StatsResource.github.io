@@ -1,0 +1,17 @@
+Gamma Distribution {data-navmenu="Probability Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### The Gamma Distribution
+
+<h5>The Gamma Distribution</h5>
+
+
+* <a href="https://youtu.be/YcT5aDjZ3sc/">	Gamma Distribution - Electricity Consumption Example	</a>	
+* <a href="https://youtu.be/dh8gpsM7HpM/">	Gamma Random Variables - Normal Approximation	</a>	
+
+### Skewness
+
+### Mode

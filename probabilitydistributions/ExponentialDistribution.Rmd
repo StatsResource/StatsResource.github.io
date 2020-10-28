@@ -1,0 +1,19 @@
+Exponential Distribution {data-navmenu="Probability Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+
+### Exponential Distribution
+
+<h5> The Exponential Distribution </h5>
+
+
+<h5> Worked Example </h5>
+
+
+* <a href="https://youtu.be/ivnbqNPv_WQ/">	Exponential Distribution - Worked Example	</a>	
+* <a href="https://youtu.be/HbKGfxMsX5U/">	Exponential Random Variables   - Distribution of the Minima	</a>	
+

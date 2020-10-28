@@ -4,52 +4,12 @@ Discrete Probability Distributions {data-navmenu="Probability"}
 
 Column {.tabset}
 -------------------------------------------------
-
-
-
 ### Binomial Distribution
 
 <h5> Binomial Distribution </h5>
 
 
 * <a href="https://youtu.be/dRNSiG2Hzfo/">	Binomial Distribution - Worked Example	</a>	
-### Poisson Distribution
-
-<h5> Poisson Distribution</h5>
-
-* Poisson Distribution - Probability Mass Function
-* <a href= "https://www.youtube.com/watch?v=nc4vErCoo0w">Confidence Intervals for Poisson Variables </a>
-
-
-
-<h5> Confidence Intervals </h5>
-
-
-#### Confidence Intervals for Poisson Random Variables
-
-* <a href = "https://youtu.be/mRQgWDoHCXg/"> Confidence Intervals for Poisson Random Variables </a>
-* <a href = "https://youtu.be/5r8JMrKSFrU/"> Confidence Intervals for Poisson Random Variables </a>
-* <a href = "https://youtu.be/3Y3pJaLcXdc/"> Confidence Intervals for Poisson Random Variables </a>
-* <a href="https://youtu.be/nc4vErCoo0w/">	Confidence Intervals for Poisson Variables	</a>
-* <a href = "https://youtu.be/N291An2ui18/"> Poisson Random Variables Confidence Intervals For Difference In Rates </a>
-
-
-
-* <a href="https://youtu.be/88xt7Bb5jJc/">	Poisson Distribution - Telephone Board Example	</a>	
-* <a href="https://youtu.be/N291An2ui18/">	Poisson Random Variables Confidence Intervals For Difference In Rates	</a>	
-
-
-
-<h5> Goodness of Fit Tests</h5>
-
-* <a href = "https://youtu.be/ABcBPTef_vE/">Poisson Random Variables: Chi Square for Poisson Distribution</a>
-
-
-
-
-
-
-
 
 
 ### Geometric Distribution
