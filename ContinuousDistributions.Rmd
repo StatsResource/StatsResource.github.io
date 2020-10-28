@@ -1,0 +1,59 @@
+Continuous Distributions {data-navmenu="Probability"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+
+### Exponential Distribution
+
+<h5> The Exponential Distribution </h5>
+
+
+<h5> Worked Example </h5>
+
+
+* <a href="https://youtu.be/ivnbqNPv_WQ/">	Exponential Distribution - Worked Example	</a>	
+* <a href="https://youtu.be/HbKGfxMsX5U/">	Exponential Random Variables   - Distribution of the Minima	</a>	
+
+
+
+### Uniform Distribution
+
+<h5>Uniform Distribution</h5>
+
+* <a href= "https://www.youtube.com/watch?v=lxQEM8J8VrU">Uniform Random Variables</a>
+* <a href = "https://youtu.be/093X1SWd1cg/">Uniform Random Variables</a>
+* <a href = "https://youtu.be/OBIUmaHGgfA/"> Sum Of Uniform Random Variables </a>
+
+
+### Weibull Distribution
+
+<h5>The Weibull Distribution</h5>
+
+### The Lognormal Distributions
+
+
+* <a href="https://youtu.be/OAuLfxP6uuM/">	Lognormal Distribution - Worked Example	</a>	
+* <a href="https://youtu.be/fCpnksxKPEY/">	Lognormal Distribution - Worked Example	</a>	
+
+ss
+
+### The Gamma Distribution
+
+<h5>The Gamma Distribution</h5>
+
+
+* <a href="https://youtu.be/YcT5aDjZ3sc/">	Gamma Distribution - Electricity Consumption Example	</a>	
+* <a href="https://youtu.be/dh8gpsM7HpM/">	Gamma Random Variables - Normal Approximation	</a>	
+
+
+### Compound Distributions
+
+* <a href = "https://www.youtube.com/watch?v=ElBP4fuUxM8">Compound Probability Distributions (using the Central Limit Theorem) </a>
+
+
+
+
+

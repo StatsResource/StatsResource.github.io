@@ -1,0 +1,39 @@
+Normal Distribution {data-navmenu="Probability"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+### Z-Scores
+
+* <a href = "https://youtu.be/HJ4DR79XRa8/"> Computing the Z score</a>
+
+
+### Normal Distribution
+
+
+* <a href = "https://youtu.be/Bq-ivONs-30/"> Normal Distribution - Worked Example</a>
+* <a href = "https://youtu.be/jGzLUVFUgQ4/"> Normal Distribution - Compound Distributions (Journey Times )</a>
+* <a href = "https://youtu.be/_Ob48DhL4Yo/"> Normal Random Variables - Bicycle Journey Example </a>
+* <a href = "https://youtu.be/bF5iPYfHn1c/"> Normal Distribution Worked Example - Paget's Disease </a>
+* <a href = "https://youtu.be/x0sPyyWAUTU/"> Normal Distribution Worked Example Apple Juice Dispenser<a>
+
+
+
+* <a href="https://youtu.be/bIh0bdymY78/">	Normal Distribution  - Worked Example (Part A)	</a>	
+* <a href="https://youtu.be/YidXgNUxSw4/">	Normal Distribution  - Worked Example Part B	</a>	
+* <a href="https://youtu.be/jGzLUVFUgQ4/">	Normal Distribution - Compound Distributions (Journey Times )	</a>	
+* <a href="https://youtu.be/Bq-ivONs-30/">	Normal Distribution - Worked Example	</a>	
+* <a href="https://youtu.be/bF5iPYfHn1c/">	Normal Distribution Worked Example - Paget's Disease	</a>	
+* <a href="https://youtu.be/x0sPyyWAUTU/">	Normal Distribution Worked Example Apple Juice Dispenser	</a>	
+
+
+
+###  Combined Distributions of Normal Random Variables.
+
+
+* <a href="https://youtu.be/8GduowZed24/">	Combinations of Normal Random Variables - Worked Example	</a>	
+* <a href="https://youtu.be/hEFePdFKiLc/">	Combined Distributions of Normal Random Variables (Widget Production Example)	</a>	
+* <a href="https://youtu.be/-oY_fDMBGgY/">	Compound Distributions of Normal Random Variables	</a>	
+* <a href="https://youtu.be/Bm1Ztv-1oik/">	Sums and Differences of Normal Random Variables	</a>	
+

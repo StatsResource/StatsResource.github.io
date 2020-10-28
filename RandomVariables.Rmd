@@ -1,0 +1,72 @@
+Random Variables {data-navmenu="Probability"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+
+### Random Variables
+
+* <a href = "https://youtu.be/HRINuaUvGiY/"> Continuous Random Variables - Worked Example </a>
+* <a href = "https://youtu.be/lxQEM8J8VrU/"> Random Variables: Conditional Expectation </a>
+
+* <a href = "https://youtu.be/FdUo59EtA9Q/">Random Variables - Worked Example></a>
+
+### Joint Random Variables 
+
+* <a href = "https://youtu.be/jGzLUVFUgQ4/">Joint Random Variables - Worked Example<./a>
+
+
+### Continuous Random Variables
+
+
+* <a href = "https://youtu.be/LfJbK0jYh3M/"> Continuous Random Variables - Worked Example 1 </a>
+
+* <a href = "https://youtu.be/QR4xS_WsCPA/"> Continuous Random Variable - Worked Example 2 </a>
+
+* <a href = "https://youtu.be/N3oXRf2_Vmo/"> Continuous Random Variables - Worked Example 3</a>
+
+* <a href = "https://youtu.be/rodfSPYXdh8/">Continuous Random Variable -  Worked Example 4 </a>
+
+
+
+* <a href="https://youtu.be/QR4xS_WsCPA/">	Continuous Random Variable - Worked Example 2	</a>	
+* <a href="https://youtu.be/rodfSPYXdh8/">	Continuous Random Variable Worked Example	</a>	
+* <a href="https://youtu.be/HRINuaUvGiY/">	Continuous Random Variables -  Worked Example	</a>	
+* <a href="https://youtu.be/LfJbK0jYh3M/">	Continuous Random Variables -  Worked Example 1	</a>	
+* <a href="https://youtu.be/N3oXRf2_Vmo/">	Continuous Random Variables Worked Example	</a>	
+
+
+
+### Random Variables
+
+
+* <a href="https://youtu.be/BT67xUT8KGI/">	Random Variable Calculations	</a>	
+* <a href="https://youtu.be/rJGWcfBD-EI/">	Random Variables - Mixed Probability Distributions	</a>	
+* <a href="https://youtu.be/FdUo59EtA9Q/">	Random Variables - Worked Example	</a>	
+* <a href="https://youtu.be/lxQEM8J8VrU/">	Random Variables: Conditional Expectation	</a>	
+* <a href="https://youtu.be/aceFFyJCT4k/">	Random Variables: Cumulative Distributions Functions of Maxima and Minima	</a>	
+* <a href="https://youtu.be/NGIUtX8OojA/">	Probability Density Functions of Continuous RVs - Worked Example	</a>	
+* <a href="https://youtu.be/I-2iuiWwg8g/">	Properties of Random Variables (Law of Total Variance)	</a>	
+* <a href="https://youtu.be/Rgi--7ScoUk/">	Sum and Difference of Random Variables	</a>	
+* <a href="https://youtu.be/OBIUmaHGgfA/">	Sum Of Uniform Random Variables	</a>	
+* <a href="https://youtu.be/nWEQlEqjLeQ/">	Median of A Random Variable	</a>	
+
+
+
+### Combinations of Random Variables
+
+* <a href = "https://youtu.be/UVukG1mRN_8/">Correlation Of Random Variables </a>
+* <a href = "https://youtu.be/Rgi--7ScoUk/">Sum and Difference of Random Variables</a>
+* <a href = "https://youtu.be/BT67xUT8KGI/">Random Variable Calculations</a>
+* <a href = "https://youtu.be/UVukG1mRN_8/">Correlation Of Random Variables</a>
+
+
+### Joint Random Variables
+
+* <a href="https://www.youtube.com/embed/1yhu2Bmx7xw" >Joint Random Variables - Worked Example	</a>	
+* <a href="https://www.youtube.com/embed/Xvq3RTCvd2g" >Joint Distribution of Discrete Random Variables</a>
+* <a href="https://www.youtube.com/embed/8dLpooHUP4A" >Computing Covariance</a>
+* <a href="https://www.youtube.com/embed/dgk5fJ3VjKI" >Joint Distribution of Discrete Random Variables</a>
+* <a href="https://www.youtube.com/embed/ngIcXIrxEmU" >Computing Covariance </a>
+

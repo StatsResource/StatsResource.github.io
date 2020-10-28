@@ -1,0 +1,78 @@
+Probability {data-navmenu="Probability"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Probability
+
+<h5> Probability </h5>
+
+* Probability theory is the mathematical study of randomness. A
+probability model of a random experiment is defined by assigning
+probabilities to all the different outcomes.
+* Probability is a numerical measure of the likelihood that an event will
+occur. Thus, probabilities can be used as measures of degree of
+uncertainty associated with outcomes of an experiment.
+Probability values are always assigned on a scale from 0 to 1.
+* A probability of 0 means that the event is impossible, while
+a probability near 0 means that it is highly unlikely to occur.
+* Similarly an event with probability 1 is certain to occur, whereas an
+event with a probability near to 1 is very likely to occur.
+
+
+
+
+###  Counting Problems
+
+
+* <a href="https://youtu.be/LyEyrwP00-I/">	Contingency Tables	</a>	
+* <a href="https://youtu.be/o2W64UlLKPE/">	Counting Problems  -   Birds Legs	</a>	
+* <a href="https://youtu.be/WTRbqDWK72o/">	Counting Problems - Random Selection of Defective Bulbs	</a>	
+* <a href="https://youtu.be/OFpbYmenB8g/">	Counting Problems & Probability - The Maths and Stats exam example	</a>	
+
+
+
+
+
+### Probability
+
+* <a href = "https://youtu.be/jH0YFR15w3c/">Probability Question - Ace of Diamonds</a>
+
+
+
+* <a href="https://youtu.be/dNkw6VU3ZzU/">	Probability - Independent Events (Packs of Cards Example)	</a>	
+* <a href="https://youtu.be/3meIYXJBA2o/">	Probability - Worked Example (Actuarial Job Offer Example)	</a>	
+* <a href="https://youtu.be/jH0YFR15w3c/">	Probability Question  - Ace of Diamonds	</a>	
+* <a href="https://youtu.be/fIiH_u0ASFU/">	Probability Trees	</a>	
+
+
+#### Probability Trees
+
+<h5> Probability Trees </h5>
+
+
+*  A probability tree diagram shows all the possible events.
+*  The first event is represented by a dot.
+*  From the dot, branches are drawn to represent all possible outcomes of the event.
+*  The probability of each outcome is written on its branch.
+*  How do you calculate the overall probabilities?
+ *  You multiply probabilities along the branches
+ *  You add probabilities down columns
+
+<h5> Questions </h5>
+* <a href = "https://youtu.be/fIiH_u0ASFU/">Probability Trees</a>
+
+
+### Conditional Probability 
+
+
+
+* <a href="https://youtu.be/wUdQxLWuqWo/">	Conditional Probability - Worked Example	</a>	
+* <a href="https://youtu.be/qZ53wmnPvr4/">	Conditional Probability -Disease Detection Worked Example	</a>	
+* <a href="https://youtu.be/bYhL91gDqEM/">	Conditional Probability Worked Example	</a>	
+* <a href="https://youtu.be/0DTm_7fF2pE/">	Conditional Probability Worked Exampe (Newpaper Competition Part A)	</a>	
+* <a href="https://youtu.be/O7oQPhFt07w/">	Conditional Probability Worked Example - Newspaper Competition (Part B)	</a>	
+
+
+

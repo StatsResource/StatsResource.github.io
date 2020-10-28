@@ -1,0 +1,15 @@
+
+Compound Distributions {data-navmenu="Probability"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+
+### Compound Poisson Distribution
+
+* <a href = "https://youtu.be/xo6HyZtlx9Y/"> Compound Poisson Distribution - Worked Example 1</a>
+* <a href = "https://youtu.be/xcR6kfGi1vI/"> Compound Poisson Distribution - Worked Example 2 </a>
+* <a href = "https://youtu.be/WKiw2X1qh4I/"> Compound Poisson Distribution - Worked Example 3</a>
+* <a href="https://youtu.be/ElBP4fuUxM8/">	Compound Probability Distributions (using the Central Limit Theorem)	</a>	
+

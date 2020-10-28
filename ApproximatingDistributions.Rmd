@@ -1,0 +1,41 @@
+
+Approximating Distribution {data-navmenu="Probability"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+
+### Poisson Approximation 
+
+#### Poisson Approximation Of The Binomial Distribution
+
+* <a href = "https://youtu.be/XnRT3cLoZ08/"> Poisson Approximation Of The Binomial Distribution </a>
+
+
+### Normal Approximations
+
+#### Normal Approximation of Discrete Distributions
+
+* <a href = "https://youtu.be/Zs9ZuOj_xK0/"> Normal Approximation of Poisson Distribution</a>
+* <a href = "https://youtu.be/sFGd4LSGQ0U/"> Poisson Distribution - Normal Approximation</a>
+* <a href = "https://youtu.be/-LNQylZnjW4/"> Normal Approximation of the Binomial Distribution</a>
+* <a href = "https://www.youtube.com/watch?v=093X1SWd1cg">Normal Approximation of Poisson Distribution</a>
+
+
+
+* <a href="https://youtu.be/E3PyT0SMmEs/">	Normal Approximation of Binomial Distribution	</a>	
+* <a href="https://youtu.be/Zs9ZuOj_xK0/">	Normal Approximation of Poisson Distribution	</a>	
+* <a href="https://youtu.be/-LNQylZnjW4/">	Normal Approximation of the Binomial Distribution	</a>	
+* <a href="https://youtu.be/F_xpB6DOFoI/">	Normal Approximation of the Binomial Distribution - Worked Example	</a>	
+* <a href="https://youtu.be/2Fhw7W44frY/">	Binomial Distribution - Normal Approximation of a Binomial Random Variable	</a>	
+* <a href="https://youtu.be/sFGd4LSGQ0U/">	Poisson Distribution - Normal Approximation	</a>	
+
+
+
+
+#### Normal Approximation of Continuous Distributions
+
+* <a href = "https://youtu.be/dh8gpsM7HpM/"> Gamma Random Variables - Normal Approximation</a>
+
+
