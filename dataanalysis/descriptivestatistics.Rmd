@@ -1,0 +1,128 @@
+
+
+Measures of Centrality {data-navmenu="Exploratory Data Analysis"}
+==============================================================
+
+
+Column {.tabset}
+----------------------------------
+
+### Measures of Centrality
+
+
+Measures of centrality give one representative number for the location of the centre of the distribution of data.
+
+The most common measures are the <b><i>sample mean</i></b> and the <b><i> sample median</i></b>
+We must make a distinction between a sample mean and a population mean: The sample mean is simply the average of all the items in a sample.  \smallskip The population mean (often represented by the Greek letter $\mu$) is simply the average of all the items in a population. Because a population is usually very large, the population mean is usually an unknown constant.
+
+
+
+### Descriptive Statistics
+
+<h5> Descriptive Statistics</h5>
+
+* <a href="https://www.youtube.com/watch?v=d3todQxLegU">Introductory Statistics : Computing the Median</a>
+* <a href="https://www.youtube.com/watch?v=qLSUh-tex20">Measures of Variability: Introducing Dispersion</a>
+* <a href="https://www.youtube.com/watch?v=hIpn6CO_3bo">Computing Sample Variance</a>
+* <a href="https://www.youtube.com/watch?v=ag5AoCEtboI">Descriptive Statistics : Coefficient of Variation</a>
+* <a href="https://youtu.be/5F0jSp1bOEU/">	Computing Sample Variance	</a>
+
+
+
+
+
+### Median
+<h4>Sample Mean</h4>
+
+
+The sample mean is an estimator available for estimating the population mean $\mu$. 
+It is a measure of location, commonly called the average, often denoted $\bar{x}$, where $x$ is the data set.
+
+Its value depends equally on all of the data which may include outliers. It may not appear representative of the central region for skewed data sets.
+
+It is especially useful as being representative of the whole sample for use in subsequent calculations.
+The sample mean of a data set is defined as :
+$$ \bar{x} = { \sum x_i\over n}$$
+$\sum x_i$ is the summation of al the elements of $x$, and $n$ is the sample size.
+
+
+<h4>Computing the sample mean</h4>
+
+Suppose we roll a die 8 times and get the following scores: $x = \{ 5, 2, 1, 6, 3, 5, 3, 1\}$ \\ \bigskip
+
+What is the sample mean of the scores $\bar{x}$?
+$$ \bar{x}  = {5 + 2 +  1 +  6 +  3 +  5 +  3 +  1 \over 8 } = {26 \over 8} =  3.25 $$
+
+
+
+<h3>Median</h3>
+
+
+* The other commonly used measure of centrality is the median.
+* The median is the value halfway through the ordered data set, below and above which there lies an equal number of data values.
+* For an odd sized data set, the median is the middle element of the <b><i>ordered</b></i> data set.
+* For an even sized data set, the median is the average of the middle pair of elements of an \t{ordered} data set.
+* It is generally a good descriptive measure of the location which works well for <b><i>skewed data</b></i>, or data with <b><i>outliers</b></i>.
+* For later, the median is the 0.5 quantile, and the second quartile <i>Q_2</i>.
+
+<h4> Odd Sized Data Set</h4>
+
+With an odd number of data values, for example nine, we have:
+
+* Data : {96, 48, 27, 72, 39, 70, 7, 68, 99 }
+* Ordered Data :  {7, 27, 39, 48, 68, 70, 72, 96, 99}
+* Median : 68, leaving four values below and four values above
+
+<h4> Even Sized Data Set</h4>
+With an even number of data values, for example 8, we have:
+
+* Data : {96, 48 ,27 ,72, 39, 70, 7, 68 }
+* Ordered Data :{7, 27, 39, 48, 68, 70, 72, 96}
+* Median : Halfway between the two 'middle' data points - in this case halfway between 48 and 68, and so the median is 58
+
+### Other Measures
+
+* <a href="https://www.youtube.com/watch?v=Bz-YwUMk_mk">Geometric Mean </a>
+* <a href="https://www.youtube.com/watch?v=F8_5GgSrxE8">Harmonic Mean	</a>
+
+
+### Useful Formulas
+
+
+<h5> Skewness: Pearson Coefficient of Skewness </h5>
+
+
+ $$ S_k = \frac{3(\mbox{Mean} - \mbox{Median} )}{\sigma} $$
+ 
+
+Graphical Procedures {data-navmenu="Exploratory Data Analysis"}
+==============================================================
+
+
+Column {.tabset}
+----------------------------------
+
+
+
+### Boxplots
+
+<h5> Boxplots </h5>
+
+
+
+A graphical representation of the quartiles is called a Box plot. It displays 
+
+* lower quartile 
+* median 
+* upper quartile   
+* interquartile range (IQR)   
+* whiskers of length = 1.5 IQR   
+* outlying observations 
+
+<h5> videos </h5>
+
+* <a href="https://www.youtube.com/watch?v=BO2_9sRrUq8">Detecting Outliers for Boxplots</a>
+* <a href="https://www.youtube.com/watch?v=U9hEJW7R8qA">Five Number summary, IQR, Fences, Midhinge and Trimean</a>
+* <a href="https://www.youtube.com/watch?v=Bac5lN5-y8g">Constructing a Box Plot (Worked Example)</a>
+
+

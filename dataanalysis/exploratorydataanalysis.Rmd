@@ -1,0 +1,79 @@
+﻿
+Exploratory Data Analysis {data-navmenu="Exploratory Data Analysis"}
+==============================================================
+
+
+Column {.tabset}
+----------------------------------
+
+### Syllabus
+
+* Summarise the main features of a data set.
+
+<span style="text-decoration:underline;"><strong>Syllabus</strong></span>
+
+* Summarise a set of data using a table or frequency distribution, and display it graphically using a line plot, a box plot, a bar chart, histogram, stem and leaf plot, or other appropriate elementary device.
+
+* Describe the level/location of a set of data using the mean, median, mode, as appropriate.
+
+* Describe the spread/variability of a set of data using the standard deviation, range, interquartile range, as appropriate.
+
+* Explain what is meant by symmetry and skewness for the distribution of a set of data.
+
+
+
+<strong>Section 1 Basic Summary Statistics</strong>
+
+* Computing the Median of a Data Set.
+* Sample Mean, Median and Skewness for Financial Data - <a href="http://youtu.be/gJQv0R0YPPQ" target="_blank">Here </a>- [<em>8.55]</em>
+* Descriptive Statistics - Adjustment of Data and Effect on sample statistics - <a href="http://youtu.be/nNOTCpW0ED8" target="_blank">Here </a>- 3.34
+* The Geometric Mean - <a href="https://youtu.be/Bz-YwUMk_mk" target="_blank">HERE</a> [ ]
+
+<strong>Section 2a: Descriptive Statistics</strong>
+
+* <a title="Introduction to Dispersion" href="http://youtu.be/qLSUh-tex20" target="_blank">Introduction to Dispersion</a>
+* <a title="Coefficient of Variation" href="http://youtu.be/ag5AoCEtboI" target="_blank">Coefficient of Variation</a>
+* <a title="Boxplots" href="http://youtu.be/lkXcWoBcwjo" target="_blank">Box plots</a>
+
+<strong>Section 2b: <strong>Descriptive Statistics for Grouped Data</strong></strong>
+
+* <a title="Grouped Mean" href="http://youtu.be/u8tei1Emr2A" target="_blank">Mean of Grouped Data</a>
+* Determining the median from frequency data -  <a href="http://youtu.be/OVBNtIE0UE8" target="_blank">Here</a> - [3:47]
+* Variance of Grouped Data - <a href="https://www.youtube.github.io/watch?v=Mi6J7BemihA" target="_blank">HERE</a> - [6:24]
+
+<strong>Revision Notes</strong>
+
+* Revision Notes – <a title="Descriptive Statistics" href="https://dl.dropboxusercontent.github.io/u/6044937/Stats%20Lecture%20Notes/Part%20A%20-%20Descriptive%20Statistics.pdf" target="_blank">Here</a>
+* Variance and Standard Deviation – <a title="Variance" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Computing%20Variance.pdf" target="_blank">Here</a> <a title="Variance and Standard Deviation" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Variance%20and%20Standard%20Deviation.pdf" target="_blank">Here</a>
+* Coefficient of Variation – <a title="Coefficient of Variation" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Coefficient%20of%20Variation.pdf" target="_blank">Here</a>
+* Percentiles, Quartiles and the IQR – <a title="Percentiles and Quartiles" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Percentiles%20and%20IQR.pdf" target="_blank">Here</a>
+
+ 
+
+### Medians
+
+<h3>Median</h3>
+
+
+* The other commonly used measure of centrality is the median.
+* The median is the value halfway through the ordered data set, below and above which there lies an equal number of data values.
+* For an odd sized data set, the median is the middle element of the <b><i>ordered</b></i> data set.
+* For an even sized data set, the median is the average of the middle pair of elements of an \t{ordered} data set.
+* It is generally a good descriptive measure of the location which works well for <b><i>skewed data</b></i>, or data with <b><i>outliers</b></i>.
+* For later, the median is the 0.5 quantile, and the second quartile <i>Q_2</i>.
+
+<h4> Odd Sized Data Set</h4>
+
+With an odd number of data values, for example nine, we have:
+
+* Data : {96, 48, 27, 72, 39, 70, 7, 68, 99 }
+* Ordered Data :  {7, 27, 39, 48, 68, 70, 72, 96, 99}
+* Median : 68, leaving four values below and four values above
+
+<h4> Even Sized Data Set</h4>
+With an even number of data values, for example 8, we have:
+
+* Data : {96, 48 ,27 ,72, 39, 70, 7, 68 }
+* Ordered Data :{7, 27, 39, 48, 68, 70, 72, 96}
+* Median : Halfway between the two 'middle' data points - in this case halfway between 48 and 68, and so the median is 58
+

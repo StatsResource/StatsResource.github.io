@@ -1,0 +1,18 @@
+Sampling Distribution {data-navmenu="Inference Procedures"}
+==================================================
+
+Column {.tabset}
+--------------------
+
+### Sampling Distribution
+
+* <a href = "https://youtu.be/DSyusepVP3k/">Sampling Distribution - Worked Example 1 </a>
+* <a href = "https://youtu.be/uMxmxnIcfvo/">Sampling Distribution - Worked Example 2 </a>
+* <a href = "https://youtu.be/droO8NykzY8/">Expected Value of Sample Variance</a>
+* <a href = "https://youtu.be/ZTK1R7tylh8/"> Confidence Interval of Sample Variance</a>
+
+
+
+* <a href="https://youtu.be/TF5VLv7Djtw/">	Sample Variance Ratios & The F Distribution	</a>	
+* <a href="https://youtu.be/DSyusepVP3k/">	Sampling Distributions - Worked Examples	</a>	
+

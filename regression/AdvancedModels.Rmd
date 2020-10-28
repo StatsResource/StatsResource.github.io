@@ -1,0 +1,86 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="MathsResource.github.io">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>MathsResource.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+          <h1 id="project_title">MathsResource.Github.io</h1>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+<!------------------------------------------------------------------------------------------------>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-76so{font-size:15px;background-color:#cbcefb;vertical-align:top}
+</style>
+
+<!------------------------------------------------------------------------------------------------>  
+<strong>
+<a href="http://MathsResource.github.io"> Main Menu </a> | <a href="http://MathsResource.github.io/regression/index.html"> Regression Models </a> | 
+<a href="http://MathsResource.github.io/regression/index.html"> Advanced Regression Models </a>
+</strong>
+<p>
+<h3><strong>Advanced Regression Models </strong></h3>
+
+
+Robust Regression with Huber Weighting	0drbiDPCuYQ
+
+
+
+<table class="tg" style="undefined;table-layout: fixed; width: 900px">
+<colgroup>
+<col style="width: 300px">
+<col style="width: 300px">
+<col style="width: 300px">
+</colgroup>
+
+  <tr>
+    <td class="tg-76so"><iframe width="270" height="135" src="https://www.youtube.com/embed/0drbiDPCuYQ" frameborder="0" allowfullscreen></iframe>
+<br>Robust Regression with Huber Weighting</td>
+    <td class="tg-76so"><iframe width="270" height="135" src="https://www.youtube.com/embed/0qPFRMJxm-k" frameborder="0" allowfullscreen></iframe>
+<br>Polynomial Regression Model Selection with the AIC</td>
+    <td class="tg-76so"><iframe width="270" height="135" src="https://www.youtube.com/embed/0qPFRMJxm-k" frameborder="0" allowfullscreen></iframe>
+<br>Polynomial Regression Model Selection with the AIC</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------>  
+<div id="footer">
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+
+    </div>
+
+    
+
+  </body>
+</html>

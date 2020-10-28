@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="MathsResource.com">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>MathsResource.com</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+          <h1 id="project_title">MathsResource.com</h1>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<br>
+<span style="text-decoration:underline;"><strong>Operations Research and Management Science Methods</strong></span>
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-76so{font-size:15px;background-color:#cbcefb;vertical-align:top}
+</style>
+<center>
+<table class="tg" style="undefined;table-layout: fixed; width: 750px">
+<colgroup>
+<col style="width: 750px">
+
+</colgroup>
+
+<tr>
+<td class="tg-76so">
+<ul>
+	<li><header class="entry-header">
+<h1 class="entry-title"></h1>
+</header>
+<div class="entry-content">
+
+<strong>Operations Research for Computing</strong>
+<p>
+<em><strong>Overview</strong></em>
+<ol>
+<li> What are Matroids</li>
+<li> Represenation of Matroids</li>
+<li> Matroid Intersections</li>
+<li> Linear and Integer Linear Programming</li>
+</ol>
+<p>
+<em><strong>What is a matroid?</strong></em>
+
+A matroid is a mathematical construct, just as a group, a field, or a topology is a construct.
+<p>
+<strong><em>Matroid Intersection</em></strong>
+<br>
+In combinatorial optimization, the matroid intersection problem is to find a largest common independent set in two matroids over the same ground set. If the elements of the matroid are assigned real weights, the weighted matroid intersection problem is to find a common independent set with the maximum possible weight. These problems generalize many problems in combinatorial optimization including finding maximum matchings and maximum weight matchings in bipartite graphs and finding arborescences in directed graphs.
+The matroid intersection theorem, due to Jack Edmonds, says that there is always a simple upper bound certificate, consisting of a partitioning of the ground set amongst the two matroids, whose value (sum of respective ranks) equals the size of a maximum common independent set. Based on this theorem, the matroid intersection problem for two matroids can be solved in polynomial time using matroid partitioning algorithms.
+<br>
+<em><strong>Resources</strong></em>
+
+<a href="http://www.cs.berkeley.edu/~vazirani/algorithms/chap5.pdf">http://www.cs.berkeley.edu/~vazirani/algorithms/chap5.pdf</a>
+
+</div></li>
+</ul>
+
+
+</td>
+</tr>
+  
+</table>
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+
+    </div>
+
+    
+
+  </body>
+</html>
+
+
+
+

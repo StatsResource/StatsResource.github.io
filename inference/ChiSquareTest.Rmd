@@ -1,0 +1,30 @@
+e {data-navmenu="Modelling Data"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+### Pearson Correlation
+<strong>There are two types of Chi-Square Test</strong>
+
+Testing Goodness of Fit
+
+A Chi Square Test is often used to measure a goodness of fit between an observed and expected distribution of values. Knowing how to perform a Chi Square Test can be useful for testing probable to expected outcomes, fitting points to a curve, or testing a statistical hypothesis.
+
+<strong>2.  Chi square test of independence</strong>
+
+If the columns are not contingent on the rows, then the rows and column frequencies are independent. The test of whether the columns are contingent on the rows is called the chi square test of independence. The null hypothesis is that there is no relationship between row and column frequencies.
+
+### Testing Goodness of Fit
+
+Contingency tables are used to examine the relationship between subjects’ scores on two categorical variables.
+
+* Expected Values under the null hypothesis (<a title="ChiSquare-ExpectedValues" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">here</a>)
+
+* Chi-Square Exercise (<a title="Chi-SquareExercise" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">here</a>)
+
+
+### Chi-Square Testing
+
+* Chi Square Test- computing the expected values - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">Here</a>
+* Chi Square Exercise - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">Here</a>

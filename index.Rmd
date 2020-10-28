@@ -11,19 +11,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
+```{r child = 'dataanalysis/introduction.Rmd'}
+```
 
+```{r child = 'dataanalysis/exploratorydataanalysis.Rmd'}
+```
 
-Statistics {data-navmenu="Introductory Statistics"}
-=====================================
+```{r child = 'dataanalysis/descriptivestatistics.Rmd'}
+```
 
-Column 
---------------------
-
-Measures of Centrality {data-navmenu="Introductory Statistics"}
-==============================================================
-
-Column
--------------------------------------------------------------
 
 ```{r child = 'probability/Probability.Rmd'}
 ```
@@ -39,9 +35,6 @@ Column
 ### Joint Probability Distributions
 
 ```{r child = 'probability/DiscreteDistributions.Rmd'}
-```
-
-```{r child = 'probability/PoissonDistribution.Rmd'}
 ```
 
 ```{r child = 'probability/NormalDistribution.Rmd'}
@@ -69,12 +62,22 @@ Column
 ```{r child = 'inference/SamplingDistributions.Rmd'}
 ```
 
+```{r child = 'inference/students_t_distribution.Rmd'}
+```
+
+
 ```{r child = 'inference/Proportions.Rmd'}
+```
+
+```{r child = 'inference/testingmodelassumptions.Rmd'}
 ```
 
 ```{r child = 'inference/NonParametricTests.Rmd'}
 ```
 
+
+```{r child = 'inference/quantiletables.Rmd'}
+```
 
 
 Linear Models {data-navmenu="Modelling Data"}
@@ -83,20 +86,15 @@ Linear Models {data-navmenu="Modelling Data"}
 Column {.tabset}
 -----------------------------
 
-### Correlation
-
-
-* <a href= https://www.youtube.com/watch?v=3Y3pJaLcXdc">Correlation Coefficient - Hypothesis Testing </a>
-
 
 ### Multiple regression
 
 
-<li>Variable Selection Procedures: Use of Forwards and Backwards elimination in multiple regression.</li>
-	<li>Use of F tests.</li>
-	<li>The Akaike Information Criterion</li>
-	<li>Polynomial regression. (<em>Simple cases only.</em>)</li>
-	<li>Use of indicator variables to model factors or qualitative variables (<em>Simple cases only.</em>)</li>
+* Variable Selection Procedures: Use of Forwards and Backwards elimination in multiple regression.
+	* Use of F tests.
+	* The Akaike Information Criterion
+	* Polynomial regression. (<em>Simple cases only.</em>)
+	* Use of indicator variables to model factors or qualitative variables (<em>Simple cases only.</em>)
 
 ```{r child = 'modellingdata/BivariateData.Rmd'}
 ```
@@ -110,6 +108,11 @@ Column {.tabset}
 
 ```{r child = 'modellingdata/RegressionANOVA.Rmd'}
 ```
+
+```{r child = 'modellingdata/chisquare.Rmd'}
+```
+
+
 
 ```{r child = 'modellingdata/SurvivalAnalysis.Rmd'}
 ```
@@ -132,33 +135,34 @@ Column {.tabset}
 ```{r child = 'specialtopics/NetworkAnalysis.Rmd'}
 ```
 
-#### Unsorted
+Unsorted {data-navmenu="Special Topics"}
+==============================================================
 
-<ul>
-<li>	<a href="https://youtu.be/Qs4lOegQNbA/">	One-Way ANOVA - Calculating the Least Significant Difference	</a>	</li>
-<li>	<a href="https://youtu.be/g666XEXVpL0/">	Rules of Probability - Mutually Exclusive and Independent Events	</a>	</li>
+Column
+--------------------------------
+
+* <a href="https://youtu.be/Qs4lOegQNbA/">	One-Way ANOVA - Calculating the Least Significant Difference	</a>	
+* <a href="https://youtu.be/g666XEXVpL0/">	Rules of Probability - Mutually Exclusive and Independent Events	</a>	
 				
 				
-<li>	<a href="https://youtu.be/5F0jSp1bOEU/">	Computing Sample Variance	</a>	</li>
+	
 				
 				
 				
 				
 				
-<li>	<a href="https://youtu.be/24PPecNK7NI/">	Mixed Probability Distributions	</a>	</li>
-<li>	<a href="https://youtu.be/jdpHIFyX-6g/">	The Sign Test : Hearing Test Example (Non Parametric Hypothesis Testing)	</a>	</li>
-<li>	<a href="https://youtu.be/_Ob48DhL4Yo/">	Normal Random Variables - Bicycle Journey Example	</a>	</li>
+* <a href="https://youtu.be/24PPecNK7NI/">	Mixed Probability Distributions	</a>	
+* <a href="https://youtu.be/jdpHIFyX-6g/">	The Sign Test : Hearing Test Example (Non Parametric Hypothesis Testing)	</a>	
+* <a href="https://youtu.be/_Ob48DhL4Yo/">	Normal Random Variables - Bicycle Journey Example	</a>	
 				
 				
-<li>	<a href="https://youtu.be/4fOcxafPHow/">	Survival Analysis - Kaplan Meier Estimates of the Survival Function	</a>	</li>
-<li>	<a href="https://youtu.be/HJ4DR79XRa8/">	Computing the Z score	</a>	</li>
-<li>	<a href="https://youtu.be/droO8NykzY8/">	Expected Value of Sample Variance	</a>	</li>
-<li>	<a href="https://youtu.be/pIAZmkRvKPo/">	Geometric Distribution with Chi Square Test for Goodness of Fit	</a>	</li>
-<li>	<a href="https://youtu.be/ay-Y_SUslP8/">	Hypergeometric Distribution - Worked Example	</a>	</li>
-<li>	<a href="https://studio.youtube.com/channel/UCU8y8xt6IcvARijbLzx2txw/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D"	Joint Density Functions for Discrete Random Variables	</a>	</li>
+* <a href="https://youtu.be/4fOcxafPHow/">	Survival Analysis - Kaplan Meier Estimates of the Survival Function	</a>	
+* <a href="https://youtu.be/HJ4DR79XRa8/">	Computing the Z score	</a>	
+* <a href="https://youtu.be/droO8NykzY8/">	Expected Value of Sample Variance	</a>	
+
+* <a href="https://studio.youtube.com/channel/UCU8y8xt6IcvARijbLzx2txw/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D"	Joint Density Functions for Discrete Random Variables	</a>	
 				
 				
-<li>	<a href="https://youtu.be/URzJiQP9E3c/">	Linear Regression   Part B	</a>	</li>
-<li>	<a href="https://youtu.be/093X1SWd1cg/">	Uniform Random Variables	</a>	</li>
-<li>	<a href="https://youtu.be/5DY3j8nw5sg/">	Working With Small Samples	</a>	</li>
-</ul>
+* <a href="https://youtu.be/URzJiQP9E3c/">	Linear Regression   Part B	</a>	
+* <a href="https://youtu.be/093X1SWd1cg/">	Uniform Random Variables	</a>	
+

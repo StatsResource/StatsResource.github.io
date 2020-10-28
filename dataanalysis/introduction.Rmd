@@ -1,0 +1,16 @@
+Introduction {data-navmenu="Exploratory Data Analysis"}
+==============================================================
+
+
+Column {.tabset}
+----------------------------------
+
+### StatsResource
+
+<h5> Contents </h5>
+
+* Exploratory Data Analysis 
+* Probability and Probability Distributions
+* Inference Procedures
+* Modelling Data
+* Special Topics

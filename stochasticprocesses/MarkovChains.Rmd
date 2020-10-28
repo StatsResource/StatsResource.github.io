@@ -1,0 +1,21 @@
+
+Markov Chains  {data-navmenu="Stochastic Processes"}
+====================================
+Column
+-------------------------------
+
+### Markov Chains - 
+
+
+The matrix is very special. Indeed, the entries of each column vectors are positive and their sum is 1. Such vectors are called <b>probability</b> vectors. A matrix for which all the column vectors are probability vectors is called <b>transition</b> or <b>stochastic </b>matrix.
+
+Andrei Markov, a russian mathematician, was the first one to study these matrices. At the beginning of this century he developed the fundamentals of the <b>Markov Chain</b> theory.
+
+A Markov chain is a process that consists of a finite number of <b>states</b> and some known probabilities <i>p</i><sub><i>ij</i></sub>, where <i>p</i><sub><i>ij</i></sub> is the probability of moving from state <i>j</i> to state <i>i</i>. In the example above, we have two states: living in the city and living in the suburbs.
+
+The number <i>p</i><sub><i>ij</i></sub> represents the probability of moving from state i to state j in one year. We may have more than two states. For example, political affiliation: Democrat, Republican, and Independent. For example, <i>p</i><sub><i>ij </i></sub>represents the probability of a son belonging to party i if his father belonged to party j.
+
+<strong>Onlline materials</strong>
+<ul>
+	<li>Lecture Notes from Dartmouth College <a title="Markov Chains" href="http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf" target="_blank">(Here)</a></li>
+</ul>

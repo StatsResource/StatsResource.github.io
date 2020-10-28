@@ -1,0 +1,26 @@
+
+Model Selection {data-navmenu="Modelling Data"}
+=======================================
+  
+Column {.tabset}
+----------------------------
+
+### Model Selection
+
+
+* Variable Selection Procedures: Use of Forwards and Backwards elimination in multiple regression.
+
+
+
+
+### The AIC
+
+<h5> Akaike's Information Criteron </h5>
+
+* < a href =="https://www.youtu.be/SMShpSGEUG4">  The Akaike Information Criterion. </a>
+* < a href ="https://www.youtube.com/watch?v=YMC2Z6LpNXI"> Model Selection with the AIC </a>
+
+
+### Polynomial Regression 
+
+<h5> Polynomial Regression</h5>

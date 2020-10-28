@@ -1,0 +1,15 @@
+Random Number Generation {data-navmenu="Special Topics"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+### Random Number Generation
+
+<h5> Random Number Simulation</h5>
+
+
+* <a href="https://youtu.be/3Czl6_jTZmc/">	Random Number Generation	</a>	
+* <a href="https://youtu.be/Aqz3hY5ssPM/">	Random Number Simulation -  Simulation of Binomial Random Variable	</a>	
+* <a href="https://youtu.be/MfbM21osnvw/">	Simulation of Random Numbers - Checking Validity	</a>	
+

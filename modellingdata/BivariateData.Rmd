@@ -1,0 +1,53 @@
+Bivariate Data {data-navmenu="Modelling Data"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+### Pearson Correlation
+
+<h5> Pearson Correlation </h5>
+
+
+
+* <a href = "https://youtu.be/3Y3pJaLcXdc/">Correlation Coefficient - Hypothesis Testing</a>
+
+### Spearman Rank correlation 
+
+<h5> Spearman Rank correlation </h5>
+
+
+
+
+
+$$ 1 - \frac{6\left( \sum d^2 + \frac{t^3-t}{12} \right)}{n(n^2-1)}$$
+
+
+
+The adjustment for tied values
+$$ \frac{t^3-t}{12} $$, where $t$ is the number of tied values
+
+* <a href = "https://youtu.be/q-W39HC8F6M/">Spearman Rank correlation (no tied ranks)</a>
+
+
+### Hypothesis Testing
+
+<h5> Correlation Coefficient - Hypothesis Testing</h5>
+
+* See the Inference Procedures section for Student t-tables.
+
+
+
+### Formulas
+
+$$ \rho_{XY} $$
+
+
+
+### Standby
+
+
+
+* <a href="https://www.youtube.com/embed/CV25hmd9O1c" > Calculating the Spearman Rank Correlation</a>
+* <a href="https://www.youtube.com/embed/iOgvnG77lAY" > Correlation Hypothesis Test</a>
+* <a href="https://www.youtube.com/embed/diUQrYR5HAk" > Pearson Correlation Coefficient</a>

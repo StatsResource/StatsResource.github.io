@@ -1,0 +1,54 @@
+
+
+
+Inference Procedures for Proportions {data-navmenu="Inference Procedures"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Hypothesis Testing
+
+<h5>Hypothesis Testing For Proportions</h5> 
+
+
+* <a href = "https://youtu.be/fzIRjiSoW2o/">Hypothesis Testing For Proportions</a>
+* <a href = "https://youtu.be/d97sSFMXSLQ/">Two Sample Proportion Hypothesis Test</a>
+
+
+
+### Confidence Intervals 
+
+* <a href="https://youtu.be/tz3Kyp7yUSQ/">	Confidence Interval for Single Sample Proportion	</a>	
+* <a href="https://youtu.be/ZTK1R7tylh8/">	Confidence Interval of Sample Variance	</a>	
+* <a href="https://youtu.be/oj9oo6aIVG4/">	Confidence Intervals for Proportions	</a>	
+* <a href="https://youtu.be/fzIRjiSoW2o/">	Hypothesis Testing For Proportions	</a>	
+* <a href="https://youtu.be/d97sSFMXSLQ/">	Two Sample Proportion Hypothesis Test	</a>	
+
+
+
+
+
+Inference Procedures for Small Samples {data-navmenu="Inference Procedures"}
+==================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+* <a href="https://youtu.be/5DY3j8nw5sg/">	Working With Small Samples	</a>	
+
+
+Sample Size Estimation  {data-navmenu="Inference Procedures"}
+==================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Sample Size Estimation 
+
+<h5> Sample Size Estimation For Proportions Worked Example </h5>
+
+* <a href = "https://youtu.be/ayErcU5xUQI/">Sample Size Estimation For Proportions Worked Example</a>
+
+

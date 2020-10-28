@@ -1,0 +1,38 @@
+
+Experimental Design  {data-navmenu="Special Topics"}
+==================================
+
+Column {.tabset}
+-----------------------------
+
+### Design and analysis of experiments 
+
+<ul>
+ * Principles of design including randomisation, blinding, pairing and blocking.</li>
+ * Reasons for using these.</li>
+ * Randomised block designs. Latin squares.</li>
+ * Analysis of variance, inference for means and for differences in means.</li>
+ * Factorial treatment structure with two factors. Advantages of factorial experimentation. Diagrammatic explanation of interaction.</li>
+ * Two-way analysis of variance.</li>
+ * Diagrams of means of treatment combinations and their use for explaining interactions of two factors.</li>
+ * Analysis of variance, inference for means and for differences in means.</li>
+ * Residuals and their use in checking assumptions.</li>
+</ul>
+<p>
+
+### Multiple regression 
+<ul>
+ * Least squares estimation for multiple regression.</li>
+ * Derivation of normal equations in simple cases. Matrix notation will not be required. Solution of simultaneous equations in simple cases only.</li>
+ * Regression through the origin.</li>
+ * Including multiple regression with zero intercept.</li>
+ * Use of backwards elimination in multiple regression.</li>
+ * Use of F tests.</li>
+ * Polynomial regression.</li>
+ * Simple cases only.</li>
+ * Use of indicator variables to model factors or qualitative variables.(Simple cases only.)</li>
+ * Residuals and their use in checking assumptions.</li>
+</ul>
+<p>
+
+

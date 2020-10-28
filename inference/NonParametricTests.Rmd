@@ -1,0 +1,27 @@
+Non-parametric Tests {data-navmenu="Inference Procedures"}
+===========================================================
+
+Column{.tabset}
+-----------------------------------
+
+### Introduction
+
+<h3>Non-parametric Statistics: Terminology</h3>
+
+An experiment conducted under controlled conditions, using factor-levels intended to estimate specified factors and their interactions. A designed experiment may be contrasted with the analysis of happenstance, historical or casual data.
+
+A designed experiment presumes that the process being studied or the simulation being performed is stable and that the important factors in the process have been recognized. While an experiment may be performed on an unstable process, the results may not be directly useful because of large experimental error. All the important factors must be included; otherwise, the factors cannot completely describe the process.
+
+
+
+### Non-parametric Tests
+
+* <a href = "https://youtu.be/jdpHIFyX-6g/">The Sign Test : Hearing Test Example (Non Parametric Hypothesis Testing)</a>
+
+* <a href = "https://youtu.be/d51CcSfU4fQ/"> Wilcoxon Signed Rank Test - Aural Memory Tests Example (Non Parametric Tests)</a>
+
+* <a href = "https://youtu.be/3j9iXHVnK3k/"> Wilcoxon Signed Rank Test (Non-Parametric Hypothesis Tests) </a>
+
+* <a href = "https://youtu.be/b7DzkB4Pa3Y/">Wilcoxon Rank Sum Test (Non-parametrics Tests)</a>
+
+### Statistical Tables

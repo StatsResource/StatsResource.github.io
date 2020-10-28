@@ -1,0 +1,8 @@
+Regression ANOVA  {data-navmenu="Modelling Data"}
+==================================
+
+Column {.tabset}
+------------------
+
+### Regression ANOVA
+

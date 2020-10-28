@@ -1,0 +1,210 @@
+\newpage
+\chapter{3. Counting Problems}
+\subsection{Contingency Tables}
+It is now easy to deduce the probabilities of the respective events, by looking at the totals for each row and column.
+\begin{itemize}
+\item P(C) = 60/100 = 0.60
+\item P(S) = 40/100 = 0.40
+\item P(M) = 62/100 = 0.62
+\item P(F) = 38/100 = 0.38
+\end{itemize}
+\textbf{Remark:}\\
+The information we were originally given can also be expressed as:
+\begin{itemize}
+\item $P(C \cap M) = 44/100 = 0.44$
+\item $P(C \cap F) = 16/100 = 0.16$
+\item $P(S \cap M) = 18/100 = 0.18$
+\item $P(S \cap F) = 22/100 = 0.22$
+\end{itemize}
+
+	
+	\section{Joint probability tables}
+	A joint probability table is a table in which all possible events (or outcomes) for one variable are listed as
+	row headings, all possible events for a second variable are listed as column headings, and the value entered in
+	each cell of the table is the probability of each joint occurrence. 
+	\\
+	\\
+	\noindent Often, the probabilities in such a table are based
+	on observed frequencies of occurrence for the various joint events. The table
+	of joint-occurrence frequencies which can serve as the basis for constructing a joint probability table is called a
+	contingency table.
+
+\noindent \textbf{Joint Probability Tables}
+
+A \textbf{\emph{joint probability table}} is similar to a contingency table, but for that the value entered in
+each cell of the table is the probability of each joint occurrence. Often, the probabilities in such a table are based
+on observed frequencies of occurrence for the various joint events.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+& C & S & Total \\ \hline
+M & 0.44 & 0.18 & 0.62 \\ \hline
+F & 0.16 & 0.22 & 0.38 \\ \hline
+Total & 0.60 & 0.40 & 1.00 \\ \hline
+\end{tabular}
+\end{center}
+
+\noindent \textbf{Marginal Probabilities}
+\begin{itemize}
+\item In the context of joint probability tables, a  \textbf{\emph{marginal probability}} is so named because it is a marginal total of
+a row or a column. \item Whereas the probability values in the cells of the table are probabilities of joint occurrence, the marginal
+probabilities are the simple (i.e. unconditional) probabilities of particular events.
+\item From the first year intake example, the marginal probabilities are $P(C)$, $P(S)$, $P(M)$ and $P(F)$ respectively.
+\end{itemize}
+
+
+\noindent \textbf{Conditional Probabilities : Example 1}
+
+Recall the definition of conditional probability:
+\[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
+
+Using this formula, compute the following:
+\begin{enumerate}
+\item $P(C|M)$ : Probability that a student is a computer science student, given that he is male.
+\item $P(S|M)$ : Probability that a student studies statistics, given that he is male.
+\item $P(F|S)$ : Probability that a student is female, given that she studies statistics.
+\item $P(S|F)$ : Probability that a student studies statistics, given that she is female.
+\end{enumerate}
+Refer back to the contingency table to appraise your results.
+
+\noindent \textbf{Conditional Probabilities : Example 1}
+
+\textbf{Part 1)} Probability that a student is a computer science student, given that he is male.
+\[ P(C|M) = \frac{P(C \cap M)}{P(M)}  = \frac{0.44}{0.62} = 0.71 \]
+\textbf{Part 2)} Probability that a student studies statistics, given that he is male.
+\[ P(S|M) = \frac{P(S \cap M)}{P(M)}  = \frac{0.18}{0.62} = 0.29 \]
+
+
+\noindent \textbf{Conditional Probabilities : Example 1}
+
+\textbf{Part 3)} Probability that a student is female, given that she studies statistics.
+\[ P(F|S) = \frac{P(F \cap S)}{P(S)}  = \frac{0.22}{0.40} = 0.55 \]
+
+\textbf{Part 4)} Probability that a student studies statistics, given that she is female.
+\[ P(S|F) = \frac{P(S \cap F)}{P(F)}  = \frac{0.22}{0.38} = 0.58 \]
+
+
+Remark: $P(S \cap F)$ is the same as $P(F \cap S)$.
+
+
+
+
+
+
+\newpage
+
+\noindent \textbf{Contingency Tables}
+	Suppose there are 100 students in a first year college intake.  \begin{itemize} \item 44 are male and are studying computer science, \item 18 are male and studying statistics \item 16 are female and studying computer science, \item 22 are female and studying statistics. \end{itemize}
+	
+	We assign the names $M$, $F$, $C$ and $S$ to the events that a student, randomly selected from this group, is male, female, studying computer science, and studying statistics respectively.
+	
+	\noindent \textbf{Contingency Tables}
+	The most effective way to handle this data is to draw up a table. We call this a \textbf{\emph{contingency table}}.
+	A contingency table is a table in which all possible events (or outcomes) for one variable are listed as
+	row headings, all possible events for a second variable are listed as column headings, and the value entered in
+	each cell of the table is the frequency of each joint occurrence.
+	
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+			& C & S & Total \\ \hline
+			M & 44 & 18 & 62 \\ \hline
+			F & 16 & 22 & 38 \\ \hline
+			Total & 60 & 40 & 100 \\ \hline
+		\end{tabular}
+	\end{center}
+
+
+
+	
+	
+	\section{Contingency Tables}
+	It is now easy to deduce the probabilities of the respective events, by looking at the totals for each row and column.
+	\begin{itemize}
+		\item P(C) = 60/100 = 0.60
+		\item P(S) = 40/100 = 0.40
+		\item P(M) = 62/100 = 0.62
+		\item P(F) = 38/100 = 0.38
+	\end{itemize}
+	\textbf{Remark:}\\
+	The information we were originally given can also be expressed as:
+	\begin{itemize}
+		\item $P(C \cap M) = 44/100 = 0.44$
+		\item $P(C \cap F) = 16/100 = 0.16$
+		\item $P(S \cap M) = 18/100 = 0.18$
+		\item $P(S \cap F) = 22/100 = 0.22$
+	\end{itemize}
+
+
+%-------------------------------------------------------%
+
+
+\section{Joint Probability Tables}
+
+A \textbf{\emph{joint probability table}} is similar to a contingency table, but for that the value entered in
+each cell of the table is the probability of each joint occurrence. Often, the probabilities in such a table are based
+on observed frequencies of occurrence for the various joint events.
+\begin{center}
+\begin{tabular}{|c||c|c||c|}
+\hline
+% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+& C & E & Total \\ \hline \hline
+M & 0.44 & 0.18 & 0.62 \\ \hline
+F & 0.16 & 0.22 & 0.38 \\ \hline \hline
+Total & 0.60 & 0.40 & 1.00 \\ \hline
+\end{tabular}
+\end{center}
+
+	
+
+
+
+\section{Contingency Tables}
+
+\begin{itemize}
+\item The following table gives the results of operations in a hospital according to the complexity of the
+operation.
+\end{itemize}
+
+\begin{center}
+
+\begin{tabular}{ccc}
+& Simple & Complex \\ \hline
+Successful & 1990 & 950 \\ \hline
+Unsuccessful & 10 & 50\\ \hline
+\end{tabular} 
+\end{center}
+
+
+\begin{itemize}
+\item Let A be the event that an operation is simple and B be the event that an
+operation is successful. 
+\item Calculate P r(B), P r(A|B), P r(A|BC ), P r(B|A) and
+P r(B ∩ A). 
+\end{itemize}
+
+
+
+There are 100 students in a first year college intake. 
+\begin{itemize}
+\item 36 are males and are studying accounting
+\item 9 are male and ard studying economics
+\item 45 are female and studying accounting
+\item 13 are female and studying economics.
+
+\end{itemize}
+
+First, lets label this events.
+
+\begin{itemize}
+\item $M$ Student is Male
+\item $F$ Student is Female
+\item $A$ Student Studies Accounting
+\item $E$ Student Studies Economics
+\end{itemize}
+
+Lets construct a table to handle this data.
+

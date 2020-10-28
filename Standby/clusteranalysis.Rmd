@@ -1,0 +1,26 @@
+
+
+* Week 3 - Distance Measures and Standardization - <a href="https://dl.dropboxusercontent.com/u/6044937/00-MA4128/CA-DistanceMeasures.pdf" target="_blank">HERE</a>
+* Applications of Cluster Analysis (<a href="https://dl.dropboxusercontent.com/u/6044937/00-MA4128/CA-Applications.pdf" target="_blank">HERE </a>Nothing Examinable )
+* Week 4  - Main Set of Notes - <a href="https://dl.dropboxusercontent.com/u/6044937/00-MA4128/MA4128%20Cluster%20Analysis%20Part%201.pdf" target="_blank">HERE</a>
+* Week 4/5 Two Step clustering - <a href="https://dl.dropboxusercontent.com/u/6044937/00-MA4128/MA4128TwoStepClustering.pdf" target="_blank">HERE</a>
+
+<span style="text-decoration:underline;"><strong>Overview</strong></span>
+
+* Introductory Concepts <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/CA-IntroductoryTopics.pdf" target="_blank">Notes</a>
+* Similarity Measures and Proximity Matrices <a href="https://dl.dropboxusercontent.com/u/6044937/Data%20Science/Cluster%20Analysis%20Distance%20Measures.pdf" target="_blank">HERE</a> <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/CA-Distance%20Measures%20and%20Proximity%20Matrices.pdf" target="_blank">Notes </a> (Ready)
+* Linkage Methods.
+* Hierarchical Clustering : Implementation with R - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/CA-HierarchicalClusteringwithR.pdf" target="_blank">Notes </a><em><strong>(Ready) </strong></em>
+* k-means Clustering : Implementation with R - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/CA-kmeansclustering.pdf" target="_blank">Notes</a>
+* Partitioning Across Medoids (pam) - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/CA-PartioningAroundMedoids.pdf" target="_blank">NOTES</a> (<em><strong>READY)</strong></em>
+* Fuzzy Clustering
+* Data Sets
+
+
+* <em><strong>iris</strong> </em>(CSV - <a href="https://dl.dropboxusercontent.com/u/6044937/Data%20Sets/iris.csv" target="_blank">HERE</a> | R - already installed)
+* <em><strong>mtcars (CSV - <a href="https://dl.dropboxusercontent.com/u/6044937/Data%20Sets/mtcars.csv" target="_blank">HERE</a> | </strong></em>R<em><strong>- </strong></em>already installed)
+* Cars (<a title="cars" href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/cars.csv" target="_blank">CSV </a>| N<a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/CA-Cars%20Data%20Set.pdf" target="_blank">otes</a>)
+* Tough (C<a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/tough.csv" target="_blank">SV</a>)
+* European Jobs (<a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/ClusterAnalysisWithR/EuropeanJobs.csv" target="_blank">CSV </a>| Notes)
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="MathsResource.Github.io">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>MathsResource.Github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+          <h1 id="project_title">MathsResource.Github.io</h1>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-76so{font-size:15px;background-color:#cbcefb;vertical-align:top}
+</style>
+<center>
+<!------------------------------------------------------->  
+  
+<!------------------------------------------------------->  
+  <h3> Time Series Analysis</h3>  
+<table class="tg" style="undefined;table-layout: fixed; width: 750px">
+<colgroup>
+<col style="width: 250px">
+<col style="width: 250px">
+<col style="width: 250px">
+</colgroup>
+  <tr>
+    <td class="tg-76so"><strong>Introduction to Time Series Analysis</strong><br> Time Series</td>
+    <td class="tg-76so"><strong><a href="autocorrelation.html">Autocorrelation</a> </strong><br> Limits, Functions, Sequences and Series, Integration</td>
+    <td class="tg-76so"><strong><a href="trends.html">Trends</a></strong><br> Lag Operators, Useful functions</td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<h3>A Short Introduction to ARIMA</h3>
+<p>ARIMA stands for auto-regressive integrated moving average and is specified by these three order parameters: <em><span style="font-family: 'times new roman', times;">(p, d, q)</span></em>.&nbsp;The process of fitting an ARIMA model is sometimes referred to as the Box-Jenkins&nbsp;method.</p>
+<p>An<strong>&nbsp;auto regressive (AR(p))</strong> component is referring to the use of past values in the regression equation for the series <em><span style="font-family: 'times new roman', times;">Y</span></em>. The auto-regressive parameter<span style="font-family: 'times new roman', times;"><em> p&nbsp;</em></span>specifies the number of lags used in the model. For example, AR(2) or, equivalently,&nbsp;ARIMA(2,0,0), is represented as</p>
+<p><img class="math math-display" alt="$$Y_t = c + \phi_1y_{t-1} + \phi_2 y_{t-2}+ e_t$$" src="https://render.githubusercontent.com/render/math?math=Y_t%20%3D%20c%20%2B%20%5Cphi_1y_%7Bt-1%7D%20%2B%20%5Cphi_2%20y_%7Bt-2%7D%2B%20e_t&amp;mode=display" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>where&nbsp;<span><em>φ</em><span style="font-family: 'times new roman', times;"><sub>1</sub></span>,&nbsp;</span><em>φ</em><span style="font-family: 'times new roman', times;"><sub>2</sub></span>&nbsp;are parameters for the model.</p>
+<p>The <span style="font-family: 'times new roman', times;"><em>d</em></span>&nbsp;represents the degree of differencing in the <strong>integrated (</strong><em><span style="font-family: 'times new roman', times;">I(d)</span></em><strong>)</strong> component. Differencing a series involves simply subtracting its current and previous values <span style="font-family: 'times new roman', times;"><em>d&nbsp;</em></span>times. Often,&nbsp;differencing is used to stabilize the series when the&nbsp;stationarity assumption is not met, which we will discuss below.</p>
+<p>A <strong>moving average (MA(q))</strong> component represents the error of the model as a combination of previous error terms <span style="font-family: 'times new roman', times;"><em>e<sub>t</sub></em></span>. The order<em><span style="font-family: 'times new roman', times;"> q</span></em>&nbsp;determines the number of terms to include in the model</p>
+<p><img class="math math-display" alt="$$Y_t = c + \theta_1 e_{t-1} + \theta_2 e_{t-2} +...+ \theta_q e_{t-q}+ e_t$$" src="https://render.githubusercontent.com/render/math?math=Y_t%20%3D%20c%20%2B%20%5Ctheta_1%20e_%7Bt-1%7D%20%2B%20%5Ctheta_2%20e_%7Bt-2%7D%20%2B...%2B%20%5Ctheta_q%20e_%7Bt-q%7D%2B%20e_t&amp;mode=display"></p>
+<p>Differencing, autoregressive, and moving average components make up a non-seasonal ARIMA model which can be written as a linear equation:</p>
+<p><img class="math math-display" alt="$$ Y_t = c + \phi_1y_d{_{t-1}} + \phi_p y_d{_{t-p}}+...+\theta_1 e_{t-1} +  \theta_q e_{t-q} + e_t$$" src="https://render.githubusercontent.com/render/math?math=Y_t%20%3D%20c%20%2B%20%5Cphi_1y_d%7B_%7Bt-1%7D%7D%20%2B%20%5Cphi_p%20y_d%7B_%7Bt-p%7D%7D%2B...%2B%5Ctheta_1%20e_%7Bt-1%7D%20%2B%20%20%5Ctheta_q%20e_%7Bt-q%7D%20%2B%20e_t&amp;mode=display" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>where <span style="font-family: 'times new roman', times;"><em>y<sub>d</sub></em></span>&nbsp;is <em><span style="font-family: 'times new roman', times;">Y&nbsp;</span></em>differenced <em><span style="font-family: 'times new roman', times;">d</span></em>&nbsp;times and <em><span style="font-family: 'times new roman', times;">c</span></em>&nbsp;is a constant.</p>
+<p>Note that the model above assumes non-seasonal series, which means you might need to de-seasonalize the series before modeling. We will show how this can be done in an example below.</p>
+<p>ARIMA models can be also specified through a seasonal structure. In this case, the model is specified by two sets of order parameters: <em><span style="font-family: 'times new roman', times;">(p, d, q)</span> </em>as described&nbsp;above and <img class="math math-inline" alt="$(P, D, Q)_m$" src="https://render.githubusercontent.com/render/math?math=%28P%2C%20D%2C%20Q%29_m&amp;mode=inline"> parameters describing the seasonal component of <em><span style="font-family: 'times new roman', times;">m</span></em>&nbsp;periods.</p>
+<p>ARIMA methodology does have its limitations. These models directly rely on past values, and therefore work best on long and stable series. Also note that ARIMA simply approximates historical patterns and therefore does not aim to explain the structure of the underlying data mechanism.</p>
+<br>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+
+    </div>
+
+    
+
+  </body>
+</html>

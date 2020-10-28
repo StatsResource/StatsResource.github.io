@@ -1,0 +1,13 @@
+Residual Analysis {data-navmenu="Modelling Data"}
+=======================================
+  
+Column {.tabset}
+----------------------
+
+### Residual Analysis
+
+<h5> Analysis of Residuals of Linear Models</h5>
+
+* 
+* 
+* 

@@ -1,0 +1,94 @@
+<style>
+#header {
+    background-color:lightblue;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px; 
+}
+#section {
+    width:550px;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:lightblue;
+    color:black;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+</style>
+
+<body>
+
+<div id="header">
+<h1>MathsResource.com</h1>
+</div>
+<br><center>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:1;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
+.tg .tg-fqpo{background-color:#cbcefb}
+</style>
+
+<a href="http://MathsResource.github.io"> Main Menu </a> | <a href="http://MathsResource.github.io/statistics"> Statistics Menu </a> | <a href="http://MathsResource.github.io/Calculus"> Calculus Menu </a> | <a href="index.html"> pandas Menu </a>
+
+
+<ul>
+	<li><span style="text-decoration:underline;"><strong>Binary Logistic Regression</strong></span></li>
+	<li>MA4128 2016 Logistic Regression Part 1 - <a href="https://dl.dropboxusercontent.com/u/6044937/00-MA4128/MA4128%20-%20LogisticRegression%20-%20Part%201.pdf" target="_blank">HERE</a></li>
+	<li>MA4128 2016 Logistic Regression Part 2 - <a href="https://dl.dropboxusercontent.com/u/6044937/00-MA4128/MA4128%20-%20LogisticRegression%20-%20Part%202.pdf" target="_blank">HERE</a></li>
+	<li>Theory Review Questions - <a href="https://dl.dropboxusercontent.com/u/6044937/00-MA4128/MA4128%20Logistic%20Regression%20-%20theory%20review%20questions.pdf" target="_blank">HERE</a></li>
+</ul>
+ 
+<ul>
+	<li><em><strong>Data Sets : </strong></em></li>
+	<li><a href="https://dl.dropboxusercontent.com/u/6044937/Data%20Sets/binary.csv" target="_blank">binary.csv</a> (Grad School) | <a href="https://dl.dropboxusercontent.com/u/6044937/Data%20Sets/cappun.csv" target="_blank">cappun.csv </a>(Capital Punishment)</li>
+	<li><em><strong>Notes:</strong> </em></li>
+	<li>Full Set <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMswithR.pdf" target="_blank">Here </a>| Grad School Example - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/school%20example.pdf" target="_blank">Here</a></li>
+</ul>
+ 
+
+<span style="text-decoration:underline;"><strong>Logistic and Poisson Regression Models</strong></span>
+<ol>
+	<li>Binomial Logistics Regression</li>
+</ol>
+<span style="text-decoration:underline;"><strong>Data Sets </strong></span>
+<ul>
+	<li>Most of the data Sets used in this workshop can be found in the <em><strong>faraway</strong> </em>R package.</li>
+	<li>A listing of the main data sets, along with some exploratory analysis for each data set can be found <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/FarawayDataSets.html" target="_blank">here</a>.</li>
+</ul>
+<span style="text-decoration:underline;"><strong>Binomial Logistic Regression</strong></span>
+<ul>
+	<li>Introduction to Logistic Regression - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/Logistic%20Regression%20-%20Intrp.pdf" target="_blank">Here</a></li>
+	<li>Likelihood Ratio Test and Wald Statistic - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/Logistic%20Regression%20-%20LRT%20and%20Wald.pdf" target="_blank">Here</a></li>
+	<li>Assessing Model Perfomance (accuracy, precision, recall etc) - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/Logistic%20Regression%20-%20Performance%20Appraisal.pdf" target="_blank">Here</a></li>
+</ul>
+<span style="text-decoration:underline;"><strong>Ordered Logistic (Ordinal) Regression</strong></span>
+<ul>
+	<li>When to use ordered Ordinal Logistic Regression - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/Ordinal%20Regression%20-%20Examples.pdf" target="_blank">Here</a></li>
+	<li>Using the <em>"polr"</em> command - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/Ordinal%20Regression%20-%20polr%20R%20command.html" target="_blank">Here</a> | Housing Example - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/polr%20command.html" target="_blank">Here</a></li>
+</ul>
+<span style="text-decoration:underline;"><strong>Multinomial Logistic Regression</strong></span>
+<ul>
+	<li>When to use ordered Multinomial Logistic Regression - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/Multinomial%20Regression%20-%20Examples.pdf" target="_blank">Here</a></li>
+	<li>Considerations - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/Multinomial%20Regression%20-%20Examples.pdf" target="_blank">Here</a></li>
+	<li>Example ( HSBdemo ) - <a href="https://dl.dropboxusercontent.com/u/6044937/RSTATS/GLMmodels/MultiLogistic.html" target="_blank">Here </a></li>
+</ul>
+ 
+
+<div id="footer">
+MathsResource.com
+</div>
+
+</body>

@@ -1,0 +1,38 @@
+
+<!------------------------------------------------------------------------------------------------------>
+<center>
+<table class="tg" style="undefined;table-layout: fixed; width: 900px">
+<colgroup>
+<col style="width: 300px">
+<col style="width: 300px">
+<col style="width: 300px">
+</colgroup>
+
+
+
+<!-------------------------------------------------------------------------->
+  <tr>
+  <td class="tg-76so"><strong><a href="forecasting.html">Forecasting</a></strong> <br>Branch and Bound<br>The Greeks<br> </td>
+  <td class="tg-76so"><strong><a href="portfoliomeasures.html">Binary Integer Programming</a></strong><br>Sharpe Ratio, <br> Treynor' Measure <br>  Eigenvalues and Eigenvectors</td>
+  <td class="tg-76so"><b><strong><a href="riskmeasures.html">Risk and Return Measures</a></strong></b><br>CAPM<br> Graphs, Recurrences Relations</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+
+    </div>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,54 @@
+%------------------------------------------------------------%
+\documentclass[slidemain.tex]{subfiles} 
+\begin{document} 
+	
+\begin{frame}
+	Bayesian analysis is the branch of statistics based on the idea that we have some knowledge in advance about the probabilities that we are interested in, so called a priori probabilities. This might be your degree of belief in a particular event, the results from previous studies, or a general agreed-upon starting value for a probability. The terminology "Bayesian" comes from the Bayesian rule or law, a law about conditional probabilities. The opposite of "Bayesian" is sometimes referred to as "Classical Statistics."
+\end{frame}
+%----------------------------------------------------------------- %
+\begin{frame}
+\frametitle{Example}
+Consider a box with 3 coins, with probabilities of showing heads respectively 1/4, 1/2 and 3/4. We choose arbitrarily one of the coins. Hence we take 1/3 as the a priori probability $P(C\_1)$ of having chosen coin number 1. After 5 throws, in which X=4 times heads came up, it seems less likely that the coin is coin number 1. 
+\end{frame}
+%----------------------------------------------------------------- %
+\begin{frame}
+	\frametitle{Example}
+We calculate the a posteriori probability that the coin is coin number 1, as:
+
+%\[P(C_1|X=4)=\frac{P(X=4|C_1)P(C_1)}{P(X=4)}=\frac{P(X=4|C_1)P(C_1)}{P(X=4|C_1)P(C_1)+P(X=4|C_2)P(C_2)+P(X=4|C_3)P(C_3)}=\]
+%\[\frac{ {5 \choose 4} (\frac 14)^4 \frac 34 \frac 13}\]
+%\[{{5 \choose 4} (\frac 14)^4 \frac 34 \frac 13+{5 \choose 4} (\frac 12)^4 \frac 12 \frac 13+{5 \choose 4} (\frac 34)^4 \frac 14 \frac 13}=\]
+In words:
+\end{frame}
+%----------------------------------------------------------------- %
+\begin{frame}
+The probability that the Coin is the first Coin, given that we know heads came up 4 times... Is equal to the probability that heads came up 4 times given we know it's the first coin, times the probability that the coin is the first coin. All divided by the probability that heads comes up 4 times (ignoring which of the three Coins is chosen). 
+\end{frame}
+%----------------------------------------------------------------- %
+\begin{frame}
+	\frametitle{Example}The binomial coefficients cancel out as well as all denominators when expanding 1/2 to 2/4. This results in
+
+\[\frac{3}{3 + 32 + 81}=\frac{3}{116}\]
+In the same way we find:
+\[
+P(C_2|X=4)=\frac{32}{3 + 32 + 81}=\frac{32}{116}\]
+and
+\[
+P(C_3|X=4)=\frac{81}{3 + 32 + 81}=\frac{81}{116}.\]
+\end{frame}
+%----------------------------------------------------------------- %
+\begin{frame}
+This shows us that after examining the outcome of the five throws, it is most likely we did choose coin number 3.
+
+Actually for a given result the denominator does not matter, only the relative Probabilities $p(C_i) = P(C_i|X=4)/P(X=4)$ When the result is 3 times heads the Probabilities change in favor of Coin 2 and further as the following table shows:
+\begin{tabular}{|c|c|c|c|}
+Heads &	p(C\_1) &	p(C\_2) &	p(C\_3)  \\ \hline
+5	& 1	& 32&	243 \\
+4	& 3	& 32 &	81 \\
+3	& 9	& 32 &	27\\
+2	& 27 &	32&	9\\
+1	& 81 &	32&	3\\
+0	& 243 &	32&	1\\ 
+\end{tabular} 
+\end{frame}
+\end{document}

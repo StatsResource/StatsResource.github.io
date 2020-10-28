@@ -1,0 +1,57 @@
+
+%-------------------------------------------------------------%
+
+
+
+\subsection*{Example}
+
+
+Ten soldiers visit the rifle range on two different weeks. The first
+week their scores are:
+
+
+$\{67, 24, 57, 55, 63, 54, 56, 68, 33, 43\}$
+
+
+The second week they score
+$\{70, 38, 58, 58, 56, 67, 68, 77, 42, 38\}$
+
+
+Give a 95\% confidence interval for the improvement in scores from week one to
+week two.
+
+
+
+%-------------------------------------------------------------%
+
+
+
+This is a case of paired samples, for the scores are repeated observations for each
+soldier, and there is good reason to think that the soldiers will differ from each other
+in their shooting skill. So we work with the individual differences between the scores.
+We shall have to assume that the pairwise differences are a random sample from a
+normal distribution.
+
+
+The differences are:
+
+
+$\{3, 14, 1, 3, -7, 13, 12, 9, 9, -5\}$
+
+
+
+%-------------------------------------------------------------%
+
+
+
+Effectively we now have a single sample of size 10, and want a 95\% confidence
+interval for the mean of the population from which these differences are drawn. For
+this we use a Student's $t$ interval. The sample mean of the differences is 5.2, and
+$s^2$ = 54.84. So $s = 7.41$, and the 95\% $t$ interval for the difference in the means is
+$5.2 - 2.26(7.41)/\sqrt{10},  5.2 + 2.26(7.41)/\sqrt{10} = (.0.1, 10.5)$.
+
+
+
+
+
+%-------------------------------------------------------------%

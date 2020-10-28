@@ -1,0 +1,33 @@
+﻿
+Network Analysis {data-navmenu="Special Topics"}
+==============================================
+
+Column {.tabset}
+---------------------------------
+
+### Network Analysis
+
+<h5> Network Analysis</h5>
+
+* <a title="Network Diagram" href="http://youtu.be/71twMV8IaCY" target="_blank">Net Work Diagrams ( Example 1)</a> Drawing a network diagram based on a precedence schedule.
+* <a title="Network Diagrams 2" href="http://youtu.be/fQHUo6CPKAg" target="_blank">Network Diagrams ( Example 2 ) </a> Drawing a network diagram based on a precedence schedule.
+
+
+* <a title="Determining the critical path" href="http://youtu.be/VcbBKap1R1w" target="_blank">Critical Path</a>  : how to determine the critical path of a network
+* <a title="Chinese Postman Problem" href="http://youtu.be/fewY945je4E" target="_blank">Chinese Postman Problem </a>
+
+* <a title="NWC Initial Allocation" href="http://youtu.be/zq_Gji4jqtM" target="_blank">Northwest Corner Initial Allocations</a>
+* <a title="LC Initial Allocation" href="http://youtu.be/8X-jB-SwSPY" target="_blank">Least Cost Initial Allocation</a>
+
+
+
+### Transportation 
+
+<h5> Transportation Models</5>
+
+*  <a title="North West Corner Method" href="https://www.youtube.com/embed/zq_Gji4jqtM" target="_blank">Northwest Corner Initial Allocations</a>
+*  <a title="LC Initial Allocation" href="https://www.youtube.com/embed/8X-jB-SwSPY" target="_blank"><br>Least Cost Initial Allocation</a>
+
+*  <a title="Vogel's Approximation Method" href="https://www.youtube.com/embed/V1T3WeYxNTg" target="_blank">Review of Integration of Absolute Value Functions</a>
+
+

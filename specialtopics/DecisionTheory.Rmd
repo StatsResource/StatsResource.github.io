@@ -1,0 +1,13 @@
+
+Decision Theory {data-navmenu="Special Topics"}
+=============================
+
+Column {.tabset}
+-----------------------------------
+
+### Bayesian Decision Theory 
+
+*  <a href ="https://www.youtube.com/embed/75E7fhhAVIc" >Bayes Test Part 1</a>
+*  <a href ="https://www.youtube.com/embed/1rHMjG1NECg" ><br> Bayes Test Part 2</a>
+*  <a href ="https://www.youtube.com/embed/V1T3WeYxNTg" >Review of Integration of Absolute Value Functions</a>
+

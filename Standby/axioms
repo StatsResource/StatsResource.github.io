@@ -1,0 +1,296 @@
+
+
+\section{Axioms of Probability}
+
+
+If there are $n$ possible outcomes to an experiment, and m ways in which event
+A can happen, then the probability of event A ( which we write as P(A)) is
+\[ P(A) = \frac{m}{n} \]
+
+
+The probability of the event A may be interpreted as the proportion of times
+that event A will occur if we repeat the random experiment an infinite number
+of times.\\ \bigskip
+
+
+\textbf{Rules}:\\
+\begin{itemize}
+\item[1] $0 \leq P(A) \leq 1 $: the probability of any event lies between 0 and 1
+inclusive.
+\item[2] $P(S) = 1$ : the probability of the sample space is always equal to 1.
+\item[3] $P(A^c) = 1-P(A)$ : how to compute the probability of the complement.
+\end{itemize}
+
+
+
+%--------------------------------------------------------%
+
+%%- \frametitle{Axioms of Probability}
+
+
+
+%%- \frametitle{AXIOMS OF PROBABILITY}
+A probability function P is defined on subsets
+of the sample space S to satisfy the following
+axioms:
+
+\begin{itemize}
+\item[1.] Non-Negative Probability:  $P(E) \geq 0.$
+
+\item[2.] Mutually-Exclusive Events: $P(E1 \cup  E2) = P(E1) + P(E2)$
+provided E1 and E2 are mutually exclusive.\\
+(i.e. $E1 \ cup E2$ is empty.)
+\item[3.] The Universal Set: $P(S) = 1$
+\end{itemize}
+
+
+%----------------------------------------------------------------%
+{
+%%- \frametitle{Properties of Probability}
+
+\textbf{Theorem 1: Complementary Events}\\
+For each $E \in \mathcal{S}:$
+\[P(E) = 1 - P(E) \]
+%Proof:
+%S = E [ E
+%Now, E and E are mutually exclusive.
+%i.e.
+%E \ E is empty.
+%Hence:
+%P(S) = P(E [ E) = P(E) + P(E)
+%(Axiom Also: 2)
+% P(S) = 1 (Axiom 3)
+% i.e. P(S) = P(E) + P(E)
+\[ \therefore 1 = P(E) + P(E)\]
+So:
+$P(E^c) = 1 - P(E)$
+
+}
+%--------------------------------------------------------------&
+{
+%%- \frametitle{Properties of Probability}
+
+\textbf{Theorem 2: The Impossible Event/The Empty Set } \\
+$P(\emptyset) = 0$ where $\emptyset$ is the empty set
+
+% Proof:= S [ ;
+% Now: S and $\emptyset$ are mutually exclusive.
+% i.e.
+% S \ $\emptyset$ is empty.
+% Hence:
+% P(S) = P(S [ $\emptyset$) = P(S) + P($\emptyset$)
+% (Axiom 2 )
+% Also: P(S) = 1
+% (Axiom 3)
+% i.e. 1 = 1 + P($\emptyset$)
+% i.e.P($\emptyset$) = 0.
+}
+%--------------------------------------------------------------&
+{
+%%- \frametitle{Properties of Probability}
+Properties of Probability
+Theorem 3:
+If E1 and E2 are subsets of S such that E1  E2, then
+% P(E1)  P(E2)
+%Proof:
+%E2 = E1 [ (E1 \ E2)
+%Now, since E1 and E1 \ E2 are mutually exclusive,
+%P(E2) = P(E1) + P(E1 \ E2)Axiom2
+% P(E1) since P(E1 \ E2)  0 from Axiom 1.
+
+
+\textbf{Theorem 4: Range of Probability}\\
+
+
+For each $E \in \mathcal{S}$
+\[ 0 \leq P(E) \leq 1  \]
+Proof:
+% Since,
+% ;  E \in \mathcal{S}
+% then from Theorem 3,
+% P(;)  P(E)  P(S)
+% 0  P(E)  1
+
+
+
+%%- \frametitle{Axioms of Probability}
+
+\textbf{Theorem 5: The Addition Law of Probability}\\
+If E1 and E2 are subsets of S then
+\[ P(E1 \cup E2) = P(E1) + P(E2) - P(E1 \cap E2)\]
+Proof:
+\[ E1 \cup E2 = E1 \cup (E2 \ cap E1) \]
+Now, since E1 and $E2 \cap E1$ are mutually exclusive,
+\[ P(E1 \cup E2) = P(E1) + P(E2 \cap E1) (1)\]
+\textit{  (Axiom 2 ) }
+
+Now E2 may be written as two mutually exclusive events as
+follows:
+\[ E2 = (E2 \cap E1) \cup (E2 \cap E1) \]
+So
+\[ P(E2) = P(E2 \cap  E1) + P(E2 \cap E1)\]
+(Axiom 2)\\
+Thus:
+\[ P(E2 \ E1) = P(E2) - P(E2 \cap E1) (2) \]
+Inserting (2) in (1), we get
+\[ P(E1 \cup E2) = P(E1) + P(E2) - P(E1 \cap  E2) \]
+
+
+}
+
+
+
+Using the multiplication rule, this can be expressed as
+\[ P(A) = P(A | B)\times P(B) + P(A | B^{c})\times P(B^{c}) \]
+
+\noindent \textbf{Law of Total Probability}
+From the first year intake example , check that
+\[ P(E)  = P(E \cap M) + P(E \cap F) \]
+with $ P(E) = 0.40$, $ P(E \cap M) = 0.18$ and  $ P(E \cap F) = 0.22$
+\[ 0.40  = 0.18 + 0.22 \]
+\textbf{Remark:}  $M$ and $F$ are complement events.
+
+
+
+\section{Probability Rules}
+\begin{itemize}
+
+\item The probability of an event which cannot occur is 0.
+
+\item The probability of any event which is not in the sample space is zero.
+
+\item The probability of an event which must occur is 1.
+
+\item The probability of the sample space is 1.
+\end{itemize}
+
+
+
+\section{Axioms of Probability}
+\begin{itemize}
+
+\item The probability of an event which cannot occur is 0.
+
+\item The probability of any event which is not in the sample space is zero.
+
+\item The probability of an event which must occur is 1.
+
+\item The probability of the sample space is 1.
+\end{itemize}
+\section{Axioms of Probability}
+
+%%- \textbf{Axioms of Probability}
+
+
+
+%%- \textbf{AXIOMS OF PROBABILITY}
+A probability function P is defined on subsets
+of the sample space S to satisfy the following
+axioms:
+
+\begin{itemize}
+\item[1.] Non-Negative Probability:  $P(E) \geq 0.$
+
+\item[2.] Mutually-Exclusive Events: $P(E1 \cup  E2) = P(E1) + P(E2)$
+provided E1 and E2 are mutually exclusive.\\
+(i.e. $E1 \ cup E2$ is empty.)
+\item[3.] The Universal Set: $P(S) = 1$
+\end{itemize}
+
+
+%----------------------------------------------------------------%
+{
+%%- \textbf{Properties of Probability}
+
+\textbf{Theorem 1: Complementary Events}\\
+For each $E \in \mathcal{S}:$
+\[P(E) = 1 - P(E) \]
+%Proof:
+%S = E [ E
+%Now, E and E are mutually exclusive.
+%i.e.
+%E \ E is empty.
+%Hence:
+%P(S) = P(E [ E) = P(E) + P(E)
+%(Axiom Also: 2)
+% P(S) = 1 (Axiom 3)
+% i.e. P(S) = P(E) + P(E)
+\[ \therefore 1 = P(E) + P(E)\]
+So:
+$P(E^c) = 1 - P(E)$
+
+}
+%--------------------------------------------------------------&
+{
+%%- \textbf{Properties of Probability}
+
+\textbf{Theorem 2: The Impossible Event/The Empty Set } \\
+$P(\emptyset) = 0$ where $\emptyset$ is the empty set
+
+% Proof:= S [ ;
+% Now: S and $\emptyset$ are mutually exclusive.
+% i.e.
+% S \ $\emptyset$ is empty.
+% Hence:
+% P(S) = P(S [ $\emptyset$) = P(S) + P($\emptyset$)
+% (Axiom 2 )
+% Also: P(S) = 1
+% (Axiom 3)
+% i.e. 1 = 1 + P($\emptyset$)
+% i.e.P($\emptyset$) = 0.
+}
+%--------------------------------------------------------------&
+{
+%%- \textbf{Properties of Probability}
+Properties of Probability
+Theorem 3:
+If E1 and E2 are subsets of S such that E1  E2, then
+% P(E1)  P(E2)
+%Proof:
+%E2 = E1 [ (E1 \ E2)
+%Now, since E1 and E1 \ E2 are mutually exclusive,
+%P(E2) = P(E1) + P(E1 \ E2)Axiom2
+% P(E1) since P(E1 \ E2)  0 from Axiom 1.
+
+
+\textbf{Theorem 4: Range of Probability}\\
+
+
+For each $E \in \mathcal{S}$
+\[ 0 \leq P(E) \leq 1  \]
+Proof:
+% Since,
+% ;  E \in \mathcal{S}
+% then from Theorem 3,
+% P(;)  P(E)  P(S)
+% 0  P(E)  1
+
+
+
+%%- \textbf{Axioms of Probability}
+
+\textbf{Theorem 5: The Addition Law of Probability}\\
+If E1 and E2 are subsets of S then
+\[ P(E1 \cup E2) = P(E1) + P(E2) - P(E1 \cap E2)\]
+Proof:
+\[ E1 \cup E2 = E1 \cup (E2 \ cap E1) \]
+Now, since E1 and $E2 \cap E1$ are mutually exclusive,
+\[ P(E1 \cup E2) = P(E1) + P(E2 \cap E1) (1)\]
+\textit{  (Axiom 2 ) }
+
+Now E2 may be written as two mutually exclusive events as
+follows:
+\[ E2 = (E2 \cap E1) \cup (E2 \cap E1) \]
+So
+\[ P(E2) = P(E2 \cap  E1) + P(E2 \cap E1)\]
+(Axiom 2)\\
+Thus:
+\[ P(E2 \ E1) = P(E2) - P(E2 \cap E1) (2) \]
+Inserting (2) in (1), we get
+\[ P(E1 \cup E2) = P(E1) + P(E2) - P(E1 \cap  E2) \]
+
+
+}
+
+
+\end{document}
