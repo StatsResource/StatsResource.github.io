@@ -1,9 +1,24 @@
-
-Mixed Distributions {data-navmenu="Advanced Topics"}
+Mixed Probability Distributions {data-navmenu="Advanced Topics"}
 =====================================
 
 Column {.tabset}
 -------------------------------------------------
 ### Mixed Distributions
 
+### Worked Examples
+
+<h5>Mixed Probability Distributions</h5>
+
+There are two continuous probability distributions:
+
+* A is an exponential distribution with mean $\LARGE \mu = 7$.
+* B is a distribution that is uniform on the interval from 0 to 8, and thereafter proportional
+to A.
+
+Show that the probability of a random variable that follows distribution B and lying
+between 0 and 8 is 8/15
+
+<h4> Solution</h4>
+
+<strong><a href="https://youtu.be/24PPecNK7NI">Click here for demonstrated solution</a></strong>
 <h5>Mixed Distributions</h5>

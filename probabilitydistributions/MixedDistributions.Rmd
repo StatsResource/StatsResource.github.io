@@ -3,6 +3,7 @@ Mixed Probability Distributions {data-navmenu="Advanced Topics"}
 
 Column {.tabset}
 -------------------------------------------------
+### Mixed Distributions
 
 ### Worked Examples
 
@@ -20,3 +21,4 @@ between 0 and 8 is 8/15
 <h4> Solution</h4>
 
 <strong><a href="https://youtu.be/24PPecNK7NI">Click here for demonstrated solution</a></strong>
+<h5>Mixed Distributions</h5>
