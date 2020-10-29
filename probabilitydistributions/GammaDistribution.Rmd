@@ -34,8 +34,8 @@ Consider the following measure of skewness for a unimodal distribution:
 
 \[ \LARGE S_{KP}  \;=\; \frac{ \mbox{mean} \;-\; \mbox{mode}}{ \mbox{ standard deviation} } \] 
 
-a. Determine the value of $\LARGE{S_{KP}}$  for a gamma distribution with parameters $\alpha  = 1.6$ and
-$\lambda  = 0.2$. 
+a. Determine the value of $\LARGE{S_{KP}}$ for a gamma distribution with parameters $\LARGE \alpha  = 1.6$ and
+$\LARGE \lambda  = 0.2$. 
 b. Comment on why $\LARGE{S_{KP}}$  is a suitable measure of skewness for distributions with one mode.
 
 <a href = "https://youtu.be/Ty2i1Mx9GQo">Solution</a>

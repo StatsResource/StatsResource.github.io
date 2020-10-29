@@ -1,0 +1,26 @@
+Censoring {data-navmenu="Survival Models"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Censoring in Survival Analysis
+
+
+<h5>Types of Censoring</h5>
+
+* [Left censoring] – a data point is below a certain value but it is unknown by how much.
+* [Interval censoring] – a data point is somewhere on an interval between two values.
+* [Right censoring] – a data point is above a certain value but it is unknown by how much.
+
+<h5> Type I and II Censoring</h5>
+
+* [Type I] censoring occurs if an experiment has a set number of subjects or items and stops the experiment at a predetermined time, at which point any subjects remaining are right-censored.
+* [Type II] censoring occurs if an experiment has a set number of subjects or items and stops the experiment when a predetermined number are observed to have failed; the remaining subjects are then right-censored.
+
+<h5>Survival Analysis : Censoring</h5>
+
+*  Random (or non-informative) censoring is when each subject has a censoring time that is statistically independent of their failure time. The observed value is the minimum of the censoring and failure times; subjects whose failure time is greater than their censoring time are right-censored.
+*  Interval censoring can occur when observing a value requires follow-ups or inspections. Left and right censoring are special cases of interval censoring, with the beginning of the interval at zero or the end at infinity, respectively.
+*  Estimation methods for using left-censored data vary, and not all methods of estimation may be applicable to, or the most reliable, for all data sets.

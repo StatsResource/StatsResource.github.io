@@ -1,0 +1,9 @@
+
+Mixed Distributions {data-navmenu="Advanced Topics"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+### Mixed Distributions
+
+<h5>Mixed Distributions</h5>

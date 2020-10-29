@@ -12,6 +12,18 @@ Column {.tabset}
 
 * <a href = "https://youtu.be/XnRT3cLoZ08/"> Poisson Approximation Of The Binomial Distribution </a>
 
+<h5>Poisson Approximation of the Binomial</h5>
+
+*  The Poisson distribution can sometimes be used to approximate the binomial distribution
+*  When the number of observations n is large, and the success probability p is small, the $\mbox{Bin}(n,p)$ distribution approaches the Poisson distribution 
+with the parameter given by $m = np$.
+*  This is useful since the computations involved in calculating binomial probabilities are greatly reduced.
+*  As a rule of thumb, n should be greater than 50 with p very small, such that $np$ should be less than 5.
+*  If the value of $p$ is very high, the definition of what constitutes a ``success" or ``failure" can be switched.
+
+
+
+
 
 ### Normal Approximations of the Binomial Distribution
 

@@ -1,0 +1,37 @@
+Cox Regression {data-navmenu="Cox Regression"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Cox's Proportional Hazard Model
+
+The proportional hazard model is the most general of the regression models because it is not based on any assumptions concerning the nature or shape of the underlying survival distribution. The model assumes that the underlying hazard rate (rather than survival time) is a function of the independent variables (covariates); no assumptions are made about the nature or shape of the hazard function. Thus, in a sense, Cox's regression model may be considered to be a nonparametric method. The model may be written as:
+
+\[\LARGE h{(t), (z1, z2, \ldots, zm)} = h0(t)exp(b_1z_1 + \ldots + b_mz_m)\]
+
+where h(t,...) denotes the resultant hazard, given the values of the m covariates for the respective case (z1, z2, ..., zm) and the respective survival time (t). The term $h_0(t)$ is called the baseline hazard; it is the hazard for the respective individual when all independent variable values are equal to zero. We can linearize this model by dividing both sides of the equation by $h_0(t)$ and then taking the natural logarithm of both sides:
+
+\[\LARGE \log[h{(t), (z...)}/h_0(t)] = b_1z_1 + ... + b_mz_m\]
+
+We now have a fairly "simple" linear model that can be readily estimated.
+
+### Assumptions. 
+
+While no assumptions are made about the shape of the underlying hazard function, the model equations shown above do imply two assumptions. First, they specify a multiplicative relationship between the underlying hazard function and the log-linear function of the covariates. This assumption is also called the proportionality assumption. In practical terms, it is assumed that, given two observations with different values for the independent variables, the ratio of the hazard functions for those two observations does not depend on time. The second assumption of course, is that there is a log-linear relationship between the independent variables and the underlying hazard function.
+
+### Cox's Proportional Hazard Model with Time-Dependent Covariates
+
+An assumption of the proportional hazard model is that the hazard function for an individual (i.e., observation in the analysis) depends on the values of the covariates and the value of the baseline hazard. Given two individuals with particular values for the covariates, the ratio of the estimated hazards over time will be constant -- hence the name of the method: the proportional hazard model. The validity of this assumption may often be questionable. For example, age is often included in studies of physical health. Suppose you studied survival after surgery. It is likely, that age is a more important predictor of risk immediately after surgery, than some time after the surgery (after initial recovery). In accelerated life testing one sometimes uses a stress covariate (e.g., amount of voltage) that is slowly increased over time until failure occurs (e.g., until the electrical insulation fails; \textit{see Lawless, 1982, page 393}). In this case, the impact of the covariate is clearly dependent on time. The user can specify arithmetic expressions to define covariates as functions of several variables and survival time.
+
+### Testing the Proportionality Assumption
+
+As indicated by the previous examples, there are many applications where it is likely that the proportionality assumption does not hold. In that case, one can explicitly define covariates as functions of time. 
+
+For example, the analysis of a data set presented by Pike (1966) consists of survival times for two groups of rats that had been exposed to a carcinogen (see also Lawless, 1982, page 393, for a similar example). Suppose that z is a grouping variable with codes 1 and 0 to denote whether or not the respective rat was exposed. One could then fit the proportional hazard model:
+
+\[h(t,z) = h0(t)exp{b1z + b2[zlog(t)-5.4]}\]
+
+Thus, in this model the conditional hazard at time t is a function of (1) the baseline hazard h0, (2) the covariate z, and (3) of z times the logarithm of time. Note that the constant 5.4 is used here for scaling purposes only: the mean of the logarithm of the survival times in this data set is equal to 5.4. In other words, the conditional hazard at each point in time is a function of the covariate and time; thus, the effect of the covariate on survival is dependent on time; hence the name time-dependent covariate. This model allows one to specifically test the proportionality assumption. If parameter b2 is statistically significant (e.g., if it is at least twice as large as its standard error), then one can conclude that, indeed, the effect of the covariate z on survival is dependent on time, and, therefore, that the proportionality assumption does not hold.
+

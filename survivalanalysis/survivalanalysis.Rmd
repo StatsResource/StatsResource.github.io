@@ -1,0 +1,130 @@
+Survival Models {data-navmenu="Survival Models"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Survival Analysis
+
+The ***survival function***, also known as a survivor function or reliability function, is a property of 
+any random variable that maps a set of events, usually associated with mortality or failure of 
+some system, onto time. 
+
+It captures the probability that the system will survive 
+beyond a specified time.
+
+### Reliability function
+
+* The term ***reliability function*** is common in engineering while the term survival function 
+is used in a broader range of applications, including human mortality. 
+* Another name for the survival function is the complementary cumulative distribution function.
+
+#### Definition
+
+Let $T$ be a continuous random variable with cumulative distribution function $F(t)$ on the interval $[0,\infty)$. 
+
+Its survival function or reliability function is:
+
+$$R(t) = P(T &gt; t)$$
+
+$$R(t) = \int_t^{\infty} f(u)\,du,.$$
+
+$$R(t) =  1-F(t).$$
+
+
+
+### Properties of the Survival Function
+
+* Every survival function $R(t)$ is monotonically decreasing, i.e. $R(u) \le R(t)$ for all $u &gt; t$.
+* The time, t = 0, represents some origin, typically the beginning of a study or the start of operation of some system. 
+* $R(0)$ is commonly unity but can be less to represent the probability that the system fails immediately upon operation.
+* The survivor function is right-continuous.
+
+
+
+
+### The Cox Proportional-Hazards Model
+
+The most common model used to determine the effects of covariates on survival
+
+$$ h_i(t)=h_0(t)exp(\beta_{1}x_{i1} + \beta_{2}x_{ik} + ... + \beta_{2}x_{ik} ) $$
+
+It is a semi-parametric model:
+
+The baseline hazard function is unspecified
+The effects of the covariates are multiplicative
+Doesn't make arbitrary assumptions about the shape/form of the baseline hazard function
+The Proportional Hazards Assumption
+
+Covariates multiply the hazard by some constant
+e.g. a drug may halve a subjects risk of death at any time \( t \)
+The effect is the same at any time point
+Violating the PH assumption can seriously invalidate your model!
+
+
+
+### The Survival Function (Survival curve)
+
+\[ S(t)=Pr(T>t) \]
+
+The Survival function (\( S \)) is the probability that the time of death (\( T \)) is greater than some specified time (\( t \))
+
+It is composed of:
+
+The underlying Hazard function (How the risk of death per unit time changes over time at baseline covariates)
+The effect parameters (How the hazard varies in response to the covariates)
+ plot of chunk unnamed-chunk-2
+
+
+
+### Hazard Probability 
+
+- In the medical world, doctors often want to understand which treatments help patients survive 
+longer – and which have no effect at all (or worse). In the business world, the equivalent 
+concern is when customers stop. 
+- This is particularly true of businesses that have a well-defined 
+beginning and end to the customer relationship – subscription-based relationships. These 
+relationships are found in a wide range of industries, such as insurance, communication, cable 
+televisions, newspaper/magazine subscription, banking, and electricity providers in competitive 
+markets. 
+- The basis of survival data mining is the hazard probability, the chance that someone who has 
+survived for a certain length of time (called the customer tenure) is going to stop, cancel, or 
+expire before the next unit of time. 
+- This definition assumes that time is discrete, and such 
+discrete time intervals – whether days, weeks, or months – often fits business needs. By 
+contrast, traditional survival analysis in statistics usually assumes that time is continuous.
+
+
+
+### Nelson-Aalen estimator of the cumulative hazard function
+
+The Nelson–Aalen estimator is a non-parametric estimator of the \textbf{cumulative hazard rate function} in case of censored data or incomplete data.
+
+
+It is used in survival theory, reliability engineering and life insurance to estimate the cumulative number of expected events. 
+
+
+An "event" can be the failure of a non-repairable component, the death of a human being, or any occurrence for which the experimental unit remains in the "failed" state (e.g., death) from the point at which it changed on. 
+
+### Formula 
+
+The Nelson-Aalen estimator is a non-parametric estimator of the cumulative hazard function and is given by:
+\[\tilde{H}(t)=\sum_{t_i\leq t}\frac{d_i}{n_i},\]
+with $d_i$ the number of events at $t_i$ and $n_i$ the total individuals at risk at $t_i$.( % H^(t)=∑ti≤tdini,
+where di is the number who failed out of ni at risk in interval ti.)
+
+----------------------------
+
+The curvature of the Nelson–Aalen estimator gives an idea of the hazard rate shape. A concave shape is an indicator for infant mortality while a convex shape indicates wear out mortality.
+It can be used for example when testing the homogeneity of Poisson processes.
+
+------------------------
+
+Because of its simple relationship with the survival function, $S(t)=e^{−H(t)}$ the cumulative hazard function can be used to estimate the survival function. 
+
+The estimator is calculated, then, by summing the proportion of those at risk who failed in each interval up to time t.
+
+
+
+

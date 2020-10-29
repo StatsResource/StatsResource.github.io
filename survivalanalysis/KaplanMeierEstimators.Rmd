@@ -1,0 +1,39 @@
+Kaplan-Meier Estimators {data-navmenu="Survival Models"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Kaplan-Meier survival estimate
+
+The Kaplan-Meier (KM) method is a non-parametric method used to estimate the survival probability from observed survival times (Kaplan and Meier, 1958).
+
+The survival probability at time titi, S(ti), is calculated as follow:
+
+$$ S(ti)=S(ti−1)(1−dini)$$
+
+
+Where,
+
+* S(ti−1) = the probability of being alive at ti−1
+* ni = the number of patients alive just before titi
+* di = the number of events at titi
+* t0 = 0, S(0)S(0) = 1
+
+The estimated probability (S(t)) is a step function that changes value only at the time of each event. It’s also possible to compute confidence intervals for the survival probability.
+
+The KM survival curve, a plot of the KM survival probability against time, provides a useful summary of the data that can be used to estimate measures such as median survival time.
+
+
+### Kaplan-Meier Product-Limit Estimator
+
+Rather than classifying the observed survival times into a life table, we can estimate the survival function directly from the continuous survival or failure times. Intuitively, imagine that we create a life table so that each time interval contains exactly one case. Multiplying out the survival probabilities across the "intervals" (i.e., for each single observation) we would get for the survival function:
+
+\[S(t) = jt= 1 [(n-j)/(n-j+1)]( j )\]
+
+In this equation, S(t) is the estimated survival function, n is the total number of cases, and denotes the multiplication (geometric sum) across all cases less than or equal to t; (j) is a constant that is either 1 if the j'th case is uncensored (complete), and 0 if it is censored. This estimate of the survival function is also called the product-limit estimator, and was first proposed by Kaplan and Meier (1958). An example plot of this function is shown below.
+
+
+
+The advantage of the Kaplan-Meier Product-Limit method over the life table method for analyzing survival and failure time data is that the resulting estimates do not depend on the grouping of the data (into a certain number of time intervals). Actually, the Product-Limit method and the life table method are identical if the intervals of the life table contain at most one observation.
