@@ -16,24 +16,28 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Survival Curves
-====================================================================
 
-Column {.tabset}
--------------------------------------------------
+```{r child = 'survivalanalysis/SurvivalAnalysis.Rmd'}
+```
 
-### Kaplan Meier Cruves
+```{r child = 'survivalanalysis/censoring.Rmd'}
+```
+
+```{r child = 'survivalanalysis/KaplanMeierEstimators.Rmd'}
+```
+
+```{r child = 'survivalanalysis/NelsonAalenEstimators.Rmd'}
+```
 
 
-Cox Regression
-====================================================================
+```{r child = 'survivalanalysis/coxmodels.Rmd'}
+```
 
-Column {.tabset}
--------------------------------------------------
 
-### Cox Regression
 
-<h5> Cox Regression </h5>
+
+
+
 
 
 

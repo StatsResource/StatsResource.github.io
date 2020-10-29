@@ -43,41 +43,39 @@ it is greater than \$1,000.
 * <a href="https://youtu.be/ivnbqNPv_WQ/">	Exponential Distribution - Worked Example	</a>	
 * <a href="https://youtu.be/HbKGfxMsX5U/">	Exponential Random Variables   - Distribution of the Minima	</a>	
 
-###  
-\section*{Exponential Distribution: Review Questions}
-\begin{enumerate}
-* 
+###  Review Questions
+
+<h3> Review Question 1</h3>
+
 An average of five calls per hour are received by a machine repair department. 
 Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes?
+Jobs are sent to a printer at an average of 5 jobs per hour. 
 
-*  Jobs are sent to a printer at an average of 5 jobs per hour. 
-\begin{enumerate}[(a)]
-	*  What is the expected time between jobs? 
-	*  What is the probability that the next job is sent within 6 minutes after the previous job?
-\end{enumerate}
+a. What is the expected time between jobs? 
+b. What is the probability that the next job is sent within 6 minutes after the previous job?
 
-*  
+---------------------------
+
+<h3> Review Question 2</h3>
+
 Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25. 
 
-\begin{enumerate}[(a)]
-    *  What is the mean duration between arrivals?
-	* 
-	Find the probability that the time between arrivals is greater than 5 minutes.
-	* ]
-	Find the probability that the time between arrivals will be less than 2 minute.
-\end{enumerate}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+a. What is the mean duration between arrivals?
+b. Find the probability that the time between arrivals is greater than 5 minutes.
+c. Find the probability that the time between arrivals will be less than 2 minute.
 
-*  Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a \textbf{waiting time}. Let $T$ be the symbol for the ``waiting times" variable. 
+---------------------------
 
+<h3> Review Question 3</h3>
 
+Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a ***waiting time***}. Let $\LARGE T$ be the symbol for the ``waiting times" variable. 
+<p>
 Suppose that a customer has just arrived.
-\begin{enumerate}[(a)] *  What is the expected waiting time between customer arrivals? 
-\subitem Compute $E(T)$
-*  What is the variance of waiting times? \subitem Compute $\mbox{Var}(T)$.
-	*  What is the probability that the next customer will arrive within the next fifteen minutes?
-	*  What is the probability that no customers arrive in the next half hour?
-\end{enumerate}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+a. What is the expected waiting time between customer arrivals? 
+b. Compute $E(T)$
+c. What is the variance of waiting times? \subitem Compute $\mbox{Var}(T)$.
+d. What is the probability that the next customer will arrive within the next fifteen minutes?
+e. What is the probability that no customers arrive in the next half hour?
+

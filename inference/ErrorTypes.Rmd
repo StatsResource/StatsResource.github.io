@@ -1,56 +1,44 @@
-﻿
-%---------------------------------------------------------------------------%
+Types of Error {data-navmenu="Hypothesis Testing"}
+=====================================
 
-\frametitle{Types of Error}
+Column {.tabset}
+-------------------------------------------------
 
-*  The probability of a Type I error is designated by the Greek letter alpha ( $\alpha$) and is called the Type I error rate.
-*  The probability of a Type II error (the Type II error rate) is designated by the Greek letter beta ( $\beta$ ).
-*  A Type II error is only an error in the sense that an opportunity to reject the null hypothesis correctly was lost.
-*  It is not an error in the sense that an incorrect conclusion was drawn since no conclusion is drawn when the null hypothesis is not rejected.
-
-
-%---------------------------------------------------------------------------------------------%
-
-
-
-
-
-\frametitle{Type I and Type II Error}
-
-* 
-* 
-*  A type II error would occur if it was concluded that the two drugs produced the same effect, i.e. there is no difference between the two drugs on average, when in fact they produced different ones.
-*  A type II error is frequently due to sample sizes being too small.
-
-
-%---------------------------------------------------------------------------%
-
-\frametitle{Types of Error}
-
-* 
-A Type I error, on the other hand, is an error in every sense of the word. A conclusion is drawn that the null hypothesis is false when, in fact, it is true. Therefore, Type I errors are generally considered more serious than Type II errors.
- * 
-The probability of a Type I error ( ) is called the significance level and is set by the experimenter. There is a trade-off between Type I and Type II errors. The more an experimenter protects himself or herself against Type I errors by choosing a low level, the greater the chance of a Type II error.
-* 
-Requiring very strong evidence to reject the null hypothesis makes it very unlikely that a true null hypothesis will be rejected. However, it increases the chance that a false null hypothesis will not be rejected, thus lowering the likelihood of Type II error.
-* 
-The Type I error rate is almost always set at .05 or at .01, the latter being more conservative since it requires stronger evidence to reject the null hypothesis at the .01 level then at the .05 level.
-
-
-
-%---------------------------------------------------------------------------%
-
-\frametitle{Type I and II errors}
+### Type I and II errors
 There are two kinds of errors that can be made in hypothesis testing:
 
 * [(1)] a true null hypothesis can be incorrectly rejected
 * [(2)] a false null hypothesis can fail to be rejected.
 
 
-The former error is called a Type I error and the latter error is called a Type II error. \\
+The former error is called a Type I error and the latter error is called a Type II error. 
+<p>
 
 The probability of Type I error is always equal to the level of significance that is used as the standard for rejecting
 the null hypothesis; it is designated by the lowercase Greek $\alpha$ (alpha).
+
+<h5> Types of Error</h5>
+
+*  The probability of a Type I error is designated by the Greek letter alpha ( $\LARGE \alpha$) and is called the Type I error rate.
+*  The probability of a Type II error (the Type II error rate) is designated by the Greek letter beta ( $\LARGE \beta$ ).
+*  A Type II error is only an error in the sense that an opportunity to reject the null hypothesis correctly was lost.
+*  It is not an error in the sense that an incorrect conclusion was drawn since no conclusion is drawn when the null hypothesis is not rejected.
+
+*  A type II error would occur if it was concluded that the two drugs produced the same effect, i.e. there is no difference between the two drugs on average, when in fact they produced different ones.
+*  A type II error is frequently due to sample sizes being too small.
+
+<p>
+* A Type I error, on the other hand, is an error in every sense of the word. A conclusion is drawn that the null hypothesis is false when, in fact, it is true. Therefore, Type I errors are generally considered more serious than Type II errors.
+<p> 
+* The probability of a Type I error ( $\LARGE \alpha$ ) is called the significance level and is set by the experimenter. There is a trade-off between Type I and Type II errors. The more an experimenter protects themselves against Type I errors by choosing a low level, the greater the chance of a Type II error.
+<p>
+* Requiring very strong evidence to reject the null hypothesis makes it very unlikely that a true null hypothesis will be rejected. However, it increases the chance that a false null hypothesis will not be rejected, thus lowering the likelihood of Type II error.
+<p>
+* The Type I error rate is almost always set at .05 or at .01, the latter being more conservative since it requires stronger evidence to reject the null hypothesis at the .01 level then at the .05 level.
+
+
+
+
 
 
 

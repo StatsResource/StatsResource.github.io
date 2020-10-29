@@ -2561,8 +2561,8 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
-<div id="introduction" class="section level1" data-navmenu="Menu">
-<h1>Introduction</h1>
+<div id="main-menu" class="section level1" data-navmenu="Menu">
+<h1>Main Menu</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
 <div id="statsresource" class="section level3">
@@ -2570,46 +2570,235 @@ window.FlexDashboardComponents.push({
 <h5>
 Contents
 </h5>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Exploratory Data Analysis</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="probability.html">Probability and Random Variables</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* <a href="probabilitydistributions.html">Probability Distributions</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="probability.html">Inference Procedures</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Modelling Data</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="timeseries.html">Time Series Analysis</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* <a href="survivalanalysis.html">Survival Analysis</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="gametheory.html">Game Theory</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Special Topics</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="survival-models" class="section level1" data-navmenu="Survival Models">
+<h1>Survival Models</h1>
+<div id="column-1" class="section level2 tabset">
+<h2>Column</h2>
+<div id="survival-analysis" class="section level3">
+<h3>Survival Analysis</h3>
+<p>The <strong><em>survival function</em></strong>, also known as a survivor function or reliability function, is a property of any random variable that maps a set of events, usually associated with mortality or failure of some system, onto time.</p>
+It captures the probability that the system will survive beyond a specified time.
+<p>
+<div id="reliability-function" class="section level4">
+<h4>Reliability function</h4>
 <ul>
-<li>Exploratory Data Analysis</li>
-<li><a href="probability.html">Probability and Probability Distributions</a></li>
-<li><a href="probability.html">Random Variables</a></li>
-<li>Inference Procedures</li>
-<li>Modelling Data</li>
-<li><a href="timeseries.html">Time Series Analysis</a></li>
-<li><a href="survivalanalysis.html">Survival Analysis</a></li>
-<li>Special Topics</li>
-<li><a href="gametheory.html">Game Theory</a></li>
+<li>The term <strong><em>reliability function</em></strong> is common in engineering while the term survival function is used in a broader range of applications, including human mortality.</li>
+<li>Another name for the survival function is the complementary cumulative distribution function.</li>
+</ul>
+</div>
+<div id="definition" class="section level4">
+<h4>Definition</h4>
+<p>Let <span class="math inline">\(T\)</span> be a continuous random variable with cumulative distribution function <span class="math inline">\(F(t)\)</span> on the interval <span class="math inline">\([0,\infty)\)</span>.</p>
+<p>Its survival function or reliability function is:</p>
+<p><span class="math display">\[R(t) = P(T &gt; t)\]</span></p>
+<p><span class="math display">\[R(t) = \int_t^{\infty} f(u)\,du,.\]</span></p>
+<p><span class="math display">\[R(t) =  1-F(t).\]</span></p>
+<h5>
+Properties of the Survival Function
+</h5>
+<ul>
+<li>Every survival function <span class="math inline">\(R(t)\)</span> is monotonically decreasing, i.e. <span class="math inline">\(R(u) \le R(t)\)</span> for all <span class="math inline">\(u &amp;gt; t\)</span>.</li>
+<li>The time, t = 0, represents some origin, typically the beginning of a study or the start of operation of some system.</li>
+<li><span class="math inline">\(R(0)\)</span> is commonly unity but can be less to represent the probability that the system fails immediately upon operation.</li>
+<li>The survivor function is right-continuous.</li>
+</ul>
+</div>
+</div>
+<div id="the-cox-proportional-hazards-model" class="section level3">
+<h3>The Cox Proportional-Hazards Model</h3>
+<p>The most common model used to determine the effects of covariates on survival</p>
+<p><span class="math display">\[ h_i(t)=h_0(t)exp(\beta_{1}x_{i1} + \beta_{2}x_{ik} + ... + \beta_{2}x_{ik} ) \]</span></p>
+<p>It is a semi-parametric model:</p>
+<p>The baseline hazard function is unspecified The effects of the covariates are multiplicative Doesn’t make arbitrary assumptions about the shape/form of the baseline hazard function The Proportional Hazards Assumption</p>
+<p>Covariates multiply the hazard by some constant e.g. a drug may halve a subjects risk of death at any time ( t ) The effect is the same at any time point Violating the PH assumption can seriously invalidate your model!</p>
+</div>
+<div id="the-survival-function-survival-curve" class="section level3">
+<h3>The Survival Function (Survival curve)</h3>
+<p><span class="math display">\[ S(t)=Pr(T&gt;t) \]</span></p>
+<p>The Survival function (( S )) is the probability that the time of death (( T )) is greater than some specified time (( t ))</p>
+<p>It is composed of:</p>
+<p>The underlying Hazard function (How the risk of death per unit time changes over time at baseline covariates) The effect parameters (How the hazard varies in response to the covariates)</p>
+</div>
+<div id="hazard-probability" class="section level3">
+<h3>Hazard Probability</h3>
+<ul>
+<li>In the medical world, doctors often want to understand which treatments help patients survive longer and which have no effect at all (or worse). In the business world, the equivalent concern is when customers stop.</li>
+<li>This is particularly true of businesses that have a well-defined beginning and end to the customer relationship subscription-based relationships. These relationships are found in a wide range of industries, such as insurance, communication, cable televisions, newspaper/magazine subscription, banking, and electricity providers in competitive markets.</li>
+<li>The basis of survival data mining is the hazard probability, the chance that someone who has survived for a certain length of time (called the customer tenure) is going to stop, cancel, or expire before the next unit of time.</li>
+<li>This definition assumes that time is discrete, and such discrete time intervals whether days, weeks, or months often fits business needs. By contrast, traditional survival analysis in statistics usually assumes that time is continuous.</li>
 </ul>
 </div>
 </div>
 </div>
-<div id="survival-curves" class="section level1">
-<h1>Survival Curves</h1>
-<div id="column-1" class="section level2 tabset">
-<h2>Column</h2>
-<div id="kaplan-meier-cruves" class="section level3">
-<h3>Kaplan Meier Cruves</h3>
-</div>
-</div>
-</div>
-<div id="cox-regression" class="section level1">
-<h1>Cox Regression</h1>
+<div id="censoring" class="section level1" data-navmenu="Survival Models">
+<h1>Censoring</h1>
 <div id="column-2" class="section level2 tabset">
 <h2>Column</h2>
-<div id="cox-regression-1" class="section level3">
-<h3>Cox Regression</h3>
+<div id="censoring-in-survival-analysis" class="section level3">
+<h3>Censoring in Survival Analysis</h3>
 <h5>
-Cox Regression
+Types of Censoring
 </h5>
+<ul>
+<li>[Left censoring] a data point is below a certain value but it is unknown by how much.</li>
+<li>[Interval censoring] a data point is somewhere on an interval between two values.</li>
+<li>[Right censoring] a data point is above a certain value but it is unknown by how much.</li>
+</ul>
+<h5>
+Type I and II Censoring
+</h5>
+<ul>
+<li>[Type I] censoring occurs if an experiment has a set number of subjects or items and stops the experiment at a predetermined time, at which point any subjects remaining are right-censored.</li>
+<li>[Type II] censoring occurs if an experiment has a set number of subjects or items and stops the experiment when a predetermined number are observed to have failed; the remaining subjects are then right-censored.</li>
+</ul>
+<h5>
+Survival Analysis : Censoring
+</h5>
+<ul>
+<li>Random (or non-informative) censoring is when each subject has a censoring time that is statistically independent of their failure time. The observed value is the minimum of the censoring and failure times; subjects whose failure time is greater than their censoring time are right-censored.</li>
+<li>Interval censoring can occur when observing a value requires follow-ups or inspections. Left and right censoring are special cases of interval censoring, with the beginning of the interval at zero or the end at infinity, respectively.</li>
+<li>Estimation methods for using left-censored data vary, and not all methods of estimation may be applicable to, or the most reliable, for all data sets.</li>
+</ul>
 </div>
 </div>
 </div>
-<div id="survival-analysis" class="section level1" data-navmenu="Modelling Data">
-<h1>Survival Analysis</h1>
+<div id="kaplan-meier-estimators" class="section level1" data-navmenu="Survival Models">
+<h1>Kaplan-Meier Estimators</h1>
 <div id="column-3" class="section level2 tabset">
 <h2>Column</h2>
-<div id="survival-analysis-1" class="section level3">
+<div id="kaplan-meier-survival-estimate" class="section level3">
+<h3>Kaplan-Meier survival estimate</h3>
+<p>The Kaplan-Meier (KM) method is a non-parametric method used to estimate the survival probability from observed survival times (Kaplan and Meier, 1958).</p>
+<p>The survival probability at time titi, S(ti), is calculated as follow:</p>
+<p><span class="math display">\[ S(ti)=S(tiâ1)(1âdini)\]</span></p>
+<p>Where,</p>
+<ul>
+<li>S(tiâ1) = the probability of being alive at tiâ1</li>
+<li>ni = the number of patients alive just before titi</li>
+<li>di = the number of events at titi</li>
+<li>t0 = 0, S(0)S(0) = 1</li>
+</ul>
+<p>The estimated probability (S(t)) is a step function that changes value only at the time of each event. Itâs also possible to compute confidence intervals for the survival probability.</p>
+<p>The KM survival curve, a plot of the KM survival probability against time, provides a useful summary of the data that can be used to estimate measures such as median survival time.</p>
+</div>
+<div id="kaplan-meier-product-limit-estimator" class="section level3">
+<h3>Kaplan-Meier Product-Limit Estimator</h3>
+<p>Rather than classifying the observed survival times into a life table, we can estimate the survival function directly from the continuous survival or failure times. Intuitively, imagine that we create a life table so that each time interval contains exactly one case. Multiplying out the survival probabilities across the “intervals” (i.e., for each single observation) we would get for the survival function:</p>
+<p><span class="math display">\[S(t) = jt= 1 [(n-j)/(n-j+1)]( j )\]</span></p>
+<p>In this equation, S(t) is the estimated survival function, n is the total number of cases, and denotes the multiplication (geometric sum) across all cases less than or equal to t; (j) is a constant that is either 1 if the j’th case is uncensored (complete), and 0 if it is censored. This estimate of the survival function is also called the product-limit estimator, and was first proposed by Kaplan and Meier (1958). An example plot of this function is shown below.</p>
+<p>The advantage of the Kaplan-Meier Product-Limit method over the life table method for analyzing survival and failure time data is that the resulting estimates do not depend on the grouping of the data (into a certain number of time intervals). Actually, the Product-Limit method and the life table method are identical if the intervals of the life table contain at most one observation.</p>
+</div>
+</div>
+</div>
+<div id="nelson-aalen-estimators" class="section level1" data-navmenu="Survival Models">
+<h1>Nelson-Aalen Estimators</h1>
+<div id="column-4" class="section level2 tabset">
+<h2>Column</h2>
+<div id="nelson-aalen-estimator-of-the-cumulative-hazard-function" class="section level3">
+<h3>Nelson-Aalen estimator of the cumulative hazard function</h3>
+<p>The Nelsonâ“Aalen estimator is a non-parametric estimator of the  in case of censored data or incomplete data.</p>
+<p>It is used in survival theory, reliability engineering and life insurance to estimate the cumulative number of expected events.</p>
+<p>An “event” can be the failure of a non-repairable component, the death of a human being, or any occurrence for which the experimental unit remains in the “failed” state (e.g., death) from the point at which it changed on.</p>
+</div>
+<div id="formula" class="section level3">
+<h3>Formula</h3>
+<p>The Nelson-Aalen estimator is a non-parametric estimator of the cumulative hazard function and is given by: <span class="math display">\[\tilde{H}(t)=\sum_{t_i\leq t}\frac{d_i}{n_i},\]</span> with <span class="math inline">\(d_i\)</span> the number of events at <span class="math inline">\(t_i\)</span> and <span class="math inline">\(n_i\)</span> the total individuals at risk at <span class="math inline">\(t_i\)</span>.( % H^(t)=âtiâ¤tdini, where di is the number who failed out of ni at risk in interval ti.)</p>
+<hr />
+<p>The curvature of the Nelson-Aalen estimator gives an idea of the hazard rate shape. A concave shape is an indicator for infant mortality while a convex shape indicates wear out mortality. It can be used for example when testing the homogeneity of Poisson processes.</p>
+<hr />
+<p>Because of its simple relationship with the survival function, <span class="math inline">\(S(t)=e^{âH(t)}\)</span> the cumulative hazard function can be used to estimate the survival function.</p>
+<p>The estimator is calculated, then, by summing the proportion of those at risk who failed in each interval up to time t.</p>
+</div>
+</div>
+</div>
+<div id="cox-regression" class="section level1" data-navmenu="Cox Regression">
+<h1>Cox Regression</h1>
+<div id="column-5" class="section level2 tabset">
+<h2>Column</h2>
+<div id="coxs-proportional-hazard-model" class="section level3">
+<h3>Cox’s Proportional Hazard Model</h3>
+<p>The proportional hazard model is the most general of the regression models because it is not based on any assumptions concerning the nature or shape of the underlying survival distribution. The model assumes that the underlying hazard rate (rather than survival time) is a function of the independent variables (covariates); no assumptions are made about the nature or shape of the hazard function. Thus, in a sense, Cox’s regression model may be considered to be a nonparametric method. The model may be written as:</p>
+<p><span class="math display">\[\LARGE h{(t), (z1, z2, \ldots, zm)} = h0(t)exp(b_1z_1 + \ldots + b_mz_m)\]</span></p>
+<p>where h(t,…) denotes the resultant hazard, given the values of the m covariates for the respective case (z1, z2, …, zm) and the respective survival time (t). The term <span class="math inline">\(h_0(t)\)</span> is called the baseline hazard; it is the hazard for the respective individual when all independent variable values are equal to zero. We can linearize this model by dividing both sides of the equation by <span class="math inline">\(h_0(t)\)</span> and then taking the natural logarithm of both sides:</p>
+<p><span class="math display">\[\LARGE \log[h{(t), (z...)}/h_0(t)] = b_1z_1 + ... + b_mz_m\]</span></p>
+<p>We now have a fairly “simple” linear model that can be readily estimated.</p>
+</div>
+<div id="assumptions." class="section level3">
+<h3>Assumptions.</h3>
+<p>While no assumptions are made about the shape of the underlying hazard function, the model equations shown above do imply two assumptions. First, they specify a multiplicative relationship between the underlying hazard function and the log-linear function of the covariates. This assumption is also called the proportionality assumption.</p>
+<p>In practical terms, it is assumed that, given two observations with different values for the independent variables, the ratio of the hazard functions for those two observations does not depend on time. The second assumption of course, is that there is a log-linear relationship between the independent variables and the underlying hazard function.</p>
+<h4>
+Time-Dependent Covariates
+</h4>
+<p>An assumption of the proportional hazard model is that the hazard function for an individual (i.e., observation in the analysis) depends on the values of the covariates and the value of the baseline hazard. Given two individuals with particular values for the covariates, the ratio of the estimated hazards over time will be constant – hence the name of the method: the proportional hazard model. The validity of this assumption may often be questionable.</p>
+<p>For example, age is often included in studies of physical health. Suppose you studied survival after surgery. It is likely, that age is a more important predictor of risk immediately after surgery, than some time after the surgery (after initial recovery). In accelerated life testing one sometimes uses a stress covariate (e.g., amount of voltage) that is slowly increased over time until failure occurs (e.g., until the electrical insulation fails; ). In this case, the impact of the covariate is clearly dependent on time. The user can specify arithmetic expressions to define covariates as functions of several variables and survival time.</p>
+</div>
+<div id="testing-the-proportionality-assumption" class="section level3">
+<h3>Testing the Proportionality Assumption</h3>
+<p>As indicated by the previous examples, there are many applications where it is likely that the proportionality assumption does not hold. In that case, one can explicitly define covariates as functions of time.</p>
+<p>For example, the analysis of a data set presented by Pike (1966) consists of survival times for two groups of rats that had been exposed to a carcinogen (see also Lawless, 1982, page 393, for a similar example). Suppose that z is a grouping variable with codes 1 and 0 to denote whether or not the respective rat was exposed. One could then fit the proportional hazard model:</p>
+<p><span class="math display">\[h(t,z) = h0(t)exp{b1z + b2[zlog(t)-5.4]}\]</span></p>
+<p>Thus, in this model the conditional hazard at time t is a function of (1) the baseline hazard h0, (2) the covariate z, and (3) of z times the logarithm of time. Note that the constant 5.4 is used here for scaling purposes only: the mean of the logarithm of the survival times in this data set is equal to 5.4. In other words, the conditional hazard at each point in time is a function of the covariate and time; thus, the effect of the covariate on survival is dependent on time; hence the name time-dependent covariate. This model allows one to specifically test the proportionality assumption. If parameter b2 is statistically significant (e.g., if it is at least twice as large as its standard error), then one can conclude that, indeed, the effect of the covariate z on survival is dependent on time, and, therefore, that the proportionality assumption does not hold.</p>
+</div>
+</div>
+</div>
+<div id="survival-analysis-1" class="section level1" data-navmenu="Modelling Data">
+<h1>Survival Analysis</h1>
+<div id="column-6" class="section level2 tabset">
+<h2>Column</h2>
+<div id="survival-analysis-2" class="section level3">
 <h3>Survival Analysis</h3>
 </div>
 <div id="kaplan-meier-estimates-of-the-survival-function" class="section level3">

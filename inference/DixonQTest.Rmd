@@ -7,39 +7,36 @@ Column {.tabset}
 
 ### Dixon Q-Test for Outliers
 
-\section*{Dixon Q-Test for Outliers}
+<h5>Dixon Q-Test for Outliers</h5>
 
 Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set.
 \\ \textit{Use a 5\% significance level}.
 
 
-{
-\Huge
 
-\[19, 36,33,  25, 30, 28, 31,36, 29, 37\]
-\end{framed}
-}
+
+\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]
 
 
 
 *  Arrange the data set into ascending order.
 
 \[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]
-\end{framed}
+
 *  Here the potential outlier is the lowest value, i.e. 19
 
 *  We can formally state the null and alternative hypothesis as follows
 
 
-\begin{description}
+<h5> Hypotheses</h5>
+
 * [H$_0$] There are no outliers present in the data.
 * [H$_1$] There is one outlier present \\ (i.e. the lowest value 19)
-\end{description}
 
 
 *  The test statistic for this procedure is as follows:
 
-\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]
+\[ \LARGE Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]
 
 *  The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is 
 \[ \mbox{Gap} = 25 - 19 = 6\]
@@ -48,15 +45,14 @@ Use the Dixon Q-Test to determine whether or not there is an outlier value prese
 
 *  \[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} = \frac{6}{18} =0.333 \]
 
-\newpage
+
 *  Before we look at the critical value, we confirm the size of the data set is $n=10$.
 
 *   The critical value can be determined from the following table. \\ $\bullet$ The column to chose is the significance level (here 5\% or 0.05 ).
 \\ $\bullet$ The row to use is $n$, the number of items in the data set.
-\bigskip
 
-{
-\huge
+-----------
+
 \begin{tabular}{|c|c|c|c|}
 \hline
 $n$	&	$\alpha=0.10$	&	$\alpha=0.05$	&	$\alpha=0.01$	\\ \hline
@@ -76,9 +72,7 @@ $n$	&	$\alpha=0.10$	&	$\alpha=0.05$	&	$\alpha=0.01$	\\ \hline
 
 \end{tabular} 
 
-}
-
-
+-
 
 *  \textbf{Rule of Thumb}
 
@@ -89,23 +83,5 @@ $n$	&	$\alpha=0.10$	&	$\alpha=0.05$	&	$\alpha=0.01$	\\ \hline
 
 *  Otherwise we fail to reject the null hypothesis
 
-
-\end{framed}
-\end{enumerate}
-
-\newpage
-{
-\huge
-\[ \mbox{Expected Value}  = \frac{\mbox{Column Total} \times \mbox{Row Total}}{\mbox{Overall Total}} \]
-}
-
-\newpage
-
-
-
-*  If the Test Statistic is greater than the Critical value, reject the null hypothesis
-\[ \chi^2_{TS} > \chi^2_{CV}\]
-
-*  Otherwise we fail to reject the null hypothesis
 
 

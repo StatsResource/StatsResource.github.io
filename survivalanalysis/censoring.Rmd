@@ -10,9 +10,9 @@ Column {.tabset}
 
 <h5>Types of Censoring</h5>
 
-* [Left censoring] – a data point is below a certain value but it is unknown by how much.
-* [Interval censoring] – a data point is somewhere on an interval between two values.
-* [Right censoring] – a data point is above a certain value but it is unknown by how much.
+* [Left censoring]  a data point is below a certain value but it is unknown by how much.
+* [Interval censoring]  a data point is somewhere on an interval between two values.
+* [Right censoring]  a data point is above a certain value but it is unknown by how much.
 
 <h5> Type I and II Censoring</h5>
 
