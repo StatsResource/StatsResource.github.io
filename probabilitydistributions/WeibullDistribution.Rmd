@@ -1,4 +1,4 @@
-Weibull Distributions {data-navmenu="Probability Distributions"}
+Weibull Distributions {data-navmenu="Continuous Distributions"}
 =====================================
 
 Column {.tabset}

@@ -1,0 +1,12 @@
+
+Geometric Distribution {data-navmenu="Discrete Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Geometric Distribution
+
+* <a href = "https://youtu.be/pIAZmkRvKPo/">Geometric Distribution with Chi Square Test for Goodness of Fit</a>
+
+

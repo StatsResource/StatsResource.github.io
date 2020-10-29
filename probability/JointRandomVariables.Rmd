@@ -1,0 +1,43 @@
+Joint Random Variables {data-navmenu="Random Variables"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+
+### Worked Example 1
+
+<h5> Joint Distribution of Random Variables  - Health Science Example </h5>
+<strong><a href="https://youtu.be/M6iKFS8FaLg">Solution</a></strong>
+<br><br>
+Consider the random variable $\LARGE{X}$ taking the value $\LARGE{X = 1}$ if a randomly selected person
+is a smoker, or $\LARGE{X = 0}$ otherwise. <br><br>
+
+* The random variable $\LARGE{Y}$ describes the amount of
+physical exercise per week for this randomly selected person. <p>
+
+* It can take the values 0
+(less than one hour of exercise per week), 1 (one to two hours) and 2 (more than two
+hours of exercise per week).
+
+<p>
+The joint distribution of $\LARGE{X}$ and $\LARGE{Y}$ is given by the joint probability function in the
+following table.
+
+||| Y= 0 | Y= 1 | Y= 2|
+|------:|------:|:--------:|:--------:|:--------:|
+||**X = 0** | 0.2 | 0.3 | 0.25|
+||**X = 1** | 0.1 | 0.1 | 0.05|
+||     |   |    |    |
+
+
+<br><br>
+The random variable $\LARGE{R = (3 - Y)^2(X + 1) }$ is used as a risk index for a particular heart disease.
+<br><br>
+<b> Exercises</b>
+
+a. Calculate the probability that a randomly selected person does more than two
+hours of exercise per week. 
+b. Decide whether $\LARGE{X}$ and $\LARGE{Y}$ are independent or not and justify your answer. 
+c. Derive the probability function of $\LARGE{R}$. 
+d. Calculate the expectation of $\LARGE{R}$.

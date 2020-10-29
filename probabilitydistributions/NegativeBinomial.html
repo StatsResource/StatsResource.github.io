@@ -180,55 +180,51 @@ summary {
 </div>
 
 
-<div id="gamma-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Gamma Distribution</h1>
+<div id="negative-binomial-distributions" class="section level1" data-navmenu="Discrete Distributions">
+<h1>Negative Binomial Distributions</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="the-gamma-distribution" class="section level3">
-<h3>The Gamma Distribution</h3>
-<h5>
-The Gamma Distribution
-</h5>
+<div id="specification" class="section level3">
+<h3>Specification</h3>
+<p>Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is p and of failure is (<span class="math inline">\(1 - p\)</span>).</p>
+</div>
+<div id="type-2-specficiation" class="section level3">
+<h3>Type 2 Specficiation</h3>
+<p>This approach models the number of failures (denoted <span class="math inline">\(k\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\(r\)</span>) occurs. Then the random number of failures we have seen, <span class="math inline">\(\LARGE{X}\)</span>, will have the negative binomial (or Pascal) distribution: <span class="math display">\[ {\displaystyle X\sim \operatorname {NB} (r,p)}\]</span></p>
+<h4>
+Probability Mass Function
+</h4>
+<p>The probability mass function of the negative binomial distribution is</p>
+<span class="math display">\[{\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]</span> where <span class="math inline">\(k\)</span> is the number of failures, <span class="math inline">\(r\)</span> is the number of successes, and <span class="math inline">\(p\)</span> is the probability of success.
+
+<p>
+</div>
+<div id="type-2-specficiation-1" class="section level3">
+<h3>Type 2 Specficiation</h3>
+<p>This approach models the number of trial (denoted <span class="math inline">\(n\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\(r\)</span>) occurs. (N.B. <span class="math inline">\(n = k + r\)</span>.)</p>
+<h4>
+Probability Mass Function
+</h4>
+<p>Let <span class="math inline">\(\LARGE{X}\)</span> denote the number of trials until the <span class="math inline">\(r\)</span>th success. The probability mass function of the negative binomial distribution is</p>
+<p><span class="math display">\[{\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]</span> where <span class="math inline">\(n\)</span> is the number of trial, <span class="math inline">\(r\)</span> is the number of successes, and <span class="math inline">\(p\)</span> is the probability of success.</p>
 <ul>
-<li><a href="https://youtu.be/YcT5aDjZ3sc/"> Gamma Distribution - Electricity Consumption Example </a><br />
-</li>
-<li><a href="https://youtu.be/dh8gpsM7HpM/"> Gamma Random Variables - Normal Approximation </a></li>
+<li>Mean <span class="math inline">\({\displaystyle {\frac {r}{p}}}\)</span></li>
+<li>Variance <span class="math inline">\(\LARGE {\frac {r(1-p)}{p^{2}}}\)</span></li>
 </ul>
 </div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
 <h5>
-Worked Example
+Negative Binomial Distribution: Worked Example
 </h5>
-In a certain Metropolitan city the daily consumption of electric power (in Million Kilowatt Hour (MKH)) may be regarded as a random variable having Gamma distribution with parameter (3,2).
-<p>
-<p>If the power plant has a daily capacity of 12 MKH, what is the probability that this power supply will be inadequate on any given day. <br></p>
-<p><a href="https://youtu.be/YcT5aDjZ3sc">Solution</a></p>
-<p><hline></p>
-</div>
-<div id="skewness" class="section level3">
-<h3>Skewness</h3>
-<h5>
-Mode and Skewness: Worked Example
-</h5>
-<p>Consider the following measure of skewness for a unimodal distribution:</p>
-<p><span class="math display">\[ \LARGE S_{KP}  \;=\; \frac{ \mbox{mean} \;-\; \mbox{mode}}{ \mbox{ standard deviation} } \]</span></p>
+<p>Suppose that in a group of insurance policies (which are independent as regards occurrence of claims), 20% of the policies have incurred claims during the last year. An auditor is examining the policies in the group one by one in random order until two policies with claims are found.</p>
 <ol style="list-style-type: lower-alpha">
-<li>Determine the value of <span class="math inline">\(\LARGE{S_{KP}}\)</span> for a gamma distribution with parameters <span class="math inline">\(\alpha = 1.6\)</span> and <span class="math inline">\(\lambda = 0.2\)</span>.</li>
-<li>Comment on why <span class="math inline">\(\LARGE{S_{KP}}\)</span> is a suitable measure of skewness for distributions with one mode.</li>
+<li><p>Determine the probability that exactly five policies have to be examined until two policies with claims are found.</p></li>
+<li><p>Find the expected number of policies that have to be examined until two policies with claims are found.</p></li>
 </ol>
-<p><a href="https://youtu.be/Ty2i1Mx9GQo">Solution</a></p>
-</div>
-<div id="moment-generating-functions" class="section level3">
-<h3>Moment Generating Functions</h3>
-<h5>
-Cumulant Generating Functions
-</h5>
-Let <span class="math inline">\(\LARGE {X}\)</span> be a random variable having a gamma distribution with mean <span class="math inline">\(\LARGE {\alpha\lambda}\)</span> and variance <span class="math inline">\(\LARGE{\alpha\lambda^2}\)</span> and let the <span class="math inline">\(\LARGE{i}\)</span>-th cumulant of the distribution of <span class="math inline">\(\LARGE {X}\)</span> be denoted <span class="math inline">\(\LARGE{\kappa_i}\)</span>.
-<p>
-Assuming the moment generating function of <span class="math inline">\(\LARGE{X}\)</span>, determine the values of <span class="math inline">\(\LARGE{\kappa_2}\)</span>, <span class="math inline">\(\LARGE{\kappa_3}\)</span> and <span class="math inline">\(\LARGE{\kappa_4}\)</span>.
-<p>
-<p><strong> <a href="https://youtu.be/zgR496RKmMA">Solution</a> </strong></p>
+<ul>
+<li><a href="https://youtu.be/P1-FtKFbrtU/">Solution</a></li>
+</ul>
 </div>
 </div>
 </div>

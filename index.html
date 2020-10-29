@@ -2561,8 +2561,8 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
+<div id="main-menu" class="section level1" data-navmenu="Menu">
+<h1>Main Menu</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
 <div id="statsresource" class="section level3">
@@ -2570,18 +2570,55 @@ window.FlexDashboardComponents.push({
 <h5>
 Contents
 </h5>
-<ul>
-<li>Exploratory Data Analysis</li>
-<li><a href="probability.html">Probability and Probability Distributions</a></li>
-<li><a href="probability.html">Random Variables</a></li>
-<li>Inference Procedures</li>
-<li>Modelling Data</li>
-<li><a href="experimentaldesign.html">Experimental Design</a></li>
-<li><a href="timeseries.html">Time Series</a></li>
-<li><a href="susrvivalanalysis.html">Survival Analysis</a></li>
-<li><a href="gametheory.html">Game Theory</a></li>
-<li>Special Topics</li>
-</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Exploratory Data Analysis</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="probability.html">Probability and Random Variables</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* <a href="probabilitydistributions.html">Probability Distributions</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="probability.html">Inference Procedures</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Modelling Data</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="timeseries.html">Time Series Analysis</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* <a href="survivalanalysis.html">Survival Analysis</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="gametheory.html">Game Theory</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Special Topics</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -2740,8 +2777,13 @@ videos
 <li>Coefficient of Variation â <a title="Coefficient of Variation" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Coefficient%20of%20Variation.pdf" target="_blank">Here</a></li>
 <li>Percentiles, Quartiles and the IQR â <a title="Percentiles and Quartiles" href="https://dl.dropboxusercontent.github.io/u/6044937/IntroStats/Part%20B%20-%20Percentiles%20and%20IQR.pdf" target="_blank">Here</a></li>
 </ul>
-<p>Â </p>
 </div>
+</div>
+</div>
+<div id="measures-of-centrality-2" class="section level1" data-navmenu="Exploratory Data Analysis">
+<h1>Measures of Centrality</h1>
+<div id="column-4" class="section level2 tabset">
+<h2>Column</h2>
 <div id="medians" class="section level3">
 <h3>Medians</h3>
 <h3>
@@ -2778,7 +2820,7 @@ Even Sized Data Set
 </div>
 <div id="sampling-distribution" class="section level1" data-navmenu="Inference Procedures">
 <h1>Sampling Distribution</h1>
-<div id="column-4" class="section level2 tabset">
+<div id="column-5" class="section level2 tabset">
 <h2>Column</h2>
 <div id="sampling-distribution-1" class="section level3">
 <h3>Sampling Distribution</h3>
@@ -2791,172 +2833,13 @@ Even Sized Data Set
 </li>
 <li><p><a href="https://youtu.be/DSyusepVP3k/"> Sampling Distributions - Worked Examples </a></p></li>
 </ul>
-</div>
-</div>
-</div>
-<div id="small-samples-and-the-t--distribution" class="section level1" data-navmenu="Inference Procedures">
-<h1>Small Samples and the t- distribution</h1>
-<div id="column-5" class="section level2 tabset">
-<h2>Column</h2>
-<div id="the-student-t--distribution" class="section level3">
-<h3>The Student t- distribution</h3>
-<ul>
-<li>The <span class="math inline">\(t\)</span> distribution is the appropriate basis for determining the standardized test statistic when the sampling distribution of the mean is normally distributed but <span class="math inline">\(s\)</span> is not known.</li>
-<li><p>The sampling distribution can be assumed to be normal either because the population is normal or because the sample is large enough to invoke the central limit theorem.</p></li>
-<li>The <span class="math inline">\(t\)</span> distribution is required when the sample is small (<span class="math inline">\(n &lt; 30\)</span>). For larger samples, normal approximation can be used.</li>
-<li><p>For the critical value approach, the procedure is identical to that described of the normal distribution, except for the use of <span class="math inline">\(t\)</span> instead of z as the test statistic.</p></li>
-</ul>
-</div>
-<div id="quantiles" class="section level3">
-<h3>Quantiles</h3>
-<p>The quantile function is the inverse of the cumulative distribution function. The p-quantile is the value with the property that there is probability p of getting a value less than or equal to it. The median is by definition the 50% quantile.</p>
-<p>Theoretical quantiles are commonly used for the calculation of confidence intervals and for power calculations in connection with designing and dimensioning experiments.</p>
-</div>
-</div>
-</div>
-<div id="inference-procedures-for-proportions" class="section level1" data-navmenu="Inference Procedures">
-<h1>Inference Procedures for Proportions</h1>
-<div id="column-6" class="section level2 tabset">
-<h2>Column</h2>
-<div id="hypothesis-testing" class="section level3">
-<h3>Hypothesis Testing</h3>
-<h5>
-Hypothesis Testing For Proportions
-</h5>
-<ul>
-<li><a href="https://youtu.be/fzIRjiSoW2o/">Hypothesis Testing For Proportions</a></li>
-<li><a href="https://youtu.be/d97sSFMXSLQ/">Two Sample Proportion Hypothesis Test</a></li>
-</ul>
-</div>
-<div id="confidence-intervals" class="section level3">
-<h3>Confidence Intervals</h3>
-<ul>
-<li><a href="https://youtu.be/tz3Kyp7yUSQ/"> Confidence Interval for Single Sample Proportion </a><br />
-</li>
-<li><a href="https://youtu.be/ZTK1R7tylh8/"> Confidence Interval of Sample Variance </a><br />
-</li>
-<li><a href="https://youtu.be/oj9oo6aIVG4/"> Confidence Intervals for Proportions </a><br />
-</li>
-<li><a href="https://youtu.be/fzIRjiSoW2o/"> Hypothesis Testing For Proportions </a><br />
-</li>
-<li><a href="https://youtu.be/d97sSFMXSLQ/"> Two Sample Proportion Hypothesis Test </a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="inference-procedures-for-small-samples" class="section level1" data-navmenu="Inference Procedures">
-<h1>Inference Procedures for Small Samples</h1>
-<div id="column-7" class="section level2 tabset">
-<h2>Column</h2>
-<ul>
-<li><a href="https://youtu.be/5DY3j8nw5sg/"> Working With Small Samples </a></li>
-</ul>
-</div>
-</div>
-<div id="sample-size-estimation" class="section level1" data-navmenu="Inference Procedures">
-<h1>Sample Size Estimation</h1>
-<div id="column-8" class="section level2 tabset">
-<h2>Column</h2>
-<div id="sample-size-estimation-1" class="section level3">
-<h3>Sample Size Estimation</h3>
-<h5>
-Sample Size Estimation For Proportions Worked Example
-</h5>
-<ul>
-<li><a href="https://youtu.be/ayErcU5xUQI/">Sample Size Estimation For Proportions Worked Example</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="testing-model-assumptions" class="section level1" data-navmenu="Inference Procedures">
-<h1>Testing Model Assumptions</h1>
-<div id="column-9" class="section level2 tabset">
-<h2>Column</h2>
-<div id="testing-procedures" class="section level3">
-<h3>Testing Procedures</h3>
-<h5>
-Testing Procedures
-</h5>
-<ul>
-<li><a href="https://youtu.be/R5CI_v66kag"> Exploratory Data Analysis with Minitab Graphical Summaries </a>.<br />
-</li>
-<li><a href="https://youtu.be/R5CI_v66kag"> Normal Probability (QQ) plots </a>.</li>
-<li><a href="https://youtu.be/wXrvg03NSjw"> Anderson Darling Test </a>.</li>
-<li><a href="https://www.youtube.com/watch?v=vo9DssNQA4E"> The Shapiro-Wilk Test </a>.</li>
-</ul>
-</div>
-<div id="the-dixon-q-test" class="section level3">
-<h3>The Dixon Q test</h3>
-<h5>
-The Dixon Q test
-</h5>
-<p>The Dixon Q test is used for identification and rejection of outliers. This assumes normal distribution and per Robert Dean and Wilfrid Dixon, and others, this test should be used sparingly and never more than once in a data set. To apply a Q test for bad data, arrange the data in order of increasing values and calculate Q as defined:</p>
-<p><span class="math display">\[ {\displaystyle Q={\frac {\text{gap}}{\text{range}}}} \]</span></p>
-<p>Where gap is the absolute difference between the outlier in question and the closest number to it. If Q &gt; Qtable, where Qtable is a reference value corresponding to the sample size and confidence level, then reject the questionable point. Note that only one point may be rejected from a data set using a Q test.</p>
-<h5>
-Videos
-</h5>
-<ul>
-<li><a href="https://youtu.be/CS_Qgx-IX-8">The Dixon Q Test </a></li>
-<li><a href="https://youtu.be/oz1SO-96ByQ">The Dixon Q Test - Worked Example </a></li>
-</ul>
-</div>
-<div id="the-grubbs-outlier-test" class="section level3">
-<h3>The Grubb’s Outlier Test</h3>
-<h5>
-The Grubb’s Outlier Test
-</h5>
-<p>Statisticians have devised several ways to detect outliers. Grubbs’ test is particularly easy to follow. This method is also called the ESD method (extreme studentized deviate).</p>
-<p>The first step is to quantify how far the outlier is from the others. Calculate the ratio Z as the difference between the outlier and the mean divided by the SD. If Z is large, the value is far from the others. Note that you calculate the mean and SD from all values, including the outlier.</p>
-<p>Since 5% of the values in a Gaussian population are more than 1.96 standard deviations from the mean, your first thought might be to conclude that the outlier comes from a different population if Z is greater than 1.96. This approach only works if you know the population mean and SD from other data. Although this is rarely the case in experimental science, it is often the case in quality control. You know the overall mean and SD from historical data, and want to know whether the latest value matches the others. This is the basis for quality control charts.</p>
-<p>When analyzing experimental data, you don’t know the SD of the population. Instead, you calculate the SD from the data. The presence of an outlier increases the calculated SD. Since the presence of an outlier increases both the numerator (difference between the value and the mean) and denominator (SD of all values), Z does not get very large. In fact, no matter how the data are distributed, Z can not get larger than, where N is the number of values. For example, if N=3, Z cannot be larger than 1.155 for any set of values.</p>
-<p>Grubbs and others have tabulated critical values for Z which are tabulated below. The critical value increases with sample size, as expected.</p>
-<p>If your calculated value of Z is greater than the critical value in the table, then the P value is less than 0.05. This means that there is less than a <span class="math inline">\(5\%\)</span> chance that you’d encounter an outlier so far from the others (in either direction) by chance alone, if all the data were really sampled from a single Gaussian distribution. Note that the method only works for testing the most extreme value in the sample (if in doubt, calculate Z for all values, but only calculate a P value for Grubbs’ test from the largest value of Z.</p>
-<p>Once you’ve identified an outlier, you may choose to exclude that value from your analyses. Or you may choose to keep the outlier, but use robust analysis techniques that do not assume that data are sampled from Gaussian populations.</p>
-<p>If you decide to remove the outlier, you then may be tempted to run Grubbs’ test again to see if there is a second outlier in your data. If you do this , you cannot use the same table.</p>
-<p>.</p>
-<h5>
-Videos
-</h5>
-</div>
-<div id="the-andersonâdarling-test" class="section level3">
-<h3>The Andersonâ“Darling test</h3>
-<h5>
-The Andersonâ“Darling test
-</h5>
-<p>The Andersonâ“Darling test is a statistical test of whether there is evidence that a given sample of data did not arise from a given probability distribution. In its basic form, the test assumes that there are no parameters to be estimated in the distribution being tested, in which case the test and its set of critical values is distribution-free. However, the test is most often used in contexts where a family of distributions is being tested, in which case the parameters of that family need to be estimated and account must be taken of this in adjusting either the test-statistic or its critical values. When applied to testing if a normal distribution adequately describes a set of data, it is one of the most powerful statistical tools for detecting most departures from normality.</p>
-</div>
-</div>
-</div>
-<div id="non-parametric-tests" class="section level1" data-navmenu="Inference Procedures">
-<h1>Non-parametric Tests</h1>
-<div id="column-10" class="section level2 tabset">
-<h2>Column</h2>
-<div id="introduction-1" class="section level3">
-<h3>Introduction</h3>
-<h3>
-Non-parametric Statistics: Terminology
-</h3>
-<p>An experiment conducted under controlled conditions, using factor-levels intended to estimate specified factors and their interactions. A designed experiment may be contrasted with the analysis of happenstance, historical or casual data.</p>
-<p>A designed experiment presumes that the process being studied or the simulation being performed is stable and that the important factors in the process have been recognized. While an experiment may be performed on an unstable process, the results may not be directly useful because of large experimental error. All the important factors must be included; otherwise, the factors cannot completely describe the process.</p>
-</div>
-<div id="non-parametric-tests-1" class="section level3">
-<h3>Non-parametric Tests</h3>
-<ul>
-<li><p><a href="https://youtu.be/jdpHIFyX-6g/">The Sign Test : Hearing Test Example (Non Parametric Hypothesis Testing)</a></p></li>
-<li><p><a href="https://youtu.be/d51CcSfU4fQ/"> Wilcoxon Signed Rank Test - Aural Memory Tests Example (Non Parametric Tests)</a></p></li>
-<li><p><a href="https://youtu.be/3j9iXHVnK3k/"> Wilcoxon Signed Rank Test (Non-Parametric Hypothesis Tests) </a></p></li>
-<li><p><a href="https://youtu.be/b7DzkB4Pa3Y/">Wilcoxon Rank Sum Test (Non-parametrics Tests)</a></p></li>
-</ul>
-</div>
-<div id="statistical-tables" class="section level3">
-<h3>Statistical Tables</h3>
+<p>```</p>
 </div>
 </div>
 </div>
 <div id="tables-for-inference-procedures" class="section level1" data-navmenu="Inference Procedures">
 <h1>Tables for Inference Procedures</h1>
-<div id="column-11" class="section level2 tabset">
+<div id="column-6" class="section level2 tabset">
 <h2>Column</h2>
 <div id="dixon-q-test" class="section level3">
 <h3>Dixon Q Test</h3>
@@ -3064,7 +2947,7 @@ Critical Values for Dixon Q Test
 </div>
 <div id="linear-models" class="section level1" data-navmenu="Modelling Data">
 <h1>Linear Models</h1>
-<div id="column-12" class="section level2 tabset">
+<div id="column-7" class="section level2 tabset">
 <h2>Column</h2>
 <div id="multiple-regression" class="section level3">
 <h3>Multiple regression</h3>
@@ -3082,7 +2965,7 @@ Critical Values for Dixon Q Test
 </div>
 <div id="bivariate-data" class="section level1" data-navmenu="Modelling Data">
 <h1>Bivariate Data</h1>
-<div id="column-13" class="section level2 tabset">
+<div id="column-8" class="section level2 tabset">
 <h2>Column</h2>
 <div id="pearson-correlation" class="section level3">
 <h3>Pearson Correlation</h3>
@@ -3104,7 +2987,7 @@ Spearman Rank correlation
 <li><a href="https://youtu.be/q-W39HC8F6M/">Spearman Rank correlation (no tied ranks)</a></li>
 </ul>
 </div>
-<div id="hypothesis-testing-1" class="section level3">
+<div id="hypothesis-testing" class="section level3">
 <h3>Hypothesis Testing</h3>
 <h5>
 Correlation Coefficient - Hypothesis Testing
@@ -3129,7 +3012,7 @@ Correlation Coefficient - Hypothesis Testing
 </div>
 <div id="model-selection" class="section level1" data-navmenu="Modelling Data">
 <h1>Model Selection</h1>
-<div id="column-14" class="section level2 tabset">
+<div id="column-9" class="section level2 tabset">
 <h2>Column</h2>
 <div id="model-selection-1" class="section level3">
 <h3>Model Selection</h3>
@@ -3157,7 +3040,7 @@ Polynomial Regression
 </div>
 <div id="residual-analysis" class="section level1" data-navmenu="Modelling Data">
 <h1>Residual Analysis</h1>
-<div id="column-15" class="section level2 tabset">
+<div id="column-10" class="section level2 tabset">
 <h2>Column</h2>
 <div id="residual-analysis-1" class="section level3">
 <h3>Residual Analysis</h3>
@@ -3175,7 +3058,7 @@ Analysis of Residuals of Linear Models
 </div>
 <div id="chi-square-testing" class="section level1" data-navmenu="Modelling Data">
 <h1>Chi Square Testing</h1>
-<div id="column-16" class="section level2">
+<div id="column-11" class="section level2">
 <h2>Column</h2>
 <div id="chi-square-testing-for-goodness-of-fit" class="section level3">
 <h3>Chi Square Testing for Goodness of Fit</h3>
@@ -3219,27 +3102,9 @@ Chi Square Test
 </div>
 </div>
 </div>
-<div id="survival-analysis" class="section level1" data-navmenu="Modelling Data">
-<h1>Survival Analysis</h1>
-<div id="column-17" class="section level2 tabset">
-<h2>Column</h2>
-<div id="survival-analysis-1" class="section level3">
-<h3>Survival Analysis</h3>
-</div>
-<div id="kaplan-meier-estimates-of-the-survival-function" class="section level3">
-<h3>Kaplan Meier Estimates of the Survival Function</h3>
-<ul>
-<li><a href="https://youtu.be/4fOcxafPHow"> Kaplan Meier Estimates of the Survival Function </a></li>
-</ul>
-</div>
-<div id="cox-proportional-hazard-models" class="section level3">
-<h3>Cox Proportional Hazard Models</h3>
-</div>
-</div>
-</div>
 <div id="random-number-generation" class="section level1" data-navmenu="Special Topics">
 <h1>Random Number Generation</h1>
-<div id="column-18" class="section level2 tabset">
+<div id="column-12" class="section level2 tabset">
 <h2>Column</h2>
 <div id="random-number-generation-1" class="section level3">
 <h3>Random Number Generation</h3>
@@ -3258,7 +3123,7 @@ Random Number Simulation
 </div>
 <div id="statistical-process-control" class="section level1" data-navmenu="Special Topics">
 <h1>Statistical Process Control</h1>
-<div id="column-19" class="section level2 tabset">
+<div id="column-13" class="section level2 tabset">
 <h2>column</h2>
 <div id="statistical-process-control-1" class="section level3">
 <h3>Statistical Process Control</h3>
@@ -3351,7 +3216,7 @@ Summary
 </div>
 <div id="decision-theory" class="section level1" data-navmenu="Special Topics">
 <h1>Decision Theory</h1>
-<div id="column-20" class="section level2 tabset">
+<div id="column-14" class="section level2 tabset">
 <h2>Column</h2>
 <div id="bayesian-decision-theory" class="section level3">
 <h3>Bayesian Decision Theory</h3>
@@ -3363,7 +3228,7 @@ Summary
 <p>ï»¿ Network Analysis {data-navmenu=“Special Topics”} ==============================================</p>
 </div>
 </div>
-<div id="column-21" class="section level2 tabset">
+<div id="column-15" class="section level2 tabset">
 <h2>Column</h2>
 <div id="network-analysis" class="section level3">
 <h3>Network Analysis</h3>
@@ -3392,7 +3257,7 @@ Network Analysis
 </div>
 <div id="unsorted" class="section level1" data-navmenu="Special Topics">
 <h1>Unsorted</h1>
-<div id="column-22" class="section level2">
+<div id="column-16" class="section level2">
 <h2>Column</h2>
 <ul>
 <li><a href="https://youtu.be/Qs4lOegQNbA/"> One-Way ANOVA - Calculating the Least Significant Difference </a><br />

@@ -1,6 +1,0 @@
-Joint Random Variables {data-navmenu="Probability Distributions"}
-====================================
-Column {.tabset}
--------------------------------
-
-### Joint Probability Distributions

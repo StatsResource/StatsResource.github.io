@@ -1,4 +1,4 @@
-Introduction {data-navmenu="Menu"}
+Main Menu {data-navmenu="Menu"}
 ====================================================================
 
 Column {.tabset}
@@ -10,11 +10,12 @@ Column {.tabset}
 | |   |   |
 |-----------:|:---------- |:------------------:|
 ||* Exploratory Data Analysis||
-||* <a href = "probability.html">Probability and Probability Distributions</a>||
-||* <a href = "probability.html">Random Variables</a>||
+||* <a href = "probability.html">Probability and Random Variables</a>||
+||* <a href = "probabilitydistributions.html">Probability Distributions</a>||
 ||* <a href = "probability.html">Inference Procedures</a>||
 ||* Modelling Data||
 ||* <a href = "timeseries.html">Time Series Analysis</a>||
 ||* <a href = "survivalanalysis.html">Survival Analysis</a>||
-||* Special Topics||
 ||* <a href = "gametheory.html">Game Theory</a>||
+||* Special Topics||
+

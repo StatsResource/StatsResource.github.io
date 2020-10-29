@@ -1,4 +1,4 @@
-Moment Generating Functions {data-navmenu="Probability"}
+Moment Generating Functions {data-navmenu="Random Variables"}
 ====================================
 
 Column {.tabset}
@@ -8,9 +8,15 @@ Column {.tabset}
 
 ### Moment Generating Functions
 
+<h5>Moment Generating Functions</h5>
 
 * <a href="https://youtu.be/_x3tv15tHgE/">	Cumulant Generating Functions	</a>	
 * <a href="https://youtu.be/MC_fQpdmOsU/">	Moment Generating Functions	</a>	
 * <a href="https://youtu.be/Qx8DRYUq5hA/">	Moments of Discrete Random Variable (Short Definitions)	</a>	
+
+
+
+### MGFs for Discrete Distributions
+
 * <a href="https://youtu.be/3HvDczHuj4Y/">	Binomial Distribution - Probability and Moment Generating Functions	</a>	
 

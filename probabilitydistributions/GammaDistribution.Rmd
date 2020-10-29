@@ -1,4 +1,4 @@
-Gamma Distribution {data-navmenu="Probability Distributions"}
+Gamma Distribution {data-navmenu="Continuous Distributions"}
 =====================================
 
 Column {.tabset}
@@ -12,6 +12,46 @@ Column {.tabset}
 * <a href="https://youtu.be/YcT5aDjZ3sc/">	Gamma Distribution - Electricity Consumption Example	</a>	
 * <a href="https://youtu.be/dh8gpsM7HpM/">	Gamma Random Variables - Normal Approximation	</a>	
 
+### Worked Examples
+
+<h5>Worked Example</h5>
+In a certain Metropolitan city the daily consumption of electric power (in Million Kilowatt Hour (MKH)) may be regarded as a random variable having Gamma
+distribution with parameter (3,2). 
+<p>
+If the power plant has a daily capacity of 12 MKH, what is the probability that this power supply will be inadequate on any given day.
+<br>
+
+<a href = "https://youtu.be/YcT5aDjZ3sc">Solution</a>
+
+<hline>
+
+
 ### Skewness
 
-### Mode
+<h5> Mode and Skewness: Worked Example</h5>
+
+Consider the following measure of skewness for a unimodal distribution:
+
+\[ \LARGE S_{KP}  \;=\; \frac{ \mbox{mean} \;-\; \mbox{mode}}{ \mbox{ standard deviation} } \] 
+
+a. Determine the value of $\LARGE{S_{KP}}$  for a gamma distribution with parameters $\alpha  = 1.6$ and
+$\lambda  = 0.2$. 
+b. Comment on why $\LARGE{S_{KP}}$  is a suitable measure of skewness for distributions with one mode.
+
+<a href = "https://youtu.be/Ty2i1Mx9GQo">Solution</a>
+
+
+
+### Moment Generating Functions
+
+<h5> Cumulant Generating Functions </h5>
+
+Let $\LARGE {X}$ be a random variable having a gamma distribution with mean $\LARGE {\alpha\lambda}$  and variance $\LARGE{\alpha\lambda^2}$  and let the $\LARGE{i}$-th cumulant of the distribution of $\LARGE {X}$ be denoted $\LARGE{\kappa_i}$.
+<p>
+Assuming the moment generating function of $\LARGE{X}$, determine the values of $\LARGE{\kappa_2}$, $\LARGE{\kappa_3}$ and $\LARGE{\kappa_4}$.
+<p>
+<strong>
+<a href = "https://youtu.be/zgR496RKmMA">Solution</a>
+</strong>
+
+ 

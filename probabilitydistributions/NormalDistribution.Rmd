@@ -1,4 +1,4 @@
-Normal Distribution {data-navmenu="Probability Distributions"}
+Normal Distribution {data-navmenu="Continuous Distributions"}
 ===========================================================
 
 Column {.tabset}

@@ -17,33 +17,20 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'introductorystatistics/Probability.Rmd'}
 ```
 
+```{r child = 'Probability/ProbabilityWorkedExamples.Rmd'}
+```
 
 ```{r child = 'introductorystatistics/countingproblems.Rmd'}
 ```
 
-
 ```{r child = 'probability/RandomVariables.Rmd'}
 ```
 
-
-
-
-
-```{r child = 'probability/DiscreteDistributions.Rmd'}
+```{r child = 'probability/JointRandomVariables.Rmd'}
 ```
 
-```{r child = 'probability/NormalDistribution.Rmd'}
+```{r child = 'probability/ContinuousRandomVariables.Rmd'}
 ```
 
-```{r child = 'probability/ContinuousDistributions.Rmd'}
-```
-
-
-
-
-```{r child = 'probabilitydistributions/CompoundDistributions.Rmd'}
-```
-
- 	  	
 ```{r child = 'randomvariables/MomentGeneratingFunctions.Rmd'}
 ```

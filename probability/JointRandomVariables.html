@@ -180,55 +180,58 @@ summary {
 </div>
 
 
-<div id="gamma-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Gamma Distribution</h1>
+<div id="joint-random-variables" class="section level1" data-navmenu="Random Variables">
+<h1>Joint Random Variables</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="the-gamma-distribution" class="section level3">
-<h3>The Gamma Distribution</h3>
+<div id="worked-example-1" class="section level3">
+<h3>Worked Example 1</h3>
 <h5>
-The Gamma Distribution
+Joint Distribution of Random Variables - Health Science Example
 </h5>
+<p><strong><a href="https://youtu.be/M6iKFS8FaLg">Solution</a></strong> <br><br> Consider the random variable <span class="math inline">\(\LARGE{X}\)</span> taking the value <span class="math inline">\(\LARGE{X = 1}\)</span> if a randomly selected person is a smoker, or <span class="math inline">\(\LARGE{X = 0}\)</span> otherwise. <br><br></p>
 <ul>
-<li><a href="https://youtu.be/YcT5aDjZ3sc/"> Gamma Distribution - Electricity Consumption Example </a><br />
-</li>
-<li><a href="https://youtu.be/dh8gpsM7HpM/"> Gamma Random Variables - Normal Approximation </a></li>
+<li>The random variable <span class="math inline">\(\LARGE{Y}\)</span> describes the amount of physical exercise per week for this randomly selected person.
+<p></li>
+<li>It can take the values 0 (less than one hour of exercise per week), 1 (one to two hours) and 2 (more than two hours of exercise per week).
+<p>
+The joint distribution of <span class="math inline">\(\LARGE{X}\)</span> and <span class="math inline">\(\LARGE{Y}\)</span> is given by the joint probability function in the following table.</li>
 </ul>
-</div>
-<div id="worked-examples" class="section level3">
-<h3>Worked Examples</h3>
-<h5>
-Worked Example
-</h5>
-In a certain Metropolitan city the daily consumption of electric power (in Million Kilowatt Hour (MKH)) may be regarded as a random variable having Gamma distribution with parameter (3,2).
-<p>
-<p>If the power plant has a daily capacity of 12 MKH, what is the probability that this power supply will be inadequate on any given day. <br></p>
-<p><a href="https://youtu.be/YcT5aDjZ3sc">Solution</a></p>
-<p><hline></p>
-</div>
-<div id="skewness" class="section level3">
-<h3>Skewness</h3>
-<h5>
-Mode and Skewness: Worked Example
-</h5>
-<p>Consider the following measure of skewness for a unimodal distribution:</p>
-<p><span class="math display">\[ \LARGE S_{KP}  \;=\; \frac{ \mbox{mean} \;-\; \mbox{mode}}{ \mbox{ standard deviation} } \]</span></p>
-<ol style="list-style-type: lower-alpha">
-<li>Determine the value of <span class="math inline">\(\LARGE{S_{KP}}\)</span> for a gamma distribution with parameters <span class="math inline">\(\alpha = 1.6\)</span> and <span class="math inline">\(\lambda = 0.2\)</span>.</li>
-<li>Comment on why <span class="math inline">\(\LARGE{S_{KP}}\)</span> is a suitable measure of skewness for distributions with one mode.</li>
-</ol>
-<p><a href="https://youtu.be/Ty2i1Mx9GQo">Solution</a></p>
-</div>
-<div id="moment-generating-functions" class="section level3">
-<h3>Moment Generating Functions</h3>
-<h5>
-Cumulant Generating Functions
-</h5>
-Let <span class="math inline">\(\LARGE {X}\)</span> be a random variable having a gamma distribution with mean <span class="math inline">\(\LARGE {\alpha\lambda}\)</span> and variance <span class="math inline">\(\LARGE{\alpha\lambda^2}\)</span> and let the <span class="math inline">\(\LARGE{i}\)</span>-th cumulant of the distribution of <span class="math inline">\(\LARGE {X}\)</span> be denoted <span class="math inline">\(\LARGE{\kappa_i}\)</span>.
-<p>
-Assuming the moment generating function of <span class="math inline">\(\LARGE{X}\)</span>, determine the values of <span class="math inline">\(\LARGE{\kappa_2}\)</span>, <span class="math inline">\(\LARGE{\kappa_3}\)</span> and <span class="math inline">\(\LARGE{\kappa_4}\)</span>.
-<p>
-<p><strong> <a href="https://youtu.be/zgR496RKmMA">Solution</a> </strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="right"></th>
+<th align="right"></th>
+<th align="center">Y= 0</th>
+<th align="center">Y= 1</th>
+<th align="center">Y= 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"></td>
+<td align="right"><strong>X = 0</strong></td>
+<td align="center">0.2</td>
+<td align="center">0.3</td>
+<td align="center">0.25</td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="right"><strong>X = 1</strong></td>
+<td align="center">0.1</td>
+<td align="center">0.1</td>
+<td align="center">0.05</td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><br><br> The random variable <span class="math inline">\(\LARGE{R = (3 - Y)^2(X + 1) }\)</span> is used as a risk index for a particular heart disease. <br><br> <b> Exercises</b> a. Calculate the probability that a randomly selected person does more than two hours of exercise per week. b. Decide whether <span class="math inline">\(\LARGE{X}\)</span> and <span class="math inline">\(\LARGE{Y}\)</span> are independent or not and justify your answer. c. Derive the probability function of <span class="math inline">\(\LARGE{R}\)</span>. d. Calculate the expectation of <span class="math inline">\(\LARGE{R}\)</span>.</p>
 </div>
 </div>
 </div>

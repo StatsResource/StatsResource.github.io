@@ -1,0 +1,12 @@
+Hypergeometric Distribution {data-navmenu="Discrete Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Hypergeometric Distribution
+
+<h5> Hypergeometric Distribution </h5>
+
+* <a href="https://youtu.be/ay-Y_SUslP8/">	Hypergeometric Distribution - Worked Example	</a>	
+

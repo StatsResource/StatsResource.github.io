@@ -1,0 +1,23 @@
+
+Binomial Distribution {data-navmenu="Discrete Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+### Binomial Distribution
+
+<h5> Binomial Distribution </h5>
+
+
+* <a href="https://youtu.be/dRNSiG2Hzfo/">	Binomial Distribution - Worked Example	</a>	
+
+
+
+
+
+### Formula
+
+<h5> Formula Sheet </h5>
+
+$$ [P(X = k) = $$
+

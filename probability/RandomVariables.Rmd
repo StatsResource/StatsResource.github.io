@@ -1,4 +1,4 @@
-Random Variables {data-navmenu="Probability Distributions"}
+Random Variables {data-navmenu="Random Variables"}
 ===========================================================
 
 Column {.tabset}

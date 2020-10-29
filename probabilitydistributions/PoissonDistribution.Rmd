@@ -1,9 +1,8 @@
-Poisson Distribution {data-navmenu="Probability Distributions"}
+Poisson Distribution {data-navmenu="Discrete Distributions"}
 =====================================
 
 Column {.tabset}
 -------------------------------------------------
-
 
 
 ### Poisson Distribution
@@ -14,24 +13,54 @@ Column {.tabset}
 * <a href= "https://www.youtube.com/watch?v=nc4vErCoo0w">Confidence Intervals for Poisson Variables </a>
 
 
+### Worked Examples
+
+<h5>Worked Examples 1 </h5>
+
+On the average 8 calls per hour are received in a telephone board. Assuming that the
+number of calls received in the board in a given length of time is a Poisson process, find
+the probability that
 
 
+<h4>Exercises</h4>
+
+a. 6 calls received in 2 Hours 
+b. at least 2 calls in the next 20 minutes
+
+<h4> Solution</h4>
+
+<strong><a href="https://youtu.be/88xt7Bb5jJc">Click here for demonstrated solution</a></strong>
 
 
 ### Confidence Intervals for Poisson Random Variables
 
-<h5> Confidence Intervals </h5>
 
-* <a href = "https://youtu.be/mRQgWDoHCXg/"> Confidence Intervals for Poisson Random Variables </a>
+<h3> Worked Examples</h3>
+
+It is assumed that the numbers of claims arising in one year from motor insurance
+policies for young male drivers and young female drivers are distributed as Poisson
+random variables with parameters $\LARGE \lambda_m$ and $\LARGE \lambda_f$ respectively.
+
+Independent random samples of 120 policies for young male drivers and 80 policies
+for young female drivers were examined and yielded the following mean number of
+claims per policy in the last calendar year: $\LARGE x_m = 0.24$ and $\LARGE x_f = 0.15$ .
+
+Calculate an approximate 95% confidence interval for $\LARGE \bar{x}_{m} - \bar{x}_{f}$ , the difference between
+the respective Poisson parameters.
+
+<h4> Solution</h4>
+
+<strong><a href="https://youtu.be/mRQgWDoHCXg">Click here for demonstrated solution</a></strong>
+
+--------------------
+
+<h3> Videos </h3>
+
 * <a href = "https://youtu.be/5r8JMrKSFrU/"> Confidence Intervals for Poisson Random Variables </a>
 * <a href = "https://youtu.be/3Y3pJaLcXdc/"> Confidence Intervals for Poisson Random Variables </a>
-* <a href="https://youtu.be/nc4vErCoo0w/">	Confidence Intervals for Poisson Variables	</a>
+* <a href = "https://youtu.be/nc4vErCoo0w/"> Confidence Intervals for Poisson Variables	</a>
 * <a href = "https://youtu.be/N291An2ui18/"> Poisson Random Variables Confidence Intervals For Difference In Rates </a>
 
-
-
-* <a href="https://youtu.be/88xt7Bb5jJc/">	Poisson Distribution - Telephone Board Example	</a>	
-* <a href="https://youtu.be/N291An2ui18/">	Poisson Random Variables Confidence Intervals For Difference In Rates	</a>	
 
 
 ### Goodness of Fit Tests

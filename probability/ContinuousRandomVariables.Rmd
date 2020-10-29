@@ -1,0 +1,30 @@
+Continuous Random Variables {data-navmenu="Random Variables"}
+====================================
+
+Column {.tabset}
+-------------------------------------------------------------
+
+
+
+### Worked Examples
+
+<h3> Worked Example 1</h3>
+
+
+A random variable $X$ which can be used in certain circumstances as a model for claim sizes has cumulative distribution function
+\[\LARGE F(x) = \begin{cases}
+0 & \mbox{ where }  x < 0 \\ 
+1 - \left(\frac{2}{(2+x)}\right)^3 & \mbox{ where }  x > 0 \\ 
+\end{cases}
+\]
+
+<h4> Exercises </h4>
+
+a.  Calculate the value of the conditional probability $\LARGE P(X > 3|X > 1)$. 
+
+
+<h4> Solution </h4>
+
+<strong><a href="https://youtu.be/uaYXtM0lHRY">Click here for demonstrated solution</a></strong>
+
+<hline>

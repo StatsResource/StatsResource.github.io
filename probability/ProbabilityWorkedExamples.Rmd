@@ -1,0 +1,18 @@
+Probability Questions - Worked Examples {data-navmenu="Introductory Probability"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Playing Card and Dice Questions
+
+<h3> Worked Example 1</h3>
+A card is drawn at random from a pack of cards. Let A be the event that the card is red
+and B be the event that the card is king. 
+
+Does the colour of card affect its probability of being a king?
+
+<h4> Solution</h4>
+
+<strong><a href="https://youtu.be/dNkw6VU3ZzU">Click here for demonstrated solution</a></strong>

@@ -1,5 +1,5 @@
 
-Approximating Distribution {data-navmenu="Probability Distributions"}
+Approximating Distribution {data-navmenu="Advanced Topics"}
 ===========================================================
 
 Column {.tabset}
@@ -8,14 +8,23 @@ Column {.tabset}
 
 ### Poisson Approximation 
 
-#### Poisson Approximation Of The Binomial Distribution
+<h5> Poisson Approximation Of The Binomial Distribution</h5>
 
 * <a href = "https://youtu.be/XnRT3cLoZ08/"> Poisson Approximation Of The Binomial Distribution </a>
 
 
-### Normal Approximations
+### Normal Approximations of the Binomial Distribution
 
-#### Normal Approximation of Discrete Distributions
+<h5> Worked Example 1</h5>
+In a certain large population 45% of people have blood group A. 
+A random sample of 300 individuals is chosen from this population.
+<p>
+Calculate an approximate value for the probability that more than 115 of the sample
+have blood group A.
+<p>
+<a href="https://youtu.be/olxga5ArlSs"><strong>Solution</strong></a>
+
+### Normal Approximation of Discrete Distributions
 
 * <a href = "https://youtu.be/Zs9ZuOj_xK0/"> Normal Approximation of Poisson Distribution</a>
 * <a href = "https://youtu.be/sFGd4LSGQ0U/"> Poisson Distribution - Normal Approximation</a>
@@ -34,7 +43,7 @@ Column {.tabset}
 
 
 
-#### Normal Approximation of Continuous Distributions
+### Normal Approximation of Continuous Distributions
 
 * <a href = "https://youtu.be/dh8gpsM7HpM/"> Gamma Random Variables - Normal Approximation</a>
 

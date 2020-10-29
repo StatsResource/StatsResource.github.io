@@ -1,4 +1,4 @@
-Continuous Distributions {data-navmenu="Probability"}
+Uniform Distributions {data-navmenu="Continuous Distributions"}
 =====================================
 
 Column {.tabset}
@@ -15,17 +15,5 @@ Column {.tabset}
 * <a href= "https://www.youtube.com/watch?v=lxQEM8J8VrU">Uniform Random Variables</a>
 * <a href = "https://youtu.be/093X1SWd1cg/">Uniform Random Variables</a>
 * <a href = "https://youtu.be/OBIUmaHGgfA/"> Sum Of Uniform Random Variables </a>
-
-
-
-
-
-
-### Compound Distributions
-
-* <a href = "https://www.youtube.com/watch?v=ElBP4fuUxM8">Compound Probability Distributions (using the Central Limit Theorem) </a>
-
-
-
 
 

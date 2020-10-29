@@ -14,24 +14,30 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'main/introduction.Rmd'}
 ```
 
-
-
-
-
-```{r child = 'probability/DiscreteDistributions.Rmd'}
-```
-
-```{r child = 'probability/NormalDistribution.Rmd'}
-```
-
-```{r child = 'probability/ContinuousDistributions.Rmd'}
-```
-
-
-
-
 ```{r child = 'probabilitydistributions/PoissonDistribution.Rmd'}
 ```
+
+```{r child = 'probabilitydistributions/BinomialDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/GeometricDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/HypergeometricDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/BinomialDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/NegativeBinomial.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/NormalDistribution.Rmd'}
+```
+
+```{r child = 'probabilitydistributions/UniformDistribution.Rmd'}
+```
+
 
 ```{r child = 'probabilitydistributions/ExponentialDistribution.Rmd'}
 ```
@@ -45,9 +51,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'probabilitydistributions/WeibullDistribution.Rmd'}
 ```
 
-```{r child = 'probabilitydistributions/JointDistributions.Rmd'}
-```
-
 
 
 ```{r child = 'probabilitydistributions/ApproximatingDistributions.Rmd'}
@@ -56,4 +59,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'probabilitydistributions/CompoundDistributions.Rmd'}
 ```
 
+```{r child = 'probabilitydistributions/MixedDistributions.Rmd'}
+```
+
+ 	  	
  	  	

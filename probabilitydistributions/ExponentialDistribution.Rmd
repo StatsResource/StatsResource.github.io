@@ -1,4 +1,4 @@
-Exponential Distribution {data-navmenu="Probability Distributions"}
+Exponential Distribution {data-navmenu="Continuous Distributions"}
 =====================================
 
 Column {.tabset}
@@ -6,10 +6,36 @@ Column {.tabset}
 
 
 
-### Exponential Distribution
 
-<h5> The Exponential Distribution </h5>
 
+### Important Formulas
+
+<h5>Probability density function of the Exponential Distribution<h5>
+
+\noindent The probability density function (pdf) of an exponential distribution is
+\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&x\geq 0,\\0&x<0.\end{cases}}}\]
+
+Here $\LARGE \lambda  > 0$ is the parameter of the distribution, often called the rate parameter.
+
+### Worked Examples
+
+<h3> Worked Examples</h3>
+
+Claim amounts are modelled as an exponential random variable with mean \$1,000.
+
+<h4> Exercises </h4>
+
+a. Calculate the probability that one such claim amount is greater than \$5,000.
+
+b. Calculate the probability that a claim amount is greater than \$5,000 given that
+it is greater than \$1,000. 
+
+<h4> Solution</h4>
+
+<strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong>
+
+
+### Worked Example
 
 <h5> Worked Example </h5>
 

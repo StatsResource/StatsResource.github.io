@@ -1,4 +1,4 @@
-Probability {data-navmenu="Introductory Statistics"}
+Probability {data-navmenu="Introductory Probability"}
 ====================================================================
 
 Column {.tabset}
@@ -54,9 +54,15 @@ event with a probability near to 1 is very likely to occur.
 * <a href = "https://youtu.be/fIiH_u0ASFU/">Probability Trees</a>
 
 
+Conditional Probability  {data-navmenu="Introductory Probability"}
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
 ### Conditional Probability 
 
-
+<h5> Conditional Probability  </h5>
 
 * <a href="https://youtu.be/wUdQxLWuqWo/">	Conditional Probability - Worked Example	</a>	
 * <a href="https://youtu.be/qZ53wmnPvr4/">	Conditional Probability -Disease Detection Worked Example	</a>	

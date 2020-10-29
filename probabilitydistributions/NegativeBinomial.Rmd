@@ -1,0 +1,71 @@
+
+Negative Binomial Distributions {data-navmenu="Discrete Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Introduction
+
+Suppose there is a sequence of independent Bernoulli trials. 
+Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is $\LARGE{p}$ and of failure is ($\LARGE{1 - p}$). 
+
+
+### Type 1 Specficiation
+
+This approach models the number of failures (denoted $\LARGE{k}$) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted $\LARGE{r}$) occurs.
+Then the random number of failures we have seen, $\LARGE{X}$, will have the negative binomial (or Pascal) distribution:
+\[ \LARGE {\displaystyle X\sim \operatorname {NB} (r,p)}\]
+
+<h4>Probability Mass Function</h4>
+\noindent The probability mass function of the negative binomial distribution is
+
+\[ \LARGE {\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]
+where $k$ is the number of failures, $\LARGE{r}$ is the number of successes, and $\LARGE{p}$ is the probability of success. 
+
+<p>
+<h5>Parameters</h5>
+
+* Mean	${\displaystyle {\frac {pr}{1-p}}}$
+* Variance	${\displaystyle {\frac {pr}{(1-p)^{2}}}}$
+
+<p>
+
+### Type 2 Specficiation
+
+\noindent This approach models the number of trial (denoted $n$) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted $\LARGE{r}$) occurs. (N.B. $n = k + r$.)
+
+<h4>Probability Mass Function</h4>
+
+Let $\LARGE{X}$ denote the number of trials until the $\LARGE{r}$-th success. 
+The probability mass function of the negative binomial distribution is
+	
+\[\LARGE {\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]
+where $n$ is the number of trial, $\LARGE{r}$ is the number of successes, and $\LARGE{p}$ is the probability of success. 
+
+<p>
+<h5>Parameters</h5>
+
+
+* Mean	${\LARGE {\frac {r}{p}}}$
+* Variance	$\LARGE {\frac {r(1-p)}{p^{2}}}$
+
+
+### Worked Examples
+
+<h5> Negative Binomial Distribution: Worked Example</h5>
+
+Suppose that in a group of insurance policies (which are independent as regards
+occurrence of claims), 20\% of the policies have incurred claims during the last year.
+An auditor is examining the policies in the group one by one in random order until
+two policies with claims are found.
+
+a. Determine the probability that exactly five policies have to be examined until
+two policies with claims are found.
+
+b. Find the expected number of policies that have to be examined until two
+policies with claims are found.
+
+
+
+* <a href = "https://youtu.be/P1-FtKFbrtU/">Solution</a>

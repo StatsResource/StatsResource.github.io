@@ -1,5 +1,5 @@
 
-Compound Distributions {data-navmenu="Probability Distributions"}
+Compound Distributions {data-navmenu="Advanced Topics"}
 ===========================================================
 
 Column {.tabset}
