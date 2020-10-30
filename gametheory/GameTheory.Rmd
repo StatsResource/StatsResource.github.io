@@ -1,4 +1,4 @@
-Game Theory {data-navmenu="Special Topics"}
+Game Theory {data-navmenu="Game Theory"}
 =======================================
 
 Column {.tabset}

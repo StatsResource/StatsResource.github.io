@@ -7,7 +7,50 @@ Column {.tabset}
 
 ### The Lognormal Distribution
 
+A lognormal distribution is a continuous probability distribution of a random variable whose logarithm is normally distributed. Thus, if the random variable X is log-normally distributed, then $Y = ln(X)$ has a normal distribution. 
+<p>
+Equivalently, if Y has a normal distribution, then the exponential function of Y, $X = \exp(Y)$, has a log-normal distribution. 
+
+<h5> Probability Density Function</h5>
+\[\LARGE f(x) = {\displaystyle {\frac {1}{x\sigma {\sqrt {2\pi }}}}\ \exp \left(-{\frac {\left(\ln x-\mu \right)^{2}}{2\sigma ^{2}}}\right)} \mbox{ for } x>0\]
+
+<h5>Mean<h5>
+$$ {\LARGE E(X) = \exp \left(\mu +{\frac {\sigma ^{2}}{2}}\right)} $$
+<h5>Variance:</h5>	$$ {\LARGE \operatorname{Var}(X) = \left[\exp(\sigma ^{2})-1\right]\exp(2\mu +\sigma ^{2})} $$
+
+<h5>Skewness:</h5>	$$ {\LARGE \operatorname{Skewness}(X) = (\exp(\sigma ^{2})+2){\sqrt {\exp(\sigma ^{2})-1}}} $$
+
+
+### Worked Examples
+
+<h3>Worked Example 1</h3>
+
+In a certain chemical plant, the concentration of pollutants (X-in parts per million) has
+lognormal distribution with parameter $\LARGE \mu =3.2$ and $\LARGE \sigma =1$
+
+<h5>Exercises</h5>
+
+a. Write the pdf of $\LARGE X$
+b. Compute the mean and variance of $\LARGE X$
+c. Compute the probability that the concentration exceeds 8 parts per million
+
+<h5>Solution</h5>
 
 * <a href="https://youtu.be/OAuLfxP6uuM/">	Lognormal Distribution - Worked Example	</a>	
+
+---------------------------------------------
+
+<h3>Worked Example 2</h3>
+
+The random variable $\LARGE Y = \log X$ has $\LARGE N (10, 4)$ distribution. Find
+
+
+
+a. The pdf of $\LARGE X$
+b. Mean and variance of $\LARGE X$
+c. P($\LARGE X \leq 1000$)
+
+<h5>Solution</h5>
+
 * <a href="https://youtu.be/fCpnksxKPEY/">	Lognormal Distribution - Worked Example	</a>	
 
