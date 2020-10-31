@@ -1,0 +1,13 @@
+One Way ANOVA {data-navmenu="One Way ANOVA"}
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### One Way ANOVA in Experimental Design
+
+
+
+<h5>One Way ANOVA</h5>
+
+### Worked Examples

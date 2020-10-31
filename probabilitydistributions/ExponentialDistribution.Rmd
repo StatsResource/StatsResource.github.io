@@ -10,12 +10,14 @@ Column {.tabset}
 
 ### Important Formulas
 
-<h5>Probability density function of the Exponential Distribution<h5>
+<h3>The Exponential Distribution</h3>
+<p>
+<h5>Probability density function of the Exponential Distribution</h5>
 
 \noindent The probability density function (pdf) of an exponential distribution is
 \[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&x\geq 0,\\0&x<0.\end{cases}}}\]
 
-Here $\LARGE \lambda  > 0$ is the parameter of the distribution, often called the rate parameter.
+Here $\lambda  > 0$ is the parameter of the distribution, often called the rate parameter.
 
 ### Worked Examples
 

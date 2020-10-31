@@ -11,7 +11,7 @@ Column {.tabset}
 <h3> Worked Example 1</h3>
 
 
-A random variable $X$ which can be used in certain circumstances as a model for claim sizes has cumulative distribution function
+A random variable $\LARGE X$ which can be used in certain circumstances as a model for claim sizes has cumulative distribution function
 \[\LARGE F(x) = \begin{cases}
 0 & \mbox{ where }  x < 0 \\ 
 1 - \left(\frac{2}{(2+x)}\right)^3 & \mbox{ where }  x > 0 \\ 
@@ -27,4 +27,21 @@ a.  Calculate the value of the conditional probability $\LARGE P(X > 3|X > 1)$.
 
 <strong><a href="https://youtu.be/uaYXtM0lHRY">Click here for demonstrated solution</a></strong>
 
-<hline>
+------------------------------------
+
+<h3> Worked Example 2</h3>
+
+The random variable $\LARGE X$ has probability density function $\LARGE f(x)$ given by
+\[\LARGE f(x) \;=\; kx^2 (1- x) , \qquad 0 \leq x \leq 1 \]
+
+<h4> Exercises</h4>
+
+a. Show that $\LARGE k = 12$.
+b. Show that the mode of $\LARGE X$ is at $\LARGE x = 2/3$ and draw a graph of $\LARGE f(x)$.
+c. Find the mean and variance of $\LARGE X$.
+d. Find the cumulative distribution function of X and obtain the probability that $\LARGE X$
+lies within one standard deviation of its mean.
+
+<h4> Solution </h4>
+
+<strong><a href="https://youtu.be/rodfSPYXdh8">Click here for demonstrated solution</a></strong>

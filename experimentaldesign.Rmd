@@ -11,25 +11,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-Introduction 
-====================================================================
 
-Column {.tabset}
--------------------------------------------------
+```{r child = 'main/introduction.Rmd'}
+```
 
-### StatsResource
+```{r child = 'experimentaldesign/introduction.Rmd'}
 
-<h5> Contents </h5>
 
-* Exploratory Data Analysis
-* <a href = "probability.html">Probability and Probability Distributions</a>
-* <a href = "probability.html">Random Variables</a>
-* Inference Procedures
-* Modelling Data
-* <a href="experimentaldesign.html">Experimental Design</a>
-* <a href = "gametheory.html">Game Theory</a>
-* Special Topics
+```
 
+```{r child = 'experimentaldesign/onewayanova.Rmd'}
+
+
+```
 
 ```{r child = 'specialtopics/ExperimentalDesign.Rmd'}
 ```

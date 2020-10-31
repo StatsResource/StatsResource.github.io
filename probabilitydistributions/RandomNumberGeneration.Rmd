@@ -1,0 +1,18 @@
+
+
+Random Number Generation {data-navmenu="Advanced Topics"}
+====================================
+
+Column {.tabset}
+-------------------------------------------------------------
+
+### Simulation
+
+
+### Random Number Generation
+
+<h3>Worked Example</h3>
+
+Generate three random samples from Binomial B(3, 0.4) using the following values from
+U(0,1)
+\[\LARGE 0.196, 0.351, 0.975\]

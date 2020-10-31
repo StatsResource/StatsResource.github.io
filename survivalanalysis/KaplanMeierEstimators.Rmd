@@ -25,6 +25,15 @@ The estimated probability (S(t)) is a step function that changes value only at t
 
 The KM survival curve, a plot of the KM survival probability against time, provides a useful summary of the data that can be used to estimate measures such as median survival time.
 
+### Estimator
+
+The estimator of the survival function $\LARGE S(t)$ (the probability that life is longer than $\LARGE t$) is given by:
+
+\[{\LARGE {\widehat {S}}(t)=\prod \limits _{i:\ t_{i}\leq t}\left(1-{\frac {d_{i}}{n_{i}}}\right) =\prod \limits _{i:\ t_{i}\leq t}\left(1-\lambda_i \right),} \]
+
+\noindent with $\LARGE t_{i}$ a time when at least one event happened, $\LARGE d_i$ the number of events (e.g., deaths) that happened at time $\LARGE t_{i}$, and 
+$\LARGE n_{i}$ the individuals known to have survived (have not yet had an event or been censored) up to time $\LARGE t_{i}$. 
+
 
 ### Kaplan-Meier Product-Limit Estimator
 
@@ -37,3 +46,36 @@ In this equation, S(t) is the estimated survival function, n is the total number
 
 
 The advantage of the Kaplan-Meier Product-Limit method over the life table method for analyzing survival and failure time data is that the resulting estimates do not depend on the grouping of the data (into a certain number of time intervals). Actually, the Product-Limit method and the life table method are identical if the intervals of the life table contain at most one observation.
+
+
+
+### Worked Examples
+
+
+<h3>Worke Example</h3>
+
+A study of the mortality of 12 laboratory-bred insects was undertaken. The insects
+were observed from birth until either they died or the period of study ended, at which
+point those insects still alive were treated as censored.
+<p>
+The following table shows the Kaplan-Meier estimate of the survival function, based
+on data from the 12 insects.
+
+
+ ||t (weeks) | $\LARGE S(t)$ | |
+ |-------------|-------------|--------------|----------|
+||$\LARGE 0 \leq t < 1$ | 1.0000 ||
+||$\LARGE 1 \leq t < 3$ | 0.9167||
+||$\LARGE 3 \leq t < 6$ | 0.7130||
+||$\LARGE t \geq 6$ | 0.4278 ||
+
+<p>
+<h4> Exercises </h4>
+
+a. Calculate the number of insects dying at durations 3 and 6 weeks. 
+b. Calculate the number of insects whose history was censored.
+
+<h4> Solution </h4>
+<a href="https://youtu.be/MP-WNPajilc">Solution</a>
+
+

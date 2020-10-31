@@ -180,85 +180,94 @@ summary {
 </div>
 
 
-<div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Exponential Distribution</h1>
+<div id="kaplan-meier-estimators" class="section level1" data-navmenu="Survival Models">
+<h1>Kaplan-Meier Estimators</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="important-formulas" class="section level3">
-<h3>Important Formulas</h3>
-<h3>
-The Exponential Distribution
-</h3>
-<p>
-<h5>
-Probability density function of the Exponential Distribution
-</h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
-<p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
+<div id="kaplan-meier-survival-estimate" class="section level3">
+<h3>Kaplan-Meier survival estimate</h3>
+<p>The Kaplan-Meier (KM) method is a non-parametric method used to estimate the survival probability from observed survival times (Kaplan and Meier, 1958).</p>
+<p>The survival probability at time titi, S(ti), is calculated as follow:</p>
+<p><span class="math display">\[ S(ti)=S(tiâ1)(1âdini)\]</span></p>
+<p>Where,</p>
+<ul>
+<li>S(tiâ1) = the probability of being alive at tiâ1</li>
+<li>ni = the number of patients alive just before titi</li>
+<li>di = the number of events at titi</li>
+<li>t0 = 0, S(0)S(0) = 1</li>
+</ul>
+<p>The estimated probability (S(t)) is a step function that changes value only at the time of each event. Itâs also possible to compute confidence intervals for the survival probability.</p>
+<p>The KM survival curve, a plot of the KM survival probability against time, provides a useful summary of the data that can be used to estimate measures such as median survival time.</p>
+</div>
+<div id="estimator" class="section level3">
+<h3>Estimator</h3>
+<p>The estimator of the survival function <span class="math inline">\(\LARGE S(t)\)</span> (the probability that life is longer than <span class="math inline">\(\LARGE t\)</span>) is given by:</p>
+<p><span class="math display">\[{\LARGE {\widehat {S}}(t)=\prod \limits _{i:\ t_{i}\leq t}\left(1-{\frac {d_{i}}{n_{i}}}\right) =\prod \limits _{i:\ t_{i}\leq t}\left(1-\lambda_i \right),} \]</span></p>
+<p>with <span class="math inline">\(\LARGE t_{i}\)</span> a time when at least one event happened, <span class="math inline">\(\LARGE d_i\)</span> the number of events (e.g., deaths) that happened at time <span class="math inline">\(\LARGE t_{i}\)</span>, and <span class="math inline">\(\LARGE n_{i}\)</span> the individuals known to have survived (have not yet had an event or been censored) up to time <span class="math inline">\(\LARGE t_{i}\)</span>.</p>
+</div>
+<div id="kaplan-meier-product-limit-estimator" class="section level3">
+<h3>Kaplan-Meier Product-Limit Estimator</h3>
+<p>Rather than classifying the observed survival times into a life table, we can estimate the survival function directly from the continuous survival or failure times. Intuitively, imagine that we create a life table so that each time interval contains exactly one case. Multiplying out the survival probabilities across the “intervals” (i.e., for each single observation) we would get for the survival function:</p>
+<p><span class="math display">\[S(t) = jt= 1 [(n-j)/(n-j+1)]( j )\]</span></p>
+<p>In this equation, S(t) is the estimated survival function, n is the total number of cases, and denotes the multiplication (geometric sum) across all cases less than or equal to t; (j) is a constant that is either 1 if the j’th case is uncensored (complete), and 0 if it is censored. This estimate of the survival function is also called the product-limit estimator, and was first proposed by Kaplan and Meier (1958). An example plot of this function is shown below.</p>
+<p>The advantage of the Kaplan-Meier Product-Limit method over the life table method for analyzing survival and failure time data is that the resulting estimates do not depend on the grouping of the data (into a certain number of time intervals). Actually, the Product-Limit method and the life table method are identical if the intervals of the life table contain at most one observation.</p>
 </div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
 <h3>
-Worked Examples
+Worke Example
 </h3>
-<p>Claim amounts are modelled as an exponential random variable with mean $1,000.</p>
+A study of the mortality of 12 laboratory-bred insects was undertaken. The insects were observed from birth until either they died or the period of study ended, at which point those insects still alive were treated as censored.
+<p>
+<p>The following table shows the Kaplan-Meier estimate of the survival function, based on data from the 12 insects.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>t (weeks)</th>
+<th><span class="math inline">\(\LARGE S(t)\)</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><span class="math inline">\(\LARGE 0 \leq t &lt; 1\)</span></td>
+<td>1.0000</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(\LARGE 1 \leq t &lt; 3\)</span></td>
+<td>0.9167</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><span class="math inline">\(\LARGE 3 \leq t &lt; 6\)</span></td>
+<td>0.7130</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(\LARGE t \geq 6\)</span></td>
+<td>0.4278</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>
 <h4>
 Exercises
 </h4>
 <ol style="list-style-type: lower-alpha">
-<li><p>Calculate the probability that one such claim amount is greater than $5,000.</p></li>
-<li><p>Calculate the probability that a claim amount is greater than $5,000 given that it is greater than $1,000.</p></li>
+<li>Calculate the number of insects dying at durations 3 and 6 weeks.</li>
+<li>Calculate the number of insects whose history was censored.</li>
 </ol>
 <h4>
 Solution
 </h4>
-<p><strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong></p>
-</div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h5>
-Worked Example
-</h5>
-<ul>
-<li><a href="https://youtu.be/ivnbqNPv_WQ/"> Exponential Distribution - Worked Example </a><br />
-</li>
-<li><a href="https://youtu.be/HbKGfxMsX5U/"> Exponential Random Variables - Distribution of the Minima </a></li>
-</ul>
-</div>
-<div id="review-questions" class="section level3">
-<h3>Review Questions</h3>
-<h3>
-Review Question 1
-</h3>
-<p>An average of five calls per hour are received by a machine repair department. Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes? Jobs are sent to a printer at an average of 5 jobs per hour.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected time between jobs?</li>
-<li>What is the probability that the next job is sent within 6 minutes after the previous job?</li>
-</ol>
-<hr />
-<h3>
-Review Question 2
-</h3>
-<p>Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the mean duration between arrivals?</li>
-<li>Find the probability that the time between arrivals is greater than 5 minutes.</li>
-<li>Find the probability that the time between arrivals will be less than 2 minute.</li>
-</ol>
-<hr />
-<h3>
-Review Question 3
-</h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let <span class="math inline">\(\LARGE T\)</span> be the symbol for the ``waiting times&quot; variable.
-<p>
-<p>Suppose that a customer has just arrived.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected waiting time between customer arrivals?</li>
-<li>Compute <span class="math inline">\(E(T)\)</span></li>
-<li>What is the variance of waiting times? Compute <span class="math inline">\(\mbox{Var}(T)\)</span>.</li>
-<li>What is the probability that the next customer will arrive within the next fifteen minutes?</li>
-<li>What is the probability that no customers arrive in the next half hour?</li>
-</ol>
+<p><a href="https://youtu.be/MP-WNPajilc">Solution</a></p>
 </div>
 </div>
 </div>

@@ -180,85 +180,48 @@ summary {
 </div>
 
 
-<div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Exponential Distribution</h1>
+<div id="continuous-random-variables" class="section level1" data-navmenu="Random Variables">
+<h1>Continuous Random Variables</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="important-formulas" class="section level3">
-<h3>Important Formulas</h3>
-<h3>
-The Exponential Distribution
-</h3>
-<p>
-<h5>
-Probability density function of the Exponential Distribution
-</h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
-<p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
-</div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
 <h3>
-Worked Examples
+Worked Example 1
 </h3>
-<p>Claim amounts are modelled as an exponential random variable with mean $1,000.</p>
+<p>A random variable <span class="math inline">\(\LARGE X\)</span> which can be used in certain circumstances as a model for claim sizes has cumulative distribution function <span class="math display">\[\LARGE F(x) = \begin{cases}
+0 &amp; \mbox{ where }  x &lt; 0 \\ 
+1 - \left(\frac{2}{(2+x)}\right)^3 &amp; \mbox{ where }  x &gt; 0 \\ 
+\end{cases}
+\]</span></p>
 <h4>
 Exercises
 </h4>
 <ol style="list-style-type: lower-alpha">
-<li><p>Calculate the probability that one such claim amount is greater than $5,000.</p></li>
-<li><p>Calculate the probability that a claim amount is greater than $5,000 given that it is greater than $1,000.</p></li>
+<li>Calculate the value of the conditional probability <span class="math inline">\(\LARGE P(X &gt; 3|X &gt; 1)\)</span>.</li>
 </ol>
 <h4>
 Solution
 </h4>
-<p><strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong></p>
-</div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h5>
-Worked Example
-</h5>
-<ul>
-<li><a href="https://youtu.be/ivnbqNPv_WQ/"> Exponential Distribution - Worked Example </a><br />
-</li>
-<li><a href="https://youtu.be/HbKGfxMsX5U/"> Exponential Random Variables - Distribution of the Minima </a></li>
-</ul>
-</div>
-<div id="review-questions" class="section level3">
-<h3>Review Questions</h3>
-<h3>
-Review Question 1
-</h3>
-<p>An average of five calls per hour are received by a machine repair department. Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes? Jobs are sent to a printer at an average of 5 jobs per hour.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected time between jobs?</li>
-<li>What is the probability that the next job is sent within 6 minutes after the previous job?</li>
-</ol>
+<p><strong><a href="https://youtu.be/uaYXtM0lHRY">Click here for demonstrated solution</a></strong></p>
 <hr />
 <h3>
-Review Question 2
+Worked Example 2
 </h3>
-<p>Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25.</p>
+<p>The random variable <span class="math inline">\(\LARGE X\)</span> has probability density function <span class="math inline">\(\LARGE f(x)\)</span> given by <span class="math display">\[\LARGE f(x) \;=\; kx^2 (1- x) , \qquad 0 \leq x \leq 1 \]</span></p>
+<h4>
+Exercises
+</h4>
 <ol style="list-style-type: lower-alpha">
-<li>What is the mean duration between arrivals?</li>
-<li>Find the probability that the time between arrivals is greater than 5 minutes.</li>
-<li>Find the probability that the time between arrivals will be less than 2 minute.</li>
+<li>Show that <span class="math inline">\(\LARGE k = 12\)</span>.</li>
+<li>Show that the mode of <span class="math inline">\(\LARGE X\)</span> is at <span class="math inline">\(\LARGE x = 2/3\)</span> and draw a graph of <span class="math inline">\(\LARGE f(x)\)</span>.</li>
+<li>Find the mean and variance of <span class="math inline">\(\LARGE X\)</span>.</li>
+<li>Find the cumulative distribution function of X and obtain the probability that <span class="math inline">\(\LARGE X\)</span> lies within one standard deviation of its mean.</li>
 </ol>
-<hr />
-<h3>
-Review Question 3
-</h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let <span class="math inline">\(\LARGE T\)</span> be the symbol for the ``waiting times&quot; variable.
-<p>
-<p>Suppose that a customer has just arrived.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected waiting time between customer arrivals?</li>
-<li>Compute <span class="math inline">\(E(T)\)</span></li>
-<li>What is the variance of waiting times? Compute <span class="math inline">\(\mbox{Var}(T)\)</span>.</li>
-<li>What is the probability that the next customer will arrive within the next fifteen minutes?</li>
-<li>What is the probability that no customers arrive in the next half hour?</li>
-</ol>
+<h4>
+Solution
+</h4>
+<p><strong><a href="https://youtu.be/rodfSPYXdh8">Click here for demonstrated solution</a></strong></p>
 </div>
 </div>
 </div>

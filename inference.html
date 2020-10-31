@@ -2561,8 +2561,8 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
-<div id="introduction" class="section level1" data-navmenu="Menu">
-<h1>Introduction</h1>
+<div id="main-menu" class="section level1" data-navmenu="Menu">
+<h1>Main Menu</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
 <div id="statsresource" class="section level3">
@@ -2570,29 +2570,61 @@ window.FlexDashboardComponents.push({
 <h5>
 Contents
 </h5>
-<ul>
-<li>Exploratory Data Analysis</li>
-<li><a href="probability.html">Probability and Probability Distributions</a></li>
-<li><a href="probability.html">Random Variables</a></li>
-<li>Inference Procedures</li>
-<li>Modelling Data</li>
-<li><a href="timeseries.html">Time Series Analysis</a></li>
-<li><a href="survivalanalysis.html">Survival Analysis</a></li>
-<li>Special Topics</li>
-<li><a href="gametheory.html">Game Theory</a></li>
-</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Exploratory Data Analysis</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="probability.html">Probability and Random Variables</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* <a href="probabilitydistributions.html">Probability Distributions</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="probability.html">Inference Procedures</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Modelling Data</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="timeseries.html">Time Series Analysis</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* <a href="survivalanalysis.html">Survival Analysis</a></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="right"></td>
+<td align="left">* <a href="gametheory.html">Game Theory</a></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"></td>
+<td align="left">* Special Topics</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
 </div>
-</div>
-</div>
-<div id="sampling-distributions" class="section level1">
-<h1>Sampling Distributions</h1>
-<div id="column-1" class="section level2 tabset">
-<h2>Column</h2>
 </div>
 </div>
 <div id="small-samples-and-the-t--distribution" class="section level1" data-navmenu="Inference Procedures">
 <h1>Small Samples and the t- distribution</h1>
-<div id="column-2" class="section level2 tabset">
+<div id="column-1" class="section level2 tabset">
 <h2>Column</h2>
 <div id="the-student-t--distribution" class="section level3">
 <h3>The Student t- distribution</h3>
@@ -2612,7 +2644,7 @@ Contents
 </div>
 <div id="inference-procedures-for-proportions" class="section level1" data-navmenu="Inference Procedures">
 <h1>Inference Procedures for Proportions</h1>
-<div id="column-3" class="section level2 tabset">
+<div id="column-2" class="section level2 tabset">
 <h2>Column</h2>
 <div id="hypothesis-testing" class="section level3">
 <h3>Hypothesis Testing</h3>
@@ -2642,7 +2674,7 @@ Hypothesis Testing For Proportions
 </div>
 <div id="inference-procedures-for-small-samples" class="section level1" data-navmenu="Inference Procedures">
 <h1>Inference Procedures for Small Samples</h1>
-<div id="column-4" class="section level2 tabset">
+<div id="column-3" class="section level2 tabset">
 <h2>Column</h2>
 <ul>
 <li><a href="https://youtu.be/5DY3j8nw5sg/"> Working With Small Samples </a></li>
@@ -2651,7 +2683,7 @@ Hypothesis Testing For Proportions
 </div>
 <div id="sample-size-estimation" class="section level1" data-navmenu="Inference Procedures">
 <h1>Sample Size Estimation</h1>
-<div id="column-5" class="section level2 tabset">
+<div id="column-4" class="section level2 tabset">
 <h2>Column</h2>
 <div id="sample-size-estimation-1" class="section level3">
 <h3>Sample Size Estimation</h3>
@@ -2666,7 +2698,7 @@ Sample Size Estimation For Proportions Worked Example
 </div>
 <div id="testing-model-assumptions" class="section level1" data-navmenu="Inference Procedures">
 <h1>Testing Model Assumptions</h1>
-<div id="column-6" class="section level2 tabset">
+<div id="column-5" class="section level2 tabset">
 <h2>Column</h2>
 <div id="testing-procedures" class="section level3">
 <h3>Testing Procedures</h3>
@@ -2716,19 +2748,95 @@ Videos
 </h5>
 </div>
 <div id="the-andersonâdarling-test" class="section level3">
-<h3>The Andersonâ€“Darling test</h3>
+<h3>The Andersonâ“Darling test</h3>
 <h5>
-The Andersonâ€“Darling test
+The Andersonâ“Darling test
 </h5>
-<p>The Andersonâ€“Darling test is a statistical test of whether there is evidence that a given sample of data did not arise from a given probability distribution. In its basic form, the test assumes that there are no parameters to be estimated in the distribution being tested, in which case the test and its set of critical values is distribution-free. However, the test is most often used in contexts where a family of distributions is being tested, in which case the parameters of that family need to be estimated and account must be taken of this in adjusting either the test-statistic or its critical values. When applied to testing if a normal distribution adequately describes a set of data, it is one of the most powerful statistical tools for detecting most departures from normality.</p>
+<p>The Andersonâ“Darling test is a statistical test of whether there is evidence that a given sample of data did not arise from a given probability distribution. In its basic form, the test assumes that there are no parameters to be estimated in the distribution being tested, in which case the test and its set of critical values is distribution-free. However, the test is most often used in contexts where a family of distributions is being tested, in which case the parameters of that family need to be estimated and account must be taken of this in adjusting either the test-statistic or its critical values. When applied to testing if a normal distribution adequately describes a set of data, it is one of the most powerful statistical tools for detecting most departures from normality.</p>
+</div>
+</div>
+</div>
+<div id="differences-in-means" class="section level1" data-navmenu="Confidence Intervals">
+<h1>Differences in Means</h1>
+<div id="column-6" class="section level2 tabset">
+<h2>Column</h2>
+<div id="differences-in-means-1" class="section level3">
+<h3>Differences in Means</h3>
+<h5>
+Differences in Means
+</h5>
+</div>
+<div id="examples" class="section level3">
+<h3>Examples</h3>
+</div>
+</div>
+</div>
+<div id="hypothesis-testing-1" class="section level1" data-navmenu="Hypothesis Testing">
+<h1>Hypothesis Testing</h1>
+<div id="column-7" class="section level2 tabset">
+<h2>Column</h2>
+<div id="one-way-anova-in-experimental-design" class="section level3">
+<h3>One Way ANOVA in Experimental Design</h3>
+<h5>
+One Way ANOVA
+</h5>
+</div>
+<div id="p-values" class="section level3">
+<h3>p-values</h3>
+</div>
+</div>
+</div>
+<div id="dixon-q-test-for-outliers" class="section level1" data-navmenu="Testing Model Assumptions">
+<h1>Dixon Q-Test for Outliers</h1>
+<div id="column-8" class="section level2 tabset">
+<h2>Column</h2>
+<div id="dixon-q-test-for-outliers-1" class="section level3">
+<h3>Dixon Q-Test for Outliers</h3>
+<h5>
+Dixon Q-Test for Outliers
+</h5>
+<p>Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set. \ .</p>
+<p><span class="math display">\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]</span></p>
+<ul>
+<li>Arrange the data set into ascending order.</li>
+</ul>
+<p><span class="math display">\[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]</span></p>
+<ul>
+<li><p>Here the potential outlier is the lowest value, i.e. 19</p></li>
+<li><p>We can formally state the null and alternative hypothesis as follows</p></li>
+</ul>
+<h5>
+Hypotheses
+</h5>
+<ul>
+<li>[H<span class="math inline">\(_0\)</span>] There are no outliers present in the data.</li>
+<li><p>[H<span class="math inline">\(_1\)</span>] There is one outlier present \ (i.e. the lowest value 19)</p></li>
+<li><p>The test statistic for this procedure is as follows:</p></li>
+</ul>
+<p><span class="math display">\[ \LARGE Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]</span></p>
+<ul>
+<li>The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is <span class="math display">\[ \mbox{Gap} = 25 - 19 = 6\]</span></li>
+<li><p>The range is simply the difference between the maximum and minimum value. <span class="math display">\[ \mbox{Range} = 37-19 =18\]</span></p></li>
+<li><p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} = \frac{6}{18} =0.333 \]</span></p></li>
+<li><p>Before we look at the critical value, we confirm the size of the data set is <span class="math inline">\(n=10\)</span>.</p></li>
+<li><p>The critical value can be determined from the following table. \ <span class="math inline">\(\bullet\)</span> The column to chose is the significance level (here 5% or 0.05 ). \ <span class="math inline">\(\bullet\)</span> The row to use is <span class="math inline">\(n\)</span>, the number of items in the data set.</p></li>
+</ul>
+<hr />
+
+<ul>
+<li></li>
+<li></li>
+<li><p>If the Test Statistic is greater than the Critical value, reject the null hypothesis <span class="math display">\[ Q_{TS} &gt; Q_{CV}\]</span></p></li>
+<li><p>Otherwise we fail to reject the null hypothesis</p></li>
+</ul>
 </div>
 </div>
 </div>
 <div id="non-parametric-tests" class="section level1" data-navmenu="Inference Procedures">
 <h1>Non-parametric Tests</h1>
-<div id="column-7" class="section level2 tabset">
+<div id="column-9" class="section level2 tabset">
 <h2>Column</h2>
-<div id="introduction-1" class="section level3">
+<div id="introduction" class="section level3">
 <h3>Introduction</h3>
 <h3>
 Non-parametric Statistics: Terminology
@@ -2747,6 +2855,21 @@ Non-parametric Statistics: Terminology
 </div>
 <div id="statistical-tables" class="section level3">
 <h3>Statistical Tables</h3>
+</div>
+</div>
+</div>
+<div id="sample-size-estimation-2" class="section level1" data-navmenu="Sample Size Estimation">
+<h1>Sample Size Estimation</h1>
+<div id="column-10" class="section level2 tabset">
+<h2>Column</h2>
+<div id="sample-size-estimation-3" class="section level3">
+<h3>Sample Size Estimation</h3>
+<h5>
+One Way ANOVA
+</h5>
+</div>
+<div id="worked-examples" class="section level3">
+<h3>Worked Examples</h3>
 </div>
 </div>
 </div>

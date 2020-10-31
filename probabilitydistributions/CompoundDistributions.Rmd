@@ -5,6 +5,37 @@ Compound Distributions {data-navmenu="Advanced Topics"}
 Column {.tabset}
 -----------------------------------
 
+### Compund Poisson Distributions
+
+<h4>Compund Poisson Distributions</h4>
+
+A compound Poisson distribution is the probability distribution of the sum of a number of independent identically-distributed random variables, where the number of terms to be added is itself a Poisson-distributed variable. In the simplest cases, the result can be either a continuous or a discrete distribution.
+<p>
+When $N$ is Poisson, the expected value and the variance of the compound distribution are
+
+\[ {\LARGE \operatorname {E} (Y)=\operatorname {E} (N)\operatorname {E} (X),} \] . \[{\LARGE \operatorname {Var} (Y)=E(N)(\operatorname {Var} (X)+{E(X)}^{2})=E(N){E(X^{2})}.} \]
+
+
+
+### Worked Examples
+
+<h3> Worked Example 1</h3>
+The number of claims arising in one year from a group of policies follows a Poisson
+distribution with mean 12. The claim sizes independently follow an exponential
+distribution with mean \$80 and they are independent of the number of claims.
+The current financial year has six months remaining.
+
+<h4> Exercises </h4>
+* Calculate the mean and the standard deviation of the total claim amount which arises
+during this remaining six months.
+
+<h4> Solution</h4>
+
+* <a href = "https://youtu.be/WKiw2X1qh4I/"> Compound Poisson Distribution</a>
+
+
+----------------
+
 
 ### Compound Poisson Distribution
 
@@ -12,4 +43,3 @@ Column {.tabset}
 * <a href = "https://youtu.be/xcR6kfGi1vI/"> Compound Poisson Distribution - Worked Example 2 </a>
 * <a href = "https://youtu.be/WKiw2X1qh4I/"> Compound Poisson Distribution - Worked Example 3</a>
 * <a href="https://youtu.be/ElBP4fuUxM8/">	Compound Probability Distributions (using the Central Limit Theorem)	</a>	
-

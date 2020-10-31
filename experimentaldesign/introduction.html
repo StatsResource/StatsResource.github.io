@@ -180,85 +180,137 @@ summary {
 </div>
 
 
-<div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Exponential Distribution</h1>
+<div id="experimental-design" class="section level1" data-navmenu="Experimental Design">
+<h1>Experimental Design</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="important-formulas" class="section level3">
-<h3>Important Formulas</h3>
-<h3>
-The Exponential Distribution
-</h3>
+<div id="experimental-design-1" class="section level3">
+<h3>Experimental Design</h3>
+<h5>
+Experimental Design
+</h5>
+<p>An experiment is a process or study that results in the collection of data. The results of experiments are not known in advance. Usually, statistical experiments are conducted in situations in which researchers can manipulate the conditions of the experiment and can control the factors that are irrelevant to the research objectives.</p>
+<p>For example, a rental car company compares the tread wear of four brands of tires, while also controlling for the type of car, speed, road surface, weather, and driver.</p>
+<p>Experimental design is the process of planning a study to meet specified objectives. Planning an experiment properly is very important in order to ensure that the right type of data and a sufficient sample size and power are available to answer the research questions of interest as clearly and efficiently as possible, with consideration for the amount of resources available to carry out such experiments.</p>
 <p>
-<h5>
-Probability density function of the Exponential Distribution
-</h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
-<p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
+<div id="designing-an-experiment" class="section level4">
+<h4>Designing an Experiment</h4>
+<p>Perform the following steps when designing an experiment: 1. Define the problem and the questions to be addressed. 2. Define the population of interest. 3. Determine the need for sampling. 4. Define the experimental design.</p>
+<p>
 </div>
-<div id="worked-examples" class="section level3">
-<h3>Worked Examples</h3>
-<h3>
-Worked Examples
-</h3>
-<p>Claim amounts are modelled as an exponential random variable with mean $1,000.</p>
-<h4>
-Exercises
-</h4>
-<ol style="list-style-type: lower-alpha">
-<li><p>Calculate the probability that one such claim amount is greater than $5,000.</p></li>
-<li><p>Calculate the probability that a claim amount is greater than $5,000 given that it is greater than $1,000.</p></li>
+<div id="define-the-experimental-design" class="section level4">
+<h4>Define the Experimental Design</h4>
+<p>A clear definition of the details of the experiment makes the desired statistical analyses possible, and almost always improves the usefulness of the results. The overall data collection and analysis plan considers how the experimental factors, both controlled and uncontrolled, fit together into a model that will meet the specific objectives of the experiment and satisfy the practical constraints of time and money.</p>
+<p>The data collection and analysis plan provides the maximum amount of information that is relevant to a problem by using the available resources most efficiently. Understanding how the relevant variables fit into the design structure indicates whether the appropriate data will be collected in a way that permits an objective analysis that leads to valid inferences with respect to the stated problem.</p>
+<p>The desired result is to produce a layout of the design along with an explanation of its structure and the necessary statistical analyses. The data collection protocol documents the details of the experiment such as the data definition, the structure of the design, the method of data collection, and the type of analyses to be applied to the data.</p>
+<p>Defining the experimental design consists of the following steps:</p>
+<ol style="list-style-type: decimal">
+<li>Identify the experimental unit.</li>
+<li>Identify the types of variables.</li>
+<li>Define the treatment structure.</li>
+<li>Define the design structure.</li>
 </ol>
-<h4>
-Solution
-</h4>
-<p><strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong></p>
+<p>
 </div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h5>
-Worked Example
-</h5>
+<div id="terminology" class="section level4">
+<h4>Terminology</h4>
+<p>Factor is any aspect of the experimental conditions which may affect the result obtained form an experiment.</p>
 <ul>
-<li><a href="https://youtu.be/ivnbqNPv_WQ/"> Exponential Distribution - Worked Example </a><br />
-</li>
-<li><a href="https://youtu.be/HbKGfxMsX5U/"> Exponential Random Variables - Distribution of the Minima </a></li>
+<li>Controlled Factor is any factor that can be altered by the experimenter at will.</li>
+<li>Uncontrolled Factor is any factor that can’t be freely altered.</li>
+<li>Factor Levels are the discretized values of indicating the degree of presence of a given factor (for example, high and low).</li>
 </ul>
-</div>
-<div id="review-questions" class="section level3">
-<h3>Review Questions</h3>
-<h3>
-Review Question 1
-</h3>
-<p>An average of five calls per hour are received by a machine repair department. Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes? Jobs are sent to a printer at an average of 5 jobs per hour.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected time between jobs?</li>
-<li>What is the probability that the next job is sent within 6 minutes after the previous job?</li>
-</ol>
-<hr />
-<h3>
-Review Question 2
-</h3>
-<p>Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the mean duration between arrivals?</li>
-<li>Find the probability that the time between arrivals is greater than 5 minutes.</li>
-<li>Find the probability that the time between arrivals will be less than 2 minute.</li>
-</ol>
-<hr />
-<h3>
-Review Question 3
-</h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let <span class="math inline">\(\LARGE T\)</span> be the symbol for the ``waiting times&quot; variable.
 <p>
-<p>Suppose that a customer has just arrived.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected waiting time between customer arrivals?</li>
-<li>Compute <span class="math inline">\(E(T)\)</span></li>
-<li>What is the variance of waiting times? Compute <span class="math inline">\(\mbox{Var}(T)\)</span>.</li>
-<li>What is the probability that the next customer will arrive within the next fifteen minutes?</li>
-<li>What is the probability that no customers arrive in the next half hour?</li>
-</ol>
+</div>
+</div>
+<div id="types-of-variables" class="section level3">
+<h3>Types of Variables</h3>
+<ul>
+<li>A data collection plan considers how four important variables: background, constant, uncontrollable, and primary, fit into the study.</li>
+<li>In experimental design, variables are known as factors.</li>
+<li>Inconclusive results are likely to result if any of these classifications are not adequately defined. It is important to consider all the relevant variables (even those variables that might, at first, appear to be unnecessary) before the final data collection plan is approved in order to maximize confidence in the final results.</li>
+<li>Primary variables are independent variables that are possible sources of variation in the response. These variables comprise the treatment and design structures and are referred to as Primary factors.</li>
+<li>Uncontrollable factors are those variables that are known to exist, but conditions prevent them from being manipulated, or it is very difficult (due to cost or physical constraints) to measure them.</li>
+<li>The experimental error is due to the influential effects of uncontrollable variables, which will result in less precise evaluations of the effects of the primary and background variables. The design of the experiment should eliminate or control these types of variables as much as possible in order to increase confidence in the final results.</li>
+</ul>
+<p>
+<div id="treatment-structure" class="section level4">
+<h4>Treatment Structure</h4>
+* The treatment structure consists of factors that the researcher wants to study and about which the researcher will make inferences. The primary factors are controlled by the researcher and are expected to show the effects of greatest interest on the response variable(s). *<br />
+The levels of greatest interest should be clearly defined for each primary factor. The levels of the primary factors represent the range of the inference space relative to this study. *<br />
+The levels of the primary factors can represent the entire range of possibilities or a random sub-set. It is also important to recognize and define when combinations of levels of two or more treatment factors are illogical or unlikely to exist. *<br />
+The treatment structure relates to the objectives of the experiment and the type of data that’s available. One-way, two-way, three-way, 2n, 3n, D-optimal, central composite, and two-way with some controls are examples of treatment structures that are used to define how data are collected. \end{* ize} %======================%
+<p>
+</div>
+<div id="levels-of-a-treatment-examples" class="section level4">
+<h4>Levels of a treatment (examples)}</h4>
+<p>Treatments are administered to experimental units by level, where level implies amount or magnitude. For example, if the experimental units were given 5mg, 10mg, 15mg of a medication, those amounts would be three levels of the treatment.</p>
+<p>Level is also used for categorical variables, such as Drugs A, B, and C, where the three are different kinds of drug, not different amounts of the same thing.</p>
+<p>
+</div>
+<div id="main-effect-and-interactions" class="section level4">
+<h4>Main Effect and interactions}</h4>
+This is the simple effect of a factor on a dependent variable. It is the effect of the factor alone averaged across the levels of other factors.
+<p>
+</div>
+<div id="example" class="section level4">
+<h4>Example}</h4>
+<p>A cholesterol reduction clinic has two diets and one exercise regime. It was found that exercise alone was effective, and diet alone was effective in reducing cholesterol levels (main effect of exercise and main effect of diet).<br />
+Also, for those patients who didn’t exercise, the two diets worked equally well (main effect of diet); those who followed diet A and exercised got the benefits of both (main effect of diet A and main effect of exercise). However, it was found that those patients who followed diet B and exercised got the benefits of both plus a bonus, an interaction effect (main effect of diet B, main effect of exercise plus an interaction effect).</p>
+<p>
+</div>
+<div id="replication" class="section level4">
+<h4>Replication}</h4>
+<p>If a treatment condition appears more than one time, it is defined to be replicated. True replication refers to responses that are treated in the same way.</p>
+<p>Replication is essential for estimating experimental error. The type of replication that’s possible for a data collection plan represents how the error terms should be estimated.</p>
+<p>Two or more measurements should be taken from each experimental unit at each combination of conditions, if possible.</p>
+<p>In addition, it is desirable to have measurements taken at a later period in order to test for repeatability over time. The first method of replication gives an estimate of pure error, that is, the ability of the experimental units to provide similar results under identical experimental conditions.</p>
+<p>
+</div>
+<div id="design-structure-blocks" class="section level4">
+<h4>Design Structure (Blocks)</h4>
+<p>Most experimental designs require experimental units to be allocated to treatments either randomly or randomly with constraints, as in blocked designs.</p>
+<p>Blocks are groups of experimental units that are formed to be as homogeneous as possible with respect to the block characteristics.</p>
+<p>The term block comes from the agricultural heritage of experimental design where a large block of land was selected for the various “treatments”, that had uniform soil, drainage, sunlight, and other important physical characteristics.</p>
+<p>Homogeneous clusters improve the comparison of treatments by randomly allocating levels of the treatments within each block.</p>
+<p>The design structure consists of those factors that define the blocking of the experimental units into clusters. The types of commonly used design structures are described are as follows.</p>
+<p>
+</div>
+<div id="completely-randomized-design." class="section level4">
+<h4>Completely Randomized Design.</h4>
+<p>Subjects are assigned to treatments completely at random. For example, in an clinical trial study, volunteer patients are randomly assigned to one of four treatment groups (three new types of a treatment and the standard).</p>
+<p>Suppose the total number of patients in the 4 groups is 96 (i.e. randomly assign 1/4 of them, or 24 patients, to each of the 4 types of treatments).</p>
+
+<p>
+</div>
+<div id="randomized-complete-block-design." class="section level4">
+<h4>Randomized Complete Block Design.}</h4>
+<p>Subjects are divided into b blocks according to demographic characteristics. Subjects in each block are then randomly assigned to treatments so that all treatment levels appear in each block.</p>
+<p>For example, in the clinical study, the patients would presumably have different demographic characteristics. For the sake of simplicity, let’s say there are four main demographic subgroups A,B,C and D.</p>
+<p>Patients within each subgroup are randomly assigned to one of the four types of treatments.</p>
+<p>There might be significant variability between the subjects in each demographic subgroup, each of which contains 24 patients. Randomly assign 6 patients to each of the three types of tests and the standard.</p>
+<p>The demographic subgroup is now the ‘block’. The primary interest is in the main effect of the test.</p>
+
+</div>
+<div id="example-1" class="section level4">
+<h4>Example</h4>
+<p>A researcher is carrying out a study of the effectiveness of four different skin creams for the treatment of a certain skin disease. He has eighty subjects and plans to divide them into 4 treatment groups of twenty subjects each.</p>
+<p>Using a randomised blocks design, the subjects are assessed and put in blocks of four according to how severe their skin condition is; the four most severe cases are the first block, the next four most severe cases are the second block, and so on to the twentieth block. The four members of each block are then randomly assigned, one to each of the four treatment groups.</p>
+
+<p>
+</div>
+<div id="types-of-effects" class="section level4">
+<h4>Types of Effects</h4>
+<p>An effect is a change in the response due to a change in a factor level. There are different types of effects. One objective of an experiment is to determine if there are significant differences in the responses across levels of a treatment (a fixed effect) or any interaction between the treatment levels.</p>
+<p>If this is always the case, the analysis is usually easily manageable, given that the anomalies in the data are minimal (outliers, missing data, homogeneous variances, unbalanced sample sizes, and so on).</p>
+</div>
+</div>
+<div id="blinding" class="section level3">
+<h3>Blinding</h3>
+<div id="blinding-1" class="section level4">
+<h4>Blinding</h4>
+<p>In a medical experiment, the comparison of treatments may be distorted if the patient, the person administering the treatment and those evaluating it know which treatment is being allocated. It is therefore necessary to ensure that the patient and/or the person administering the treatment and/or the trial evaluators are ‘blind to’ (don’t know) which treatment is allocated to whom. Sometimes the experimental set-up of a clinical trial is referred to as double-blind, that is, neither the patient nor those treating and evaluating their condition are aware (they are ‘blind’ as to) which treatment a particular patient is allocated. A double-blind study is the most scientifically acceptable option. Sometimes however, a double-blind study is impossible, for example in surgery. It might still be important though to have a single-blind trial in which the patient only is unaware of the treatment received, or in other instances, it may be important to have blinded evaluation.</p>
+</div>
 </div>
 </div>
 </div>

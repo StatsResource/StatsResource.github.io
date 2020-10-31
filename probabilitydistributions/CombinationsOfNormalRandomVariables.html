@@ -180,85 +180,40 @@ summary {
 </div>
 
 
-<div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Exponential Distribution</h1>
+<div id="combinations-of-normal-random-variables" class="section level1" data-navmenu="Advanced Topics">
+<h1>Combinations of Normal Random Variables</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="important-formulas" class="section level3">
-<h3>Important Formulas</h3>
-<h3>
-The Exponential Distribution
-</h3>
-<p>
-<h5>
-Probability density function of the Exponential Distribution
-</h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
-<p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
-</div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
 <h3>
-Worked Examples
+Worked Examples 1
 </h3>
-<p>Claim amounts are modelled as an exponential random variable with mean $1,000.</p>
+<p>My cycle journey to work is 3 km, and my cycling time (in minutes) if there are no delays is distributed N(15, 1), i.e. Normally with mean 15 and variance 1.</p>
 <h4>
 Exercises
 </h4>
 <ol style="list-style-type: lower-alpha">
-<li><p>Calculate the probability that one such claim amount is greater than $5,000.</p></li>
-<li><p>Calculate the probability that a claim amount is greater than $5,000 given that it is greater than $1,000.</p></li>
+<li>Find the probability that, if there are no delays, I get to work in at most 17 minutes.
+<p></li>
+<li><p>On my route there are three sets of traffic lights. Each time I meet a red traffic light, I am delayed by a random time that is distributed N(0.7, 0.09). These lights operate independently. Find the probability of my getting to work in at most 17 minutes</p>
+<ol style="list-style-type: lower-roman">
+<li>if just one light is set at red when I reach it,</li>
+<li>if just two lights are set at red when I reach them</li>
+<li>if all three lights are set at red when I reach them.
+<p></li>
+</ol></li>
+<li>Suppose that, for each set of lights, the chance of delay is 0.5. Deduce that the mean value of T, my total journey time, is 16.05 minutes.
+<p></li>
+<li><p>Given that <span class="math inline">\(\LARGE \operatorname{Var}(T) = 1.5025\)</span>, use a suitable approximation to calculate the probability that, over 10 journeys, my average journey time to work is at most 17 minutes.</p></li>
 </ol>
+<p>
 <h4>
 Solution
 </h4>
-<p><strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong></p>
-</div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h5>
-Worked Example
-</h5>
 <ul>
-<li><a href="https://youtu.be/ivnbqNPv_WQ/"> Exponential Distribution - Worked Example </a><br />
-</li>
-<li><a href="https://youtu.be/HbKGfxMsX5U/"> Exponential Random Variables - Distribution of the Minima </a></li>
+<li><strong><a href="https://youtu.be/jGzLUVFUgQ4">Solution</strong></a></li>
 </ul>
-</div>
-<div id="review-questions" class="section level3">
-<h3>Review Questions</h3>
-<h3>
-Review Question 1
-</h3>
-<p>An average of five calls per hour are received by a machine repair department. Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes? Jobs are sent to a printer at an average of 5 jobs per hour.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected time between jobs?</li>
-<li>What is the probability that the next job is sent within 6 minutes after the previous job?</li>
-</ol>
-<hr />
-<h3>
-Review Question 2
-</h3>
-<p>Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the mean duration between arrivals?</li>
-<li>Find the probability that the time between arrivals is greater than 5 minutes.</li>
-<li>Find the probability that the time between arrivals will be less than 2 minute.</li>
-</ol>
-<hr />
-<h3>
-Review Question 3
-</h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let <span class="math inline">\(\LARGE T\)</span> be the symbol for the ``waiting times&quot; variable.
-<p>
-<p>Suppose that a customer has just arrived.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected waiting time between customer arrivals?</li>
-<li>Compute <span class="math inline">\(E(T)\)</span></li>
-<li>What is the variance of waiting times? Compute <span class="math inline">\(\mbox{Var}(T)\)</span>.</li>
-<li>What is the probability that the next customer will arrive within the next fifteen minutes?</li>
-<li>What is the probability that no customers arrive in the next half hour?</li>
-</ol>
 </div>
 </div>
 </div>

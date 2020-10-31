@@ -180,85 +180,101 @@ summary {
 </div>
 
 
-<div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Exponential Distribution</h1>
+<div id="game-theory" class="section level1" data-navmenu="Game Theory">
+<h1>Game Theory</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="important-formulas" class="section level3">
-<h3>Important Formulas</h3>
-<h3>
-The Exponential Distribution
-</h3>
-<p>
+<div id="game-theory-1" class="section level3">
+<h3>Game Theory</h3>
 <h5>
-Probability density function of the Exponential Distribution
+Game Theory
 </h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
-<p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
-</div>
-<div id="worked-examples" class="section level3">
-<h3>Worked Examples</h3>
-<h3>
-Worked Examples
-</h3>
-<p>Claim amounts are modelled as an exponential random variable with mean $1,000.</p>
-<h4>
-Exercises
-</h4>
-<ol style="list-style-type: lower-alpha">
-<li><p>Calculate the probability that one such claim amount is greater than $5,000.</p></li>
-<li><p>Calculate the probability that a claim amount is greater than $5,000 given that it is greater than $1,000.</p></li>
-</ol>
-<h4>
-Solution
-</h4>
-<p><strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong></p>
-</div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
+<p>Game theory is the process of modeling the strategic interaction between two or more players in a situation containing set rules and outcomes. While used in a number of disciplines, game theory is most notably used as a tool within the study of economics. The economic application of game theory can be a valuable tool to aide in the fundamental analysis of industries, sectors and any strategic interaction between two or more firms. Here, we’ll take an introductory look at game theory and the terms involved, and introduce you to a simple method of solving games, called backwards induction.</p>
 <h5>
-Worked Example
+Definitions
+</h5>
+Any time we have a situation with two or more players that involves known payouts or quantifiable consequences, we can use game theory to help determine the most likely outcomes. Let’s start out by defining a few terms commonly used in the study of game theory:
+<p>
+<ul>
+<li><strong><em>Game: </em></strong> Any set of circumstances that has a result dependent on the actions of two of more decision makers (“players”)</li>
+<li><strong><em>Players: </em></strong> A strategic decision maker within the context of the game</li>
+<li><strong><em>Strategy: </em></strong> A complete plan of action a player will take given the set of circumstances that might arise within the game</li>
+<li><strong><em>Payoff: </em></strong> The payout a player receives from arriving at a particular outcome. The payout can be in any quantifiable form, from dollars to utility.</li>
+<li><strong><em>Information Set: </em></strong> The information available at a given point in the game. The term information set is most usually applied when the game has a sequential component.</li>
+<li><strong><em>Equilibrium: </em></strong> The point in a game where both players have made their decisions and an outcome is reached.</li>
+</ul>
+<h5>
+Assumptions
+</h5>
+<p>As with any concept in economics, there is the assumption of rationality. There is also an assumption of maximization. It is assumed that players within the game are rational and will strive to maximize their payoffs in the game.</p>
+<p>
+<p>When examining games that are already set up, it is assumed on your behalf that the payouts listed include the sum of all payoffs that are associated with that outcome. This will exclude any “what if” questions that may arise.</p>
+<p>
+<p>The number of players in a game can theoretically be infinite, but most games will be put into the context of <b>two players</b>. One of the simplest games is a sequential game involving two players.</p>
+</div>
+<div id="matrix-games" class="section level3">
+<h3>Matrix Games</h3>
+<h5>
+The Matrix Form of a 2-Player Game
 </h5>
 <ul>
-<li><a href="https://youtu.be/ivnbqNPv_WQ/"> Exponential Distribution - Worked Example </a><br />
-</li>
-<li><a href="https://youtu.be/HbKGfxMsX5U/"> Exponential Random Variables - Distribution of the Minima </a></li>
+<li>Assume that each player has a finite set of actions to choose from.</li>
+<li>In the matrix form of a 2-player game, each row corresponds to an action of Player 1 and each column corresponds to an action of Player 2.</li>
+<li>Each cell of the payoff matrix is associated with a payoff vector. The <span class="math inline">\(\LARGE i-\)</span>th component of this vector gives the payoff to Player <span class="math inline">\(\LARGE i\)</span>.</li>
 </ul>
 </div>
-<div id="review-questions" class="section level3">
-<h3>Review Questions</h3>
-<h3>
-Review Question 1
-</h3>
-<p>An average of five calls per hour are received by a machine repair department. Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes? Jobs are sent to a printer at an average of 5 jobs per hour.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected time between jobs?</li>
-<li>What is the probability that the next job is sent within 6 minutes after the previous job?</li>
-</ol>
-<hr />
-<h3>
-Review Question 2
-</h3>
-<p>Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the mean duration between arrivals?</li>
-<li>Find the probability that the time between arrivals is greater than 5 minutes.</li>
-<li>Find the probability that the time between arrivals will be less than 2 minute.</li>
-</ol>
-<hr />
-<h3>
-Review Question 3
-</h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let <span class="math inline">\(\LARGE T\)</span> be the symbol for the ``waiting times&quot; variable.
-<p>
-<p>Suppose that a customer has just arrived.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected waiting time between customer arrivals?</li>
-<li>Compute <span class="math inline">\(E(T)\)</span></li>
-<li>What is the variance of waiting times? Compute <span class="math inline">\(\mbox{Var}(T)\)</span>.</li>
-<li>What is the probability that the next customer will arrive within the next fifteen minutes?</li>
-<li>What is the probability that no customers arrive in the next half hour?</li>
-</ol>
+<div id="prisoners-dilemna" class="section level3">
+<h3>Prisoner’s Dilemna</h3>
+<h5>
+Prisoner’s Dilemna
+</h5>
+</div>
+<div id="dominance" class="section level3">
+<h3>Dominance</h3>
+<p>In game theory, dominance occurs when one strategy is better than another strategy for one player, no matter how that player’s opponents may play. Many simple games can be solved using dominance. The opposite, <strong><em>intransitivity</em></strong>, occurs in games where one strategy may be better or worse than another strategy for one player, depending on how the player’s opponents may play.</p>
+<h4>
+Terminology
+</h4>
+<p>When a player tries to choose the ``best&quot; strategy among a multitude of options, that player may compare two strategies A and B to see which one is better. The result of the comparison is one of:</p>
+<ul>
+<li><p>B dominates A: choosing B always gives as good as or a better outcome than choosing A. There are 2 possibilities:</p></li>
+<li>B strictly dominates A: choosing B always gives a better outcome than choosing A, no matter what the other player(s) do.</li>
+<li><p>B weakly dominates A: There is at least one set of opponents’ action for which B is superior, and all other sets of opponents’ actions give B the same payoff as A.</p></li>
+<li>B and A are intransitive: B neither dominates, nor is dominated by, A. Choosing A is better in some cases, while choosing B is better in other cases, depending on exactly how the opponent chooses to play. \ </li>
+<li><p>B is dominated by A: choosing B never gives a better outcome than choosing A, no matter what the other player(s) do. There are 2 possibilities:</p></li>
+<li>B is weakly dominated by A: There is at least one set of opponents’ actions for which B gives a worse outcome than A, while all other sets of opponents’ actions give A the same payoff as B. (Strategy A weakly dominates B).</li>
+<li><p>B is strictly dominated by A: choosing B always gives a worse outcome than choosing A, no matter what the other player(s) do. (Strategy A strictly dominates B).</p></li>
+</ul>
+<p>This notion can be generalized beyond the comparison of two strategies.</p>
+<ul>
+<li>Strategy B is strictly dominant if strategy B strictly dominates every other possible strategy.</li>
+<li>Strategy B is weakly dominant if strategy B dominates all other strategies, but some (or all) strategies are only weakly dominated by B.</li>
+<li>Strategy B is strictly dominated if some other strategy exists that strictly dominates B.</li>
+<li>Strategy B is weakly dominated if some other strategy exists that weakly dominates B.</li>
+</ul>
+</div>
+<div id="nash-equilibrium" class="section level3">
+<h3>Nash Equilibrium</h3>
+<p>Nash equilibrium is a solution concept of a non-cooperative game involving two or more players in which each player is assumed to know the equilibrium strategies of the other players, and no player has anything to gain by changing only their own strategy.</p>
+<p>If each player has chosen a strategy and no player can benefit by changing strategies while the other players keep theirs unchanged, then the current set of strategy choices and the corresponding payoffs constitutes a Nash equilibrium.</p>
+<ul>
+<li>Nash Equilibrium recommends a strategy to each player that the player cannot improve upon unilaterally, as long as the other players follow the recommendation.</li>
+<li>Since the other players are assumed to be rational, it is reasonable to expect the opponents to follow the recommendation as well.</li>
+</ul>
+<h5>
+Informal definition
+</h5>
+<ul>
+<li><p>Informally, a strategy profile is a Nash equilibrium if no player can do better by unilaterally changing their strategy. To see what this means, imagine that each player is told the strategies of the others. Suppose then that each player asks themselves: <em>“Knowing the strategies of the other players, and treating the strategies of the other players as set in stone, can I benefit by changing my strategy?”</em></p></li>
+<li><p>If any player could answer ``Yes“, then that set of strategies is not a Nash equilibrium. But if every player prefers not to switch (or is indifferent between switching and not) then the strategy profile is a Nash equilibrium. Thus, each strategy in a Nash equilibrium is a best response to all other strategies in that equilibrium.</p></li>
+<li><p>The Nash equilibrium may sometimes appear non-rational in a third-person perspective. This is because it may happen that a Nash equilibrium is not Pareto optimal.</p></li>
+<li><p>The Nash equilibrium may also have non-rational consequences in sequential games because players may “threaten” each other with non-rational moves. For such games the subgame perfect Nash equilibrium may be more meaningful as a tool of analysis.</p></li>
+<li><p>Nash Equilibrium can also be thought of as ``no regrets,&quot; in the sense that once a decision is made, the player will have no regrets concerning decisions considering the consequences.</p></li>
+<li><p>The Nash Equilibrium is reached over time, in most cases. However, once the Nash Equilibrium is reached, it will becoming self-enforcing.</p></li>
+</ul>
+</div>
+<div id="nash-equilibtrium" class="section level3">
+<h3>Nash Equilibtrium</h3>
 </div>
 </div>
 </div>

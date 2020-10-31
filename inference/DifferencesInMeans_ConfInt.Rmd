@@ -1,0 +1,13 @@
+Differences in Means {data-navmenu="Confidence Intervals"}
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Differences in Means
+
+
+
+<h5>Differences in Means</h5>
+
+### Examples

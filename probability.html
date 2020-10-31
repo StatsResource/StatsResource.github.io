@@ -2818,9 +2818,79 @@ Counting Problems
 </div>
 </div>
 </div>
+<div id="continuous-random-variables-1" class="section level1" data-navmenu="Random Variables">
+<h1>Continuous Random Variables</h1>
+<div id="column-6" class="section level2 tabset">
+<h2>Column</h2>
+<div id="worked-examples" class="section level3">
+<h3>Worked Examples</h3>
+<h3>
+Worked Example 1
+</h3>
+<p>A random variable <span class="math inline">\(\LARGE X\)</span> which can be used in certain circumstances as a model for claim sizes has cumulative distribution function <span class="math display">\[\LARGE F(x) = \begin{cases}
+0 &amp; \mbox{ where }  x &lt; 0 \\ 
+1 - \left(\frac{2}{(2+x)}\right)^3 &amp; \mbox{ where }  x &gt; 0 \\ 
+\end{cases}
+\]</span></p>
+<h4>
+Exercises
+</h4>
+<ol style="list-style-type: lower-alpha">
+<li>Calculate the value of the conditional probability <span class="math inline">\(\LARGE P(X &gt; 3|X &gt; 1)\)</span>.</li>
+</ol>
+<h4>
+Solution
+</h4>
+<p><strong><a href="https://youtu.be/uaYXtM0lHRY">Click here for demonstrated solution</a></strong></p>
+<hr />
+<h3>
+Worked Example 2
+</h3>
+<p>The random variable <span class="math inline">\(\LARGE X\)</span> has probability density function <span class="math inline">\(\LARGE f(x)\)</span> given by <span class="math display">\[\LARGE f(x) \;=\; kx^2 (1- x) , \qquad 0 \leq x \leq 1 \]</span></p>
+<h4>
+Exercises
+</h4>
+<ol style="list-style-type: lower-alpha">
+<li>Show that <span class="math inline">\(\LARGE k = 12\)</span>.</li>
+<li>Show that the mode of <span class="math inline">\(\LARGE X\)</span> is at <span class="math inline">\(\LARGE x = 2/3\)</span> and draw a graph of <span class="math inline">\(\LARGE f(x)\)</span>.</li>
+<li>Find the mean and variance of <span class="math inline">\(\LARGE X\)</span>.</li>
+<li>Find the cumulative distribution function of X and obtain the probability that <span class="math inline">\(\LARGE X\)</span> lies within one standard deviation of its mean.</li>
+</ol>
+<h4>
+Solution
+</h4>
+<p><strong><a href="https://youtu.be/rodfSPYXdh8">Click here for demonstrated solution</a></strong></p>
+</div>
+</div>
+</div>
+<div id="cumulant-generating-function" class="section level1" data-navmenu="Random Variables">
+<h1>Cumulant Generating Function</h1>
+<div id="column-7" class="section level2 tabset">
+<h2>Column</h2>
+<div id="cumulant-generating-function-1" class="section level3">
+<h3>Cumulant Generating Function</h3>
+<p>The cumulants of a random variable <span class="math inline">\(\LARGE X\)</span> are defined using the cumulant-generating function <span class="math inline">\(C(t)\)</span>, which is the natural logarithm of the moment-generating function:</p>
+<p><span class="math display">\[ {\LARGE C(t)=\log \operatorname {E} \left[e^{tX}\right].}\]</span></p>
+<p>The cumulants <span class="math inline">\(\kappa_n\)</span> are obtained from a power series expansion of the cumulant generating function: <span class="math display">\[ {\LARGE C(t)=\sum _{n=1}^{\infty }\kappa _{n}{\frac {t^{n}}{n!}}=\mu t+\sigma ^{2}{\frac {t^{2}}{2}}+\cdots .}\]</span></p>
+<p>This expansion is a Maclaurin series, so the <span class="math inline">\(n\)</span>-th cumulant can be obtained by differentiating the above expansion <span class="math inline">\(n\)</span> times and evaluating the result at zero:</p>
+<p><span class="math display">\[{\LARGE \kappa _{n}=K^{(n)}(0).} \kappa _{n}=K^{(n)}(0).\]</span></p>
+</div>
+<div id="worked-examples-1" class="section level3">
+<h3>Worked Examples</h3>
+<p>The cumulant generating function of a random variable X is given by: <span class="math display">\[C_X (t) = \log M_X (t) = 2\left[ (1\;-\;t)^{-10} \;-\;1\right]\]</span> where <span class="math inline">\(M_X(t)\)</span> is the moment generating function.\</p>
+<h4>
+Exercises
+</h4>
+<p>Determine the mean and variance of the distribution of <span class="math inline">\(\LARGE X\)</span>. \</p>
+<h4>
+Solution
+</h4>
+</div>
+</div>
+</div>
 <div id="joint-random-variables-2" class="section level1" data-navmenu="Random Variables">
 <h1>Joint Random Variables</h1>
-<div id="column-6" class="section level2 tabset">
+<div id="column-8" class="section level2 tabset">
 <h2>Column</h2>
 <div id="worked-example-1" class="section level3">
 <h3>Worked Example 1</h3>
@@ -2879,44 +2949,71 @@ Joint Distribution of Random Variables - Health Science Example
 </div>
 </div>
 </div>
-<div id="continuous-random-variables-1" class="section level1" data-navmenu="Random Variables">
+<div id="continuous-random-variables-2" class="section level1" data-navmenu="Random Variables">
 <h1>Continuous Random Variables</h1>
-<div id="column-7" class="section level2 tabset">
+<div id="column-9" class="section level2 tabset">
 <h2>Column</h2>
-<div id="worked-examples" class="section level3">
+<div id="worked-examples-2" class="section level3">
 <h3>Worked Examples</h3>
 <h3>
 Worked Example 1
 </h3>
-<p>A random variable <span class="math inline">\(X\)</span> which can be used in certain circumstances as a model for claim sizes has cumulative distribution function <span class="math display">\[\LARGE F(x) = \begin{cases}
+<p>A random variable <span class="math inline">\(\LARGE X\)</span> which can be used in certain circumstances as a model for claim sizes has cumulative distribution function <span class="math display">\[\LARGE F(x) = \begin{cases}
 0 &amp; \mbox{ where }  x &lt; 0 \\ 
 1 - \left(\frac{2}{(2+x)}\right)^3 &amp; \mbox{ where }  x &gt; 0 \\ 
 \end{cases}
 \]</span></p>
+<h4>
+Exercises
+</h4>
 <ol style="list-style-type: lower-alpha">
-<li>Calculate the value of the conditional probability <span class="math inline">\(P(X &gt; 3|X &gt; 1)\)</span>.</li>
+<li>Calculate the value of the conditional probability <span class="math inline">\(\LARGE P(X &gt; 3|X &gt; 1)\)</span>.</li>
 </ol>
 <h4>
 Solution
 </h4>
 <p><strong><a href="https://youtu.be/uaYXtM0lHRY">Click here for demonstrated solution</a></strong></p>
-<p><hline></p>
+<hr />
+<h3>
+Worked Example 2
+</h3>
+<p>The random variable <span class="math inline">\(\LARGE X\)</span> has probability density function <span class="math inline">\(\LARGE f(x)\)</span> given by <span class="math display">\[\LARGE f(x) \;=\; kx^2 (1- x) , \qquad 0 \leq x \leq 1 \]</span></p>
+<h4>
+Exercises
+</h4>
+<ol style="list-style-type: lower-alpha">
+<li>Show that <span class="math inline">\(\LARGE k = 12\)</span>.</li>
+<li>Show that the mode of <span class="math inline">\(\LARGE X\)</span> is at <span class="math inline">\(\LARGE x = 2/3\)</span> and draw a graph of <span class="math inline">\(\LARGE f(x)\)</span>.</li>
+<li>Find the mean and variance of <span class="math inline">\(\LARGE X\)</span>.</li>
+<li>Find the cumulative distribution function of X and obtain the probability that <span class="math inline">\(\LARGE X\)</span> lies within one standard deviation of its mean.</li>
+</ol>
+<h4>
+Solution
+</h4>
+<p><strong><a href="https://youtu.be/rodfSPYXdh8">Click here for demonstrated solution</a></strong></p>
 </div>
 </div>
 </div>
 <div id="moment-generating-functions" class="section level1" data-navmenu="Random Variables">
 <h1>Moment Generating Functions</h1>
-<div id="column-8" class="section level2 tabset">
+<div id="column-10" class="section level2 tabset">
 <h2>Column</h2>
 <div id="moment-generating-functions-1" class="section level3">
 <h3>Moment Generating Functions</h3>
+<h5>
+Moment Generating Functions
+</h5>
 <ul>
 <li><a href="https://youtu.be/_x3tv15tHgE/"> Cumulant Generating Functions </a><br />
 </li>
 <li><a href="https://youtu.be/MC_fQpdmOsU/"> Moment Generating Functions </a><br />
 </li>
-<li><a href="https://youtu.be/Qx8DRYUq5hA/"> Moments of Discrete Random Variable (Short Definitions) </a><br />
-</li>
+<li><a href="https://youtu.be/Qx8DRYUq5hA/"> Moments of Discrete Random Variable (Short Definitions) </a></li>
+</ul>
+</div>
+<div id="mgfs-for-discrete-distributions" class="section level3">
+<h3>MGFs for Discrete Distributions</h3>
+<ul>
 <li><a href="https://youtu.be/3HvDczHuj4Y/"> Binomial Distribution - Probability and Moment Generating Functions </a></li>
 </ul>
 </div>

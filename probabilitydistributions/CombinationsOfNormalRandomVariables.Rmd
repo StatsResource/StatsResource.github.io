@@ -1,0 +1,34 @@
+
+Combinations of Normal Random Variables {data-navmenu="Advanced Topics"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+### Worked Examples
+
+<h3> Worked Examples 1</h3>
+My cycle journey to work is 3 km, and my cycling time (in minutes) if there are no delays is distributed N(15, 1), i.e. Normally with mean 15 and variance 1.
+
+<h4> Exercises </h4>
+
+a. Find the probability that, if there are no delays, I get to work in at most 17 minutes.
+<p>
+b. On my route there are three sets of traffic lights. Each time I meet a red traffic light, I am delayed by a random time  that is distributed N(0.7, 0.09). These lights operate independently. 
+Find the probability of my getting to work in at most 17 minutes
+
+    i. if just one light is set at red when I reach it,
+    ii. if just two lights are set at red when I reach them
+    iii. if all three lights are set at red when I reach them.
+<p>
+c. Suppose that, for each set of lights, the chance of delay is 0.5. Deduce that the mean value of T, my total journey time, is 16.05 minutes.
+<p>
+d. Given that $\LARGE \operatorname{Var}(T) = 1.5025$, use a suitable approximation to calculate the probability that, over 10 journeys, my average  journey time to work is at most 17 minutes.
+
+<p>
+
+<h4> Solution </h4>
+
+<strong><a href="https://youtu.be/jGzLUVFUgQ4">Click here for demonstrated solution</a></strong>
+
+

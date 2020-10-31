@@ -6,11 +6,9 @@ Column {.tabset}
 
 
 
-
-
 ### Nelson-Aalen estimator of the cumulative hazard function
 
-The Nelson–Aalen estimator is a non-parametric estimator of the \textbf{cumulative hazard rate function} in case of censored data or incomplete data.
+The Nelson-Aalen estimator is a non-parametric estimator of the ***cumulative hazard rate function*** in case of censored data or incomplete data.
 
 
 It is used in survival theory, reliability engineering and life insurance to estimate the cumulative number of expected events. 
@@ -21,9 +19,9 @@ An "event" can be the failure of a non-repairable component, the death of a huma
 ### Formula 
 
 The Nelson-Aalen estimator is a non-parametric estimator of the cumulative hazard function and is given by:
-\[\tilde{H}(t)=\sum_{t_i\leq t}\frac{d_i}{n_i},\]
-with $d_i$ the number of events at $t_i$ and $n_i$ the total individuals at risk at $t_i$.( % H^(t)=∑ti≤tdini,
-where di is the number who failed out of ni at risk in interval ti.)
+\[\LARGE \tilde{H}(t)=\sum_{t_i\leq t}\frac{d_i}{n_i},\]
+with $\LARGE d_i$ the number of events at $\LARGE t_i$ and $\LARGE n_i$ the total individuals at risk at $t_i$.
+where $\LARGE d_i$ is the number who failed out of $\LARGE n_i$ at risk in interval ti.)
 
 
 ----------------------------
@@ -33,6 +31,36 @@ It can be used for example when testing the homogeneity of Poisson processes.
 
 ------------------------
 
-Because of its simple relationship with the survival function, $S(t)=e^{−H(t)}$ the cumulative hazard function can be used to estimate the survival function. 
+Because of its simple relationship with the survival function, $\LARGE S(t)=e^{−H(t)}$ the cumulative hazard function can be used to estimate the survival function. 
 
 The estimator is calculated, then, by summing the proportion of those at risk who failed in each interval up to time t.
+
+
+###  Worked Examples
+
+
+<h3> Worked Example</h3>
+The Shining Light company has developed a new type of light bulb which it recently
+tested. 1,000 bulbs were switched on and observed until they failed, or until 500
+hours had elapsed. For each bulb that failed, the duration in hours until failure was
+noted. Due to an earth tremor after 200 hours, 200 bulbs shattered and had to be
+removed from the test before failure.
+The results showed that 
+* 10 bulbs failed after 50 hours,
+* 20 bulbs failed after 100 hours,
+* 50 bulbs failed after 250 hours, 
+* 300 bulbs failed after 400 hours,
+* 50 bulbs failed
+after 450 hours.
+<p>
+<h4> Exercises </h4>
+a. Calculate the Kaplan-Meier estimate of the survival function, $\LARGE S(t)$, for the light
+bulbs in the test.
+b.  Sketch the Kaplan-Meier estimate calculated in part (a).
+c. Estimate the probability that a bulb will not have failed after each of the
+following durations: 300 hours, 400 hours and 600 hours. If it is not possible
+to obtain an estimate for any of the durations without additional assumptions,
+explain why.
+<p>
+<h4> Solution </h4>
+<a href="https://youtu.be/hIXJJh07ZkQ ">Solution</a>

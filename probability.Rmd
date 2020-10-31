@@ -26,6 +26,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'probability/RandomVariables.Rmd'}
 ```
 
+```{r child = 'probability/ContinuousRandomVariables.Rmd'}
+```
+
+```{r child = 'probability/CumulantGeneratingFunction.Rmd'}
+```
+
 ```{r child = 'probability/JointRandomVariables.Rmd'}
 ```
 

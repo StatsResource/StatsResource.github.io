@@ -180,84 +180,42 @@ summary {
 </div>
 
 
-<div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Exponential Distribution</h1>
+<div id="nelson-aalen-estimators" class="section level1" data-navmenu="Survival Models">
+<h1>Nelson-Aalen Estimators</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="important-formulas" class="section level3">
-<h3>Important Formulas</h3>
-<h3>
-The Exponential Distribution
-</h3>
-<p>
-<h5>
-Probability density function of the Exponential Distribution
-</h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
-<p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
+<div id="nelson-aalen-estimator-of-the-cumulative-hazard-function" class="section level3">
+<h3>Nelson-Aalen estimator of the cumulative hazard function</h3>
+<p>The Nelson-Aalen estimator is a non-parametric estimator of the <strong><em>cumulative hazard rate function</em></strong> in case of censored data or incomplete data.</p>
+<p>It is used in survival theory, reliability engineering and life insurance to estimate the cumulative number of expected events.</p>
+<p>An “event” can be the failure of a non-repairable component, the death of a human being, or any occurrence for which the experimental unit remains in the “failed” state (e.g., death) from the point at which it changed on.</p>
+</div>
+<div id="formula" class="section level3">
+<h3>Formula</h3>
+<p>The Nelson-Aalen estimator is a non-parametric estimator of the cumulative hazard function and is given by: <span class="math display">\[\LARGE \tilde{H}(t)=\sum_{t_i\leq t}\frac{d_i}{n_i},\]</span> with <span class="math inline">\(\LARGE d_i\)</span> the number of events at <span class="math inline">\(\LARGE t_i\)</span> and <span class="math inline">\(\LARGE n_i\)</span> the total individuals at risk at <span class="math inline">\(t_i\)</span>. where <span class="math inline">\(\LARGE d_i\)</span> is the number who failed out of <span class="math inline">\(\LARGE n_i\)</span> at risk in interval ti.)</p>
+<hr />
+<p>The curvature of the Nelson-Aalen estimator gives an idea of the hazard rate shape. A concave shape is an indicator for infant mortality while a convex shape indicates wear out mortality. It can be used for example when testing the homogeneity of Poisson processes.</p>
+<hr />
+<p>Because of its simple relationship with the survival function, <span class="math inline">\(\LARGE S(t)=e^{âH(t)}\)</span> the cumulative hazard function can be used to estimate the survival function.</p>
+<p>The estimator is calculated, then, by summing the proportion of those at risk who failed in each interval up to time t.</p>
 </div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
 <h3>
-Worked Examples
+Worked Example
 </h3>
-<p>Claim amounts are modelled as an exponential random variable with mean $1,000.</p>
+The Shining Light company has developed a new type of light bulb which it recently tested. 1,000 bulbs were switched on and observed until they failed, or until 500 hours had elapsed. For each bulb that failed, the duration in hours until failure was noted. Due to an earth tremor after 200 hours, 200 bulbs shattered and had to be removed from the test before failure. The results showed that * 10 bulbs failed after 50 hours, * 20 bulbs failed after 100 hours, * 50 bulbs failed after 250 hours, * 300 bulbs failed after 400 hours, * 50 bulbs failed after 450 hours.
+<p>
 <h4>
 Exercises
 </h4>
 <ol style="list-style-type: lower-alpha">
-<li><p>Calculate the probability that one such claim amount is greater than $5,000.</p></li>
-<li><p>Calculate the probability that a claim amount is greater than $5,000 given that it is greater than $1,000.</p></li>
-</ol>
-<h4>
-Solution
-</h4>
-<p><strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong></p>
-</div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h5>
-Worked Example
-</h5>
-<ul>
-<li><a href="https://youtu.be/ivnbqNPv_WQ/"> Exponential Distribution - Worked Example </a><br />
-</li>
-<li><a href="https://youtu.be/HbKGfxMsX5U/"> Exponential Random Variables - Distribution of the Minima </a></li>
-</ul>
-</div>
-<div id="review-questions" class="section level3">
-<h3>Review Questions</h3>
-<h3>
-Review Question 1
-</h3>
-<p>An average of five calls per hour are received by a machine repair department. Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes? Jobs are sent to a printer at an average of 5 jobs per hour.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected time between jobs?</li>
-<li>What is the probability that the next job is sent within 6 minutes after the previous job?</li>
-</ol>
-<hr />
-<h3>
-Review Question 2
-</h3>
-<p>Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the mean duration between arrivals?</li>
-<li>Find the probability that the time between arrivals is greater than 5 minutes.</li>
-<li>Find the probability that the time between arrivals will be less than 2 minute.</li>
-</ol>
-<hr />
-<h3>
-Review Question 3
-</h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let <span class="math inline">\(\LARGE T\)</span> be the symbol for the ``waiting times&quot; variable.
+<li>Calculate the Kaplan-Meier estimate of the survival function, <span class="math inline">\(\LARGE S(t)\)</span>, for the light bulbs in the test.</li>
+<li>Sketch the Kaplan-Meier estimate calculated in part (a).</li>
+<li>Estimate the probability that a bulb will not have failed after each of the following durations: 300 hours, 400 hours and 600 hours. If it is not possible to obtain an estimate for any of the durations without additional assumptions, explain why.
 <p>
-<p>Suppose that a customer has just arrived.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected waiting time between customer arrivals?</li>
-<li>Compute <span class="math inline">\(E(T)\)</span></li>
-<li>What is the variance of waiting times? Compute <span class="math inline">\(\mbox{Var}(T)\)</span>.</li>
-<li>What is the probability that the next customer will arrive within the next fifteen minutes?</li>
-<li>What is the probability that no customers arrive in the next half hour?</li>
+<h4>
+Solution /h4&gt; <a href="https://youtu.be/hIXJJh07ZkQ ">Solution</a></li>
 </ol>
 </div>
 </div>

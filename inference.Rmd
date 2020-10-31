@@ -15,12 +15,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'main/introduction.Rmd'}
 ```
 
-Sampling Distributions
-===============================
-
-Column {.tabset}
--------------------------
-
 ```{r child = 'inference/students_t_distribution.Rmd'}
 ```
 
@@ -31,4 +25,18 @@ Column {.tabset}
 ```{r child = 'inference/testingmodelassumptions.Rmd'}
 ```
 
+```{r child = 'inference/DifferencesInMeans_ConfInt.Rmd'}
+```
+
+```{r child = 'inference/HypothesisTesting.Rmd'}
+```
+
+```{r child = 'inference/DixonQTest.Rmd'}
+```
+
 ```{r child = 'inference/NonParametricTests.Rmd'}
+```
+
+```{r child = 'inference/SampleSizeEstimation.Rmd'}
+```
+
