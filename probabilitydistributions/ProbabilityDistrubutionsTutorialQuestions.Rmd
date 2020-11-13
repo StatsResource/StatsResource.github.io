@@ -1,0 +1,62 @@
+Suppose 40\% of employees in a large company favour unionisation.  A poll of 10 employees in this company is taken.  
+<p>
+
+<h4> Exercises</h4>
+a.   What is the probability that 4 or more employees polled favour unionisation? 
+b.   What is the probability that less than 2 employees polled favour unionisation?
+c.   What is the probability that exactly 5 employees polled favour unionisation?
+d.   What is the mean and variance for this distribution?
+<p>	
+
+
+-----------------------------------------------------------------------------
+
+\item A student is practising for an upcoming high jump event.  The height that she will clear each time she jumps is normally distributed with a 
+mean of 72 inches and a standard deviation of 4 inches.  
+<p>
+
+<h4> Exercises</h4>
+a.   What is the probability that the jumper will clear 76 inches or higher on a single jump?
+b.   What is the probability that the height she jumps is between 68 and 76 inches on a single jump?
+c.   What is the minimum height she must jump in order for the jump to be in the highest 10%?
+<p>
+    
+
+-----------------------------------------------------------------------------    
+    
+\item Telephone calls coming in to a busy switchboard follow a Poisson distribution with 3 calls expected in a one minute period.  
+The switchboard operator can answer at most 3 calls in a one minute period; the fourth and succeeding calls receive a busy signal.
+<p>
+<h4> Exercises</h4>
+a.  Find the probability of receiving a busy signal.
+b.  The switchboard operator leaves the switchboard unattended for 2 minutes.  
+c.  What is the probability that exactly 1 call will be missed during that 2 minute period?
+d. In what circumstances can the Poisson distribution be used to approximate the Binomial distribution?
+<p>      
+-----------------------------------------------------------------------------
+
+\item Four  per cent of PCB boards purchased over the Internet from the Far East have some defect.  
+From a large consignment of boards, 50 are chosen at random.  
+<p>
+
+<h4> Exercises</h4>
+What is the probability that:
+
+a.  	3 or more boards have some defect?
+b.   	Exactly 2 boards are defective?
+b.   	Less than 3 boards are defective?
+d.  	If more than 5 boards from the 50 were defective what action would you take? (justify)
+<p> 
+
+
+-----------------------------------------------------------------------------
+
+\item Flaws occur in a hard wood timbers  at the rate of 1.5 per linear  metre section.  
+<p>
+
+<h4> Exercises</h4>
+Calculate the probability that:
+a.  	3 or more flaws will occur in a 3  metre length 
+b.   	Exactly 4 flaws will occur in a 10 metre length
+c.   	8 or less flaws will occur in a 6  metre length 
+<p> 

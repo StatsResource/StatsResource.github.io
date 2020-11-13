@@ -1,0 +1,127 @@
+\documentclass[]{report}
+
+\voffset=-1.5cm
+\oddsidemargin=0.0cm
+\textwidth = 480pt
+
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{graphics}
+\usepackage{newlfont}
+\usepackage{eurosym}
+\usepackage{enumerate}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\begin{document}
+
+\section*{Probability : Tutorial Sheet C}
+\begin{enumerate}
+\item Two manufacturing plants produce similar parts. Plant A produces 1000 parts, 100 of which are defective. Plant B produces 2000 parts, 170 of which are defective. 
+\begin{itemize}
+\item[a)] Present this information using a contingency table
+
+\item[b)] A part is selected at random and found to be defective. What is the probability that it came from plant A ?
+\end{itemize}
+\item 
+A production manager for a contract manufacturer in electronic sub assembly has 3 suppliers of motherboards.  
+\begin{itemize}
+\item Supplier A provides 50\% of the boards, with B and C providing 30\% and 20\% respectively.  
+\item Supplier A boards have a 2\% defect rate, with B and C at 1\% and 3\% respectively, i.e. the conditional probability that a mother board fails given that A was the supplier = 0.01.
+\end{itemize}
+
+A board selected randomly from any of the three suppliers fails on mechanical test.  What is the probability that the board was supplied by Supplier A? i.e. what is the conditional probability that A supplied the board given that the board failed a random test?
+(7 marks)
+
+\item 
+\item One in 10 000 people suffer from a particular disease. Given a person has the disease, a test for the disease is always positive (indicates that the person has the disease). Given a person does not have the disease, a test for the disease is positive with probability 0.01.
+\begin{itemize}
+\item[(a)] Calculate the probability that when a randomly chosen person is tested, the result is positive. 
+\item[(b)] Calculate the probability that an individual has the disease, given that the test result was positive.
+\end{itemize} 
+
+\item On completion of a programming project, four programmers from a team submit a collection of subroutines to an acceptance group. The following table shows the percentage of subroutines each programmer submitted and the probability that a subroutine submitted by each programmer will pass the certification test based on historical data.
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline Programmer&A&B&C&D \\ \hline
+Proportion of subroutines submitted&0.1&0.2&0.3&0.4 \\ \hline
+Probability of acceptance&0.55&0.6&0.95&0.75 \\ \hline
+\end{tabular} 
+\end{center}
+\begin{itemize}
+\item[(a)] What is the proportion of subroutines that pass the acceptance test?
+\item[(b)] After the acceptance tests are completed, one of the subroutines is selected at random and found to have passed the test. What is the probability that it was written by Programmer A?
+\end{itemize}
+\bigskip
+\item An assembly plant has two suppliers, one based in England (E) and the other in Spain (S).  
+60\% of the components are supplied by the Spanish factory and the remaining 40\% by the English base factory.  
+The defect rate in the English plant is 5\% and in the Spanish plant is 6\%.
+
+\begin{itemize}
+\item[(i)]If a component is randomly selected from the production floor in Spain what is the probability that it will fail?
+\item[(ii)]If a motherboard fails what is the probability that the component which caused the failure was sourced in England?
+\end{itemize}
+\item  A computer manufacturer produces hard drives for laptops at plants located in Cork, Glasgow and Budapest; 40\% in Cork, 35\% in Glasgow and the remaining 25\% in Budapest. The probability that a hard drive will be found to be defective upon receipt by a customer is 0.015 if shipped from Cork, 0.01 if shipped from Glasgow, and 0.02 if shipped from Budapest.
+
+\begin{itemize}
+\item[(i)]What is the probability that a hard drive selected at random at a customer location will be found to be defective?
+\item[(ii)]Suppose a hard drive selected at random is found to be defective upon arrival at a customer location. What is the probability that it was manufactured in Cork?
+\end{itemize}
+
+\item
+A software company examined blocks of code written by its employees. Each block of code was tested for bugs and, in addition, the skill level of the employee was also recorded. See table:
+\begin{center}
+\begin{tabular}{|cc|ccc|c|}
+\hline
+&&&&&\\[-0.4cm]
+&& \multicolumn{3}{|c|}{Skill Level} &  \\
+&& High & Average & Low & Total \\
+\hline
+&&&&&\\[-0.4cm]
+Bug in   & No    &  140 &   600  & 100 & 840 \\
+Code & Yes   &    5 &    70  &  40 & 115 \\
+\hline
+&&&&&\\[-0.4cm]
+&Total &  145 &   670  & 140 & 955 \\
+\hline
+\end{tabular}
+\end{center}
+In answering the following questions use appropriate probability notation.\\[0.2cm]
+Let $B =$ ``bug'' and, hence, $B^c =$ ``no bug''.\\[0.1cm]
+Also let $S_H = $ ``skill: high'', $S_A = $ ``skill: average'' and $S_L =$ ``skill: low''.\\[-0.2cm]
+\begin{enumerate}
+\item Calculate the probability that the programmer has: (i) high skill, (ii) average skill and (iii) low skill. \item  Calculate the probability of a bug. \item  Calculate the probability of a bug \emph{given that} the code was written by a programmer with: (i) high skill, (ii) average skill and (iii) low skill. \item  Comment on the above conditional (i.e., updated) probabilities compared with $\Pr(B)$ calculated in part (b). Is the presence of bugs independent of the skill level? \item  Show that $\Pr(S_A\,|\,B) > \Pr(S_L\,|\,B)$. Explain the reason for this.
+\end{enumerate}
+
+\item 
+Consider a RAID (redundant array of inexpensive disks) system where multiple hard disks are used simultaneously.\\[0.2cm]
+Let's assume that we have two hard disks that work \emph{independently} of each other. Define the events $H_1 =$ ``hard disk one works'' and $H_2 =$ ``hard disk two works'' and also assume that $\Pr(H_1) = \Pr(H_2) = 0.9$.\\[-0.5cm]
+\begin{framed}
+\begin{itemize}
+\item RAID-0 is a system which increases performance but only works if \emph{both} hard disks work.
+\item RAID-1 is a system which does not increase performance but still works with only one working hard disk.
+\end{itemize}
+\end{framed}
+\begin{enumerate}
+\item Calculate $\Pr(\text{RAID-0 works})$ and $\Pr(\text{RAID-0 fails})$. \item  Calculate $\Pr(\text{RAID-1 works})$ and $\Pr(\text{RAID-1 fails})$. \item  Calculate $\Pr(H_1^c)$ and $\Pr(H_2^c)$. \\[0.3cm]
+\item  Cheap hard disks exist with $\Pr(H) = 0.6$. Consider a RAID-1 system with 3 of these hard disks - calculate $\Pr(\text{RAID-1 fails})$ in this case. \item  In part (a) we found that $\Pr(\text{RAID-1 fails}) = 0.01$. How many cheap disks would be required to match this level of reliability?
+\end{enumerate}
+
+
+%\item Prove the law of total probability, i.e. when A1 , A2 , …, An form a partition
+%
+%P(B) = P(B|A1)P(A1) + P(B|A2)P(A2) + … + P(B|An)P(An)
+
+\item A survey of students was carried out before an exam. 20\% of students stated that they were very confident, 50\% stated that they were confident and 30\% were unconfident. 80\% of those who said they were very confident, 50\% of those who said they were confident and 20\% of those who said they were unconfident got at least a B1 grade. Calculate 
+\begin{enumerate}[(i)]
+\item the probability that a randomly picked student  got at least a B1 grade.
+\item given that the student got at least a B1 grade, what is the probability that he/she was very confident.
+\item given that the student got less than a B1 grade, what is the probability that he/she was unconfident. 
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
