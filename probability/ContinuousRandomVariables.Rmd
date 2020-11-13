@@ -4,6 +4,33 @@ Continuous Random Variables {data-navmenu="Random Variables"}
 Column {.tabset}
 -------------------------------------------------------------
 
+### Properties
+
+#### Conditional Expectations 
+
+If $X$ is a continuous random variable, while $Y$ remains a discrete variable, the conditional expectation is
+
+\[{\displaystyle \operatorname {E} (X\mid Y=y)=\int _{\mathcal {X}}x\;f_{X}(x\mid Y=y)\,\mathrm {d} x,}\]
+with the conditional density of $X$ given $Y = y$ defined as \[{\displaystyle f_{X}(x\mid Y=y)={\frac {f_{X,Y}(x,y)}{P(Y=y)}}}\] where $f_{X,Y}(x, y)$ is the joint density of $X$ and $Y$. 
+
+<p>
+
+If both $X$ and $Y$ are continuous random variables, then the conditional expectation is
+
+\[{\displaystyle \operatorname {E} (X\mid Y=y)=\int _{\mathcal {X}}x\;f_{X\mid Y}(x\mid y)\,\mathrm {d} x,}\]
+where \[{\displaystyle f_{X\mid Y}(x\mid y)={\frac {f_{X,Y}(x,y)}{f_{Y}(y)}}}\] where $f_{Y}(y)$ gives the density of $Y$.
+
+-------------------------------------------------------------
+
+
+#### Marginal Probability Density Function
+
+Given two continuous random variables $X$ and $Y$ whose joint distribution is known, then marginal probability density function can be obtained by integrating the joint probability distribution over $Y$, and vice versa. That is
+
+\[{\displaystyle f_{X}(x)=\int _{c}^{d}f(x,y)dy}\] and \[{\displaystyle f_{Y}(y)=\int _{a}^{b}f(x,y)dx}\]
+
+\noindent where ${\displaystyle x\in [a,b]}$, and ${\displaystyle y\in [c,d]}$
+
 
 
 ### Worked Examples

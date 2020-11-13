@@ -4,6 +4,116 @@ Normal Distribution {data-navmenu="Continuous Distributions"}
 Column {.tabset}
 -----------------------------------
 
+
+%------------------------------------------------------------------%
+\frame{
+\frametitle{Complement and Symmetry Rules}
+
+Any normal distribution problem can be solved with some combination of the following rules.\\
+\bigskip \textbf{1. Complement rule}  * Common to all continuous random variables
+\[P(Z \geq k) = 1 - P(Z \leq k) \]
+Similarly
+\[P(X \geq k) = 1 - P(X \leq k) \]
+
+
+\[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]
+
+#### 2. Symmetry rule
+
+\item
+This rule is based on the property of symmetry mentioned previously.
+\item
+Only the probabilities corresponding to values between 0 and 4 are tabulated in Murdoch Barnes.
+\item
+If we have a negative value of k, we can use the symmetry rule.
+
+\[P(Z \leq -k) = P(Z \geq k) \]
+by extension, we can say
+\[P(Z \geq -k) = P(Z \leq k) \]
+
+-------------------------------------------------
+
+\frametitle{Example}
+Find $P(Z \geq -1.28)$
+\textbf{Solution}\\
+
+* Using the symmetry rule
+\[P(Z \geq -1.28) = P(Z \leq 1.28) \]
+* Using the complement rule
+\[P(Z \geq -1.28) = 1 - P(Z \geq 1.28) \]
+\[P(Z \geq -1.28) = 1 - 0.1003 = 0.8997 \]
+
+}
+%------------------------------------------------------------------%
+\frame{
+Find the probability of a ``z" random variable being between -1.8 and 1.96?
+i.e. Compute $P(-1.8 \leq Z \leq 1.96)$\\
+Solution
+
+* Consider the complement event of being in this interval: a combination of being too low or too high.
+\item
+The probability of being too low for this interval is $P(Z \leq -1.80) = 0.0359$ (check)
+\item
+The probability of being too high for this interval is $P(Z \geq 1.96) = 0.0250$ (check)
+\item
+Therefore the probability of being \textbf{outside} the interval is 0.0359 + 0.0250 = 0.0609.
+\item
+Therefore the probability of being \textbf{inside} the interval is 1- 0.0609 = 0.9391
+$P(-1.8 \leq Z \leq 1.96) = 0.9391$
+
+}
+
+%---------------------------------------------%
+
+\frametitle{Solutions}
+
+Let x be the normal random variable describing waiting times\\
+$P(X \geq 15) =?$ \\
+\bigskip
+     First , we find the z-value that corresponds to x = 15  (remember $\mu=10$ and $\sigma=3$  )\\
+\[ z_o = { x_o - \mu \over \sigma }  = { 15 - 10 \over 3 } = 1.666 \]
+
+* We will use $z_o =1.67$
+* Therefore we can say $P(X \geq 15 ) = P(Z \geq 1.67)$
+* The Murdoch Barnes tables are tabulated to give $P(Z \geq z_o)$ for some value $ z_o$ .
+* We can evaluate $P(Z \geq 1.67)$  as 0.0475.
+* Necessarily $P(X \geq 15) = 0.0475$.
+
+
+\end{document}
+%---------------------------------------------%
+
+\frametitle{Solutions}
+
+* "$90\%$ of customers will be dealt with in at most 12 minutes."
+* To answer this question, we need to know  $P(X\leq 12)$
+* First , we find the z-value that corresponds to x = 12  (remember $\mu=10$ and $\sigma=3$ )
+
+\[ z_o = { x_o - \mu \over sigma }  = { 12 - 10 \over 2 } = 0.666 \]
+
+
+
+
+
+* We will use $z_o =0.67$
+* Therefore we can say $P(X \geq 12 ) = P(Z \geq 0.67)  = 0.2514$
+* Necessarily  $P(X \leq 12 ) = P(Z \leq 0.67) = 0.7486$
+* $74.86\%$ of customers will be dealt with in at most 12 minutes.
+* The statement that $90\%$ will be dealt with in at most 12 minutes is false.
+
+
+%---------------------------------------------%
+
+What percentage will wait between 7 and 13 minutes ?\\
+
+$P(7 \leq X \leq 13)   = ?$
+
+\textbf{Solution:}\\
+Compute the probability of being too low, and the probability of being too high for the interval.\\The probability of being inside the interval is the complement of the combination of these events.
+
+%---------------------------------------------%
+
+
 ### Z-Scores
 
 * <a href = "https://youtu.be/HJ4DR79XRa8/"> Computing the Z score</a>

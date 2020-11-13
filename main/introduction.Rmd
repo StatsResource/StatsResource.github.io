@@ -35,13 +35,13 @@ Column {.tabset}
   <td class="tg-76so"><strong> <a href = "testingassumptions.html">Testing Distributional Assumptions</a></strong> <br> Testing Normality and Outlier Detection</td>
   <td class="tg-76so"><strong> <a href = "inference.html">Inference Procedures</a></strong> <br>Confidence Intervals and Hypothesis Testing</td>
   <td class="tg-76so"><strong> <a href = "bivariatedata.html">Bivariate Data</a></strong> <br>Correlation Coefficients & Hypothesis Tests, Chi Square Test for Independence</td>
-  <td class="tg-76so"><strong> <a href = "linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models</td>
+  <td class="tg-76so"><strong> <a href = "linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models, Residual Analysis, Regression ANOVA</td>
   </tr>
   <tr>
-  <td class="tg-76so"><strong><a href = "randomnumbers.html">Random Number Generation</a></strong></td>
+  <td class="tg-76so"><strong><a href = "discreterandomvariables.html">Discrete Random Variables</a></strong><br>Expectations and variance of discrete random variables, Joint Distribution of discrete random variables</td>
   <td class="tg-76so"><strong><a href = "continuousrandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of continuous random variables</td>
   <td class="tg-76so"><strong><a href = "randomvariables2.html">More on Random Variables</a></strong><br> Moment Generating Functions, Cumulant Generating Functions</td>
-  <td class="tg-76so"><strong> <a href = "timeseries.html">Time Series Analysis</a></strong> </td>
+  <td class="tg-76so"><strong><a href = "randomnumbers.html">Random Number Generation</a></strong></td>
   </tr>
   <tr>
   <td class="tg-76so"><strong> <a href = "gametheory.html">Game Theory and Decision Theory</a></strong> <br></td>

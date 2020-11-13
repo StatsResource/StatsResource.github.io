@@ -67,6 +67,3 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'probabilitydistributions/MixedDistributions.Rmd'}
 ```
 
-```{r child = 'probabilitydistributions/RandomNumberGeneration.Rmd'}
-``` 	  	
- 	  	

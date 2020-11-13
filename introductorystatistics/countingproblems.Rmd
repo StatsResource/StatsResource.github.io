@@ -1,4 +1,4 @@
-Counting Problems {data-navmenu="Introductory Probability"}
+Counting Problems {data-navmenu="Counting Problems"}
 ====================================================================
 
 Column {.tabset}

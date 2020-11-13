@@ -9,6 +9,68 @@ Column {.tabset}
 
 <h5> Poisson Distribution</h5>
 
+
+#### Probability Density Function for the Poisson Distribution}
+A discrete random variable $X$ is said to follow a Poisson distribution with parameter $m$, written $X \sim \mbox{Poisson}(m)$.
+
+
+
+
+* Here the key parameter, the \textbf{Poisson Mean}, is the expected number of occurence per unit period. 
+* It is usually denoted as either $m$ or $\lambda$.
+
+
+\noindent Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the \textit{probability density function} formula.
+
+
+
+\begin{framed}
+\noindent \textbf{Poisson Formula}\\
+The probability that there will be $k$ occurrences in a \textbf{unit time period} is denoted $P(X=k)$, and is computed as:
+{
+\large
+\[ P(X = k)=\frac{m^k e^{-m}}{k!} \]
+}
+
+\noindent where
+
+
+
+
+ 
+%\itemf(x) the probability of x occurrences in an interval. 
+* $m$ (or $\lambda$) is the expected value of the mean number of occurrences in any interval (i.e. the Poisson mean),
+* $e=2.718$,
+* $k = 0, 1, 2, \ldots$,
+* $m > 0$.
+
+
+
+#### Poisson Expected Value and Variance}
+
+
+If the random variable X has a Poisson distribution with parameter $m$, we write
+\[ X \sim Poisson(m) \]
+Note the expected number of occurrences per unit time is often denoted $\lambda$ (lambda) rather than $m$.
+
+% If X is a Poisson distribution stochastic variable with parameter $\lambda$, then
+% 
+% 
+% * The expected value $E[X]=\lambda$
+% * The variance $Var[X]=\lambda$
+% 
+
+
+
+
+
+* Expected Value of X : $\mbox{E}(X)=  m \mbox{ or } \lambda$
+* Variance of X : $\mbox{Var}(X) = m \mbox{ or } \lambda$
+* Standard Deviation of X : $SD(X) = \sqrt{m} \mbox{ or } \sqrt{\lambda}$
+
+
+\noindent Important 
+\[ \mbox{E}(X) = \mbox{Var}(X)\]
 * Poisson Distribution - Probability Mass Function
 * <a href= "https://www.youtube.com/watch?v=nc4vErCoo0w">Confidence Intervals for Poisson Variables </a>
 
@@ -74,7 +136,7 @@ the respective Poisson parameters.
 
 * <a href = "https://youtu.be/5r8JMrKSFrU/"> Confidence Intervals for Poisson Random Variables </a>
 * <a href = "https://youtu.be/3Y3pJaLcXdc/"> Confidence Intervals for Poisson Random Variables </a>
-* <a href = "https://youtu.be/nc4vErCoo0w/"> Confidence Intervals for Poisson Variables	</a>
+* <a href = "https://youtu.be/nc4vErCoo0w/"> Confidence Intervals for Poisson Variables</a>
 * <a href = "https://youtu.be/N291An2ui18/"> Poisson Random Variables Confidence Intervals For Difference In Rates </a>
 
 

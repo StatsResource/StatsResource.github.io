@@ -2617,16 +2617,16 @@ Exploring Data
 </tr>
 <tr>
 <td class="tg-76so">
+<strong><a href="discreterandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of discrete random variables, Joint Distribution of discrete random variables
+</td>
+<td class="tg-76so">
+<strong><a href="continuousrandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of continuous random variables
+</td>
+<td class="tg-76so">
+<strong><a href="randomvariables2.html">More on Random Variables</a></strong><br> Moment Generating Functions, Cumulant Generating Functions
+</td>
+<td class="tg-76so">
 <strong><a href="randomnumbers.html">Random Number Generation</a></strong>
-</td>
-<td class="tg-76so">
-<strong><a href="continuousrandomvariables.html">Continuous Random Variables</a></strong>
-</td>
-<td class="tg-76so">
-Stochastic Processes
-</td>
-<td class="tg-76so">
-<strong> <a href="timeseries.html">Time Series Analysis</a></strong>
 </td>
 </tr>
 <tr>
@@ -2653,6 +2653,24 @@ Stochastic Processes
 <h1>Continuous Random Variables</h1>
 <div id="column-1" class="section level2 tabset">
 <h2>Column</h2>
+<div id="properties" class="section level3">
+<h3>Properties</h3>
+<div id="conditional-expectations" class="section level4">
+<h4>Conditional Expectations</h4>
+<p>If <span class="math inline">\(X\)</span> is a continuous random variable, while <span class="math inline">\(Y\)</span> remains a discrete variable, the conditional expectation is</p>
+<p><span class="math display">\[{\displaystyle \operatorname {E} (X\mid Y=y)=\int _{\mathcal {X}}x\;f_{X}(x\mid Y=y)\,\mathrm {d} x,}\]</span> with the conditional density of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y = y\)</span> defined as <span class="math display">\[{\displaystyle f_{X}(x\mid Y=y)={\frac {f_{X,Y}(x,y)}{P(Y=y)}}}\]</span> where <span class="math inline">\(f_{X,Y}(x, y)\)</span> is the joint density of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+<p>
+<p>If both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are continuous random variables, then the conditional expectation is</p>
+<p><span class="math display">\[{\displaystyle \operatorname {E} (X\mid Y=y)=\int _{\mathcal {X}}x\;f_{X\mid Y}(x\mid y)\,\mathrm {d} x,}\]</span> where <span class="math display">\[{\displaystyle f_{X\mid Y}(x\mid y)={\frac {f_{X,Y}(x,y)}{f_{Y}(y)}}}\]</span> where <span class="math inline">\(f_{Y}(y)\)</span> gives the density of <span class="math inline">\(Y\)</span>.</p>
+<hr />
+</div>
+<div id="marginal-probability-density-function" class="section level4">
+<h4>Marginal Probability Density Function</h4>
+<p>Given two continuous random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> whose joint distribution is known, then marginal probability density function can be obtained by integrating the joint probability distribution over <span class="math inline">\(Y\)</span>, and vice versa. That is</p>
+<p><span class="math display">\[{\displaystyle f_{X}(x)=\int _{c}^{d}f(x,y)dy}\]</span> and <span class="math display">\[{\displaystyle f_{Y}(y)=\int _{a}^{b}f(x,y)dx}\]</span></p>
+<p>where <span class="math inline">\({\displaystyle x\in [a,b]}\)</span>, and <span class="math inline">\({\displaystyle y\in [c,d]}\)</span></p>
+</div>
+</div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
 <h3>

@@ -5,6 +5,34 @@ Geometric Distribution {data-navmenu="Discrete Distributions"}
 Column {.tabset}
 -------------------------------------------------
 
+
+
+\section{Geometric Distribution}
+
+* Geometric distributions model (some) discrete random variables. Typically, a Geometric random variable is the number of trials required to obtain the first failure, for example, the number of tosses of a coin until the first 'tail' is obtained, or a process where components from a production line are tested, in turn, until the first defective item is found.
+
+* A discrete random variable X is said to follow a Geometric distribution with parameter p, written $X \sim Ge(p)$, if it has probability distribution
+\[P(X=x) = p^{x-1}(1-p)^x\]
+where
+
+* $x = 1, 2, 3, \ldots$
+* p = success probability; $0 < p < 1$
+
+* The trials must meet the following requirements:
+
+
+\item[(i)] the total number of trials is potentially infinite;
+there are just two outcomes of each trial; success and failure;
+\item[(ii)] the outcomes of all the trials are statistically independent;
+\item[(iii)] all the trials have the same probability of success.
+
+* The Geometric distribution has expected value and variance  \[E(X)= 1/(1-p)\] \[V(X)=p/{(1-p)^2}\].
+
+* The Geometric distribution is related to the Binomial distribution in that both are based on independent trials in which the probability of success is constant and equal to $p$. 
+
+* However, a Geometric random variable is the number of trials until the first failure, whereas a Binomial random variable is the number of successes in n trials.
+
+
 ### Geometric Distribution
 
 * <a href = "https://youtu.be/pIAZmkRvKPo/">Geometric Distribution with Chi Square Test for Goodness of Fit</a>

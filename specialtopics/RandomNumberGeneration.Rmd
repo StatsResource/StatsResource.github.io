@@ -1,4 +1,4 @@
-Random Number Generation {data-navmenu="Random NumberGeneration"}
+Random Number Generation {data-navmenu="Random Number Generation"}
 ===========================================================
 
 Column {.tabset}
