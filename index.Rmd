@@ -33,14 +33,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-
-
-
-
-
-```{r child = 'specialtopics/RandomNumberGeneration.Rmd'}
-```
-
 ```{r child = 'specialtopics/StatisticalProcessControl.Rmd'}
 ```
 

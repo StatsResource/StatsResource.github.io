@@ -29,8 +29,6 @@ Column {.tabset}
 	* Polynomial regression. (<em>Simple cases only.</em>)
 	* Use of indicator variables to model factors or qualitative variables (<em>Simple cases only.</em>)
 
-```{r child = 'modellingdata/BivariateData.Rmd'}
-```
 
 
 ```{r child = 'modellingdata/ModelSelection.Rmd'}

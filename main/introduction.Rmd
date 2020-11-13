@@ -39,8 +39,8 @@ Column {.tabset}
   </tr>
   <tr>
   <td class="tg-76so"><strong><a href = "randomnumbers.html">Random Number Generation</a></strong></td>
-  <td class="tg-76so"><strong><a href = "continuousrandomvariables.html">Continuous Random Variables</a></strong></td>
-  <td class="tg-76so">Stochastic Processes</td>
+  <td class="tg-76so"><strong><a href = "continuousrandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of continuous random variables</td>
+  <td class="tg-76so"><strong><a href = "randomvariables2.html">More on Random Variables</a></strong><br> Moment Generating Functions, Cumulant Generating Functions</td>
   <td class="tg-76so"><strong> <a href = "timeseries.html">Time Series Analysis</a></strong> </td>
   </tr>
   <tr>

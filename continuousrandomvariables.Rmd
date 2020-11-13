@@ -15,5 +15,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'main/introduction.Rmd'}
 ```
 
-Random Variables
-==========================================
+```{r child = 'probability/ContinuousRandomVariables.Rmd'}
+```

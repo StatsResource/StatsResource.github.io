@@ -12,16 +12,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-
 ```{r child = 'main/introduction.Rmd'}
 ```
 
-```{r child = 'modellingdata/BivariateData.Rmd'}
+
+```{r child = 'randomvariables/MomentGeneratingFunctions.Rmd'}
 ```
 
 
-
-```{r child = 'modellingdata/chisquare.Rmd'}
+```{r child = 'probability/CumulantGeneratingFunction.Rmd'}
 ```
-
-

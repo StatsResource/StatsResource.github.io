@@ -1,5 +1,5 @@
 
-Survival Analysis  {data-navmenu="Modelling Data"}
+Survival Analysis  {data-navmenu="Survival Analysis"}
 ===========================================================
 
 Column {.tabset}
