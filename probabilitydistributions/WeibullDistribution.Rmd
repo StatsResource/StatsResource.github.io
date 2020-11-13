@@ -20,12 +20,12 @@ f(x;\lambda,k) =
 \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-(x/\lambda)^{k}} & x\geq0 ,\\
 0 & x<0,
 \end{cases}
-where k > 0 is the shape parameter and λ > 0 is the scale parameter of the distribution. 
+where k > 0 is the shape parameter and \lambda  > 0 is the scale parameter of the distribution. 
 
 
 The cumulative distribution function for the Weibull distribution is
 \[F(x;k,\lambda) = 1- e^{-(x/\lambda)^k}\,
-for x ≥ 0, and F(x; k; λ) = 0 for x < 0.\]
+for x ≥ 0, and F(x; k; \lambda ) = 0 for x < 0.\]
 The quantile (inverse cumulative distribution) function for the Weibull distribution is
 \[Q(p;k,\lambda) = \lambda {(-\ln(1-p))}^{1/k}
 for 0 ≤ p < 1.\]
@@ -34,7 +34,7 @@ The failure rate h (or hazard rate) is given by
 
 
 
-Failure rate is the frequency with which an engineered system or component fails, expressed, for example, in failures per hour. It is often denoted by the Greek letter λ (lambda) and is important in reliability engineering.
+Failure rate is the frequency with which an engineered system or component fails, expressed, for example, in failures per hour. It is often denoted by the Greek letter \lambda  (lambda) and is important in reliability engineering.
 
 
 

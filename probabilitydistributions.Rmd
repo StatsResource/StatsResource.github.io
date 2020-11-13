@@ -60,7 +60,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-
 ```{r child = 'probabilitydistributions/CompoundDistributions.Rmd'}
 ```
 
