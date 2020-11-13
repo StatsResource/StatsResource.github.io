@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-```{r child = 'survivalanalysis/SurvivalAnalysis.Rmd'}
+```{r child = 'survivalanalysis/survivalanalysis.Rmd'}
 ```
 
 ```{r child = 'survivalanalysis/censoring.Rmd'}

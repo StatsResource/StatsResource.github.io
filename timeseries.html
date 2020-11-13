@@ -760,7 +760,7 @@ html, body {
 </style>
 
 
-<link href="data:text/css;charset=utf-8,%0Abody%7B%0Afont%2Dfamily%3A%20Helvetica%3B%0Afont%2Dsize%3A%2016pt%3B%0A%7D%0A%0Ah1%2Ch2%2Ch3%7B%0Afont%2Dsize%3A%2024pt%3B%0A%7D%0Ah4%2Ch5%2Ch6%7B%0Afont%2Dsize%3A%2020pt%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Econtainer%20%7B%0Adisplay%3A%20flex%3B%0Aflex%2Ddirection%3A%20row%3B%0Ajustify%2Dcontent%3A%20left%3B%0Aalign%2Ditems%3A%20stretch%3B%0Awidth%3A%2050%25%3B%0Aheight%3A%2050%25%3B%0Aborder%2Dradius%3A%200px%3B%0Abackground%2Dcolor%3A%20hsl%280%2C%200%25%2C%2096%25%29%3B%0A%7D%0A%2Ebox%20%7B%0Aborder%2Dradius%3A%204px%3B%0Adisplay%3A%20flex%3B%0A%7D%0A%2Ebox%20img%20%7B%0Awidth%3A%2060%25%3B%0Aobject%2Dfit%3A%20contain%3B%0Aborder%2Dradius%3A%204px%3B%0A%7D" rel="stylesheet" type="text/css" />
+<link href="data:text/css;charset=utf-8,%0Abody%7B%0Afont%2Dfamily%3A%20Helvetica%3B%0Afont%2Dsize%3A%2016pt%3B%0A%7D%0A%0Ah1%2Ch2%2Ch3%7B%0Afont%2Dsize%3A%2024pt%3B%0A%7D%0Ah4%2Ch5%2Ch6%7B%0Afont%2Dsize%3A%2020pt%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Atable%2C%20th%2C%20td%20%7B%0Aborder%3A%201px%20solid%20black%3B%0Awidth%3A%2070%25%3B%0A%7D%0A%2Econtainer%20%7B%0Adisplay%3A%20flex%3B%0Aflex%2Ddirection%3A%20row%3B%0Ajustify%2Dcontent%3A%20left%3B%0Aalign%2Ditems%3A%20stretch%3B%0Awidth%3A%2050%25%3B%0Aheight%3A%2050%25%3B%0Aborder%2Dradius%3A%200px%3B%0Abackground%2Dcolor%3A%20hsl%280%2C%200%25%2C%2096%25%29%3B%0A%7D%0A%2Ebox%20%7B%0Aborder%2Dradius%3A%204px%3B%0Adisplay%3A%20flex%3B%0A%7D%0A%2Ebox%20img%20%7B%0Awidth%3A%2060%25%3B%0Aobject%2Dfit%3A%20contain%3B%0Aborder%2Dradius%3A%204px%3B%0A%7D%0A" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -2561,25 +2561,88 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
-<div id="main" class="section level1">
-<h1>Main</h1>
+<div id="main-menu" class="section level1" data-navmenu="Menu">
+<h1>Main Menu</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="statsresource" class="section level3">
-<h3>StatsResource</h3>
-<h5>
-Contents
-</h5>
-<ul>
-<li>Exploratory Data Analysis</li>
-<li><a href="probability.html">Probability and Probability Distributions</a></li>
-<li><a href="probability.html">Random Variables</a></li>
-<li>Inference Procedures</li>
-<li>Modelling Data</li>
-<li><a href="experimentaldesign.html">Experimental Design</a></li>
-<li><a href="gametheory.html">Game Theory</a></li>
-<li>Special Topics</li>
-</ul>
+<div id="contents" class="section level3">
+<h3>Contents</h3>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:18px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-76so{font-size:18px;background-color:#cbcefb;vertical-align:top}
+</style>
+<center>
+<table class="tg" style="undefined;table-layout: fixed; width: 900px">
+<colgroup>
+<col style="width: 200px">
+<col style="width: 200px">
+<col style="width: 200px">
+<col style="width: 200px">
+</colgroup>
+<tbody>
+<tr>
+<td class="tg-76so">
+Exploring Data
+</td>
+<td class="tg-76so">
+Graphical Procedures
+</td>
+<td class="tg-76so">
+<a href="probability.html">Probability <br> and Random Variables</a>
+</td>
+<td class="tg-76so">
+<a href="probabilitydistributions.html">Probability Distributions</a>
+</td>
+</tr>
+<tr>
+<td class="tg-76so">
+Testing Distributional Assumptions
+</td>
+<td class="tg-76so">
+Inference Procedures
+</td>
+<td class="tg-76so">
+Categorical Data
+</td>
+<td class="tg-76so">
+<a href="linearmodels.html">Linear Models</a>
+</td>
+</tr>
+<tr>
+<td class="tg-76so">
+Random Number Generation
+</td>
+<td class="tg-76so">
+Operations Research
+</td>
+<td class="tg-76so">
+Stochastic Processes
+</td>
+<td class="tg-76so">
+<a href="timeseries.html">Time Series Analysis</a>
+</td>
+</tr>
+<tr>
+<td class="tg-76so">
+<a href="gametheory.html">Game Theory and Decision Theory</a><br>
+</td>
+<td class="tg-76so">
+Network Analysis<br>
+</td>
+<td class="tg-76so">
+<a href="survivalanalysis.html">Survival Analysis</a>
+</td>
+<td class="tg-76so">
+Statistical Process Control
+</td>
+</tr>
+</tbody>
+</table>
+</center>
 </div>
 </div>
 </div>

@@ -21,47 +21,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'dataanalysis/exploratorydataanalysis.Rmd'}
 ```
 
-```{r child = 'inference/SamplingDistributions.Rmd'}
+
+
+
+```{r child = 'main/quantiletables.Rmd'}
 ```
 
 
-```
-
-
-```{r child = 'inference/quantiletables.Rmd'}
-```
-
-
-Linear Models {data-navmenu="Modelling Data"}
-==================================
-
-Column {.tabset}
------------------------------
-
-
-### Multiple regression
-
-
-* Variable Selection Procedures: Use of Forwards and Backwards elimination in multiple regression.
-	* Use of F tests.
-	* The Akaike Information Criterion
-	* Polynomial regression. (<em>Simple cases only.</em>)
-	* Use of indicator variables to model factors or qualitative variables (<em>Simple cases only.</em>)
-
-```{r child = 'modellingdata/BivariateData.Rmd'}
-```
-
-
-```{r child = 'modellingdata/ModelSelection.Rmd'}
-```
-
-```{r child = 'modellingdata/ResidualAnalysis.Rmd'}
-```
-
-
-
-```{r child = 'modellingdata/chisquare.Rmd'}
-```
 
 
 
@@ -75,8 +41,6 @@ Column {.tabset}
 
 
 
-```{r child = 'specialtopics/DecisionTheory.Rmd'}
-```
 
 ```{r child = 'specialtopics/NetworkAnalysis.Rmd'}
 ```

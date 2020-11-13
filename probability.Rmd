@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'introductorystatistics/Probability.Rmd'}
 ```
 
-```{r child = 'Probability/ProbabilityWorkedExamples.Rmd'}
+```{r child = 'probability/ProbabilityWorkedExamples.Rmd'}
 ```
 
 ```{r child = 'introductorystatistics/countingproblems.Rmd'}
