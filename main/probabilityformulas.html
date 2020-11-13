@@ -180,91 +180,52 @@ summary {
 </div>
 
 
-<div id="main-menu" class="section level1" data-navmenu="Menu">
-<h1>Main Menu</h1>
+<div id="probability-formulas" class="section level1" data-navmenu="Tables and Formulas">
+<h1>Probability Formulas</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="contents" class="section level3">
-<h3>Contents</h3>
-<p>
-<a href="index.html">StatsResource Main Page</a>
-<p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:18px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
-.tg .tg-yw4l{vertical-align:top}
-.tg .tg-76so{font-size:18px;background-color:#cbcefb;vertical-align:top}
-</style>
-<center>
-<table class="tg" style="undefined;table-layout: fixed; width: 900px">
-<colgroup>
-<col style="width: 200px">
-<col style="width: 200px">
-<col style="width: 200px">
-<col style="width: 200px">
-</colgroup>
-<tbody>
-<tr>
-<td class="tg-76so">
-Exploring Data
-</td>
-<td class="tg-76so">
-Graphical Procedures
-</td>
-<td class="tg-76so">
-<strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
-</td>
-<td class="tg-76so">
-<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong>
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong> <a href="testingassumptions.html">Testing Distributional Assumptions</a></strong> <br> Testing Normality and Outlier Detection
-</td>
-<td class="tg-76so">
-<strong> <a href="inference.html">Inference Procedures</a></strong> <br>Confidence Intervals and Hypothesis Testing
-</td>
-<td class="tg-76so">
-<strong> <a href="bivariatedata.html">Bivariate Data</a></strong> <br>Correlation Coefficients &amp; Hypothesis Tests, Chi Square Test for Independence
-</td>
-<td class="tg-76so">
-<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong><a href="randomnumbers.html">Random Number Generation</a></strong>
-</td>
-<td class="tg-76so">
-Operations Research
-</td>
-<td class="tg-76so">
-Stochastic Processes
-</td>
-<td class="tg-76so">
-<strong> <a href="timeseries.html">Time Series Analysis</a></strong>
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong> <a href="gametheory.html">Game Theory and Decision Theory</a></strong> <br>
-</td>
-<td class="tg-76so">
-<strong> <a href="experimentaldesign.html">Experimental Design</a></strong><br>
-</td>
-<td class="tg-76so">
-<strong> <a href="survivalanalysis.html">Survival Analysis</a></strong>
-</td>
-<td class="tg-76so">
-<strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
-</td>
-</tr>
-</tbody>
-</table>
-</center>
+<div id="probability" class="section level3">
+<h3>Probability</h3>
+<div id="conditional-probability" class="section level4">
+<h4>Conditional probability:</h4>
+<span class="math display">\[\begin{equation*}
+    P(B|A)=\frac{P\left( A\text{ and }B\right) }{P\left( A\right) }.
+\end{equation*}\]</span>
+
+Bayes’ Theorem:
+<span class="math display">\[\begin{equation*}
+    P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+\end{equation*}\]</span>
+</div>
+</div>
+<div id="discrete-probability-distributions" class="section level3">
+<h3>Discrete Probability Distributions</h3>
+<div id="binomial-probability-distribution" class="section level4">
+<h4>Binomial probability distribution:</h4>
+<span class="math display">\[\begin{equation*}
+            P(X = k) = ^{n}C_{k} \times p^{k} \times \left( 1-p\right) ^{n-k}\qquad \left( \text{where  }
+            ^{n}C_{k} =\frac{n!}{k!\left(n-k\right) !}. \right)
+\end{equation*}\]</span>
+</div>
+<div id="poisson-probability-distribution" class="section level4">
+<h4>Poisson probability distribution:</h4>
+<span class="math display">\[\begin{equation*}
+            P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
+\end{equation*}\]</span>
+</div>
+</div>
+<div id="continuous-probabilitu-distributions" class="section level3">
+<h3>Continuous Probabilitu Distributions</h3>
+<div id="exponential-probability-distribution" class="section level4">
+<h4>Exponential probability distribution:</h4>
+<span class="math display">\[\begin{equation*}
+            P(X \leq k) = \begin{cases}
+                1-e^{- k/\mu}, &amp; k \ge 0, \\
+                0, &amp; k &lt; 0.
+    \end{cases}\qquad \left( \text{where  }
+        \mu = \frac{1}{\lambda}\right)
+\end{equation*}\]</span>
+</div>
 </div>
 </div>
 </div>

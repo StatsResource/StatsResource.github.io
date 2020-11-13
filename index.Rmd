@@ -26,6 +26,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r child = 'main/quantiletables.Rmd'}
 ```
+```{r child = 'main/probabilityformulas.Rmd'}
+```
+
+```{r child = 'main/regressionformulas.Rmd'}
+```
 
 
 
@@ -40,10 +45,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-
-
-```{r child = 'specialtopics/NetworkAnalysis.Rmd'}
-```
 
 Unsorted {data-navmenu="Special Topics"}
 ==============================================================
@@ -70,9 +71,6 @@ Column
 * <a href="https://youtu.be/HJ4DR79XRa8/">	Computing the Z score	</a>	
 * <a href="https://youtu.be/droO8NykzY8/">	Expected Value of Sample Variance	</a>	
 
-* <a href="https://studio.youtube.com/channel/UCU8y8xt6IcvARijbLzx2txw/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D"	Joint Density Functions for Discrete Random Variables	</a>	
-				
-				
 * <a href="https://youtu.be/URzJiQP9E3c/">	Linear Regression   Part B	</a>	
 * <a href="https://youtu.be/093X1SWd1cg/">	Uniform Random Variables	</a>	
 

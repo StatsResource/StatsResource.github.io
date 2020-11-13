@@ -15,7 +15,7 @@ Column {.tabset}
 <h5>Probability density function of the Exponential Distribution</h5>
 
 \noindent The probability density function (pdf) of an exponential distribution is
-\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&x\geq 0,\\0&x<0.\end{cases}}}\]
+\[  {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&x\geq 0,\\0&x<0.\end{cases}}}\]
 
 Here $\lambda  > 0$ is the parameter of the distribution, often called the rate parameter.
 
@@ -71,7 +71,7 @@ c. Find the probability that the time between arrivals will be less than 2 minut
 
 <h3> Review Question 3</h3>
 
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a ***waiting time***}. Let $\LARGE T$ be the symbol for the ``waiting times" variable. 
+Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a ***waiting time***}. Let $ T$ be the symbol for the ``waiting times" variable. 
 <p>
 Suppose that a customer has just arrived.
 

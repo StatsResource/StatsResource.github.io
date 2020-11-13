@@ -1,4 +1,4 @@
-Bivariate Data {data-navmenu="Modelling Data"}
+Correlations {data-navmenu="Correlation"}
 ===========================================================
 
 Column {.tabset}
@@ -34,7 +34,7 @@ $$ \frac{t^3-t}{12} $$, where $t$ is the number of tied values
 
 <h5> Correlation Coefficient - Hypothesis Testing</h5>
 
-* See the Inference Procedures section for Student t-tables.
+* <a href=" https://youtu.be/iOgvnG77lAY">Correlation Hypothesis Test</a>
 
 
 

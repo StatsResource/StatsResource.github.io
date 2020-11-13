@@ -180,91 +180,45 @@ summary {
 </div>
 
 
-<div id="main-menu" class="section level1" data-navmenu="Menu">
-<h1>Main Menu</h1>
+<div id="regression-formulas" class="section level1" data-navmenu="Tables and Formulas">
+<h1>Regression Formulas</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="contents" class="section level3">
-<h3>Contents</h3>
-<p>
-<a href="index.html">StatsResource Main Page</a>
-<p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:18px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
-.tg .tg-yw4l{vertical-align:top}
-.tg .tg-76so{font-size:18px;background-color:#cbcefb;vertical-align:top}
-</style>
-<center>
-<table class="tg" style="undefined;table-layout: fixed; width: 900px">
-<colgroup>
-<col style="width: 200px">
-<col style="width: 200px">
-<col style="width: 200px">
-<col style="width: 200px">
-</colgroup>
-<tbody>
-<tr>
-<td class="tg-76so">
-Exploring Data
-</td>
-<td class="tg-76so">
-Graphical Procedures
-</td>
-<td class="tg-76so">
-<strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
-</td>
-<td class="tg-76so">
-<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong>
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong> <a href="testingassumptions.html">Testing Distributional Assumptions</a></strong> <br> Testing Normality and Outlier Detection
-</td>
-<td class="tg-76so">
-<strong> <a href="inference.html">Inference Procedures</a></strong> <br>Confidence Intervals and Hypothesis Testing
-</td>
-<td class="tg-76so">
-<strong> <a href="bivariatedata.html">Bivariate Data</a></strong> <br>Correlation Coefficients &amp; Hypothesis Tests, Chi Square Test for Independence
-</td>
-<td class="tg-76so">
-<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong><a href="randomnumbers.html">Random Number Generation</a></strong>
-</td>
-<td class="tg-76so">
-Operations Research
-</td>
-<td class="tg-76so">
-Stochastic Processes
-</td>
-<td class="tg-76so">
-<strong> <a href="timeseries.html">Time Series Analysis</a></strong>
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong> <a href="gametheory.html">Game Theory and Decision Theory</a></strong> <br>
-</td>
-<td class="tg-76so">
-<strong> <a href="experimentaldesign.html">Experimental Design</a></strong><br>
-</td>
-<td class="tg-76so">
-<strong> <a href="survivalanalysis.html">Survival Analysis</a></strong>
-</td>
-<td class="tg-76so">
-<strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
-</td>
-</tr>
-</tbody>
-</table>
-</center>
+<div id="regression-estimates" class="section level3">
+<h3>Regression Estimates</h3>
+<span class="math display">\[\begin{eqnarray*}
+    S_{XY} &amp;=&amp;
+    \sum x_iy_i - \frac{\sum x_i\sum y_i}{n}\\
+    S_{XX} &amp;=&amp;
+    \sum x_i^2 - \frac{(\sum x_i)^2}{n}\\
+    S_{YY} &amp;=&amp;
+    \sum y_i^2 - \frac{(\sum y_i)^2}{n}\\
+\end{eqnarray*}\]</span>
+<div id="slope-estimate" class="section level4">
+<h4>Slope Estimate</h4>
+<span class="math display">\[\begin{eqnarray*}
+    b_1 = \frac{S_{XY}}{S_{XX}}
+\end{eqnarray*}\]</span>
+</div>
+<div id="intercept-estimate" class="section level4">
+<h4>Intercept Estimate</h4>
+<span class="math display">\[\begin{eqnarray*}
+    b_0 = \bar{y} -b_1\bar{x}
+\end{eqnarray*}\]</span>
+</div>
+<div id="pearsons-correlation-coefficient" class="section level4">
+<h4>Pearson’s correlation coefficient</h4>
+<span class="math display">\[\begin{eqnarray*}
+    r = \frac{S_{XY}}{\sqrt{S_{XX} \times S_{YY}}}
+\end{eqnarray*}\]</span>
+</div>
+<div id="standard-error-of-the-slope" class="section level4">
+<h4>Standard error of the Slope</h4>
+<span class="math display">\[\begin{eqnarray*}
+    S.E.(b1) = \sqrt{\frac{s^2}{S_{XX}}}
+\end{eqnarray*}\]</span>
+<p>where <span class="math inline">\(s^2 = \frac{SSE}{n-2}\)</span> and SSE <span class="math inline">\(= S_{YY} - b_1S_{XY}\)</span></p>
+</div>
 </div>
 </div>
 </div>

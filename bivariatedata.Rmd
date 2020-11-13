@@ -1,0 +1,30 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+
+```{r child = 'main/introduction.Rmd'}
+```
+
+```{r child = 'modellingdata/BivariateData.Rmd'}
+```
+
+
+```{r child = 'inference/ChiSquareTest.Rmd'}
+```
+
+
+```{r child = 'modellingdata/chisquare.Rmd'}
+```
+
+

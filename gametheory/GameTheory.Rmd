@@ -48,6 +48,11 @@ The number of players in a game can theoretically be infinite, but most games wi
 * Each cell of the payoff matrix is associated with a payoff vector.
 	The $\LARGE i-$th component of this vector gives the payoff to Player $\LARGE i$.
 
+-------------------------------------
+#### Videos 
+
+* <a href=" https://youtu.be/3JDpYI1fsIA">Game Theory: Optimal Strategies and Value Of A 2x2 Game</a>
+
 ### Prisoner's Dilemna
 
 <h5> Prisoner's Dilemna</h5>

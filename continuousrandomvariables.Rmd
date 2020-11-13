@@ -12,14 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-
 ```{r child = 'main/introduction.Rmd'}
 ```
-```{r child = 'inference/ChiSquareTest.Rmd'}
-```
 
-
-```{r child = 'modellingdata/chisquare.Rmd'}
-```
-
-
+Random Variables
+==========================================
