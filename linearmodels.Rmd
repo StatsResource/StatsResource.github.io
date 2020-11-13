@@ -39,7 +39,3 @@ Column {.tabset}
 ```{r child = 'modellingdata/ResidualAnalysis.Rmd'}
 ```
 
-
-
-```{r child = 'modellingdata/chisquare.Rmd'}
-```
