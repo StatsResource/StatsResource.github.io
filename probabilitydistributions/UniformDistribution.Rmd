@@ -17,35 +17,31 @@ Column {.tabset}
 * <a href = "https://youtu.be/OBIUmaHGgfA/"> Sum Of Uniform Random Variables </a>
 
 
-###
+### Continuous Uniform distribution
 
-Continuous Uniform distribution
 
-\begin{description}
-\item[L] lower bound of an interval
-\item[U] upper bound of an interval
-\end{description}
+* [L] lower bound of an interval
+* [U] upper bound of an interval
+
 Probability of an outcome being between lower bound L and upper bound U
 \[P( L \leq X \leq U)  =  { U - L \over  b – a }\]
 
-%============================================================ %
 
 
-Reminder
+<h5>Reminder</h5>
 
-" $\leq$" is less than or equal to
+* " $\leq$" is less than or equal to
 
-" $\geq$" is greater than or equal to
+* " $\geq$" is greater than or equal to
 
-
-\[L \leq X \leq U\]
-
-simply states that X is between L and U inclusively.
+* $L \leq X \leq U$ simply states that X is between L and U inclusively.
 
 ("inclusively" mean that X could be exactly L or U also, although the probability of this is extremely low)
 
 
-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------
+
+### Distributional Formulas
 
 The probability density function is given as
 

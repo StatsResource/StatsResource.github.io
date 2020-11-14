@@ -51,6 +51,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'probabilitydistributions/WeibullDistribution.Rmd'}
 ```
 
+```{r child = 'probabilitydistributions/ParetoDistribution.Rmd'}
+```
 
 
 ```{r child = 'probabilitydistributions/ApproximatingDistributions.Rmd'}

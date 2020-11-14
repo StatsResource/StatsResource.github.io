@@ -2567,6 +2567,9 @@ window.FlexDashboardComponents.push({
 <h2>Column</h2>
 <div id="contents" class="section level3">
 <h3>Contents</h3>
+<p>
+<a href="index.html">StatsResource Main Page</a>
+<p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:18px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
@@ -2589,7 +2592,7 @@ window.FlexDashboardComponents.push({
 Exploring Data
 </td>
 <td class="tg-76so">
-Graphical Procedures
+<strong> <a href="graphicalprocedures.html">Graphical Procedures</a></strong><br> Histograms, Boxplots, Ogives
 </td>
 <td class="tg-76so">
 <strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
@@ -2600,30 +2603,30 @@ Graphical Procedures
 </tr>
 <tr>
 <td class="tg-76so">
-Testing Distributional Assumptions <br> Testing Normality and Outlier Detection
+<strong> <a href="testingassumptions.html">Testing Distributional Assumptions</a></strong> <br> Testing Normality and Outlier Detection
 </td>
 <td class="tg-76so">
-<strong> <a href="linearmodels.html">Inference Procedures</a></strong> Confidence Intervals and Hypothesis Testing
+<strong> <a href="inference.html">Inference Procedures</a></strong> <br>Confidence Intervals and Hypothesis Testing
 </td>
 <td class="tg-76so">
-<strong> <a href="categorical data.html">Categorical Data</a></strong> <br> Chi Square Test for Independence
+<strong> <a href="bivariatedata.html">Bivariate Data</a></strong> <br>Correlation Coefficients &amp; Hypothesis Tests, Chi Square Test for Independence
 </td>
 <td class="tg-76so">
-<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models
+<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models, Residual Analysis, Regression ANOVA
 </td>
 </tr>
 <tr>
 <td class="tg-76so">
-Random Number Generation
+<strong><a href="discreterandomvariables.html">Discrete Random Variables</a></strong><br>Expectations and variance of discrete random variables, Joint Distribution of discrete random variables
 </td>
 <td class="tg-76so">
-Operations Research
+<strong><a href="continuousrandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of continuous random variables
 </td>
 <td class="tg-76so">
-Stochastic Processes
+<strong><a href="randomvariables2.html">More on Random Variables</a></strong><br> Moment Generating Functions, Cumulant Generating Functions
 </td>
 <td class="tg-76so">
-<strong> <a href="timeseries.html">Time Series Analysis</a></strong>
+<strong><a href="randomnumbers.html">Random Number Generation</a></strong>
 </td>
 </tr>
 <tr>
@@ -2637,7 +2640,7 @@ Stochastic Processes
 <strong> <a href="survivalanalysis.html">Survival Analysis</a></strong>
 </td>
 <td class="tg-76so">
-Statistical Process Control
+<strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
 </td>
 </tr>
 </tbody>
@@ -2655,10 +2658,29 @@ Statistical Process Control
 <h5>
 Poisson Distribution
 </h5>
+<div id="probability-density-function-for-the-poisson-distribution" class="section level4">
+<h4>Probability Density Function for the Poisson Distribution}</h4>
+<p>A discrete random variable <span class="math inline">\(X\)</span> is said to follow a Poisson distribution with parameter <span class="math inline">\(m\)</span>, written <span class="math inline">\(X \sim \mbox{Poisson}(m)\)</span>.</p>
 <ul>
-<li>Poisson Distribution - Probability Mass Function</li>
-<li><a href="https://www.youtube.com/watch?v=nc4vErCoo0w">Confidence Intervals for Poisson Variables </a></li>
+<li>Here the key parameter, the , is the expected number of occurence per unit period.</li>
+<li>It is usually denoted as either <span class="math inline">\(m\)</span> or <span class="math inline">\(\lambda\)</span>.</li>
 </ul>
+<p>Given the mean number of successes (<span class="math inline">\(m\)</span>) that occur in a specified region, we can compute the Poisson probability based on the  formula.</p>
+<p>\begin{framed} \ The probability that there will be <span class="math inline">\(k\)</span> occurrences in a  is denoted <span class="math inline">\(P(X=k)\)</span>, and is computed as: { <span class="math display">\[ P(X = k)=\frac{m^k e^{-m}}{k!} \]</span> }</p>
+<p>where</p>
+<p>%(x) the probability of x occurrences in an interval. * <span class="math inline">\(m\)</span> (or <span class="math inline">\(\lambda\)</span>) is the expected value of the mean number of occurrences in any interval (i.e. the Poisson mean), * <span class="math inline">\(e=2.718\)</span>, * <span class="math inline">\(k = 0, 1, 2, \ldots\)</span>, * <span class="math inline">\(m &gt; 0\)</span>.</p>
+</div>
+<div id="poisson-expected-value-and-variance" class="section level4">
+<h4>Poisson Expected Value and Variance}</h4>
+<p>If the random variable X has a Poisson distribution with parameter <span class="math inline">\(m\)</span>, we write <span class="math display">\[ X \sim Poisson(m) \]</span> Note the expected number of occurrences per unit time is often denoted <span class="math inline">\(\lambda\)</span> (lambda) rather than <span class="math inline">\(m\)</span>.</p>
+<p>% If X is a Poisson distribution stochastic variable with parameter <span class="math inline">\(\lambda\)</span>, then % % % * The expected value <span class="math inline">\(E[X]=\lambda\)</span> % * The variance <span class="math inline">\(Var[X]=\lambda\)</span> %</p>
+<ul>
+<li>Expected Value of X : <span class="math inline">\(\mbox{E}(X)= m \mbox{ or } \lambda\)</span></li>
+<li>Variance of X : <span class="math inline">\(\mbox{Var}(X) = m \mbox{ or } \lambda\)</span></li>
+<li>Standard Deviation of X : <span class="math inline">\(SD(X) = \sqrt{m} \mbox{ or } \sqrt{\lambda}\)</span></li>
+</ul>
+<p>Important <span class="math display">\[ \mbox{E}(X) = \mbox{Var}(X)\]</span> * Poisson Distribution - Probability Mass Function * <a href="https://www.youtube.com/watch?v=nc4vErCoo0w">Confidence Intervals for Poisson Variables </a></p>
+</div>
 </div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
@@ -2707,7 +2729,7 @@ Videos
 <ul>
 <li><a href="https://youtu.be/5r8JMrKSFrU/"> Confidence Intervals for Poisson Random Variables </a></li>
 <li><a href="https://youtu.be/3Y3pJaLcXdc/"> Confidence Intervals for Poisson Random Variables </a></li>
-<li><a href="https://youtu.be/nc4vErCoo0w/"> Confidence Intervals for Poisson Variables </a></li>
+<li><a href="https://youtu.be/nc4vErCoo0w/"> Confidence Intervals for Poisson Variables</a></li>
 <li><a href="https://youtu.be/N291An2ui18/"> Poisson Random Variables Confidence Intervals For Difference In Rates </a></li>
 </ul>
 </div>
@@ -2728,11 +2750,50 @@ Goodness of Fit Tests
 <h2>Column</h2>
 <div id="binomial-distribution-1" class="section level3">
 <h3>Binomial Distribution</h3>
+<div id="binomial-distribution-probability-density-function" class="section level4">
+<h4>Binomial Distribution : Probability Density Function}</h4>
+<p>A binomial experiment is one that possesses the following properties:</p>
+<p>\begin{enumerate} * The experiment consists of n repeated trials;</p>
+<ul>
+<li><p>Each trial results in an outcome that may be classified as a success or a failure (hence the name, binomial);</p></li>
+<li><p>The probability of a success, denoted by p, remains constant from trial to trial and repeated trials are independent. \end{enumerate}</p></li>
+</ul>
+<p> The number of successes X in n trials of a binomial experiment is called a .</p>
+
+<p>The probability of exactly k successes in a binomial experiment <span class="math inline">\(Bin(n, p)\)</span> is given by <span class="math display">\[ P(X=k) = P(k \mbox{ successes in ``n&quot; trails }) = \;^nC_k  \times p^{k} \times (1-p)^{n-k}\]</span></p>
+<ul>
+<li>X: Discrete random variable for the number of successes (variable name)</li>
+<li><p><span class="math inline">\(k\)</span> : Number of successes (numeric value)</p></li>
+<li>k= 0, 1, 2, … n</li>
+<li><p><span class="math inline">\(P(X=k)\)</span> ``probability that the number of success is <span class="math inline">\(k\)</span>“.</p></li>
+<li><span class="math inline">\(n\)</span> : number of independent trials</li>
+<li><span class="math inline">\(p\)</span> : probability of a success in any of the <span class="math inline">\(n\)</span> trial.</li>
+<li><span class="math inline">\(1-p\)</span> : probability of a failure in any of the <span class="math inline">\(n\)</span> trial.</li>
+<li><p><span class="math inline">\({^nC_k}\)</span> is a combination value, found using the Choose operator.</p></li>
+</ul>
+</div>
+</div>
+<div id="binomial-distribution-expected-value-and-variance" class="section level3">
+<h3>Binomial Distribution : Expected Value and Variance</h3>
+<div id="expectation-and-variance" class="section level4">
+<h4>Expectation and Variance</h4>
+<p>If the random variable X has a binomial distribution with parameters <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span>, we write <span class="math display">\[ X \sim Bin(n,p) \]</span> Only these two parameters are needed to determine the probability of an event.</p>
+<ul>
+<li>The expected value of <span class="math inline">\(X\)</span> is: <span class="math display">\[\operatorname{E(X)} = n \times p \]</span></li>
+<li><p>The variance of <span class="math inline">\(X\)</span> is: <span class="math display">\[\operatorname{Var(X)} = n \times p \times (1-p) = n\times p \times q \]</span></p></li>
+<li><span class="math inline">\(p\)</span> is the probability of success * <span class="math inline">\(q\)</span> is the probability of failure in a binomial trial</li>
+<li><p><span class="math inline">\(n\)</span> is the number of independent trials</p></li>
+</ul>
+<p><strong><em>Interpretation:</em></strong> If <span class="math inline">\(n=100\)</span>, and <span class="math inline">\(p=0.25\)</span>, then the average number of successes will be 25.</p>
+</div>
+</div>
+<div id="videos" class="section level3">
+<h3>Videos</h3>
 <h5>
 Binomial Distribution
 </h5>
 <ul>
-<li><a href="https://youtu.be/dRNSiG2Hzfo/"> Binomial Distribution - Worked Example </a></li>
+<li><a href="https://youtu.be/dRNSiG2Hzfo/">Binomial Distribution - Worked Example</a></li>
 </ul>
 </div>
 <div id="formula" class="section level3">
@@ -2748,7 +2809,22 @@ Formula Sheet
 <h1>Geometric Distribution</h1>
 <div id="column-3" class="section level2 tabset">
 <h2>Column</h2>
-<div id="geometric-distribution-1" class="section level3">
+
+<ul>
+<li><p>Geometric distributions model (some) discrete random variables. Typically, a Geometric random variable is the number of trials required to obtain the first failure, for example, the number of tosses of a coin until the first ‘tail’ is obtained, or a process where components from a production line are tested, in turn, until the first defective item is found.</p></li>
+<li><p>A discrete random variable X is said to follow a Geometric distribution with parameter p, written <span class="math inline">\(X \sim Ge(p)\)</span>, if it has probability distribution <span class="math display">\[P(X=x) = p^{x-1}(1-p)^x\]</span> where</p></li>
+<li><span class="math inline">\(x = 1, 2, 3, \ldots\)</span></li>
+<li><p>p = success probability; <span class="math inline">\(0 &lt; p &lt; 1\)</span></p></li>
+<li><p>The trials must meet the following requirements:</p></li>
+</ul>
+
+<p>the total number of trials is potentially infinite; there are just two outcomes of each trial; success and failure; the outcomes of all the trials are statistically independent; all the trials have the same probability of success.</p>
+<ul>
+<li><p>The Geometric distribution has expected value and variance <span class="math display">\[E(X)= 1/(1-p)\]</span> <span class="math display">\[V(X)=p/{(1-p)^2}\]</span>.</p></li>
+<li><p>The Geometric distribution is related to the Binomial distribution in that both are based on independent trials in which the probability of success is constant and equal to <span class="math inline">\(p\)</span>.</p></li>
+<li><p>However, a Geometric random variable is the number of trials until the first failure, whereas a Binomial random variable is the number of successes in n trials.</p></li>
+</ul>
+<div id="geometric-distribution-2" class="section level3">
 <h3>Geometric Distribution</h3>
 <ul>
 <li><a href="https://youtu.be/pIAZmkRvKPo/">Geometric Distribution with Chi Square Test for Goodness of Fit</a></li>
@@ -2762,6 +2838,26 @@ Formula Sheet
 <h2>Column</h2>
 <div id="hypergeometric-distribution-1" class="section level3">
 <h3>Hypergeometric Distribution</h3>
+<div id="probability-mass-function" class="section level4">
+<h4>Probability mass function</h4>
+<p>The following conditions characterize the hypergeometric distribution:</p>
+<ul>
+<li>The result of each draw (the elements of the population being sampled) can be classified into one of two mutually exclusive categories (e.g. Pass/Fail or Employed/Unemployed).</li>
+<li>The probability of a success changes on each draw, as each draw decreases the population (sampling without replacement from a finite population).</li>
+</ul>
+<p>A random variable <span class="math inline">\({\displaystyle X}\)</span> follows the hypergeometric distribution if its probability mass function (pmf) is given by</p>
+<p><span class="math display">\[ {\displaystyle p_{X}(k)=\Pr(X=k)={\frac {{\binom {K}{k}}{\binom {N-K}{n-k}}}{\binom {N}{n}}},}\]</span> where</p>
+<ul>
+<li><span class="math inline">\({\displaystyle N}\)</span> is the population size,</li>
+<li><span class="math inline">\({\displaystyle K}\)</span> is the number of success states in the population,</li>
+<li><span class="math inline">\({\displaystyle n}\)</span> is the number of draws (i.e. quantity drawn in each trial),</li>
+<li><span class="math inline">\({\displaystyle k}\)</span> is the number of observed successes,</li>
+<li><span class="math inline">\({\textstyle \textstyle {a \choose b}}\)</span> is a binomial coefficient.</li>
+</ul>
+</div>
+</div>
+<div id="videos-1" class="section level3">
+<h3>Videos</h3>
 <h5>
 Hypergeometric Distribution
 </h5>
@@ -2777,11 +2873,50 @@ Hypergeometric Distribution
 <h2>Column</h2>
 <div id="binomial-distribution-3" class="section level3">
 <h3>Binomial Distribution</h3>
+<div id="binomial-distribution-probability-density-function-1" class="section level4">
+<h4>Binomial Distribution : Probability Density Function}</h4>
+<p>A binomial experiment is one that possesses the following properties:</p>
+<p>\begin{enumerate} * The experiment consists of n repeated trials;</p>
+<ul>
+<li><p>Each trial results in an outcome that may be classified as a success or a failure (hence the name, binomial);</p></li>
+<li><p>The probability of a success, denoted by p, remains constant from trial to trial and repeated trials are independent. \end{enumerate}</p></li>
+</ul>
+<p> The number of successes X in n trials of a binomial experiment is called a .</p>
+
+<p>The probability of exactly k successes in a binomial experiment <span class="math inline">\(Bin(n, p)\)</span> is given by <span class="math display">\[ P(X=k) = P(k \mbox{ successes in ``n&quot; trails }) = \;^nC_k  \times p^{k} \times (1-p)^{n-k}\]</span></p>
+<ul>
+<li>X: Discrete random variable for the number of successes (variable name)</li>
+<li><p><span class="math inline">\(k\)</span> : Number of successes (numeric value)</p></li>
+<li>k= 0, 1, 2, … n</li>
+<li><p><span class="math inline">\(P(X=k)\)</span> ``probability that the number of success is <span class="math inline">\(k\)</span>“.</p></li>
+<li><span class="math inline">\(n\)</span> : number of independent trials</li>
+<li><span class="math inline">\(p\)</span> : probability of a success in any of the <span class="math inline">\(n\)</span> trial.</li>
+<li><span class="math inline">\(1-p\)</span> : probability of a failure in any of the <span class="math inline">\(n\)</span> trial.</li>
+<li><p><span class="math inline">\({^nC_k}\)</span> is a combination value, found using the Choose operator.</p></li>
+</ul>
+</div>
+</div>
+<div id="binomial-distribution-expected-value-and-variance-1" class="section level3">
+<h3>Binomial Distribution : Expected Value and Variance</h3>
+<div id="expectation-and-variance-1" class="section level4">
+<h4>Expectation and Variance</h4>
+<p>If the random variable X has a binomial distribution with parameters <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span>, we write <span class="math display">\[ X \sim Bin(n,p) \]</span> Only these two parameters are needed to determine the probability of an event.</p>
+<ul>
+<li>The expected value of <span class="math inline">\(X\)</span> is: <span class="math display">\[\operatorname{E(X)} = n \times p \]</span></li>
+<li><p>The variance of <span class="math inline">\(X\)</span> is: <span class="math display">\[\operatorname{Var(X)} = n \times p \times (1-p) = n\times p \times q \]</span></p></li>
+<li><span class="math inline">\(p\)</span> is the probability of success * <span class="math inline">\(q\)</span> is the probability of failure in a binomial trial</li>
+<li><p><span class="math inline">\(n\)</span> is the number of independent trials</p></li>
+</ul>
+<p><strong><em>Interpretation:</em></strong> If <span class="math inline">\(n=100\)</span>, and <span class="math inline">\(p=0.25\)</span>, then the average number of successes will be 25.</p>
+</div>
+</div>
+<div id="videos-2" class="section level3">
+<h3>Videos</h3>
 <h5>
 Binomial Distribution
 </h5>
 <ul>
-<li><a href="https://youtu.be/dRNSiG2Hzfo/"> Binomial Distribution - Worked Example </a></li>
+<li><a href="https://youtu.be/dRNSiG2Hzfo/">Binomial Distribution - Worked Example</a></li>
 </ul>
 </div>
 <div id="formula-1" class="section level3">
@@ -2799,16 +2934,16 @@ Formula Sheet
 <h2>Column</h2>
 <div id="introduction" class="section level3">
 <h3>Introduction</h3>
-<p>Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is <span class="math inline">\(\LARGE{p}\)</span> and of failure is (<span class="math inline">\(\LARGE{1 - p}\)</span>).</p>
+<p>Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is <span class="math inline">\({p}\)</span> and of failure is (<span class="math inline">\({1 - p}\)</span>).</p>
 </div>
 <div id="type-1-specficiation" class="section level3">
 <h3>Type 1 Specficiation</h3>
-<p>This approach models the number of failures (denoted <span class="math inline">\(\LARGE{k}\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\(\LARGE{r}\)</span>) occurs. Then the random number of failures we have seen, <span class="math inline">\(\LARGE{X}\)</span>, will have the negative binomial (or Pascal) distribution: <span class="math display">\[ \LARGE {\displaystyle X\sim \operatorname {NB} (r,p)}\]</span></p>
+<p>This approach models the number of failures (denoted <span class="math inline">\({k}\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\({r}\)</span>) occurs. Then the random number of failures we have seen, <span class="math inline">\({X}\)</span>, will have the negative binomial (or Pascal) distribution: <span class="math display">\[  {\displaystyle X\sim \operatorname {NB} (r,p)}\]</span></p>
 <h4>
 Probability Mass Function
 </h4>
 <p>The probability mass function of the negative binomial distribution is</p>
-<p><span class="math display">\[ \LARGE {\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]</span> where <span class="math inline">\(k\)</span> is the number of failures, <span class="math inline">\(\LARGE{r}\)</span> is the number of successes, and <span class="math inline">\(\LARGE{p}\)</span> is the probability of success.</p>
+<p><span class="math display">\[  {\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]</span> where <span class="math inline">\(k\)</span> is the number of failures, <span class="math inline">\({r}\)</span> is the number of successes, and <span class="math inline">\({p}\)</span> is the probability of success.</p>
 <p>
 <h5>
 Parameters
@@ -2821,19 +2956,19 @@ Parameters
 </div>
 <div id="type-2-specficiation" class="section level3">
 <h3>Type 2 Specficiation</h3>
-<p>This approach models the number of trial (denoted <span class="math inline">\(n\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\(\LARGE{r}\)</span>) occurs. (N.B. <span class="math inline">\(n = k + r\)</span>.)</p>
+<p>This approach models the number of trial (denoted <span class="math inline">\(n\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\({r}\)</span>) occurs. (N.B. <span class="math inline">\(n = k + r\)</span>.)</p>
 <h4>
 Probability Mass Function
 </h4>
-<p>Let <span class="math inline">\(\LARGE{X}\)</span> denote the number of trials until the <span class="math inline">\(\LARGE{r}\)</span>-th success. The probability mass function of the negative binomial distribution is</p>
-<p><span class="math display">\[\LARGE {\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]</span> where <span class="math inline">\(n\)</span> is the number of trial, <span class="math inline">\(\LARGE{r}\)</span> is the number of successes, and <span class="math inline">\(\LARGE{p}\)</span> is the probability of success.</p>
+<p>Let <span class="math inline">\({X}\)</span> denote the number of trials until the <span class="math inline">\({r}\)</span>-th success. The probability mass function of the negative binomial distribution is</p>
+<p><span class="math display">\[ {\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]</span> where <span class="math inline">\(n\)</span> is the number of trial, <span class="math inline">\({r}\)</span> is the number of successes, and <span class="math inline">\({p}\)</span> is the probability of success.</p>
 <p>
 <h5>
 Parameters
 </h5>
 <ul>
-<li>Mean <span class="math inline">\({\LARGE {\frac {r}{p}}}\)</span></li>
-<li>Variance <span class="math inline">\(\LARGE {\frac {r(1-p)}{p^{2}}}\)</span></li>
+<li>Mean <span class="math inline">\({ {\frac {r}{p}}}\)</span></li>
+<li>Variance $ {}$</li>
 </ul>
 </div>
 <div id="worked-examples-1" class="section level3">
@@ -2856,6 +2991,37 @@ Negative Binomial Distribution: Worked Example
 <h1>Normal Distribution</h1>
 <div id="column-7" class="section level2 tabset">
 <h2>Column</h2>
+<p>%——————————————————————%  %——————————————————————% </p>
+<p>%———————————————%</p>
+
+<p>Let x be the normal random variable describing waiting times\ <span class="math inline">\(P(X \geq 15) =?\)</span> \  First , we find the z-value that corresponds to x = 15 (remember <span class="math inline">\(\mu=10\)</span> and <span class="math inline">\(\sigma=3\)</span> )\ <span class="math display">\[ z_o = { x_o - \mu \over \sigma }  = { 15 - 10 \over 3 } = 1.666 \]</span></p>
+<ul>
+<li>We will use <span class="math inline">\(z_o =1.67\)</span></li>
+<li>Therefore we can say <span class="math inline">\(P(X \geq 15 ) = P(Z \geq 1.67)\)</span></li>
+<li>The Murdoch Barnes tables are tabulated to give <span class="math inline">\(P(Z \geq z_o)\)</span> for some value $ z_o$ .</li>
+<li>We can evaluate <span class="math inline">\(P(Z \geq 1.67)\)</span> as 0.0475.</li>
+<li>Necessarily <span class="math inline">\(P(X \geq 15) = 0.0475\)</span>.</li>
+</ul>
+<p>\end{document} %———————————————%</p>
+
+<ul>
+<li>“<span class="math inline">\(90\%\)</span> of customers will be dealt with in at most 12 minutes.”</li>
+<li>To answer this question, we need to know <span class="math inline">\(P(X\leq 12)\)</span></li>
+<li>First , we find the z-value that corresponds to x = 12 (remember <span class="math inline">\(\mu=10\)</span> and <span class="math inline">\(\sigma=3\)</span> )</li>
+</ul>
+<p><span class="math display">\[ z_o = { x_o - \mu \over sigma }  = { 12 - 10 \over 2 } = 0.666 \]</span></p>
+<ul>
+<li>We will use <span class="math inline">\(z_o =0.67\)</span></li>
+<li>Therefore we can say <span class="math inline">\(P(X \geq 12 ) = P(Z \geq 0.67) = 0.2514\)</span></li>
+<li>Necessarily <span class="math inline">\(P(X \leq 12 ) = P(Z \leq 0.67) = 0.7486\)</span></li>
+<li><span class="math inline">\(74.86\%\)</span> of customers will be dealt with in at most 12 minutes.</li>
+<li>The statement that <span class="math inline">\(90\%\)</span> will be dealt with in at most 12 minutes is false.</li>
+</ul>
+<p>%———————————————%</p>
+<p>What percentage will wait between 7 and 13 minutes ?\</p>
+<p><span class="math inline">\(P(7 \leq X \leq 13) = ?\)</span></p>
+<p>\ Compute the probability of being too low, and the probability of being too high for the interval.\The probability of being inside the interval is the complement of the combination of these events.</p>
+<p>%———————————————%</p>
 <div id="z-scores" class="section level3">
 <h3>Z-Scores</h3>
 <ul>
@@ -2912,6 +3078,34 @@ Uniform Distribution
 <li><a href="https://youtu.be/OBIUmaHGgfA/"> Sum Of Uniform Random Variables </a></li>
 </ul>
 </div>
+<div id="continuous-uniform-distribution" class="section level3">
+<h3>Continuous Uniform distribution</h3>
+<ul>
+<li>[L] lower bound of an interval</li>
+<li>[U] upper bound of an interval</li>
+</ul>
+<p>Probability of an outcome being between lower bound L and upper bound U <span class="math display">\[P( L \leq X \leq U)  =  { U - L \over  b – a }\]</span></p>
+<h5>
+Reminder
+</h5>
+<ul>
+<li><p>&quot; <span class="math inline">\(\leq\)</span>&quot; is less than or equal to</p></li>
+<li><p>&quot; <span class="math inline">\(\geq\)</span>&quot; is greater than or equal to</p></li>
+<li><p><span class="math inline">\(L \leq X \leq U\)</span> simply states that X is between L and U inclusively.</p></li>
+</ul>
+<p>(“inclusively” mean that X could be exactly L or U also, although the probability of this is extremely low)</p>
+<hr />
+</div>
+<div id="distributional-formulas" class="section level3">
+<h3>Distributional Formulas</h3>
+<p>The probability density function is given as</p>
+<p><span class="math display">\[f(x) = {1 \over b-a} for a \leq x \leq b\]</span></p>
+<p>For any value “c” between the minimum value a and the maximum value b</p>
+<p><span class="math display">\[P(X \ geq c) = {b-c \over b-a}\]</span></p>
+<p>here b is the upper bound while c is the lower bound</p>
+<p><span class="math display">\[P(X \ leq c) = {c-a \over b-a}\]</span></p>
+<p>here c is the upper bound while a is the lower bound</p>
+</div>
 </div>
 </div>
 <div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
@@ -2927,7 +3121,7 @@ The Exponential Distribution
 <h5>
 Probability density function of the Exponential Distribution
 </h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[ \LARGE {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
+<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[  {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
 <p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
 </div>
 <div id="worked-examples-2" class="section level3">
@@ -2983,7 +3177,7 @@ Review Question 2
 <h3>
 Review Question 3
 </h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let <span class="math inline">\(\LARGE T\)</span> be the symbol for the ``waiting times&quot; variable.
+Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let $ T$ be the symbol for the ``waiting times&quot; variable.
 <p>
 <p>Suppose that a customer has just arrived.</p>
 <ol style="list-style-type: lower-alpha">
@@ -3028,10 +3222,10 @@ In a certain Metropolitan city the daily consumption of electric power (in Milli
 Mode and Skewness: Worked Example
 </h5>
 <p>Consider the following measure of skewness for a unimodal distribution:</p>
-<p><span class="math display">\[ \LARGE S_{KP}  \;=\; \frac{ \mbox{mean} \;-\; \mbox{mode}}{ \mbox{ standard deviation} } \]</span></p>
+<p><span class="math display">\[ S_{KP}  \;=\; \frac{ \mbox{mean} \;-\; \mbox{mode}}{ \mbox{ standard deviation} } \]</span></p>
 <ol style="list-style-type: lower-alpha">
-<li>Determine the value of <span class="math inline">\(\LARGE{S_{KP}}\)</span> for a gamma distribution with parameters <span class="math inline">\(\LARGE \alpha = 1.6\)</span> and <span class="math inline">\(\LARGE \lambda = 0.2\)</span>.</li>
-<li>Comment on why <span class="math inline">\(\LARGE{S_{KP}}\)</span> is a suitable measure of skewness for distributions with one mode.</li>
+<li>Determine the value of <span class="math inline">\({S_{KP}}\)</span> for a gamma distribution with parameters $ = 1.6$ and $ = 0.2$.</li>
+<li>Comment on why <span class="math inline">\({S_{KP}}\)</span> is a suitable measure of skewness for distributions with one mode.</li>
 </ol>
 <p><a href="https://youtu.be/Ty2i1Mx9GQo">Solution</a></p>
 </div>
@@ -3040,9 +3234,9 @@ Mode and Skewness: Worked Example
 <h5>
 Cumulant Generating Functions
 </h5>
-Let <span class="math inline">\(\LARGE {X}\)</span> be a random variable having a gamma distribution with mean <span class="math inline">\(\LARGE {\alpha\lambda}\)</span> and variance <span class="math inline">\(\LARGE{\alpha\lambda^2}\)</span> and let the <span class="math inline">\(\LARGE{i}\)</span>-th cumulant of the distribution of <span class="math inline">\(\LARGE {X}\)</span> be denoted <span class="math inline">\(\LARGE{\kappa_i}\)</span>.
+Let $ {X}$ be a random variable having a gamma distribution with mean $ {}$ and variance <span class="math inline">\({\alpha\lambda^2}\)</span> and let the <span class="math inline">\({i}\)</span>-th cumulant of the distribution of $ {X}$ be denoted <span class="math inline">\({\kappa_i}\)</span>.
 <p>
-Assuming the moment generating function of <span class="math inline">\(\LARGE{X}\)</span>, determine the values of <span class="math inline">\(\LARGE{\kappa_2}\)</span>, <span class="math inline">\(\LARGE{\kappa_3}\)</span> and <span class="math inline">\(\LARGE{\kappa_4}\)</span>.
+Assuming the moment generating function of <span class="math inline">\({X}\)</span>, determine the values of <span class="math inline">\({\kappa_2}\)</span>, <span class="math inline">\({\kappa_3}\)</span> and <span class="math inline">\({\kappa_4}\)</span>.
 <p>
 <p><strong> <a href="https://youtu.be/zgR496RKmMA">Solution</a> </strong></p>
 </div>
@@ -3060,32 +3254,32 @@ A lognormal distribution is a continuous probability distribution of a random va
 <h5>
 Probability Density Function
 </h5>
-<p><span class="math display">\[\LARGE f(x) = {\displaystyle {\frac {1}{x\sigma {\sqrt {2\pi }}}}\ \exp \left(-{\frac {\left(\ln x-\mu \right)^{2}}{2\sigma ^{2}}}\right)} \mbox{ for } x&gt;0\]</span></p>
+<p><span class="math display">\[ f(x) = {\displaystyle {\frac {1}{x\sigma {\sqrt {2\pi }}}}\ \exp \left(-{\frac {\left(\ln x-\mu \right)^{2}}{2\sigma ^{2}}}\right)} \mbox{ for } x&gt;0\]</span></p>
 <h5>
 Mean
 <h5>
-<span class="math display">\[ {\LARGE E(X) = \exp \left(\mu +{\frac {\sigma ^{2}}{2}}\right)} \]</span>
+<span class="math display">\[ { E(X) = \exp \left(\mu +{\frac {\sigma ^{2}}{2}}\right)} \]</span>
 <h5>
 Variance:
 </h5>
-<p><span class="math display">\[ {\LARGE \operatorname{Var}(X) = \left[\exp(\sigma ^{2})-1\right]\exp(2\mu +\sigma ^{2})} \]</span></p>
+<p><span class="math display">\[ { \operatorname{Var}(X) = \left[\exp(\sigma ^{2})-1\right]\exp(2\mu +\sigma ^{2})} \]</span></p>
 <h5>
 Skewness:
 </h5>
-<p><span class="math display">\[ {\LARGE \operatorname{Skewness}(X) = (\exp(\sigma ^{2})+2){\sqrt {\exp(\sigma ^{2})-1}}} \]</span></p>
+<p><span class="math display">\[ { \operatorname{Skewness}(X) = (\exp(\sigma ^{2})+2){\sqrt {\exp(\sigma ^{2})-1}}} \]</span></p>
 </div>
 <div id="worked-examples-4" class="section level3">
 <h3>Worked Examples</h3>
 <h3>
 Worked Example 1
 </h3>
-<p>In a certain chemical plant, the concentration of pollutants (X-in parts per million) has lognormal distribution with parameter <span class="math inline">\(\LARGE \mu =3.2\)</span> and <span class="math inline">\(\LARGE \sigma =1\)</span></p>
+<p>In a certain chemical plant, the concentration of pollutants (X-in parts per million) has lognormal distribution with parameter $ =3.2$ and $ =1$</p>
 <h5>
 Exercises
 </h5>
 <ol style="list-style-type: lower-alpha">
-<li>Write the pdf of <span class="math inline">\(\LARGE X\)</span></li>
-<li>Compute the mean and variance of <span class="math inline">\(\LARGE X\)</span></li>
+<li>Write the pdf of $ X$</li>
+<li>Compute the mean and variance of $ X$</li>
 <li>Compute the probability that the concentration exceeds 8 parts per million</li>
 </ol>
 <h5>
@@ -3098,11 +3292,11 @@ Solution
 <h3>
 Worked Example 2
 </h3>
-<p>The random variable <span class="math inline">\(\LARGE Y = \log X\)</span> has <span class="math inline">\(\LARGE N (10, 4)\)</span> distribution. Find</p>
+<p>The random variable $ Y = X$ has $ N (10, 4)$ distribution. Find</p>
 <ol style="list-style-type: lower-alpha">
-<li>The pdf of <span class="math inline">\(\LARGE X\)</span></li>
-<li>Mean and variance of <span class="math inline">\(\LARGE X\)</span></li>
-<li>P(<span class="math inline">\(\LARGE X \leq 1000\)</span>)</li>
+<li>The pdf of $ X$</li>
+<li>Mean and variance of $ X$</li>
+<li>P($ X 1000$)</li>
 </ol>
 <h5>
 Solution
@@ -3131,19 +3325,19 @@ f(x;,k) =
 \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-(x/\lambda)^{k}} &amp; x\geq0 ,\\
 0 &amp; x&lt;0,
 \end{cases}\]</span>
-<p>where k &gt; 0 is the shape parameter and λ &gt; 0 is the scale parameter of the distribution.</p>
+<p>where k &gt; 0 is the shape parameter and &gt; 0 is the scale parameter of the distribution.</p>
 <p>The cumulative distribution function for the Weibull distribution is <span class="math display">\[F(x;k,\lambda) = 1- e^{-(x/\lambda)^k}\,
-for x ≥ 0, and F(x; k; λ) = 0 for x &lt; 0.\]</span> The quantile (inverse cumulative distribution) function for the Weibull distribution is <span class="math display">\[Q(p;k,\lambda) = \lambda {(-\ln(1-p))}^{1/k}
+for x ≥ 0, and F(x; k; \lambda ) = 0 for x &lt; 0.\]</span> The quantile (inverse cumulative distribution) function for the Weibull distribution is <span class="math display">\[Q(p;k,\lambda) = \lambda {(-\ln(1-p))}^{1/k}
 for 0 ≤ p &lt; 1.\]</span> The failure rate h (or hazard rate) is given by <span class="math display">\[ h(x;k,\lambda) = {k \over \lambda} \left({x \over \lambda}\right)^{k-1}.\]</span></p>
-<p>Failure rate is the frequency with which an engineered system or component fails, expressed, for example, in failures per hour. It is often denoted by the Greek letter λ (lambda) and is important in reliability engineering.</p>
+<p>Failure rate is the frequency with which an engineered system or component fails, expressed, for example, in failures per hour. It is often denoted by the Greek letter (lambda) and is important in reliability engineering.</p>
 </div>
 <div id="weibull-distributions-1" class="section level3">
 <h3>Weibull distributions</h3>
-<p><span class="math display">\[ \LARGE \lambda(t) = \alpha \beta t^{\beta -1}   \]</span> <span class="math inline">\((\lambda , \alpha, \beta &gt; 0)\)</span></p>
+<p><span class="math display">\[ \lambda(t) = \alpha \beta t^{\beta -1}   \]</span> <span class="math inline">\((\lambda , \alpha, \beta &gt; 0)\)</span></p>
 </div>
 <div id="gompertz-distribution" class="section level3">
-<h3>Gompertz Distribution}</h3>
-<p><span class="math display">\[ \LARGE \lambda(t) = \alpha e^{\beta t}           (\lambda , \alpha &gt; 0), ( \beta \mbox{ is real})\]</span></p>
+<h3>Gompertz Distribution</h3>
+<p><span class="math display">\[ \lambda(t) = \alpha e^{\beta t}           (\lambda , \alpha &gt; 0), ( \beta \mbox{ is real})\]</span></p>
 <p>GTDL <span class="math display">\[  \lambda(t) = \frac{\gamma e^{\alpha+\beta t}}{1+e^{\alpha+\beta t}} \]</span> <span class="math display">\[         (\lambda &gt; 0),(\alpha , \beta \mbox{is real})\]</span></p>
 <p>When given the hazard function, the properties of the corresponding survival distribution can be deduced</p>
 <p><span class="math display">\[
@@ -3171,13 +3365,54 @@ f(t)=\lambda(t)S(t) = \lambda(t) exp(-\int_0^t \lambda(u)d(u))
 </div>
 <div id="time-to-failure" class="section level3">
 <h3>Time to Failure</h3>
-<p>If the quantity X is a “time-to-failure”, the Weibull distribution gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, k, is that power plus one, and so this parameter can be interpreted directly as follows: A value of k &lt; 1 indicates that the failure rate decreases over time. This happens if there is significant “infant mortality”, or defective items failing early and the failure rate decreasing over time as the defective items are weeded out of the population. A value of k = 1 indicates that the failure rate is constant over time. This might suggest random external events are causing mortality, or failure. A value of k &gt; 1 indicates that the failure rate increases with time. This happens if there is an “aging” process, or parts that are more likely to fail as time goes on.</p>
+<p>If the quantity X is a “time-to-failure”, the Weibull distribution gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, k, is that power plus one, and so this parameter can be interpreted directly as follows:</p>
+<ul>
+<li><p>A value of k &lt; 1 indicates that the failure rate decreases over time. This happens if there is significant “infant mortality”, or defective items failing early and the failure rate decreasing over time as the defective items are weeded out of the population.</p></li>
+<li><p>A value of k = 1 indicates that the failure rate is constant over time. This might suggest random external events are causing mortality, or failure.</p></li>
+<li><p>A value of k &gt; 1 indicates that the failure rate increases with time. This happens if there is an “aging” process, or parts that are more likely to fail as time goes on.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="pareto-distribution" class="section level1" data-navmenu="Continuous Distributions">
+<h1>Pareto Distribution</h1>
+<div id="column-13" class="section level2 tabset">
+<h2>Column</h2>
+<div id="the-pareto-type-i-distribution" class="section level3">
+<h3>The Pareto Type I distribution</h3>
+<h5>
+The Pareto Type I distribution
+</h5>
+<p>The Pareto Type I distribution is a continuous distribution, parameterized with the shape parameter <span class="math inline">\(\alpha &gt; 0\)</span>, and location parameter <span class="math inline">\(x_\mathrm{m} &gt; 0\)</span>.</p>
+<div id="cumulative-distribution-function" class="section level4">
+<h4>Cumulative distribution function</h4>
+<p>The cumulative distribution function of a Pareto random variable with parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(x_m\)</span> is <span class="math display">\[F_X(x) = \begin{cases}
+1-\left(\frac{x_\mathrm{m}}{x}\right)^\alpha &amp; \mbox{for } x \ge x_\mathrm{m}, \\
+0 &amp; \mbox{for }x &lt; x_\mathrm{m}.
+\end{cases}
+\]</span></p>
+</div>
+<div id="probability-density-function" class="section level4">
+<h4>Probability density function</h4>
+<p>It follows (by differentiation) that the probability density function is <span class="math display">\[
+f_X(x)= \begin{cases} \alpha\,\dfrac{x_\mathrm{m}^\alpha}{x^{\alpha+1}} &amp; \mbox{for }x \ge x_\mathrm{m}, \\[12pt] 0 &amp; \mbox{for } x &lt; x_\mathrm{m}. \end{cases} 
+\]</span></p>
+</div>
+<div id="moments" class="section level4">
+<h4>Moments</h4>
+<p>The expected value of a random variable following a Pareto distribution is <span class="math display">\[
+E(X)= \begin{cases} \infty &amp; \mbox{if }\alpha\le 1, \\ \frac{\alpha x_\mathrm{m}}{\alpha-1} &amp; \mbox{if }\alpha&gt;1. \end{cases}
+\]</span></p>
+<p>The variance of a random variable following a Pareto distribution is <span class="math display">\[
+\mathrm{Var}(X)= \begin{cases} \infty &amp; \mbox{if }\alpha\in(1,2], \\ \left(\frac{x_\mathrm{m}}{\alpha-1}\right)^2 \frac{\alpha}{\alpha-2} &amp; \mbox{if }\alpha&gt;2. \end{cases}
+\]</span> (If <span class="math inline">\(\alpha\le 1\)</span>, the variance does not exist.)</p>
+</div>
 </div>
 </div>
 </div>
 <div id="approximating-distribution" class="section level1" data-navmenu="Advanced Topics">
 <h1>Approximating Distribution</h1>
-<div id="column-13" class="section level2 tabset">
+<div id="column-14" class="section level2 tabset">
 <h2>Column</h2>
 <div id="poisson-approximation" class="section level3">
 <h3>Poisson Approximation</h3>
@@ -3239,7 +3474,7 @@ Calculate an approximate value for the probability that more than 115 of the sam
 </div>
 <div id="combinations-of-normal-random-variables" class="section level1" data-navmenu="Advanced Topics">
 <h1>Combinations of Normal Random Variables</h1>
-<div id="column-14" class="section level2 tabset">
+<div id="column-15" class="section level2 tabset">
 <h2>Column</h2>
 <div id="worked-examples-5" class="section level3">
 <h3>Worked Examples</h3>
@@ -3274,7 +3509,7 @@ Solution
 </div>
 <div id="compound-distributions" class="section level1" data-navmenu="Advanced Topics">
 <h1>Compound Distributions</h1>
-<div id="column-15" class="section level2 tabset">
+<div id="column-16" class="section level2 tabset">
 <h2>Column</h2>
 <div id="compund-poisson-distributions" class="section level3">
 <h3>Compund Poisson Distributions</h3>
@@ -3319,7 +3554,7 @@ Solution
 </div>
 <div id="mixed-probability-distributions" class="section level1" data-navmenu="Advanced Topics">
 <h1>Mixed Probability Distributions</h1>
-<div id="column-16" class="section level2 tabset">
+<div id="column-17" class="section level2 tabset">
 <h2>Column</h2>
 <div id="mixed-distributions" class="section level3">
 <h3>Mixed Distributions</h3>
@@ -3342,22 +3577,6 @@ Solution
 <h5>
 Mixed Distributions
 </h5>
-</div>
-</div>
-</div>
-<div id="random-number-generation" class="section level1" data-navmenu="Advanced Topics">
-<h1>Random Number Generation</h1>
-<div id="column-17" class="section level2 tabset">
-<h2>Column</h2>
-<div id="simulation" class="section level3">
-<h3>Simulation</h3>
-</div>
-<div id="random-number-generation-1" class="section level3">
-<h3>Random Number Generation</h3>
-<h3>
-Worked Example
-</h3>
-<p>Generate three random samples from Binomial B(3, 0.4) using the following values from U(0,1) <span class="math display">\[\LARGE 0.196, 0.351, 0.975\]</span></p>
 </div>
 </div>
 </div>

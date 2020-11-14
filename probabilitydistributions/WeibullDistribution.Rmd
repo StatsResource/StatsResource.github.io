@@ -10,6 +10,28 @@ Column {.tabset}
 <h5>The Weibull Distribution</h5>
 
 
+
+#### Applications
+
+The Weibull distribution is used
+
+* In survival analysis
+* In reliability engineering and failure analysis
+* In industrial engineering to represent manufacturing and delivery times
+* In extreme value theory
+* In weather forecasting
+* To describe wind speed distributions, as the natural distribution often matches the Weibull shape[9]
+* In communications systems engineering
+* In radar systems to model the dispersion of the received signals level produced by some types of clutters
+* To model fading channels in wireless communications, as the Weibull fading model seems to exhibit good fit to experimental fading channel measurements
+
+Fitted cumulative Weibull distribution to maximum one-day rainfalls using CumFreq, see also distribution fitting
+In general insurance to model the size of reinsurance claims, and the cumulative development of asbestosis losses
+In forecasting technological change (also known as the Sharif-Islam model)[10]
+In hydrology the Weibull distribution is applied to extreme events such as annual maximum one-day rainfalls and river discharges. The blue picture illustrates an example of fitting the Weibull distribution to ranked annually maximum one-day rainfalls showing also the 90% confidence belt based on the binomial distribution. The rainfall data are represented by plotting positions as part of the cumulative frequency analysis.
+
+
+
 ### Parameter Estimates
 
 
@@ -40,11 +62,11 @@ Failure rate is the frequency with which an engineered system or component fails
 
 ### Weibull distributions
 
- \[ \LARGE \lambda(t) = \alpha \beta t^{\beta -1}   \]     $(\lambda , \alpha, \beta > 0)$
+ \[ \lambda(t) = \alpha \beta t^{\beta -1}   \]     $(\lambda , \alpha, \beta > 0)$
 
-### Gompertz Distribution}
+### Gompertz Distribution
 
- \[ \LARGE \lambda(t) = \alpha e^{\beta t}           (\lambda , \alpha > 0), ( \beta \mbox{ is real})\]
+ \[ \lambda(t) = \alpha e^{\beta t}           (\lambda , \alpha > 0), ( \beta \mbox{ is real})\]
 
 
 GTDL   \[  \lambda(t) = \frac{\gamma e^{\alpha+\beta t}}{1+e^{\alpha+\beta t}} \]            \[         (\lambda > 0),(\alpha , \beta \mbox{is real})\]
@@ -63,30 +85,13 @@ control the shape and scale variation. They are not unknown functions, i.e., fun
 
 
 
-### Applications
-
-The Weibull distribution is used
-
-* In survival analysis[8]
-* In reliability engineering and failure analysis
-* In industrial engineering to represent manufacturing and delivery times
-* In extreme value theory
-* In weather forecasting
-* To describe wind speed distributions, as the natural distribution often matches the Weibull shape[9]
-* In communications systems engineering
-* In radar systems to model the dispersion of the received signals level produced by some types of clutters
-* To model fading channels in wireless communications, as the Weibull fading model seems to exhibit good fit to experimental fading channel measurements
-
-Fitted cumulative Weibull distribution to maximum one-day rainfalls using CumFreq, see also distribution fitting
-In general insurance to model the size of reinsurance claims, and the cumulative development of asbestosis losses
-In forecasting technological change (also known as the Sharif-Islam model)[10]
-In hydrology the Weibull distribution is applied to extreme events such as annual maximum one-day rainfalls and river discharges. The blue picture illustrates an example of fitting the Weibull distribution to ranked annually maximum one-day rainfalls showing also the 90% confidence belt based on the binomial distribution. The rainfall data are represented by plotting positions as part of the cumulative frequency analysis.
-
-
 ### Time to Failure
 
 If the quantity X is a "time-to-failure", the Weibull distribution gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, k, is that power plus one, and so this parameter can be interpreted directly as follows:
-A value of k < 1 indicates that the failure rate decreases over time. This happens if there is significant "infant mortality", or defective items failing early and the failure rate decreasing over time as the defective items are weeded out of the population.
-A value of k = 1 indicates that the failure rate is constant over time. This might suggest random external events are causing mortality, or failure.
-A value of k > 1 indicates that the failure rate increases with time. This happens if there is an "aging" process, or parts that are more likely to fail as time goes on.
+
+* A value of k < 1 indicates that the failure rate decreases over time. This happens if there is significant "infant mortality", or defective items failing early and the failure rate decreasing over time as the defective items are weeded out of the population.
+
+* A value of k = 1 indicates that the failure rate is constant over time. This might suggest random external events are causing mortality, or failure.
+
+* A value of k > 1 indicates that the failure rate increases with time. This happens if there is an "aging" process, or parts that are more likely to fail as time goes on.
 

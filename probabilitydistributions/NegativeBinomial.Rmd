@@ -8,20 +8,31 @@ Column {.tabset}
 ### Introduction
 
 Suppose there is a sequence of independent Bernoulli trials. 
-Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is $\LARGE{p}$ and of failure is ($\LARGE{1 - p}$). 
+Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is ${p}$ and of failure is (${1 - p}$). 
 
+The Negative Binomial distribution refers to the probability of the number of times needed to do something until achieving a fixed number of desired results. For example:
+
+
+* How many times will I throw a coin until it lands on heads for the 10th time?
+* How many children will I have when I get my third daughter?
+* How many cards will I have to draw from a pack until I get the second Joker?
+
+
+Just like the Binomial Distribution, the Negative Binomial distribution has two controlling parameters: the probability of success p in any independent test and the desired number of successes m. If a random variable X has Negative Binomial distribution with parameters p and m, its probability mass function is:
+
+\[P(X=n) = {n-1 \choose m-1} p^m (1-p)^{n-m} \mbox{, for } n \ge m.\]
 
 ### Type 1 Specficiation
 
-This approach models the number of failures (denoted $\LARGE{k}$) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted $\LARGE{r}$) occurs.
-Then the random number of failures we have seen, $\LARGE{X}$, will have the negative binomial (or Pascal) distribution:
-\[ \LARGE {\displaystyle X\sim \operatorname {NB} (r,p)}\]
+This approach models the number of failures (denoted ${k}$) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted ${r}$) occurs.
+Then the random number of failures we have seen, ${X}$, will have the negative binomial (or Pascal) distribution:
+\[  {\displaystyle X\sim \operatorname {NB} (r,p)}\]
 
 <h4>Probability Mass Function</h4>
 \noindent The probability mass function of the negative binomial distribution is
 
-\[ \LARGE {\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]
-where $k$ is the number of failures, $\LARGE{r}$ is the number of successes, and $\LARGE{p}$ is the probability of success. 
+\[  {\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]
+where $k$ is the number of failures, ${r}$ is the number of successes, and ${p}$ is the probability of success. 
 
 <p>
 <h5>Parameters</h5>
@@ -33,22 +44,22 @@ where $k$ is the number of failures, $\LARGE{r}$ is the number of successes, and
 
 ### Type 2 Specficiation
 
-\noindent This approach models the number of trial (denoted $n$) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted $\LARGE{r}$) occurs. (N.B. $n = k + r$.)
+\noindent This approach models the number of trial (denoted $n$) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted ${r}$) occurs. (N.B. $n = k + r$.)
 
 <h4>Probability Mass Function</h4>
 
-Let $\LARGE{X}$ denote the number of trials until the $\LARGE{r}$-th success. 
+Let ${X}$ denote the number of trials until the ${r}$-th success. 
 The probability mass function of the negative binomial distribution is
 	
-\[\LARGE {\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]
-where $n$ is the number of trial, $\LARGE{r}$ is the number of successes, and $\LARGE{p}$ is the probability of success. 
+\[ {\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]
+where $n$ is the number of trial, ${r}$ is the number of successes, and ${p}$ is the probability of success. 
 
 <p>
 <h5>Parameters</h5>
 
 
-* Mean	${\LARGE {\frac {r}{p}}}$
-* Variance	$\LARGE {\frac {r(1-p)}{p^{2}}}$
+* Mean	${ {\frac {r}{p}}}$
+* Variance	$ {\frac {r(1-p)}{p^{2}}}$
 
 
 ### Worked Examples

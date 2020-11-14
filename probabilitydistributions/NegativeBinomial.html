@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -145,6 +144,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -184,32 +184,51 @@ summary {
 <h1>Negative Binomial Distributions</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="specification" class="section level3">
-<h3>Specification</h3>
-<p>Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is p and of failure is (<span class="math inline">\(1 - p\)</span>).</p>
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+<p>Suppose there is a sequence of independent Bernoulli trials. Thus, each trial has two potential outcomes called success and failure. In each trial the probability of success is <span class="math inline">\({p}\)</span> and of failure is (<span class="math inline">\({1 - p}\)</span>).</p>
+<p>The Negative Binomial distribution refers to the probability of the number of times needed to do something until achieving a fixed number of desired results. For example:</p>
+<ul>
+<li>How many times will I throw a coin until it lands on heads for the 10th time?</li>
+<li>How many children will I have when I get my third daughter?</li>
+<li>How many cards will I have to draw from a pack until I get the second Joker?</li>
+</ul>
+<p>Just like the Binomial Distribution, the Negative Binomial distribution has two controlling parameters: the probability of success p in any independent test and the desired number of successes m. If a random variable X has Negative Binomial distribution with parameters p and m, its probability mass function is:</p>
+<p><span class="math display">\[P(X=n) = {n-1 \choose m-1} p^m (1-p)^{n-m} \mbox{, for } n \ge m.\]</span></p>
 </div>
-<div id="type-2-specficiation" class="section level3">
-<h3>Type 2 Specficiation</h3>
-<p>This approach models the number of failures (denoted <span class="math inline">\(k\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\(r\)</span>) occurs. Then the random number of failures we have seen, <span class="math inline">\(\LARGE{X}\)</span>, will have the negative binomial (or Pascal) distribution: <span class="math display">\[ {\displaystyle X\sim \operatorname {NB} (r,p)}\]</span></p>
+<div id="type-1-specficiation" class="section level3">
+<h3>Type 1 Specficiation</h3>
+<p>This approach models the number of failures (denoted <span class="math inline">\({k}\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\({r}\)</span>) occurs. Then the random number of failures we have seen, <span class="math inline">\({X}\)</span>, will have the negative binomial (or Pascal) distribution: <span class="math display">\[  {\displaystyle X\sim \operatorname {NB} (r,p)}\]</span></p>
 <h4>
 Probability Mass Function
 </h4>
 <p>The probability mass function of the negative binomial distribution is</p>
-<span class="math display">\[{\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]</span> where <span class="math inline">\(k\)</span> is the number of failures, <span class="math inline">\(r\)</span> is the number of successes, and <span class="math inline">\(p\)</span> is the probability of success.
-
+<p><span class="math display">\[  {\displaystyle f(k;r,p)\equiv \Pr(X=k)={\binom {k+r-1}{k}}(1-p)^{r}p^{k}}\]</span> where <span class="math inline">\(k\)</span> is the number of failures, <span class="math inline">\({r}\)</span> is the number of successes, and <span class="math inline">\({p}\)</span> is the probability of success.</p>
+<p>
+<h5>
+Parameters
+</h5>
+<ul>
+<li>Mean <span class="math inline">\({\displaystyle {\frac {pr}{1-p}}}\)</span></li>
+<li>Variance <span class="math inline">\({\displaystyle {\frac {pr}{(1-p)^{2}}}}\)</span></li>
+</ul>
 <p>
 </div>
-<div id="type-2-specficiation-1" class="section level3">
+<div id="type-2-specficiation" class="section level3">
 <h3>Type 2 Specficiation</h3>
-<p>This approach models the number of trial (denoted <span class="math inline">\(n\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\(r\)</span>) occurs. (N.B. <span class="math inline">\(n = k + r\)</span>.)</p>
+<p>This approach models the number of trial (denoted <span class="math inline">\(n\)</span>) in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of successes (denoted <span class="math inline">\({r}\)</span>) occurs. (N.B. <span class="math inline">\(n = k + r\)</span>.)</p>
 <h4>
 Probability Mass Function
 </h4>
-<p>Let <span class="math inline">\(\LARGE{X}\)</span> denote the number of trials until the <span class="math inline">\(r\)</span>th success. The probability mass function of the negative binomial distribution is</p>
-<p><span class="math display">\[{\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]</span> where <span class="math inline">\(n\)</span> is the number of trial, <span class="math inline">\(r\)</span> is the number of successes, and <span class="math inline">\(p\)</span> is the probability of success.</p>
+<p>Let <span class="math inline">\({X}\)</span> denote the number of trials until the <span class="math inline">\({r}\)</span>-th success. The probability mass function of the negative binomial distribution is</p>
+<p><span class="math display">\[ {\textstyle f(n;r,p)\equiv \Pr(X=n)=} { {\binom {n-1}{r-1}}(1-p)^{n-r}p^{r}} \]</span> where <span class="math inline">\(n\)</span> is the number of trial, <span class="math inline">\({r}\)</span> is the number of successes, and <span class="math inline">\({p}\)</span> is the probability of success.</p>
+<p>
+<h5>
+Parameters
+</h5>
 <ul>
-<li>Mean <span class="math inline">\({\displaystyle {\frac {r}{p}}}\)</span></li>
-<li>Variance <span class="math inline">\(\LARGE {\frac {r(1-p)}{p^{2}}}\)</span></li>
+<li>Mean <span class="math inline">\({ {\frac {r}{p}}}\)</span></li>
+<li>Variance $ {}$</li>
 </ul>
 </div>
 <div id="worked-examples" class="section level3">

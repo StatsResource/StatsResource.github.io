@@ -34,9 +34,9 @@ Consider the following measure of skewness for a unimodal distribution:
 
 \[ S_{KP}  \;=\; \frac{ \mbox{mean} \;-\; \mbox{mode}}{ \mbox{ standard deviation} } \] 
 
-a. Determine the value of $\LARGE{S_{KP}}$ for a gamma distribution with parameters $\LARGE \alpha  = 1.6$ and
-$\LARGE \lambda  = 0.2$. 
-b. Comment on why $\LARGE{S_{KP}}$  is a suitable measure of skewness for distributions with one mode.
+a. Determine the value of ${S_{KP}}$ for a gamma distribution with parameters $ \alpha  = 1.6$ and
+$ \lambda  = 0.2$. 
+b. Comment on why ${S_{KP}}$  is a suitable measure of skewness for distributions with one mode.
 
 <a href = "https://youtu.be/Ty2i1Mx9GQo">Solution</a>
 
@@ -46,9 +46,9 @@ b. Comment on why $\LARGE{S_{KP}}$  is a suitable measure of skewness for distri
 
 <h5> Cumulant Generating Functions </h5>
 
-Let $\LARGE {X}$ be a random variable having a gamma distribution with mean $\LARGE {\alpha\lambda}$  and variance $\LARGE{\alpha\lambda^2}$  and let the $\LARGE{i}$-th cumulant of the distribution of $\LARGE {X}$ be denoted $\LARGE{\kappa_i}$.
+Let $ {X}$ be a random variable having a gamma distribution with mean $ {\alpha\lambda}$  and variance ${\alpha\lambda^2}$  and let the ${i}$-th cumulant of the distribution of $ {X}$ be denoted ${\kappa_i}$.
 <p>
-Assuming the moment generating function of $\LARGE{X}$, determine the values of $\LARGE{\kappa_2}$, $\LARGE{\kappa_3}$ and $\LARGE{\kappa_4}$.
+Assuming the moment generating function of ${X}$, determine the values of ${\kappa_2}$, ${\kappa_3}$ and ${\kappa_4}$.
 <p>
 <strong>
 <a href = "https://youtu.be/zgR496RKmMA">Solution</a>

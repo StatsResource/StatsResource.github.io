@@ -1,0 +1,48 @@
+Pareto Distribution {data-navmenu="Continuous Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### The Pareto Type I distribution
+
+<h5> The Pareto Type I distribution</h5>
+
+The Pareto Type I distribution is 
+a continuous distribution, parameterized with  the shape parameter $\alpha > 0$, and location parameter $x_\mathrm{m} > 0$.
+
+
+
+
+
+#### Cumulative distribution function
+
+The cumulative distribution function of a Pareto random variable with parameters $\alpha$ and $x_m$ is
+\[F_X(x) = \begin{cases}
+1-\left(\frac{x_\mathrm{m}}{x}\right)^\alpha & \mbox{for } x \ge x_\mathrm{m}, \\
+0 & \mbox{for }x < x_\mathrm{m}.
+\end{cases}
+\]
+
+
+#### Probability density function
+It follows (by differentiation) that the probability density function is
+\[
+f_X(x)= \begin{cases} \alpha\,\dfrac{x_\mathrm{m}^\alpha}{x^{\alpha+1}} & \mbox{for }x \ge x_\mathrm{m}, \\[12pt] 0 & \mbox{for } x < x_\mathrm{m}. \end{cases} 
+\]
+
+#### Moments 
+
+The expected value of a random variable following a Pareto distribution is
+\[
+E(X)= \begin{cases} \infty & \mbox{if }\alpha\le 1, \\ \frac{\alpha x_\mathrm{m}}{\alpha-1} & \mbox{if }\alpha>1. \end{cases}
+\]
+
+
+
+The variance of a random variable following a Pareto distribution is
+\[
+\mathrm{Var}(X)= \begin{cases} \infty & \mbox{if }\alpha\in(1,2], \\ \left(\frac{x_\mathrm{m}}{\alpha-1}\right)^2 \frac{\alpha}{\alpha-2} & \mbox{if }\alpha>2. \end{cases}
+\]
+(If $\alpha\le 1$, the variance does not exist.)
+

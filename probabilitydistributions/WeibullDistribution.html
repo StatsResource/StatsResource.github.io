@@ -180,85 +180,70 @@ summary {
 </div>
 
 
-<div id="exponential-distribution" class="section level1" data-navmenu="Continuous Distributions">
-<h1>Exponential Distribution</h1>
+<div id="weibull-distributions" class="section level1" data-navmenu="Continuous Distributions">
+<h1>Weibull Distributions</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="important-formulas" class="section level3">
-<h3>Important Formulas</h3>
-<h3>
-The Exponential Distribution
-</h3>
-<p>
+<div id="weibull-distribution" class="section level3">
+<h3>Weibull Distribution</h3>
 <h5>
-Probability density function of the Exponential Distribution
+The Weibull Distribution
 </h5>
-<p>The probability density function (pdf) of an exponential distribution is <span class="math display">\[  {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&amp;x\geq 0,\\0&amp;x&lt;0.\end{cases}}}\]</span></p>
-<p>Here <span class="math inline">\(\lambda &gt; 0\)</span> is the parameter of the distribution, often called the rate parameter.</p>
-</div>
-<div id="worked-examples" class="section level3">
-<h3>Worked Examples</h3>
-<h3>
-Worked Examples
-</h3>
-<p>Claim amounts are modelled as an exponential random variable with mean $1,000.</p>
-<h4>
-Exercises
-</h4>
-<ol style="list-style-type: lower-alpha">
-<li><p>Calculate the probability that one such claim amount is greater than $5,000.</p></li>
-<li><p>Calculate the probability that a claim amount is greater than $5,000 given that it is greater than $1,000.</p></li>
-</ol>
-<h4>
-Solution
-</h4>
-<p><strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong></p>
-</div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h5>
-Worked Example
-</h5>
+<div id="applications" class="section level4">
+<h4>Applications</h4>
+<p>The Weibull distribution is used</p>
 <ul>
-<li><a href="https://youtu.be/ivnbqNPv_WQ/"> Exponential Distribution - Worked Example </a><br />
-</li>
-<li><a href="https://youtu.be/HbKGfxMsX5U/"> Exponential Random Variables - Distribution of the Minima </a></li>
+<li>In survival analysis</li>
+<li>In reliability engineering and failure analysis</li>
+<li>In industrial engineering to represent manufacturing and delivery times</li>
+<li>In extreme value theory</li>
+<li>In weather forecasting</li>
+<li>To describe wind speed distributions, as the natural distribution often matches the Weibull shape[9]</li>
+<li>In communications systems engineering</li>
+<li>In radar systems to model the dispersion of the received signals level produced by some types of clutters</li>
+<li>To model fading channels in wireless communications, as the Weibull fading model seems to exhibit good fit to experimental fading channel measurements</li>
 </ul>
+<p>Fitted cumulative Weibull distribution to maximum one-day rainfalls using CumFreq, see also distribution fitting In general insurance to model the size of reinsurance claims, and the cumulative development of asbestosis losses In forecasting technological change (also known as the Sharif-Islam model)[10] In hydrology the Weibull distribution is applied to extreme events such as annual maximum one-day rainfalls and river discharges. The blue picture illustrates an example of fitting the Weibull distribution to ranked annually maximum one-day rainfalls showing also the 90% confidence belt based on the binomial distribution. The rainfall data are represented by plotting positions as part of the cumulative frequency analysis.</p>
 </div>
-<div id="review-questions" class="section level3">
-<h3>Review Questions</h3>
-<h3>
-Review Question 1
-</h3>
-<p>An average of five calls per hour are received by a machine repair department. Beginning the observation at any point in time, what is the probability that the first call for service will arrive within five minutes? Jobs are sent to a printer at an average of 5 jobs per hour.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected time between jobs?</li>
-<li>What is the probability that the next job is sent within 6 minutes after the previous job?</li>
-</ol>
-<hr />
-<h3>
-Review Question 2
-</h3>
-<p>Assume that the time, denominated in minutes, between arrivals of customers at a particular bank is exponentially distributed with a rate parameter of 0.25.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the mean duration between arrivals?</li>
-<li>Find the probability that the time between arrivals is greater than 5 minutes.</li>
-<li>Find the probability that the time between arrivals will be less than 2 minute.</li>
-</ol>
-<hr />
-<h3>
-Review Question 3
-</h3>
-Suppose that customers arrive at a filling station at the rate of 3 per hour. Given that a customer has just arrived, the time is takes for the next customer to arrive is called a <strong><em>waiting time</em></strong>}. Let $ T$ be the symbol for the ``waiting times&quot; variable.
-<p>
-<p>Suppose that a customer has just arrived.</p>
-<ol style="list-style-type: lower-alpha">
-<li>What is the expected waiting time between customer arrivals?</li>
-<li>Compute <span class="math inline">\(E(T)\)</span></li>
-<li>What is the variance of waiting times? Compute <span class="math inline">\(\mbox{Var}(T)\)</span>.</li>
-<li>What is the probability that the next customer will arrive within the next fifteen minutes?</li>
-<li>What is the probability that no customers arrive in the next half hour?</li>
-</ol>
+</div>
+<div id="parameter-estimates" class="section level3">
+<h3>Parameter Estimates</h3>
+<p>The probability density function of a Weibull random variable is:[1]</p>
+f(x;,k) =
+<span class="math display">\[\begin{cases}
+\frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-(x/\lambda)^{k}} &amp; x\geq0 ,\\
+0 &amp; x&lt;0,
+\end{cases}\]</span>
+<p>where k &gt; 0 is the shape parameter and &gt; 0 is the scale parameter of the distribution.</p>
+<p>The cumulative distribution function for the Weibull distribution is <span class="math display">\[F(x;k,\lambda) = 1- e^{-(x/\lambda)^k}\,
+for x ≥ 0, and F(x; k; \lambda ) = 0 for x &lt; 0.\]</span> The quantile (inverse cumulative distribution) function for the Weibull distribution is <span class="math display">\[Q(p;k,\lambda) = \lambda {(-\ln(1-p))}^{1/k}
+for 0 ≤ p &lt; 1.\]</span> The failure rate h (or hazard rate) is given by <span class="math display">\[ h(x;k,\lambda) = {k \over \lambda} \left({x \over \lambda}\right)^{k-1}.\]</span></p>
+<p>Failure rate is the frequency with which an engineered system or component fails, expressed, for example, in failures per hour. It is often denoted by the Greek letter (lambda) and is important in reliability engineering.</p>
+</div>
+<div id="weibull-distributions-1" class="section level3">
+<h3>Weibull distributions</h3>
+<p><span class="math display">\[ \lambda(t) = \alpha \beta t^{\beta -1}   \]</span> <span class="math inline">\((\lambda , \alpha, \beta &gt; 0)\)</span></p>
+</div>
+<div id="gompertz-distribution" class="section level3">
+<h3>Gompertz Distribution</h3>
+<p><span class="math display">\[ \lambda(t) = \alpha e^{\beta t}           (\lambda , \alpha &gt; 0), ( \beta \mbox{ is real})\]</span></p>
+<p>GTDL <span class="math display">\[  \lambda(t) = \frac{\gamma e^{\alpha+\beta t}}{1+e^{\alpha+\beta t}} \]</span> <span class="math display">\[         (\lambda &gt; 0),(\alpha , \beta \mbox{is real})\]</span></p>
+<p>When given the hazard function, the properties of the corresponding survival distribution can be deduced</p>
+<p><span class="math display">\[
+\LARGE
+f(t)=\lambda(t)S(t) = \lambda(t) exp(-\int_0^t \lambda(u)d(u))
+\]</span></p>
+<p>These models are called parametric models. <span class="math inline">\(\lambda(t)\)</span> involves parameters = unknown constants in these models. The parameters</p>
+<p>control the shape and scale variation. They are not unknown functions, i.e., functions are wholly specified in parametric models.</p>
+</div>
+<div id="time-to-failure" class="section level3">
+<h3>Time to Failure</h3>
+<p>If the quantity X is a “time-to-failure”, the Weibull distribution gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, k, is that power plus one, and so this parameter can be interpreted directly as follows:</p>
+<ul>
+<li><p>A value of k &lt; 1 indicates that the failure rate decreases over time. This happens if there is significant “infant mortality”, or defective items failing early and the failure rate decreasing over time as the defective items are weeded out of the population.</p></li>
+<li><p>A value of k = 1 indicates that the failure rate is constant over time. This might suggest random external events are causing mortality, or failure.</p></li>
+<li><p>A value of k &gt; 1 indicates that the failure rate increases with time. This happens if there is an “aging” process, or parts that are more likely to fail as time goes on.</p></li>
+</ul>
 </div>
 </div>
 </div>

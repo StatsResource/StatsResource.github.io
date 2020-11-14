@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'main/probabilityformulas.Rmd'}
 ```
 
-```{r child = 'main/regressionformulas.Rmd'}
+```{r child = 'main/regressionformulas.rmd'}
 ```
 
 
