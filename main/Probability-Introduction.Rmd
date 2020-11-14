@@ -1,0 +1,15 @@
+Introduction {data-navmenu="Menu"}
+===========================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Probability and Counting Problems
+
+In this section, we will look at 
+
+1. **Probability**: the fundamentals of probability, conditional probability, Venn Diagrams 
+
+2. **Counting Problems**: combinations, permutations and binomial coefficients.
+
+3. **Random Variables**: Introduction to random variables, sampling.

@@ -110,6 +110,8 @@ With an even number of data values, for example 8, we have:
  $$ S_k = \frac{3(\mbox{Mean} - \mbox{Median} )}{\sigma} $$
  
 
+#### The Coefficient of Variation 
 
+What happens if you have two sets of data with two different means and two different standard deviations? How do you decide which set is more spread out? Remember the size of the standard deviation is relative to the mean it is associated with.
 
-
+The coefficient of variation (cv) is often used to compare the relative dispersion between two or more sets of data. It is formed by dividing the standard deviation by the mean and is usually expressed as a percentage i.e. (multiplied by 100). Again we distinguish between the population and sample coefficient of variation.

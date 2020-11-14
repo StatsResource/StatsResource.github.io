@@ -17,8 +17,38 @@ Column {.tabset}
 
 <h5> Akaike's Information Criteron </h5>
 
-* < a href =="https://www.youtu.be/SMShpSGEUG4">  The Akaike Information Criterion. </a>
-* < a href ="https://www.youtube.com/watch?v=YMC2Z6LpNXI"> Model Selection with the AIC </a>
+
+
+
+
+\subsection{Akaike Information Criterion}
+
+
+Akaike's information criterionis a measure of the goodness of fit of
+an estimated statistical model. The AIC was developed by Hirotsugu Akaike under the name of ``an information criterion" in 1971. The AIC is a \textbf{\textit{model selection}} tool i.e. a method of comparing two
+or more candidate regression models. The AIC methodology attempts to find the model that best explains the data with a minimum of parameters. (i.e. in keeping with the law of parsimony)
+
+The AIC is calculated using the "likelihood function" and the number of parameters ( Likelihood function : not on course). The likelihood value is generally given in code output, as a complement to the AIC.
+Given a data set, several competing models may be ranked according to their AIC, with the one having the lowest AIC being the best. (Although, a difference in AIC values of less than two is considered negligible).
+
+\[\mbox{AIC} = 2p - 2\ln(L)\]
+
+\begin{itemize}
+*  $p$ is the number of free model parameters.
+*  $L$ is the value of the Likelihood function for the model in question.
+*  For AIC to be optimal, $n$ must be large compared to $p$.\\
+\end{itemize}
+\subsubsection{Schwarz's Bayesian Information Criterion}
+An alternative to the AIC is the Schwarz BIC, which additionally takes into account the sample size $n$.
+
+\[\mbox{BIC} = p\ln{n} - 2\ln(L)\]
+
+
+
+#### Videos
+
+* <a href ="https://www.youtu.be/SMShpSGEUG4">  The Akaike Information Criterion. </a>
+* <a href ="https://www.youtube.com/watch?v=YMC2Z6LpNXI"> Model Selection with the AIC </a>
 
 
 ### Polynomial Regression 

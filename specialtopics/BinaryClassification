@@ -1,0 +1,143 @@
+
+%=================================================%
+\newpage
+\subsection{Binary Classification}
+\textbf{Defining True/False Positives}
+In general, Positive = identified and negative = rejected. Therefore:
+
+\begin{itemize}
+* True positive = correctly identified
+
+* False positive = incorrectly identified
+
+* True negative = correctly rejected
+
+* False negative = incorrectly rejected
+
+\subsubsection*{Medical Testing Example:}
+\begin{itemize}
+* True positive = Sick people correctly diagnosed as sick
+
+* False positive= Healthy people incorrectly identified as sick
+
+* True negative = Healthy people correctly identified as healthy
+
+* False negative = Sick people incorrectly identified as healthy.
+
+%-------------------------------------------------- %
+\newpage
+\subsection{Definitions (From Week 1)}
+\textbf{Confusion Matrix} \\
+The confusion
+table is a table in which the rows are the observed categories of the dependent and
+the columns are the predicted categories. When prediction is perfect all cases will lie on the
+diagonal. The percentage of cases on the diagonal is the percentage of correct classifications. 
+
+\textbf{Accuracy Rate}\\
+The accuracy rate calculates the proportion ofobservations being allocated to the \textbf{correct} group by the predictive model. It is calculated as follows:
+\[ \frac{
+\mbox{Number of Correct Classifications }}{\mbox{Total Number of Classifications }} \]
+
+\[ = \frac{TP + TN}{TP+FP+TN+FN}\]
+
+\medskip
+
+\textbf{Misclassification Rate}\\
+The misclassification rate calculates the proportion ofobservations being allocated to the \textbf{incorrect} group by the predictive model. It is calculated as follows:
+\[ \frac{
+\mbox{Number of Incorrect Classifications }}{\mbox{Total Number of Classifications }} \]
+
+\[ = \frac{FP + FN}{TP+FP+TN+FN}\]
+\newpage
+%---------------------------------------------------------- %
+\newpage
+\section{Model Accuracy}
+%http://www.unt.edu/rss/class/Jon/Benchmarks/CrossValidation1_JDS_May2011.pdf
+Prediction error refers to the discrepancy or difference between a predicted value (based on a
+model) and the actual value. In the standard regression situation, prediction error refers to how
+well our regression equation predicts the outcome variable scores of new cases based on
+applying the model (coefficients) to the new cases’ predictor variable scores.
+
+\begin{equation}
+\text{Accuracy}=\frac{TP+TN}{TP+FP+FN+TN}
+\end{equation}
+
+\begin{equation}
+\text{Precision}=\frac{TP}{TP+FP} \, 
+\end{equation}
+
+\begin{equation}
+\text{Recall}=\frac{TP}{TP+FN} \, 
+\end{equation}
+
+\subsection{Misclassification Cost}
+\begin{itemize}
+* As in all statistical procedures it is helpful to use diagnostic procedures to assess the efficacy of the analysis. We use \textbf{cross-validation} to assess the classification probability.
+Typically you are going to have some prior rule as to what is an \textbf{acceptable misclassification rate}.
+
+\itemThose rules might involve things like, \textit{``what is the cost of misclassification?"} Consider a medical study where you might be able to diagnose cancer.
+
+* There are really two alternative costs. 
+\begin{itemize}
+\item[$\ast$] The cost of misclassifying someone as having cancer when they don't.
+This could cause a certain amount of emotional grief. Additionally there would be the substantial cost of unnecessary treatment.
+
+\item[$\ast$] There is also the alternative cost of misclassifying someone as not having cancer when in fact they do have it.
+
+* A good classification procedure should
+\begin{itemize}
+\item[$\ast$] result in few misclassifications
+\item[$\ast$] take \textbf{\textit{prior probabilities of occurrence}} into account
+\item[$\ast$] consider the cost of misclassification
+
+
+* For example, suppose there tend to be more financially sound firms than bankrupt
+firm. If we really believe that the prior probability of a financially
+distressed and ultimately bankrupted firm is very small, then one should
+classify a randomly selected firm as non-bankrupt unless the data
+overwhelmingly favor bankruptcy.
+
+
+
+* There are two costs associated with discriminant analysis classification: The true misclassification cost per class, and the expected misclassification cost (ECM) per observation.
+
+* \textbf{Example} Suppose there we have a binary classification system, with two classes: class 1 and class 2.
+Suppose that classifying a class 1 object as belonging to class 2 represents a more serious error than classifying a class 2 object as belonging to class 1. There would an assignable cost to each error.
+\textbf{c(i$|$j)} is the cost of classifying an observation into class $j$ if its true class is $i$.
+The costs of misclassification can be defined by a cost matrix.
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+& Predicted & Predicted \\
+& Class 1 & Class 2 \\  \hline
+Class 1 & 0 & $c(2|1)$  \\ \hline
+Class 2 & $c(1|2)$ & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+<p>
+-----------------------------------------------------------------------
+
+\textbf{Expected cost of misclassification (ECM)}
+\begin{itemize}
+* Let $p_1$ and $p_2$ be the prior probability of class 1 and class 2 respectively.
+Necessarily $p_1$ + $p_2$ = 1.
+
+\itemThe conditional probability of classifying an object as class 1 when it is in fact from
+class 2 is denoted $p(1|2)$.
+* Similarly the conditional probability of classifying an object as class 2 when it is in
+fact from class 1 is denoted $p(2|1)$.
+
+\[ECM = c(2|1)p(2|1)p_1 + c(1|2)p(1|2)p_2\]
+\textit{(In other words: the sum of the cost of misclassification times the (joint) probability of that misclassification.)}
+
+* A reasonable classification rule should have ECM as small as possible.
+
+
+
+
+
+\end{document}

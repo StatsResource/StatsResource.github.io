@@ -1,43 +1,3 @@
-﻿
-
-
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="MathsResource.github.io">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>MathsResource.Github.io</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          
-          <h1 id="project_title">MathsResource.github.io</h1>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2> Assumptions for Linear Regression </h2>
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
-.tg .tg-yw4l{vertical-align:top}
-.tg .tg-76so{font-size:15px;background-color:#cbcefb;vertical-align:top}
-</style>
-
 
 
 
@@ -50,6 +10,8 @@ For example, you could use linear regression to understand whether exam performa
 
 SPSS can be used to carry out linear regression, as well as interpret and report the results from this test. However, before we introduce you to this procedure, you need to understand the different assumptions that your data must meet in order for linear regression to give you a valid result. We discuss these assumptions next.
 
+----------------------------------------------
+<p>
 
 <h2>Assumptions</h2>
 When you choose to analyse your data using linear regression, part of the process involves checking to make sure that the data you want to analyse can actually be analysed using linear regression. You need to do this because it is only appropriate to use linear regression if your data is appropriate for six assumptions that are required for linear regression to give you a valid result.
@@ -100,42 +62,20 @@ When you analyse your own data, you will be lucky if your scatterplot looks like
 You can check assumptions all assumptions except no.1 using SPSS. It is recommended to test these assumptions in this order because it represents an order where, if a violation to the assumption is not correctable, you will no longer be able to use a single linear regression (although you may be able to run another statistical test on your data instead). Just remember that if you do not run the statistical tests on these assumptions correctly, the results you get when running a linear regression might not be valid.
 
 <br>
-<br>
-<br>
-<center>
-<table class="tg" style="undefined;table-layout: fixed; width: 900px">
-<colgroup>
-<col style="width: 300px">
-<col style="width: 300px">
-<col style="width: 300px">
-</colgroup>
+\newpage
 
+\section{Assessing Model Assumptions}
+\subsection{Residuals}  The difference between the predicted value (based on the regression equation) and the actual, observed value. In simple linear regression models, the matter of whether or not residuals are normally distributed often arises.
 
+Additionally the expected value of the residuals should be zero.
 
-  <tr>
-    <td class="tg-76so"><strong>Financial Maths</strong><br> Seperable Equations</td>
-    <td class="tg-76so"><strong><a href="firstorderODEs.html">First Order ODEs</a> </strong><br></td>
-    <td class="tg-76so"><strong><a href="secondorderODEs.html">Second Order ODEs</a></strong><br> General Solutions</td>
-    </tr>
+We have seen previously two methodologies for determining whether or not a data set is normally distributed;
 
-  <tr>
-    <td class="tg-76so"><strong>Financial Maths</strong><br> Seperable Equations</td>
-    <td class="tg-76so"><strong><a href="firstorderODEs.html">First Order ODEs</a> </strong><br></td>
-    <td class="tg-76so"><strong><a href="secondorderODEs.html">Second Order ODEs</a></strong><br> General Solutions</td>
-    </tr>
+\begin{itemize} \item 	Shapiro-Wilk tests (or Anderson-Darling test)
+\item 	QQ plots
+\end{itemize}
 
-</table>
+We will explore this more in a forthcoming example.
 
+---------------------------------------------------------------
 
-
-
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-
-    </div>
-
-    
-
-  </body>
-</html>
