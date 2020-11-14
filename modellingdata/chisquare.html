@@ -180,105 +180,120 @@ summary {
 </div>
 
 
-<div id="dixon-q-test-for-outliers" class="section level1" data-navmenu="Testing Model Assumptions">
-<h1>Dixon Q-Test for Outliers</h1>
+<div id="chi-square-tests" class="section level1" data-navmenu="Chi Square Tests">
+<h1>Chi Square Tests</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="dixon-q-test-for-outliers-1" class="section level3">
-<h3>Dixon Q-Test for Outliers</h3>
+<div id="chi-square-tests-1" class="section level3">
+<h3>Chi Square Tests</h3>
+<p><strong>There are two types of Chi-Square Test</strong></p>
+<p>Testing Goodness of Fit</p>
+<p>A Chi Square Test is often used to measure a goodness of fit between an observed and expected distribution of values. Knowing how to perform a Chi Square Test can be useful for testing probable to expected outcomes, fitting points to a curve, or testing a statistical hypothesis.</p>
+<p><strong>2. Chi square test of independence</strong></p>
+<p>If the columns are not contingent on the rows, then the rows and column frequencies are independent. The test of whether the columns are contingent on the rows is called the chi square test of independence. The null hypothesis is that there is no relationship between row and column frequencies.</p>
+</div>
+<div id="chi-square-testing-for-goodness-of-fit" class="section level3">
+<h3>Chi Square Testing for Goodness of Fit</h3>
 <h5>
-Dixon Q-Test for Outliers
+Testing Goodness of Fit
 </h5>
-<p>Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set. \ .</p>
-<p><span class="math display">\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]</span></p>
+<p>Contingency tables are used to examine the relationship between subjects’ scores on two categorical variables.</p>
+<h5>
+Chi square test of independence
+</h5>
+<p>If the columns are not contingent on the rows, then the rows and column frequencies are independent. The test of whether the columns are contingent on the rows is called the chi square test of independence. The null hypothesis is that there is no relationship between row and column frequencies.</p>
+<h5>
+Chi-Square Testing
+</h5>
 <ul>
-<li>Arrange the data set into ascending order.</li>
+<li>Expected Values under the null hypothesis (<a title="ChiSquare-ExpectedValues" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">here</a>)
+</li></li>
+<li>Chi-Square Exercise (<a title="Chi-SquareExercise" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">here</a>)
+</li></li>
 </ul>
-<p><span class="math display">\[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]</span></p>
+<p><strong>Chi-Square Testing</strong></p>
 <ul>
-<li><p>Here the potential outlier is the lowest value, i.e. 19</p></li>
-<li><p>We can formally state the null and alternative hypothesis as follows</p></li>
+<li>Chi Square Test- computing the expected values - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">Here</a>
+</li></li>
+<li>Chi Square Exercise - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">Here</a>
+</li></li>
 </ul>
 <h5>
-Hypotheses
+Chi Square Test
 </h5>
 <ul>
-<li>[H<span class="math inline">\(_0\)</span>] There are no outliers present in the data.</li>
-<li><p>[H<span class="math inline">\(_1\)</span>] There is one outlier present \ (i.e. the lowest value 19)</p></li>
-<li><p>The test statistic for this procedure is as follows:</p></li>
-</ul>
-<p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]</span></p>
-<ul>
-<li>The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is <span class="math display">\[ \mbox{Gap} = 25 - 19 = 6\]</span></li>
-<li><p>The range is simply the difference between the maximum and minimum value. <span class="math display">\[ \mbox{Range} = 37-19 =18\]</span></p></li>
-<li><p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} = \frac{6}{18} =0.333 \]</span></p></li>
-<li><p>Before we look at the critical value, we confirm the size of the data set is <span class="math inline">\(n=10\)</span>.</p></li>
-<li><p>The critical value can be determined from the following table. \ <span class="math inline">\(\bullet\)</span> The column to chose is the significance level (here 5% or 0.05 ). \ <span class="math inline">\(\bullet\)</span> The row to use is <span class="math inline">\(n\)</span>, the number of items in the data set.</p></li>
-</ul>
-<hr />
-
-<ul>
-<li></li>
-<li></li>
-<li><p>If the Test Statistic is greater than the Critical value, reject the null hypothesis <span class="math display">\[ Q_{TS} &gt; Q_{CV}\]</span></p></li>
-<li><p>Otherwise we fail to reject the null hypothesis</p></li>
+<li>Computing the Chi-Square Test Statistic - <a href="https://youtu.be/O5ds4O8K8rQ">HERE</a>.
+</li></li>
+<li>Determining the Chi-Square Critical Value - <a href="https://youtu.be/6B4uZY1Onzc">HERE</a>.
+</li></li>
+<li>Chi Square Worked Example Part 1 - <a href="https://youtu.be/7ZKSeyjKWvw">HERE</a>
+</li></li>
+<li>Chi Square Worked Example Part 2 - <a href="https://youtu.be/wV88ylsaxjw">HERE</a>
+</li></li>
 </ul>
 </div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h4>
-Worked Example
-</h4>
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
+<div id="testing-goodness-of-fit" class="section level3">
+<h3>Testing Goodness of Fit</h3>
+<p>Contingency tables are used to examine the relationship between subjects’ scores on two categorical variables.</p>
+</div>
+<div id="chi-square-testing" class="section level3">
+<h3>Chi-Square Testing</h3>
+<div id="worked-examples-1" class="section level4">
+<h4>Worked Examples 1</h4>
+<p>One of the questions on a business magainzes subscribers only study was:</p>
+<p>“In the past 12 months, when travelling for business, what types of airline tickets did you purchase most often?”</p>
+<p>The data obtained are show in the table below</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">Domestic Flight</th>
+<th align="center">International Flight</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">First Class</td>
+<td align="center">65</td>
+<td align="center">55</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">Business Class / Executive</td>
+<td align="center">140</td>
+<td align="center">100</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">Economy</td>
+<td align="center">520</td>
+<td align="center">120</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h5>
+Exercises
+</h5>
+<ul>
+<li>Using a 5% significance level, test for the independence of type of flight and type of ticket. What is your conclusion?</li>
+</ul>
 <h5>
 Solution
 </h5>
 <ul>
-<li><a href="https://youtu.be/C0KltVEk6c8"> Click here for Demonstration</a></li>
+<li><a href="https://youtu.be/nitlgJUluRE"> Click here for the Part 1 of the solution</a></li>
+<li><a href="https://youtu.be/oBJmx6bkXpA"> Click here for the Part 1 of the solution</a></li>
 </ul>
 <hr />
-<div id="step-1-hypotheses-for-the-dixon-test." class="section level4">
-<h4>Step 1: Hypotheses for the Dixon Test.</h4>
-<p><span class="math inline">\(H_0\)</span> No Outlier Present in Data <span class="math inline">\(H_1\)</span> There is an Outlier present in Data (You may identify it)</p>
-<p>
-<hr />
-</div>
-<div id="step-2-dixon-q-test-statistic" class="section level4">
-<h4>Step 2: Dixon Q Test Statistic</h4>
-<p>To apply a Q test for suspicious data, arrange the data in order of increasing values and calculate Q as defined:</p>
-<p><span class="math display">\[ Q = \frac{\text{gap}}{\text{range}} \]</span></p>
-<p>Where gap is the absolute difference between the outlier in question and the closest number to it.</p>
-<p>
-<hr />
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
-<p>Now rearrange in increasing order:</p>
-<p><span class="math display">\[0.167,\ 0.177,\ 0.181,\ 0.181,\ 0.182,\]</span><span class="math display">\[ 0.183,\ 0.184,\ 0.186,\ 0.187,\ 0.189 \, \]</span></p>
-We hypothesize 0.167 is an outlier (based on it’s large gap to next number, i.e. 0.010).
-<p>
-<hr />
-</div>
-<div id="test-statistic" class="section level4">
-<h4>Test Statistic</h4>
-Calculate The Test Statistic <span class="math inline">\(Q_{Ts}\)</span>: <span class="math display">\[ Q_{TS}=\frac{\text{gap}}{\text{range}} = \frac{0.177-0.167}{0.189-0.167}=0.455.\]</span>
-<p>
-<hr />
-</div>
-<div id="critical-value" class="section level4">
-<h4>Critical Value</h4>
 <ul>
-<li>Choose the Critical Value based on sample size and significance level <span class="math inline">\(\alpha\)</span>. </li>
-<li>In this table we work on the basis of confidence level. \item Let’s use 95% as our confidence level. \ (i.e. 5% significance, i.e. <span class="math inline">\(\alpha=0.05)\)</span></li>
-</ul>
-</div>
-<div id="step-4-dixon-q-test-decison-rule" class="section level4">
-<h4>Step 4 : Dixon Q Test: Decison Rule</h4>
-<ul>
-<li>If <span class="math inline">\(Q_{TS} &gt; Q_{CV}\)</span> , where <span class="math inline">\(Q_{CV}\)</span> is a critical value corresponding to the sample size and confidence level, then reject the null hypothesis.</li>
-<li><p>If <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> , we fail to reject. null hypothesis. i.e. Not enough evidence. </p></li>
-<li>At 95% confidence, <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> i.e $ 0.455 0.466$</li>
-<li><p>Therefore we dont have enough evidence to classify the lowest value 0.167 as an outlier.</p></li>
+<li>Chi Square Test- computing the expected values - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">Here</a></li>
+<li>Chi Square Exercise - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">Here</a></li>
 </ul>
 </div>
 </div>

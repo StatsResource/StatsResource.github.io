@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -145,6 +144,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -186,33 +186,42 @@ summary {
 <h2>Column</h2>
 <div id="the-lognormal-distribution" class="section level3">
 <h3>The Lognormal Distribution</h3>
-<p>A lognormal distribution is a continuous probability distribution of a random variable whose logarithm is normally distributed. Thus, if the random variable X is log-normally distributed, then <span class="math inline">\(Y = ln(X)\)</span> has a normal distribution. Equivalently, if Y has a normal distribution, then the exponential function of Y, <span class="math inline">\(X = \exp(Y)\)</span>, has a log-normal distribution.</p>
-<h5>
+A lognormal distribution is a continuous probability distribution of a random variable whose logarithm is normally distributed. Thus, if the random variable X is log-normally distributed, then <span class="math inline">\(Y = ln(X)\)</span> has a normal distribution.
+<p>
+<p>Equivalently, if Y has a normal distribution, then the exponential function of Y, <span class="math inline">\(X = \exp(Y)\)</span>, has a log-normal distribution.</p>
+<p>
+<hr />
+<h4>
 Probability Density Function
-</h5>
-<p><span class="math display">\[f(x) = {\displaystyle {\frac {1}{x\sigma {\sqrt {2\pi }}}}\ \exp \left(-{\frac {\left(\ln x-\mu \right)^{2}}{2\sigma ^{2}}}\right)} \mbox{ for } x&gt;0\]</span></p>
-<h5>
+</h4>
+<p><span class="math display">\[ f(x) = {\displaystyle {\frac {1}{x\sigma {\sqrt {2\pi }}}}\ \exp \left(-{\frac {\left(\ln x-\mu \right)^{2}}{2\sigma ^{2}}}\right)} \mbox{ for } x&gt;0\]</span></p>
+<p>
+<hr />
+<h4>
 Mean
-<h5>
-<span class="math display">\[ {\LARGE E(X) = \exp \left(\mu +{\frac {\sigma ^{2}}{2}}\right)} \]</span>
+</h4>
+<span class="math display">\[ { E(X) = \exp \left(\mu +{\frac {\sigma ^{2}}{2}}\right)} \]</span>
 <h5>
 Variance:
 </h5>
-<p><span class="math display">\[ {\LARGE \operatorname{Var}(X) = \left[\exp(\sigma ^{2})-1\right]\exp(2\mu +\sigma ^{2})} \]</span></p>
+<p><span class="math display">\[ { \operatorname{Var}(X) = \left[\exp(\sigma ^{2})-1\right]\exp(2\mu +\sigma ^{2})} \]</span></p>
 <h5>
 Skewness:
 </h5>
-<p><span class="math display">\[ {\LARGE \operatorname{Skewness}(X) = (\exp(\sigma ^{2})+2){\sqrt {\exp(\sigma ^{2})-1}}} \]</span></p>
+<p><span class="math display">\[ { \operatorname{Skewness}(X) = (\exp(\sigma ^{2})+2){\sqrt {\exp(\sigma ^{2})-1}}} \]</span></p>
 </div>
 <div id="worked-examples" class="section level3">
 <h3>Worked Examples</h3>
-<p>In a certain chemical plant, the concentration of pollutants (X-in parts per million) has lognormal distribution with parameter <span class="math inline">\(\LARGE \mu =3.2\)</span> and <span class="math inline">\(\LARGE \sigma =1\)</span></p>
+<h3>
+Worked Example 1
+</h3>
+<p>In a certain chemical plant, the concentration of pollutants (X-in parts per million) has lognormal distribution with parameter $ =3.2$ and $ =1$</p>
 <h5>
 Exercises
 </h5>
 <ol style="list-style-type: lower-alpha">
-<li>Write the pdf of <span class="math inline">\(\LARGE X\)</span></li>
-<li>Compute the mean and variance of <span class="math inline">\(\LARGE X\)</span></li>
+<li>Write the pdf of $ X$</li>
+<li>Compute the mean and variance of $ X$</li>
 <li>Compute the probability that the concentration exceeds 8 parts per million</li>
 </ol>
 <h5>
@@ -222,11 +231,14 @@ Solution
 <li><a href="https://youtu.be/OAuLfxP6uuM/"> Lognormal Distribution - Worked Example </a></li>
 </ul>
 <hr />
-<p>The random variable <span class="math inline">\(\LARGE Y = \log X\)</span> has <span class="math inline">\(\LARGE N (10, 4)\)</span> distribution. Find</p>
+<h3>
+Worked Example 2
+</h3>
+<p>The random variable $ Y = X$ has $ N (10, 4)$ distribution. Find</p>
 <ol style="list-style-type: lower-alpha">
-<li>The pdf of <span class="math inline">\(\LARGE X\)</span></li>
-<li>Mean and variance of <span class="math inline">\(\LARGE X\)</span></li>
-<li>P(<span class="math inline">\(\LARGE X \leq 1000\)</span>)</li>
+<li>The pdf of $ X$</li>
+<li>Mean and variance of $ X$</li>
+<li>P($ X 1000$)</li>
 </ol>
 <h5>
 Solution

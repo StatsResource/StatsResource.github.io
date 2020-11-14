@@ -17,3 +17,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Graphical Procedures
 ==========================================
+
+
+### Boxplots
+
+<h5> Boxplots </h5>
+
+
+
+A graphical representation of the quartiles is called a Box plot. It displays 
+
+* lower quartile 
+* median 
+* upper quartile   
+* interquartile range (IQR)   
+* whiskers of length = 1.5 IQR   
+* outlying observations 
+
+<h5> videos </h5>
+
+* <a href="https://www.youtube.com/watch?v=BO2_9sRrUq8">Detecting Outliers for Boxplots</a>
+* <a href="https://www.youtube.com/watch?v=U9hEJW7R8qA">Five Number summary, IQR, Fences, Midhinge and Trimean</a>
+* <a href="https://www.youtube.com/watch?v=Bac5lN5-y8g">Constructing a Box Plot (Worked Example)</a>
+
+

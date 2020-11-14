@@ -11,10 +11,14 @@ A lognormal distribution is a continuous probability distribution of a random va
 <p>
 Equivalently, if Y has a normal distribution, then the exponential function of Y, $X = \exp(Y)$, has a log-normal distribution. 
 
-<h5> Probability Density Function</h5>
+<p>
+-----------------------------------------------
+<h4>Probability Density Function</h4>
 \[ f(x) = {\displaystyle {\frac {1}{x\sigma {\sqrt {2\pi }}}}\ \exp \left(-{\frac {\left(\ln x-\mu \right)^{2}}{2\sigma ^{2}}}\right)} \mbox{ for } x>0\]
 
-<h5>Mean<h5>
+<p>
+-----------------------------------------------
+<h4>Mean</h4>
 $$ { E(X) = \exp \left(\mu +{\frac {\sigma ^{2}}{2}}\right)} $$
 <h5>Variance:</h5>	$$ { \operatorname{Var}(X) = \left[\exp(\sigma ^{2})-1\right]\exp(2\mu +\sigma ^{2})} $$
 

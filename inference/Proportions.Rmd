@@ -27,28 +27,65 @@ Column {.tabset}
 * <a href="https://youtu.be/d97sSFMXSLQ/">	Two Sample Proportion Hypothesis Test	</a>	
 
 
+### Worked Examples
 
 
+<h4> Worked Example 1 </h4> 
+A study was made of children who were hospitalized as a result of a car accident. 280 of the children were not wearing seat belts and 98 of these were seriously injured. 130 children wore seat belts and 26 were seriously injured. 
 
-Inference Procedures for Small Samples {data-navmenu="Inference Procedures"}
-==================================================
+<h5> Exercises </h5> 
+a. Test the hypothesis that the rate of serious injury is the same for children who wear a seat belt or not. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5\%.
 
-Column {.tabset}
--------------------------------------------------
+<h5> Solution</h5> 
+ 
+* <a href="https://youtu.be/Nq2eeB-f5sw">  Click here for Solution</a> 
 
-* <a href="https://youtu.be/5DY3j8nw5sg/">	Working With Small Samples	</a>	
+
+---------------------------
+<h4> Worked Example 2 </h4> 
+   
+63 of 100 first time convicts serving at least 3 years re-offended, whereas 70 of 140 first time convicts serving less than 3 years re-offended. 
+
+<h5> Exercises </h5> 
+
+a. Test the null hypothesis that the re-offending rate does not depend on the length of the first sentence at a significance level of 5\%.
+b. Calculate a 95\% confidence interval for the difference in the re-offending rates of these two groups.
+c. Based on this confidence interval, is there any evidence that the re-offending rates differ? 
+
+<h5> Solution</h5> 
+ 
+* <a href="https://youtu.be/B8awiXyZFnc">  Click here for Solution to part (a) - the hypothesis test</a> 
 
 
-Sample Size Estimation  {data-navmenu="Inference Procedures"}
-==================================================
+---------------------------
+<h4> Worked Example 3</h4> 
+It is generally assumed that older people are more likely to vote for the Conservatives than younger people. In a survey, 180 of 400 people over 40 and 120 of 400 people under 40 stated they would vote Conservative. 
 
-Column {.tabset}
--------------------------------------------------
+<h5> Exercises </h5> 
 
-### Sample Size Estimation 
+a. Do the data support this hypothesis at a significance level of 5\%?
+b. Calculate a 95\% confidence interval for the difference between the proportion of people over 40 voting Conservative and the proportion of people below 40 voting Conservative. 
 
-<h5> Sample Size Estimation For Proportions Worked Example </h5>
+<h5> Solution</h5> 
+ 
+* <a href="https://youtu.be/B8awiXyZFnc">  Click here for Solution to part (a) - the hypothesis test</a> 
 
-* <a href = "https://youtu.be/ayErcU5xUQI/">Sample Size Estimation For Proportions Worked Example</a>
+---------------------------
+<h4> Worked Example 4 </h4> 
+A study was carried out to compare two treatments for the flu. A total of 500
+newly diagnosed flu patients were randomly assigned to one of the two treatments.
+
+* Of the 280 assigned to the first treatment, 168 still had the flu after 2 days after diagnosis.
+* Of the 220 assigned to the second treatment, 176 still had the flu after 2 days after diagnosis. 
+
+<h5> Exercises </h5> 
+
+a. Test the hypothesis that the 2 day recovery rate is the same for treatment groups. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5\%.
+
+<h5> Solution</h5> 
+ 
+* <a href="https://youtu.be/ndyzeIwwVjI">  Click here for Solution</a> 
+
+
 
 

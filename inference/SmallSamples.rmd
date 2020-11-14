@@ -1,0 +1,8 @@
+
+Inference Procedures for Small Samples {data-navmenu="Inference Procedures"}
+==================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+* <a href="https://youtu.be/5DY3j8nw5sg/">	Working With Small Samples	</a>	

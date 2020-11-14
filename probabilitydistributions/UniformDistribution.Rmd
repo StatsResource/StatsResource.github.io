@@ -5,47 +5,46 @@ Column {.tabset}
 -------------------------------------------------
 
 
-
-
-
-### Uniform Distribution
+### Videos
 
 <h5>Uniform Distribution</h5>
+
 
 * <a href= "https://www.youtube.com/watch?v=lxQEM8J8VrU">Uniform Random Variables</a>
 * <a href = "https://youtu.be/093X1SWd1cg/">Uniform Random Variables</a>
 * <a href = "https://youtu.be/OBIUmaHGgfA/"> Sum Of Uniform Random Variables </a>
 
 
-### Continuous Uniform distribution
 
 
-* [L] lower bound of an interval
-* [U] upper bound of an interval
+### Worked Examples
 
-Probability of an outcome being between lower bound L and upper bound U
-\[P( L \leq X \leq U)  =  { U - L \over  b – a }\]
+<h5>Worked Examples</h5>
 
+The weights to salads taken by customers at a self-service salad bare found to be uniformly distributed between 250g and 450g
 
+<h5> Exercises </h5> 
+a. Write down the probability density function for this distribution.
+b. Find the probability that a customer will take a salad weighing more than 400g.
+c. Find the probability that a customer will take a salad weighing between 320g and 400g.
+d. What are the mean and standard deviations of the salad weights taken by customers.
 
-<h5>Reminder</h5>
-
-* " $\leq$" is less than or equal to
-
-* " $\geq$" is greater than or equal to
-
-* $L \leq X \leq U$ simply states that X is between L and U inclusively.
-
-("inclusively" mean that X could be exactly L or U also, although the probability of this is extremely low)
+<h5> Exercises </h5> 
+* <a href="https://youtu.be/ok9k-oJlhjs"> Click here for the solution</a> 
 
 
--------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+
 
 ### Distributional Formulas
 
+
+#### Continuous Uniform distribution
+
 The probability density function is given as
 
-\[f(x) = {1 \over b-a} for a \leq x \leq b\]
+\[f(x) = {1 \over b-a} \mbox{ for } a \le x \le b\]
 
 For any value "c" between the minimum value a and the maximum value b
 
@@ -57,3 +56,28 @@ here b is the upper bound while c is the lower bound
 \[P(X \ leq c) = {c-a \over b-a}\]
 
 here c is the upper bound while a is the lower bound
+
+
+
+
+Probability of an outcome being between lower bound L and upper bound U
+\[P( L \leq X \leq U)  =  { U - L \over  b – a }\]
+
+
+
+<h5>Reminder</h5>
+
+
+* [L] lower bound of an interval
+* [U] upper bound of an interval
+
+* " $\leq$" is less than or equal to
+
+* " $\geq$" is greater than or equal to
+
+* $L \leq X \leq U$ simply states that X is between L and U inclusively.
+
+("inclusively" mean that X could be exactly L or U also, although the probability of this is extremely low)
+
+
+-------------------------------------------------------------------

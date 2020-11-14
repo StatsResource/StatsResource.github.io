@@ -5,9 +5,7 @@ Column {.tabset}
 -----------------------------------
 
 
-%------------------------------------------------------------------%
-\frame{
-\frametitle{Complement and Symmetry Rules}
+### Complement and Symmetry Rules
 
 Any normal distribution problem can be solved with some combination of the following rules.\\
 \bigskip \textbf{1. Complement rule}  * Common to all continuous random variables
@@ -80,8 +78,7 @@ $P(X \geq 15) =?$ \\
 * Necessarily $P(X \geq 15) = 0.0475$.
 
 
-\end{document}
-%---------------------------------------------%
+-------------------------------------------
 
 \frametitle{Solutions}
 
@@ -119,23 +116,6 @@ Compute the probability of being too low, and the probability of being too high 
 * <a href = "https://youtu.be/HJ4DR79XRa8/"> Computing the Z score</a>
 
 
-### Normal Distribution
-
-
-* <a href = "https://youtu.be/Bq-ivONs-30/"> Normal Distribution - Worked Example</a>
-* <a href = "https://youtu.be/jGzLUVFUgQ4/"> Normal Distribution - Compound Distributions (Journey Times )</a>
-* <a href = "https://youtu.be/_Ob48DhL4Yo/"> Normal Random Variables - Bicycle Journey Example </a>
-* <a href = "https://youtu.be/bF5iPYfHn1c/"> Normal Distribution Worked Example - Paget's Disease </a>
-* <a href = "https://youtu.be/x0sPyyWAUTU/"> Normal Distribution Worked Example Apple Juice Dispenser<a>
-
-
-
-* <a href="https://youtu.be/bIh0bdymY78/">	Normal Distribution  - Worked Example (Part A)	</a>	
-* <a href="https://youtu.be/YidXgNUxSw4/">	Normal Distribution  - Worked Example Part B	</a>	
-* <a href="https://youtu.be/jGzLUVFUgQ4/">	Normal Distribution - Compound Distributions (Journey Times )	</a>	
-* <a href="https://youtu.be/Bq-ivONs-30/">	Normal Distribution - Worked Example	</a>	
-* <a href="https://youtu.be/bF5iPYfHn1c/">	Normal Distribution Worked Example - Paget's Disease	</a>	
-* <a href="https://youtu.be/x0sPyyWAUTU/">	Normal Distribution Worked Example Apple Juice Dispenser	</a>	
 
 
 

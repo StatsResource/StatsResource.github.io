@@ -180,107 +180,100 @@ summary {
 </div>
 
 
-<div id="dixon-q-test-for-outliers" class="section level1" data-navmenu="Testing Model Assumptions">
-<h1>Dixon Q-Test for Outliers</h1>
+<div id="measures-of-centrality" class="section level1" data-navmenu="Exploratory Data Analysis">
+<h1>Measures of Centrality</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="dixon-q-test-for-outliers-1" class="section level3">
-<h3>Dixon Q-Test for Outliers</h3>
+<div id="measures-of-centrality-1" class="section level3">
+<h3>Measures of Centrality</h3>
+<p>Measures of centrality give one representative number for the location of the centre of the distribution of data.</p>
+<p>The most common measures are the <b><i>sample mean</i></b> and the <b><i> sample median</i></b> We must make a distinction between a sample mean and a population mean: The sample mean is simply the average of all the items in a sample. The population mean (often represented by the Greek letter <span class="math inline">\(\mu\)</span>) is simply the average of all the items in a population. Because a population is usually very large, the population mean is usually an unknown constant.</p>
+</div>
+<div id="descriptive-statistics" class="section level3">
+<h3>Descriptive Statistics</h3>
 <h5>
-Dixon Q-Test for Outliers
-</h5>
-<p>Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set. \ .</p>
-<p><span class="math display">\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]</span></p>
-<ul>
-<li>Arrange the data set into ascending order.</li>
-</ul>
-<p><span class="math display">\[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]</span></p>
-<ul>
-<li><p>Here the potential outlier is the lowest value, i.e. 19</p></li>
-<li><p>We can formally state the null and alternative hypothesis as follows</p></li>
-</ul>
-<h5>
-Hypotheses
+Descriptive Statistics
 </h5>
 <ul>
-<li>[H<span class="math inline">\(_0\)</span>] There are no outliers present in the data.</li>
-<li><p>[H<span class="math inline">\(_1\)</span>] There is one outlier present \ (i.e. the lowest value 19)</p></li>
-<li><p>The test statistic for this procedure is as follows:</p></li>
-</ul>
-<p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]</span></p>
-<ul>
-<li>The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is <span class="math display">\[ \mbox{Gap} = 25 - 19 = 6\]</span></li>
-<li><p>The range is simply the difference between the maximum and minimum value. <span class="math display">\[ \mbox{Range} = 37-19 =18\]</span></p></li>
-<li><p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} = \frac{6}{18} =0.333 \]</span></p></li>
-<li><p>Before we look at the critical value, we confirm the size of the data set is <span class="math inline">\(n=10\)</span>.</p></li>
-<li><p>The critical value can be determined from the following table. \ <span class="math inline">\(\bullet\)</span> The column to chose is the significance level (here 5% or 0.05 ). \ <span class="math inline">\(\bullet\)</span> The row to use is <span class="math inline">\(n\)</span>, the number of items in the data set.</p></li>
-</ul>
-<hr />
-
-<ul>
-<li></li>
-<li></li>
-<li><p>If the Test Statistic is greater than the Critical value, reject the null hypothesis <span class="math display">\[ Q_{TS} &gt; Q_{CV}\]</span></p></li>
-<li><p>Otherwise we fail to reject the null hypothesis</p></li>
+<li><a href="https://www.youtube.com/watch?v=d3todQxLegU">Introductory Statistics : Computing the Median</a></li>
+<li><a href="https://www.youtube.com/watch?v=qLSUh-tex20">Measures of Variability: Introducing Dispersion</a></li>
+<li><a href="https://www.youtube.com/watch?v=hIpn6CO_3bo">Computing Sample Variance</a></li>
+<li><a href="https://www.youtube.com/watch?v=ag5AoCEtboI">Descriptive Statistics : Coefficient of Variation</a></li>
+<li><a href="https://youtu.be/5F0jSp1bOEU/"> Computing Sample Variance </a></li>
 </ul>
 </div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
+<div id="median" class="section level3">
+<h3>Median</h3>
 <h4>
-Worked Example
+Sample Mean
 </h4>
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
+<p>The sample mean is an estimator available for estimating the population mean <span class="math inline">\(\mu\)</span>. It is a measure of location, commonly called the average, often denoted <span class="math inline">\(\bar{x}\)</span>, where <span class="math inline">\(x\)</span> is the data set.</p>
+<p>Its value depends equally on all of the data which may include outliers. It may not appear representative of the central region for skewed data sets.</p>
+<p>It is especially useful as being representative of the whole sample for use in subsequent calculations. The sample mean of a data set is defined as : <span class="math display">\[ \bar{x} = { \sum x_i\over n}\]</span> <span class="math inline">\(\sum x_i\)</span> is the summation of al the elements of <span class="math inline">\(x\)</span>, and <span class="math inline">\(n\)</span> is the sample size.</p>
+<h4>
+Computing the sample mean
+</h4>
+<p>Suppose we roll a die 8 times and get the following scores: <span class="math inline">\(x = \{ 5, 2, 1, 6, 3, 5, 3, 1\}\)</span> \ </p>
+<p>What is the sample mean of the scores <span class="math inline">\(\bar{x}\)</span>? <span class="math display">\[ \bar{x}  = {5 + 2 +  1 +  6 +  3 +  5 +  3 +  1 \over 8 } = {26 \over 8} =  3.25 \]</span></p>
+<h3>
+Median
+</h3>
+<ul>
+<li>The other commonly used measure of centrality is the median.</li>
+<li>The median is the value halfway through the ordered data set, below and above which there lies an equal number of data values.</li>
+<li>For an odd sized data set, the median is the middle element of the <b><i>ordered</b></i> data set.</li>
+<li>For an even sized data set, the median is the average of the middle pair of elements of an  data set.</li>
+<li>It is generally a good descriptive measure of the location which works well for <b><i>skewed data</b></i>, or data with <b><i>outliers</b></i>.</li>
+<li>For later, the median is the 0.5 quantile, and the second quartile <i>Q_2</i>.</li>
+</ul>
+<h4>
+Odd Sized Data Set
+</h4>
+<p>With an odd number of data values, for example nine, we have:</p>
+<ul>
+<li>Data : {96, 48, 27, 72, 39, 70, 7, 68, 99 }</li>
+<li>Ordered Data : {7, 27, 39, 48, 68, 70, 72, 96, 99}</li>
+<li>Median : 68, leaving four values below and four values above</li>
+</ul>
+<h4>
+Even Sized Data Set
+</h4>
+<p>With an even number of data values, for example 8, we have:</p>
+<ul>
+<li>Data : {96, 48 ,27 ,72, 39, 70, 7, 68 }</li>
+<li>Ordered Data :{7, 27, 39, 48, 68, 70, 72, 96}</li>
+<li>Median : Halfway between the two ‘middle’ data points - in this case halfway between 48 and 68, and so the median is 58</li>
+</ul>
+</div>
+<div id="other-measures" class="section level3">
+<h3>Other Measures</h3>
+<div id="geometric-mean" class="section level4">
+<h4>Geometric Mean</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Bz-YwUMk_mk">Geometric Mean </a></li>
+</ul>
+</div>
+<div id="harmonic-mean" class="section level4">
+<h4>Harmonic Mean</h4>
+<p><span class="math display">\[ H = \frac{n}{ \frac{1}{x_1} + \frac{1}{x_2} + \ldots \frac{1}{x_n} } \]</span></p>
+<ul>
+<li>Example 1 - Find the harmonic mean of <span class="math inline">\(\{7,9\}\)</span>.</li>
+<li>Example 2 - Find the harmonic mean of <span class="math inline">\(\{7,9,3\}\)</span>.</li>
+</ul>
 <h5>
-Solution
+Exercise
 </h5>
 <ul>
-<li><a href="https://youtu.be/C0KltVEk6c8"> Click here for Demonstration</a></li>
-</ul>
-<hr />
-<div id="step-1-hypotheses-for-the-dixon-test." class="section level4">
-<h4>Step 1: Hypotheses for the Dixon Test.</h4>
-<p><span class="math inline">\(H_0\)</span> No Outlier Present in Data <span class="math inline">\(H_1\)</span> There is an Outlier present in Data (You may identify it)</p>
-<p>
-<hr />
-</div>
-<div id="step-2-dixon-q-test-statistic" class="section level4">
-<h4>Step 2: Dixon Q Test Statistic</h4>
-<p>To apply a Q test for suspicious data, arrange the data in order of increasing values and calculate Q as defined:</p>
-<p><span class="math display">\[ Q = \frac{\text{gap}}{\text{range}} \]</span></p>
-<p>Where gap is the absolute difference between the outlier in question and the closest number to it.</p>
-<p>
-<hr />
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
-<p>Now rearrange in increasing order:</p>
-<p><span class="math display">\[0.167,\ 0.177,\ 0.181,\ 0.181,\ 0.182,\]</span><span class="math display">\[ 0.183,\ 0.184,\ 0.186,\ 0.187,\ 0.189 \, \]</span></p>
-We hypothesize 0.167 is an outlier (based on it’s large gap to next number, i.e. 0.010).
-<p>
-<hr />
-</div>
-<div id="test-statistic" class="section level4">
-<h4>Test Statistic</h4>
-Calculate The Test Statistic <span class="math inline">\(Q_{Ts}\)</span>: <span class="math display">\[ Q_{TS}=\frac{\text{gap}}{\text{range}} = \frac{0.177-0.167}{0.189-0.167}=0.455.\]</span>
-<p>
-<hr />
-</div>
-<div id="critical-value" class="section level4">
-<h4>Critical Value</h4>
-<ul>
-<li>Choose the Critical Value based on sample size and significance level <span class="math inline">\(\alpha\)</span>. </li>
-<li>In this table we work on the basis of confidence level. \item Let’s use 95% as our confidence level. \ (i.e. 5% significance, i.e. <span class="math inline">\(\alpha=0.05)\)</span></li>
+<li><a href="https://youtu.be/LyAuzhWk5kI"> Click here for Demonstration of Harmonic Mean/a&gt;</li>
 </ul>
 </div>
-<div id="step-4-dixon-q-test-decison-rule" class="section level4">
-<h4>Step 4 : Dixon Q Test: Decison Rule</h4>
-<ul>
-<li>If <span class="math inline">\(Q_{TS} &gt; Q_{CV}\)</span> , where <span class="math inline">\(Q_{CV}\)</span> is a critical value corresponding to the sample size and confidence level, then reject the null hypothesis.</li>
-<li><p>If <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> , we fail to reject. null hypothesis. i.e. Not enough evidence. </p></li>
-<li>At 95% confidence, <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> i.e $ 0.455 0.466$</li>
-<li><p>Therefore we dont have enough evidence to classify the lowest value 0.167 as an outlier.</p></li>
-</ul>
 </div>
+<div id="useful-formulas" class="section level3">
+<h3>Useful Formulas</h3>
+<h5>
+Skewness: Pearson Coefficient of Skewness
+</h5>
+<p><span class="math display">\[ S_k = \frac{3(\mbox{Mean} - \mbox{Median} )}{\sigma} \]</span></p>
 </div>
 </div>
 </div>

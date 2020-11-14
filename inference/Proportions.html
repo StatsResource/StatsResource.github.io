@@ -180,107 +180,134 @@ summary {
 </div>
 
 
-<div id="dixon-q-test-for-outliers" class="section level1" data-navmenu="Testing Model Assumptions">
-<h1>Dixon Q-Test for Outliers</h1>
+<div id="inference-procedures-for-proportions" class="section level1" data-navmenu="Inference Procedures">
+<h1>Inference Procedures for Proportions</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="dixon-q-test-for-outliers-1" class="section level3">
-<h3>Dixon Q-Test for Outliers</h3>
+<div id="hypothesis-testing" class="section level3">
+<h3>Hypothesis Testing</h3>
 <h5>
-Dixon Q-Test for Outliers
-</h5>
-<p>Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set. \ .</p>
-<p><span class="math display">\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]</span></p>
-<ul>
-<li>Arrange the data set into ascending order.</li>
-</ul>
-<p><span class="math display">\[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]</span></p>
-<ul>
-<li><p>Here the potential outlier is the lowest value, i.e. 19</p></li>
-<li><p>We can formally state the null and alternative hypothesis as follows</p></li>
-</ul>
-<h5>
-Hypotheses
+Hypothesis Testing For Proportions
 </h5>
 <ul>
-<li>[H<span class="math inline">\(_0\)</span>] There are no outliers present in the data.</li>
-<li><p>[H<span class="math inline">\(_1\)</span>] There is one outlier present \ (i.e. the lowest value 19)</p></li>
-<li><p>The test statistic for this procedure is as follows:</p></li>
-</ul>
-<p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]</span></p>
-<ul>
-<li>The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is <span class="math display">\[ \mbox{Gap} = 25 - 19 = 6\]</span></li>
-<li><p>The range is simply the difference between the maximum and minimum value. <span class="math display">\[ \mbox{Range} = 37-19 =18\]</span></p></li>
-<li><p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} = \frac{6}{18} =0.333 \]</span></p></li>
-<li><p>Before we look at the critical value, we confirm the size of the data set is <span class="math inline">\(n=10\)</span>.</p></li>
-<li><p>The critical value can be determined from the following table. \ <span class="math inline">\(\bullet\)</span> The column to chose is the significance level (here 5% or 0.05 ). \ <span class="math inline">\(\bullet\)</span> The row to use is <span class="math inline">\(n\)</span>, the number of items in the data set.</p></li>
-</ul>
-<hr />
-
-<ul>
-<li></li>
-<li></li>
-<li><p>If the Test Statistic is greater than the Critical value, reject the null hypothesis <span class="math display">\[ Q_{TS} &gt; Q_{CV}\]</span></p></li>
-<li><p>Otherwise we fail to reject the null hypothesis</p></li>
+<li><a href="https://youtu.be/fzIRjiSoW2o/">Hypothesis Testing For Proportions</a></li>
+<li><a href="https://youtu.be/d97sSFMXSLQ/">Two Sample Proportion Hypothesis Test</a></li>
 </ul>
 </div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
+<div id="confidence-intervals" class="section level3">
+<h3>Confidence Intervals</h3>
+<ul>
+<li><a href="https://youtu.be/tz3Kyp7yUSQ/"> Confidence Interval for Single Sample Proportion </a><br />
+</li>
+<li><a href="https://youtu.be/ZTK1R7tylh8/"> Confidence Interval of Sample Variance </a><br />
+</li>
+<li><a href="https://youtu.be/oj9oo6aIVG4/"> Confidence Intervals for Proportions </a><br />
+</li>
+<li><a href="https://youtu.be/fzIRjiSoW2o/"> Hypothesis Testing For Proportions </a><br />
+</li>
+<li><a href="https://youtu.be/d97sSFMXSLQ/"> Two Sample Proportion Hypothesis Test </a></li>
+</ul>
+</div>
+<div id="worked-examples" class="section level3">
+<h3>Worked Examples</h3>
 <h4>
-Worked Example
+Worked Example 1
 </h4>
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
+<p>A study was made of children who were hospitalized as a result of a car accident. 280 of the children were not wearing seat belts and 98 of these were seriously injured. 130 children wore seat belts and 26 were seriously injured.</p>
+<h5>
+Exercises
+</h5>
+<ol style="list-style-type: lower-alpha">
+<li>Test the hypothesis that the rate of serious injury is the same for children who wear a seat belt or not. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5%.</li>
+</ol>
 <h5>
 Solution
 </h5>
 <ul>
-<li><a href="https://youtu.be/C0KltVEk6c8"> Click here for Demonstration</a></li>
+<li><a href="https://youtu.be/Nq2eeB-f5sw"> Click here for Solution</a></li>
 </ul>
 <hr />
-<div id="step-1-hypotheses-for-the-dixon-test." class="section level4">
-<h4>Step 1: Hypotheses for the Dixon Test.</h4>
-<p><span class="math inline">\(H_0\)</span> No Outlier Present in Data <span class="math inline">\(H_1\)</span> There is an Outlier present in Data (You may identify it)</p>
-<p>
-<hr />
-</div>
-<div id="step-2-dixon-q-test-statistic" class="section level4">
-<h4>Step 2: Dixon Q Test Statistic</h4>
-<p>To apply a Q test for suspicious data, arrange the data in order of increasing values and calculate Q as defined:</p>
-<p><span class="math display">\[ Q = \frac{\text{gap}}{\text{range}} \]</span></p>
-<p>Where gap is the absolute difference between the outlier in question and the closest number to it.</p>
-<p>
-<hr />
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
-<p>Now rearrange in increasing order:</p>
-<p><span class="math display">\[0.167,\ 0.177,\ 0.181,\ 0.181,\ 0.182,\]</span><span class="math display">\[ 0.183,\ 0.184,\ 0.186,\ 0.187,\ 0.189 \, \]</span></p>
-We hypothesize 0.167 is an outlier (based on it’s large gap to next number, i.e. 0.010).
-<p>
-<hr />
-</div>
-<div id="test-statistic" class="section level4">
-<h4>Test Statistic</h4>
-Calculate The Test Statistic <span class="math inline">\(Q_{Ts}\)</span>: <span class="math display">\[ Q_{TS}=\frac{\text{gap}}{\text{range}} = \frac{0.177-0.167}{0.189-0.167}=0.455.\]</span>
-<p>
-<hr />
-</div>
-<div id="critical-value" class="section level4">
-<h4>Critical Value</h4>
+<h4>
+Worked Example 2
+</h4>
+<p>63 of 100 first time convicts serving at least 3 years re-offended, whereas 70 of 140 first time convicts serving less than 3 years re-offended.</p>
+<h5>
+Exercises
+</h5>
+<ol style="list-style-type: lower-alpha">
+<li>Test the null hypothesis that the re-offending rate does not depend on the length of the first sentence at a significance level of 5%.</li>
+<li>Calculate a 95% confidence interval for the difference in the re-offending rates of these two groups.</li>
+<li>Based on this confidence interval, is there any evidence that the re-offending rates differ?</li>
+</ol>
+<h5>
+Solution
+</h5>
 <ul>
-<li>Choose the Critical Value based on sample size and significance level <span class="math inline">\(\alpha\)</span>. </li>
-<li>In this table we work on the basis of confidence level. \item Let’s use 95% as our confidence level. \ (i.e. 5% significance, i.e. <span class="math inline">\(\alpha=0.05)\)</span></li>
+<li><a href="https://youtu.be/B8awiXyZFnc"> Click here for Solution to part (a) - the hypothesis test</a></li>
 </ul>
-</div>
-<div id="step-4-dixon-q-test-decison-rule" class="section level4">
-<h4>Step 4 : Dixon Q Test: Decison Rule</h4>
+<hr />
+<h4>
+Worked Example 3
+</h4>
+<p>It is generally assumed that older people are more likely to vote for the Conservatives than younger people. In a survey, 180 of 400 people over 40 and 120 of 400 people under 40 stated they would vote Conservative.</p>
+<h5>
+Exercises
+</h5>
+<ol style="list-style-type: lower-alpha">
+<li>Do the data support this hypothesis at a significance level of 5%?</li>
+<li>Calculate a 95% confidence interval for the difference between the proportion of people over 40 voting Conservative and the proportion of people below 40 voting Conservative.</li>
+</ol>
+<h5>
+Solution
+</h5>
 <ul>
-<li>If <span class="math inline">\(Q_{TS} &gt; Q_{CV}\)</span> , where <span class="math inline">\(Q_{CV}\)</span> is a critical value corresponding to the sample size and confidence level, then reject the null hypothesis.</li>
-<li><p>If <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> , we fail to reject. null hypothesis. i.e. Not enough evidence. </p></li>
-<li>At 95% confidence, <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> i.e $ 0.455 0.466$</li>
-<li><p>Therefore we dont have enough evidence to classify the lowest value 0.167 as an outlier.</p></li>
+<li><a href="https://youtu.be/B8awiXyZFnc"> Click here for Solution to part (a) - the hypothesis test</a></li>
+</ul>
+<hr />
+<h4>
+Worked Example 4
+</h4>
+<p>A study was carried out to compare two treatments for the flu. A total of 500 newly diagnosed flu patients were randomly assigned to one of the two treatments.</p>
+<ul>
+<li>Of the 280 assigned to the first treatment, 168 still had the flu after 2 days after diagnosis.</li>
+<li>Of the 220 assigned to the second treatment, 176 still had the flu after 2 days after diagnosis.</li>
+</ul>
+<h5>
+Exercises
+</h5>
+<ol style="list-style-type: lower-alpha">
+<li>Test the hypothesis that the 2 day recovery rate is the same for treatment groups. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5%.</li>
+</ol>
+<h5>
+Solution
+</h5>
+<ul>
+<li><a href="https://youtu.be/ndyzeIwwVjI"> Click here for Solution</a></li>
 </ul>
 </div>
+</div>
+</div>
+<div id="inference-procedures-for-small-samples" class="section level1" data-navmenu="Inference Procedures">
+<h1>Inference Procedures for Small Samples</h1>
+<div id="column-1" class="section level2 tabset">
+<h2>Column</h2>
+<ul>
+<li><a href="https://youtu.be/5DY3j8nw5sg/"> Working With Small Samples </a></li>
+</ul>
+</div>
+</div>
+<div id="sample-size-estimation" class="section level1" data-navmenu="Inference Procedures">
+<h1>Sample Size Estimation</h1>
+<div id="column-2" class="section level2 tabset">
+<h2>Column</h2>
+<div id="sample-size-estimation-1" class="section level3">
+<h3>Sample Size Estimation</h3>
+<h5>
+Sample Size Estimation For Proportions Worked Example
+</h5>
+<ul>
+<li><a href="https://youtu.be/ayErcU5xUQI/">Sample Size Estimation For Proportions Worked Example</a></li>
+</ul>
 </div>
 </div>
 </div>

@@ -82,9 +82,24 @@ With an even number of data values, for example 8, we have:
 
 ### Other Measures
 
-* <a href="https://www.youtube.com/watch?v=Bz-YwUMk_mk">Geometric Mean </a>
-* <a href="https://www.youtube.com/watch?v=F8_5GgSrxE8">Harmonic Mean	</a>
+#### Geometric Mean
 
+* <a href="https://www.youtube.com/watch?v=Bz-YwUMk_mk">Geometric Mean </a>
+
+
+#### Harmonic Mean
+ 
+ \[ H = \frac{n}{ \frac{1}{x_1} + \frac{1}{x_2} + \ldots \frac{1}{x_n} } \]
+
+* Example 1  - Find the harmonic mean of $\{7,9\}$.
+* Example 2  - Find the harmonic mean of $\{7,9,3\}$.
+ 
+ <h5> Exercise  </h5> 
+
+* <a href="https://youtu.be/LyAuzhWk5kI">  Click here for Demonstration of Harmonic Mean/a> 
+
+ 
+ 
 
 ### Useful Formulas
 
@@ -95,34 +110,6 @@ With an even number of data values, for example 8, we have:
  $$ S_k = \frac{3(\mbox{Mean} - \mbox{Median} )}{\sigma} $$
  
 
-Graphical Procedures {data-navmenu="Exploratory Data Analysis"}
-==============================================================
 
-
-Column {.tabset}
-----------------------------------
-
-
-
-### Boxplots
-
-<h5> Boxplots </h5>
-
-
-
-A graphical representation of the quartiles is called a Box plot. It displays 
-
-* lower quartile 
-* median 
-* upper quartile   
-* interquartile range (IQR)   
-* whiskers of length = 1.5 IQR   
-* outlying observations 
-
-<h5> videos </h5>
-
-* <a href="https://www.youtube.com/watch?v=BO2_9sRrUq8">Detecting Outliers for Boxplots</a>
-* <a href="https://www.youtube.com/watch?v=U9hEJW7R8qA">Five Number summary, IQR, Fences, Midhinge and Trimean</a>
-* <a href="https://www.youtube.com/watch?v=Bac5lN5-y8g">Constructing a Box Plot (Worked Example)</a>
 
 

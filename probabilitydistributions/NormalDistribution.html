@@ -180,107 +180,118 @@ summary {
 </div>
 
 
-<div id="dixon-q-test-for-outliers" class="section level1" data-navmenu="Testing Model Assumptions">
-<h1>Dixon Q-Test for Outliers</h1>
+<div id="normal-distribution" class="section level1" data-navmenu="Continuous Distributions">
+<h1>Normal Distribution</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="dixon-q-test-for-outliers-1" class="section level3">
-<h3>Dixon Q-Test for Outliers</h3>
-<h5>
-Dixon Q-Test for Outliers
-</h5>
-<p>Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set. \ .</p>
-<p><span class="math display">\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]</span></p>
+<div id="complement-and-symmetry-rules" class="section level3">
+<h3>Complement and Symmetry Rules</h3>
+<p>Any normal distribution problem can be solved with some combination of the following rules.\  * Common to all continuous random variables <span class="math display">\[P(Z \geq k) = 1 - P(Z \leq k) \]</span> Similarly <span class="math display">\[P(X \geq k) = 1 - P(X \leq k) \]</span></p>
+<p><span class="math display">\[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]</span></p>
+<div id="symmetry-rule" class="section level4">
+<h4>2. Symmetry rule</h4>
+
+<p>This rule is based on the property of symmetry mentioned previously. Only the probabilities corresponding to values between 0 and 4 are tabulated in Murdoch Barnes. If we have a negative value of k, we can use the symmetry rule.</p>
+<p><span class="math display">\[P(Z \leq -k) = P(Z \geq k) \]</span> by extension, we can say <span class="math display">\[P(Z \geq -k) = P(Z \leq k) \]</span></p>
+<hr />
+
+<p>Find <span class="math inline">\(P(Z \geq -1.28)\)</span> \</p>
 <ul>
-<li>Arrange the data set into ascending order.</li>
+<li>Using the symmetry rule <span class="math display">\[P(Z \geq -1.28) = P(Z \leq 1.28) \]</span></li>
+<li>Using the complement rule <span class="math display">\[P(Z \geq -1.28) = 1 - P(Z \geq 1.28) \]</span> <span class="math display">\[P(Z \geq -1.28) = 1 - 0.1003 = 0.8997 \]</span></li>
 </ul>
-<p><span class="math display">\[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]</span></p>
+<p>} %——————————————————————% </p>
+<p>%———————————————%</p>
+
+<p>Let x be the normal random variable describing waiting times\ <span class="math inline">\(P(X \geq 15) =?\)</span> \  First , we find the z-value that corresponds to x = 15 (remember <span class="math inline">\(\mu=10\)</span> and <span class="math inline">\(\sigma=3\)</span> )\ <span class="math display">\[ z_o = { x_o - \mu \over \sigma }  = { 15 - 10 \over 3 } = 1.666 \]</span></p>
 <ul>
-<li><p>Here the potential outlier is the lowest value, i.e. 19</p></li>
-<li><p>We can formally state the null and alternative hypothesis as follows</p></li>
-</ul>
-<h5>
-Hypotheses
-</h5>
-<ul>
-<li>[H<span class="math inline">\(_0\)</span>] There are no outliers present in the data.</li>
-<li><p>[H<span class="math inline">\(_1\)</span>] There is one outlier present \ (i.e. the lowest value 19)</p></li>
-<li><p>The test statistic for this procedure is as follows:</p></li>
-</ul>
-<p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]</span></p>
-<ul>
-<li>The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is <span class="math display">\[ \mbox{Gap} = 25 - 19 = 6\]</span></li>
-<li><p>The range is simply the difference between the maximum and minimum value. <span class="math display">\[ \mbox{Range} = 37-19 =18\]</span></p></li>
-<li><p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} = \frac{6}{18} =0.333 \]</span></p></li>
-<li><p>Before we look at the critical value, we confirm the size of the data set is <span class="math inline">\(n=10\)</span>.</p></li>
-<li><p>The critical value can be determined from the following table. \ <span class="math inline">\(\bullet\)</span> The column to chose is the significance level (here 5% or 0.05 ). \ <span class="math inline">\(\bullet\)</span> The row to use is <span class="math inline">\(n\)</span>, the number of items in the data set.</p></li>
+<li>We will use <span class="math inline">\(z_o =1.67\)</span></li>
+<li>Therefore we can say <span class="math inline">\(P(X \geq 15 ) = P(Z \geq 1.67)\)</span></li>
+<li>The Murdoch Barnes tables are tabulated to give <span class="math inline">\(P(Z \geq z_o)\)</span> for some value $ z_o$ .</li>
+<li>We can evaluate <span class="math inline">\(P(Z \geq 1.67)\)</span> as 0.0475.</li>
+<li>Necessarily <span class="math inline">\(P(X \geq 15) = 0.0475\)</span>.</li>
 </ul>
 <hr />
 
 <ul>
-<li></li>
-<li></li>
-<li><p>If the Test Statistic is greater than the Critical value, reject the null hypothesis <span class="math display">\[ Q_{TS} &gt; Q_{CV}\]</span></p></li>
-<li><p>Otherwise we fail to reject the null hypothesis</p></li>
+<li>“<span class="math inline">\(90\%\)</span> of customers will be dealt with in at most 12 minutes.”</li>
+<li>To answer this question, we need to know <span class="math inline">\(P(X\leq 12)\)</span></li>
+<li>First , we find the z-value that corresponds to x = 12 (remember <span class="math inline">\(\mu=10\)</span> and <span class="math inline">\(\sigma=3\)</span> )</li>
+</ul>
+<p><span class="math display">\[ z_o = { x_o - \mu \over sigma }  = { 12 - 10 \over 2 } = 0.666 \]</span></p>
+<ul>
+<li>We will use <span class="math inline">\(z_o =0.67\)</span></li>
+<li>Therefore we can say <span class="math inline">\(P(X \geq 12 ) = P(Z \geq 0.67) = 0.2514\)</span></li>
+<li>Necessarily <span class="math inline">\(P(X \leq 12 ) = P(Z \leq 0.67) = 0.7486\)</span></li>
+<li><span class="math inline">\(74.86\%\)</span> of customers will be dealt with in at most 12 minutes.</li>
+<li>The statement that <span class="math inline">\(90\%\)</span> will be dealt with in at most 12 minutes is false.</li>
+</ul>
+<p>%———————————————%</p>
+<p>What percentage will wait between 7 and 13 minutes ?\</p>
+<p><span class="math inline">\(P(7 \leq X \leq 13) = ?\)</span></p>
+<p>\ Compute the probability of being too low, and the probability of being too high for the interval.\The probability of being inside the interval is the complement of the combination of these events.</p>
+<p>%———————————————%</p>
+</div>
+</div>
+<div id="z-scores" class="section level3">
+<h3>Z-Scores</h3>
+<ul>
+<li><a href="https://youtu.be/HJ4DR79XRa8/"> Computing the Z score</a></li>
 </ul>
 </div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h4>
-Worked Example
-</h4>
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
+<div id="worked-examples-set-1" class="section level3">
+<h3>Worked Examples Set 1</h3>
+<h5>
+Worked Example 1
+</h5>
+<p>The length of the jump of an athlete has a normal distribution with mean 7m and standard deviation 0.1m.</p>
+<h5>
+Exercises
+</h5>
+<ol style="list-style-type: lower-alpha">
+<li>Calculate the probability that they jump at least 7.15m</li>
+<li>Calculate the probability that they jump between 6.9 and 7.05m</li>
+<li>Find the probability that if they jump 3 times all the jumps will be less than 7.15m. (Assume the lengths of the jumps are independent and use the answer to part (a)).</li>
+</ol>
 <h5>
 Solution
 </h5>
 <ul>
-<li><a href="https://youtu.be/C0KltVEk6c8"> Click here for Demonstration</a></li>
+<li><a href="https://youtu.be/cxEIEYs9xsk"> Click here for a demonstration of the solution</a></li>
 </ul>
-<hr />
-<div id="step-1-hypotheses-for-the-dixon-test." class="section level4">
-<h4>Step 1: Hypotheses for the Dixon Test.</h4>
-<p><span class="math inline">\(H_0\)</span> No Outlier Present in Data <span class="math inline">\(H_1\)</span> There is an Outlier present in Data (You may identify it)</p>
-<p>
-<hr />
 </div>
-<div id="step-2-dixon-q-test-statistic" class="section level4">
-<h4>Step 2: Dixon Q Test Statistic</h4>
-<p>To apply a Q test for suspicious data, arrange the data in order of increasing values and calculate Q as defined:</p>
-<p><span class="math display">\[ Q = \frac{\text{gap}}{\text{range}} \]</span></p>
-<p>Where gap is the absolute difference between the outlier in question and the closest number to it.</p>
-<p>
-<hr />
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
-<p>Now rearrange in increasing order:</p>
-<p><span class="math display">\[0.167,\ 0.177,\ 0.181,\ 0.181,\ 0.182,\]</span><span class="math display">\[ 0.183,\ 0.184,\ 0.186,\ 0.187,\ 0.189 \, \]</span></p>
-We hypothesize 0.167 is an outlier (based on it’s large gap to next number, i.e. 0.010).
-<p>
-<hr />
-</div>
-<div id="test-statistic" class="section level4">
-<h4>Test Statistic</h4>
-Calculate The Test Statistic <span class="math inline">\(Q_{Ts}\)</span>: <span class="math display">\[ Q_{TS}=\frac{\text{gap}}{\text{range}} = \frac{0.177-0.167}{0.189-0.167}=0.455.\]</span>
-<p>
-<hr />
-</div>
-<div id="critical-value" class="section level4">
-<h4>Critical Value</h4>
+<div id="videos" class="section level3">
+<h3>Videos</h3>
 <ul>
-<li>Choose the Critical Value based on sample size and significance level <span class="math inline">\(\alpha\)</span>. </li>
-<li>In this table we work on the basis of confidence level. \item Let’s use 95% as our confidence level. \ (i.e. 5% significance, i.e. <span class="math inline">\(\alpha=0.05)\)</span></li>
+<li><a href="https://youtu.be/Bq-ivONs-30/"> Normal Distribution - Worked Example</a></li>
+<li><a href="https://youtu.be/jGzLUVFUgQ4/"> Normal Distribution - Compound Distributions (Journey Times )</a></li>
+<li><a href="https://youtu.be/_Ob48DhL4Yo/"> Normal Random Variables - Bicycle Journey Example </a></li>
+<li><a href="https://youtu.be/bF5iPYfHn1c/"> Normal Distribution Worked Example - Paget’s Disease </a></li>
+<li><p><a href="https://youtu.be/x0sPyyWAUTU/"> Normal Distribution Worked Example Apple Juice Dispenser<a></p></li>
+<li><a href="https://youtu.be/bIh0bdymY78/"> Normal Distribution - Worked Example (Part A) </a><br />
+</li>
+<li><a href="https://youtu.be/YidXgNUxSw4/"> Normal Distribution - Worked Example Part B </a><br />
+</li>
+<li><a href="https://youtu.be/jGzLUVFUgQ4/"> Normal Distribution - Compound Distributions (Journey Times ) </a><br />
+</li>
+<li><a href="https://youtu.be/Bq-ivONs-30/"> Normal Distribution - Worked Example </a><br />
+</li>
+<li><a href="https://youtu.be/bF5iPYfHn1c/"> Normal Distribution Worked Example - Paget’s Disease </a><br />
+</li>
+<li><p><a href="https://youtu.be/x0sPyyWAUTU/"> Normal Distribution Worked Example Apple Juice Dispenser </a></p></li>
 </ul>
 </div>
-<div id="step-4-dixon-q-test-decison-rule" class="section level4">
-<h4>Step 4 : Dixon Q Test: Decison Rule</h4>
+<div id="combined-distributions-of-normal-random-variables." class="section level3">
+<h3>Combined Distributions of Normal Random Variables.</h3>
 <ul>
-<li>If <span class="math inline">\(Q_{TS} &gt; Q_{CV}\)</span> , where <span class="math inline">\(Q_{CV}\)</span> is a critical value corresponding to the sample size and confidence level, then reject the null hypothesis.</li>
-<li><p>If <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> , we fail to reject. null hypothesis. i.e. Not enough evidence. </p></li>
-<li>At 95% confidence, <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> i.e $ 0.455 0.466$</li>
-<li><p>Therefore we dont have enough evidence to classify the lowest value 0.167 as an outlier.</p></li>
+<li><a href="https://youtu.be/8GduowZed24/"> Combinations of Normal Random Variables - Worked Example </a><br />
+</li>
+<li><a href="https://youtu.be/hEFePdFKiLc/"> Combined Distributions of Normal Random Variables (Widget Production Example) </a><br />
+</li>
+<li><a href="https://youtu.be/-oY_fDMBGgY/"> Compound Distributions of Normal Random Variables </a><br />
+</li>
+<li><a href="https://youtu.be/Bm1Ztv-1oik/"> Sums and Differences of Normal Random Variables </a></li>
 </ul>
-</div>
 </div>
 </div>
 </div>

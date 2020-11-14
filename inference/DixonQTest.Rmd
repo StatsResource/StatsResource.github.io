@@ -36,7 +36,7 @@ Use the Dixon Q-Test to determine whether or not there is an outlier value prese
 
 *  The test statistic for this procedure is as follows:
 
-\[ \LARGE Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]
+\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]
 
 *  The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is 
 \[ \mbox{Gap} = 25 - 19 = 6\]
@@ -82,6 +82,74 @@ $n$	&	$\alpha=0.10$	&	$\alpha=0.05$	&	$\alpha=0.01$	\\ \hline
 \[ Q_{TS} > Q_{CV}\]
 
 *  Otherwise we fail to reject the null hypothesis
+
+### Worked Example
+
+<h4> Worked Example </h4>
+Consider the data set:
+
+\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]
+
+<h5> Solution</h5> 
+ 
+* <a href="https://youtu.be/C0KltVEk6c8">  Click here for Demonstration</a> 
+
+
+
+
+-------------------------------------------------------------
+
+
+#### Step 1: Hypotheses for the Dixon Test.
+
+
+$H_0$ No Outlier Present in Data
+$H_1$ There is an Outlier present in Data (You may identify it)
+
+<p>
+------------------------------
+#### Step 2: Dixon Q Test Statistic
+
+To apply a Q test for suspicious data, arrange the data in order of increasing values and calculate Q as defined:
+
+\[ Q = \frac{\text{gap}}{\text{range}} \]
+
+Where gap is the absolute difference between the outlier in question and the closest number to it. 
+
+<p>
+------------------------------
+
+Consider the data set:
+
+\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]
+
+Now rearrange in increasing order:
+
+\[0.167,\ 0.177,\ 0.181,\ 0.181,\ 0.182,\]\[ 0.183,\ 0.184,\ 0.186,\ 0.187,\ 0.189 \, \]
+
+
+We hypothesize 0.167 is an outlier (based on it's large gap to next number, i.e. 0.010). 
+<p>
+------------------------------
+#### Test Statistic
+
+Calculate The Test Statistic $Q_{Ts}$:
+\[ Q_{TS}=\frac{\text{gap}}{\text{range}} = \frac{0.177-0.167}{0.189-0.167}=0.455.\]
+<p>
+------------------------------
+#### Critical Value
+
+* Choose the Critical Value based on sample size and significance level $\alpha$. \smallskip
+* In this table we work on the basis of confidence level. \smallskip \item Let's use 95\% as our confidence level. \\ (i.e. 5\% significance, i.e. $\alpha=0.05)$ 
+
+#### Step 4 : Dixon Q Test: Decison Rule
+
+* If $Q_{TS} > Q_{CV}$ , where $Q_{CV}$ is a critical value corresponding to the sample size and confidence level, then reject the null hypothesis. 
+*  If $Q_{TS} \leq Q_{CV}$ , we fail to reject. null hypothesis. i.e. Not enough evidence. \smallskip
+
+* At 95\% confidence, $Q_{TS} \leq Q_{CV}$ i.e $ 0.455 \leq 0.466$ 
+* Therefore we dont have enough evidence to classify the lowest value 0.167 as an outlier. 
+
 
 
 

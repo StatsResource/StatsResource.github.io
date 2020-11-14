@@ -55,12 +55,37 @@ If the columns are not contingent on the rows, then the rows and column frequenc
 
 Contingency tables are used to examine the relationship between subjects’ scores on two categorical variables.
 
-* Expected Values under the null hypothesis (<a title="ChiSquare-ExpectedValues" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">here</a>)
-
-* Chi-Square Exercise (<a title="Chi-SquareExercise" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">here</a>)
 
 
-### Chi-Square Testing
+
+### Worked Examples
+
+#### Worked Examples 1
+ 
+One of the questions on a business magainzes subscribers only study was:
+
+"In the past 12 months, when travelling for business, what types of airline tickets did you purchase most often?"
+
+The data obtained are show in the table below
+  
+| | | Domestic Flight | International Flight| |
+|:------:|:------:|:------:|:------:|:------:|
+| | First Class | 65 | 55 ||
+| |Business Class / Executive | 140 | 100||
+| | Economy |520|120||  
+
+<h5> Exercises </h5> 
+* Using a 5% significance level, test for the independence of type of flight and type of ticket. What is your conclusion? 
+
+
+<h5> Solution</h5> 
+
+* <a href="https://youtu.be/nitlgJUluRE"> Click here for the Part 1 of the solution</a> 
+* <a href="https://youtu.be/oBJmx6bkXpA"> Click here for the Part 1 of the solution</a> 
+
+-------------------------------------------
+
+#### Other Videos
 
 * Chi Square Test- computing the expected values - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">Here</a>
 * Chi Square Exercise - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">Here</a>

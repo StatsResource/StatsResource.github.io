@@ -35,6 +35,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'inference/HypothesisTesting.Rmd'}
 ```
 
+
+```{r child = 'inference/Proportions.Rmd'}
+```
+
+```{r child = 'inference/SmallSamples.rmd'}
+```
+
 ```{r child = 'inference/DixonQTest.Rmd'}
 ```
 

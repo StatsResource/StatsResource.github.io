@@ -1,0 +1,38 @@
+Normal Distribution {data-navmenu="Continuous Distributions"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+### Worked Examples Set 1
+
+<h5>Worked Example 1</h5>
+The length of the jump of an athlete has a normal distribution with mean 7m and standard deviation 0.1m. 
+
+
+<h5> Exercises </h5> 
+a. 	Calculate the probability that they jump  at least 7.15m
+b. 	Calculate the probability that they jump  between 6.9 and 7.05m
+c.	Find the probability that if they jump  3 times all the jumps will be less than 7.15m. (Assume the lengths of the jumps are independent and use the answer to part (a)).  
+	
+
+<h5> Solution</h5> 
+
+* <a href="https://youtu.be/cxEIEYs9xsk"> Click here for a demonstration of the solution</a> 
+
+### Videos
+
+* <a href = "https://youtu.be/Bq-ivONs-30/"> Normal Distribution - Worked Example</a>
+* <a href = "https://youtu.be/jGzLUVFUgQ4/"> Normal Distribution - Compound Distributions (Journey Times )</a>
+* <a href = "https://youtu.be/_Ob48DhL4Yo/"> Normal Random Variables - Bicycle Journey Example </a>
+* <a href = "https://youtu.be/bF5iPYfHn1c/"> Normal Distribution Worked Example - Paget's Disease </a>
+* <a href = "https://youtu.be/x0sPyyWAUTU/"> Normal Distribution Worked Example Apple Juice Dispenser<a>
+
+
+
+* <a href="https://youtu.be/bIh0bdymY78/">	Normal Distribution  - Worked Example (Part A)	</a>	
+* <a href="https://youtu.be/YidXgNUxSw4/">	Normal Distribution  - Worked Example Part B	</a>	
+* <a href="https://youtu.be/jGzLUVFUgQ4/">	Normal Distribution - Compound Distributions (Journey Times )	</a>	
+* <a href="https://youtu.be/Bq-ivONs-30/">	Normal Distribution - Worked Example	</a>	
+* <a href="https://youtu.be/bF5iPYfHn1c/">	Normal Distribution Worked Example - Paget's Disease	</a>	
+* <a href="https://youtu.be/x0sPyyWAUTU/">	Normal Distribution Worked Example Apple Juice Dispenser	</a>	
