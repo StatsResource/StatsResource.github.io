@@ -1,0 +1,117 @@
+
+### Kolmogorov-Smirnov test
+The Kolmogorov-Smirnov test is defined by:
+
+H$_0$:     The data follow a specified distribution
+H$_1$:     The data do not follow the specified distribution
+
+Test Statistic:     The Kolmogorov-Smirnov test statistic is defined as
+
+where F is the theoretical cumulative distribution of the distribution being tested which must be a continuous distribution (i.e., no discrete distributions such as the binomial or Poisson), and it must be fully specified
+
+####  Characteristics and Limitations of the K-S Test}
+
+
+An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. Another advantage is that it is an exact test (the chi-square goodness-of-fit test depends on an adequate sample size for the approximations to be valid). Despite these advantages, the K-S test has several important limitations:
+
+* It only applies to continuous distributions.
+* It tends to be more sensitive near the center of the distribution than at the tails.
+*  Perhaps the most serious limitation is that the distribution must be fully specified. That is, if location, scale, and shape parameters are estimated from the data, the critical region of the K-S test is no longer valid. It typically must be determined by simulation.
+<p>
+Due to limitations 2 and 3 above, many analysts prefer to use the Anderson-Darling goodness-of-fit test.
+
+However, the Anderson-Darling test is only available for a few specific distributions.
+
+####  {Kolmogorov - Smirnov Test}
+
+For a single sample ofdata, the Kolmogorov-Smirnov test is used to test whether or not the sample of data is consistent with a specified distribution function. (Not part of this course)
+When there are two samples of data, it is used to test whether or not these two samples may reasonably be assumed to come from the same distribution.
+The null and alternative hypotheses are as follows:
+
+H0: The two data sets are from the same distribution
+H1: The data sets are not from the same distribution
+
+Consider two sample data sets X and Y that are bothnormally distributed with similar means and variances.
+
+<pre><code>
+> X=rnorm(16,mean=20,sd=5)
+> Y=rnorm(18,mean=21,sd=4)
+> ks.test(X,Y)
+
+        Two-sample Kolmogorov-Smirnov test
+
+data:  X and Y
+D = 0.2153, p-value = 0.7348
+alternative hypothesis: two-sided
+</code></pre>
+<p>
+Remark: It doesn’t not suffice that both datasets are from the same distribution. They must have the same value for the defining parameters. Consider the case of data sets; X and Z. Both are normally distributed, but with different mean values.
+
+<pre><code>
+> X=rnorm(16,mean=20,sd=5)
+> Z=rnorm(16,mean=14,sd=5)
+> ks.test(X,Z)
+
+        Two-sample Kolmogorov-Smirnov test
+
+data:  X and Z
+D = 0.5625, p-value = 0.0112
+alternative hypothesis: two-sided
+</code></pre>
+<p>
+
+
+--------------------------------------------------------------------------------------
+
+
+
+
+\section{Kolmogorov-Smirnov test}
+ The Kolmogorov-Smirnov test is defined by:
+\\
+H$_0$:     The data follow a specified distribution\\
+H$_1$:     The data do not follow the specified distribution\\
+
+Test Statistic:     The Kolmogorov-Smirnov test statistic is defined as
+
+where F is the theoretical cumulative distribution of the distribution being tested which must be a continuous distribution (i.e., no discrete distributions such as the binomial or Poisson), and it must be fully specified
+
+####  { Characteristics and Limitations of the K-S Test}
+
+
+An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. Another advantage is that it is an exact test (the chi-square goodness-of-fit test depends on an adequate sample size for the approximations to be valid). Despite these advantages, the K-S test has several important limitations:
+\begin{enumerate}
+\item It only applies to continuous distributions.
+\item It tends to be more sensitive near the center of the distribution than at the tails.
+\item Perhaps the most serious limitation is that the distribution must be fully specified. That is, if location, scale, and shape parameters are estimated from the data, the critical region of the K-S test is no longer valid. It typically must be determined by simulation.
+\end{enumerate}
+Due to limitations 2 and 3 above, many analysts prefer to use the Anderson-Darling goodness-of-fit test.
+
+However, the Anderson-Darling test is only available for a few specific distributions.
+
+
+------------------------------------------------------------
+
+### {Kolmogorov-Smirnov test}
+
+The Kolmogorov-Smirnov test is defined by:
+
+H$_0$:     The data follow a specified distribution\\
+H$_1$:     The data do not follow the specified distribution\\
+
+Test Statistic:     The Kolmogorov-Smirnov test statistic is defined as
+
+where F is the theoretical cumulative distribution of the distribution being tested which must be a continuous distribution (i.e., no discrete distributions such as the binomial or Poisson), and it must be fully specified
+
+####  { Characteristics and Limitations of the K-S Test}
+
+
+An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. Another advantage is that it is an exact test (the chi-square goodness-of-fit test depends on an adequate sample size for the approximations to be valid). Despite these advantages, the K-S test has several important limitations:
+\begin{enumerate}
+\item It only applies to continuous distributions.
+\item It tends to be more sensitive near the center of the distribution than at the tails.
+\item Perhaps the most serious limitation is that the distribution must be fully specified. That is, if location, scale, and shape parameters are estimated from the data, the critical region of the K-S test is no longer valid. It typically must be determined by simulation.
+\end{enumerate}
+Due to limitations 2 and 3 above, many analysts prefer to use the Anderson-Darling goodness-of-fit test.
+
+However, the Anderson-Darling test is only available for a few specific distributions.

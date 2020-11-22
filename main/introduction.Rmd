@@ -26,11 +26,12 @@ Column {.tabset}
 </colgroup>
 <tbody>
   <tr>
-  <td class="tg-76so">Exploring Data</td>
+  <td class="tg-76so"><strong> <a href = "exploratorydataanalysis.html">Exploring Data</a></strong><br>Measures of Centrality and Dispersion</td>
   <td class="tg-76so"><strong> <a href = "graphicalprocedures.html">Graphical Procedures</a></strong><br> Histograms, Boxplots, Ogives</td>    
   <td class="tg-76so"><strong> <a href = "probability.html">Probability <br> and Random Variables</a></strong> </td>
   <td class="tg-76so"><strong> <a href = "probabilitydistributions.html">Probability Distributions</a></strong> </td>
   </tr>
+ 
   <tr>
   <td class="tg-76so"><strong> <a href = "testingassumptions.html">Testing Distributional Assumptions</a></strong> <br> Testing Normality and Outlier Detection</td>
   <td class="tg-76so"><strong> <a href = "inference.html">Inference Procedures</a></strong> <br>Confidence Intervals and Hypothesis Testing</td>
@@ -44,9 +45,9 @@ Column {.tabset}
   <td class="tg-76so"><strong><a href = "randomnumbers.html">Random Number Generation</a></strong></td>
   </tr>
   <tr>
-  <td class="tg-76so"><strong> <a href = "gametheory.html">Game Theory and Decision Theory</a></strong> <br></td>
-  <td class="tg-76so"><strong> <a href = "experimentaldesign.html">Experimental Design</a></strong><br></td>
-  <td class="tg-76so"><strong> <a href = "survivalanalysis.html">Survival Analysis</a></strong> </td>
+  <td class="tg-76so"><strong> <a href = "gametheory.html">Game Theory and Decision Theory</a></strong><br>Matrix Games</td>
+  <td class="tg-76so"><strong> <a href = "experimentaldesign.html">Experimental Design</a></strong><br>ANOVA Procedures, Testing Model Assumptions</td>
+  <td class="tg-76so"><strong> <a href = "survivalanalysis.html">Survival Analysis</a></strong> <br>Non parametric approaches, Cox proportional hazard models</td>
   <td class="tg-76so"><strong> <a href = "statisticalprocesscontrol.html">Statistical Process Control</a></strong>  </td>
   </tr>
 </tbody>

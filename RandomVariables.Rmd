@@ -1,0 +1,5 @@
+```{r child = 'randomvariables/RandomVariables.Rmd'}
+```
+
+```{r child = 'randomvariables/ContinuousRandomVariables.Rmd'}
+```

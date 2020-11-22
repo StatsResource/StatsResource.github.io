@@ -21,12 +21,18 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r child = 'experimentaldesign/onewayanova.Rmd'}
+```
 
+```{r child = 'experimentaldesign/IntroToEd.Rmd'}
+```
 
+```{r child = 'experimentaldesign/BartlettTest.Rmd'}
+```
+
+```{r child = 'experimentaldesign/TwoWayDesigns.Rmd'}
 ```
 
 ```{r child = 'specialtopics/ExperimentalDesign.Rmd'}
 ```
 
-```{r child = 'modellingdata/RegressionANOVA.Rmd'}
-```
+

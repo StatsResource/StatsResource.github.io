@@ -36,4 +36,7 @@ Column {.tabset}
 
 ```{r child = 'modellingdata/ResidualAnalysis.Rmd'}
 ```
+```{r child = 'linearmodels/multicollinearity.Rmd'}
+```
+
 

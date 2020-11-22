@@ -180,91 +180,103 @@ summary {
 </div>
 
 
-<div id="navigate" class="section level1" data-navmenu="Menu">
-<h1>Navigate</h1>
+<div id="terminology-and-definitons" class="section level1">
+<h1>Terminology and Definitons</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="contents" class="section level3">
-<h3>Contents</h3>
+<div id="inference" class="section level3">
+<h3>Inference</h3>
+<ul>
+<li>Statistics and Population parameters</li>
+<li>Random Sampling</li>
+<li>Properties of Estimators</li>
+<li>Estimation (Point and Interval)</li>
+<li>Confidence Intervals</li>
+<li>The Central Limit Theorem</li>
+<li>Standard Errors</li>
+</ul>
+</div>
+<div id="statistical-inference-definitions" class="section level3">
+<h3>Statistical Inference : Definitions</h3>
+<ul>
+<li><p>A ***{} consists of an entire set of objects, observations, or scores that have something in common. For example, a population might be defined as students in a university.</p></li>
+<li>Some populations are only hypothetical. Consider an experiment where a die is thrown 100 times and the sum of the scores was recorded.</li>
+<li>The researcher might define a population as the sums that would result if this experiment was repeated an infinite number of times.</li>
+<li>The population is hypothetical in the sense that it is not reasonable to repeat this experiment indefinitely.</li>
+<li><p>The distribution of a population can be described by several parameters such as the mean and standard deviation.</p></li>
+</ul>
+</div>
+<div id="statistical-inference-sample" class="section level3">
+<h3>Statistical Inference : Sample</h3>
+<ul>
+<li>A sample is a subset of a population.</li>
+<li>Suppose we are interested in some characteristic of a population ( e.g. amount of time spent on the internet)</li>
+<li>Since it is usually impractical to test every member of a population, a sample from the population is typically the best approach available.</li>
+<li>To be properly representative of a population, a sample should be both ***{} and sufficiently large.</li>
+</ul>
+</div>
+<div id="random-sampling" class="section level3">
+<h3>Random Sampling</h3>
+<ul>
+<li>In random sampling, each item or element of the population has an equal chance of being chosen at each draw.</li>
+<li>A sample is random if the method for obtaining the sample meets the criterion of randomness (each element having an equal chance at each draw).</li>
+</ul>
+</div>
+<div id="biased-sampling" class="section level3">
+<h3>Biased Sampling</h3>
+<ul>
+<li><p>A biased sample is one in which the method used to create the sample results in samples that are systematically different from the population.</p></li>
+<li><p>For instance, consider a market research project on attitudes of attendees towards an event they attended.</p></li>
+<li><p>Collecting the data by publishing a questionnaire and asking people to fill it out and send it in would produce a biased sample.</p></li>
+<li><p>People interested enough to spend their time and energy filling out and sending in the questionnaire are likely to have different attitudes about the event than those not taking the time to fill out the questionnaire.</p></li>
+</ul>
+</div>
+<div id="parameters" class="section level3">
+<h3>Parameters</h3>
+<ul>
+<li>A parameter is a numerical quantity measuring some aspect of a population of scores.</li>
+<li>The population mean <span class="math inline">\(\mu\)</span> and population variance <span class="math inline">\(\sigma^2\)</span> are commonly used parameters.</li>
+<li>Another commonly used parameter is the population proportion <span class="math inline">\(\pi\)</span>.</li>
+<li>(Remark : greek letters are used to designate parameters.)</li>
+<li>Parameters are rarely known and are usually estimated by ***{} computed from samples.</li>
+</ul>
+<hr />
 <p>
-<a href="index.html">StatsResource Main Page</a>
+<div id="statistics" class="section level4">
+<h4>Statistics</h4>
+<ul>
+<li>The most common use of the word `statistics’is for describing a wide range of techniques and procedures for analyzing, interpreting and displaying data.</li>
+<li>In a second usage, a ``statistic&quot; is defined as a numerical quantity (such as the sample mean) calculated from a sample.</li>
+<li>Sample mean <span class="math inline">\(\bar{x}\)</span> and sample standard deviation <span class="math inline">\(s\)</span> are types of statistics.</li>
+<li>These statistics are used to estimate population parameters.</li>
+</ul>
+</div>
+</div>
+<div id="estimators" class="section level3">
+<h3>Estimators</h3>
+<ul>
+<li>Three important attributes of statistics as estimators are: </li>
+<li>unbiasedness, * consistency, * relative efficiency.</li>
+<li>A statistic is unbiased if, in the long run, it’s value is reasonably close to the parameter it is estimating.</li>
+<li>An estimator is consistent if the estimator tends to get closer to the parameter it is estimating as the sample size increases.</li>
+</ul>
 <p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:18px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
-.tg .tg-yw4l{vertical-align:top}
-.tg .tg-76so{font-size:18px;background-color:#cbcefb;vertical-align:top}
-</style>
-<center>
-<table class="tg" style="undefined;table-layout: fixed; width: 900px">
-<colgroup>
-<col style="width: 200px">
-<col style="width: 200px">
-<col style="width: 200px">
-<col style="width: 200px">
-</colgroup>
-<tbody>
-<tr>
-<td class="tg-76so">
-<strong> <a href="exploratorydataanalysis.html">Exploring Data</a></strong><br>Measures of Centrality and Dispersion
-</td>
-<td class="tg-76so">
-<strong> <a href="graphicalprocedures.html">Graphical Procedures</a></strong><br> Histograms, Boxplots, Ogives
-</td>
-<td class="tg-76so">
-<strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
-</td>
-<td class="tg-76so">
-<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong>
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong> <a href="testingassumptions.html">Testing Distributional Assumptions</a></strong> <br> Testing Normality and Outlier Detection
-</td>
-<td class="tg-76so">
-<strong> <a href="inference.html">Inference Procedures</a></strong> <br>Confidence Intervals and Hypothesis Testing
-</td>
-<td class="tg-76so">
-<strong> <a href="bivariatedata.html">Bivariate Data</a></strong> <br>Correlation Coefficients &amp; Hypothesis Tests, Chi Square Test for Independence
-</td>
-<td class="tg-76so">
-<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models, Residual Analysis, Regression ANOVA
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong><a href="discreterandomvariables.html">Discrete Random Variables</a></strong><br>Expectations and variance of discrete random variables, Joint Distribution of discrete random variables
-</td>
-<td class="tg-76so">
-<strong><a href="continuousrandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of continuous random variables
-</td>
-<td class="tg-76so">
-<strong><a href="randomvariables2.html">More on Random Variables</a></strong><br> Moment Generating Functions, Cumulant Generating Functions
-</td>
-<td class="tg-76so">
-<strong><a href="randomnumbers.html">Random Number Generation</a></strong>
-</td>
-</tr>
-<tr>
-<td class="tg-76so">
-<strong> <a href="gametheory.html">Game Theory and Decision Theory</a></strong><br>Matrix Games
-</td>
-<td class="tg-76so">
-<strong> <a href="experimentaldesign.html">Experimental Design</a></strong><br>ANOVA Procedures, Testing Model Assumptions
-</td>
-<td class="tg-76so">
-<strong> <a href="survivalanalysis.html">Survival Analysis</a></strong> <br>Non parametric approaches, Cox proportional hazard models
-</td>
-<td class="tg-76so">
-<strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
-</td>
-</tr>
-</tbody>
-</table>
-</center>
+<ul>
+<li>The efficiency of a statistic is the degree to which the statistic is stable from sample to sample.</li>
+<li>That is, the less subject to sampling fluctuation a statistic is, the more efficient it is.</li>
+<li>***{} refers to the extent to which a statistic takes on different values with different samples.</li>
+<li>That is, it refers to how much the statistic’s value fluctuates from sample to sample.</li>
+</ul>
+<div id="inferential-statistics" class="section level4">
+<h4>Inferential Statistics</h4>
+<ul>
+<li>Inferential statistics are used to draw inferences about a population from a sample.</li>
+<li>Consider an experiment in which 10 subjects who performed a task after 24 hours of sleep deprivation scored 12 points lower than 10 subjects who performed after a normal night’s sleep.</li>
+<li>Is the difference real or could it be due to chance?</li>
+<li>How much larger could the real difference be than the 12 points found in the sample?</li>
+<li>These are the types of questions answered by inferential statistics.</li>
+</ul>
+</div>
 </div>
 </div>
 </div>

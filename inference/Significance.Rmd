@@ -1,0 +1,61 @@
+
+%--------------------------------------------------------------------------------------------------------------------------%
+
+\subsection*{Significance Level ($\alpha$}
+
+
+
+* Traditionally, experimenters have used either the 0.05 level (sometimes called the 5\% level) or the 0.01 level (1\% level), although the choice of levels is largely subjective.  * The lower the significance level, the more the data must diverge from the null hypothesis to be significant. * Therefore, the 0.01 level is more conservative than the 0.05 level. * The Greek letter alpha ($\alpha$) is sometimes used to indicate the significance level. * We will use a significance level of $\alpha =0.05$ only in this module. You may assume this level unless clearly stated otherwise
+
+### Significance Level}
+
+
+* The significance level of a statistical hypothesis test is a fixed probability of wrongly rejecting the null hypothesis $H_0$, if it is in fact true.
+
+* Equivalently, the significance level (denoted by $\alpha$) is the probability that the test statistics will fall into the ***{\emph{critical region}}, when the null hypothesis is actually true. ( We will discuss the critical region shortly).
+
+* Common choices for $\alpha$ are $0.05$ and $0.01$
+
+
+
+\section{ What is Statistical Inference?}
+%---------------------------------------------------%
+
+
+* Statistical inference is about inferring from the data about parameters that describe an assumed
+model for the data.
+* 
+Solution: In statistics, a model for the mechanism that has produced data is as-
+sumed. The model is characterized by some parameters that are unknown. Having
+data, statistics tries to infer from them some information about these parameters.
+
+\section{What is Statistical Inference?}
+
+* Hyptothesis testing 
+* Confidence Intervals 
+* Sample size estimation.
+
+
+
+
+
+
+
+***{Significance (Dice Example)}
+
+* Suppose that the outcome of the die throw experiment was a sum of 401. In previous lectures, a simulation study found that only in approximately $1.75\%$ of cases would a fair die yield this result.
+* However, in the case of a crooked die (i.e. one that favours high numbers) this result would not be unusual.
+* A reasonable interpretation of this experiment is that the die is crooked, but importantly the experiment doesn't prove it one way or the other.
+* We will discuss the costs of making a wrong decision later (Type I and Type II errors).
+
+
+%--------------------------------------------------------------------------------------------------------------------------%
+
+
+
+
+\end{document}
+
+
+
+

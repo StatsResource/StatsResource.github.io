@@ -21,6 +21,60 @@ a probability near 0 means that it is highly unlikely to occur.
 event with a probability near to 1 is very likely to occur.
 
 
+### Conditional Probability
+
+<h3>Conditional Probability</h3>
+
+The conditional probability of an event is the probability that an event A occurs given that another event B has already occurred. This type of probability is calculated by restricting the sample space that we’re working with to only the set B.
+
+The formula for conditional probability can be rewritten using some basic algebra. Instead of the formula:
+
+\[P(A | B) = \frac{P(A \cap B) }{P( B )}  \]
+
+----------------------------------------------------------------------------
+
+#### Multiplication Rule
+The multiplication rule is a result used to determine the probability that two events, $A$ and $B$, both occur.
+The multiplication rule follows from the definition of conditional probability.\\ \bigskip
+
+The result is often written as follows, using set notation:
+\[ P(A|B)\times P(B) = P(B|A)\times P(A) \qquad \left( = P(A \cap B) \right) \]
+
+
+#### Bayes Theorem
+
+Bayes' Theorem is a result that allows new information to be used to update the conditional probability of an event.
+
+Recall the definition of conditional probability:
+\[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
+
+
+
+
+Using the multiplication rule, gives Bayes' Theorem in its simplest form:
+
+\[ P(A|B) = \frac{P(B|A)\times P(A)}{P(B)} \]
+
+
+The general form of Bayes' theorem is
+\[ P(A|B) =
+\frac{P(A \mbox{ and }B)}{P(B)} \]
+
+Equivalently Bayes' Theorem can be expressed as
+\begin{equation*}
+P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+\end{equation*}
+
+
+#### Conditional Probability 
+
+Conditional Probability  
+
+* <a href="https://youtu.be/wUdQxLWuqWo/">	Conditional Probability - Worked Example	</a>	
+* <a href="https://youtu.be/qZ53wmnPvr4/">	Conditional Probability -Disease Detection Worked Example	</a>	
+* <a href="https://youtu.be/bYhL91gDqEM/">	Conditional Probability Worked Example	</a>	
+* <a href="https://youtu.be/0DTm_7fF2pE/">	Conditional Probability Worked Exampe (Newpaper Competition Part A)	</a>	
+* <a href="https://youtu.be/O7oQPhFt07w/">	Conditional Probability Worked Example - Newspaper Competition (Part B)	</a>	
 
 
 
@@ -37,7 +91,7 @@ event with a probability near to 1 is very likely to occur.
 * <a href="https://youtu.be/fIiH_u0ASFU/">	Probability Trees	</a>	
 
 
-#### Probability Trees
+### Probability Trees
 
 <h5> Probability Trees </h5>
 
@@ -53,22 +107,6 @@ event with a probability near to 1 is very likely to occur.
 <h5> Questions </h5>
 * <a href = "https://youtu.be/fIiH_u0ASFU/">Probability Trees</a>
 
-
-Conditional Probability  {data-navmenu="Introductory Probability"}
-====================================================================
-
-Column {.tabset}
--------------------------------------------------
-
-### Conditional Probability 
-
-<h5> Conditional Probability  </h5>
-
-* <a href="https://youtu.be/wUdQxLWuqWo/">	Conditional Probability - Worked Example	</a>	
-* <a href="https://youtu.be/qZ53wmnPvr4/">	Conditional Probability -Disease Detection Worked Example	</a>	
-* <a href="https://youtu.be/bYhL91gDqEM/">	Conditional Probability Worked Example	</a>	
-* <a href="https://youtu.be/0DTm_7fF2pE/">	Conditional Probability Worked Exampe (Newpaper Competition Part A)	</a>	
-* <a href="https://youtu.be/O7oQPhFt07w/">	Conditional Probability Worked Example - Newspaper Competition (Part B)	</a>	
 
 
 

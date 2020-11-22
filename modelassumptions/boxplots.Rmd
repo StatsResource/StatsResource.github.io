@@ -1,0 +1,63 @@
+Boxplots 
+================================================
+Column.{tabset}
+----------------------
+
+To construct a boxplot
+
+1)	Calculate Q1, the median, Q3 and the IQR.
+
+2)	Draw a horizontal line to represent the scale of measurement.
+
+
+3)	Draw a box just above  the line with the right and left ends at Q1 and Q3.
+
+4)	Draw a line through the box at the location of the median.
+
+
+5)	To detect outliers you need to determine a lower fence and an upper fence.	
+a.	Lower fence is  
+b.	Upper fence is  
+
+6)	Any values below the lower fence or above the upper fence are classes as outliers.
+
+7)	To finish the boxplot
+a.	Mark any outliers with an asterisk (*) on the graph.
+b.	Extend horizontal lines , called whiskers, from the ends of the box to the smallest and largest values that are not outliers.
+c.	(Remark – a variation is to extend to the lower and upper fences)
+
+	
+ 
+
+
+What to Look for
+
+1) Outliers
+The first feature that you look for when analysing a boxplot is the presence of outliers.
+ 
+Outliers are extreme values and can greatly influence your analysis. For that reason, you should check your data and make sure you have entered it correctly.
+ 
+You also have the option of removing outliers, making a note that you have removed them, and presenting your analysis without them.
+ 
+2) Skewed Data
+The second feature is the degree of skewness. As you learned earlier, the quartiles divide the data into four sections, each containg 25% of the measurements. 
+
+You are interested in how spread out or tightly packed the data are. The length of the whiskers and the position of the median in the box tell you this. Notice that 25% of the values in the boxplot are less than Q1 and this includes the outliers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

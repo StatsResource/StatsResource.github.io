@@ -1,0 +1,89 @@
+\section{Statistical Assumptions}
+
+\section{Overview}
+
+<p>
+*  Normal probability plot *  Outliers *  dixon test
+*  Grubbs test
+
+
+
+### Grubb's Test
+
+
+#### Grubb's Test for Detecting Outliers
+
+Statisticians have devised several ways to detect outliers. Grubbs' test is particularly easy to follow. This method is also called the ESD method (extreme studentized deviate).
+The first step is to quantify how far the outlier is from the others. Calculate the ratio Z as the difference between the outlier and the mean divided by the SD. If Z is large, the value is far from the others. Note that you calculate the mean and SD from all values, including the outlier.
+
+<p>Since 5\% of the values in a Gaussian population are more than 1.96 standard deviations from the mean, your first thought might be to conclude that the outlier comes from a different population if Z is greater than 1.96. This approach only works if you know the population mean and SD from other data. Although this is rarely the case in experimental science, it is often the case in quality control. You know the overall mean and SD from historical data, and want to know whether the latest value matches the others. This is the basis for quality control charts.
+<p>
+When analyzing experimental data, you don't know the SD of the population. Instead, you calculate the SD from the data. The presence of an outlier increases the calculated SD. Since the presence of an outlier increases both the numerator (difference between the value and the mean) and denominator (SD of all values), Z does not get very large. In fact, no matter how the data are distributed, Z can not get larger than, where N is the number of values. For example, if N=3, Z cannot be larger than 1.155 for any set of values.
+
+<p>
+Grubbs and others have tabulated critical values for Z which are tabulated below. The critical value increases with sample size, as expected.
+
+<p>
+If your calculated value of Z is greater than the critical value in the table, then the P value is less than 0.05. This means that there is less than a 5\% chance that you'd encounter an outlier so far from the others (in either direction) by chance alone, if all the data were really sampled from a single Gaussian distribution. Note that the method only works for testing the most extreme value in the sample (if in doubt, calculate Z for all values, but only calculate a P value for Grubbs' test from the largest value of Z.
+
+<p>
+Once you've identified an outlier, you may choose to exclude that value from your analyses. Or you may choose to keep the outlier, but use robust analysis techniques that do not assume that data are sampled from Gaussian populations.
+
+<p>
+If you decide to remove the outlier, you then may be tempted to run Grubbs' test again to see if there is a second outlier in your data. If you do this , you cannot use the same table.
+
+
+#### Grubbs’ Test
+Grubbs' test is a formal hypothesis test for assessing whether or not a  data set contains an outlier.
+This data set is univariate and approximately normal distributed. This test is designed for assessing one outlier only.  If more outliers are suspected, alternative tests, such as the Tietjen-Moore test, are recommended.
+Hypotheses: Grubbs' test is defined for the hypothesis: 
+<p> 
+\item[Ho] :  There are no outliers in the data set  
+\item[Ha] :  There is exactly one outlier in the data set  
+<p>
+
+<p> 
+<pre><code>
+install.packages("outliers")
+library(outliers)
+#Package Author : Lukasz Komsta (UMLUB, Poland)
+
+grubbs.test(DAT002)
+</code></pre>
+\end{framed}
+
+
+
+####  {Critical values for Z}
+
+Calculate Z as shown above. Look up the critical value of Z in the table below, where N is the number of values in the group. If your value of Z is higher than the tabulated value, the P value is less than 0.05.
+
+
+
+
+
+
+
+
+####  {Computing an approximate P value}
+
+You can also calculate an approximate P value as follows.
+
+
+N is the number of values in the sample, Z is calculated for the suspected outlier as shown above.
+Look up the two-tailed P value for the student t distribution with the calculated value of T and N-2 degrees of freedom. Using Excel, the formula is =TDIST(T,DF,2) (the '2' is for a two-tailed P value).
+
+
+Multiply the P value you obtain in step 2 by N. The result is an approximate P value for the outlier test. This P value is the chance of observing one point so far from the others if the data were all sampled from a Gaussian distribution. If Z is large, this P value will be very accurate. With smaller values of Z, the calculated P value may be too large.
+
+
+
+### Dixon's Q test
+
+In statistics, Dixon's Q test, or simply the Q test, is used for identification and rejection of outliers. This test should be used sparingly and never more than once in a data set. To apply a Q test for bad data, arrange the data in order of increasing values and calculate Q as defined:
+
+\[
+Q = \frac{\mbox{Gap}}{\mbox{Range}}
+\]
+
+Where gap is the absolute difference between the outlier in question and the closest number to it. If $Q_calculated > Q_table$, then reject the questionable point.

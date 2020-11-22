@@ -2649,604 +2649,384 @@ window.FlexDashboardComponents.push({
 </div>
 </div>
 </div>
-<div id="terminology-and-definitons" class="section level1">
-<h1>Terminology and Definitons</h1>
+<div id="navigate-1" class="section level1" data-navmenu="Menu">
+<h1>Navigate</h1>
 <div id="column-1" class="section level2 tabset">
 <h2>Column</h2>
-<div id="inference" class="section level3">
-<h3>Inference</h3>
-<ul>
-<li>Statistics and Population parameters</li>
-<li>Random Sampling</li>
-<li>Properties of Estimators</li>
-<li>Estimation (Point and Interval)</li>
-<li>Confidence Intervals</li>
-<li>The Central Limit Theorem</li>
-<li>Standard Errors</li>
-</ul>
-</div>
-<div id="statistical-inference-definitions" class="section level3">
-<h3>Statistical Inference : Definitions</h3>
-<ul>
-<li><p>A ***{} consists of an entire set of objects, observations, or scores that have something in common. For example, a population might be defined as students in a university.</p></li>
-<li>Some populations are only hypothetical. Consider an experiment where a die is thrown 100 times and the sum of the scores was recorded.</li>
-<li>The researcher might define a population as the sums that would result if this experiment was repeated an infinite number of times.</li>
-<li>The population is hypothetical in the sense that it is not reasonable to repeat this experiment indefinitely.</li>
-<li><p>The distribution of a population can be described by several parameters such as the mean and standard deviation.</p></li>
-</ul>
-</div>
-<div id="statistical-inference-sample" class="section level3">
-<h3>Statistical Inference : Sample</h3>
-<ul>
-<li>A sample is a subset of a population.</li>
-<li>Suppose we are interested in some characteristic of a population ( e.g. amount of time spent on the internet)</li>
-<li>Since it is usually impractical to test every member of a population, a sample from the population is typically the best approach available.</li>
-<li>To be properly representative of a population, a sample should be both ***{} and sufficiently large.</li>
-</ul>
-</div>
-<div id="random-sampling" class="section level3">
-<h3>Random Sampling</h3>
-<ul>
-<li>In random sampling, each item or element of the population has an equal chance of being chosen at each draw.</li>
-<li>A sample is random if the method for obtaining the sample meets the criterion of randomness (each element having an equal chance at each draw).</li>
-</ul>
-</div>
-<div id="biased-sampling" class="section level3">
-<h3>Biased Sampling</h3>
-<ul>
-<li><p>A biased sample is one in which the method used to create the sample results in samples that are systematically different from the population.</p></li>
-<li><p>For instance, consider a market research project on attitudes of attendees towards an event they attended.</p></li>
-<li><p>Collecting the data by publishing a questionnaire and asking people to fill it out and send it in would produce a biased sample.</p></li>
-<li><p>People interested enough to spend their time and energy filling out and sending in the questionnaire are likely to have different attitudes about the event than those not taking the time to fill out the questionnaire.</p></li>
-</ul>
-</div>
-<div id="parameters" class="section level3">
-<h3>Parameters</h3>
-<ul>
-<li>A parameter is a numerical quantity measuring some aspect of a population of scores.</li>
-<li>The population mean <span class="math inline">\(\mu\)</span> and population variance <span class="math inline">\(\sigma^2\)</span> are commonly used parameters.</li>
-<li>Another commonly used parameter is the population proportion <span class="math inline">\(\pi\)</span>.</li>
-<li>(Remark : greek letters are used to designate parameters.)</li>
-<li>Parameters are rarely known and are usually estimated by ***{} computed from samples.</li>
-</ul>
-<hr />
+<div id="contents-1" class="section level3">
+<h3>Contents</h3>
 <p>
-<div id="statistics" class="section level4">
-<h4>Statistics</h4>
-<ul>
-<li>The most common use of the word `statistics’is for describing a wide range of techniques and procedures for analyzing, interpreting and displaying data.</li>
-<li>In a second usage, a ``statistic&quot; is defined as a numerical quantity (such as the sample mean) calculated from a sample.</li>
-<li>Sample mean <span class="math inline">\(\bar{x}\)</span> and sample standard deviation <span class="math inline">\(s\)</span> are types of statistics.</li>
-<li>These statistics are used to estimate population parameters.</li>
-</ul>
-</div>
-</div>
-<div id="estimators" class="section level3">
-<h3>Estimators</h3>
-<ul>
-<li>Three important attributes of statistics as estimators are: </li>
-<li>unbiasedness, * consistency, * relative efficiency.</li>
-<li>A statistic is unbiased if, in the long run, it’s value is reasonably close to the parameter it is estimating.</li>
-<li>An estimator is consistent if the estimator tends to get closer to the parameter it is estimating as the sample size increases.</li>
-</ul>
+<a href="index.html">StatsResource Main Page</a>
 <p>
-<ul>
-<li>The efficiency of a statistic is the degree to which the statistic is stable from sample to sample.</li>
-<li>That is, the less subject to sampling fluctuation a statistic is, the more efficient it is.</li>
-<li>***{} refers to the extent to which a statistic takes on different values with different samples.</li>
-<li>That is, it refers to how much the statistic’s value fluctuates from sample to sample.</li>
-</ul>
-<div id="inferential-statistics" class="section level4">
-<h4>Inferential Statistics</h4>
-<ul>
-<li>Inferential statistics are used to draw inferences about a population from a sample.</li>
-<li>Consider an experiment in which 10 subjects who performed a task after 24 hours of sleep deprivation scored 12 points lower than 10 subjects who performed after a normal night’s sleep.</li>
-<li>Is the difference real or could it be due to chance?</li>
-<li>How much larger could the real difference be than the 12 points found in the sample?</li>
-<li>These are the types of questions answered by inferential statistics.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="sampling-distribution" class="section level1" data-navmenu="Inference Procedures">
-<h1>Sampling Distribution</h1>
-<div id="column-2" class="section level2 tabset">
-<h2>Column</h2>
-<div id="sampling-distribution-1" class="section level3">
-<h3>Sampling Distribution</h3>
-<ul>
-<li><a href="https://youtu.be/DSyusepVP3k/">Sampling Distribution - Worked Example 1 </a></li>
-<li><a href="https://youtu.be/uMxmxnIcfvo/">Sampling Distribution - Worked Example 2 </a></li>
-<li><a href="https://youtu.be/droO8NykzY8/">Expected Value of Sample Variance</a></li>
-<li><p><a href="https://youtu.be/ZTK1R7tylh8/"> Confidence Interval of Sample Variance</a></p></li>
-<li><a href="https://youtu.be/TF5VLv7Djtw/"> Sample Variance Ratios &amp; The F Distribution </a><br />
-</li>
-<li><p><a href="https://youtu.be/DSyusepVP3k/"> Sampling Distributions - Worked Examples </a></p></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="small-samples-and-the-t--distribution" class="section level1" data-navmenu="Inference Procedures">
-<h1>Small Samples and the t- distribution</h1>
-<div id="column-3" class="section level2 tabset">
-<h2>Column</h2>
-<div id="the-student-t--distribution" class="section level3">
-<h3>The Student t- distribution</h3>
-<ul>
-<li>The <span class="math inline">\(t\)</span> distribution is the appropriate basis for determining the standardized test statistic when the sampling distribution of the mean is normally distributed but <span class="math inline">\(s\)</span> is not known.</li>
-<li><p>The sampling distribution can be assumed to be normal either because the population is normal or because the sample is large enough to invoke the central limit theorem.</p></li>
-<li>The <span class="math inline">\(t\)</span> distribution is required when the sample is small (<span class="math inline">\(n &lt; 30\)</span>). For larger samples, normal approximation can be used.</li>
-<li><p>For the critical value approach, the procedure is identical to that described of the normal distribution, except for the use of <span class="math inline">\(t\)</span> instead of z as the test statistic.</p></li>
-</ul>
-</div>
-<div id="quantiles" class="section level3">
-<h3>Quantiles</h3>
-<p>The quantile function is the inverse of the cumulative distribution function. The p-quantile is the value with the property that there is probability p of getting a value less than or equal to it. The median is by definition the 50% quantile.</p>
-<p>Theoretical quantiles are commonly used for the calculation of confidence intervals and for power calculations in connection with designing and dimensioning experiments.</p>
-</div>
-</div>
-</div>
-<div id="inference-procedures-for-proportions" class="section level1" data-navmenu="Inference Procedures">
-<h1>Inference Procedures for Proportions</h1>
-<div id="column-4" class="section level2 tabset">
-<h2>Column</h2>
-<div id="hypothesis-testing" class="section level3">
-<h3>Hypothesis Testing</h3>
-<h5>
-Hypothesis Testing For Proportions
-</h5>
-<ul>
-<li><a href="https://youtu.be/fzIRjiSoW2o/">Hypothesis Testing For Proportions</a></li>
-<li><a href="https://youtu.be/d97sSFMXSLQ/">Two Sample Proportion Hypothesis Test</a></li>
-</ul>
-</div>
-<div id="confidence-intervals" class="section level3">
-<h3>Confidence Intervals</h3>
-<ul>
-<li><a href="https://youtu.be/tz3Kyp7yUSQ/"> Confidence Interval for Single Sample Proportion </a><br />
-</li>
-<li><a href="https://youtu.be/ZTK1R7tylh8/"> Confidence Interval of Sample Variance </a><br />
-</li>
-<li><a href="https://youtu.be/oj9oo6aIVG4/"> Confidence Intervals for Proportions </a><br />
-</li>
-<li><a href="https://youtu.be/fzIRjiSoW2o/"> Hypothesis Testing For Proportions </a><br />
-</li>
-<li><a href="https://youtu.be/d97sSFMXSLQ/"> Two Sample Proportion Hypothesis Test </a></li>
-</ul>
-</div>
-<div id="worked-examples" class="section level3">
-<h3>Worked Examples</h3>
-<h4>
-Worked Example 1
-</h4>
-<p>A study was made of children who were hospitalized as a result of a car accident. 280 of the children were not wearing seat belts and 98 of these were seriously injured. 130 children wore seat belts and 26 were seriously injured.</p>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Test the hypothesis that the rate of serious injury is the same for children who wear a seat belt or not. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5%.</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/Nq2eeB-f5sw"> Click here for Solution</a></li>
-</ul>
-<hr />
-<h4>
-Worked Example 2
-</h4>
-<p>63 of 100 first time convicts serving at least 3 years re-offended, whereas 70 of 140 first time convicts serving less than 3 years re-offended.</p>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Test the null hypothesis that the re-offending rate does not depend on the length of the first sentence at a significance level of 5%.</li>
-<li>Calculate a 95% confidence interval for the difference in the re-offending rates of these two groups.</li>
-<li>Based on this confidence interval, is there any evidence that the re-offending rates differ?</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/B8awiXyZFnc"> Click here for Solution to part (a) - the hypothesis test</a></li>
-</ul>
-<hr />
-<h4>
-Worked Example 3
-</h4>
-<p>It is generally assumed that older people are more likely to vote for the Conservatives than younger people. In a survey, 180 of 400 people over 40 and 120 of 400 people under 40 stated they would vote Conservative.</p>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Do the data support this hypothesis at a significance level of 5%?</li>
-<li>Calculate a 95% confidence interval for the difference between the proportion of people over 40 voting Conservative and the proportion of people below 40 voting Conservative.</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/B8awiXyZFnc"> Click here for Solution to part (a) - the hypothesis test</a></li>
-</ul>
-<hr />
-<h4>
-Worked Example 4
-</h4>
-<p>A study was carried out to compare two treatments for the flu. A total of 500 newly diagnosed flu patients were randomly assigned to one of the two treatments.</p>
-<ul>
-<li>Of the 280 assigned to the first treatment, 168 still had the flu after 2 days after diagnosis.</li>
-<li>Of the 220 assigned to the second treatment, 176 still had the flu after 2 days after diagnosis.</li>
-</ul>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Test the hypothesis that the 2 day recovery rate is the same for treatment groups. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5%.</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/ndyzeIwwVjI"> Click here for Solution</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="testing-model-assumptions" class="section level1" data-navmenu="Inference Procedures">
-<h1>Testing Model Assumptions</h1>
-<div id="column-5" class="section level2 tabset">
-<h2>Column</h2>
-<div id="testing-procedures" class="section level3">
-<h3>Testing Procedures</h3>
-<h5>
-Testing Procedures
-</h5>
-<ul>
-<li><a href="https://youtu.be/R5CI_v66kag"> Exploratory Data Analysis with Minitab Graphical Summaries </a>.<br />
-</li>
-<li><a href="https://youtu.be/R5CI_v66kag"> Normal Probability (QQ) plots </a>.</li>
-<li><a href="https://youtu.be/wXrvg03NSjw"> Anderson Darling Test </a>.</li>
-<li><a href="https://www.youtube.com/watch?v=vo9DssNQA4E"> The Shapiro-Wilk Test </a>.</li>
-</ul>
-</div>
-<div id="the-dixon-q-test" class="section level3">
-<h3>The Dixon Q test</h3>
-<h5>
-The Dixon Q test
-</h5>
-<p>The Dixon Q test is used for identification and rejection of outliers. This assumes normal distribution and per Robert Dean and Wilfrid Dixon, and others, this test should be used sparingly and never more than once in a data set. To apply a Q test for bad data, arrange the data in order of increasing values and calculate Q as defined:</p>
-<p><span class="math display">\[ {\displaystyle Q={\frac {\text{gap}}{\text{range}}}} \]</span></p>
-<p>Where gap is the absolute difference between the outlier in question and the closest number to it. If Q &gt; Qtable, where Qtable is a reference value corresponding to the sample size and confidence level, then reject the questionable point. Note that only one point may be rejected from a data set using a Q test.</p>
-<h5>
-Videos
-</h5>
-<ul>
-<li><a href="https://youtu.be/CS_Qgx-IX-8">The Dixon Q Test </a></li>
-<li><a href="https://youtu.be/oz1SO-96ByQ">The Dixon Q Test - Worked Example </a></li>
-</ul>
-</div>
-<div id="the-grubbs-outlier-test" class="section level3">
-<h3>The Grubb’s Outlier Test</h3>
-<h5>
-The Grubb’s Outlier Test
-</h5>
-<p>Statisticians have devised several ways to detect outliers. Grubbs’ test is particularly easy to follow. This method is also called the ESD method (extreme studentized deviate).</p>
-<p>The first step is to quantify how far the outlier is from the others. Calculate the ratio Z as the difference between the outlier and the mean divided by the SD. If Z is large, the value is far from the others. Note that you calculate the mean and SD from all values, including the outlier.</p>
-<p>Since 5% of the values in a Gaussian population are more than 1.96 standard deviations from the mean, your first thought might be to conclude that the outlier comes from a different population if Z is greater than 1.96. This approach only works if you know the population mean and SD from other data. Although this is rarely the case in experimental science, it is often the case in quality control. You know the overall mean and SD from historical data, and want to know whether the latest value matches the others. This is the basis for quality control charts.</p>
-<p>When analyzing experimental data, you don’t know the SD of the population. Instead, you calculate the SD from the data. The presence of an outlier increases the calculated SD. Since the presence of an outlier increases both the numerator (difference between the value and the mean) and denominator (SD of all values), Z does not get very large. In fact, no matter how the data are distributed, Z can not get larger than, where N is the number of values. For example, if N=3, Z cannot be larger than 1.155 for any set of values.</p>
-<p>Grubbs and others have tabulated critical values for Z which are tabulated below. The critical value increases with sample size, as expected.</p>
-<p>If your calculated value of Z is greater than the critical value in the table, then the P value is less than 0.05. This means that there is less than a <span class="math inline">\(5\%\)</span> chance that you’d encounter an outlier so far from the others (in either direction) by chance alone, if all the data were really sampled from a single Gaussian distribution. Note that the method only works for testing the most extreme value in the sample (if in doubt, calculate Z for all values, but only calculate a P value for Grubbs’ test from the largest value of Z.</p>
-<p>Once you’ve identified an outlier, you may choose to exclude that value from your analyses. Or you may choose to keep the outlier, but use robust analysis techniques that do not assume that data are sampled from Gaussian populations.</p>
-<p>If you decide to remove the outlier, you then may be tempted to run Grubbs’ test again to see if there is a second outlier in your data. If you do this , you cannot use the same table.</p>
-<p>.</p>
-<h5>
-Videos
-</h5>
-</div>
-<div id="the-andersondarling-test" class="section level3">
-<h3>The Anderson–Darling test</h3>
-<h5>
-The Anderson–Darling test
-</h5>
-<p>The Anderson–Darling test is a statistical test of whether there is evidence that a given sample of data did not arise from a given probability distribution. In its basic form, the test assumes that there are no parameters to be estimated in the distribution being tested, in which case the test and its set of critical values is distribution-free. However, the test is most often used in contexts where a family of distributions is being tested, in which case the parameters of that family need to be estimated and account must be taken of this in adjusting either the test-statistic or its critical values. When applied to testing if a normal distribution adequately describes a set of data, it is one of the most powerful statistical tools for detecting most departures from normality.</p>
-</div>
-</div>
-</div>
-<div id="differences-in-means" class="section level1" data-navmenu="Confidence Intervals">
-<h1>Differences in Means</h1>
-<div id="column-6" class="section level2 tabset">
-<h2>Column</h2>
-<div id="differences-in-means-1" class="section level3">
-<h3>Differences in Means</h3>
-<h5>
-Differences in Means
-</h5>
-</div>
-<div id="examples" class="section level3">
-<h3>Examples</h3>
-</div>
-</div>
-</div>
-<div id="hypothesis-testing-1" class="section level1" data-navmenu="Hypothesis Testing">
-<h1>Hypothesis Testing</h1>
-<div id="column-7" class="section level2 tabset">
-<h2>Column</h2>
-<div id="one-way-anova-in-experimental-design" class="section level3">
-<h3>One Way ANOVA in Experimental Design</h3>
-<h5>
-One Way ANOVA
-</h5>
-</div>
-<div id="p-values" class="section level3">
-<h3>p-values</h3>
-</div>
-</div>
-</div>
-<div id="inference-procedures-for-proportions-1" class="section level1" data-navmenu="Inference Procedures">
-<h1>Inference Procedures for Proportions</h1>
-<div id="column-8" class="section level2 tabset">
-<h2>Column</h2>
-<div id="hypothesis-testing-2" class="section level3">
-<h3>Hypothesis Testing</h3>
-<h5>
-Hypothesis Testing For Proportions
-</h5>
-<ul>
-<li><a href="https://youtu.be/fzIRjiSoW2o/">Hypothesis Testing For Proportions</a></li>
-<li><a href="https://youtu.be/d97sSFMXSLQ/">Two Sample Proportion Hypothesis Test</a></li>
-</ul>
-</div>
-<div id="confidence-intervals-1" class="section level3">
-<h3>Confidence Intervals</h3>
-<ul>
-<li><a href="https://youtu.be/tz3Kyp7yUSQ/"> Confidence Interval for Single Sample Proportion </a><br />
-</li>
-<li><a href="https://youtu.be/ZTK1R7tylh8/"> Confidence Interval of Sample Variance </a><br />
-</li>
-<li><a href="https://youtu.be/oj9oo6aIVG4/"> Confidence Intervals for Proportions </a><br />
-</li>
-<li><a href="https://youtu.be/fzIRjiSoW2o/"> Hypothesis Testing For Proportions </a><br />
-</li>
-<li><a href="https://youtu.be/d97sSFMXSLQ/"> Two Sample Proportion Hypothesis Test </a></li>
-</ul>
-</div>
-<div id="worked-examples-1" class="section level3">
-<h3>Worked Examples</h3>
-<h4>
-Worked Example 1
-</h4>
-<p>A study was made of children who were hospitalized as a result of a car accident. 280 of the children were not wearing seat belts and 98 of these were seriously injured. 130 children wore seat belts and 26 were seriously injured.</p>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Test the hypothesis that the rate of serious injury is the same for children who wear a seat belt or not. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5%.</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/Nq2eeB-f5sw"> Click here for Solution</a></li>
-</ul>
-<hr />
-<h4>
-Worked Example 2
-</h4>
-<p>63 of 100 first time convicts serving at least 3 years re-offended, whereas 70 of 140 first time convicts serving less than 3 years re-offended.</p>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Test the null hypothesis that the re-offending rate does not depend on the length of the first sentence at a significance level of 5%.</li>
-<li>Calculate a 95% confidence interval for the difference in the re-offending rates of these two groups.</li>
-<li>Based on this confidence interval, is there any evidence that the re-offending rates differ?</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/B8awiXyZFnc"> Click here for Solution to part (a) - the hypothesis test</a></li>
-</ul>
-<hr />
-<h4>
-Worked Example 3
-</h4>
-<p>It is generally assumed that older people are more likely to vote for the Conservatives than younger people. In a survey, 180 of 400 people over 40 and 120 of 400 people under 40 stated they would vote Conservative.</p>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Do the data support this hypothesis at a significance level of 5%?</li>
-<li>Calculate a 95% confidence interval for the difference between the proportion of people over 40 voting Conservative and the proportion of people below 40 voting Conservative.</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/B8awiXyZFnc"> Click here for Solution to part (a) - the hypothesis test</a></li>
-</ul>
-<hr />
-<h4>
-Worked Example 4
-</h4>
-<p>A study was carried out to compare two treatments for the flu. A total of 500 newly diagnosed flu patients were randomly assigned to one of the two treatments.</p>
-<ul>
-<li>Of the 280 assigned to the first treatment, 168 still had the flu after 2 days after diagnosis.</li>
-<li>Of the 220 assigned to the second treatment, 176 still had the flu after 2 days after diagnosis.</li>
-</ul>
-<h5>
-Exercises
-</h5>
-<ol style="list-style-type: lower-alpha">
-<li>Test the hypothesis that the 2 day recovery rate is the same for treatment groups. Clearly state your null and alternative hypotheses and your conclusion. Use a significance level of 5%.</li>
-</ol>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/ndyzeIwwVjI"> Click here for Solution</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="inference-procedures-for-small-samples" class="section level1" data-navmenu="Inference Procedures">
-<h1>Inference Procedures for Small Samples</h1>
-<div id="column-9" class="section level2 tabset">
-<h2>Column</h2>
-<ul>
-<li><a href="https://youtu.be/5DY3j8nw5sg/"> Working With Small Samples </a></li>
-</ul>
-</div>
-</div>
-<div id="dixon-q-test-for-outliers" class="section level1" data-navmenu="Testing Model Assumptions">
-<h1>Dixon Q-Test for Outliers</h1>
-<div id="column-10" class="section level2 tabset">
-<h2>Column</h2>
-<div id="dixon-q-test-for-outliers-1" class="section level3">
-<h3>Dixon Q-Test for Outliers</h3>
-<h5>
-Dixon Q-Test for Outliers
-</h5>
-<p>Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set. \ .</p>
-<p><span class="math display">\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]</span></p>
-<ul>
-<li>Arrange the data set into ascending order.</li>
-</ul>
-<p><span class="math display">\[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]</span></p>
-<ul>
-<li><p>Here the potential outlier is the lowest value, i.e. 19</p></li>
-<li><p>We can formally state the null and alternative hypothesis as follows</p></li>
-</ul>
-<h5>
-Hypotheses
-</h5>
-<ul>
-<li>[H<span class="math inline">\(_0\)</span>] There are no outliers present in the data.</li>
-<li><p>[H<span class="math inline">\(_1\)</span>] There is one outlier present \ (i.e. the lowest value 19)</p></li>
-<li><p>The test statistic for this procedure is as follows:</p></li>
-</ul>
-<p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} \]</span></p>
-<ul>
-<li>The gap is the difference of the outlier from the next value. In this case , the next value is 25, so the gap is <span class="math display">\[ \mbox{Gap} = 25 - 19 = 6\]</span></li>
-<li><p>The range is simply the difference between the maximum and minimum value. <span class="math display">\[ \mbox{Range} = 37-19 =18\]</span></p></li>
-<li><p><span class="math display">\[ Q_{TS} =  \frac{\mbox{Gap}}{\mbox{Range}} = \frac{6}{18} =0.333 \]</span></p></li>
-<li><p>Before we look at the critical value, we confirm the size of the data set is <span class="math inline">\(n=10\)</span>.</p></li>
-<li><p>The critical value can be determined from the following table. \ <span class="math inline">\(\bullet\)</span> The column to chose is the significance level (here 5% or 0.05 ). \ <span class="math inline">\(\bullet\)</span> The row to use is <span class="math inline">\(n\)</span>, the number of items in the data set.</p></li>
-</ul>
-<hr />
-
-<ul>
-<li></li>
-<li></li>
-<li><p>If the Test Statistic is greater than the Critical value, reject the null hypothesis <span class="math display">\[ Q_{TS} &gt; Q_{CV}\]</span></p></li>
-<li><p>Otherwise we fail to reject the null hypothesis</p></li>
-</ul>
-</div>
-<div id="worked-example" class="section level3">
-<h3>Worked Example</h3>
-<h4>
-Worked Example
-</h4>
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
-<h5>
-Solution
-</h5>
-<ul>
-<li><a href="https://youtu.be/C0KltVEk6c8"> Click here for Demonstration</a></li>
-</ul>
-<hr />
-<div id="step-1-hypotheses-for-the-dixon-test." class="section level4">
-<h4>Step 1: Hypotheses for the Dixon Test.</h4>
-<p><span class="math inline">\(H_0\)</span> No Outlier Present in Data <span class="math inline">\(H_1\)</span> There is an Outlier present in Data (You may identify it)</p>
-<p>
-<hr />
-</div>
-<div id="step-2-dixon-q-test-statistic" class="section level4">
-<h4>Step 2: Dixon Q Test Statistic</h4>
-<p>To apply a Q test for suspicious data, arrange the data in order of increasing values and calculate Q as defined:</p>
-<p><span class="math display">\[ Q = \frac{\text{gap}}{\text{range}} \]</span></p>
-<p>Where gap is the absolute difference between the outlier in question and the closest number to it.</p>
-<p>
-<hr />
-<p>Consider the data set:</p>
-<p><span class="math display">\[0.189,\ 0.167,\ 0.187,\ 0.183,\ 0.186,\]</span><span class="math display">\[ 0.182,\ 0.181,\ 0.184,\ 0.181,\ 0.177 \,\]</span></p>
-<p>Now rearrange in increasing order:</p>
-<p><span class="math display">\[0.167,\ 0.177,\ 0.181,\ 0.181,\ 0.182,\]</span><span class="math display">\[ 0.183,\ 0.184,\ 0.186,\ 0.187,\ 0.189 \, \]</span></p>
-We hypothesize 0.167 is an outlier (based on it’s large gap to next number, i.e. 0.010).
-<p>
-<hr />
-</div>
-<div id="test-statistic" class="section level4">
-<h4>Test Statistic</h4>
-Calculate The Test Statistic <span class="math inline">\(Q_{Ts}\)</span>: <span class="math display">\[ Q_{TS}=\frac{\text{gap}}{\text{range}} = \frac{0.177-0.167}{0.189-0.167}=0.455.\]</span>
-<p>
-<table style="width:42%;">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:18px;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:18px;font-weight:normal;padding:11px 15px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-b44r{background-color:#cbcefb;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-76so{font-size:18px;background-color:#cbcefb;vertical-align:top}
+</style>
+<center>
+<table class="tg" style="undefined;table-layout: fixed; width: 900px">
 <colgroup>
-<col width="41%"></col>
+<col style="width: 200px">
+<col style="width: 200px">
+<col style="width: 200px">
+<col style="width: 200px">
 </colgroup>
 <tbody>
-<tr class="odd">
-<td align="left">#### Critical Value</td>
+<tr>
+<td class="tg-76so">
+<strong> <a href="exploratorydataanalysis.html">Exploring Data</a></strong><br>Measures of Centrality and Dispersion
+</td>
+<td class="tg-76so">
+<strong> <a href="graphicalprocedures.html">Graphical Procedures</a></strong><br> Histograms, Boxplots, Ogives
+</td>
+<td class="tg-76so">
+<strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
+</td>
+<td class="tg-76so">
+<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong>
+</td>
 </tr>
-<tr class="even">
-<td align="left">* Choose the Critical Value based on sample size and significance level <span class="math inline">\(\alpha\)</span>.  In this table we work on the basis of confidence level. Let’s use 95% as our confidence level. \ (i.e. 5% significance, i.e. <span class="math inline">\(\alpha=0.05)\)</span></td>
+<tr>
+<td class="tg-76so">
+<strong> <a href="testingassumptions.html">Testing Distributional Assumptions</a></strong> <br> Testing Normality and Outlier Detection
+</td>
+<td class="tg-76so">
+<strong> <a href="inference.html">Inference Procedures</a></strong> <br>Confidence Intervals and Hypothesis Testing
+</td>
+<td class="tg-76so">
+<strong> <a href="bivariatedata.html">Bivariate Data</a></strong> <br>Correlation Coefficients &amp; Hypothesis Tests, Chi Square Test for Independence
+</td>
+<td class="tg-76so">
+<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models, Residual Analysis, Regression ANOVA
+</td>
 </tr>
-<tr class="odd">
-<td align="left">#### Step 4 : Dixon Q Test: Decison Rule</td>
+<tr>
+<td class="tg-76so">
+<strong><a href="discreterandomvariables.html">Discrete Random Variables</a></strong><br>Expectations and variance of discrete random variables, Joint Distribution of discrete random variables
+</td>
+<td class="tg-76so">
+<strong><a href="continuousrandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of continuous random variables
+</td>
+<td class="tg-76so">
+<strong><a href="randomvariables2.html">More on Random Variables</a></strong><br> Moment Generating Functions, Cumulant Generating Functions
+</td>
+<td class="tg-76so">
+<strong><a href="randomnumbers.html">Random Number Generation</a></strong>
+</td>
 </tr>
-<tr class="even">
-<td align="left">* If <span class="math inline">\(Q_{TS} &gt; Q_{CV}\)</span> , where <span class="math inline">\(Q_{CV}\)</span> is a critical value corresponding to the sample size and confidence level, then reject the null hypothesis. * If <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> , we fail to reject. null hypothesis. i.e. Not enough evidence. </td>
-</tr>
-<tr class="odd">
-<td align="left">* At 95% confidence, <span class="math inline">\(Q_{TS} \leq Q_{CV}\)</span> i.e $ 0.455 0.466$ * Therefore we dont have enough evidence to classify the lowest value 0.167 as an outlier.</td>
-</tr>
-<tr class="even">
-<td align="left">Non-parametric Tests {data-navmenu=“Inference Procedures”} ===========================================================</td>
-</tr>
-<tr class="odd">
-<td align="left">Column{.tabset}</td>
+<tr>
+<td class="tg-76so">
+<strong> <a href="gametheory.html">Game Theory and Decision Theory</a></strong><br>Matrix Games
+</td>
+<td class="tg-76so">
+<strong> <a href="experimentaldesign.html">Experimental Design</a></strong><br>ANOVA Procedures, Testing Model Assumptions
+</td>
+<td class="tg-76so">
+<strong> <a href="survivalanalysis.html">Survival Analysis</a></strong> <br>Non parametric approaches, Cox proportional hazard models
+</td>
+<td class="tg-76so">
+<strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
+</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="introduction" class="section level3">
-<h3>Introduction</h3>
-<h3>
-Non-parametric Statistics: Terminology
-</h3>
-<p>An experiment conducted under controlled conditions, using factor-levels intended to estimate specified factors and their interactions. A designed experiment may be contrasted with the analysis of happenstance, historical or casual data.</p>
-<p>A designed experiment presumes that the process being studied or the simulation being performed is stable and that the important factors in the process have been recognized. While an experiment may be performed on an unstable process, the results may not be directly useful because of large experimental error. All the important factors must be included; otherwise, the factors cannot completely describe the process.</p>
-</div>
-<div id="non-parametric-tests" class="section level3">
-<h3>Non-parametric Tests</h3>
-<ul>
-<li><p><a href="https://youtu.be/jdpHIFyX-6g/">The Sign Test : Hearing Test Example (Non Parametric Hypothesis Testing)</a></p></li>
-<li><p><a href="https://youtu.be/d51CcSfU4fQ/"> Wilcoxon Signed Rank Test - Aural Memory Tests Example (Non Parametric Tests)</a></p></li>
-<li><p><a href="https://youtu.be/3j9iXHVnK3k/"> Wilcoxon Signed Rank Test (Non-Parametric Hypothesis Tests) </a></p></li>
-<li><p><a href="https://youtu.be/b7DzkB4Pa3Y/">Wilcoxon Rank Sum Test (Non-parametrics Tests)</a></p></li>
-</ul>
-</div>
-<div id="statistical-tables" class="section level3">
-<h3>Statistical Tables</h3>
+</center>
 </div>
 </div>
 </div>
-<div id="sample-size-estimation" class="section level1" data-navmenu="Sample Size Estimation">
-<h1>Sample Size Estimation</h1>
-<div id="column-11" class="section level2 tabset">
+<div id="distributional-tests" class="section level1">
+<h1>Distributional Tests</h1>
+<div id="column-2" class="section level2 tabset">
 <h2>Column</h2>
-<div id="sample-size-estimation-1" class="section level3">
-<h3>Sample Size Estimation</h3>
-<h5>
-Sample Size Estimation For Proportions Worked Example
-</h5>
+<div id="kolmogorov-smirnov-test" class="section level3">
+<h3>Kolmogorov-Smirnov test</h3>
+<p>The Kolmogorov-Smirnov test is defined by:</p>
+<p>H<span class="math inline">\(_0\)</span>: The data follow a specified distribution H<span class="math inline">\(_1\)</span>: The data do not follow the specified distribution</p>
+<p>Test Statistic: The Kolmogorov-Smirnov test statistic is defined as</p>
+<p>where F is the theoretical cumulative distribution of the distribution being tested which must be a continuous distribution (i.e., no discrete distributions such as the binomial or Poisson), and it must be fully specified</p>
+</div>
+<div id="characteristics-and-limitations-of-the-k-s-test" class="section level3">
+<h3>Characteristics and Limitations of the K-S Test</h3>
+An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. Another advantage is that it is an exact test (the chi-square goodness-of-fit test depends on an adequate sample size for the approximations to be valid). Despite these advantages, the K-S test has several important limitations:
+<p>
+<ol style="list-style-type: decimal">
+<li>It only applies to continuous distributions.</li>
+<li>It tends to be more sensitive near the center of the distribution than at the tails.</li>
+<li>Perhaps the most serious limitation is that the distribution must be fully specified. That is, if location, scale, and shape parameters are estimated from the data, the critical region of the K-S test is no longer valid. It typically must be determined by simulation.</li>
+</ol>
+<p>
+<p>Due to limitations 2 and 3 above, many analysts prefer to use the Anderson-Darling goodness-of-fit test.</p>
+<p>However, the Anderson-Darling test is only available for a few specific distributions.</p>
+</div>
+<div id="the-anderson--darling-test" class="section level3">
+<h3>The Anderson -Darling test</h3>
+<p>The Anderson -Darling test is a statistical test of whether there is evidence that a given sample of data did not arise from a given probability distribution.</p>
+<p>In its basic form, the test assumes that there are no parameters to be estimated in the distribution being tested, in which case the test and its set of critical values is distribution-free. However, the test is most often used in contexts where a family of distributions is being tested, in which case the parameters of that family need to be estimated and account must be taken of this in adjusting either the test-statistic or its critical values.</p>
+<p>When applied to testing if a normal distribution adequately describes a set of data, it is one of the most powerful statistical tools for detecting most departures from normality.</p>
+<hr />
+</div>
+<div id="the-shapiro-wilk-test-of-normality" class="section level3">
+<h3>The Shapiro-Wilk test of normality</h3>
+<p>Performs the Shapiro-Wilk test of normality.</p>
+<pre><code>
+&gt; x&lt;- rnorm(100, mean = 5, sd = 3)
+&gt; shapiro.test(x)
+
+        Shapiro-Wilk normality test
+
+data:  rnorm(100, mean = 5, sd = 3)
+W = 0.9818, p-value = 0.1834
+</code></pre>
+<p>
+<p>In this case, the p-value is greater than 0.05, so we fail to reject the null hypothesis that the data set is normally distributed.</p>
+<pre><code>
+&gt;y &lt;- runif(100, min = 2, max = 4)
+&gt; shapiro.test(y)
+
+        Shapiro-Wilk normality test
+
+data:  runif(100, min = 2, max = 4)
+W = 0.9499, p-value = 0.0008215
+</code></pre>
+<p>
+<p>In this case, the p-value is less than 0.05, so we reject the null hypothesis that the data set is normally distributed.</p>
+
+
+<p>
 <ul>
-<li><a href="https://youtu.be/ayErcU5xUQI/">Sample Size Estimation For Proportions Worked Example</a></li>
+<li>Normal probability plot * Outliers * dixon test</li>
+<li>Grubbs test</li>
 </ul>
+</div>
+<div id="grubbs-test" class="section level3">
+<h3>Grubb’s Test</h3>
+<div id="grubbs-test-for-detecting-outliers" class="section level4">
+<h4>Grubb’s Test for Detecting Outliers</h4>
+<p>Statisticians have devised several ways to detect outliers. Grubbs’ test is particularly easy to follow. This method is also called the ESD method (extreme studentized deviate). The first step is to quantify how far the outlier is from the others. Calculate the ratio Z as the difference between the outlier and the mean divided by the SD. If Z is large, the value is far from the others. Note that you calculate the mean and SD from all values, including the outlier.</p>
+<p>
+Since 5% of the values in a Gaussian population are more than 1.96 standard deviations from the mean, your first thought might be to conclude that the outlier comes from a different population if Z is greater than 1.96. This approach only works if you know the population mean and SD from other data. Although this is rarely the case in experimental science, it is often the case in quality control. You know the overall mean and SD from historical data, and want to know whether the latest value matches the others. This is the basis for quality control charts.
+<p>
+<p>When analyzing experimental data, you don’t know the SD of the population. Instead, you calculate the SD from the data. The presence of an outlier increases the calculated SD. Since the presence of an outlier increases both the numerator (difference between the value and the mean) and denominator (SD of all values), Z does not get very large. In fact, no matter how the data are distributed, Z can not get larger than, where N is the number of values. For example, if N=3, Z cannot be larger than 1.155 for any set of values.</p>
+<p>
+<p>Grubbs and others have tabulated critical values for Z which are tabulated below. The critical value increases with sample size, as expected.</p>
+<p>
+<p>If your calculated value of Z is greater than the critical value in the table, then the P value is less than 0.05. This means that there is less than a 5% chance that you’d encounter an outlier so far from the others (in either direction) by chance alone, if all the data were really sampled from a single Gaussian distribution. Note that the method only works for testing the most extreme value in the sample (if in doubt, calculate Z for all values, but only calculate a P value for Grubbs’ test from the largest value of Z.</p>
+<p>
+<p>Once you’ve identified an outlier, you may choose to exclude that value from your analyses. Or you may choose to keep the outlier, but use robust analysis techniques that do not assume that data are sampled from Gaussian populations.</p>
+<p>
+<p>If you decide to remove the outlier, you then may be tempted to run Grubbs’ test again to see if there is a second outlier in your data. If you do this , you cannot use the same table.</p>
+</div>
+<div id="grubbs-test-1" class="section level4">
+<h4>Grubbs’ Test</h4>
+Grubbs’ test is a formal hypothesis test for assessing whether or not a data set contains an outlier. This data set is univariate and approximately normal distributed. This test is designed for assessing one outlier only. If more outliers are suspected, alternative tests, such as the Tietjen-Moore test, are recommended. Hypotheses: Grubbs’ test is defined for the hypothesis:
+<p>
+
+: There are no outliers in the data set<br />
+: There is exactly one outlier in the data set<br />
+
+<p>
+<p>
+<pre><code>
+install.packages(&quot;outliers&quot;)
+library(outliers)
+#Package Author : Lukasz Komsta (UMLUB, Poland)
+
+grubbs.test(DAT002)
+</code></pre>
+<p>\end{framed}</p>
+</div>
+<div id="critical-values-for-z" class="section level4">
+<h4>{Critical values for Z}</h4>
+<p>Calculate Z as shown above. Look up the critical value of Z in the table below, where N is the number of values in the group. If your value of Z is higher than the tabulated value, the P value is less than 0.05.</p>
+</div>
+<div id="computing-an-approximate-p-value" class="section level4">
+<h4>{Computing an approximate P value}</h4>
+<p>You can also calculate an approximate P value as follows.</p>
+<p>N is the number of values in the sample, Z is calculated for the suspected outlier as shown above. Look up the two-tailed P value for the student t distribution with the calculated value of T and N-2 degrees of freedom. Using Excel, the formula is =TDIST(T,DF,2) (the ‘2’ is for a two-tailed P value).</p>
+<p>Multiply the P value you obtain in step 2 by N. The result is an approximate P value for the outlier test. This P value is the chance of observing one point so far from the others if the data were all sampled from a Gaussian distribution. If Z is large, this P value will be very accurate. With smaller values of Z, the calculated P value may be too large.</p>
+</div>
+</div>
+<div id="dixons-q-test" class="section level3">
+<h3>Dixon’s Q test</h3>
+<p>In statistics, Dixon’s Q test, or simply the Q test, is used for identification and rejection of outliers. This test should be used sparingly and never more than once in a data set. To apply a Q test for bad data, arrange the data in order of increasing values and calculate Q as defined:</p>
+<p><span class="math display">\[
+Q = \frac{\mbox{Gap}}{\mbox{Range}}
+\]</span></p>
+<p>Where gap is the absolute difference between the outlier in question and the closest number to it. If <span class="math inline">\(Q_calculated &gt; Q_table\)</span>, then reject the questionable point.</p>
+</div>
+<div id="kolmogorov-smirnov-test-1" class="section level3">
+<h3>Kolmogorov-Smirnov test</h3>
+<p>The Kolmogorov-Smirnov test is defined by:</p>
+<p>H<span class="math inline">\(_0\)</span>: The data follow a specified distribution H<span class="math inline">\(_1\)</span>: The data do not follow the specified distribution</p>
+<p>Test Statistic: The Kolmogorov-Smirnov test statistic is defined as</p>
+<p>where F is the theoretical cumulative distribution of the distribution being tested which must be a continuous distribution (i.e., no discrete distributions such as the binomial or Poisson), and it must be fully specified</p>
+<div id="characteristics-and-limitations-of-the-k-s-test-1" class="section level4">
+<h4>Characteristics and Limitations of the K-S Test}</h4>
+<p>An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. Another advantage is that it is an exact test (the chi-square goodness-of-fit test depends on an adequate sample size for the approximations to be valid). Despite these advantages, the K-S test has several important limitations:</p>
+<ul>
+<li>It only applies to continuous distributions.</li>
+<li>It tends to be more sensitive near the center of the distribution than at the tails.</li>
+<li>Perhaps the most serious limitation is that the distribution must be fully specified. That is, if location, scale, and shape parameters are estimated from the data, the critical region of the K-S test is no longer valid. It typically must be determined by simulation.
+<p>
+Due to limitations 2 and 3 above, many analysts prefer to use the Anderson-Darling goodness-of-fit test.</li>
+</ul>
+<p>However, the Anderson-Darling test is only available for a few specific distributions.</p>
+</div>
+<div id="kolmogorov---smirnov-test" class="section level4">
+<h4>{Kolmogorov - Smirnov Test}</h4>
+<p>For a single sample ofdata, the Kolmogorov-Smirnov test is used to test whether or not the sample of data is consistent with a specified distribution function. (Not part of this course) When there are two samples of data, it is used to test whether or not these two samples may reasonably be assumed to come from the same distribution. The null and alternative hypotheses are as follows:</p>
+<p>H0: The two data sets are from the same distribution H1: The data sets are not from the same distribution</p>
+<p>Consider two sample data sets X and Y that are bothnormally distributed with similar means and variances.</p>
+<pre><code>
+&gt; X=rnorm(16,mean=20,sd=5)
+&gt; Y=rnorm(18,mean=21,sd=4)
+&gt; ks.test(X,Y)
+
+        Two-sample Kolmogorov-Smirnov test
+
+data:  X and Y
+D = 0.2153, p-value = 0.7348
+alternative hypothesis: two-sided
+</code></pre>
+<p>
+<p>Remark: It doesn’t not suffice that both datasets are from the same distribution. They must have the same value for the defining parameters. Consider the case of data sets; X and Z. Both are normally distributed, but with different mean values.</p>
+<pre><code>
+&gt; X=rnorm(16,mean=20,sd=5)
+&gt; Z=rnorm(16,mean=14,sd=5)
+&gt; ks.test(X,Z)
+
+        Two-sample Kolmogorov-Smirnov test
+
+data:  X and Z
+D = 0.5625, p-value = 0.0112
+alternative hypothesis: two-sided
+</code></pre>
+<p>
+<hr />
+
+<p>The Kolmogorov-Smirnov test is defined by: \ H<span class="math inline">\(_0\)</span>: The data follow a specified distribution\ H<span class="math inline">\(_1\)</span>: The data do not follow the specified distribution\</p>
+<p>Test Statistic: The Kolmogorov-Smirnov test statistic is defined as</p>
+<p>where F is the theoretical cumulative distribution of the distribution being tested which must be a continuous distribution (i.e., no discrete distributions such as the binomial or Poisson), and it must be fully specified</p>
+</div>
+<div id="characteristics-and-limitations-of-the-k-s-test-2" class="section level4">
+<h4>{ Characteristics and Limitations of the K-S Test}</h4>
+An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. Another advantage is that it is an exact test (the chi-square goodness-of-fit test depends on an adequate sample size for the approximations to be valid). Despite these advantages, the K-S test has several important limitations:
+
+<p>Due to limitations 2 and 3 above, many analysts prefer to use the Anderson-Darling goodness-of-fit test.</p>
+<p>However, the Anderson-Darling test is only available for a few specific distributions.</p>
+<hr />
+</div>
+</div>
+<div id="kolmogorov-smirnov-test-3" class="section level3">
+<h3>{Kolmogorov-Smirnov test}</h3>
+<p>The Kolmogorov-Smirnov test is defined by:</p>
+<p>H<span class="math inline">\(_0\)</span>: The data follow a specified distribution\ H<span class="math inline">\(_1\)</span>: The data do not follow the specified distribution\</p>
+<p>Test Statistic: The Kolmogorov-Smirnov test statistic is defined as</p>
+<p>where F is the theoretical cumulative distribution of the distribution being tested which must be a continuous distribution (i.e., no discrete distributions such as the binomial or Poisson), and it must be fully specified</p>
+<div id="characteristics-and-limitations-of-the-k-s-test-3" class="section level4">
+<h4>{ Characteristics and Limitations of the K-S Test}</h4>
+An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. Another advantage is that it is an exact test (the chi-square goodness-of-fit test depends on an adequate sample size for the approximations to be valid). Despite these advantages, the K-S test has several important limitations:
+
+<p>Due to limitations 2 and 3 above, many analysts prefer to use the Anderson-Darling goodness-of-fit test.</p>
+<p>However, the Anderson-Darling test is only available for a few specific distributions.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="boxplots" class="section level1">
+<h1>Boxplots</h1>
+<div id="column.tabset" class="section level2">
+<h2>Column.{tabset}</h2>
+<p>To construct a boxplot</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate Q1, the median, Q3 and the IQR.</p></li>
+<li><p>Draw a horizontal line to represent the scale of measurement.</p></li>
+<li><p>Draw a box just above the line with the right and left ends at Q1 and Q3.</p></li>
+<li><p>Draw a line through the box at the location of the median.</p></li>
+<li>To detect outliers you need to determine a lower fence and an upper fence.<br />
+</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Lower fence is<br />
+</li>
+<li>Upper fence is</li>
+</ol>
+<ol start="6" style="list-style-type: decimal">
+<li><p>Any values below the lower fence or above the upper fence are classes as outliers.</p></li>
+<li>To finish the boxplot</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Mark any outliers with an asterisk (*) on the graph.</li>
+<li>Extend horizontal lines , called whiskers, from the ends of the box to the smallest and largest values that are not outliers.</li>
+<li>(Remark – a variation is to extend to the lower and upper fences)</li>
+</ol>
+<p>What to Look for</p>
+<ol style="list-style-type: decimal">
+<li>Outliers The first feature that you look for when analysing a boxplot is the presence of outliers.</li>
+</ol>
+<p>Outliers are extreme values and can greatly influence your analysis. For that reason, you should check your data and make sure you have entered it correctly.</p>
+<p>You also have the option of removing outliers, making a note that you have removed them, and presenting your analysis without them.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Skewed Data The second feature is the degree of skewness. As you learned earlier, the quartiles divide the data into four sections, each containg 25% of the measurements.</li>
+</ol>
+<p>You are interested in how spread out or tightly packed the data are. The length of the whiskers and the position of the median in the box tell you this. Notice that 25% of the values in the boxplot are less than Q1 and this includes the outliers.</p>
+</div>
+</div>
+<div id="assumption-of-normality" class="section level1">
+<h1>Assumption of Normality</h1>
+<div id="column-3" class="section level2 tabset">
+<h2>column</h2>
+<h3>
+Assumption of Normality
+</h3>
+One of the assumptions of many statistical procedures (including the t-test) is that the population from which you are sampling is normally distributed. The t-test is said to be rather ‘robust’ in terms of this assumption, which means that reality can deviate from this assumption a fair amount without seriously affecting the validity of the analysis.
+<p>
+This is particularly true when the size of the samples is large (thanks to the Central Limit Theorem). Some deviations from normality can pose a problem for the t-test, specifically those that involve getting extreme scores more frequently than you would if the distribution were normal. Statistical Software Packages provides two statistical tests for deviation from normality, the ‘Kolomogorov-Smirnov’ family of tests and the ‘Shapiro-Wilk’ test. The ‘Kolomogorov-Smirnov’ test can be used to test if two data sets are distributed according to the same distribution. It can also be used to test if one data set comes from a specified distribution, such as the normal distribution. ( As such, the normal distribution must be specified as an argument to the function.)
+<p>
+For the purposes of this module, we will only use a special case of the ‘Kolomogorov-Smirnov’ test, known as the ‘Anderson-Darling’ test of normality.
+<p>
+The  test can not be implemented directly in R. Using the test requires the installation of the nortest package. We will look at packages in greater detail later in the semester.
+<p>
+<p>The null hypothesis of both the <code>Anderson-Darling’ and</code>Shapiro-Wilk’ tests is that the population is normally distributed, and the alternative hypothesis is that the data is not normally distributed.</p>
+<div id="graphical-methods" class="section level3">
+<h3>Graphical Methods</h3>
+<p>
+The quantile-quantile (Q-Q) plot is an excellent way to see whether the data deviate from normal (the plot can be set up to see if the data deviate from other distributions as well but here we are only interested in the normal distribution).
+<p>
+<p>The process used for creating a QQ plot involves determining what proportion of the ‘observed’ scores fall below any one score, then the “z- score” that would fit that proportion if the data were normally distributed is calculated, and finally that “z- score” that would cut off that proportion (the ‘expected normal value’) is translated back into the original metric to see what raw score that would be.</p>
+<p>
+<p>A scatter plot is then created that shows the relationship between the actual ‘observed’ values and what those values would be ‘expected’ to be if the data were normally distributed. If the data is normally distributed then the circles on the resulting plot (each circle representing a score) will form a straight line. A trend line can be added to the plot to assist in determining whether or not this relationship is linear.</p>
+</div>
+<div id="logarithmic-transformation" class="section level3">
+<h3>Logarithmic Transformation</h3>
+<p>If data deviate substantially from a Gaussian distribution, using a nonparametric test is not the only alternative. Consider transforming the data to create a Gaussian distribution. Transforming to reciprocals or logarithms are often helpful. Data can fail a normality test because of the presence of an outlier. Removing that outlier can restore normality. The decision of whether to use a parametric or nonparametric test is most important with small data sets (since the power of nonparametric tests is so low). But with small data sets, normality tests have little power to detect non-normal distributions, so an automatic approach would give you false confidence.</p>
+<p>With large data sets, normality tests can be too sensitive. A low p-value from a normality test tells you that there is strong evidence that the data are not sampled from an ideal normal distribution. But you already know that, as almost no scientifically relevant variables form an ideal normal distribution. What you want to know is whether the distribution deviates enough from the normal ideal to invalidate conventional statistical tests (that assume a Gaussian distribution). A normality test does not answer this question. With large data sets, trivial deviations from the idea can lead to a small p-value.</p>
+</div>
+<div id="outliers" class="section level3">
+<h3>Outliers</h3>
+<p>If the outlier test identifies one or more values as being an outlier, we must consider the following</p>
+<ol style="list-style-type: decimal">
+<li><p>Was the outlier value entered into the computer incorrectly? If the “outlier” is in fact a typo, fix it. It is always worth going back to the original data source, and checking that outlier value entered into Prism is actually the value you obtained from the experiment. If the value was the result of calculations, check for math errors.</p></li>
+<li><p>Is the outlier value scientifically impossible? Of course you should remove outliers from your data when the value is completely impossible. Examples include a negative weight, or an age (of a person) that exceed 150 years. Those are clearly errors, and leaving erroneous values in the analysis would lead to nonsense results.</p></li>
+<li><p>Is the assumption of a Normal distribution dubious? The Grubbs’ tests assume that all the values are sampled from a Gaussian distribution, with the possible exception of one (or a few) outliers from a different distribution. If the underlying distribution is not Gaussian, then the results of the outlier test is unreliable. It is especially important to beware of lognormal distributions. If the data are sampled from a lognormal distribution, you expect to find some very high values which can easily be mistaken for outliers. Removing these values would be a mistake.</p></li>
+<li><p>Is the outlier value potentially scientifically interesting? If each value is from a different animal or person, identifying an outlier might be important. Just because a value is not from the same normal distribution as the rest doesn’t mean it should be ignored. An interesting phenomenon may have been discovered. Don’t discard the data as an outlier without considering if the observation is potentially scientifically interesting.</p></li>
+<li>Do the data records indicate any sort of experimental problem with that value It is easier to justify removing a value from the data set when it is not only tagged as an “outlier” by an outlier test, but you also recorded problems with that value when the experiment was performed.</li>
+<li><p>Do you have a policy on when to remove outliers? Ideally, removing an outlier should not be an ad hoc decision. In general , you should follow a policy, and apply that policy consistently.</p></li>
+<li><p>If you are looking for two or more outliers, could masking be a problem?  is the name given to the problem where the presence of two (or more) outliers, can make it harder to find even a single outlier.</p></li>
+</ol>
+<p>If you answered no to all those questions. If you’ve answered no to all the questions above, there are two possibilities: The suspect value came from the same normal population as the other values. You just happened to collect a value from one of the tails of that distribution.</p>
+<p>The suspect value came from a different distribution than the rest. Perhaps it was due to a mistake, such as bad pipetting, voltage spike, holes in filters, etc.</p>
+<p>If you knew the first possibility was the case, you would keep the value in your analyses. Removing it would be a mistake. If you knew the second possibility was the case, you would remove it, since including an erroneous value in your analyses will give invalid results.</p>
+<p>The problem, of course, is that you can never know for sure which of these possibilities is correct. An outlier test cannot answer that question for sure. Ideally, you should create a lab policy for how to deal with such data, and follow it consistently. If you don’t have a lab policy on removing outliers, here is suggestion: Analyze your data both with and without the suspected outlier. If the results are similar either way, you’ve got a clear conclusion. If the results are very different, then you are stuck. Without a consistent policy on when you remove outliers, you are likely to only remove them when it helps push the data towards the results you want.</p>
+<div id="non-parametric-tests" class="section level4">
+<h4>Non-Parametric Tests</h4>
+<p>Many statistical tests assume that you have sampled data from populations that follow a Normal distribution. Biological data never follow a Gaussian distribution precisely, because a Gaussian distribution extends infinitely in both directions, and so it includes both infinitely low negative numbers and infinitely high positive numbers. But many kinds of biological data follow a bell-shaped distribution that is approximately Gaussian.</p>
+<p>Because statistical tests work well even if the distribution is only approximately Gaussian (especially with large samples), these tests are used routinely in many fields of science.</p>
+<p>An alternative approach does not assume that data follow a Gaussian distribution. These tests, called nonparametric tests, are appealing because they require fewer assumptions about the distribution of the data. In this approach, values are ranked from low to high, and the analyses are based on the distribution of ranks. Often, the analysis will be one of a series of experiments. Since you want to analyze all the experiments the same way, you cannot rely on the results from a single normality test.</p>
+</div>
 </div>
 </div>
 </div>

@@ -14,3 +14,31 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r child = 'main/introduction.Rmd'}
 ```
+
+```{r child = 'main/introduction.Rmd'}
+```
+
+```{r child = 'modelassumptions/TestingModelAssumptions.Rmd'}
+```
+
+```{r child = 'modelassumptions/OutlierTests.Rmd'}
+```
+
+```{r child = 'modelassumptions/KS-Test.Rmd'}
+```
+
+```{r child = 'modelassumptions/boxplots.Rmd'}
+```
+
+```{r child = 'modelassumptions/AssumptionOfNormality.Rmd'}
+```
+
+```{r child = 'modelassumptions/logtransforms.Rmd'}
+```
+
+```{r child = 'modelassumptions/outliers.Rmd'}
+```
+
+
+
+

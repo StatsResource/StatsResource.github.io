@@ -1,0 +1,19 @@
+###  Definitions
+
+First, we need to define some terms. These terms will be illustrated using the example of a pre-election poll on which political party is going to win the election.
+
+Population: the entire group of objects/subjects about which information is wanted. For our example, the population is all adults on the electoral register.
+
+Sample: any subset of a population e.g. a representative subset of individuals from the electoral register.
+
+Unit: any individual member of the population e.g. an individual on the electoral register.
+
+
+
+\item[Sampling frame:] a list of the individuals in the population e.g. the electoral register.
+
+\item[Variable:] we can measure its value for each person and its value will change from person to person e.g. the political party the individual will vote for.
+
+\item[Parameter:] this represents some value (e.g. an average value or a percentage) that we are interested in calculating for the population for example the percentage of adults on the electoral register who will vote for a particular political party or the average age of the voters. 
+
+------------------------------------------------

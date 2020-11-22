@@ -14,3 +14,106 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r child = 'main/introduction.Rmd'}
 ```
+
+
+
+
+Discrete Random Variable
+======================================
+
+*  Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
+
+*  For a discrete random variable observed values can occur only at isolated points along a scale of values. In other words, observed values must be integers.
+*  Consider a six sided die: the only possible observed values are 1, 2, 3, 4, 5 and 6. 
+*  It is not possible to observe values that are real numbers, such as 2.091.
+
+*  *(Remark: it is possible for the average of a discrete random variable to be a real number.)*
+
+*  For a discrete random variable observed values can occur only at isolated points along a scale of values. 
+*  For a six sided dice, the only possible observed values are 1, 2, 3, 4, 5 and 6. It is not possible to observe values such as 5.732.
+
+*  For a continuous random variable all possible fractional values of the variable cannot be listed, and
+therefore the probabilities that are determined by a mathematical function are portrayed graphically by a
+probability density function, or probability curve.
+
+
+
+### Expected Value for Discrete Random Variables
+
+The expected value of a random variable X is symbolised by E(X) or $mu$.
+
+
+If X is a discrete random variable with possible values $\{ x1, x2, x3,\ldots , xn\}$, and$ p(x_i)$ denotes P(X = xi), then the expected value of X is defined by: 
+
+\[E(X) = \sum x_i \times P(x_i) \]
+
+where the elements are summed over all values of the random variable X. 
+
+
+### Discrete Random Variables
+
+A random variable is a numerical description of the outcome of an experiment.
+
+Random variables can be classified as discrete or continuous, depending on the numerical values they may take.
+
+A ranom variable that may assume any numerical value in an interval or collection of intervals is called a continuous random variable.
+
+### Worked Examples 
+
+Suppose a fair coin is tossed six times. The number of heads which can occur with their respective
+probabilities are as follows:
+
+xi0123456
+p(xi)1/646/6415/6420/6415/646/641/64
+
+a)Compute the expected value (i.e. expected number of heads).
+b)Compute the variance of the number of heads.
+
+
+
+
+### Tutorial Sheet
+
+<h3> Tutorial Sheet </h3>
+
+<h5> Worked Example 1 </h5>
+
+The probability distribute of discrete random variable $X$ is tabulated below. 
+There are 5 possible outcome of $X$, i.e. 1, 2, 4, 6 and 8.
+\begin{center}
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$x_i$  & 1 & 2 & 4 & 6 & 8  \\\hline
+$p(x_i)$ & 0.50 & 0.15 & 0.20 & 0.05 & 0.10 \\
+\hline
+\end{tabular}
+\end{center}
+
+a. Compute the value of $k$.
+b. What is the expected value of X?
+c. Compute the value of $E(X^2)$.
+d. Given that $E(X^2) = 12.5$, compute the variance of $X$.
+
+
+
+---------------------------------------------------------------------------
+
+<h5> Worked Example 2 </h5>
+
+The probability distribution of discrete random variable $X$ is tabulated below. 
+There are 5 possible outcomes of $X$, i.e. 1, 2, 3, 5 ,10 and 20.
+\begin{center}
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$x_i$  & 1 & 2 & 5 & 10 & 20 \\\hline
+$P(x_i)$ &  0.10 & 0.25 & 0.30& 0.20 &0.15\\
+
+\hline
+\end{tabular}
+\end{center}
+
+a. Determine the expected value $E(X)$.
+b. Evaluate $E(X^2)$.
+c. Compute the variance of random variable $X$.
+
+

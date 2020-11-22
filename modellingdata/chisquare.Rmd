@@ -25,12 +25,83 @@ Contingency tables are used to examine the relationship between subjects’ scor
 
 <h5>Chi square test of independence</h5>
 
+\section{Contingency Tables}
+\begin{itemize}
+<p>In the case of goodness of fit tests, there is only one
+categorical variable, such as the screen size of TV sets that have
+been sold, and what is tested is a hypothesis concerning the
+pattern of frequencies, or the distribution, of the variable.
+
+<p>The observed frequencies can be listed as a single row, or as a
+single column, of categories.
+<p>
+Tests for independence involve (at least) two categorical
+variables, and what is tested is the assumption that the variables
+are statistically independent.
+<p>
+Independence implies that knowledge of the category in which an
+observation is classified with respect to one variable has no
+affect on the probability of the other variable being in one of
+the several categories.
+
+<p>When two variables are involved, the observed frequencies are
+entered in a two-way classification table, or contingency table.
+
+<p>The dimensions of such tables are defined by $r \times c$, in
+which $r$ indicates the number of rows and $c$ indicates the
+number of columns.
+<p>
+If the null hypothesis of independence is rejected for classified
+data such as in Table 12.3, this indicates that the two variables
+are dependent and that there is a relationship between them. For
+Table 12.3, for instance, this would indicate that there is a
+relationship between age and the sex of stereo shop customers.
+
+<p>Given the hypothesis of independence of the two variables, the
+expected frequency associated with each cell of a contingency
+table should be proportionate to the total observed frequencies
+included in the column and in the row in which the cell is located
+as related to the total sample size.
+
+<p>Where $fr$ is the total frequency in a given row and $fc$ is the
+total frequency in a given column, a convenient formula for
+determining the expected frequency for the cell of the contingency
+table that is located in that row and column is
+
+<p>The general formula for the degrees of freedom associated with a
+test for independence is $df = (r - 1)(c - 1)$.
+
+\end{itemize}
+
 If the columns are not contingent on the rows, then the rows and column frequencies are independent. The test of whether the columns are contingent on the rows is called the chi square test of independence. The null hypothesis is that there is no relationship between row and column frequencies.
 
 <h5>Chi-Square Testing</h5>
 
 * Expected Values under the null hypothesis (<a title="ChiSquare-ExpectedValues" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">here</a>)</li>
 * Chi-Square Exercise (<a title="Chi-SquareExercise" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">here</a>)</li>
+
+### Test Statistic
+
+
+For this test we used the chi-squared test statistic which is given by:
+\begin{equation}
+X^2 = \sum_{i=1}^{n} {(O_i - E_i)^2 \over E_i}
+\end{equation}
+
+
+The Chi Square test tests a null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution. The events considered must be mutually exclusive and have total probability 1. A common case for this is where the events each cover an outcome of a categorical variable.
+
+* $X^2$ = the test statistic that asymptotically approaches a $\chi^2$ distribution.
+* $O_i$ = an observed frequency;
+* $E_i$ = an expected (theoretical) frequency, asserted by the null hypothesis;
+* $n $  = the number of possible outcomes of each event.
+
+
+
+The chi-square statistic can then be used to calculate ap-value by comparing the value of the statistic to a chi-square distribution. 
+The number of degrees of freedom is equal to the number of cells ``n'', minus the reduction in degrees of freedom, ``p''.
+
+
 
 
 
