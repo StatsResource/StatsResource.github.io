@@ -29,7 +29,7 @@ Column {.tabset}
   <td class="tg-76so"><strong> <a href = "exploratorydataanalysis.html">Exploring Data</a></strong><br>Measures of Centrality and Dispersion</td>
   <td class="tg-76so"><strong> <a href = "graphicalprocedures.html">Graphical Procedures</a></strong><br> Histograms, Boxplots, Ogives</td>    
   <td class="tg-76so"><strong> <a href = "probability.html">Probability <br> and Random Variables</a></strong> </td>
-  <td class="tg-76so"><strong> <a href = "probabilitydistributions.html">Probability Distributions</a></strong> </td>
+  <td class="tg-76so"><strong> <a href = "probabilitydistributions.html">Probability Distributions</a></strong> <br> Discrete and Continuous probability Distributions. Compound and Mixed Probability Distributions</td>
   </tr>
  
   <tr>
@@ -50,6 +50,12 @@ Column {.tabset}
   <td class="tg-76so"><strong> <a href = "survivalanalysis.html">Survival Analysis</a></strong> <br>Non parametric approaches, Cox proportional hazard models</td>
   <td class="tg-76so"><strong> <a href = "statisticalprocesscontrol.html">Statistical Process Control</a></strong>  </td>
   </tr>
+  <tr>
+  <td class="tg-76so"><strong> <a href = "timeseries.html">Time Series Analysis</a></strong><br>Time Series</td>
+ <td class="tg-76so"> </td>
+ <td class="tg-76so"> </td>
+  <td class="tg-76so"> </td>
+  </tr>  
 </tbody>
 </table>
 </center>

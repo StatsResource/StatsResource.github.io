@@ -11,9 +11,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-
 ```{r child = 'main/introduction.Rmd'}
 ```
+
+### Randon Number Generation 
+
+<h5> Random Number Generation </h5>
 
 ```{r child = 'specialtopics/RandomNumberGeneration.Rmd'}
 ```

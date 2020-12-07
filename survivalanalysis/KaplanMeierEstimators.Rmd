@@ -9,17 +9,17 @@ Column {.tabset}
 
 The Kaplan-Meier (KM) method is a non-parametric method used to estimate the survival probability from observed survival times (Kaplan and Meier, 1958).
 
-The survival probability at time titi, S(ti), is calculated as follow:
+The survival probability at time $t_i$, $S(t_i)$, is calculated as follow:
 
 $$ S(ti)=S(ti−1)(1−dini)$$
 
 
 Where,
 
-* S(ti−1) = the probability of being alive at ti−1
-* ni = the number of patients alive just before titi
-* di = the number of events at titi
-* t0 = 0, S(0)S(0) = 1
+* $S(t=1)$ = the probability of being alive at $t=1$
+* $n_i$ = the number of patients alive just before $t_i$
+* $d_i$ = the number of events at titi
+* t0 = 0, $S(0) = 1$
 
 The estimated probability (S(t)) is a step function that changes value only at the time of each event. It’s also possible to compute confidence intervals for the survival probability.
 
@@ -27,19 +27,19 @@ The KM survival curve, a plot of the KM survival probability against time, provi
 
 ### Estimator
 
-The estimator of the survival function $\LARGE S(t)$ (the probability that life is longer than $\LARGE t$) is given by:
+The estimator of the survival function $\normalsize S(t)$ (the probability that life is longer than $\normalsize t$) is given by:
 
-\[{\LARGE {\widehat {S}}(t)=\prod \limits _{i:\ t_{i}\leq t}\left(1-{\frac {d_{i}}{n_{i}}}\right) =\prod \limits _{i:\ t_{i}\leq t}\left(1-\lambda_i \right),} \]
+\[{\normalsize {\widehat {S}}(t)=\prod \limits _{i:\ t_{i}\leq t}\left(1-{\frac {d_{i}}{n_{i}}}\right) =\prod \limits _{i:\ t_{i}\leq t}\left(1-\lambda_i \right),} \]
 
-\noindent with $\LARGE t_{i}$ a time when at least one event happened, $\LARGE d_i$ the number of events (e.g., deaths) that happened at time $\LARGE t_{i}$, and 
-$\LARGE n_{i}$ the individuals known to have survived (have not yet had an event or been censored) up to time $\LARGE t_{i}$. 
+\noindent with $\normalsize t_{i}$ a time when at least one event happened, $\normalsize d_i$ the number of events (e.g., deaths) that happened at time $\normalsize t_{i}$, and 
+$\normalsize n_{i}$ the individuals known to have survived (have not yet had an event or been censored) up to time $\normalsize t_{i}$. 
 
 
 ### Kaplan-Meier Product-Limit Estimator
 
 Rather than classifying the observed survival times into a life table, we can estimate the survival function directly from the continuous survival or failure times. Intuitively, imagine that we create a life table so that each time interval contains exactly one case. Multiplying out the survival probabilities across the "intervals" (i.e., for each single observation) we would get for the survival function:
 
-\[S(t) = jt= 1 [(n-j)/(n-j+1)]( j )\]
+\[S(t) = \sum_{t= 1} [(n-j)/(n-j+1)]( j )\]
 
 In this equation, S(t) is the estimated survival function, n is the total number of cases, and denotes the multiplication (geometric sum) across all cases less than or equal to t; (j) is a constant that is either 1 if the j'th case is uncensored (complete), and 0 if it is censored. This estimate of the survival function is also called the product-limit estimator, and was first proposed by Kaplan and Meier (1958). An example plot of this function is shown below.
 
@@ -47,6 +47,9 @@ In this equation, S(t) is the estimated survival function, n is the total number
 
 The advantage of the Kaplan-Meier Product-Limit method over the life table method for analyzing survival and failure time data is that the resulting estimates do not depend on the grouping of the data (into a certain number of time intervals). Actually, the Product-Limit method and the life table method are identical if the intervals of the life table contain at most one observation.
 
+#### Kaplan Meier Estimates of the Survival Function
+
+* <a href= "https://youtu.be/4fOcxafPHow"> Kaplan Meier Estimates of the Survival Function </a>
 
 
 ### Worked Examples
@@ -62,12 +65,12 @@ The following table shows the Kaplan-Meier estimate of the survival function, ba
 on data from the 12 insects.
 
 
- ||t (weeks) | $\LARGE S(t)$ | |
+ ||t (weeks) | $\normalsize S(t)$ | |
  |-------------|-------------|--------------|----------|
-||$\LARGE 0 \leq t < 1$ | 1.0000 ||
-||$\LARGE 1 \leq t < 3$ | 0.9167||
-||$\LARGE 3 \leq t < 6$ | 0.7130||
-||$\LARGE t \geq 6$ | 0.4278 ||
+||$\normalsize 0 \leq t < 1$ | 1.0000 ||
+||$\normalsize 1 \leq t < 3$ | 0.9167||
+||$\normalsize 3 \leq t < 6$ | 0.7130||
+||$\normalsize t \geq 6$ | 0.4278 ||
 
 <p>
 <h4> Exercises </h4>

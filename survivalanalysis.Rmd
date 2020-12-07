@@ -36,10 +36,3 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-
-
-
-
-
-```{r child = 'modellingdata/SurvivalAnalysis.Rmd'}
-```

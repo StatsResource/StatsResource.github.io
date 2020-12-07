@@ -20,16 +20,17 @@ Does the colour of card affect its probability of being a king?
 
 ### Independent Events
 
-<h4> Independent Events<h/4>
+<h4> Independent Events</h4>
 <p>
 <h5>Worked Example 1</h5>
-Suppose that A and B are two independent events with P(A), the probability that A occurs, equal to 0.4, and P(B), the probability that B occurs, equal to 0.5.
+Suppose that A and B are two independent events with $P(A)$, the probability that A occurs, equal to 0.4, and $P(B)$, the probability that B occurs, equal to 0.5.
 You may assume that A and B are independent events.
-
+<p>
 <h5> Exercises </h5> 
 a. Calculate $P(A \cap B)$, the probability of both A and B occuring (i.e. simultaneously).
 b. Calculate $P(A \cup B)$, the probability of either A and B (or both) occuring.
 
+<p>
 <h5> Solution</h5> 
  
 * <a href="https://youtu.be/eeFI0CY2P48">  Click here for Solution</a> 
@@ -47,6 +48,9 @@ b. Find $P(B|A)$.
 c. Find $P(A \;\cup\;B)$.
 d. Find $P(A^{c} \;\cup\;B^{c})$.
 
+<p>
+
 <h5> Solution</h5> 
  
 * <a href="https://youtu.be/ht3rRmPJ0Q4">  Click here for Solution</a> 
+<p>

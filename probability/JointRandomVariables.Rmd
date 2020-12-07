@@ -10,10 +10,10 @@ Column {.tabset}
 <h5> Joint Distribution of Random Variables  - Health Science Example </h5>
 <strong><a href="https://youtu.be/M6iKFS8FaLg">Solution</a></strong>
 <br><br>
-Consider the random variable $\LARGE{X}$ taking the value $\LARGE{X = 1}$ if a randomly selected person
-is a smoker, or $\LARGE{X = 0}$ otherwise. <br><br>
+Consider the random variable $\normalsize{X}$ taking the value $\normalsize{X = 1}$ if a randomly selected person
+is a smoker, or $\normalsize{X = 0}$ otherwise. <br><br>
 
-* The random variable $\LARGE{Y}$ describes the amount of
+* The random variable $\normalsize{Y}$ describes the amount of
 physical exercise per week for this randomly selected person. <p>
 
 * It can take the values 0
@@ -21,7 +21,7 @@ physical exercise per week for this randomly selected person. <p>
 hours of exercise per week).
 
 <p>
-The joint distribution of $\LARGE{X}$ and $\LARGE{Y}$ is given by the joint probability function in the
+The joint distribution of $\normalsize{X}$ and $\normalsize{Y}$ is given by the joint probability function in the
 following table.
 
 ||| Y= 0 | Y= 1 | Y= 2|
@@ -32,12 +32,12 @@ following table.
 
 
 <br><br>
-The random variable $\LARGE{R = (3 - Y)^2(X + 1) }$ is used as a risk index for a particular heart disease.
+The random variable $\normalsize{R = (3 - Y)^2(X + 1) }$ is used as a risk index for a particular heart disease.
 <br><br>
 <b> Exercises</b>
 
 a. Calculate the probability that a randomly selected person does more than two
 hours of exercise per week. 
-b. Decide whether $\LARGE{X}$ and $\LARGE{Y}$ are independent or not and justify your answer. 
-c. Derive the probability function of $\LARGE{R}$. 
-d. Calculate the expectation of $\LARGE{R}$.
+b. Decide whether $\normalsize{X}$ and $\normalsize{Y}$ are independent or not and justify your answer. 
+c. Derive the probability function of $\normalsize{R}$. 
+d. Calculate the expectation of $\normalsize{R}$.

@@ -15,5 +15,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = 'main/introduction.Rmd'}
 ```
 
-Exploratory Data Analysis
-==========================================
+
+
+```{r child = 'dataanalysis/descriptivestatistics.Rmd'}
+```
+
+```{r child = 'dataanalysis/exploratorydataanalysis.Rmd'}
+```
+

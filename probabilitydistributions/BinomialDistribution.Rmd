@@ -8,41 +8,43 @@ Column {.tabset}
 
 
 #### Binomial Experiment
-A binomial experiment (also known as a Bernoulli trial) is a statistical experiment that has the following properties:
-\begin{itemize}
-*The experiment consists of $n$ repeated trials.
-*Each trial can result in just two possible outcomes. We call one of these outcomes a \textbf{\emph{success}} and the other, a \textbf{\emph{failure}}.
-*The probability of success, denoted by $p$, is the same on every trial.
-*The trials are independent; that is, the outcome on one trial does not affect the outcome on other trials.
 
+A binomial experiment (also known as a Bernoulli trial) is a statistical experiment that has the following properties:
+
+* The experiment consists of $n$ repeated trials.
+* Each trial can result in just two possible outcomes. We call one of these outcomes a ***success*** 
+and the other, a ***failure***.
+* The probability of success, denoted by $p$, is the same on every trial.
+* The trials are independent; that is, the outcome on one trial does not affect the outcome on other trials.
+<p>
 
 Consider the following statistical experiment. You flip a coin five times and count the number of times the coin lands on heads. This is a binomial experiment because:
-\begin{itemize}
-*The experiment consists of repeated trials. We flip a coin five times.
-*Each trial can result in just two possible outcomes : heads or tails.
-*The probability of success is constant : 0.5 on every trial.
-*The trials are independent; that is, getting heads on one trial does not affect whether we get heads on other trials.
 
+* The experiment consists of repeated trials. We flip a coin five times.
+* Each trial can result in just two possible outcomes : heads or tails.
+* The probability of success is constant : 0.5 on every trial.
+* The trials are independent; that is, getting heads on one trial does not affect whether we get heads on other trials.
+<p>
 
-*A binomial experiment with n trials and
+* A binomial experiment with n trials and
 probability $p$ of success will be denoted by
 \[B(n, p)\]
-*Frequently, we are interested in the \textbf{\emph{number of successes}} in a binomial experiment, not in the order in which they occur.
-*Furthermore, we are interested in the probability of that number of successes.
-
+* Frequently, we are interested in the \textbf{\emph{number of successes}} in a binomial experiment, not in the order in which they occur.
+* Furthermore, we are interested in the probability of that number of successes.
+<p>
 
 The probability of exactly k successes in a binomial experiment B(n, p) is given by
 \[ P(X=k) = P(k \mbox{ successes }) = \;^nC_k  \times p^{k} \times (1-p)^{n-k}\]
 
-\begin{itemize}
-*X: Discrete random variable for the number of successes (variable name)
+
+* X: Discrete random variable for the number of successes (variable name)
 *$k$ : Number of successes (numeric value)
-\begin{itemize}
+
 * $P(X=k)$ ``probability that the number of success is $k$".
-\end{itemize}
-*$n$ : number of independent trials
-*$p$ : probability of a success in any of the $n$ trial.
-*$1-p$ : probability of a failure in any of the $n$ trial.
+
+* $n$ : number of independent trials
+* $p$ : probability of a success in any of the $n$ trial.
+* $1-p$ : probability of a failure in any of the $n$ trial.
 
 
 
@@ -50,21 +52,19 @@ The probability of exactly k successes in a binomial experiment B(n, p) is given
 #### Binomial Distribution : Probability Density Function}
 A binomial experiment is one that possesses the following properties:
 
-\begin{enumerate}
 * The experiment consists of n repeated trials;
 
 * Each trial results in an outcome that may be classified as a success or a failure (hence the name, binomial);
 
 * The probability of a success, denoted by p, remains constant from trial to trial and repeated trials are independent.
-\end{enumerate}
-
-
-\noindent 
+<p>
 The number of successes X in n trials of a binomial experiment is called a \textbf{\textit{binomial random variable}}.
 
 
-\subsection*{Binomial Probability Formula}
+#### Binomial Probability Formula
+
 The probability of exactly k successes in a binomial experiment $Bin(n, p)$ is given by
+
 \[ P(X=k) = P(k \mbox{ successes in ``n" trails }) = \;^nC_k  \times p^{k} \times (1-p)^{n-k}\]
 
 
@@ -115,13 +115,4 @@ If $n=100$, and $p=0.25$, then the average number of successes will be 25.
 
 * <a href="https://youtu.be/dRNSiG2Hzfo/">Binomial Distribution - Worked Example</a>
 
-
-
-
-
-### Formula
-
-<h5> Formula Sheet </h5>
-
-$$ [P(X = k) = $$
 

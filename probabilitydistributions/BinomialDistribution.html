@@ -180,94 +180,92 @@ summary {
 </div>
 
 
-<div id="kaplan-meier-estimators" class="section level1" data-navmenu="Survival Models">
-<h1>Kaplan-Meier Estimators</h1>
+<div id="binomial-distribution" class="section level1" data-navmenu="Discrete Distributions">
+<h1>Binomial Distribution</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="kaplan-meier-survival-estimate" class="section level3">
-<h3>Kaplan-Meier survival estimate</h3>
-<p>The Kaplan-Meier (KM) method is a non-parametric method used to estimate the survival probability from observed survival times (Kaplan and Meier, 1958).</p>
-<p>The survival probability at time <span class="math inline">\(t_i\)</span>, <span class="math inline">\(S(t_i)\)</span>, is calculated as follow:</p>
-<p><span class="math display">\[ S(ti)=S(tiâ1)(1âdini)\]</span></p>
-<p>Where,</p>
+<div id="binomial-distribution-1" class="section level3">
+<h3>Binomial Distribution</h3>
+<div id="binomial-experiment" class="section level4">
+<h4>Binomial Experiment</h4>
+<p>A binomial experiment (also known as a Bernoulli trial) is a statistical experiment that has the following properties:</p>
 <ul>
-<li><span class="math inline">\(S(t=1)\)</span> = the probability of being alive at <span class="math inline">\(t=1\)</span></li>
-<li><span class="math inline">\(n_i\)</span> = the number of patients alive just before <span class="math inline">\(t_i\)</span></li>
-<li><span class="math inline">\(d_i\)</span> = the number of events at titi</li>
-<li>t0 = 0, <span class="math inline">\(S(0) = 1\)</span></li>
+<li>The experiment consists of <span class="math inline">\(n\)</span> repeated trials.</li>
+<li>Each trial can result in just two possible outcomes. We call one of these outcomes a <strong><em>success</em></strong> and the other, a <strong><em>failure</em></strong>.</li>
+<li>The probability of success, denoted by <span class="math inline">\(p\)</span>, is the same on every trial.</li>
+<li>The trials are independent; that is, the outcome on one trial does not affect the outcome on other trials.
+<p></li>
 </ul>
-<p>The estimated probability (S(t)) is a step function that changes value only at the time of each event. Itâs also possible to compute confidence intervals for the survival probability.</p>
-<p>The KM survival curve, a plot of the KM survival probability against time, provides a useful summary of the data that can be used to estimate measures such as median survival time.</p>
+<p>Consider the following statistical experiment. You flip a coin five times and count the number of times the coin lands on heads. This is a binomial experiment because:</p>
+<ul>
+<li>The experiment consists of repeated trials. We flip a coin five times.</li>
+<li>Each trial can result in just two possible outcomes : heads or tails.</li>
+<li>The probability of success is constant : 0.5 on every trial.</li>
+<li>The trials are independent; that is, getting heads on one trial does not affect whether we get heads on other trials.
+<p></li>
+<li>A binomial experiment with n trials and probability <span class="math inline">\(p\)</span> of success will be denoted by <span class="math display">\[B(n, p)\]</span></li>
+<li>Frequently, we are interested in the  in a binomial experiment, not in the order in which they occur.</li>
+<li>Furthermore, we are interested in the probability of that number of successes.
+<p></li>
+</ul>
+<p>The probability of exactly k successes in a binomial experiment B(n, p) is given by <span class="math display">\[ P(X=k) = P(k \mbox{ successes }) = \;^nC_k  \times p^{k} \times (1-p)^{n-k}\]</span></p>
+<ul>
+<li><p>X: Discrete random variable for the number of successes (variable name) *<span class="math inline">\(k\)</span> : Number of successes (numeric value)</p></li>
+<li><p><span class="math inline">\(P(X=k)\)</span> ``probability that the number of success is <span class="math inline">\(k\)</span>“.</p></li>
+<li><span class="math inline">\(n\)</span> : number of independent trials</li>
+<li><span class="math inline">\(p\)</span> : probability of a success in any of the <span class="math inline">\(n\)</span> trial.</li>
+<li><p><span class="math inline">\(1-p\)</span> : probability of a failure in any of the <span class="math inline">\(n\)</span> trial.</p></li>
+</ul>
 </div>
-<div id="estimator" class="section level3">
-<h3>Estimator</h3>
-<p>The estimator of the survival function <span class="math inline">\(\normalsize S(t)\)</span> (the probability that life is longer than <span class="math inline">\(\normalsize t\)</span>) is given by:</p>
-<p><span class="math display">\[{\normalsize {\widehat {S}}(t)=\prod \limits _{i:\ t_{i}\leq t}\left(1-{\frac {d_{i}}{n_{i}}}\right) =\prod \limits _{i:\ t_{i}\leq t}\left(1-\lambda_i \right),} \]</span></p>
-<p>with <span class="math inline">\(\normalsize t_{i}\)</span> a time when at least one event happened, <span class="math inline">\(\normalsize d_i\)</span> the number of events (e.g., deaths) that happened at time <span class="math inline">\(\normalsize t_{i}\)</span>, and <span class="math inline">\(\normalsize n_{i}\)</span> the individuals known to have survived (have not yet had an event or been censored) up to time <span class="math inline">\(\normalsize t_{i}\)</span>.</p>
-</div>
-<div id="kaplan-meier-product-limit-estimator" class="section level3">
-<h3>Kaplan-Meier Product-Limit Estimator</h3>
-<p>Rather than classifying the observed survival times into a life table, we can estimate the survival function directly from the continuous survival or failure times. Intuitively, imagine that we create a life table so that each time interval contains exactly one case. Multiplying out the survival probabilities across the “intervals” (i.e., for each single observation) we would get for the survival function:</p>
-<p><span class="math display">\[S(t) = \sum_{t= 1} [(n-j)/(n-j+1)]( j )\]</span></p>
-<p>In this equation, S(t) is the estimated survival function, n is the total number of cases, and denotes the multiplication (geometric sum) across all cases less than or equal to t; (j) is a constant that is either 1 if the j’th case is uncensored (complete), and 0 if it is censored. This estimate of the survival function is also called the product-limit estimator, and was first proposed by Kaplan and Meier (1958). An example plot of this function is shown below.</p>
-<p>The advantage of the Kaplan-Meier Product-Limit method over the life table method for analyzing survival and failure time data is that the resulting estimates do not depend on the grouping of the data (into a certain number of time intervals). Actually, the Product-Limit method and the life table method are identical if the intervals of the life table contain at most one observation.</p>
-</div>
-<div id="worked-examples" class="section level3">
-<h3>Worked Examples</h3>
-<h3>
-Worke Example
-</h3>
-A study of the mortality of 12 laboratory-bred insects was undertaken. The insects were observed from birth until either they died or the period of study ended, at which point those insects still alive were treated as censored.
+<div id="binomial-distribution-probability-density-function" class="section level4">
+<h4>Binomial Distribution : Probability Density Function}</h4>
+<p>A binomial experiment is one that possesses the following properties:</p>
+<ul>
+<li><p>The experiment consists of n repeated trials;</p></li>
+<li><p>Each trial results in an outcome that may be classified as a success or a failure (hence the name, binomial);</p></li>
+<li>The probability of a success, denoted by p, remains constant from trial to trial and repeated trials are independent.
 <p>
-<p>The following table shows the Kaplan-Meier estimate of the survival function, based on data from the 12 insects.</p>
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th>t (weeks)</th>
-<th><span class="math inline">\(\normalsize S(t)\)</span></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td><span class="math inline">\(\normalsize 0 \leq t &lt; 1\)</span></td>
-<td>1.0000</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><span class="math inline">\(\normalsize 1 \leq t &lt; 3\)</span></td>
-<td>0.9167</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><span class="math inline">\(\normalsize 3 \leq t &lt; 6\)</span></td>
-<td>0.7130</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><span class="math inline">\(\normalsize t \geq 6\)</span></td>
-<td>0.4278</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>
-<h4>
-Exercises
-</h4>
-<ol style="list-style-type: lower-alpha">
-<li>Calculate the number of insects dying at durations 3 and 6 weeks.</li>
-<li>Calculate the number of insects whose history was censored.</li>
-</ol>
-<h4>
-Solution
-</h4>
-<p><a href="https://youtu.be/MP-WNPajilc">Solution</a></p>
+<p>The number of successes X in n trials of a binomial experiment is called a .</p></li>
+</ul>
+</div>
+<div id="binomial-probability-formula" class="section level4">
+<h4>Binomial Probability Formula</h4>
+<p>The probability of exactly k successes in a binomial experiment <span class="math inline">\(Bin(n, p)\)</span> is given by</p>
+<p><span class="math display">\[ P(X=k) = P(k \mbox{ successes in ``n&quot; trails }) = \;^nC_k  \times p^{k} \times (1-p)^{n-k}\]</span></p>
+<ul>
+<li>X: Discrete random variable for the number of successes (variable name)</li>
+<li><p><span class="math inline">\(k\)</span> : Number of successes (numeric value)</p></li>
+<li>k= 0, 1, 2, … n</li>
+<li><p><span class="math inline">\(P(X=k)\)</span> ``probability that the number of success is <span class="math inline">\(k\)</span>“.</p></li>
+<li><span class="math inline">\(n\)</span> : number of independent trials</li>
+<li><span class="math inline">\(p\)</span> : probability of a success in any of the <span class="math inline">\(n\)</span> trial.</li>
+<li><span class="math inline">\(1-p\)</span> : probability of a failure in any of the <span class="math inline">\(n\)</span> trial.</li>
+<li><p><span class="math inline">\({^nC_k}\)</span> is a combination value, found using the Choose operator.</p></li>
+</ul>
+</div>
+</div>
+<div id="binomial-distribution-expected-value-and-variance" class="section level3">
+<h3>Binomial Distribution : Expected Value and Variance</h3>
+<div id="expectation-and-variance" class="section level4">
+<h4>Expectation and Variance</h4>
+<p>If the random variable X has a binomial distribution with parameters <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span>, we write <span class="math display">\[ X \sim Bin(n,p) \]</span> Only these two parameters are needed to determine the probability of an event.</p>
+<ul>
+<li>The expected value of <span class="math inline">\(X\)</span> is: <span class="math display">\[\operatorname{E(X)} = n \times p \]</span></li>
+<li><p>The variance of <span class="math inline">\(X\)</span> is: <span class="math display">\[\operatorname{Var(X)} = n \times p \times (1-p) = n\times p \times q \]</span></p></li>
+<li><span class="math inline">\(p\)</span> is the probability of success * <span class="math inline">\(q\)</span> is the probability of failure in a binomial trial</li>
+<li><p><span class="math inline">\(n\)</span> is the number of independent trials</p></li>
+</ul>
+<p><strong><em>Interpretation:</em></strong> If <span class="math inline">\(n=100\)</span>, and <span class="math inline">\(p=0.25\)</span>, then the average number of successes will be 25.</p>
+</div>
+</div>
+<div id="videos" class="section level3">
+<h3>Videos</h3>
+<h5>
+Binomial Distribution
+</h5>
+<ul>
+<li><a href="https://youtu.be/dRNSiG2Hzfo/">Binomial Distribution - Worked Example</a></li>
+</ul>
 </div>
 </div>
 </div>

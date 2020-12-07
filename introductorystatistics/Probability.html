@@ -180,94 +180,100 @@ summary {
 </div>
 
 
-<div id="kaplan-meier-estimators" class="section level1" data-navmenu="Survival Models">
-<h1>Kaplan-Meier Estimators</h1>
+<div id="probability" class="section level1" data-navmenu="Introductory Probability">
+<h1>Probability</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
-<div id="kaplan-meier-survival-estimate" class="section level3">
-<h3>Kaplan-Meier survival estimate</h3>
-<p>The Kaplan-Meier (KM) method is a non-parametric method used to estimate the survival probability from observed survival times (Kaplan and Meier, 1958).</p>
-<p>The survival probability at time <span class="math inline">\(t_i\)</span>, <span class="math inline">\(S(t_i)\)</span>, is calculated as follow:</p>
-<p><span class="math display">\[ S(ti)=S(tiâ1)(1âdini)\]</span></p>
-<p>Where,</p>
+<div id="probability-1" class="section level3">
+<h3>Probability</h3>
+<h5>
+Probability
+</h5>
 <ul>
-<li><span class="math inline">\(S(t=1)\)</span> = the probability of being alive at <span class="math inline">\(t=1\)</span></li>
-<li><span class="math inline">\(n_i\)</span> = the number of patients alive just before <span class="math inline">\(t_i\)</span></li>
-<li><span class="math inline">\(d_i\)</span> = the number of events at titi</li>
-<li>t0 = 0, <span class="math inline">\(S(0) = 1\)</span></li>
+<li>Probability theory is the mathematical study of randomness. A probability model of a random experiment is defined by assigning probabilities to all the different outcomes.</li>
+<li>Probability is a numerical measure of the likelihood that an event will occur. Thus, probabilities can be used as measures of degree of uncertainty associated with outcomes of an experiment. Probability values are always assigned on a scale from 0 to 1.</li>
+<li>A probability of 0 means that the event is impossible, while a probability near 0 means that it is highly unlikely to occur.</li>
+<li>Similarly an event with probability 1 is certain to occur, whereas an event with a probability near to 1 is very likely to occur.</li>
 </ul>
-<p>The estimated probability (S(t)) is a step function that changes value only at the time of each event. Itâs also possible to compute confidence intervals for the survival probability.</p>
-<p>The KM survival curve, a plot of the KM survival probability against time, provides a useful summary of the data that can be used to estimate measures such as median survival time.</p>
+<p>
 </div>
-<div id="estimator" class="section level3">
-<h3>Estimator</h3>
-<p>The estimator of the survival function <span class="math inline">\(\normalsize S(t)\)</span> (the probability that life is longer than <span class="math inline">\(\normalsize t\)</span>) is given by:</p>
-<p><span class="math display">\[{\normalsize {\widehat {S}}(t)=\prod \limits _{i:\ t_{i}\leq t}\left(1-{\frac {d_{i}}{n_{i}}}\right) =\prod \limits _{i:\ t_{i}\leq t}\left(1-\lambda_i \right),} \]</span></p>
-<p>with <span class="math inline">\(\normalsize t_{i}\)</span> a time when at least one event happened, <span class="math inline">\(\normalsize d_i\)</span> the number of events (e.g., deaths) that happened at time <span class="math inline">\(\normalsize t_{i}\)</span>, and <span class="math inline">\(\normalsize n_{i}\)</span> the individuals known to have survived (have not yet had an event or been censored) up to time <span class="math inline">\(\normalsize t_{i}\)</span>.</p>
-</div>
-<div id="kaplan-meier-product-limit-estimator" class="section level3">
-<h3>Kaplan-Meier Product-Limit Estimator</h3>
-<p>Rather than classifying the observed survival times into a life table, we can estimate the survival function directly from the continuous survival or failure times. Intuitively, imagine that we create a life table so that each time interval contains exactly one case. Multiplying out the survival probabilities across the “intervals” (i.e., for each single observation) we would get for the survival function:</p>
-<p><span class="math display">\[S(t) = \sum_{t= 1} [(n-j)/(n-j+1)]( j )\]</span></p>
-<p>In this equation, S(t) is the estimated survival function, n is the total number of cases, and denotes the multiplication (geometric sum) across all cases less than or equal to t; (j) is a constant that is either 1 if the j’th case is uncensored (complete), and 0 if it is censored. This estimate of the survival function is also called the product-limit estimator, and was first proposed by Kaplan and Meier (1958). An example plot of this function is shown below.</p>
-<p>The advantage of the Kaplan-Meier Product-Limit method over the life table method for analyzing survival and failure time data is that the resulting estimates do not depend on the grouping of the data (into a certain number of time intervals). Actually, the Product-Limit method and the life table method are identical if the intervals of the life table contain at most one observation.</p>
-</div>
-<div id="worked-examples" class="section level3">
-<h3>Worked Examples</h3>
+<div id="conditional-probability" class="section level3">
+<h3>Conditional Probability</h3>
 <h3>
-Worke Example
+Conditional Probability
 </h3>
-A study of the mortality of 12 laboratory-bred insects was undertaken. The insects were observed from birth until either they died or the period of study ended, at which point those insects still alive were treated as censored.
+<p>The conditional probability of an event is the probability that an event A occurs given that another event B has already occurred. This type of probability is calculated by restricting the sample space that weâre working with to only the set B.</p>
+<p>The formula for conditional probability can be rewritten using some basic algebra. Instead of the formula:</p>
+<p><span class="math display">\[P(A | B) = \frac{P(A \cap B) }{P( B )}  \]</span></p>
 <p>
-<p>The following table shows the Kaplan-Meier estimate of the survival function, based on data from the 12 insects.</p>
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th>t (weeks)</th>
-<th><span class="math inline">\(\normalsize S(t)\)</span></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td><span class="math inline">\(\normalsize 0 \leq t &lt; 1\)</span></td>
-<td>1.0000</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><span class="math inline">\(\normalsize 1 \leq t &lt; 3\)</span></td>
-<td>0.9167</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><span class="math inline">\(\normalsize 3 \leq t &lt; 6\)</span></td>
-<td>0.7130</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><span class="math inline">\(\normalsize t \geq 6\)</span></td>
-<td>0.4278</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>
-<h4>
-Exercises
-</h4>
-<ol style="list-style-type: lower-alpha">
-<li>Calculate the number of insects dying at durations 3 and 6 weeks.</li>
-<li>Calculate the number of insects whose history was censored.</li>
-</ol>
-<h4>
-Solution
-</h4>
-<p><a href="https://youtu.be/MP-WNPajilc">Solution</a></p>
+<hr />
+<div id="multiplication-rule" class="section level4">
+<h4>Multiplication Rule</h4>
+<p>The multiplication rule is a result used to determine the probability that two events, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, both occur. The multiplication rule follows from the definition of conditional probability.\ </p>
+<p>The result is often written as follows, using set notation: <span class="math display">\[ P(A|B)\times P(B) = P(B|A)\times P(A) \qquad \left( = P(A \cap B) \right) \]</span></p>
+</div>
+<div id="bayes-theorem" class="section level4">
+<h4>Bayes Theorem</h4>
+<p>Bayes’ Theorem is a result that allows new information to be used to update the conditional probability of an event.</p>
+<p>Recall the definition of conditional probability: <span class="math display">\[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]</span></p>
+<p>Using the multiplication rule, gives Bayes’ Theorem in its simplest form:</p>
+<p><span class="math display">\[ P(A|B) = \frac{P(B|A)\times P(A)}{P(B)} \]</span></p>
+<p>The general form of Bayes’ theorem is <span class="math display">\[ P(A|B) =
+\frac{P(A \mbox{ and }B)}{P(B)} \]</span></p>
+Equivalently Bayes’ Theorem can be expressed as
+<span class="math display">\[\begin{equation*}
+P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+\end{equation*}\]</span>
+</div>
+<div id="conditional-probability-1" class="section level4">
+<h4>Conditional Probability</h4>
+<p>Conditional Probability</p>
+<ul>
+<li><a href="https://youtu.be/wUdQxLWuqWo/"> Conditional Probability - Worked Example </a><br />
+</li>
+<li><a href="https://youtu.be/qZ53wmnPvr4/"> Conditional Probability -Disease Detection Worked Example </a><br />
+</li>
+<li><a href="https://youtu.be/bYhL91gDqEM/"> Conditional Probability Worked Example </a><br />
+</li>
+<li><a href="https://youtu.be/0DTm_7fF2pE/"> Conditional Probability Worked Exampe (Newpaper Competition Part A) </a><br />
+</li>
+<li><a href="https://youtu.be/O7oQPhFt07w/"> Conditional Probability Worked Example - Newspaper Competition (Part B) </a></li>
+</ul>
+</div>
+</div>
+<div id="probability-videos" class="section level3">
+<h3>Probability Videos</h3>
+<ul>
+<li><p><a href="https://youtu.be/jH0YFR15w3c/">Probability Question - Ace of Diamonds</a></p></li>
+<li><a href="https://youtu.be/dNkw6VU3ZzU/"> Probability - Independent Events (Packs of Cards Example) </a><br />
+</li>
+<li><a href="https://youtu.be/3meIYXJBA2o/"> Probability - Worked Example (Actuarial Job Offer Example) </a><br />
+</li>
+<li><a href="https://youtu.be/jH0YFR15w3c/"> Probability Question - Ace of Diamonds </a><br />
+</li>
+<li><p><a href="https://youtu.be/fIiH_u0ASFU/"> Probability Trees </a></p></li>
+</ul>
+</div>
+<div id="probability-trees" class="section level3">
+<h3>Probability Trees</h3>
+<h5>
+Probability Trees
+</h5>
+<ul>
+<li>A probability tree diagram shows all the possible events.</li>
+<li>The first event is represented by a dot.</li>
+<li>From the dot, branches are drawn to represent all possible outcomes of the event.</li>
+<li>The probability of each outcome is written on its branch.</li>
+<li>How do you calculate the overall probabilities?</li>
+<li>You multiply probabilities along the branches</li>
+<li>You add probabilities down columns</li>
+</ul>
+<h5>
+Questions
+</h5>
+<ul>
+<li><a href="https://youtu.be/fIiH_u0ASFU/">Probability Trees</a></li>
+</ul>
 </div>
 </div>
 </div>

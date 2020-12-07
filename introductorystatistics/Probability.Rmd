@@ -20,7 +20,7 @@ a probability near 0 means that it is highly unlikely to occur.
 * Similarly an event with probability 1 is certain to occur, whereas an
 event with a probability near to 1 is very likely to occur.
 
-
+<p>
 ### Conditional Probability
 
 <h3>Conditional Probability</h3>
@@ -30,6 +30,8 @@ The conditional probability of an event is the probability that an event A occur
 The formula for conditional probability can be rewritten using some basic algebra. Instead of the formula:
 
 \[P(A | B) = \frac{P(A \cap B) }{P( B )}  \]
+
+<p>
 
 ----------------------------------------------------------------------------
 

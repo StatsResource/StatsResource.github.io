@@ -31,10 +31,10 @@ Column {.tabset}
 
 
 
-```{r child = 'modellingdata/ModelSelection.Rmd'}
+```{r child = 'regression/ModelSelection.Rmd'}
 ```
 
-```{r child = 'modellingdata/ResidualAnalysis.Rmd'}
+```{r child = 'regression/ResidualAnalysis.Rmd'}
 ```
 ```{r child = 'linearmodels/multicollinearity.Rmd'}
 ```
