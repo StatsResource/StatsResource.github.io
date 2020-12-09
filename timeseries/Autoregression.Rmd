@@ -1,0 +1,18 @@
+Autoregression
+===================================== 
+Column
+-------------------------
+
+### Autoregression
+
+<h3>Autoregression</h3>
+
+ 
+ 
+\[yt=1yt-1+2yt-2++pyt-p+t\]
+ 
+  
+Moving average of order q [MA(q)]
+ 
+ yt
+ 

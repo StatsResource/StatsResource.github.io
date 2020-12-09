@@ -2598,7 +2598,7 @@ window.FlexDashboardComponents.push({
 <strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
 </td>
 <td class="tg-76so">
-<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong>
+<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong> <br> Discrete and Continuous probability Distributions. Compound and Mixed Probability Distributions
 </td>
 </tr>
 <tr>
@@ -2641,6 +2641,17 @@ window.FlexDashboardComponents.push({
 </td>
 <td class="tg-76so">
 <strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
+</td>
+</tr>
+<tr>
+<td class="tg-76so">
+<strong> <a href="timeseries.html">Time Series Analysis</a></strong><br>Time Series
+</td>
+<td class="tg-76so">
+</td>
+<td class="tg-76so">
+</td>
+<td class="tg-76so">
 </td>
 </tr>
 </tbody>
@@ -2686,7 +2697,7 @@ window.FlexDashboardComponents.push({
 <strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
 </td>
 <td class="tg-76so">
-<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong>
+<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong> <br> Discrete and Continuous probability Distributions. Compound and Mixed Probability Distributions
 </td>
 </tr>
 <tr>
@@ -2729,6 +2740,17 @@ window.FlexDashboardComponents.push({
 </td>
 <td class="tg-76so">
 <strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
+</td>
+</tr>
+<tr>
+<td class="tg-76so">
+<strong> <a href="timeseries.html">Time Series Analysis</a></strong><br>Time Series
+</td>
+<td class="tg-76so">
+</td>
+<td class="tg-76so">
+</td>
+<td class="tg-76so">
 </td>
 </tr>
 </tbody>
@@ -2819,8 +2841,8 @@ Since 5% of the values in a Gaussian population are more than 1.96 standard devi
 <p>
 <p>If you decide to remove the outlier, you then may be tempted to run Grubbs’ test again to see if there is a second outlier in your data. If you do this , you cannot use the same table.</p>
 </div>
-<div id="grubbs-test-1" class="section level4">
-<h4>Grubbs’ Test</h4>
+<div id="grubbsâ-test" class="section level4">
+<h4>Grubbsâ Test</h4>
 Grubbs’ test is a formal hypothesis test for assessing whether or not a data set contains an outlier. This data set is univariate and approximately normal distributed. This test is designed for assessing one outlier only. If more outliers are suspected, alternative tests, such as the Tietjen-Moore test, are recommended. Hypotheses: Grubbs’ test is defined for the hypothesis:
 <p>
 
@@ -2892,7 +2914,7 @@ D = 0.2153, p-value = 0.7348
 alternative hypothesis: two-sided
 </code></pre>
 <p>
-<p>Remark: It doesn’t not suffice that both datasets are from the same distribution. They must have the same value for the defining parameters. Consider the case of data sets; X and Z. Both are normally distributed, but with different mean values.</p>
+<p>Remark: It doesnât not suffice that both datasets are from the same distribution. They must have the same value for the defining parameters. Consider the case of data sets; X and Z. Both are normally distributed, but with different mean values.</p>
 <pre><code>
 &gt; X=rnorm(16,mean=20,sd=5)
 &gt; Z=rnorm(16,mean=14,sd=5)
@@ -2961,7 +2983,7 @@ An attractive feature of this test is that the distribution of the K-S test stat
 <ol style="list-style-type: lower-alpha">
 <li>Mark any outliers with an asterisk (*) on the graph.</li>
 <li>Extend horizontal lines , called whiskers, from the ends of the box to the smallest and largest values that are not outliers.</li>
-<li>(Remark – a variation is to extend to the lower and upper fences)</li>
+<li>(Remark â a variation is to extend to the lower and upper fences)</li>
 </ol>
 <p>What to Look for</p>
 <ol style="list-style-type: decimal">
@@ -2982,21 +3004,21 @@ An attractive feature of this test is that the distribution of the K-S test stat
 <h3>
 Assumption of Normality
 </h3>
-One of the assumptions of many statistical procedures (including the t-test) is that the population from which you are sampling is normally distributed. The t-test is said to be rather ‘robust’ in terms of this assumption, which means that reality can deviate from this assumption a fair amount without seriously affecting the validity of the analysis.
+One of the assumptions of many statistical procedures (including the t-test) is that the population from which you are sampling is normally distributed. The t-test is said to be rather ârobustâ in terms of this assumption, which means that reality can deviate from this assumption a fair amount without seriously affecting the validity of the analysis.
 <p>
 This is particularly true when the size of the samples is large (thanks to the Central Limit Theorem). Some deviations from normality can pose a problem for the t-test, specifically those that involve getting extreme scores more frequently than you would if the distribution were normal. Statistical Software Packages provides two statistical tests for deviation from normality, the ‘Kolomogorov-Smirnov’ family of tests and the ‘Shapiro-Wilk’ test. The ‘Kolomogorov-Smirnov’ test can be used to test if two data sets are distributed according to the same distribution. It can also be used to test if one data set comes from a specified distribution, such as the normal distribution. ( As such, the normal distribution must be specified as an argument to the function.)
 <p>
-For the purposes of this module, we will only use a special case of the ‘Kolomogorov-Smirnov’ test, known as the ‘Anderson-Darling’ test of normality.
+For the purposes of this module, we will only use a special case of the ‘Kolomogorov-Smirnov’ test, known as the â Anderson-Darling’ test of normality.
 <p>
 The  test can not be implemented directly in R. Using the test requires the installation of the nortest package. We will look at packages in greater detail later in the semester.
 <p>
-<p>The null hypothesis of both the <code>Anderson-Darling’ and</code>Shapiro-Wilk’ tests is that the population is normally distributed, and the alternative hypothesis is that the data is not normally distributed.</p>
+<p>The null hypothesis of both the <code>Anderson-Darlingâ and</code>Shapiro-Wilkâ tests is that the population is normally distributed, and the alternative hypothesis is that the data is not normally distributed.</p>
 <div id="graphical-methods" class="section level3">
 <h3>Graphical Methods</h3>
 <p>
 The quantile-quantile (Q-Q) plot is an excellent way to see whether the data deviate from normal (the plot can be set up to see if the data deviate from other distributions as well but here we are only interested in the normal distribution).
 <p>
-<p>The process used for creating a QQ plot involves determining what proportion of the ‘observed’ scores fall below any one score, then the “z- score” that would fit that proportion if the data were normally distributed is calculated, and finally that “z- score” that would cut off that proportion (the ‘expected normal value’) is translated back into the original metric to see what raw score that would be.</p>
+<p>The process used for creating a QQ plot involves determining what proportion of the ‘observed’ scores fall below any one score, then the âz- scoreâ that would fit that proportion if the data were normally distributed is calculated, and finally that âz- scoreâ that would cut off that proportion (the ‘expected normal value’) is translated back into the original metric to see what raw score that would be.</p>
 <p>
 <p>A scatter plot is then created that shows the relationship between the actual ‘observed’ values and what those values would be ‘expected’ to be if the data were normally distributed. If the data is normally distributed then the circles on the resulting plot (each circle representing a score) will form a straight line. A trend line can be added to the plot to assist in determining whether or not this relationship is linear.</p>
 </div>

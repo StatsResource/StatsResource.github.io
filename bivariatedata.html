@@ -2561,8 +2561,8 @@ window.FlexDashboardComponents.push({
 
 <div id="dashboard-container">
 
-<div id="main-menu" class="section level1" data-navmenu="Menu">
-<h1>Main Menu</h1>
+<div id="navigate" class="section level1" data-navmenu="Menu">
+<h1>Navigate</h1>
 <div id="column" class="section level2 tabset">
 <h2>Column</h2>
 <div id="contents" class="section level3">
@@ -2589,7 +2589,7 @@ window.FlexDashboardComponents.push({
 <tbody>
 <tr>
 <td class="tg-76so">
-Exploring Data
+<strong> <a href="exploratorydataanalysis.html">Exploring Data</a></strong><br>Measures of Centrality and Dispersion
 </td>
 <td class="tg-76so">
 <strong> <a href="graphicalprocedures.html">Graphical Procedures</a></strong><br> Histograms, Boxplots, Ogives
@@ -2598,7 +2598,7 @@ Exploring Data
 <strong> <a href="probability.html">Probability <br> and Random Variables</a></strong>
 </td>
 <td class="tg-76so">
-<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong>
+<strong> <a href="probabilitydistributions.html">Probability Distributions</a></strong> <br> Discrete and Continuous probability Distributions. Compound and Mixed Probability Distributions
 </td>
 </tr>
 <tr>
@@ -2612,12 +2612,12 @@ Exploring Data
 <strong> <a href="bivariatedata.html">Bivariate Data</a></strong> <br>Correlation Coefficients &amp; Hypothesis Tests, Chi Square Test for Independence
 </td>
 <td class="tg-76so">
-<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models
+<strong> <a href="linearmodels.html">Linear Models</a></strong> <br> Simple and Multiple Linear Regression Models, Residual Analysis, Regression ANOVA
 </td>
 </tr>
 <tr>
 <td class="tg-76so">
-<strong><a href="randomnumbers.html">Random Number Generation</a></strong>
+<strong><a href="discreterandomvariables.html">Discrete Random Variables</a></strong><br>Expectations and variance of discrete random variables, Joint Distribution of discrete random variables
 </td>
 <td class="tg-76so">
 <strong><a href="continuousrandomvariables.html">Continuous Random Variables</a></strong><br>Expectations and variance of continuous random variables
@@ -2626,21 +2626,32 @@ Exploring Data
 <strong><a href="randomvariables2.html">More on Random Variables</a></strong><br> Moment Generating Functions, Cumulant Generating Functions
 </td>
 <td class="tg-76so">
-<strong> <a href="timeseries.html">Time Series Analysis</a></strong>
+<strong><a href="randomnumbers.html">Random Number Generation</a></strong>
 </td>
 </tr>
 <tr>
 <td class="tg-76so">
-<strong> <a href="gametheory.html">Game Theory and Decision Theory</a></strong> <br>
+<strong> <a href="gametheory.html">Game Theory and Decision Theory</a></strong><br>Matrix Games
 </td>
 <td class="tg-76so">
-<strong> <a href="experimentaldesign.html">Experimental Design</a></strong><br>
+<strong> <a href="experimentaldesign.html">Experimental Design</a></strong><br>ANOVA Procedures, Testing Model Assumptions
 </td>
 <td class="tg-76so">
-<strong> <a href="survivalanalysis.html">Survival Analysis</a></strong>
+<strong> <a href="survivalanalysis.html">Survival Analysis</a></strong> <br>Non parametric approaches, Cox proportional hazard models
 </td>
 <td class="tg-76so">
 <strong> <a href="statisticalprocesscontrol.html">Statistical Process Control</a></strong>
+</td>
+</tr>
+<tr>
+<td class="tg-76so">
+<strong> <a href="timeseries.html">Time Series Analysis</a></strong><br>Time Series
+</td>
+<td class="tg-76so">
+</td>
+<td class="tg-76so">
+</td>
+<td class="tg-76so">
 </td>
 </tr>
 </tbody>
@@ -2713,10 +2724,11 @@ Correlation Coefficient - Hypothesis Testing
 <h5>
 Testing Goodness of Fit
 </h5>
-<p>Contingency tables are used to examine the relationship between subjects’ scores on two categorical variables.</p>
+<p>Contingency tables are used to examine the relationship between subjectsâ scores on two categorical variables.</p>
 <h5>
 Chi square test of independence
 </h5>
+
 <p>If the columns are not contingent on the rows, then the rows and column frequencies are independent. The test of whether the columns are contingent on the rows is called the chi square test of independence. The null hypothesis is that there is no relationship between row and column frequencies.</p>
 <h5>
 Chi-Square Testing
@@ -2727,6 +2739,21 @@ Chi-Square Testing
 <li>Chi-Square Exercise (<a title="Chi-SquareExercise" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">here</a>)
 </li></li>
 </ul>
+</div>
+<div id="test-statistic" class="section level3">
+<h3>Test Statistic</h3>
+For this test we used the chi-squared test statistic which is given by:
+<span class="math display">\[\begin{equation}
+X^2 = \sum_{i=1}^{n} {(O_i - E_i)^2 \over E_i}
+\end{equation}\]</span>
+<p>The Chi Square test tests a null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution. The events considered must be mutually exclusive and have total probability 1. A common case for this is where the events each cover an outcome of a categorical variable.</p>
+<ul>
+<li><span class="math inline">\(X^2\)</span> = the test statistic that asymptotically approaches a <span class="math inline">\(\chi^2\)</span> distribution.</li>
+<li><span class="math inline">\(O_i\)</span> = an observed frequency;</li>
+<li><span class="math inline">\(E_i\)</span> = an expected (theoretical) frequency, asserted by the null hypothesis;</li>
+<li>$n $ = the number of possible outcomes of each event.</li>
+</ul>
+<p>The chi-square statistic can then be used to calculate ap-value by comparing the value of the statistic to a chi-square distribution. The number of degrees of freedom is equal to the number of cells <code>n'', minus the reduction in degrees of freedom,</code>p’’.</p>
 <p><strong>Chi-Square Testing</strong></p>
 <ul>
 <li>Chi Square Test- computing the expected values - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">Here</a>
@@ -2750,18 +2777,71 @@ Chi Square Test
 </div>
 <div id="testing-goodness-of-fit" class="section level3">
 <h3>Testing Goodness of Fit</h3>
-<p>Contingency tables are used to examine the relationship between subjects’ scores on two categorical variables.</p>
-<ul>
-<li><p>Expected Values under the null hypothesis (<a title="ChiSquare-ExpectedValues" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">here</a>)</p></li>
-<li><p>Chi-Square Exercise (<a title="Chi-SquareExercise" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">here</a>)</p></li>
-</ul>
+<p>Contingency tables are used to examine the relationship between subjectsâ scores on two categorical variables.</p>
 </div>
-<div id="chi-square-testing" class="section level3">
-<h3>Chi-Square Testing</h3>
+<div id="worked-examples" class="section level3">
+<h3>Worked Examples</h3>
+<div id="worked-examples-1" class="section level4">
+<h4>Worked Examples 1</h4>
+<p>One of the questions on a business magainzes subscribers only study was:</p>
+<p>“In the past 12 months, when travelling for business, what types of airline tickets did you purchase most often?”</p>
+<p>The data obtained are show in the table below</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">Domestic Flight</th>
+<th align="center">International Flight</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">First Class</td>
+<td align="center">65</td>
+<td align="center">55</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">Business Class / Executive</td>
+<td align="center">140</td>
+<td align="center">100</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">Economy</td>
+<td align="center">520</td>
+<td align="center">120</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h5>
+Exercises
+</h5>
+<ul>
+<li>Using a 5% significance level, test for the independence of type of flight and type of ticket. What is your conclusion?</li>
+</ul>
+<h5>
+Solution
+</h5>
+<ul>
+<li><a href="https://youtu.be/nitlgJUluRE"> Click here for the Part 1 of the solution</a></li>
+<li><a href="https://youtu.be/oBJmx6bkXpA"> Click here for the Part 1 of the solution</a></li>
+</ul>
+<hr />
+</div>
+<div id="other-videos" class="section level4">
+<h4>Other Videos</h4>
 <ul>
 <li>Chi Square Test- computing the expected values - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">Here</a></li>
 <li>Chi Square Exercise - <a href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">Here</a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>

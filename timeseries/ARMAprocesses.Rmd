@@ -1,0 +1,24 @@
+ARMA Processes 
+===================================== 
+Column
+-------------------------
+
+### ARMA Processes 
+
+<h3>ARMA Processes</h3>
+
+
+ 
+yt=1yt-1+2yt-2++pyt-p+t
+ 
+ 
+Discussion
+Explain the difference between the autoregressive and moving-average process. Why are these processes refer to as stationary processes.
+ 
+Autoregression is a process in whcih a proportion of Yt is carried forward to the next period, then a proportion of Yt+1 is carried to the next, and so on
+ 
+In moving-avergae processes, previous terms are not perpetuated.
+
+An AR term can be distinguished from an MA process by it's persistence. Since autoregression is an iterative process, values of the random error fade away slowly as each time period feeds to the next.
+ 
+The MA process is correlation of only the random component, so after q periods the random error terms is no longer in the system.
