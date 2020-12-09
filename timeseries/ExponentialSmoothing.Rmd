@@ -1,6 +1,10 @@
+Exponential Smoothing
+=======================
 
-%------------------------------------------------%
-\section{Exponential Smoothing}
+Column {.tabset}
+------------------
+
+### Exponential Smoothing
 
 \[
 \mbox{New Forecast} = \mbox{Old Forecast} + \alpha \mbox{(Latest Observation - Old Forecast)}
@@ -11,7 +15,7 @@
 \item All past data is incorporated, and there is no cut-off point as with moving averages.
 \end{itemize}
 
-%------------------------------------------------%
+------------------------------------------------
 
 Exponential smoothing is commonly applied to financial market and economic data, but it can be used with any discrete 
 set of repeated measurements. The simplest form of exponential smoothing should be used only for data without any 
@@ -33,10 +37,12 @@ Simple Exponential Smoothing
 Choosing the Best Value for Parameter a (alpha)
 Indices of Lack of Fit (Error)
 Seasonal and Non-seasonal Models With or Without Trend
-1) General Introduction
+
+### 1) General Introduction
 Exponential smoothing has become very popular as a forecasting method for a wide variety of time series data. Historically, the method was independently developed by Brown and Holt. Brown worked for the US Navy during World War II, where his assignment was to design a tracking system for fire-control information to compute the location of submarines. Later, he applied this technique to the forecasting of demand for spare parts (an inventory control problem). He described those ideas in his 1959 book on inventory control. Holt's research was sponsored by the Office of Naval Research; independently, he developed exponential smoothing models for constant processes, processes with linear trends, and for seasonal data.
 Gardner (1985) proposed a "unified" classification of exponential smoothing methods. Excellent introductions can also be found in Makridakis, Wheelwright, and McGee (1983), Makridakis and Wheelwright (1989), Montgomery, Johnson, & Gardiner (1990).
-2) Simple Exponential Smoothing
+
+### 2) Simple Exponential Smoothing
 A simple and pragmatic model for a time series would be to consider each observation as consisting of a constant (b) and an error component  (epsilon), that is: Xt = b + t. The constant b is relatively stable in each segment of the series, but may change slowly over time. If appropriate, then one way to isolate the true value of b, and thus the systematic or predictable part of the series, is to compute a kind of moving average, where the current and immediately preceding ("younger") observations are assigned greater weight than the respective older observations. Simple exponential smoothing accomplishes exactly such weighting, where exponentially smaller weights are assigned to older observations. 
 
 The specific formula for simple exponential smoothing is:	St=Xt + (1-)St-1
@@ -44,7 +50,8 @@ The specific formula for simple exponential smoothing is:	St=Xt + (1-)St-1
 When applied recursively to each successive observation in the series, each new smoothed value (forecast) is computed as the weighted average of the current observation and the previous smoothed observation; the previous smoothed observation was computed in turn from the previous observed value and the smoothed value before the previous observation, and so on. Thus, in effect, each smoothed value is the weighted average of the previous observations, where the weights decrease exponentially depending on the value of parameter  (alpha). If  is equal to 1 (one) then the previous observations are ignored entirely; if  is equal to 0 (zero), then the current observation is ignored entirely, and the smoothed value consists entirely of the previous smoothed value (which in turn is computed from the smoothed observation before it, and so on; thus all smoothed values will be equal to the initial smoothed value S0). Values of  in-between will produce intermediate results.
 
 Even though significant work has been done to study the theoretical properties of (simple and complex) exponential smoothing (e.g., see Gardner, 1985; Muth, 1960; see also McKenzie, 1984, 1985), the method has gained popularity mostly because of its usefulness as a forecasting tool. For example, empirical research by Makridakis et al. (1982, Makridakis, 1983), has shown simple exponential smoothing to be the best choice for one-period-ahead forecasting, from among 24 other time series methods and using a variety of accuracy measures (see also Gross and Craig, 1974, for additional empirical evidence). Thus, regardless of the theoretical model for the process underlying the observed time series, simple exponential smoothing will often produce quite accurate forecasts.
-3) Choosing the Best Value for Parameter   (alpha)
+
+### 3) Choosing the Best Value for Parameter   (alpha)
 Gardner (1985) discusses various theoretical and empirical arguments for selecting an appropriate smoothing parameter. Obviously, looking at the formula presented above,  should fall into the interval between 0 (zero) and 1 (although, see Brenner et al., 1968, for an ARIMA perspective, implying 0<<2). Gardner (1985) reports that among practitioners, an  smaller than .30 is usually recommended. However, in the study by Makridakis et al. (1982),  values above .30 frequently yielded the best forecasts. After reviewing the literature on this topic, Gardner (1985) concludes that it is best to estimate an optimum  from the data (see below), rather than to "guess" and set an artificially low value.
 
 3.1 Estimating the best  value from the data. In practice, the smoothing parameter is often chosen by a grid search of the parameter space; that is, different solutions for  are tried starting, for example, with  = 0.1 to = 0.9, with increments of 0.1. Then  is chosen so as to produce the smallest sums of squares (or mean squares) for the residuals (i.e., observed values minus one-step-ahead forecasts; this mean squared error is also referred to as ex postmean squared error, ex post MSE for short).
