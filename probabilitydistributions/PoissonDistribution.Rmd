@@ -7,10 +7,41 @@ Column {.tabset}
 
 ### Poisson Distribution
 
-<h5> Poisson Distribution</h5>
+#### Introduction
+*  The Poisson Distribution is a statistical distribution showing the frequency probability of specific events when the average probability of a single occurrence is known. 
+		
+*  The Poisson distribution is a discrete probability distribution.
+		
+*  Application of the Poisson distribution enables managers to introduce optimal scheduling systems. 
+		
+*  For example, if the average number of people that rent movies on a friday night at a single video store location is 400,  a Poisson distribution can answer such questions as, "\textit{What is the probability that more than 600 people will rent movies?}".
+		
+*  One of the most famous historical practical uses of the Poisson distribution was estimating the annual number of Prussian cavalry soldiers killed due to horse-kicks. 
+		
+*  Other modern examples include estimating the number of car crashes in a city of a given size. In physiology, this distribution is often used to calculate the probabilistic frequencies of different types of neurotransmitter secretions. 
 
 
-#### Probability Density Function for the Poisson Distribution}
+
+<h4> The Poisson Probability Distribution </h4> 
+
+* A Poisson random variable is the number of successes that result from a Poisson experiment.
+* The probability distribution of a Poisson random variable is called a Poisson distribution.
+* Very Important: This distribution describes the number of occurrences in a \textbf{\emph{unit period (or space)}}
+* Very Important: The expected number of occurrences is $m$
+
+<h5> Notation</h5>
+
+We use the following notation.
+\[X \sim Poisson(m) \]
+Note the expected number of occurrences per unit time is conventionally denoted $\lambda$ rather than $m$.
+<p>
+
+As the Murdoch Barnes cumulative Poisson Tables (Table 2) use $m$, so shall we. Recall that Tables 2 gives values of the probability $P(X \geq r )$, when X has a Poisson distribution with
+parameter $m$.
+
+
+
+#### Probability Density Function for the Poisson Distribution
 A discrete random variable $X$ is said to follow a Poisson distribution with parameter $m$, written $X \sim \mbox{Poisson}(m)$.
 
 
@@ -20,25 +51,19 @@ A discrete random variable $X$ is said to follow a Poisson distribution with par
 * It is usually denoted as either $m$ or $\lambda$.
 
 
-\noindent Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the \textit{probability density function} formula.
+Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the *probability density function* formula.
 
 
-
-\begin{framed}
-\noindent \textbf{Poisson Formula}\\
+<h4> Poisson Formula</h4>
 The probability that there will be $k$ occurrences in a \textbf{unit time period} is denoted $P(X=k)$, and is computed as:
 {
-\large
+
 \[ P(X = k)=\frac{m^k e^{-m}}{k!} \]
 }
 
-\noindent where
+where
 
-
-
-
- 
-%\itemf(x) the probability of x occurrences in an interval. 
+* $f(x)$ the probability of x occurrences in an interval. 
 * $m$ (or $\lambda$) is the expected value of the mean number of occurrences in any interval (i.e. the Poisson mean),
 * $e=2.718$,
 * $k = 0, 1, 2, \ldots$,
@@ -46,33 +71,91 @@ The probability that there will be $k$ occurrences in a \textbf{unit time period
 
 
 
-#### Poisson Expected Value and Variance}
+#### Characteristics of a Poisson Experiment
+
+A Poisson experiment is a statistical experiment that has the following properties:
+
+	*  The experiment results in outcomes that can be classified as successes or failures.
+	*  The average number of successes (m) that occurs in a specified unit space is known.
+	*  Note that the specified unit space could take many forms. For instance, it could be a length, an area, a volume, a period of time, etc.
+	*   The probability that a success will occur is proportional to the size of the \textbf{\emph{unit space}}.
+	*  The probability that a success will occur in an extremely small unit space is virtually zero.
+%		* [$\ast$]  The \texttt{pois} family of functions are used to compute probabilities and quantiles.
+	*   The \textbf{Poisson mean} $m$ (or $\lambda$ pronounced as ``lambda") is the expected number of occurrences per unit space / unit period.
+
+* [$\ast$] (Remark:  Some texts will use the notation $\lambda$ rather than  $m$ ).
+
+
+#### Important Assumptions
+
+If the following two properties are satisfied, the number of occurrences is a random variable described by the Poisson probability distribution
+
+
+* [(1)]      The probability of an occurrence is the same for any two intervals of equal length.
+* [(2)]     The occurrence or non-occurrence in any interval is independent of the occurrence or non-occurrence in any other interval.
+
+
+
+### When To Use The Poisson Probability Distribution
+
+Consider cars passing a point on a rarely used country road. Is this a Poisson Random Variable?
+Suppose that 
+
+1.  Arrivals occur at an average rate of $m$ cars per unit time.
+2.  The probability of an arrival in an interval of length $k$
+is constant.
+3.  The number of arrivals in two non-overlapping
+intervals of time are independent.
+
+This would be an appropriate use of the Poisson Distribution.
+
+#### Knowing which distribution to use
+
+*  For the end of semester examination, you will be required to know when it is appropriate to use the Poisson distribution, and when to use the binomial distribution.
+*  Recall the key parameters of each distribution.
+*  Binomial : number of \textbf{\emph{successes}} in $n$ \textbf{\emph{independent trials}}.
+*  Poisson : number of \textbf{\emph{occurrences}} in a \textbf{\emph{unit space}}.
+
+
+### Poisson Expected Value and Variance
+
+#### Poisson Random Variables
+
+
+	*  A Poisson random variable is the number of successes that result from a Poisson experiment.
+	*  The probability distribution of a Poisson random variable is called a Poisson distribution.
+	*  \textbf{Very Important:} This distribution describes the number of occurrences in a \textbf{\emph{unit period (or space)}}
+	*  \textbf{Very Important:} The expected number of occurrences is $m$ per unit period (or unit space).
+	
 
 
 If the random variable X has a Poisson distribution with parameter $m$, we write
 \[ X \sim Poisson(m) \]
 Note the expected number of occurrences per unit time is often denoted $\lambda$ (lambda) rather than $m$.
 
-% If X is a Poisson distribution stochastic variable with parameter $\lambda$, then
-% 
-% 
-% * The expected value $E[X]=\lambda$
-% * The variance $Var[X]=\lambda$
-% 
 
-
+<p>
 
 
 
 * Expected Value of X : $\mbox{E}(X)=  m \mbox{ or } \lambda$
 * Variance of X : $\mbox{Var}(X) = m \mbox{ or } \lambda$
 * Standard Deviation of X : $SD(X) = \sqrt{m} \mbox{ or } \sqrt{\lambda}$
-
-
-\noindent Important 
+<p>
+Important 
 \[ \mbox{E}(X) = \mbox{Var}(X)\]
 * Poisson Distribution - Probability Mass Function
 * <a href= "https://www.youtube.com/watch?v=nc4vErCoo0w">Confidence Intervals for Poisson Variables </a>
+
+	
+
+
+
+
+
+
+
+
 
 
 ### Worked Examples

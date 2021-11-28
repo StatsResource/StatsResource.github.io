@@ -4,6 +4,31 @@ Normal Distribution {data-navmenu="Continuous Distributions"}
 Column {.tabset}
 -----------------------------------
 
+### Characteristics
+
+<h4> Characteristics of the Normal probability distribution</h4>
+
+1. The highest point on the normal curve is at the mean, which is also the median and mode of the distribution.
+2. \alert{[VERY IMPORTANT]}
+The normal probability curve is bell-shaped and symmetric, with the shape of the curve to the left of the mean a mirror image of the shape of the curve to the right of the mean.
+3. The standard deviation determines the width of the curve. Larger values of the the standard deviation result in wider flatter curves, showing more dispersion in data.
+4. The total area under the curve for the normal probability distribution is 1.
+
+
+<h4> Distributional Characteristics </h4>
+
+\textbf{Remark:} It is useful to know the following statements as rules of thumb, but we will do all relevant calculations from first principles. However, in an exam situation, these rules of thumb may be invoked, and it is required to show your workings.
+
+*  The interval defined by the mean $ \pm 1 \times $ standard deviation includes approximately $68\%$ of the observations, leaving $16\%$ (approx) in each tail.
+*  The interval defined by the mean $ \pm 1.645 \times $ standard deviation includes approximately $90\%$ of the observations, leaving $5\%$ (approx) in each tail.
+*  The interval defined by the mean $ \pm 1.96 \times $ standard deviation includes approximately $95\%$ of the observations, leaving $2.5\%$ (approx) in each tail.
+
+*  The interval defined by the mean $ \pm 2.58 \times $ standard deviation includes approximately $99\%$ of the observations, leaving $0.5\%$ (approx) in each tail.
+
+
+
+***Remark:*** It is useful to know this numbers, but we will do all calculations from first principles.
+
 
 ### Complement and Symmetry Rules
 

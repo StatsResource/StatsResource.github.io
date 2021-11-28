@@ -1,0 +1,76 @@
+
+The Standard Normal Distribution
+===========================================
+
+
+Column {.tabset}
+-----------------------------------------------------------------------
+
+### The Standard Normal Distribution
+
+
+
+*  The standard normal distribution is a special case of the normal distribution with a mean $\mu= 0$ and a standard deviation $\sigma =1$.
+*  We denote the standard normal random variable as $Z$ rather than $X$.
+\[Z \sim N(0,1^2)\]
+*  The distribution is well described in statistical tables (i.e. Murdoch Barnes Table 3, aka MB3)
+*  Rather than computing probabilities from first principles, which is very difficult, probabilities from distributions other than the Z distribution (e.g. X $\sim$N($\mu=100, \sigma =15$)) can be computed using the Z distribution, a much easier approach. (We shall demonstrate how to do this shortly.)
+
+### Standardization formula
+All normally distributed random variables have corresponding $Z$ values, called \textbf{\emph{Z-scores}}.\\
+\bigskip
+For normally distributed random variables, the z-score can be found using the \textbf{\emph{standardization formula}};
+\[z_o = { x_o - \mu \over \sigma}\]
+where $x_o$ is a score from the underlying normal (``X") distribution, $\mu$ is the mean of the original normal distribution, and $\sigma$ is the standard deviation of original normal distribution.\\
+\bigskip
+Therefore $z_o$ is the z-score that corresponds to $x_o$.
+
+
+*  Terms with subscripts mean particular values, and are not variable names.
+*  A computed Z-score is a normally distributed random variable only if the underlying distribution (X) is normally distributed. If the underlying distribution is not normal, then using Z-scores is not a valid approach.
+
+#### The Standardized Value
+
+
+*  Suppose that mean $\mu = 80 $ and that standard deviation $\sigma = 8$.
+*  What is the Z-score for $x_o = 100$?
+\[
+z_{100} = {x_0 - \mu \over \sigma} = {100 - 80 \over 8} = {20 \over 8} = 2.5
+\]
+*  Therefore the Z score is : $z_{100} = 2.5$
+
+
+#### Z scores
+A Z-score always reflects the number of standard deviations above or below the mean a particular score is.
+Suppose the scores of a test are normally distributed with a mean of 50 and a standard deviation of 9
+For instance, if a person scored a 68 on a test, then they scored 2 standard deviations above the mean.
+
+Converting the test scores to z scores, an X value of 68 would yield:
+\[ Z = {68 - 50 \over 9} =2 \]
+
+So, a Z score of 2 means the original score was 2 standard deviations above the mean.
+
+
+### The Standard Normal (Z) Distribution Tables
+
+*  Importantly, probabilities relating to the z distribution are comprehensively tabulated in \textbf{\emph{Murdoch Barnes Table 3}}.
+*  This is available on sulis, in the ``about this module" folder.
+*  Given a value of $k$ (with k usually between 0 and 4), the probability of a standard normal ``Z" random variable being greater than (or equal to) k $P(Z \geq k)$ is given in Murdoch Barnes table 3 .
+*  Other statistical tables can be used (e.g. the Dept. of Education Tables that many student would have used in school), but they may tabulate probabilities in a different way.
+
+
+### An Important Identity
+If two values $z_o$ and $x_o$ are related in the following way, for some values $\mu$ and $\sigma$,
+\[
+z_{0} = {x_0 - \mu \over \sigma}
+\]
+Then we can can say
+
+\[ P(X \geq x_o) = P(Z \geq z_o) \]
+
+or alternatively
+
+\[ P(X \leq x_o) = P(Z \leq z_o) \]
+
+This is fundamental to solving problems involving normal distributions.
+

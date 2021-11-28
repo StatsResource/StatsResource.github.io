@@ -1,0 +1,200 @@
+
+
+Normal Distribution - Important Rules {data-navmenu="Normal Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Complement Rule
+
+For some value $A$, and for any continuous distribution $X$ (including any normal distribution and the Z distribution) we can say.
+\[ P(X \leq x) = 1 - P(X \geq x) \]
+
+This rule is very simple intuitive. If 70\% of the population is below a certain height, that means that 30\% of the population is above that height. Having said that, it is very powerful in solving normal probability problems.
+
+<h5>Complement rule</h5>
+  Common to all continuous random variables
+ \[P(Z \geq k) = 1 - P(Z \leq k) \]
+ Similarly
+ \[P(X \leq k) = 1 - P(X \geq k) \]
+ 
+ 
+ \[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]
+
+Any normal distribution problem can be solved with some combination of the following rules.
+
+
+
+This rule applies to all continuous probability distributions, i.e. the normal distribution, the exponential distribution and the uniform distribution.
+(Common to all continuous random variables) 
+
+
+### Example
+
+\[P(Z \leq 1.96)   = 1 - P(Z \geq 1.96)   = 1 - 0.0250 = 0.9750\]
+
+
+
+*  $P(Z \leq 1.27) = 1-P(Z \geq 1.27) $
+*  $ P(Z \geq 1.27) = 1-P(Z \leq 1.27) $
+
+ *  The Complement rule (Common to all continuous random variables)
+
+\[P(Z \geq k) = 1 - P(Z \leq k) \]
+
+
+Similarly
+
+\[P(X \geq k) = 1 - P(X \leq k) \]
+
+
+### Symmetry Rule
+
+For the standard normal ($Z$) distribution only, where \[Z \sim \mathcal{N}(0,1^2)\] and $z$ and $-z$ are both values drawn from that distribution, we can say
+\[ P(Z \leq -z) = P(Z \geq z) \]
+
+or conversely
+
+\[ P(Z \geq -z) = P(Z \leq z) \]
+
+Important - the symmetry rule can be applied to z-values.
+
+
+
+
+* 
+This rule is based on the property of symmetry mentioned previously.
+* 
+Only the probabilities corresponding to values between 0 and 4 are tabulated in Murdoch Barnes.
+* 
+If we have a negative value of k, we can use the symmetry rule.
+
+\[P(Z \leq -k) = P(Z \geq k) \]
+by extension, we can say
+\[P(Z \geq -k) = P(Z \leq k) \]
+
+ 
+*  \textbf{Complement rule} is common to all continuous random variables
+\[P(X \geq k) = 1 - P(X \leq k) \]
+
+
+
+#### Complement Rule
+
+\[P(Z \leq -k) = P(Z \geq k) \]
+by extension, we can say
+\[P(Z \geq -k) = P(Z \leq k) \]
+
+
+*  $ P(Z \leq -1.27) = P(Z \geq 1.27) $
+*  $ P(Z \geq -1.27) = P(Z \leq 1.27) $
+
+
+  
+#### Complement Rule Example 
+
+Find  $P(Z \leq -1.8)$
+
+<b>Solution:</b>
+
+$P(Z \leq -1.80) = P(Z \geq 1.80) $ = 0.0359
+
+
+
+### Worked Examples
+
+#### Worked Example1
+Find $P(Z \geq -1.28)$
+\textbf{Solution}\\
+
+*  Using the symmetry rule
+\[P(Z \geq -1.28) = P(Z \leq 1.28) \]
+*  Using the complement rule
+\[P(Z \geq -1.28) = 1 - P(Z \geq 1.28) \]
+\[P(Z \geq -1.28) = 1 - 0.1003 = 0.8997 \]
+
+
+Find the probability of a ``z" random variable being between -1.8 and 1.96?
+i.e. Compute $P(-1.8 \leq Z \leq 1.96)$\\
+Solution
+
+*  Consider the complement event of being in this interval: a combination of being too low or too high.
+* 
+The probability of being too low for this interval is $P(Z \leq -1.80) = 0.0359$ (check)
+* 
+The probability of being too high for this interval is $P(Z \geq 1.96) = 0.0250$ (check)
+* 
+Therefore the probability of being \textbf{outside} the interval is 0.0359 + 0.0250 = 0.0609.
+* 
+Therefore the probability of being \textbf{inside} the interval is 1- 0.0609 = 0.9391
+$P(-1.8 \leq Z \leq 1.96) = 0.9391$
+
+
+#### Worked Example 3
+
+Find $P(Z \geq -1.28)$\\
+\textbf{Solution}\\
+
+*  Remark \[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]
+*  Using the symmetry rule
+\[P(Z \geq -1.28) = P(Z \leq 1.28) \]
+*  Using the complement rule
+\[P(Z \geq -1.28) = 1 - P(Z \geq 1.28) \]
+\[P(Z \geq -1.28) = 1 - 0.1003 = 0.8997 \]
+
+#### Worked Example 3
+
+Given that the mean $\mu  = 100$ and that the standard deviation $\sigma  = 2.5$, what is the "z-value" for normal random variable x = 106?
+
+\[ z  = \frac{x-\mu}{\sigma}   = \frac{106-100}{2.5}  = \frac{6}{2.5} = 2.40\]
+
+
+
+Relationship between "x value" and "z  value"
+
+[VERY IMPORTANT]
+
+\[If   z  = \frac{x-\mu}{\sigma}\]( $z$  and $x$  are some values )
+
+then we can say  \[P(X \geq x) = \Pr(Z \geq z)\]
+
+or equivalently
+
+
+\[P(X \leq x) = \Pr(Z \leq z)\]
+
+From previous example 
+
+\[P(X \geq 106) = \Pr(Z \geq 2.40)\]
+
+
+From Murdoch Barnes Table 3, 
+
+\[\P(Z \geq 2.40) = 0.00820\] 
+
+
+Therefore 
+
+
+\[P(X \geq 106) = 0.00820\] 
+
+
+
+
+
+### Complement and Symmetry Rules 
+
+Any normal distribution problem can be solved with some combination of the following rules.\\
+\bigskip \textbf{1. Complement rule}\begin{itemize}  *  Common to all continuous random variables
+\[P(Z \geq k) = 1 - P(Z \leq k) \]
+Similarly
+\[P(X \geq k) = 1 - P(X \leq k) \]
+
+
+\[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]
+}
+
+
+

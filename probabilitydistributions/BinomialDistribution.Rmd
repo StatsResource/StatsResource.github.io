@@ -46,6 +46,18 @@ The probability of exactly k successes in a binomial experiment B(n, p) is given
 * $p$ : probability of a success in any of the $n$ trial.
 * $1-p$ : probability of a failure in any of the $n$ trial.
 
+### Binomial Distribution
+
+<h5> The Binomial Probability Distribution </h5> 
+A Quick Review of the Binomial Distribution
+
+*  The number of independent trials is denoted $n$.
+*  The outcome of interest is known as a ``Success".
+*  The other outcome is known as a ``failure".  
+*  Often the applications of these names is counter-intuitive, i.e. defective components being the ``success".
+*  The probability of a `success' is $p$ 
+*  The expected number of `successes' from $n$ trials is $E(X) = np$
+*  The \texttt{binom} family of commands in \texttt{R} are what we use to compute necessary values.
 
 
 
@@ -106,6 +118,16 @@ Only these two parameters are needed to determine the probability of an event.
 If $n=100$, and $p=0.25$, then the average number of successes will be 25.
 
 
+### Example
+
+<h4> Binomial Example 1<h4>
+	
+Suppose a die is tossed 5 times. What is the probability of getting exactly 2 fours?
+	
+<h5>Solution:</h5> 
+This is a binomial experiment in which the number of trials is equal to 5, the number of successes is equal to 2, and the probability of success on a single trial is 1/6 or about 0.167. Therefore, the binomial probability is:
+	
+	\[P(X=2) = ^5C_2 \times (1/6)^2 \times (5/6)^3 = 0.161\]
 
 
 ### Videos

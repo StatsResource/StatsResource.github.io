@@ -5,4 +5,59 @@ Inference Procedures for Small Samples {data-navmenu="Inference Procedures"}
 Column {.tabset}
 -------------------------------------------------
 
+
+### Small Samples 
+
+<h4> Two Small Samples Case</h4>
+
+*  Previously we have looked at large samples, now we will consider small samples.
+*  (For the sake of clarity, I will not use small samples that have a combined sample size of greater than 30.
+*  Additionally we require the assumption that both samples have equal variance. This assumption \textbf{must} be tested with another formal hypothesis test. We will revisit this later, and in the mean time, assume that the assumption of equal variance holds.
+
+
+
+
+The key differences between the large sample case and the small sample cases arise in the following steps.
+
+*  The standard error is computed in a different way (see next slide).
+*  The degrees of freedom used to compute the critical value is $(n_X-1) + (n_Y - 1)$) or equivalently ($n_X + n_Y - 2$).
+*  Also - a formal test of equality of variances is required beforehand (End of Year Exam)
+
+
+<h4> Videos</h4>
 * <a href="https://youtu.be/5DY3j8nw5sg/">	Working With Small Samples	</a>	
+
+### Hypothesis Testing
+
+<h4>Hypothesis Test for the Mean of a Single Sample</h4>
+
+This procedure is used to assess whether the population mean  has a specified value, based on the sample mean. The hypotheses are conventionally written in a form similar to below (here the hypothesized population mean is zero).
+
+
+
+There are two hypothesis test for the mean of a single sample.
+
+1. The sample is of a normally-distributed variable for which the population standard deviation ($\sigma$) is known. 
+2. The sample is of a normally-distributed variable where σ is estimated by the sample standard deviation (s).
+ 
+In practice, the population standard deviation is rarely known. For this reason, we will consider the second case only in this course.
+
+In most statistical packages, this analysis is performed in the summary statistics functions.
+
+### Independent one-sample $t$-test}
+In testing the null hypothesis that the population mean is equal to a specified value $\mu_{0}$, one uses the statistic
+
+\[t = \frac{\overline{x} - \mu_0}{s / \sqrt{n}}\]
+
+where $s$ is the sample standard deviation and $n$ is the sample size. The degrees of freedom used in this test is $n - 1$.
+
+### Standards Error
+
+<h4>Two Small Samples Case: Standard Error</h4>
+
+Computing the standard error requires a two step calculation. From the formulae, we have the two equations below. The first term $s_p^2$ is called the ***pooled variance*** of the combined samples.
+\begin{eqnarray*}
+s_p^2&=&\frac{s_X^2(n_X-1)+s_Y^2(n_Y-1)}{n_X+n_Y-2}.\\
+S.E.(\bar{X}-\bar{Y})&=&\sqrt{s_p^2\left(\frac{1}{n_X}+\frac{1}{n_Y}\right)}.\\
+\end{eqnarray*}
+
