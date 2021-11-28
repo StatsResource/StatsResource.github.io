@@ -60,7 +60,7 @@ Column {.tabset}
 * The other commonly used measure of centrality is the median.
 * The median is the value halfway through the ordered data set, below and above which there lies an equal number of data values.
 * For an odd sized data set, the median is the middle element of the <b><i>ordered</b></i> data set.
-* For an even sized data set, the median is the average of the middle pair of elements of an \t{ordered} data set.
+* For an even sized data set, the median is the average of the middle pair of elements of an ***ordered*** data set.
 * It is generally a good descriptive measure of the location which works well for <b><i>skewed data</b></i>, or data with <b><i>outliers</b></i>.
 * For later, the median is the 0.5 quantile, and the second quartile <i>Q_2</i>.
 

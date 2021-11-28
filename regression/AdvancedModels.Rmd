@@ -1,31 +1,4 @@
-﻿
 
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="MathsResource.github.io">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>MathsResource.github.io</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          
-          <h1 id="project_title">MathsResource.Github.io</h1>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
 <!------------------------------------------------------------------------------------------------>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -37,10 +10,7 @@
 </style>
 
 <!------------------------------------------------------------------------------------------------>  
-<strong>
-<a href="http://MathsResource.github.io"> Main Menu </a> | <a href="http://MathsResource.github.io/regression/index.html"> Regression Models </a> | 
-<a href="http://MathsResource.github.io/regression/index.html"> Advanced Regression Models </a>
-</strong>
+
 <p>
 <h3><strong>Advanced Regression Models </strong></h3>
 
@@ -69,16 +39,6 @@ Robust Regression with Huber Weighting	0drbiDPCuYQ
 
 </table>
 
-
-
-
-
-<!------------------------------------------------------------------------------------------------>  
-<div id="footer">
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-
-    </div>
 
     
 

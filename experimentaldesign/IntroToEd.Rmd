@@ -31,11 +31,11 @@ The data collection and analysis plan provides the maximum amount of information
 The desired result is to produce a layout of the design along with an explanation of its structure and the necessary statistical analyses. The data collection protocol documents the details of the experiment such as the data definition, the structure of the design, the method of data collection, and the type of analyses to be applied to the data.
 
 Defining the experimental design consists of the following steps:
-\begin{enumerate}
-* Identify the experimental unit.
-* Identify the types of variables.
-* Define the treatment structure.
-* Define the design structure.
+
+1. Identify the experimental unit.
+2. Identify the types of variables.
+3. Define the treatment structure.
+4. Define the design structure.
 
 
 
@@ -123,7 +123,7 @@ Homogeneous clusters improve the comparison of treatments by randomly allocating
 
 The design structure consists of those factors that define the blocking of the experimental units into clusters. The types of commonly used design structures are described are as follows.
 
-### Completely Randomized Design.}
+### Completely Randomized Design.
 
 Subjects are assigned to treatments completely at random.
 For example, in an clinical trial study, volunteer patients are randomly assigned to one of four treatment groups (three new types of a treatment and the standard). 
