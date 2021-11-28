@@ -44,7 +44,24 @@ In practice, the population standard deviation is rarely known. For this reason,
 
 In most statistical packages, this analysis is performed in the summary statistics functions.
 
-### Independent one-sample $t$-test}
+### Student $t$-Distribution
+
+<h4> Student $t$-Distribution <h4>
+
+The $t$ distribution is the appropriate basis for
+determining the standardized test statistic when the sampling
+distribution of the mean is normally distributed but $s$ is not
+known. The sampling distribution can be assumed to be normal
+either because the population is normal or because the sample is
+large enough to invoke the central limit theorem. \\ The $t$
+distribution is required when the sample is small ($n < 30$). For
+larger samples, normal approximation can be used. For the critical
+value approach, the procedure is identical to that described in
+Section 10.3 for the normal distribution, except for the use of $t$
+instead of z as the test statistic.
+
+
+### Independent one-sample $t$-test
 In testing the null hypothesis that the population mean is equal to a specified value $\mu_{0}$, one uses the statistic
 
 \[t = \frac{\overline{x} - \mu_0}{s / \sqrt{n}}\]

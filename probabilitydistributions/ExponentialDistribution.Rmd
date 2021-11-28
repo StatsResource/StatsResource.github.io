@@ -5,22 +5,9 @@ Column {.tabset}
 -------------------------------------------------
 
 
-
-
-
-### Important Formulas
-
+### Exponential Distribution
 <h3>The Exponential Distribution</h3>
 <p>
-<h5>Probability density function of the Exponential Distribution</h5>
-
-\noindent The probability density function (pdf) of an exponential distribution is
-\[  {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&x\geq 0,\\0&x<0.\end{cases}}}\]
-
-Here $\lambda  > 0$ is the parameter of the distribution, often called the rate parameter.
-
-
-### Exponential Distribution
 The Exponential Distribution may be used to answer the following questions:
 
 * How much time will elapse before an earthquake occurs in a given region?
@@ -33,18 +20,117 @@ The Exponential Distribution may be used to answer the following questions:
 * All these questions concern the time we need to wait before a given event occurs. If this waiting time is unknown, it is often appropriate to think of it as a random variable having an exponential distribution.
 * Roughly speaking, the time $X$ we need to wait before an event occurs has an exponential distribution if the probability that the event occurs during a certain time interval is proportional to the length of that time interval.
 
+<p>
 
 
-#### Exponential Distribution Lifetimes
+
+
+
+### Important Formulas
+
+
+<h5>Probability density function of the Exponential Distribution</h5>
+
+\noindent The probability density function (pdf) of an exponential distribution is
+\[  {\displaystyle f(x;\lambda )={\begin{cases}\lambda e^{-\lambda x}&x\geq 0,\\0&x<0.\end{cases}}}\]
+
+Here $\lambda  > 0$ is the parameter of the distribution, often called the rate parameter.
+
+<p>
+The probability that a lifetime $X$ will be less than a period of $k$ time units is given by
+\[
+P( X \leq k) = 1- e^{{-k \over \mu}}.
+\]
+Similarly, the probability that a lifetime $X$ will be greater than a period of $k$ time units is given by
+\[
+P( X \geq k) = e^{{-k \over \mu}}.
+\]
+
+
+
+#### Probability density function
+The probability density function (PDF) of an exponential distribution is
+
+\[
+f(x;\lambda) = \begin{cases}
+\lambda e^{-\lambda x}, & x \ge 0, \\
+0, & x < 0.
+\end{cases}\]
+The parameter $\lambda$  is called \textbf{\emph{rate}} parameter.
+
+#### Probability density function
+The probability density function (PDF) of an exponential distribution is
+	
+\[
+f(x;\lambda) = \begin{cases}
+\lambda e^{-\lambda x}, & x \ge 0, \\
+0, & x < 0.
+\end{cases}\]
+The parameter $\lambda$  is called \textbf{\emph{rate}} parameter. It is the inverse of the expected duration ($\mu$).
+<p>
+If the expected duration is 5 ( e.g. five minutes) then the rate parameter value is 0.2.
+
+#### Cumulative density function
+The cumulative distribution function (CDF) of an exponential distribution is
+
+\[
+F(x;\lambda) = \begin{cases}
+1-e^{-\lambda x}, & x \ge 0, \\
+0, & x < 0.
+\end{cases}\]
+
+#### The Exponential Distribution
+A continuous random variable having p.d.f. f(x), where:
+$f(x) = \lambda x e ^{-\lambda x} $
+is said to have an exponential distribution, with parameter $\lambda$.
+The cumulative distribution is given by:
+$F(x) = 1 - e^{\lambda x}$
+
+
+
+
+
+### Expected Value and Variance
+<h5> Expectation and Variance</h5>
+The expected value of an exponential random variable $X$ is:
+
+\[
+E[X] = \frac{1}{\lambda}\]
+The variance of an exponential random variable $X$ is:
+
+\[
+V[X] = \frac{1}{\lambda^2}\]
+
+
+
+
+
+
+### Exponential Distribution Lifetimes
+
+The exponential distribution is a continuous probability distribution commonly used to model durations or ``lifetimes".
+A lifetime could mean
+
+*  the lifespan of a component
+*  the time it takes to complete a task
+*  the amount of time between two successive occurrences, such as withdrawals from a bank machine.
+
+The average lifetime is denoted $E(X) = \mu$.
+The variance of lifetimes is computed as $V(X) = \mu^2$
+
+#### Example
+
+
 The average lifespan of a laptop is 5 years. You may assume that
 the lifespan of computers follows an exponential probability
-distribution. \begin{itemize}\item (3 marks) What is the
+distribution. 
+* What is the
 probability that the lifespan of the laptop will be at least 6
-years? * 
-What is the probability that the lifespan of the laptop will not
-exceed 4 years? *(3 marks) What is the probability of the
-lifespan being between 5 years and 6 years?
-
+years? 
+* What is the probability that the lifespan of the laptop will not
+exceed 4 years? 
+* What is the probability of the lifespan being between 5 years and 6 years?
+<p>
 Suppose the lifetime of a PC is exponentially distributed with
 mean $\mu =5$
 We should be told the average lifetime $\mu$.
@@ -54,12 +140,18 @@ P( X \geq x_o) = e^{{-x_o \over \mu}}
 
 
 
+<p>
+
+#### The Memoryless property
+The most interesting property of the exponential distribution is the \textbf{\emph{memoryless}} property. By this , we mean that if the lifetime of a component is exponentially distributed, then an item which has been in use for some time is a good as a brand new item with regards to the likelihood of failure.
+The exponential distribution is the only distribution that has this property.
+
 
 
 
 ### Worked Examples
 
-<h3> Worked Examples</h3>
+<h3> Worked Example 1</h3>
 
 Claim amounts are modelled as an exponential random variable with mean \$1,000.
 
@@ -75,7 +167,7 @@ it is greater than \$1,000.
 <strong><a href="https://youtu.be/ivnbqNPv_WQ">Click here for demonstrated solution</a></strong>
 
 
-### Worked Example
+<h3> Worked Example 2</h3>
 
 <h5> Worked Example </h5>
 

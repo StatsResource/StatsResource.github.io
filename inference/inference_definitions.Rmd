@@ -121,7 +121,7 @@ deprivation scored 12 points lower than 10 subjects who performed after a normal
 * \textbf{\emph{Confidence intervals}} are used for interval estimation.
 * As we will soon see, point estimates are not usually as informative as confidence intervals.
 
-
+#### Confidence Intervals
 
 * Confidence intervals allow us to use sample data to estimate a parameter value, such as a population mean.
 * A confidence interval is a range of values for which we can be confident (at a specific level) that parameter value (such as the population mean)  lies within.

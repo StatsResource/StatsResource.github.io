@@ -4,6 +4,44 @@ Counting Problems {data-navmenu="Counting Problems"}
 Column {.tabset}
 -------------------------------------------------
 
+
+### Sampling With and Without Replacement
+
+#### Sampling without replacement
+		
+			* Sampling is said to be ``without replacement" when a unit is selected at random from the population and it is not returned to the main lot. * The first unit is selected out of a population of size $N$ and the second unit is selected out of the remaining population of  $N-1$ units and so on.
+			* For example, if you draw one card out of a deck of 52, there are only 51 cards left to draw from if you are selecting a second card.
+		
+		
+
+#### Example
+A lot of 100 semiconductor chips contains 20 that are defective.
+Two chips are selected at random, without replacement from the lot.
+
+	* What is the probability that the first one is defective? \\(Answer: 20/100, i.e 0.20)
+	* What is the probability that the second one is defective given that the first one was defective? \\(Answer: 19/99)
+	* What is the probability that the second one is defective given that the first one was not defective? \\(Answer: 20/99)
+
+	
+		
+### Sampling With Replacement 
+
+Sampling is called ``with replacement" when a unit selected at random from the population is returned to the population and then a second element is selected at random. Whenever a unit is selected, the population contains all the same units.
+
+	* What is the probability of guessing a PIN number for an ATM card at the first attempt.
+	
+	* Importantly a digit can be used twice, or more, in PIN codes.
+	
+	* For example $1337$ is a valid pin number, where $3$ appears twice.
+	
+	*
+	We have a one-in-ten chance of picking the first digit correctly, a one-in-ten chance of the guessing the second, and so on.
+	
+	* All of these events are independent, so the probability of guess the correct PIN is $0.1 \times 0.1 \times 0.1 \times 0.1 = 0.0001$
+	
+
+	
+
 ### Counting Problems
 
 
