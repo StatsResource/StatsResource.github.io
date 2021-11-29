@@ -173,23 +173,8 @@ pre code {
 <h2 class="tabset">Column</h2>
 <div id="definitions" class="section level3">
 <h3>Definitions</h3>
-<h3>
-Definitions of Statistical Terms
-</h3>
-<p>Statistics is a branch of mathematics in which groups of measurements or observations are studied. The subject is divided into two general categories  and . In descriptive statistics one deals with methods used to collect, organize and analyze numerical facts. Its primary concern is to describe information gathered through observation in an understandable and usable manner.</p>
-<p>Similarities and patterns among people, things and events in the world around us are emphasized. Inferential statistics takes data collected from relatively small groups of a population and uses inductive reasoning to make generalizations, inferences and predictions about a wider population. Throughout the study of statistics certain basic terms occur frequently. Some of the more commonly used terms are defined below:</p>
-</div>
-<div id="populations-and-samples" class="section level3">
-<h3>Populations and Samples</h3>
-<ul>
-<li><p>The collection of everyone or everything that is to be analyzed in a study is called a . As we have seen in the examples above, the population could be enormous in size. There could be millions or even billions of individuals in the population. But we must not think that the population has to be large. If our group being studied is fourth graders in a particular school, then the population consists only of these students. Depending on the school size, this could be less than a hundred students in our population.</p></li>
-<li><p>To make our study less expensive in terms of time and resources, we only study a subset of the population. This subset is called a . Samples can be quite large or quite small. In theory one individual from a population constitutes a sample. Many applications of statistics require that a sample have at least 30 individuals.</p></li>
-</ul>
-</div>
-<div id="definitions-1" class="section level3">
-<h3>Definitions</h3>
 <div id="what-are-populations" class="section level4">
-<h4>What are populations?</h4>
+<h4>What are populations</h4>
 <ul>
 <li><p>A  consists of an entire set of objects, observations, or scores that have something in common. For example, a population might be defined as students in a university.</p></li>
 <li><p>Some populations are only hypothetical. Consider an experiment where a die is thrown 100 times and the sum of the scores was recorded.</p></li>
@@ -214,8 +199,117 @@ Definitions of Statistical Terms
 <li>A sample is random if the method for obtaining the sample meets the criterion of randomness (each element having an equal chance at each draw).</li>
 </ul>
 </div>
+<div id="biased-sampling" class="section level4">
+<h4>Biased Sampling</h4>
+<ul>
+<li><p>A biased sample is one in which the method used to create the sample results in samples that are systematically different from the population.</p></li>
+<li><p>For instance, consider a market research project on attitudes of attendees towards an event they attended.</p></li>
+<li><p>Collecting the data by publishing a questionnaire and asking people to fill it out and send it in would produce a biased sample.</p></li>
+<li><p>People interested enough to spend their time and energy filling out and sending in the questionnaire are likely to have different attitudes about the event than those not taking the time to fill out the questionnaire.</p></li>
+</ul>
 </div>
-<div id="biased-sampling" class="section level3">
+</div>
+<div id="parameters-and-statistics" class="section level3">
+<h3>Parameters and statistics</h3>
+</div>
+<div id="what-is-a-parameter" class="section level3">
+<h3>What is a parameter?</h3>
+<ul>
+<li>A parameter is a numerical quantity measuring some aspect of a population of scores.</li>
+<li>The population mean <span class="math inline">\(\mu\)</span> and population variance <span class="math inline">\(\sigma^2\)</span> are commonly used parameters.</li>
+<li>Another commonly used parameter is the population proportion <span class="math inline">\(\pi\)</span>.</li>
+<li>(Remark : greek letters are used to designate parameters.)</li>
+<li>Parameters are rarely known and are usually estimated by  computed from samples.</li>
+</ul>
+<div id="what-is-a-statistic" class="section level4">
+<h4>What is a statistic?</h4>
+<ul>
+<li>The most common use of the word `statistics’is for describing a wide range of techniques and procedures for analyzing, interpreting and displaying data.</li>
+<li>In a second usage, a ``statistic&quot; is defined as a numerical quantity (such as the sample mean) calculated from a sample.</li>
+<li>Sample mean <span class="math inline">\(\bar{x}\)</span> and sample standard deviation <span class="math inline">\(s\)</span> are types of statistics.</li>
+<li>These statistics are used to estimate population parameters.</li>
+</ul>
+</div>
+<div id="statistical-inference-estimators" class="section level4">
+<h4>Statistical Inference Estimators</h4>
+<ul>
+<li><p>Three important attributes of statistics as estimators are: </p>
+<ul>
+<li>unbiasedness, * consistency, * relative efficiency.\end{itemize}</li>
+</ul></li>
+<li><p>A statistic is unbiased if, in the long run, it’s value is reasonably close to the parameter it is estimating.</p></li>
+<li><p>An estimator is consistent if the estimator tends to get closer to the parameter it is estimating as the sample size increases.</p></li>
+<li><p>The efficiency of a statistic is the degree to which the statistic is stable from sample to sample.</p></li>
+<li><p>That is, the less subject to sampling fluctuation a statistic is, the more efficient it is.</p></li>
+<li><p> refers to the extent to which a statistic takes on different values with different samples.</p></li>
+<li><p>That is, it refers to how much the statistic’s value fluctuates from sample to sample.</p></li>
+</ul>
+</div>
+</div>
+<div id="inferential-statistics" class="section level3">
+<h3>Inferential Statistics</h3>
+<ul>
+<li>Inferential statistics are used to draw inferences about a population from a sample.</li>
+<li>Consider an experiment in which 10 subjects who performed a task after 24 hours of sleep deprivation scored 12 points lower than 10 subjects who performed after a normal night’s sleep.</li>
+<li>Is the difference real or could it be due to chance?</li>
+<li>How much larger could the real difference be than the 12 points found in the sample?</li>
+<li>These are the types of questions answered by inferential statistics.</li>
+</ul>
+</div>
+<div id="bias-in-sampling" class="section level3">
+<h3>Bias in Sampling</h3>
+<ul>
+<li>If there is a tendency for a certain group of the population to be omitted from the sample or if people who refuse to co-operate form a group which is, in some way, different to the population, we have what is called a biased sample.</li>
+<li>We often use the word bias but its definition in the context of sampling is a systematic tendency to overestimate or underestimate the population parameter of interest.</li>
+<li>For the election example, if my sample consists solely of people from a disadvantaged area with high unemployment, I may under-estimate the level of support for a particular political party.</li>
+<li>How can we eliminate bias? Bias can be eliminated by taking a random sample. This is a sample where everyone in the population has the same chance of getting into the sample and the fact that one individual has got into the sample does not affect the chances of another individual getting into the sample i.e. everyone has an independent and equal chance of being included in the sample. This method of sampling is called simple random sampling.</li>
+</ul>
+</div>
+<div id="definitions-1" class="section level3">
+<h3>Definitions</h3>
+<h3>
+Definitions of Statistical Terms
+</h3>
+<p>Statistics is a branch of mathematics in which groups of measurements or observations are studied. The subject is divided into two general categories  and . In descriptive statistics one deals with methods used to collect, organize and analyze numerical facts. Its primary concern is to describe information gathered through observation in an understandable and usable manner.</p>
+<p>Similarities and patterns among people, things and events in the world around us are emphasized. Inferential statistics takes data collected from relatively small groups of a population and uses inductive reasoning to make generalizations, inferences and predictions about a wider population. Throughout the study of statistics certain basic terms occur frequently. Some of the more commonly used terms are defined below:</p>
+</div>
+<div id="populations-and-samples" class="section level3">
+<h3>Populations and Samples</h3>
+<ul>
+<li><p>The collection of everyone or everything that is to be analyzed in a study is called a . As we have seen in the examples above, the population could be enormous in size. There could be millions or even billions of individuals in the population. But we must not think that the population has to be large. If our group being studied is fourth graders in a particular school, then the population consists only of these students. Depending on the school size, this could be less than a hundred students in our population.</p></li>
+<li><p>To make our study less expensive in terms of time and resources, we only study a subset of the population. This subset is called a . Samples can be quite large or quite small. In theory one individual from a population constitutes a sample. Many applications of statistics require that a sample have at least 30 individuals.</p></li>
+</ul>
+</div>
+<div id="definitions-2" class="section level3">
+<h3>Definitions</h3>
+<div id="what-are-populations-1" class="section level4">
+<h4>What are populations?</h4>
+<ul>
+<li><p>A  consists of an entire set of objects, observations, or scores that have something in common. For example, a population might be defined as students in a university.</p></li>
+<li><p>Some populations are only hypothetical. Consider an experiment where a die is thrown 100 times and the sum of the scores was recorded.</p></li>
+<li><p>The researcher might define a population as the sums that would result if this experiment was repeated an infinite number of times.</p></li>
+<li><p>The population is hypothetical in the sense that it is not reasonable to repeat this experiment indefinitely.</p></li>
+<li><p>The distribution of a population can be described by several parameters such as the mean and standard deviation.</p></li>
+</ul>
+</div>
+<div id="what-are-sample-1" class="section level4">
+<h4>What are sample?</h4>
+<ul>
+<li>A sample is a subset of a population.</li>
+<li>Suppose we are interested in some characteristic of a population ( e.g. amount of time spent on the internet)</li>
+<li>Since it is usually impractical to test every member of a population, a sample from the population is typically the best approach available.</li>
+<li>To be properly representative of a population, a sample should be both  and sufficiently large.</li>
+</ul>
+</div>
+<div id="random-sampling-1" class="section level4">
+<h4>Random Sampling</h4>
+<ul>
+<li>In random sampling, each item or element of the population has an equal chance of being chosen at each draw.</li>
+<li>A sample is random if the method for obtaining the sample meets the criterion of randomness (each element having an equal chance at each draw).</li>
+</ul>
+</div>
+</div>
+<div id="biased-sampling-1" class="section level3">
 <h3>Biased Sampling</h3>
 <ul>
 <li><p>A biased sample is one in which the method used to create the sample results in samples that are systematically different from the population.</p></li>
@@ -224,7 +318,7 @@ Definitions of Statistical Terms
 <li><p>People interested enough to spend their time and energy filling out and sending in the questionnaire are likely to have different attitudes about the event than those not taking the time to fill out the questionnaire.</p></li>
 </ul>
 <p>
-<div id="what-is-a-parameter" class="section level4">
+<div id="what-is-a-parameter-1" class="section level4">
 <h4>What is a parameter?</h4>
 <ul>
 <li>A parameter is a numerical quantity measuring some aspect of a population of scores.</li>
@@ -235,7 +329,7 @@ Definitions of Statistical Terms
 </ul>
 <p>
 </div>
-<div id="what-is-a-statistic" class="section level4">
+<div id="what-is-a-statistic-1" class="section level4">
 <h4>What is a statistic?</h4>
 <ul>
 <li>The most common use of the word `statistics’is for describing a wide range of techniques and procedures for analyzing, interpreting and displaying data.</li>
@@ -246,7 +340,7 @@ Definitions of Statistical Terms
 <p>
 </div>
 </div>
-<div id="statistical-inference-estimators" class="section level3">
+<div id="statistical-inference-estimators-1" class="section level3">
 <h3>Statistical Inference Estimators</h3>
 <ul>
 <li><p>Three important attributes of statistics as estimators are: </p>
@@ -262,7 +356,7 @@ Definitions of Statistical Terms
 </ul>
 <p>
 </div>
-<div id="inferential-statistics" class="section level3">
+<div id="inferential-statistics-1" class="section level3">
 <h3>Inferential Statistics</h3>
 <ul>
 <li>Inferential statistics are used to draw inferences about a population from a sample.</li>
@@ -271,7 +365,7 @@ Definitions of Statistical Terms
 <li>How much larger could the real difference be than the 12 points found in the sample?</li>
 <li>These are the types of questions answered by inferential statistics.</li>
 </ul>
-<div id="bias-in-sampling" class="section level4">
+<div id="bias-in-sampling-1" class="section level4">
 <h4>Bias in Sampling</h4>
 <ul>
 <li>If there is a tendency for a certain group of the population to be omitted from the sample or if people who refuse to co-operate form a group which is, in some way, different to the population, we have what is called a biased sample.</li>
@@ -281,7 +375,7 @@ Definitions of Statistical Terms
 </ul>
 </div>
 </div>
-<div id="parameters-and-statistics" class="section level3">
+<div id="parameters-and-statistics-1" class="section level3">
 <h3>Parameters and Statistics</h3>
 <p>The main objective of Statistics as a science is to estimate a population parameter by use of sample statistics.</p>
 <p>What we are typically after in a study is the . A parameter is a numerical value that states something about the entire population being studied. For example, we may want to know the mean wingspan of the American bald eagle. This is a parameter, because it is describing all of the population.</p>
@@ -299,7 +393,7 @@ Definitions of Statistical Terms
 <p>There is a simple and straightforward way to remember what a parameter and statistic are measuring. All that we must do is look at the first letter of each word. A parameter measures something in a population, and a statistic measures something in a sample.</p>
 </div>
 </div>
-<div id="definitions-2" class="section level3">
+<div id="definitions-3" class="section level3">
 <h3>Definitions</h3>
 <p>First, we need to define some terms. These terms will be illustrated using the example of a pre-election poll on which political party is going to win the election.</p>
 <p>Population: the entire group of objects/subjects about which information is wanted. For our example, the population is all adults on the electoral register.</p>
@@ -329,7 +423,7 @@ Definitions of Statistical Terms
 <li><p>Frequency distributions, measures of central tendency (mean, median, and mode), and graphs like pie charts and bar charts that describe the data are all examples of descriptive statistics.</p></li>
 </ul>
 </div>
-<div id="inferential-statistics-1" class="section level4">
+<div id="inferential-statistics-2" class="section level4">
 <h4>Inferential Statistics</h4>
 <ul>
 <li><p>Inferential statistics is concerned with making predictions or inferences about a population from observations and analyses of a sample. That is, we can take the results of an analysis using a sample and can generalize it to the larger population that the sample represents. In order to do this, however, it is imperative that the sample is representative of the group to which it is being generalized.</p></li>

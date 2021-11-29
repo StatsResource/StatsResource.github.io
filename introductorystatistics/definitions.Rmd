@@ -4,6 +4,103 @@ Introductory Distributions {data-navmenu="Continuous Distributions"}
 Column {.tabset}
 -------------------------------------------------
 
+###  Definitions
+#### What are populations
+
+*  A \textbf{\emph{population}} consists of an entire set of objects, observations, or scores that have something in common.
+	For example, a population might be defined as students in a university.
+	
+*  Some populations are only hypothetical. Consider an experiment where a die is thrown 100 times and the sum of the scores was recorded.
+*  The researcher might define a population as the sums that would result if this experiment was repeated an infinite number of times.
+*  The population is hypothetical in the sense that it is not reasonable to repeat this experiment indefinitely.
+*  The distribution of a population can be described by several parameters such as the mean and standard deviation.
+	
+
+
+#### What are sample?
+
+	
+*  A sample is a subset of a population.
+*  Suppose we are interested in some characteristic of a population ( e.g. amount of time spent on the internet)
+*  Since it is usually impractical to test every member of a population, a sample from the population is typically
+	the best approach available.
+*  To be properly representative of a population, a sample should be both \textbf{\emph{ random}} and sufficiently large.
+	
+	
+#### Random Sampling
+
+	
+*  In random sampling, each item or element of the population has an equal chance of being chosen at each draw.
+*  A sample is random if the method for obtaining the sample meets the criterion of randomness
+	(each element having an equal chance at each draw).
+	
+
+#### Biased Sampling
+
+
+	
+*  A biased sample is one in which the method used to create the sample results
+	in samples that are systematically different from the population.
+	
+	
+*  For instance, consider a market research project on attitudes of attendees towards an event they attended.
+	
+*  Collecting the data by publishing a questionnaire and asking people to fill it out and
+	send it in would produce a biased sample.
+	
+*  People interested enough to spend their time and energy filling out and sending in the questionnaire
+	are likely to have different attitudes about the event than those not taking the time to fill out the questionnaire.
+	
+
+
+### Parameters and statistics 
+
+### What is a parameter?
+
+*  A parameter is a numerical quantity measuring some aspect of a population of scores.
+*  The population mean $\mu$ and population variance $\sigma^2$ are commonly used parameters.
+*  Another commonly used parameter is the population proportion $\pi$.
+*  (Remark : greek letters are used to designate parameters.)
+*  Parameters are rarely known and are usually estimated by \textbf{\emph{statistics}} computed from samples.
+
+
+#### What is a statistic?
+
+*  The most common use of the word `statistics'is for describing a wide range of techniques and procedures for analyzing, interpreting and displaying data.
+*  In a second usage, a ``statistic" is defined as a numerical quantity (such as the sample mean) calculated from a sample.
+*  Sample mean $\bar{x}$ and sample standard deviation $s$ are types of statistics.
+*  These statistics are used to estimate population parameters.
+
+#### Statistical Inference Estimators
+
+*  Three important attributes of statistics as estimators are:  \large
+	*  unbiasedness, * consistency,  *  relative efficiency.\end{itemize}
+*  A statistic is unbiased if, in the long run, it's value is reasonably close to the parameter it is estimating.
+*  An estimator is consistent if the estimator tends to get closer to the parameter it is estimating as the sample size increases.
+
+	
+*  The efficiency of a statistic is the degree to which the statistic is stable from sample to sample.
+*  That is, the less subject to sampling fluctuation a statistic is, the more efficient it is.
+*  \textbf{\emph{Sampling fluctuation}} refers to the extent to which a statistic takes on different values with different samples.
+*  That is, it refers to how much the statistic's value fluctuates from sample to sample.
+	
+### Inferential Statistics
+
+*  Inferential statistics are used to draw inferences about a population from a sample.
+*  Consider an experiment in which 10 subjects who performed a task after 24 hours of sleep deprivation scored 12 points lower than 10 subjects who performed after a normal night's sleep.
+*  Is the difference real or could it be due to chance?
+*  How much larger could the real difference be than the 12 points found in the sample?
+*  These are the types of questions answered by inferential statistics.
+
+### Bias in Sampling
+
+* If there is a tendency for a certain group of the population to be omitted from the sample or if people who refuse to co-operate form a group which is, in some way, different to the population, we have what is called a biased sample. 
+* We often use the word bias but its definition in the context of sampling is a systematic tendency to overestimate or underestimate the population parameter of interest. 
+* For the election example, if my sample consists solely of people from a disadvantaged area with high unemployment, I may under-estimate the level of support for a particular political party. 
+* How can we eliminate bias? Bias can be eliminated by taking a random sample. This is a sample where everyone in the population has the same chance of getting into the sample and the fact that one individual has got into the sample does not affect the chances of another individual getting into the sample i.e. everyone has an independent and equal chance of being included in the sample. This method of sampling is called simple random sampling.
+
+
+
 ### Definitions
 
 

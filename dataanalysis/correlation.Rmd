@@ -1,0 +1,253 @@
+
+Correlation {data-navmenu="Modelling Data"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Correlation
+
+<h4> Correlation </h4>
+
+*  Correlation is a measure of the relation between two or more variables. 
+
+* The measurement scales used should be at least interval scales, but other correlation coefficients are available to handle other types of data.
+
+*  Correlation coefficients can range from -1.00 to +1.00. The value of -1.00 represents a perfect negative correlation while a value of +1.00 represents a perfect positive correlation. A value of 0.00 represents a lack of correlation.
+
+
+*  The most widely-used type of correlation coefficient is Pearson r, also called linear or product- moment correlation. The pearson correlation coefficient is a metric.
+
+*   Two variables that have no linear relationship have a correlation close to zero. 
+
+*  Scatter plots are a useful way of determing the likely relationship between two variables. 
+
+*  The Pearson correlation coefficient is most commonly used estimate for correlation. 
+
+*  Other types of correlation are tbe \textit{\textbf{Spearman Rho}} and the \textit{\textbf{Kendal Tau}} correlation coefficients. 
+
+* These are not not part of this course,but it is important to know that they exist. 
+
+
+
+
+*  Correlation is a measure of strength of \textbf{Linear Relationship} between two variables.
+*  The Pearson correlation coefficient (denoted $r$) is the most comonly used statistical estimate for correlation. 
+*  Correlation estimates are defined to be between -1 and 1. It is not possible to have a correlation value outside this range of values
+\[ -1 \leq r \leq 1\]
+*  
+Additionally correlation estimates are not denominated in any units. (Contrast this to standard deviation, which is denominated in the same units as the mean).
+
+-----------------------------------
+
+<h4> Correlation </h4>
+
+
+
+*  Recall that correlation describes the strength of a relationship between two numeric variables, and that the \textbf{\textit{Pearson product-moment correlation coefficient}} is a measure of the strength of the linear relationship between two variables.
+
+*  It is referred to as \textbf{Pearson's correlation} or simply as the correlation coefficient. If the relationship between the variables is not linear, then the correlation coefficient does not adequately represent the strength of the relationship between the variables.
+
+*  The symbol for Pearson's correlation is ``$\rho$" when it is measured in the population and $r$ when it is measured for a sample.
+
+*  As we will be dealing almost exclusively with samples, we will use $r$ to to represent Pearson's correlation unless otherwise noted.
+
+*  Pearson's r can range from -1 to 1. An estimate of -1 indicates a perfect negative linear relationship between variables, an $r$ of 0 indicates no linear relationship between variables, and an $r$ of 1 indicates a perfect positive relationship between variables.
+
+*  Importantly it is assumed that the relationship in question is supposed to be linear. Some variables will in fact have a non-linear relationship (more on that later)
+
+
+### Correlation Coefficient
+
+*  The Pearson correlation coefficient is a way of measuring the
+strength of the relationship between two quantitative variables.
+
+*  A correlation coefficient is a number between -1 and 1 which measures the degree to which two variables are linearly related. 
+*  If there is perfect linear relationship with positive slope between the two variables, we have a correlation coefficient of 1; if there is positive correlation, whenever one variable has a high (low) value, so does the other. 
+*  If there is a perfect linear relationship with negative slope between the two variables, we have a correlation coefficient of -1; if there is negative correlation, whenever one variable has a high (low) value, the other has a low (high) value. A correlation coefficient of 0 means that there is no linear relationship between the variables.
+*  
+There are a number of different correlation coefficients that might be appropriate depending on the kinds of variables being studied.
+
+
+#### Correlation
+
+*  This is a measure of Strength of Linear Relationship.
+
+*  A strong positive linear relationship describes a relationship between two variables whereby an increase in one variable will closely coincide with an increase in the other variable. 
+
+*  Conversely a strong negative linear relationship describes a relationship whereby an increase in one variable closely coincides with a decrease in the other. 
+
+*  The Pearson correlation estimate, which is based on sample data, is denoted r (although related metrics use capital R).
+*  This measure is used as an estimate for the Population correlation, denoted by the greek letter $\rho$ ( pronounced ``Rho"). 
+The estimate is computed using summation identities.
+
+
+#### Properties of the Correlation Coefficient
+
+*  $-1 \leq r \leq +1$
+*  r = +1 or -1 represents a perfect linear correlation or a perfect linear
+relationship between the variables.
+*  r = 0 indicates little or no relationship i.e. as $X$ increases there is no
+definite tendency for the value of Y to increase or decrease in a straight line.
+*  r close to +1 indicates a large positive correlation i.e. $Y$ tends to increase
+as X increases.
+*  r close to -1 indicates a large negative correlation i.e. $Y$ tends to decrease
+as X increases.
+*  The more r differs from 0, the stronger the linear relationship between the
+two variables.
+*  The sign of r indicates the direction of the relationship.
+
+-------------------------------------
+
+#### Pearson's Product Moment Correlation Coefficient
+
+*  Pearson's product moment correlation coefficient, usually denoted by r, is one example of a correlation coefficient. It is a measure of the linear association between two variables that have been measured on interval or ratio scales, such as the relationship between height in inches and weight in pounds. 
+*  
+However, it can be misleadingly small when there is a relationship between the variables but it is a non-linear one.
+
+*  The Pearson correlation coefficient is only appropriate for describing the relationship between two quantitative variables
+which have a linear or near linear relationship
+
+*  There are procedures, based on r, for making inferences about the population correlation coefficient. 
+
+*  However, these make the implicit assumption that the two variables are jointly normally distributed. 
+When this assumption is not justified, a non-parametric measure such as the Spearman Rank Correlation Coefficient might be more appropriate.
+
+
+
+#### Outliers
+
+*  Outliers can greatly influence the computed value of an estimate.
+*  Correlation is closely related to Simple linear regression models, in that both are concerned with the linear relationship between variables. However Linear Regression has a different emphasis.
+*  Simple Linear Regression describes one independent variable (IV) and the response of the dependent variable (DV). 
+
+
+#### Correlation and Causality 
+
+Implicit is simple linear regression is the notion of causality. The dependent variable changes as the independent variable changes. The converse is not true.
+<some examples : hot temperature / ice cream example> .
+Correlation is not concerned with causality at all, hence the often used expression "causation does not imply causality ".
+
+
+
+
+
+#### Correlation and cause-effect
+
+*  Note that a strong relationship between two variables does not
+imply a cause-effect relationship.
+*  For example, there is a strong negative correlation between the
+sales of ice cream and the number of flu infections.
+*  This does not mean that ice cream protects against flu.
+*  This relationship results from a latent variable (a variable that has
+not been observed).
+*  Such a latent variable in this case is the weather. Low
+temperatures and wet weather result in a high number of flu
+infections and low ice cream sales. *  Hot, sunny weather leads to the
+opposite.
+
+### Formula
+
+The estimate of the Pearson correlation coefficient is given by
+\[ r_{XY} = \frac{S_{XY}}{\sqrt{S_{XX}S_{YY}}} \]
+
+
+
+
+
+
+
+### Interpretation
+
+The Pearson correlation coefficient is a way of measuring the
+strength of the relationship between two quantitative variables.
+
+
+*  The population correlation coefficient between two variables X and
+Y is denoted by $\rho_{X,Y}$ .
+*  Used as an estimate for true correlation $\rho$.
+*  The population correlation coefficient between two variables X and
+Y is denoted by $\rho_{X,Y}$ .
+*  Used as an estimate for true correlation $\rho$.
+*  Pearson's Coefficient is denoted $r$.
+*  The Pearson Coefficient is defined to be between -1 and 1.
+*  The Pearson correlation coefficient is only appropriate for
+describing the relationship between two quantitative variables
+which have a linear or near linear relationship
+
+*  The Pearson Coefficient is defined to be between -1 and 1.
+
+
+
+The Pearson Coefficient is computed using the following formula.
+\[ r = \frac{S_{xy}}{(S_x)(S_y)} \]
+
+
+
+
+
+
+### Correlation and Regression
+
+#### Correlation
+The Pearson's Product Moment Correlation Coefficient tells us how well two sets of continuous data correlate to each other. The value can fall between 0.00 (no correlation) and 1.00 (perfect correlation). A p value tells us if the Pearson's is significant or not. Generally p values under 0.05 are considered significant.
+
+------------------------------------------
+
+
+### Other Correlation Coefficients
+Pearson's Correlation Coefficient is one approach to estimating the strength of relation between two variables.
+Other approaches are as follows:
+
+*  Spearman's Rank Correlation
+*  Kendall Tau Correlation
+
+These are not part of the course.
+
+#### Spearman and Kendall Correlation Coefficients
+
+*  Non-parametric statistics are statistics that do not require any special assumptions (i.e. Assumption of normality). 
+*  The *Spearman's rank-order* and *Kendall Tau* correlation coefficients are the *nonparametric* version of the Pearson product-moment correlation. 
+*  Both methods measure the strength of association between two \textbf{ranked} (ordinal) variables.
+*  The coefficients are interpreted the same way as Pearson's Correlation Coefficient.
+
+
+#### Spearman’s correlation coefficient 
+
+Spearman’s correlation coefficient is a statistical measure of the strength of a 
+monotonic relationship between paired data. In a sample it is denoted by 
+and is by 
+design constrained as follows 
+
+\[ -1 \leq r_s \leq 1 \]
+And its interpretation is similar to that of Pearsons, e.g. the closer 
+is to the stronger the monotonic relationship. Correlation is an effect size and so we can verbally describe the strength of the correlation using the following guide for the 
+\textbf{absolute} value of 
+
+*  .00-.19 “very weak” 
+*  .20-.39 “weak” 
+*  .40-.59 “moderate” 
+*  .60-.79 “strong” 
+*  .80-1.0 “very strong” 
+
+
+The calculation of Spearman’s correlation coefficient and subsequent significance 
+testing of it requires the following data assumptions to hold: 
+
+*  interval or ratio level or ordinal; 
+*  monotonically related. 
+
+
+Note, unlike Pearson’s correlation, there is no requirement of normality and hence it 
+is a nonparametric statistic. 
+
+<pre><code>
+### Spearman Correlation Coefficient
+cor(X,Y, method="spearman")
+## [1] 0.6242424
+
+### Kendall Correlation Coefficient
+cor(X,Y, method="kendall")
+## [1] 0.5111111
+</code></pre>

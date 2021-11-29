@@ -208,8 +208,15 @@ Hypothesis Test for the Mean of a Single Sample
 <p>In practice, the population standard deviation is rarely known. For this reason, we will consider the second case only in this course.</p>
 <p>In most statistical packages, this analysis is performed in the summary statistics functions.</p>
 </div>
+<div id="student-t-distribution" class="section level3">
+<h3>Student <span class="math inline">\(t\)</span>-Distribution</h3>
+<h4>
+Student <span class="math inline">\(t\)</span>-Distribution
+<h4>
+<p>The <span class="math inline">\(t\)</span> distribution is the appropriate basis for determining the standardized test statistic when the sampling distribution of the mean is normally distributed but <span class="math inline">\(s\)</span> is not known. The sampling distribution can be assumed to be normal either because the population is normal or because the sample is large enough to invoke the central limit theorem. \ The <span class="math inline">\(t\)</span> distribution is required when the sample is small (<span class="math inline">\(n &lt; 30\)</span>). For larger samples, normal approximation can be used. For the critical value approach, the procedure is identical to that described in Section 10.3 for the normal distribution, except for the use of <span class="math inline">\(t\)</span> instead of z as the test statistic.</p>
+</div>
 <div id="independent-one-sample-t-test" class="section level3">
-<h3>Independent one-sample <span class="math inline">\(t\)</span>-test}</h3>
+<h3>Independent one-sample <span class="math inline">\(t\)</span>-test</h3>
 <p>In testing the null hypothesis that the population mean is equal to a specified value <span class="math inline">\(\mu_{0}\)</span>, one uses the statistic</p>
 <p><span class="math display">\[t = \frac{\overline{x} - \mu_0}{s / \sqrt{n}}\]</span></p>
 <p>where <span class="math inline">\(s\)</span> is the sample standard deviation and <span class="math inline">\(n\)</span> is the sample size. The degrees of freedom used in this test is <span class="math inline">\(n - 1\)</span>.</p>
@@ -219,10 +226,19 @@ Hypothesis Test for the Mean of a Single Sample
 <h4>
 Two Small Samples Case: Standard Error
 </h4>
-<p>Computing the standard error requires a two step calculation. From the formulae, we have the two equations below. The first term <span class="math inline">\(s_p^2\)</span> is called the <strong><em>pooled variance</em></strong> of the combined samples. <span class="math display">\[\begin{eqnarray*}
-s_p^2&amp;=&amp;\frac{s_X^2(n_X-1)+s_Y^2(n_Y-1)}{n_X+n_Y-2}.\\
-S.E.(\bar{X}-\bar{Y})&amp;=&amp;\sqrt{s_p^2\left(\frac{1}{n_X}+\frac{1}{n_Y}\right)}.\\
-\end{eqnarray*}\]</span></p>
+<p>Computing the standard error requires a two step calculation. From the formulae, we have the two equations below. The first term <span class="math inline">\(s_p^2\)</span> is called the <strong><em>pooled variance</em></strong> of the combined samples. <span class="math display">\[
+s_p^2&amp;=&amp;\frac{s_X^2(n_X-1)+s_Y^2(n_Y-1)}{n_X+n_Y-2}.\]</span> <span class="math display">\[
+S.E.(\bar{X}-\bar{Y})&amp;=&amp;\sqrt{s_p^2\left(\frac{1}{n_X}+\frac{1}{n_Y}\right)}.
+\]</span></p>
+<div id="confidence-interval-of-a-mean-small-sample" class="section level4">
+<h4>Confidence interval of a mean (small sample)</h4>
+<h5>
+Confidence interval of a mean (small sample)
+</h5>
+<p>If the data have a normal probability distribution and the sample standard deviation <span class="math inline">\(s\)</span> is used to estimate the population standard deviation <span class="math inline">\(\sigma\)</span>, the interval estimate is given by: <span class="math display">\[
+\bar{X} \pm t_{1-\alpha/2,n-1}\frac{s}{\sqrt{n}}
+\]</span> where <span class="math inline">\(t_{1-\alpha/2,n-1}\)</span> is the value providing an area of <span class="math inline">\(\alpha/2\)</span> in the upper tail of a Student’s t distribution with n - 1 degrees of freedom.</p>
+</div>
 </div>
 </div>
 </div>

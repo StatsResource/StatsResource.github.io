@@ -73,8 +73,20 @@ where $s$ is the sample standard deviation and $n$ is the sample size. The degre
 <h4>Two Small Samples Case: Standard Error</h4>
 
 Computing the standard error requires a two step calculation. From the formulae, we have the two equations below. The first term $s_p^2$ is called the ***pooled variance*** of the combined samples.
-\begin{eqnarray*}
-s_p^2&=&\frac{s_X^2(n_X-1)+s_Y^2(n_Y-1)}{n_X+n_Y-2}.\\
-S.E.(\bar{X}-\bar{Y})&=&\sqrt{s_p^2\left(\frac{1}{n_X}+\frac{1}{n_Y}\right)}.\\
-\end{eqnarray*}
+\[
+s_p^2&=&\frac{s_X^2(n_X-1)+s_Y^2(n_Y-1)}{n_X+n_Y-2}.\]
+\[
+S.E.(\bar{X}-\bar{Y})&=&\sqrt{s_p^2\left(\frac{1}{n_X}+\frac{1}{n_Y}\right)}.
+\]
 
+#### Confidence interval of a mean (small sample)
+
+<h5> Confidence interval of a mean (small sample)</h5>
+
+If the data have a normal probability distribution and the sample
+standard deviation $s$ is used to estimate the population
+standard deviation $\sigma$, the interval estimate is given by:
+\[
+\bar{X} \pm t_{1-\alpha/2,n-1}\frac{s}{\sqrt{n}}
+\]
+where $t_{1-\alpha/2,n-1}$ is the value providing an area of $\alpha/2$ in the upper tail of a Student’s t distribution with n - 1 degrees of freedom.
