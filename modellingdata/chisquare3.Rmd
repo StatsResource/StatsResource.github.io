@@ -1,0 +1,323 @@
+More on Chi Square Tests {data-navmenu="Chi Square Tests"}
+===========================================================
+
+Column {.tabset}
+-----------------------------------
+
+### Chi Square Tests
+
+<h3>Chi Square Goodness of Fit tests</h3>
+
+
+
+*  In the case of goodness of fit tests, there is only one categorical variable, such as the screen size of TV sets that have
+been sold, and what is tested is a hypothesis concerning the pattern of frequencies, or the distribution, of the variable.
+
+*  The observed frequencies can be listed as a single row, or as a single column, of categories.
+*  
+  Tests for independence involve (at least) two categorical variables, and what is tested is the assumption that the variables
+are statistically independent.
+
+*  Independence implies that knowledge of the category in which an observation is classified with respect to one variable has no
+affect on the probability of the other variable being in one of the several categories.
+
+*  When two variables are involved, the observed frequencies are
+entered in a two-way classification table, or contingency table.
+
+*  The dimensions of such tables are defined by $r \times c$, in
+which $r$ indicates the number of rows and $c$ indicates the
+number of columns.
+*  
+  If the null hypothesis of independence is rejected for classified
+data such as in Table 12.3, this indicates that the two variables are dependent and that there is a relationship between them. For
+Table 12.3, for instance, this would indicate that there is a relationship between age and the sex of stereo shop customers.
+
+*  Given the hypothesis of independence of the two variables, the expected frequency associated with each cell of a contingency
+table should be proportionate to the total observed frequencies included in the column and in the row in which the cell is located
+as related to the total sample size.
+
+*  Where $fr$ is the total frequency in a given row and $fc$ is the
+total frequency in a given column, a convenient formula for
+determining the expected frequency for the cell of the contingency
+table that is located in that row and column is
+
+*  The general formula for the degrees of freedom associated with a
+test for independence is $df = (r - 1)(c - 1)$.
+
+
+
+
+\section{Chi Square}
+
+
+$p_{i}$ = Expected proportion for digit $i$.
+
+For this test we used the chi-squared test statistic which is given by:
+  \begin{equation}
+X^2 = \sum_{i=1}^{n} {(O_i - E_i)^2 \over E_i}
+\end{equation}
+
+
+The Chi Square test tests a null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution. The events considered must be mutually exclusive and have total probability 1. A common case for this is where the events each cover an outcome of a categorical variable.
+
+
+*  $X^2$ = the test statistic that asymptotically approaches a $\chi^2$ distribution.
+*  $O_i$ = an observed frequency;
+*  $E_i$ = an expected (theoretical) frequency, asserted by the null hypothesis;
+*  $n $  = the number of possible outcomes of each event.
+
+
+The chi-square statistic can then be used to calculate ap-value by comparing the value of the statistic to a chi-square distribution. The number of degrees of freedom is equal to the number of cells ``n'', minus the reduction in degrees of freedom, ``p''.
+
+  
+  
+  
+  \section{Chi-Square Test for Association using SPSS Statistics}
+
+Introduction
+The chi-square test for independence, also called Pearson's chi-square test or the chi-square test of association, is used to discover if there is a relationship between two categorical variables.
+
+
+#### Assumptions}
+When you choose to analyse your data using a chi-square test for independence, you need to make sure that the data you want to analyse "passes" two assumptions. You need to do this because it is only appropriate to use a chi-square test for independence if your data passes these two assumptions. If it does not, you cannot use a chi-square test for independence. These two assumptions are:
+
+\begin{description}
+	* [Assumption 1:] Your two variables should be measured at an ordinal or nominal level (i.e., categorical data). You can learn more about ordinal and nominal variables in our article: Types of Variable.
+	* [Assumption 2:] Your two variable should consist of two or more categorical, independent groups. Example independent variables that meet this criterion include gender (2 groups: Males and Females), ethnicity (e.g., 3 groups: Caucasian, African American and Hispanic), physical activity level (e.g., 4 groups: sedentary, low, moderate and high), profession (e.g., 5 groups: surgeon, doctor, nurse, dentist, therapist), and so forth.
+\end{description}
+In the section, Procedure, we illustrate the SPSS Statistics procedure to perform a chi-square test for independence. First, we introduce the example that is used in this guide.
+
+
+#### SPSS Example}
+Educators are always looking for novel ways in which to teach statistics to undergraduates as part of a non-statistics degree course (e.g., psychology). With current technology, it is possible to present how-to guides for statistical programs online instead of in a book. However, different people learn in different ways. An educator would like to know whether gender (male/female) is associated with the preferred type of learning medium (online vs. books). Therefore, we have two nominal variables: Gender (male/female) and Preferred Learning Medium (online/books).
+
+
+*  \textbf{Setup in SPSS Statistics} \\
+In SPSS Statistics, we created two variables so that we could enter our data: Gender and Preferred\_Learning\_Medium. In our enhanced chi-square test for independence guide, we show you how to correctly enter data in SPSS Statistics to run a chi-square test for independence. Alternately, we have a generic, "quick start" guide to show you how to enter data into SPSS Statistics, available here.
+
+*  \textbf{Test Procedure in SPSS Statistics} \\
+The 13 steps below show you how to analyse your data using a chi-square test for independence in SPSS Statistics. At the end of these 13 steps, we show you how to interpret the results from your chi-square test for independence.
+
+\begin{verbatim}
+Click Analyze > Descriptives Statistics > Crosstabs
+\end{verbatim}
+
+*  \textbf{The Chi-Square Test For Independence Menu} \\
+Published with written permission from SPSS Statistics, IBM Corporation.
+You will be presented with the following Crosstabs dialogue box:
+
+*  \textbf{The Chi-Square Test For Independence Dialog Box} \\
+Published with written permission from SPSS Statistics, IBM Corporation.
+Transfer one of the variables into the Row(s): box and the other variable into the Column(s): box. In our example, we will transfer the Gender variable into the Row(s): box and Preferred\_Learning\_Medium into the Column(s): box. There are two ways to do this. You can either: (1) highlight the variable with your mouse and then use the relevant SPSS Right Arrow Button buttons to transfer the variables; or (2) drag-and-drop the variables. How do you know which variable goes in the row or column box? There is no right or wrong way. It will depend on how you want to present your data.
+
+If you want to display clustered bar charts (recommended), make sure that Display clustered bar charts checkbox is ticked.
+
+You will end up with a screen similar to the one below:
+
+*  \textbf{The Chi-Square Test For Independence Dialog Box}\\
+Published with written permission from SPSS Statistics, IBM Corporation.
+Click on the SPSS Statistics Button button. You will be presented with the following Crosstabs: Statistics dialogue box:
+
+The Chi-Square Test For Independence Dialog Box
+Select the Chi-square and Phi and Cramer's V options, as shown below:
+  
+  The Chi-Square Test For Independence Dialog Box
+Published with written permission from SPSS Statistics, IBM Corporation.
+Click the SPSS Continue Button button.
+
+Click the SPSS Cells Button button. You will be presented with the following Crosstabs: Cell Display dialogue box:
+  
+  The Chi-Square Test For Independence Dialog Box
+Published with written permission from SPSS Statistics, IBM Corporation.
+Select Observed from the –Counts– area, and Row, Column and Total from the –Percentages– area, as shown below:
+  
+  The Chi-Square Test For Independence Dialog Box
+Published with written permission from SPSS Statistics, IBM Corporation.
+Click the SPSS Continue Button button.
+
+Click the SPSS Format Button button.
+
+Note: This next option is only really useful if you have more than two categories in one of your variables, but we will show it here in case you have. If you don't, you can skip to STEP 12.
+
+You will be presented with the following:
+
+The Chi-Square Test For Independence Dialog Box
+Published with written permission from SPSS Statistics, IBM Corporation.
+This option allows you to change the order of the values to either ascending or descending.
+
+Once you have made your choice, click the SPSS Continue Button button.
+
+Click the  button to generate your output.
+
+*  \textbf{Output}\\
+You will be presented with some tables in the Output Viewer under the title "Crosstabs". The tables of note are presented below:
+
+The Crosstabulation Table (Gender*Preferred Learning Medium Crosstabulation)
+
+*  \textbf{The Chi-Square Test For Independence Output}\\
+Published with written permission from SPSS Statistics, IBM Corporation.
+This table allows us to understand that both males and females prefer to learn using online materials versus books.
+
+The Chi-Square Tests Table
+
+The Chi-Square Test For Independence Output
+Published with written permission from SPSS Statistics, IBM Corporation.
+When reading this table we are interested in the results of the "Pearson Chi-Square" row. We can see here that $\chi(1) = 0.487$, p = .485. This tells us that there is no statistically significant association between Gender and Preferred Learning Medium; that is, both Males and Females equally prefer online learning versus books.
+
+*  \textbf{The Symmetric Measures Table}\\
+
+The Chi-Square Test For Independence Output
+Published with written permission from SPSS Statistics, IBM Corporation.
+Phi and Cramer's V are both tests of the strength of association. We can see that the strength of association between the variables is very weak.
+
+*  \textbf{Bar chart}\\
+
+*  \textbf{The Chi-Square Test For Independence Output}\\
+Published with written permission from SPSS Statistics, IBM Corporation.
+It can be easier to visualize data than read tables. The clustered bar chart option allows a relevant graph to be produced that highlights the group categories and the frequency of counts in these groups.
+
+%================================================================================================ %
+  #### Chi Square Test }
+Replace the question marks with the expected number of observations
+in a cell under the nulll hypothesis that the choice of course doesnt depend on gender.
+
+Expected Values ( under null hypothesis)
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|} \hline 
+& Maths & Eq. Studies & Chemistry & Sum \\ \hline
+Male & 15 & 15 & 30& 60 \\ \hline 
+Female & 15 & 15 & 30& 60 \\ \hline
+Sum & 30 & 30 & 60 & 120   \hline
+\end{tabular} 
+\end{center}
+
+
+
+
+#### Hypothesis Test}
+
+Step 1:  Formally write out null and alternative hypothesis
+
+
+*  Gender and Choice of College coure are independent of each other.
+
+*  Gender and Choice of College coure are not independent of each other.
+
+
+Step 2: Test Statistic
+
+We use a special Test statistic for this test.
+
+For each of the six subgroups, perform the following calculation.
+
+\[\frac{(n_{ij}-e_{ij})^2}{e_{ij}}\]
+
+
+*  nij : observed number for subgroup
+*  eij : expected number for subgroup
+
+
+
+Add up all these terms.
+
+\[T=\frac{(20-15)^2 }{15} + \frac{(10-15)^2 }{15} + \frac{(10-15)^2 }{15} + \frac{(20-15)^2 }{15} + \frac{(30-30)^2 }{30} + \frac{(30-30)^2 }{30}\]
+
+\[
+  T= 1.667 + 1.667 +1.667 +1.667 +0 +0 = 6.6667 
+  \]
+
+
+
+Step 3: Test Statistic
+
+
+*  Murdoch Barnes Table 8
+*  Significance level is 5%
+*  Number of tails is 2
+*  degrees of freedom = (2-1)(3-1) = 1 $\times$ 2 = 2
+
+
+
+
+
+
+
+0.025
+
+
+1
+
+
+
+
+
+
+2
+
+
+7.378
+
+
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Critical value is 7.378
+
+\textbf{Step 4 Decision Rule}
+
+Is the Test statistic greater than the Critical value
+
+is 6.6667 > 7.378
+
+No! We fail to reject the null hypothesis.
+
+We do not have enough evidence to say that there is a relationship between gender and college courses.
+
+
+
+
+
+
+
+
+
+%=========================================================%
+  
+  \section{Chi Square}
+
+
+$p_{i}$ = Expected proportion for digit $i$.
+
+For this test we used the chi-squared test statistic which is given by:
+  \begin{equation}
+X^2 = \sum_{i=1}^{n} {(O_i - E_i)^2 \over E_i}
+\end{equation}
+
+
+The Chi Square test tests a null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution. The events considered must be mutually exclusive and have total probability 1. A common case for this is where the events each cover an outcome of a categorical variable.
+
+
+*  $X^2$ = the test statistic that asymptotically approaches a $\chi^2$ distribution.
+*  $O_i$ = an observed frequency;
+*  $E_i$ = an expected (theoretical) frequency, asserted by the null hypothesis;
+*  $n $  = the number of possible outcomes of each event.
+
+
+The chi-square statistic can then be used to calculate ap-value by comparing the value of the statistic to a chi-square distribution. The number of degrees of freedom is equal to the number of cells ``n'', minus the reduction in degrees of freedom, ``p''.
+
+

@@ -238,6 +238,34 @@ Confidence interval of a mean (small sample)
 <p>If the data have a normal probability distribution and the sample standard deviation <span class="math inline">\(s\)</span> is used to estimate the population standard deviation <span class="math inline">\(\sigma\)</span>, the interval estimate is given by: <span class="math display">\[
 \bar{X} \pm t_{1-\alpha/2,n-1}\frac{s}{\sqrt{n}}
 \]</span> where <span class="math inline">\(t_{1-\alpha/2,n-1}\)</span> is the value providing an area of <span class="math inline">\(\alpha/2\)</span> in the upper tail of a Student’s t distribution with n - 1 degrees of freedom.</p>
+<hr />
+</div>
+<div id="small-samples-1" class="section level4">
+<h4>{Small samples}</h4>
+<ul>
+<li>We indicated that use of the normal distribution in estimating a population mean is warranted for any large sample (<span class="math inline">\(n &gt; 30\)</span>). * For a small sample (<span class="math inline">\(n \leq 30\)</span>) only if the population is normally distributed  <span class="math inline">\(\sigma\)</span> is known, the standard normal distribution can be used compute quantiles. In practice, this case is unusual.</li>
+<li>Now we consider the situation in which the sample is small and the population is normally distributed, but <span class="math inline">\(\sigma\)</span> is not known.</li>
+</ul>
+<p>
+<ul>
+<li>Student’s <span class="math inline">\(t-\)</span>distribution is a variation of the normal distribution, designed to factor in the increased uncertainty resulting from smaller samples.</li>
+<li>The distribution is really a family of distributions, with a somewhat different distribution associated with the degrees of freedom (<span class="math inline">\(df\)</span>). For a confidence interval for the population mean based on a sample of size n, <span class="math inline">\(df = n - 1\)</span>.</li>
+</ul>
+<p>
+<ul>
+<li><p>With increasing sample size, the <span class="math inline">\(t-\)</span>distribution approaches the form of the standard normal (`Z’) distribution.</p></li>
+<li><p>In fact the standard normal distribution can be thought of as the <span class="math inline">\(t-\)</span>distribution with <span class="math inline">\(\infty\)</span> degrees of freedom.</p></li>
+<li><p>For computing quantiles, we will consider the `Z’ distribution in this way.</p></li>
+<li><p>For values of <span class="math inline">\(n\)</span> greater then 30, the difference between using <span class="math inline">\(df = n-1\)</span> and <span class="math inline">\(df = \infty\)</span> is negligible.</p></li>
+<li><p>As this will be relevant later, remember that a confidence interval is a  procedure, i.e. <span class="math inline">\(k=2\)</span>.</p></li>
+</ul>
+<p>
+<ul>
+<li>Student’s t- values are determined using the  family of commands (e.g. ).</li>
+<li>To compute quantiles, use the code below.</li>
+<li>The degrees of freedom must be additionally be specified. Degrees of freedom are computed as sample size minus one (<span class="math inline">\(n-1\)</span>)</li>
+<li>As the degrees of freedom gets larger and larger, the student t distribution converges to the Z distribution.</li>
+</ul>
 </div>
 </div>
 </div>

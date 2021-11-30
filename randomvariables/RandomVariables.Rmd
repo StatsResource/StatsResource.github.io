@@ -70,3 +70,54 @@ Column {.tabset}
 * <a href="https://www.youtube.com/embed/dgk5fJ3VjKI" >Joint Distribution of Discrete Random Variables</a>
 * <a href="https://www.youtube.com/embed/ngIcXIrxEmU" >Computing Covariance </a>
 
+### Introduction to Random Variables
+
+
+*  An experiment is any process that generates will defined outcomes.
+*  The outcome of an experiment need not be a number, for example, the outcome when a coin is tossed can be `heads' or `tails'. * 
+	However, we often want to represent outcomes as numbers. 
+*  We can describe the outcomes of an experiment using numbers and this numerical description is called a random variable.	
+*  A random variable is a numerical description of the outcome of an experiment.
+* 
+	A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
+	*  The value of the random variable will vary from trial to trial as the experiment is repeated.
+	*  Numeric values can be assigned to outcomes that are not usually considered numeric. *  For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
+	*  Random variables can be classified as discrete or continuous, depending on the numerical values they may take.
+
+<p>
+
+#### What Are Random Variables
+
+There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.\\ \bigskip
+
+<p>
+<h5>Examples</h5>
+
+*   A coin is tossed ten times. The random variable X is the number of tails that are noted.
+X can only take the values $\{0, 1, ..., 10\}$, so $X$ is a discrete random variable.
+*   A light bulb is burned until it burns out. The random variable Y is its lifetime in hours.
+Y can take any positive real value, so Y is a continuous random variable.
+
+#### Discrete Random Variable
+
+*   A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.\item  Discrete random variables are usually (but not necessarily) counts. *   If a random variable can take only a finite number of distinct values, then it must be discrete. *   Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
+
+
+<p>
+
+
+#### Continuous Random Variable
+ 
+*  A random variable that may assume any numerical value in an interval or collection of intervals is called a continuous random variable.
+* 
+A continuous random variable is one which takes an infinite number of possible values. *  Continuous random variables are usually measurements. *  Examples include height, weight, the amount of sugar in an orange, the time required to run a computer simulation. 
+
+
+If X is a continuous random variable then we can say that the probability of obtaining a \textbf{precise} value $x$ is infinitely small, i.e. close to zero.
+
+\[P(X=x) \approx 0 \]
+
+Consequently, for continuous random variables (only),  $P(X \leq x)$ and $P(X < x)$ can be used interchangeably.
+
+\[P(X \leq x) \approx P(X < x) \]
+

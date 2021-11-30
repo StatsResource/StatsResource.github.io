@@ -90,3 +90,48 @@ standard deviation $\sigma$, the interval estimate is given by:
 \bar{X} \pm t_{1-\alpha/2,n-1}\frac{s}{\sqrt{n}}
 \]
 where $t_{1-\alpha/2,n-1}$ is the value providing an area of $\alpha/2$ in the upper tail of a Student’s t distribution with n - 1 degrees of freedom.
+
+
+--------------------
+
+
+
+#### {Small samples}
+ *  We indicated that use of the normal distribution in estimating a population mean is warranted
+for any large sample ($n > 30$). *  For a small sample ($n \leq 30$) only if the population is normally distributed
+\textbf{and} $\sigma$ is known, the standard normal distribution can be used compute quantiles. In practice,
+this case is unusual.
+*  Now we consider the situation in which the sample is small and the population is normally distributed,
+but $\sigma$ is not known.
+
+<p>
+
+*  Student's $t-$distribution is a variation of the normal distribution, designed to factor in the increased uncertainty resulting from smaller samples.
+*  The distribution is really a family of distributions, with
+a somewhat different distribution associated with the degrees of freedom ($df$). For a confidence interval for the
+population mean based on a sample of size n, $df = n - 1$.
+
+
+<p>
+
+
+*  With increasing
+sample size, the $t-$distribution approaches the form of the standard normal (`Z') distribution.
+*  In fact the standard normal distribution can be thought of as the $t-$distribution with $\infty$ degrees of freedom.
+*  For computing quantiles, we will consider the `Z' distribution in this way.
+*  For values of $n$ greater then 30, the difference between using $df = n-1$ and $df = \infty$ is negligible.
+
+*  As this will be relevant later, remember that a confidence interval is a \textbf{two-tailed} procedure, i.e. $k=2$.
+
+<p>
+
+
+
+*  Student's t- values are determined using the \texttt{t} family of commands (e.g. \texttt{qt, pt, dt}).
+*  To compute quantiles, use the code below.
+*  The degrees of freedom must be additionally be specified. Degrees of freedom are computed as sample size minus one ($n-1$)
+*  As the degrees of freedom gets larger and larger, the student t distribution converges to the Z distribution.
+
+
+
+
