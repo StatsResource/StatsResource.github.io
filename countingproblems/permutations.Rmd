@@ -1,0 +1,30 @@
+
+
+
+### Permutation Formula
+
+A formula for the number of possible permutations of k objects from a set of n. This is usually written $^nP_k$ .
+
+
+#### Formula:
+\[ ^nP_k = \frac{n!}{(n-k)!} =  n.(n-1).(n-2).\ldots(n-k+1) \]
+
+--------------------------------------------------
+
+#### Worked Example 1: 
+How many ways can 4 students from a group of 15 be lined up for a photograph?\\
+
+
+There are $^{15}P_4$ possible permutations of 4 students from a group of 15.
+\[ ^{15}P_4 = \frac{15!}{11!} = 15\times 14\times 13\times 12 = 32760 \]
+There are 32760 different lineups.
+
+#### Worked Example 2: 
+
+
+How many ways are there of arranging 3 different jobs, between 5 workers, where each worker can only do one job?
+
+
+\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
+
+
