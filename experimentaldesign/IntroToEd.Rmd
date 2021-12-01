@@ -55,7 +55,7 @@ Factor is any aspect of the experimental conditions which may affect the result 
 * 	Factor Levels are the discretized values of indicating the degree of presence of a given factor (for example, high and low).
 
 
-### Types of Variables}
+### Types of Variables
 
 
 * A data collection plan considers how four important variables: background, constant, uncontrollable, and primary, fit into the study. 
@@ -76,6 +76,7 @@ conditions prevent them from being manipulated, or it is very difficult (due to 
 
 ### Treatment Structure
 
+<h5>Treatment Structure</h5>
 * The treatment structure consists of factors that the researcher wants to study and about which the researcher will make inferences. The primary factors are controlled by the researcher and are expected to show the effects of greatest interest on the response variable(s). 
 * 
 The levels of greatest interest should be clearly defined for each primary factor. The levels of the primary factors represent the range of the inference space relative to this study. 
@@ -92,35 +93,36 @@ Treatments are administered to experimental units by level, where level implies 
 
 Level is also used for categorical variables, such as Drugs A, B, and C, where the three are different kinds of drug, not different amounts of the same thing.
 
-### Main Effect and interactions}
+### Main Effect and interactions
 This is the simple effect of a factor on a dependent variable. It is the effect of the factor alone averaged across the levels of other factors.
 
 ### Example
 <h4> Example </h4>
 
 * A cholesterol reduction clinic has two diets and one exercise regime. It was found that exercise alone was effective, and diet alone was effective in reducing cholesterol levels (main effect of exercise and main effect of diet).  
+
 * Also, for those patients who didn't exercise, the two diets worked equally well (main effect of diet); those who followed diet A and exercised got the benefits of both (main effect of diet A and main effect of exercise). 
 * However, it was found that those patients who followed diet B and exercised got the benefits of both plus a bonus, an interaction effect (main effect of diet B, main effect of exercise plus an interaction effect).
 
 ### Replication
 If a treatment condition appears more than one time, it is defined to be replicated. True replication refers to responses that are treated in the same way. 
-
+<p>
 Replication is essential for estimating experimental error. The type of replication that’s possible for a data collection plan represents how the error terms should be estimated. 
-
+<p>
 Two or more measurements should be taken from each experimental unit at each combination of conditions, if possible. 
-
+<p>
 In addition, it is desirable to have measurements taken at a later period in order to test for repeatability over time. The first method of replication gives an estimate of pure error, that is, the ability of the experimental units to provide similar results under identical experimental conditions. 
 
 
-### Design Structure (Blocks)}
+### Design Structure (Blocks)
 Most experimental designs require experimental units to be allocated to treatments either randomly or randomly with constraints, as in blocked designs.
-
+<p>
 Blocks are groups of experimental units that are formed to be as homogeneous as possible with respect to the block characteristics. 
 
 The term block comes from the agricultural heritage of experimental design where a large block of land was selected for the various “treatments”, that had uniform soil, drainage, sunlight, and other important physical characteristics.
 
 Homogeneous clusters improve the comparison of treatments by randomly allocating levels of the treatments within each block.
-
+<p>
 The design structure consists of those factors that define the blocking of the experimental units into clusters. The types of commonly used design structures are described are as follows.
 
 ### Completely Randomized Design.
@@ -146,13 +148,13 @@ Column{.tabset}
 ### Randomized Complete Block Design.
 
 Subjects are divided into b blocks according to demographic characteristics. Subjects in each block are then randomly assigned to treatments so that all treatment levels appear in each block. 
-
+<p>
 For example, in the clinical study, the patients would presumably have different demographic characteristics. For the sake of simplicity, let’s say there are four main demographic subgroups A,B,C and D. 
-
+<p>
 Patients within each subgroup are randomly assigned to one of the four types of treatments. 
-
+<p>
 There might be significant variability between the subjects in each demographic subgroup, each of which contains 24 patients. Randomly assign 6 patients to each of the three types of tests and the standard. 
-
+<p>
 The demographic subgroup is now the 'block'. The primary interest is in the main effect of the test.
 
 
@@ -167,11 +169,12 @@ Group D	6 Patients	6 Patients	6 Patients	6 Patients
 The improvement of this design over a completely randomized design enables you to make comparisons among treatments after removing the effects of a confounding variable, in this case, different subgroups.
 
 
-### Example} 
-A researcher is carrying out a study of the effectiveness of four different skin creams for the treatment of a certain skin disease. He has eighty subjects and plans to divide them into 4 treatment groups of twenty subjects each. 
-
+### Example
+<h5> Worked Example</h5>
+A researcher is carrying out a study of the effectiveness of four different skin creams for the treatment of a certain skin disease. They have eighty subjects and plans to divide them into 4 treatment groups of twenty subjects each. 
+<p>
 Using a randomised blocks design, the subjects are assessed and put in blocks of four according to how severe their skin condition is; the four most severe cases are the first block, the next four most severe cases are the second block, and so on to the twentieth block. The four members of each block are then randomly assigned, one to each of the four treatment groups.
-
+<p>
 <pre><code>
 	Treatment Method
 Subgroups	Cream A	Cream B	Cream C	Cream D
@@ -181,14 +184,14 @@ Group 2	Patient 11	Patient 12	 Patient 9	Patient 10
 ….	….	….	….	….
 </code></pre>
 
-### Types of Effects}
+### Types of Effects
 An effect is a change in the response due to a change in a factor level. There are different types of effects. One objective of an experiment is to determine if there are significant differences in the responses across levels of a treatment (a fixed effect) or any interaction between the treatment levels. 
-
+<p>
 If this is always the case, the analysis is usually easily manageable, given that the anomalies in the data are minimal (outliers, missing data, homogeneous variances, unbalanced sample sizes, and so on).
-### Blinding}
+### Blinding
 In a medical experiment, the comparison of treatments may be distorted if the patient, the person administering the treatment and those evaluating it know which treatment is being allocated. It is therefore necessary to ensure that the patient and/or the person administering the treatment and/or the trial evaluators are 'blind to' (don't know) which treatment is allocated to whom.
-
+<p>
 Sometimes the experimental set-up of a clinical trial is referred to as double-blind, that is, neither the patient nor those treating and evaluating their condition are aware (they are 'blind' as to) which treatment a particular patient is allocated. A double-blind study is the most scientifically acceptable option.
-
+<p>
 Sometimes however, a double-blind study is impossible, for example in surgery. It might still be important though to have a single-blind trial in which the patient only is unaware of the treatment received, or in other instances, it may be important to have blinded evaluation.
 

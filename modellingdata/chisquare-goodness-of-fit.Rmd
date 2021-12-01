@@ -1,4 +1,4 @@
-More on Chi Square Tests {data-navmenu="Chi Square Tests"}
+Chi Square Goodness of Fit Tests {data-navmenu="Chi Square Tests"}
 ===========================================================
 
 Column {.tabset}
@@ -9,6 +9,11 @@ Column {.tabset}
 <h3>Chi Square Goodness of Fit tests</h3>
 
 
+The chi-squared test applied to contingency tables.
+
+The Chi-squared test is the most commonly used test for frequency data and goodness-of-fit. In theory, it is nonparametric but because it has no parametric equivalent, it is not classified as such. It is not an exact test and with the current level of computing facilities, there is not much excuse not to use Fishers exact test for $2\times2$ contingency table analysis instead of Chi-squared test. 
+
+-----------------------------------------
 
 *  In the case of goodness of fit tests, there is only one categorical variable, such as the screen size of TV sets that have
 been sold, and what is tested is a hypothesis concerning the pattern of frequencies, or the distribution, of the variable.
@@ -47,48 +52,199 @@ test for independence is $df = (r - 1)(c - 1)$.
 
 
 
+
+### Tests for Goodness of Fit
+
+*  Basic Counting Model
+*  Goodness of Fit Statistics
+*  Testing with unknown parameters
+*  Testing for association in two-way tables
+
+
+#### {Pearson's chi-squared test}
+
+Chi Square
+
+\begin{description}
+* [Null Hypothesis]
+There is no relationship between the two categorical variables
+
+* [Alternative Hypothesis]
+There is a relationship between the two categorical variables
+\end{description}
+
+
+*  Observed Values
+
+*  Expected Values (under the null hypothesis)
+
+
+
+Are the differences between Observed values and the Expected values
+small enough to be due to random error (i.e. null hypothesis is valid)
+or too large for the null hypothesis to be feasible?
+
+
+-----------------------------------------------------
+<p>
+
+Expected values for each cell
+
+Row Total Column Total
+Overall Total
+
+E-O/E
+
+
+-----------------------------------------------------
+<p>
+
+#### {Degrees of freedom}
+
+\[df=(r-1)(c-1)\]
+
+
+* [r] = number of rows
+* [c] = number of columns
+
+
+2 rows and 3 columns r = 2 c = 3 
+\[df= (2-1)(3-1) = (1)(2) = 2\]
+
+-----------------------------------------------------
+<p>
+
+Pearson's chi-squared test uses a measure of goodness of fit which is the sum of differences between observed and expected outcome frequencies (that is, counts of observations), each squared and divided by the expectation:
+\[ \chi^2 = \sum_{i=1}^n {\frac{(O_i - E_i)}{E_i}^2} \]
+where:
+
+
+* [Oi] = an observed frequency (i.e. count) for bin i
+* [Ei] = an expected (theoretical) frequency for bin i, asserted by the null hypothesis.
+
+
+-----------------------------------------------------
+<p>
+
+
+Also for larger contingency tables, the G-test (log-likelihood ratio test) may be a better choice. The Chi-square value is obtained by summing up the values (residual2/fit) for each cell in a contingency. In this formula, residual is the difference between the observed value and its expected counterpart and fit is the expected value.
+
+
+--------------------------------------------------------------------------------------
+
+
+\noindent \textbf{Yates's correction}
+The approximation of the Chi-square statistic in small $2\times2$ tables can be improved by reducing the absolute value of differences between expected and observed frequencies by 0.5 before squaring. This correction, which makes the estimation more conservative, is usually applied when the table contains only small observed frequencies ($<20$).
+
+The effect of this correction is to bring the distribution based on discontinuous frequencies nearer to the continuous Chi-squared distribution. This correction is best suited to the contingency tables with fixed marginal totals. Its use in other types of contingency tables (for independence and homogeneity) results in very conservative significance probabilities. This correction is no longer needed since exact tests are available.
+
+
+-----------------------------------------------------
+<p>
+
+#### {Chi-Square Test of Association}
+
+
+Expected Value for a Cell
+
+\[ = \frac{\mbox{Column Total}  \times \mbox{Row Total} } {\mbox{Overall Total}}  \]
+
+
+
+*  Compute the expected values for each cell in the following table.
+*  One of the expected values (both A and Y) is given.
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & Cat X & Cat Y & Cat Z & Total  \\ \hline
+Cat A & & 60 &  & 200\\ \hline
+Cat B & &  &  & 400 \\ \hline
+Total & 150 & 180 & 270 &  \textbf{600}\\ \hline
+\end{tabular} 
+\end{center}
+
+
+
+
+------------------------------------------
+
+
+#### {Chi-Square Test of Association}
+
+\textbf{Cell$_{(2,1)}$}\
+
+*  Row 2 : Row Total = 400
+*  Column 1 : Column Total = 150
+*  Overall Total = 600
+
+
+Expected value for Cell$_{(2,1)}$
+
+\[ E_{(2,1)} = frac{400 \times 150}{600} = \frac{60,000}{600} = 100 \]
+
+-----------------------------------------------------
+<p>
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+ & Cat X & Cat Y & Cat Z & Total  \\ \hline
+Cat A & 50 & 60 &  & 200\\ \hline
+Cat B & \phantom{s}100\phantom{s}& \phantom{space} & \phantom{space} & 400 \\ \hline
+Total & 150 & 180 & 270 &  \textbf{600}\\ \hline
+\end{tabular} 
+\end{center}
+
+
+-----------------------------------------------------
+<p>
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+ & Cat X & Cat Y & Cat Z & Total  \\ \hline
+Cat A & 50 & 60 & 90  & 200\\ \hline
+Cat B & \phantom{s}100\phantom{s}& \phantom{s}120\phantom{s} & \phantom{s}180\phantom{s} & 400 \\ \hline
+Total & 150 & 180 & 270 &  \textbf{600}\\ \hline
+\end{tabular} 
+\end{center}
+
+-----------------------------------------------------
+<p>
+
+
+
+
 \section{Chi Square}
 
 
 $p_{i}$ = Expected proportion for digit $i$.
 
-For this test we used the chi-squared test statistic which is given by:
-  \begin{equation}
-X^2 = \sum_{i=1}^{n} {(O_i - E_i)^2 \over E_i}
-\end{equation}
-
-
-The Chi Square test tests a null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution. The events considered must be mutually exclusive and have total probability 1. A common case for this is where the events each cover an outcome of a categorical variable.
-
-
-*  $X^2$ = the test statistic that asymptotically approaches a $\chi^2$ distribution.
-*  $O_i$ = an observed frequency;
-*  $E_i$ = an expected (theoretical) frequency, asserted by the null hypothesis;
-*  $n $  = the number of possible outcomes of each event.
 
 
 The chi-square statistic can then be used to calculate ap-value by comparing the value of the statistic to a chi-square distribution. The number of degrees of freedom is equal to the number of cells ``n'', minus the reduction in degrees of freedom, ``p''.
 
   
   
-  
-  \section{Chi-Square Test for Association using SPSS Statistics}
+### Using SPSS Statistics
 
-Introduction
+#### Introduction
 The chi-square test for independence, also called Pearson's chi-square test or the chi-square test of association, is used to discover if there is a relationship between two categorical variables.
 
 
-#### Assumptions}
+#### Assumptions
 When you choose to analyse your data using a chi-square test for independence, you need to make sure that the data you want to analyse "passes" two assumptions. You need to do this because it is only appropriate to use a chi-square test for independence if your data passes these two assumptions. If it does not, you cannot use a chi-square test for independence. These two assumptions are:
 
-\begin{description}
+
 	* [Assumption 1:] Your two variables should be measured at an ordinal or nominal level (i.e., categorical data). You can learn more about ordinal and nominal variables in our article: Types of Variable.
 	* [Assumption 2:] Your two variable should consist of two or more categorical, independent groups. Example independent variables that meet this criterion include gender (2 groups: Males and Females), ethnicity (e.g., 3 groups: Caucasian, African American and Hispanic), physical activity level (e.g., 4 groups: sedentary, low, moderate and high), profession (e.g., 5 groups: surgeon, doctor, nurse, dentist, therapist), and so forth.
-\end{description}
-In the section, Procedure, we illustrate the SPSS Statistics procedure to perform a chi-square test for independence. First, we introduce the example that is used in this guide.
 
 
-#### SPSS Example}
+### SPSS Example
 Educators are always looking for novel ways in which to teach statistics to undergraduates as part of a non-statistics degree course (e.g., psychology). With current technology, it is possible to present how-to guides for statistical programs online instead of in a book. However, different people learn in different ways. An educator would like to know whether gender (male/female) is associated with the preferred type of learning medium (online vs. books). Therefore, we have two nominal variables: Gender (male/female) and Preferred Learning Medium (online/books).
 
 
@@ -176,8 +332,7 @@ Phi and Cramer's V are both tests of the strength of association. We can see tha
 Published with written permission from SPSS Statistics, IBM Corporation.
 It can be easier to visualize data than read tables. The clustered bar chart option allows a relevant graph to be produced that highlights the group categories and the frequency of counts in these groups.
 
-%================================================================================================ %
-  #### Chi Square Test }
+### Chi Square Test - Example
 Replace the question marks with the expected number of observations
 in a cell under the nulll hypothesis that the choice of course doesnt depend on gender.
 
@@ -288,36 +443,5 @@ No! We fail to reject the null hypothesis.
 
 We do not have enough evidence to say that there is a relationship between gender and college courses.
 
-
-
-
-
-
-
-
-
-%=========================================================%
-  
-  \section{Chi Square}
-
-
-$p_{i}$ = Expected proportion for digit $i$.
-
-For this test we used the chi-squared test statistic which is given by:
-  \begin{equation}
-X^2 = \sum_{i=1}^{n} {(O_i - E_i)^2 \over E_i}
-\end{equation}
-
-
-The Chi Square test tests a null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution. The events considered must be mutually exclusive and have total probability 1. A common case for this is where the events each cover an outcome of a categorical variable.
-
-
-*  $X^2$ = the test statistic that asymptotically approaches a $\chi^2$ distribution.
-*  $O_i$ = an observed frequency;
-*  $E_i$ = an expected (theoretical) frequency, asserted by the null hypothesis;
-*  $n $  = the number of possible outcomes of each event.
-
-
-The chi-square statistic can then be used to calculate ap-value by comparing the value of the statistic to a chi-square distribution. The number of degrees of freedom is equal to the number of cells ``n'', minus the reduction in degrees of freedom, ``p''.
 
 

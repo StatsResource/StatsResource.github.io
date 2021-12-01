@@ -18,11 +18,11 @@ A random variable ${\displaystyle X}$ follows the hypergeometric distribution if
 \[ {\displaystyle p_{X}(k)=\Pr(X=k)={\frac {{\binom {K}{k}}{\binom {N-K}{n-k}}}{\binom {N}{n}}},}\]
 where
 
-*    ${\displaystyle N}$ is the population size,
-*    ${\displaystyle K}$ is the number of success states in the population,
-*    ${\displaystyle n}$ is the number of draws (i.e. quantity drawn in each trial),
-*    ${\displaystyle k}$ is the number of observed successes,
-*    ${\textstyle \textstyle {a \choose b}}$ is a binomial coefficient.
+* $N$ is the population size,
+* $K$ is the number of success states in the population,
+* $n$ is the number of draws (i.e. quantity drawn in each trial),
+* $k$ is the number of observed successes,
+* ${\textstyle \textstyle {a \choose b}}$ is a binomial coefficient.
 
 
 ### Videos 

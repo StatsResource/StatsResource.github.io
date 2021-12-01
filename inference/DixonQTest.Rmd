@@ -10,29 +10,37 @@ Column {.tabset}
 <h5>Dixon Q-Test for Outliers</h5>
 
 Use the Dixon Q-Test to determine whether or not there is an outlier value present in this data set.
-\\ \textit{Use a 5\% significance level}.
+(Use a 5% significance level).
 
 
 
 
 \[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]
 
-
+<p>
+--------------------------------------------------
 
 *  Arrange the data set into ascending order.
 
-\[19, 25, 28, 29, 30, 31, 33, 36, 36, 37\]
+\[\LARGE \{ 19, 25, 28, 29, 30, 31, 33, 36, 36, 37\} \]
 
 *  Here the potential outlier is the lowest value, i.e. 19
 
-*  We can formally state the null and alternative hypothesis as follows
 
+--------------------------------------------
 
-<h5> Hypotheses</h5>
+<h4> Hypotheses</h4>
+
+We can formally state the null and alternative hypothesis as follows
+
 
 * [H$_0$] There are no outliers present in the data.
-* [H$_1$] There is one outlier present \\ (i.e. the lowest value 19)
+* [H$_1$] There is one outlier present (i.e. the lowest value 19)
 
+
+--------------------------------------------
+
+<h4> Test Statistic</h4>
 
 *  The test statistic for this procedure is as follows:
 
@@ -48,8 +56,9 @@ Use the Dixon Q-Test to determine whether or not there is an outlier value prese
 
 *  Before we look at the critical value, we confirm the size of the data set is $n=10$.
 
-*   The critical value can be determined from the following table. \\ $\bullet$ The column to chose is the significance level (here 5\% or 0.05 ).
-\\ $\bullet$ The row to use is $n$, the number of items in the data set.
+*   The critical value can be determined from the following table. 
+
+* The column to chose is the significance level (here 5\% or 0.05 ). The row to use is $n$, the number of items in the data set.
 
 -----------
 
@@ -72,9 +81,14 @@ $n$	&	$\alpha=0.10$	&	$\alpha=0.05$	&	$\alpha=0.01$	\\ \hline
 
 \end{tabular} 
 
--
 
-*  \textbf{Rule of Thumb}
+```{r echo=FALSE, warning=FALSE}
+library(knitr)
+knitr::kable(head(iris))
+```
+
+
+#### Decision Rule
 
 
 

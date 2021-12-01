@@ -10,16 +10,16 @@ Column {.tabset}
 
 ### Cumulant Generating Function 
  
-The cumulants of a random variable $\LARGE X$ are defined using the cumulant-generating function $C(t)$, which is the natural logarithm of the moment-generating function:
+The cumulants of a random variable $\large X$ are defined using the cumulant-generating function $C(t)$, which is the natural logarithm of the moment-generating function:
 
-  \[ {\LARGE C(t)=\log \operatorname {E} \left[e^{tX}\right].}\]
+  \[ {\large C(t)=\log \operatorname {E} \left[e^{tX}\right].}\]
 
 The cumulants $\kappa_n$ are obtained from a power series expansion of the cumulant generating function:
-\[ {\LARGE C(t)=\sum _{n=1}^{\infty }\kappa _{n}{\frac {t^{n}}{n!}}=\mu t+\sigma ^{2}{\frac {t^{2}}{2}}+\cdots .}\]
+\[ {\large C(t)=\sum _{n=1}^{\infty }\kappa _{n}{\frac {t^{n}}{n!}}=\mu t+\sigma ^{2}{\frac {t^{2}}{2}}+\cdots .}\]
 
 This expansion is a Maclaurin series, so the $n$-th cumulant can be obtained by differentiating the above expansion $n$ times and evaluating the result at zero:
 
-\[{\LARGE \kappa _{n}=K^{(n)}(0).} \]
+\[{\large \kappa _{n}=K^{(n)}(0).} \]
 
 ### Worked Examples
 
@@ -29,7 +29,7 @@ where $M_X(t)$ is the moment generating function.
 
 <h4> Exercises</h4>
 
-Determine the mean and variance of the distribution of $\LARGE X$. 
+Determine the mean and variance of the distribution of $\large X$. 
 
 <h4> Solution </h4>
 

@@ -80,28 +80,6 @@ If the columns are not contingent on the rows, then the rows and column frequenc
 * Expected Values under the null hypothesis (<a title="ChiSquare-ExpectedValues" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Expected%20Values.pdf" target="_blank">here</a>)</li>
 * Chi-Square Exercise (<a title="Chi-SquareExercise" href="https://dl.dropboxusercontent.com/u/6044937/IntroStats/PartH-Chi%20Square%20Exercise.pdf" target="_blank">here</a>)</li>
 
-### Test Statistic
-
-
-For this test we used the chi-squared test statistic which is given by:
-\begin{equation}
-X^2 = \sum_{i=1}^{n} {(O_i - E_i)^2 \over E_i}
-\end{equation}
-
-
-The Chi Square test tests a null hypothesis stating that the frequency distribution of certain events observed in a sample is consistent with a particular theoretical distribution. The events considered must be mutually exclusive and have total probability 1. A common case for this is where the events each cover an outcome of a categorical variable.
-
-* $X^2$ = the test statistic that asymptotically approaches a $\chi^2$ distribution.
-* $O_i$ = an observed frequency;
-* $E_i$ = an expected (theoretical) frequency, asserted by the null hypothesis;
-* $n $  = the number of possible outcomes of each event.
-
-
-
-The chi-square statistic can then be used to calculate ap-value by comparing the value of the statistic to a chi-square distribution. 
-The number of degrees of freedom is equal to the number of cells ``n'', minus the reduction in degrees of freedom, ``p''.
-
-
 
 
 

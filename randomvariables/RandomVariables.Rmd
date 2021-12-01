@@ -79,16 +79,18 @@ Column {.tabset}
 *  We can describe the outcomes of an experiment using numbers and this numerical description is called a random variable.	
 *  A random variable is a numerical description of the outcome of an experiment.
 * 
-	A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
-	*  The value of the random variable will vary from trial to trial as the experiment is repeated.
-	*  Numeric values can be assigned to outcomes that are not usually considered numeric. *  For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
-	*  Random variables can be classified as discrete or continuous, depending on the numerical values they may take.
+
+A ***random variable*** is a function that associates a unique numerical value with every outcome of an experiment.
+*  The value of the random variable will vary from trial to trial as the experiment is repeated.
+*  Numeric values can be assigned to outcomes that are not usually considered numeric. 
+*  For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
+*  Random variables can be classified as discrete or continuous, depending on the numerical values they may take.
 
 <p>
 
 #### What Are Random Variables
 
-There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.\\ \bigskip
+There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.
 
 <p>
 <h5>Examples</h5>
@@ -100,7 +102,13 @@ Y can take any positive real value, so Y is a continuous random variable.
 
 #### Discrete Random Variable
 
-*   A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.\item  Discrete random variables are usually (but not necessarily) counts. *   If a random variable can take only a finite number of distinct values, then it must be discrete. *   Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
+*   A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.
+
+* Discrete random variables are usually (but not necessarily) counts. 
+
+* If a random variable can take only a finite number of distinct values, then it must be discrete. 
+
+* Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
 
 
 <p>
@@ -111,9 +119,9 @@ Y can take any positive real value, so Y is a continuous random variable.
 *  A random variable that may assume any numerical value in an interval or collection of intervals is called a continuous random variable.
 * 
 A continuous random variable is one which takes an infinite number of possible values. *  Continuous random variables are usually measurements. *  Examples include height, weight, the amount of sugar in an orange, the time required to run a computer simulation. 
+<p>
 
-
-If X is a continuous random variable then we can say that the probability of obtaining a \textbf{precise} value $x$ is infinitely small, i.e. close to zero.
+If X is a continuous random variable then we can say that the probability of obtaining a *precise* value $x$ is infinitely small, i.e. close to zero.
 
 \[P(X=x) \approx 0 \]
 

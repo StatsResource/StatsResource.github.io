@@ -1,8 +1,37 @@
-Introductory Distributions {data-navmenu="Continuous Distributions"}
+Introductory Definitions {data-navmenu="Introduction to Statistics"}
 =====================================
 
 Column {.tabset}
 -------------------------------------------------
+
+### Types of Analysis
+
+
+Statistical procedures can be divided into two major categories: descriptive statistics and inferential statistics.
+%Before discussing the differences between descriptive and inferential statistics, we must first be familiar with two important concepts in social science statistics: population and sample. A population is the total set of individuals, groups, objects, or events that the researcher is studying. For example, if we were studying employment patterns of recent U.S. college graduates, our population would likely be defined as every college student who graduated within the past one year from any college across the United States.
+
+#### Descriptive Statistics 
+
+* Descriptive statistics includes statistical procedures that we use to describe the population we are studying. The data could be collected from either a sample or a population, but the results help us organize and describe data. Descriptive statistics can only be used to describe the group that is being studying. That is, the results cannot be generalized to any larger group.
+	
+* 	Descriptive statistics are useful and serviceable if you do not need to extend your results to any larger group. However, much of social sciences tend to include studies that give us “universal” truths about segments of the population, such as all parents, all women, all victims, etc.
+	
+* Frequency distributions, measures of central tendency (mean, median, and mode), and graphs like pie charts and bar charts that describe the data are all examples of descriptive statistics.
+	
+
+#### Inferential Statistics
+
+* Inferential statistics is concerned with making predictions or inferences about a population from observations and analyses of a sample. That is, we can take the results of an analysis using a sample and can generalize it to the larger population that the sample represents. In order to do this, however, it is imperative that the sample is representative of the group to which it is being generalized.
+	
+* To address this issue of generalization, we have tests of significance. A Chi-square or T-test, for example, can tell us the probability that the results of our analysis on the sample are representative of the population that the sample represents. 
+	
+* In other words, these tests of significance tell us the probability that the results of the analysis could have occurred by chance when there is no relationship at all between the variables we studied in the population we studied.
+	
+* Examples of inferential statistics include linear regression analyses, logistic regression analyses, ANOVA, correlation analyses, structural equation modeling, and survival analysis, to name a few.
+	
+
+
+%%http://www.ft.com/cms/s/2/5372968a-ba82-11da-980d-0000779e2340,dwp_uuid=77a9a0e8-b442-11da-bd61-0000779e2340.html
 
 ###  Definitions
 #### What are populations
@@ -55,13 +84,14 @@ Column {.tabset}
 
 ### Parameters and statistics 
 
-### What is a parameter?
+<h5>Parameters and statistics</h5>
+#### What is a parameter?
 
 *  A parameter is a numerical quantity measuring some aspect of a population of scores.
 *  The population mean $\mu$ and population variance $\sigma^2$ are commonly used parameters.
 *  Another commonly used parameter is the population proportion $\pi$.
 *  (Remark : greek letters are used to designate parameters.)
-*  Parameters are rarely known and are usually estimated by \textbf{\emph{statistics}} computed from samples.
+*  Parameters are rarely known and are usually estimated by ***statistics*** computed from samples.
 
 
 #### What is a statistic?
@@ -71,26 +101,8 @@ Column {.tabset}
 *  Sample mean $\bar{x}$ and sample standard deviation $s$ are types of statistics.
 *  These statistics are used to estimate population parameters.
 
-#### Statistical Inference Estimators
 
-*  Three important attributes of statistics as estimators are:  \large
-	*  unbiasedness, * consistency,  *  relative efficiency.\end{itemize}
-*  A statistic is unbiased if, in the long run, it's value is reasonably close to the parameter it is estimating.
-*  An estimator is consistent if the estimator tends to get closer to the parameter it is estimating as the sample size increases.
 
-	
-*  The efficiency of a statistic is the degree to which the statistic is stable from sample to sample.
-*  That is, the less subject to sampling fluctuation a statistic is, the more efficient it is.
-*  \textbf{\emph{Sampling fluctuation}} refers to the extent to which a statistic takes on different values with different samples.
-*  That is, it refers to how much the statistic's value fluctuates from sample to sample.
-	
-### Inferential Statistics
-
-*  Inferential statistics are used to draw inferences about a population from a sample.
-*  Consider an experiment in which 10 subjects who performed a task after 24 hours of sleep deprivation scored 12 points lower than 10 subjects who performed after a normal night's sleep.
-*  Is the difference real or could it be due to chance?
-*  How much larger could the real difference be than the 12 points found in the sample?
-*  These are the types of questions answered by inferential statistics.
 
 ### Bias in Sampling
 
@@ -120,110 +132,6 @@ Throughout the study of statistics certain basic terms occur frequently. Some of
 To make our study less expensive in terms of time and resources, we only study a subset of the population. This subset is called a \textbf{sample}. Samples can be quite large or quite small. In theory one individual from a population constitutes a sample. Many applications of statistics require that a sample have at least 30 individuals.
 
 ### Definitions
-#### What are populations?
-
-*  A \textbf{\emph{population}} consists of an entire set of objects, observations, or scores that have something in common.
-	For example, a population might be defined as students in a university.
-	
-*  Some populations are only hypothetical. Consider an experiment where a die is thrown 100 times and the sum of the scores was recorded.
-*  The researcher might define a population as the sums that would result if this experiment was repeated an infinite number of times.
-*  The population is hypothetical in the sense that it is not reasonable to repeat this experiment indefinitely.
-*  The distribution of a population can be described by several parameters such as the mean and standard deviation.
-	
-
-
-#### What are sample?
-
-	
-*  A sample is a subset of a population.
-*  Suppose we are interested in some characteristic of a population ( e.g. amount of time spent on the internet)
-*  Since it is usually impractical to test every member of a population, a sample from the population is typically
-	the best approach available.
-*  To be properly representative of a population, a sample should be both \textbf{\emph{ random}} and sufficiently large.
-	
-	
-
-
-#### Random Sampling
-
-	
-*  In random sampling, each item or element of the population has an equal chance of being chosen at each draw.
-*  A sample is random if the method for obtaining the sample meets the criterion of randomness (each element having an equal chance at each draw).
-	
-	
-
-
-### Biased Sampling
-
-*  A biased sample is one in which the method used to create the sample results in samples that are systematically different from the population.
-	
-	
-*  For instance, consider a market research project on attitudes of attendees towards an event they attended.
-	
-*  Collecting the data by publishing a questionnaire and asking people to fill it out and send it in would produce a biased sample.
-	
-*  People interested enough to spend their time and energy filling out and sending in the questionnaire are likely to have different attitudes about the event than those not taking the time to fill out the questionnaire.
-	
-
-<p>
-
-
-#### What is a parameter?
-
-*  A parameter is a numerical quantity measuring some aspect of a population of scores.
-*  The population mean $\mu$ and population variance $\sigma^2$ are commonly used parameters.
-*  Another commonly used parameter is the population proportion $\pi$.
-*  (Remark : greek letters are used to designate parameters.)
-*  Parameters are rarely known and are usually estimated by \textbf{\emph{statistics}} computed from samples.
-
-<p>
-
-#### What is a statistic?
-
-*  The most common use of the word `statistics'is for describing a wide range of techniques and procedures for analyzing, interpreting and displaying data.
-*  In a second usage, a ``statistic" is defined as a numerical quantity (such as the sample mean) calculated from a sample.
-*  Sample mean $\bar{x}$ and sample standard deviation $s$ are types of statistics.
-*  These statistics are used to estimate population parameters.
-
-
-
-<p>
-
-
-### Statistical Inference Estimators
-
-*  Three important attributes of statistics as estimators are:  \large
-	*  unbiasedness, * consistency,  *  relative efficiency.\end{itemize}
-*  A statistic is unbiased if, in the long run, it's value is reasonably close to the parameter it is estimating.
-*  An estimator is consistent if the estimator tends to get closer to the parameter it is estimating as the sample size increases.
-
-	
-*  The efficiency of a statistic is the degree to which the statistic is stable from sample to sample.
-*  That is, the less subject to sampling fluctuation a statistic is, the more efficient it is.
-*  \textbf{\emph{Sampling fluctuation}} refers to the extent to which a statistic takes on different values with different samples.
-*  That is, it refers to how much the statistic's value fluctuates from sample to sample.
-	
-
-<p>
-
-
-###  Inferential Statistics
-
-*  Inferential statistics are used to draw inferences about a population from a sample.
-*  Consider an experiment in which 10 subjects who performed a task after 24 hours of sleep
-	deprivation scored 12 points lower than 10 subjects who performed after a normal night's sleep.
-*  Is the difference real or could it be due to chance?
-*  How much larger could the real difference be than the 12 points found in the sample?
-*  These are the types of questions answered by inferential statistics.
-
-
-#### Bias in Sampling
-
-* If there is a tendency for a certain group of the population to be omitted from the sample or if people who refuse to co-operate form a group which is, in some way, different to the population, we have what is called a biased sample. 
-* We often use the word bias but its definition in the context of sampling is a systematic tendency to overestimate or underestimate the population parameter of interest. 
-* For the election example, if my sample consists solely of people from a disadvantaged area with high unemployment, I may under-estimate the level of support for a particular political party. 
-* How can we eliminate bias? Bias can be eliminated by taking a random sample. This is a sample where everyone in the population has the same chance of getting into the sample and the fact that one individual has got into the sample does not affect the chances of another individual getting into the sample i.e. everyone has an independent and equal chance of being included in the sample. This method of sampling is called simple random sampling.
-
 
 
 ### Parameters and Statistics
@@ -264,11 +172,11 @@ Unit: any individual member of the population e.g. an individual on the electora
 
 
 
-\item[Sampling frame:] a list of the individuals in the population e.g. the electoral register.
+* ***Sampling frame:*** a list of the individuals in the population e.g. the electoral register.
 
-\item[Variable:] we can measure its value for each person and its value will change from person to person e.g. the political party the individual will vote for.
+* ***Variable:*** we can measure its value for each person and its value will change from person to person e.g. the political party the individual will vote for.
 
-\item[Parameter:] this represents some value (e.g. an average value or a percentage) that we are interested in calculating for the population for example the percentage of adults on the electoral register who will vote for a particular political party or the average age of the voters. 
+* ***Parameter:*** this represents some value (e.g. an average value or a percentage) that we are interested in calculating for the population for example the percentage of adults on the electoral register who will vote for a particular political party or the average age of the voters. 
 
 
 ### Observational studies and experiments
@@ -295,35 +203,6 @@ In medical, economic and other social science applications of statistics
 one usually just observes a sample of the population available, without control of any
 of the factors that may influence the measures observed. These studies are
 observational studies.
-
-### Types of Analysis
-
-
-Statistical procedures can be divided into two major categories: descriptive statistics and inferential statistics.
-%Before discussing the differences between descriptive and inferential statistics, we must first be familiar with two important concepts in social science statistics: population and sample. A population is the total set of individuals, groups, objects, or events that the researcher is studying. For example, if we were studying employment patterns of recent U.S. college graduates, our population would likely be defined as every college student who graduated within the past one year from any college across the United States.
-
-#### Descriptive Statistics 
-
-* Descriptive statistics includes statistical procedures that we use to describe the population we are studying. The data could be collected from either a sample or a population, but the results help us organize and describe data. Descriptive statistics can only be used to describe the group that is being studying. That is, the results cannot be generalized to any larger group.
-	
-* 	Descriptive statistics are useful and serviceable if you do not need to extend your results to any larger group. However, much of social sciences tend to include studies that give us “universal” truths about segments of the population, such as all parents, all women, all victims, etc.
-	
-* Frequency distributions, measures of central tendency (mean, median, and mode), and graphs like pie charts and bar charts that describe the data are all examples of descriptive statistics.
-	
-
-#### Inferential Statistics
-
-* Inferential statistics is concerned with making predictions or inferences about a population from observations and analyses of a sample. That is, we can take the results of an analysis using a sample and can generalize it to the larger population that the sample represents. In order to do this, however, it is imperative that the sample is representative of the group to which it is being generalized.
-	
-* To address this issue of generalization, we have tests of significance. A Chi-square or T-test, for example, can tell us the probability that the results of our analysis on the sample are representative of the population that the sample represents. 
-	
-* In other words, these tests of significance tell us the probability that the results of the analysis could have occurred by chance when there is no relationship at all between the variables we studied in the population we studied.
-	
-* Examples of inferential statistics include linear regression analyses, logistic regression analyses, ANOVA, correlation analyses, structural equation modeling, and survival analysis, to name a few.
-	
-
-
-%%http://www.ft.com/cms/s/2/5372968a-ba82-11da-980d-0000779e2340,dwp_uuid=77a9a0e8-b442-11da-bd61-0000779e2340.html
 
 ### Types of Sampling#
 
