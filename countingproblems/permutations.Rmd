@@ -1,5 +1,256 @@
 
 
+### Techniques for Counting
+
+
+*  Combinations
+*  Permutations
+*  Permutations with constraints
+
+
+
+
+### Combinations
+
+<h4>Combinations</h4>
+
+*  In the case of permutations, the order in which the objects are arranged is important.
+*  In the case of
+combinations, we are concerned with the number of different groupings of objects that can occur without regard
+to their order. 
+*  Therefore, an interest in combinations always concerns the number of different subgroups that
+can be taken from n objects. The number of combinations of n objects taken r at a time is
+
+
+
+
+
+#### The Permutation Formula
+The number of different permutations of r items from n unique items is written as $^n P_k$
+
+
+\[ ^n P_k = \frac{n!}{(n-k)!}\]
+
+### Permutations and Combinations
+
+
+Often we are concerned with computing the number of ways of selecting and arranging groups of items. 
+ 
+*  A \textbf{\emph{combination}} describes the selection of items from a larger group of items.  
+*  A \textbf{\emph{permutation}} is a combination that is arranged in a particular way.
+
+
+
+
+*  Suppose we have items A,B,C and D to choose two items from.
+*  AB is one possible selection, BD is another. AB and BD are both combinations.
+*  More importantly, AB is one combination, for which there are two distinct permutations: AB and BA.
+
+<p>
+#### Combinations
+
+\textbf{Combinations: 
+The number of ways of selecting $k$ objects from $n$ unique objects is:
+
+\[ ^n C_k = {n!  \over k! \times (n-k)!} \]
+
+In some texts, the notation for finding the number of possible combination is written
+
+\[ ^n C_k =  {n \choose k} \]
+
+<p>
+#### Example of Combinations
+How many ways are there of selecting two items from possible 5?
+
+\[ ^5 C_2   \left( \mbox{ also }  {5 \choose 2}  \right) =  {5!  \over 2! \times 3!} =  {5 \times 4 \times 3!  \over 2 \times 1 \times 3!} = 10  \]
+
+
+Discuss how combinations can be used to compute the number of rugby matches for each group in the Rugby World Cup.
+
+<p>
+
+---------------------------------------
+
+#### Permutations - Example
+How many ways are there of arranging 3 different jobs, between 5 workers, where each worker can only do one job?
+
+
+\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
+
+---------------------------------------
+
+
+#### Using \texttt{R}
+When implementing combination calculations in \texttt{R}, we use the \texttt{choose()} function.
+
+<pre><code>
+> choose(5,0)
+[1] 1
+> choose(5,1)
+[1] 5
+> choose(5,2)
+[1] 10
+> choose(5,3)
+[1] 10
+> choose(5,4)
+[1] 5
+> choose(5,5)
+[1] 1
+</code></pre>
+
+
+### Example of Combinations
+
+#### Part 2
+
+Thus a committee of 2 men and 2 women can be selected in $ 6 \times 3  = 18 $ ways.\\
+
+#### Part 3
+
+The probability of two men and two women on a committee is
+\[ {\mbox{Number of ways of selecting 2 men and 2 women} \over \mbox{Number of ways of selecting 4 from 7}} = {18 \over 35 }\]
+
+
+#### Part 4
+
+*  The probability of at least two females is the probability of 2 females or 3 females being selected.
+*  We can use the addition rule, noting that these are two mutually exclusive events.
+*  From before we know that probability of 2 females being selected is 18/35.
+
+
+*  We have to compute the number of ways of selecting 1 male from 4 (4 ways) and the number of ways of selecting three females from 2 ( only 1 way)
+*  The probability of selecting three females is therefore ${4 \times 1 \over 35} = 4/35$
+*  So using the addition rule
+\[ Pr(\mbox{ at least 2 females }) = Pr(\mbox{ 2 females }) + Pr(\mbox{ 3 females }) \]
+\[ Pr(\mbox{ at least 2 females })  = 18/35 + 4/35 = 22/35 \]
+
+
+}
+
+<p>
+
+#### Permutations - Example:
+How many ways are there of arranging 3 different jobs, between 5 workers, where each worker can only do one job?
+
+
+\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
+
+
+
+<p>
+
+\noindent \textbf{Example:}
+How many ways are there of arranging 3 different jobs, between 5 workers, where each worker can only do one job?
+
+
+\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
+
+<p>
+\noindent \textbf{Permutations of subsets}
+
+The number of permutations of subsets of $k$ elements selected from a set of $n$ different elements is
+
+\[P(n,r) = \frac{n!}{(n-k)!}  \]
+
+
+<p>
+
+\noindent \textbf{Combinations of subsets}
+
+The number of combinations that can be selected from $n$ items is
+
+\[ {n \choose k} = \frac{n!}{k! \times (n-k)!}  \]
+
+
+
+
+#### Combinations
+In mathematical terms, a combination is an subset of items from a larger set such that the order of the items does not matter.
+
+#### Permutations
+
+There are two types of permutation:
+
+1.  Repetition is Allowed: such as the lock above. It could be "333".
+2.  No Repetition: for example the first three people in a running race. You can't be first and second.
+
+<p>
+
+*  Permutations where repetition is allowed: 
+\[ n! \]
+*  Permutations where repetition is not allowed
+\[ \frac{n!}{(n-k)!} \]
+
+-------------------------------------------------------
+
+
+
+#### Permutations
+
+
+\textbf{Part 2 : PERMUTE}\\
+
+*  We re-express the answer from part 2 as follows:
+
+\[\frac{7!}{2!} =  \frac{5040}{2} = \boldsymbol{2520} \]
+
+
+\textbf{Part 4 : LITTLE}\\
+
+*  The word LITTLE has 6 letters, but there are two Ls and two Ts.
+*  From before, there are 6! ways to arrange 6 letters.
+*  Again, interchanging the two Ls and Ts does not result in a new permutation. 
+
+\[\frac{6!}{2!\times 2!} =  \frac{720}{4} = \boldsymbol{180} \]
+
+-----------------------------------------------------
+
+*  In how many permutations are there of counting a subset of k elements, when there are $n$ elements in total.
+
+*  The number of permutations of a set of n elements is denoted n! (pronounced n factorial.)
+
+
+
+### Permutations
+\textbf{Example:}
+How many ways are there of arranging 3 different jobs, between 5 workers, where each worker can only do one job?
+
+
+\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
+
+
+\textbf{Permutations with Constraints}
+
+How many different four digit numbers greater than 5000 can be formed from the digits \[2,4,5,8,9\] if each digit can only be used once in any given number.
+
+\textbf{Permutations with Constraints}
+
+How many of these four digit numbers are odd, given they are greater than 5000?
+\[2,4,5,8,9\]\\
+
+
+\textbf{Permutations with Constraints}
+
+
+%http://www.mathsireland.com/LCHGeneralNotes/PermCombProb/5_5_Prob_MultAnd/Q_5_5_Prob_MultAnd.html
+
+
+
+
+
+
+
+\textbf{Permutations
+\textbf{Example:}
+How many ways are there of arranging 3 different jobs, between 5 workers, where each worker can only do one job?
+
+
+\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
+
+}
+
+
+
 
 ### Permutation Formula
 

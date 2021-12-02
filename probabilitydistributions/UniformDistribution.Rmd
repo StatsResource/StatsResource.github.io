@@ -4,6 +4,13 @@ Uniform Distributions {data-navmenu="Continuous Distributions"}
 Column {.tabset}
 -------------------------------------------------
 
+### Theory
+
+
+#### Uniform distribution
+A random variable is called a uniform random variable the interval (a,b) if its probability density function is given
+
+\[f_X(x) = \begin{cases}  {1 \over b-a } \\ 0 \end{cases} \]
 
 ### Videos
 
