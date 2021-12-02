@@ -29,7 +29,7 @@ Given two continuous random variables $X$ and $Y$ whose joint distribution is kn
 
 \[{\displaystyle f_{X}(x)=\int _{c}^{d}f(x,y)dy}\] and \[{\displaystyle f_{Y}(y)=\int _{a}^{b}f(x,y)dx}\]
 
-\noindent where ${\displaystyle x\in [a,b]}$, and ${\displaystyle y\in [c,d]}$
+where ${\displaystyle x\in [a,b]}$, and ${\displaystyle y\in [c,d]}$
 
 
 
@@ -60,6 +60,7 @@ a.  Calculate the value of the conditional probability $\LARGE P(X > 3|X > 1)$.
 
 The random variable $\LARGE X$ has probability density function $\LARGE f(x)$ given by
 \[\LARGE f(x) \;=\; kx^2 (1- x) , \qquad 0 \leq x \leq 1 \]
+
 
 <h4> Exercises</h4>
 

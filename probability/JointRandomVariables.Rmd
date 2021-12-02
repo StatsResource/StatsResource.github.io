@@ -31,6 +31,23 @@ following table.
 ||     |   |    |    |
 
 
+```{r echo=FALSE, warning=FALSE}
+
+library(flextable)
+library(magrittr)
+Col1 <- c("","X=0","X=1")
+Col2 <- c("Y=0","0.2","0.1")
+Col3 <- c("Y=1","0.3","0.1")
+Col4 <- c("Y=2","0.25","0.05")
+df <- data.frame(Col1,Col2,Col3,Col4)
+```
+
+```{r}
+
+df %>% flextable() 
+```
+
+
 <br><br>
 The random variable $\normalsize{R = (3 - Y)^2(X + 1) }$ is used as a risk index for a particular heart disease.
 <br><br>
