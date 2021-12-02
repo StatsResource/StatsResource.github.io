@@ -1,25 +1,26 @@
-\noindent ***{Basics of Probability}
-%====================================%
+### Basics of Probability
 
-* ***{Random Experiment}
+
+#### Random Experiment
 A random experiment is one whose outime is determined by chance.
 
-* ***{Sample Space}
+#### Sample Space
 In a probabilistic experiment, the sample space is the set of all possible outcomes of the experiment. 
 Suppose the probabilistic experiment is the toss of a dice. The six numbers that can appear face up, 
 from 1 to 6, are the 6 possible outcomes of the experiment. Hence, the sample space is:
 \[S={1,2,3,4,5,6}\]
 
-* ***{Sample Points}
+#### Sample Points
 In a probabilistic experiment, a sample point is one of the possible outcomes of the experiment. The set of all sample points is called sample space.
 
-* ***{Events}
+#### Events
 An event *A* is merely collection of outcomes, or in other words, a subset of the sample space.
 
+<p>
+#### Sample Spaces and Events
 
-***{Sample Spaces and Events}
-
-*  The set of all possible outcomes of a probability experiment is called a ***{\emph{sample space}}, which is usually denoted by $\boldsymbol{S}$.
-*  The sample space is an exhaustive list of all the possible outcomes of an experiment. We call individual elements of this list ***{\emph{sample points}}.
+*  The set of all possible outcomes of a probability experiment is called a ***sample space***, which is usually denoted by $\boldsymbol{S}$.
+*  The sample space is an exhaustive list of all the possible outcomes of an experiment. We call individual elements of this list 
+***sample points***.
 *  Each possible outcome is represented by one and only one sample point in the sample space.
 

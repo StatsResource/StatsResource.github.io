@@ -19,8 +19,8 @@ the null hypothesis; it is designated by the lowercase Greek $\alpha$ (alpha).
 
 <h5> Types of Error</h5>
 
-*  The probability of a Type I error is designated by the Greek letter alpha ( $\LARGE \alpha$) and is called the Type I error rate.
-*  The probability of a Type II error (the Type II error rate) is designated by the Greek letter beta ( $\LARGE \beta$ ).
+*  The probability of a Type I error is designated by the Greek letter alpha ( $ \alpha$) and is called the Type I error rate.
+*  The probability of a Type II error (the Type II error rate) is designated by the Greek letter beta ( $ \beta$ ).
 *  A Type II error is only an error in the sense that an opportunity to reject the null hypothesis correctly was lost.
 *  It is not an error in the sense that an incorrect conclusion was drawn since no conclusion is drawn when the null hypothesis is not rejected.
 
@@ -30,109 +30,16 @@ the null hypothesis; it is designated by the lowercase Greek $\alpha$ (alpha).
 <p>
 * A Type I error, on the other hand, is an error in every sense of the word. A conclusion is drawn that the null hypothesis is false when, in fact, it is true. Therefore, Type I errors are generally considered more serious than Type II errors.
 <p> 
-* The probability of a Type I error ( $\LARGE \alpha$ ) is called the significance level and is set by the experimenter. There is a trade-off between Type I and Type II errors. The more an experimenter protects themselves against Type I errors by choosing a low level, the greater the chance of a Type II error.
+* The probability of a Type I error ( $ \alpha$ ) is called the significance level and is set by the experimenter. There is a trade-off between Type I and Type II errors. The more an experimenter protects themselves against Type I errors by choosing a low level, the greater the chance of a Type II error.
 <p>
 * Requiring very strong evidence to reject the null hypothesis makes it very unlikely that a true null hypothesis will be rejected. However, it increases the chance that a false null hypothesis will not be rejected, thus lowering the likelihood of Type II error.
 <p>
 * The Type I error rate is almost always set at .05 or at .01, the latter being more conservative since it requires stronger evidence to reject the null hypothesis at the .01 level then at the .05 level.
 
+----------------------------------------------------------------------
 
+#### {Type I and II errors}
 
-
-
-
-
-
-%---------------------------------------------------------------------------%
-
-These two types of errors are defined in the table below.
-
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-&True State: H0 True	& True State: H0 False\\\hline
-Decision: Reject H0	& Type I error&	Correct\\
-Decision: Do not Reject H0	& Correct 	&Type II error\\ \hline
-\end{tabular}
-\end{center}
-
-
-
-
-
-
-%------------------------------------------------------------------------------------------------------------%
-
-\frametitle{Formulae}
-
-*  The schedule of formulae that will be at the back of your examination paper will be posted on the SULIS site shortly.
-*  It is advisable to familiarize yourself with the contents before the examination.
-*  Please let me know as soon as possible if there are any issues with it.
-
-
-%------------------------------------------------------------------------------------------------------------%
-
-%%%% Type I and Type II errors here
-
-%--------------------------------------------------------------------------------------------------------------------------%
-
-\frametitle{Hypothesis Testing}
-\large
-The inferential step to conclude that the null hypothesis is false goes as follows: The data (or data more extreme) are very unlikely given that the null hypothesis is true.
-\bigskip
-This means that:
-*  [(1)] a very unlikely event occurred or
-* [(2)] the null hypothesis is false. 
-The inference usually made is that the null hypothesis is false. Importantly it does not prove the null hypothesis to be false.
-
-%-------------------------------------------------------------------------------------------------------------------------%
-
-\frametitle{Type I and II errors}
-\large
-There are two kinds of errors that can be made in hypothesis testing:
-
-* [(1)] a true null hypothesis can be incorrectly rejected
-* [(2)] a false null hypothesis can fail to be rejected.
-
-The former error is called a \textbf{\emph{Type I error}} and the latter error is called a \textbf{\emph{Type II error}}. \\ \bigskip
-The probability of Type I error is always equal to the level of significance $\alpha$ (alpha) that is used as the standard for rejecting the null hypothesis .
-
-%---------------------------------------------------------------------------%
-
-\frametitle{Type II Error}
-
-
-*  The probability of a Type II error is designated by the Greek letter beta ( $\beta$).
-*  A Type II error is only an error in the sense that an opportunity to reject the null hypothesis correctly was lost.
-*  It is not an error in the sense that an incorrect conclusion was drawn since no conclusion is drawn when the null hypothesis is not rejected.
-
-
-%---------------------------------------------------------------------------%
-
-\frametitle{Types of Error}
-\large
-
-* 
-A Type I error, on the other hand, is an error in every sense of the word. A conclusion is drawn that the null hypothesis is false when, in fact, it is true. *  Therefore, Type I errors are generally considered more serious than Type II errors.
-* 
-The probability of a Type I error ($\alpha$ ) is set by the experimenter. *  There is a trade-off between Type I and Type II errors. The more an experimenter protects himself or herself against Type I errors by choosing a low level, the greater the chance of a Type II error.
-
-
-%---------------------------------------------------------------------------%
-
-\frametitle{Types of Error}
-\large
-
-* 
-Requiring very strong evidence to reject the null hypothesis makes it very unlikely that a true null hypothesis will be rejected. *  However, it increases the chance that a false null hypothesis will not be rejected, thus lowering the likelihood of Type II error.
-* 
-The Type I error rate is almost always set at .05 or at .01, the latter being more conservative since it requires stronger evidence to reject the null hypothesis at the .01 level then at the .05 level.
-
-
-%---------------------------------------------------------------------------%
-
-\frametitle{Type I and II errors}
-\large
 These two types of errors are defined in the table below.
 \small
 \begin{center}
@@ -146,10 +53,50 @@ Decision: Do not Reject H0 & Correct &Type II error\\ \hline
 
 
 
+<p>
 
-%----------------------------------------------------------------------------------------------------%
 
-\frametitle{Type I and Type II errors - Die Example}
+#### {Hypothesis Testing}
+
+The inferential step to conclude that the null hypothesis is false goes as follows: The data (or data more extreme) are very unlikely given that the null hypothesis is true.
+
+This means that:
+*  [(1)] a very unlikely event occurred or
+* [(2)] the null hypothesis is false. 
+The inference usually made is that the null hypothesis is false. Importantly it does not prove the null hypothesis to be false.
+
+<p>
+#### {Type I and II errors}
+
+There are two kinds of errors that can be made in hypothesis testing:
+
+* [(1)] a true null hypothesis can be incorrectly rejected
+* [(2)] a false null hypothesis can fail to be rejected.
+
+The former error is called a \textbf{\emph{Type I error}} and the latter error is called a \textbf{\emph{Type II error}}. \\ 
+The probability of Type I error is always equal to the level of significance $\alpha$ (alpha) that is used as the standard for rejecting the null hypothesis .
+
+<p>
+#### {Type II Error}
+
+
+*  The probability of a Type II error is designated by the Greek letter beta ( $\beta$).
+*  A Type II error is only an error in the sense that an opportunity to reject the null hypothesis correctly was lost.
+*  It is not an error in the sense that an incorrect conclusion was drawn since no conclusion is drawn when the null hypothesis is not rejected.
+
+
+<p>
+#### {Types of Error}
+
+
+* 
+A Type I error, on the other hand, is an error in every sense of the word. A conclusion is drawn that the null hypothesis is false when, in fact, it is true. *  Therefore, Type I errors are generally considered more serious than Type II errors.
+* 
+The probability of a Type I error ($\alpha$ ) is set by the experimenter. *  There is a trade-off between Type I and Type II errors. The more an experimenter protects himself or herself against Type I errors by choosing a low level, the greater the chance of a Type II error.
+
+<p>
+
+#### {Type I and Type II errors - Die Example}
 
 *  Recall our die throw experiment example.
 *  Suppose we perform the experiment twice with two different dice.
@@ -157,10 +104,7 @@ Decision: Do not Reject H0 & Correct &Type II error\\ \hline
 *  Suppose we get a sum of 401 from one die, and 360 from the other.
 
 
-
-%----------------------------------------------------------------------------------------------------%
-
-\frametitle{Type I and Type II errors - Die Example}
+#### {Type I and Type II errors - Die Example}
 
 *  For our first dice (sum 401), we feel that it is likely that the die is crooked.
 *  A Type I error describes the case when in fact that dice was fair, and what happened was just an unusual result.
@@ -168,10 +112,3 @@ Decision: Do not Reject H0 & Correct &Type II error\\ \hline
 *  A Type II error describes the case when in fact that dice was crooked , favouring high values, and what happened was ,again, just an unusual result.
 *  Otherwise we have made correct decisions; concluding the fair dice was fair, and that the crooked dice was crooked.
 
-
-
-
-
-
-
-\end{document}

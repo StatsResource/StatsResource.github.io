@@ -6,13 +6,18 @@ Column {.tabset}
 
 ### Sampling Distribution
 
+<h4>Sampling Distributions</h4>
+
+Sampling distributions are important in statistics because they provide a major simplification en route to statistical inference. More specifically, they allow analytical considerations to be based on the probability distribution of a statistic, rather than on the joint probability distribution of all the individual sample values.
+
+#### Videos 
 * <a href = "https://youtu.be/DSyusepVP3k/">Sampling Distribution - Worked Example 1 </a>
 * <a href = "https://youtu.be/uMxmxnIcfvo/">Sampling Distribution - Worked Example 2 </a>
 * <a href = "https://youtu.be/droO8NykzY8/">Expected Value of Sample Variance</a>
 * <a href = "https://youtu.be/ZTK1R7tylh8/"> Confidence Interval of Sample Variance</a>
 
 
-
+<h4> Variances</h4>
 * <a href="https://youtu.be/TF5VLv7Djtw/">	Sample Variance Ratios & The F Distribution	</a>	
 * <a href="https://youtu.be/DSyusepVP3k/">	Sampling Distributions - Worked Examples	</a>	
 
