@@ -15,6 +15,33 @@ Data compression is an active research area in computer science. By "compressing
 <p>
 
 
+%----------------------------------------------------------------------------------%
+
+{
+\noindent \textbf{Huffman Coding}
+Huffman coding is a method of lossless data compression, and a form of entropy encoding. The basic idea is to map an alphabet to a representation for that alphabet, composed of strings of variable size, so that symbols that have a higher probability of occurring have a smaller representation than those that occur less often.
+
+}
+%----------------------------------------------------------------------------------%
+
+{
+\noindent \textbf{Huffman Coding}
+The key to Huffman coding is Huffman's algorithm, which constructs an extended binary tree of minimum weighted path length from a list of weights. For this problem, our list of weights consists of the probabilities of symbol occurrence. From this tree (which we will call a Huffman tree for convenience), the mapping to our variable-sized representations can be defined.
+}
+%-------------------------------------------------------------------------------------------%
+{
+\noindent \textbf{Huffman Coding}
+The mapping is obtained by the path from the root of the Huffman tree to the leaf associated with a symbol's weight. The method can be arbitrary, but typically a value of 0 is associated with an edge to any left child and a value of 1 with an edge to any right child (or vice-versa). By concatenating the labels associated with the edges that make up the path from the root to a leaf, we get a binary string. Thus the mapping is defined.
+}
+%-------------------------------------------------------------------------------------------%
+{
+\noindent \textbf{Inverse Mapping}
+\begin{itemize}
+\item In order to recover the symbols that make up a string from its representation after encoding, an inverse mapping must be possible. It is important that this mapping is unambiguous. \item We can show that all possible strings formed by concatenating any number of path labels in a Huffman tree are indeed unambiguous, due to the fact that it is a complete binary tree. \item That is, given a string composed of Huffman codes, there is exactly one possible way to decompose it into the individual codes.
+\end{itemize}
+}
+%-------------------------------------------------------------------------------------------%
+
 
 ### Huffman encoding algorithm 
 Huffman coding is an entropy encoding algorithm used for lossless data compression.\\

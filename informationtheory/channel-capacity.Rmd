@@ -22,6 +22,8 @@ information per second is $rC_s$.
 This is the channel capacity per second and is denoted by $C$ (b/sec).
 \[C = rC_s     \mbox{          b/sec} \]
 
+
+
 ---------------------------------------------------------------------
 
 #### Lossless Channel

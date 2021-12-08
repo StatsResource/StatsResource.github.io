@@ -1,3 +1,9 @@
+Information 
+=================================
+
+Column {.tabset}
+----------------------------------
+
 ### What is Information?
 Once we agree to define the information of an event ain terms of P(a), the properties (2) and (3) will be satisfied if the information in ais defined as
 \[ I(a) = -log P(a)\]
@@ -21,7 +27,7 @@ I(p) = -\mathrm{log}_2(p) = \mathrm{log}_2(1/p)   .
 * We will want our information measure $I(p)$ to have several properties.
 
 %(note that along with the axiom is motivation for choosing the axiom).
- \item Information is a non-negative quantity:
+ * Information is a non-negative quantity:
 \[I(p) \geq 0\]. 
 
 
@@ -38,3 +44,165 @@ informations: \[I(p1 + p2) = I(p1)+I(p2).\]
 (and, in fact, monotonic) function of the probability (slight
 changes in probability should result in slight changes in
 information).
+
+
+
+\textbf{Introduction : } Information theory provides a quantitative measure of the information contained in message signal and allows us to determine the capacity of a communication system to transfer this information from source to destination.
+
+ln this part of the course, we will explore some basic ideas involved in information theory and source coding.
+
+
+<p>
+
+* Information theory is a process that focuses on the task of quantifying information. 
+* The quantification of information is achieved by identifying viable methods of compressing and communicating data without causing 
+and degradation in the integrity of the data. 
+* Information theory can be utilized in a number of different fields, including quantum computing, 
+data analysis and cryptography.
+
+<p>
+
+
+* The origin of modern informational theory is usually attributed to Claude E. Shannon.
+* His work A Mathematical Theory of Communication, first published in 1948, 
+lays the foundation for the quantification and compression of data into viable units that may be stored for easy retrieval later. 
+* His basic approach provided the tools necessary to enhance the efficiency of early mainframe computer systems, and translated easily into 
+the advent of desktop computers during the decade of the 1970’s.
+
+
+#### Introduction to Information Theory}
+
+
+* As a branch of both electrical engineering and applied mathematics, information theory seeks to uncover the most efficient 
+methods of conveying data, within the limits inherent in the data proper. * The idea is to ensure that the mass transit of data does 
+not in any way decrease the quality, even if the data is compressed in some manner. 
+
+<p>
+
+* Ideally, the data can be restored to its original form upon reaching its destination. 
+* In some cases, however, the goal is to allow data in one form to be converted for mass transmission, 
+received at the point of termination, and easily converted into a format other than the original without losing any of the transmitted information.
+
+
+
+#### What is Information?
+
+*  What is meant by the ``information" contained in an event?
+* If we are formally to defined a quantitative measure of information contained in an event, this measure should have some intuitive properties such as:
+
+* [1.] Information contained in events ought to be defined in terms of some measure of the uncertainty of the events.
+* [2.] Less certain events ought to contain more information than more certain events.
+* [3.] The information of unrelated / independent events taken as a single event should equal the sum of the information of the unrelated events.
+
+
+* A natural measure of the uncertainty of an event is the probability of $A$ denoted $P(A)$.
+
+
+
+### Measure of Information 
+
+\textbf{1) Information sources:}\\
+
+An information source is an object that produces an event, the outcome of which is selected at
+random according to a probability distribution.  \\ \bigskip A practical source in a communication system is a
+device that produces messages, and it can be either analog or discrete (we deal mainly
+with the discrete sources, since analog sources can be transformed to discrete sources) \\ \bigskip A discrete information source is a
+source that has only a finite set of symbols as possible outputs. The set of source symbols is called the
+\textbf{\emph{source alphabet}}, and the elements of the set are called \textbf{\emph{ symbols}} or \textbf{\emph{letters}}.
+
+%----------------------------------------------------------------------------------------------------------%
+
+\noindent \textbf{Memory}
+ * Information sources can be classified as having memory or being memoryless.
+* A source with
+memory is one for which a current symbol depends on the previous symbols.* A memoryless source is
+one for which each symbol produced is independent of the previous symbols.
+
+* A discrete memoryless sources (DMS) can be characterized by the list of the symbols, the
+probability assignment to these symbols, and the specification of the rate of generating these symbols by the source.
+
+
+%----------------------------------------------------------------------------------------------------------%
+
+\noindent \textbf{Information content of a Discrete Memoryless Source}
+
+* The amount of information contained in an event is closely related to its uncertainty.
+* Messages containing knowledge of high probability of occurrence convey relatively little information.
+
+* We note that if an event is certain (that is, the event occurs with probability of 1), then we can say that it conveys zero \textit{information}.
+
+* Conversely - very unlikely events are ``high information" events ( e.g. Alarms).
+
+
+
+<p>
+
+Thus, a mathematical measure of information should be a function of the probability of the outcome and should satisfy the following axioms:
+
+\item[1.] Information should be proportional to the uncertainty of an outcome.
+\item[2.] Information contained in independent outcomes should add (see axioms).
+
+
+
+### Information Content of a Symbol 
+
+
+* Consider a DMS, denoted by X, with alphabet ${x,.x2. ...,x_n}$.
+* The information content of a symbol
+$x_l$, denoted by $I(x_i)$, is defined by
+
+\[  I(x_i)  = \mbox{log}_b\left({1 \over P(x_i)}\right) =  -\mbox{log}_b[ P(x_i) ]  \]
+
+
+where $P(x_i)$ is the probability of occurrence of symbol $x_i$. * ( We will discuss what $b$ is shortly.)
+
+
+
+#### Axioms for Information theory 
+Note that $I(x_i)$ satisfies the following properties;
+
+* $I(x_i) = 0 $ for $P(x_i) = 1$ % i [(.r,) Z 0 for P(x() Z l (/0.2)
+* $I(x_i) \geq 0 $
+* $I(x_i) \; >\; I(x_j)$  if $P(x_i)\; < \; P(x_j)$
+* $I(x_i, x_j)  = I(x_i) + I(x_j)$ if $x_i$ and $x_j$ are independent.(This is based on laws of logarithms.)
+
+<p>
+
+#### Units of Measurement 
+
+* The unit of $I(x)$ is the bit (binary unit) if b = 2, \\ Hartley (or alternatively decit) if b = 10,\\ and nat (\emph{na}tural uni\emph{t}) if b = e (i.e. the exponential number).  \\ We will use $b = 2$. * Here the unit bit (abbreviated ``b") is a measure of information content and is not to be confused with the term \emph{\textbf{bit}} meaning "binary digit." * The conversion of these
+units to other units can be achieved by the following relationships.
+
+
+\[ \mbox{log}_2A = {\mbox{log}_e A \over \mbox{log} _e 2}   = {\mbox{log}_{10} A \over \mbox{log}_{10} 2}  \]
+
+Remark: $ \mbox{log}_e\; A $ is also written $\mbox{ln}\; A$.
+
+#### Average Information or Entropy
+
+* In a practical communication system, we usually transmit long sequences of symbols from an
+information source. * Thus, we are more interested in the average information that a source produces
+than the information content of a single symbol.
+* The mean value of $ I(x_i)$ over the alphabet of source X with $n$ different symbols is given by
+\[ H(X) = E[I(x_i)] = \sum^m_{i=1} P(x_i)I(x_i) \]
+\[ H(X) =  - \sum^m_{i=1} P(x_i)\mbox{log}_2( P(x_i) ) \mbox{        (b/symbol)}\]
+
+
+### Entropy
+
+* The quantity $H(X)$ is called the \emph{\textbf{entropy}} of source $X$. 
+* It is a measure of the average information content per random symbol.
+* The source entropy $H(X)$ can be considered as the average amount of uncertainty
+within source $X$ that is resolved by use of the alphabet.
+
+* Note that for if  binary source X that generates independent symbols $0$ and $1$ with equal probability, the source entropy $H(X)$ is
+\[ H(X ) = -1/2 \mbox{log}_2 (1/2) - 1/2 \mbox{log}_2 (1/2) \mbox{   b/symbol}  \]
+%(Remark :$\mbox{log}_2 ({1\over 2}) = -1$).
+
+<p>
+
+* The source entropy$ H(X)$ satisfies the following relation:
+\[0 \leq H(X) \leq \mbox{log}_2(m) \]where $m$ is the size (number of symbols) of the alphabet of source X ).
+*  The lower bound corresponds to no uncertainty, which occurs when one symbol has probability $P(x_i) = l$ (i.e. X emits the same symbol all the time.
+* The upper bound corresponds to the maximum uncertainty which occurs when $P(x_i) = 1 /m$ for all $i$. that is, when all symbols are equally likely to be emitted by X.
+ 

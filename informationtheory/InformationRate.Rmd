@@ -1,12 +1,6 @@
 
 
 
-### Information Rate}
-If the time rate at which source X emits symbols is r (symbols/s), the lnformation rate R of the
-source is given by
-
-%\[R ; r11(X) b/s (10.10)\]
-
 
 
 
@@ -28,23 +22,39 @@ are assumed to be independent, and all levels have equal likelihood of occurrenc
 average rate of information conveyed by this TV picture source.
 
 
+<p>
+
+
+
+#### Solution
+
+\[R = rH(X)\] 
+
+
+    *  $R$  - average rate of information
+    *  $r$ - number of symbols symbols that are being transmitted per second
+    *  $H(X)$ - Entropy
 
 
 
 
-*  $H(X) = - \sum \limits^{16}_{i=1} \frac{1}{16} \mbox{log}_2 \frac{1}{16}$ <br><br>
+*  Entropy \[H(X) = - \sum \limits^{16}_{i=1} {1\over 16} \mbox{log}_2 \left( {1\over 16} \right)\] \bigskip
 
-*  i.e. $H(X) = [ -\frac{1}{16} \mbox{log}_2\frac{1}{16} ] + [- \frac{1}{16} \mbox{log}_2\frac{1}{16} ] \ldots [ -\frac{1}{16} \mbox{log}_2\frac{1}{16}) ] $ <br><br>
+\[H(X) = \left[ -{1\over 16} \mbox{log}_2 \left({ 1\over 16}  \right)\right] + \left[- {1\over 16} \mbox{log}_2 \left({ 1\over 16}  \right)\right] \ldots\left[ -{1\over 16} \mbox{log}_2 \left({ 1\over 16}  \right)\right] \] 
+
+<br><br>
+
 *  Sixteen identical terms. Compute one and multiply by 16.
 
-\[ H(X) = 16 \times [ -\frac{1}{16} \mbox{log}_2\frac{1}{16} ]  = -\mbox{log}_2\frac{1}{16} = -(-4) = 4\] <br><br>
+\[ H(X) = 16 \times \left[ -{1\over 16} \mbox{log}_2 \left({ 1\over 16}  \right)\right]  = -\mbox{log}_2 \left({ 1\over 16}  \right)= -(-4) = 4\] 
 *  $H(X)= 4$ b
 *  $r =  2(10^6)(32) = 64(10^6)$ elements/sec <br><br>
 
-*  $R = rH(X) = 64(10^6)(4) = 256(l0^6) \mbox{ b/sec } = 256 \mbox{ Mb/sec }$ <br><br>
 
 
+*  $R = rH(X) = 64(10^6)(4) = 256 \times 10^6) \mbox{ b/sec } = 256 \mbox{ Mb/sec }$ 
 
+<p>
 
 ### Self Information}Self-information
 This is defined by the following mathematical formula:$I(A) = −logb P(A)$
@@ -58,7 +68,10 @@ a low-probability event tends to cause more ``surprise".
 <p>
 
 
-### Code efficiency and Code redundancy}
+
+
+
+### Code efficiency and Code redundancy
 % Pg 253/254
 The parameter $L$ represents the average number of bits per source symbol used in the source coding process.
 The code efficiency is defined as \[\nu = {L_{min} \over L} \]where $L_{min}$ is the minimum possiblve value of $L$. When $\nu$ approaches unity, the codes is said to be efficient. 
