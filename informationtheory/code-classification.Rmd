@@ -1,19 +1,18 @@
 ### Classification of Codes}
 In this section we look at to classify codes according to the following categories.
 
-\item Fixed Length Codes
-\item Variable Length Codes
-\item Distinct Codes
-\item Prefix-Free Codes
-\item Uniquely decodable codes
-\item Instantaneous Codes
-\item Optimal Codes
+*  Fixed Length Codes
+*  Variable Length Codes
+*  Distinct Codes
+*  Prefix-Free Codes
+*  Uniquely decodable codes
+*  Instantaneous Codes
+*  Optimal Codes
 
 #### Classification of Codes
 Classification of codes is best illustrated by an example. Consider the table below where a source of
 size 4 has been encoded in binary codes with symbol 0 and 1.
-\[
-% Table 10-I Binary Codes
+$$\begin{table}
 \begin{center}
 \begin{tabular}{|c| c| c| c| c| c| c|}
 \hline
@@ -24,26 +23,34 @@ $x_3$ &00 &10& 00& 110& 011 &001\\
 $x_4$ &11& 11& 11& 111 &0111 &0001\\\hline
 \end{tabular}
 \end{center}
-l]
+\end{table}$$
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-1.] Fixed-Length Codes: A fixed-length code is one whose code word length is fixed. Code 1 and code 2are
-fixed-length codes with length 2.
-2.] Variable-Length Codes: A variable-length code is one whose code word length is not fixed. All codes except codes 1 and 2 are variable-length codes.
-\item[3.] Distinct Codes:
-A code is distinct if each code word is distinguishable from other code words. All codes except code 1 are distinct codes. Notice the codes for $x_l$ and $x_3$.
-\item[4.] Prefix-Free Codes:
-A code in which no code word can be formed by adding code symbols to another code word is
-called a prefix-free code. Thus, in a prefix-free code no code word is a prefix of another. Codes 2, 4,
-and 6 are prefix-free codes.
+#### 1. Fixed-Length Codes
+
+A fixed-length code is one whose code word length is fixed. Code 1 and code 2 are fixed-length codes with length 2.
+
+#### 2. Variable-Length Codes
+
+A variable-length code is one whose code word length is not fixed. All codes except codes 1 and 2 are variable-length codes.
+
+#### 3. Distinct Codes:
+A code is distinct if each code word is distinguishable from other code words. All codes except code 1 are distinct codes. 
+Notice the codes for $x_l$ and $x_3$.
+
+#### 4. Prefix-Free Codes:
+A code in which no code word can be formed by adding code symbols to another code word is called a prefix-free code. 
+Thus, in a prefix-free code no code word is a prefix of another. 
+<p>
+Codes 2, 4, and 6 are prefix-free codes.
 <p>
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-5. Uniquely Decodable Codes
+#### 5. Uniquely Decodable Codes
 
 *  A distinct code is uniquely decodable if the original source sequence can be reconstructed perfectly
 from the encoded binary sequence. *  Note that code 3 is not a uniquely decodable code. * 
@@ -58,11 +65,14 @@ beginning of each code word of the code.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-6. Instantaneous Codes
+#### 6. Instantaneous Codes
  *  A uniquely decodable code is called an instantaneous code if the end of any code word is
 recognizable without examining subsequent code symbols. *  The instantaneous codes have the property
 previously mentioned that no code word is a prefix of another code word.  <p>
-7. Optimal Codes
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+#### 7. Optimal Codes
 
 *  A code is said to be optimal if it is instantaneous and has minimum average length $L$ for a given
 source with a given probability assignment for the source symbols.

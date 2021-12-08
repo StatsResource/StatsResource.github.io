@@ -1,9 +1,18 @@
 
 
-%---------------------------------------------------------------------------------------------------------------------------------------%
 
-###  MUTUAL INFORMATION}
-#### A. Conditional and Joint Entropies:}\\
+###  MUTUAL INFORMATION
+
+
+#### Entropy
+
+\item Entropy is the uncertainty of a single random variable. 
+\item We can define \textbf{\emph{conditional entropy }}$H(X|Y)$, which is the entropy of a random variable
+conditional on the knowledge of another random variable. 
+\item The reduction in uncertainty due to another random variable is called the \textbf{\emph{mutual information}}.
+
+
+#### A. Conditional and Joint Entropies
 Using the input probabilities P(x,), output probabilities $P(y_i)$, transition probabilities P(yJ|>r,),
 and joint probabilities P(x,, yy), we can define the following various entropy functions for a channel
 with m inputs and n outputs:
@@ -16,25 +25,31 @@ with m inputs and n outputs:
 *  H(X, Y) - -2 Z F%<><..y,)1¤zz P(><r.y;) <10·25)
 
 
+----------------------------------------------------------------------------------------------------------------------------
 
-%---------------------------------------------------------------------------------------------------------------------------------------%
+<p>
 
-### Conditional and Joint Entropy}
 These entropies can be interpreted as follows: H(X) is the average uncertainty of the channel input,
-and H(Y) is the average uncertainty of the channel output. The conditional entropy H(X]Y) is a
+and H(Y) is the average uncertainty of the channel output. 
+* The conditional entropy H(X]Y) is a
 measure of the average uncertainty remaining about the channel input after the channel output has
-been observed. And H(X] Y) is sometimes called the equivncation of X with respect to Y.  *  The
-conditional entropy H(Y|X) is the average uncertainty of the channel output given that X was
-transmitted.\item  The joint entropy H(X, Y) is the average uncertainty of the communication channel as a
-whole.\end{itemize}
+been observed. And H(X] Y) is sometimes called the equivncation of X with respect to Y.  
+*  The ***conditional entropy*** $H(Y|X)$ is the average uncertainty of the channel output given that X was
+transmitted.
+* The ***joint entropy*** $H(X, Y)$ is the average uncertainty of the communication channel as a
+whole.
 
-%-----------------------------------------------------------------------------------------------%
+------------------------------------------------------------------------------------
 
 Two useful relationships among the above various entropies are
  * 
 $H(X, Y)=H(X|Y)+H(Y) (10,26)$
 $H(X,Y)=H(Y|X)+H(X) (10.27)$
 
-B. Mutual Information:
+#### B. Mutual Information:
 The mutual information 1(X; Y) of a channel is deiined by
-I(X; Y) = H(X)— H(X|Y) b/symbol (10.28)
+\[I(X; Y) = H(X)— H(X|Y) b/symbol\]
+
+
+
+----------------------------------------------------------------------------------------------------------------------------

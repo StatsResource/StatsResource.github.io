@@ -1,7 +1,5 @@
 
 
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
-
 {Entropy}
 
 *  The quantity $H(X)$ is called the \emph{\textbf{entropy}} of source $X$. *  It is a measure of the average information content per random symbol.
@@ -12,7 +10,7 @@ within source $X$ that is resolved by use of the alphabet.
 \[ H(X ) = -1/2 \mbox{log}_2 (1/2) - 1/2 \mbox{log}_2 (1/2) \mbox{   b/symbol}  \]
 %(Remark :$\mbox{log}_2 ({1\over 2}) = -1$).
 
-
+<p>
 
 
 *  The source entropy$ H(X)$ satisfies the following relation:
@@ -21,9 +19,7 @@ within source $X$ that is resolved by use of the alphabet.
 *  The upper bound corresponds to the maximum uncertainty which occurs when $P(x_i) = 1 /m$ for all $i$. that is, when all symbols are equally likely to be emitted by X.
  
 
-
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
-
+<p>
 
 {Entropy: Example}
 A DMS $X$ has four symbols $x_1 , x_2, x_3, x_4$ with probabilities $P(x_1) = 0.4, P(x_2) = 0.3. P(x_3) = 0.2.
@@ -33,10 +29,9 @@ P(x_4) = 0.1$.
 * [(b)] Find the amount of information contained in the messages $x_lx_2x_lx_3$ and $x_4x_3x_3x_2$.
 
 
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
+<p>
 
-
-{Entropy: Example part a}
+#### Solution
 
 \[ H(X) = - \sum \limits^{4}_{i=1} P(x_i) log_2 [P(x_i)] \]
 
@@ -49,62 +44,16 @@ P(x_4) = 0.1$.
 
 
 
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
-
-
-{Entropy: Example part b}
 
 *  (Remark: from probability, recall independent events) <br><br>
 *  $P(x_lx_2x_lx_3) = 0.4\times 0.30 \times 0.40 \times 0.20  = 0.0096$ <br><br>
 *  $I(x_lx_2x_lx_3) = -\mbox{log}_2(0.0096)  = 6.70$b/symbol <br><br>
 
+<p>
 
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
 
-
-{Entropy: Example part c}
 
 *  $P(x_4x_3x_3x_2) = 0.1\times 0.20 \times 0.20 \times 0.30  = 0.0012$ <br><br>
 *  $I(x_lx_2x_lx_3) = -\mbox{log}_2(0.0012)  = 9.70$b/symbol <br><br>
 
-
-
-
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
-
-
-### Information Rate}
-If the time rate at which source X emits symbols is $r$ (symbols/second), the information rate R of the
-source is given by
-
-\[R = rH(X) \mbox{      (b/second)} \]
-
-
-
-
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
-
-{Information Rate : Example}
-
-
-*  A high-resolution TV picture consists of about $2 \times 10^6$ picture elements (symbols) and 16
-different brightness levels. *  Pictures are repeated at a rate of 32 per second. *  All picture elements
-are assumed to be independent, and all levels have equal likelihood of occurrence. *  Calculate the
-average rate of information conveyed by this TV picture source.
-
-
-
-
-
-
-*  $H(X) = - \sum \limits^{16}_{i=1} \frac{1}{16} \mbox{log}_2 \frac{1}{16}$ <br><br>
-
-*  i.e. $H(X) = [ -\frac{1}{16} \mbox{log}_2\frac{1}{16} ] + [- \frac{1}{16} \mbox{log}_2\frac{1}{16} ] \ldots [ -\frac{1}{16} \mbox{log}_2\frac{1}{16}) ] $ <br><br>
-*  Sixteen identical terms. Compute one and multiply by 16.
-
-\[ H(X) = 16 \times [ -\frac{1}{16} \mbox{log}_2\frac{1}{16} ]  = -\mbox{log}_2\frac{1}{16} = -(-4) = 4\] <br><br>
-*  $H(X)= 4$ b
-*  $r =  2(10^6)(32) = 64(10^6)$ elements/sec <br><br>
-
-*  $R = rH(X) = 64(10^6)(4) = 256(l0^6) \mbox{ b/sec } = 256 \mbox{ Mb/sec }$ <br><br>
 

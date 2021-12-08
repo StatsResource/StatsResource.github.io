@@ -1,4 +1,6 @@
-{Information content of a Discrete Memoryless Source}
+### Discrete Memoryless Source
+
+Information content of a Discrete Memoryless Source
 
 *  The amount of information contained in an event is closely related to its uncertainty.
 *  Messages containing knowledge of high probability of occurrence convey relatively little information.
@@ -15,9 +17,7 @@ Thus, a mathematical measure of information should be a function of the probabil
 
 
 
-%----------------------------------------------------------------------------------------------------------%
-
-{Information Content of a Symbol}
+#### Information Content of a Symbol
 
 
 *  Consider a DMS, denoted by X, with alphabet ${x,.x2. ...,x_n}$.
@@ -30,6 +30,3 @@ $x_l$, denoted by $I(x_i)$, is defined by
 where $P(x_i)$ is the probability of occurrence of symbol $x_i$. *  ( We will discuss what $b$ is shortly.)
 
 
-
-
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%

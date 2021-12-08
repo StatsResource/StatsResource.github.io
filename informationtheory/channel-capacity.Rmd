@@ -3,6 +3,7 @@
 * In information theory, channel capacity is the most conservative upper bound on the amount of information that can be reliably transmitted over a communications channel. 
 *   It is given by the maximum of the mutual information between the input and output of the channel (maximum in respect to input probabilities).
 	
+<p>
 	
 
 #### A. Channel Capacity per Symbol C:
@@ -35,6 +36,10 @@ For example, if there are $m=4$ input channels, then $C =  \mbox{log}_2 4 = 2$ b
 <p>
 
 #### Deterministic Channel:
+$H(Y|X) = 0$ Therefore $I(X;Y) = H(Y)$.
+The mutual information (information transfer) is equal to the output entropy). The channel capacity per symbol is
+\[ C_s = \mbox{ max }_{P(x_i)} H(Y) = \mbox{log}_2n \]
+where $n$ is the number of symbols in $Y$.
 <p>
 *  The mutual information (information transfer) is equal to the output entropy.
 *  It can be shown that $H(Y|X) = 0$ ( If $x_i$ is the input, there is certainty about the output). Also $I(X;Y) = H(Y)$.
