@@ -1,0 +1,59 @@
+
+### Channel Capacity
+* In information theory, channel capacity is the most conservative upper bound on the amount of information that can be reliably transmitted over a communications channel. 
+*   It is given by the maximum of the mutual information between the input and output of the channel (maximum in respect to input probabilities).
+	
+	
+
+#### A. Channel Capacity per Symbol C:
+The channel capacity per symbol of a DMC is defined as
+\[
+C_s = \mbox{max }_{(P(x_i))}I(X; Y) \mbox{ b/symbol }
+\]
+where the maximization is over all possible input probability distributions $P(x_i)$ on X. 
+Note that the channel capacity $C_s$ is a function of only the channel transition probabilities that define the channel.
+
+
+####  B. Channel Capacity per Second :
+If $r$ symbols are being transmitted per second, then the maximum rate of transmission of
+information per second is $rC_s$.
+
+This is the channel capacity per second and is denoted by $C$ (b/sec).
+\[C = rC_s     \mbox{          b/sec} \]
+
+---------------------------------------------------------------------
+
+#### Lossless Channel
+
+For a lossless channel, the mutual information (information transfer) is equal to the input (source) entropy), and no source information is lost in transmission.*  It can be shown that $H(X|Y) = 0$ ( If $y_i$ is the output, there is certainty about the input). Also $I(X;Y) = H(X)$.
+*  Consequently, the channel capacity per symbol is
+\[ C_s = \mbox{ max }_{P(x_i)} H(X) = \mbox{log}_2m \]
+where $m$ is the number of symbols in $X$.
+
+For example, if there are $m=4$ input channels, then $C =  \mbox{log}_2 4 = 2$ b/symbol  * 
+
+<p>
+
+#### Deterministic Channel:
+<p>
+*  The mutual information (information transfer) is equal to the output entropy.
+*  It can be shown that $H(Y|X) = 0$ ( If $x_i$ is the input, there is certainty about the output). Also $I(X;Y) = H(Y)$.
+*   The channel capacity per symbol is
+\[ C_s = \mbox{ max }_{P(x_i)} H(Y) = \mbox{log}_2n \]
+where $n$ is the number of symbols in $Y$.
+
+<p>
+
+#### Noiseless Channel:
+<p>
+*  Since a noiseless channel is both lossless and deterministic , we can say that $I(X;Y) = H(X) = H(Y)$.
+The mutual information (information transfer) is equal to the output entropy). 
+*  The channel capacity per symbol is
+\[ C_s = \mbox{log}_2m = \mbox{log}_2n \]
+
+<p>
+
+#### Binary Symmetric Channel:
+<p>
+*  It can be shown that, for a binary symmetric channel, the the channel capacity per symbol is
+\[ C_s = 1 + p\mbox{log}_2p  + 1-p\mbox{log}_2 (1-p)  \]

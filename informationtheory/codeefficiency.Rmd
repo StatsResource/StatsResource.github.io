@@ -1,0 +1,11 @@
+
+
+### Code efficiency and Code redundancy}
+% Pg 253/254
+The parameter $L$ represents the average number of bits per source symbol used in the source coding process.
+The code efficiency is defined as \[\nu = \frac{L_{min}}{ L} \]where $L_{min}$ is the minimum possiblve value of $L$. When $\nu$ approaches unity, the codes is said to be efficient. 
+The code redundancy $\gamma$ is defined as $\gamma = 1- \nu$.
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%

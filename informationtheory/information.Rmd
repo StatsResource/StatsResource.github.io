@@ -1,0 +1,40 @@
+### What is Information?
+Once we agree to define the information of an event ain terms of P(a), the properties (2) and (3) will be satisfied if the information in ais defined as
+\[ I(a) = -log P(a)\]
+
+ Remark : The base of the logarithm depends on the unit of information to be used.
+
+
+### Information
+
+The information of an event that has a probability of $p$ (with $\leq p \leq 1$) is denoted as $I(p)$ and is computed as follows:
+\[
+I(p) = -\mathrm{log}_b(p) = \mathrm{log}_b(1/p)   .
+\]
+
+Let's use base of 2.
+\[
+I(p) = -\mathrm{log}_2(p) = \mathrm{log}_2(1/p)   .
+\]
+
+
+* We will want our information measure $I(p)$ to have several properties.
+
+%(note that along with the axiom is motivation for choosing the axiom).
+ \item Information is a non-negative quantity:
+\[I(p) \geq 0\]. 
+
+
+*  If an event has probability 1, we get no
+information from the occurrence of the event: \[I(1) = 0\]. 
+
+*  If
+two independent events occur (whose joint probability is the
+product of their individual probabilities), then the information
+we get from observing the events is the sum of the two
+informations: \[I(p1 + p2) = I(p1)+I(p2).\]
+
+*  We will want our information measure to be a continuous
+(and, in fact, monotonic) function of the probability (slight
+changes in probability should result in slight changes in
+information).

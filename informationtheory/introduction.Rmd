@@ -1,0 +1,208 @@
+
+
+
+### Information}
+
+Information of an event $x_i$ (also known as self-information) is related to the probability of that event by the following formula:
+\[  I(x) = -\mbox{log}_2 \left( p(x_i) \right) \]
+The less probable an event is, the higher the information of that event. Very unusual events are ``high information" events. Commonly occuring events are ``low information". Consider the table below.
+{
+
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline $p(x_i)$	&	$I(x_i)$	<br> \hline
+0.00001	&	16.609640000	<br> \hline
+0.0001	&	13.287712000	<br> \hline
+0.001	&	9.965784000	<br> \hline
+0.01	&	6.643856000	<br> \hline
+0.1	&	3.321928000	<br> \hline
+0.2	&	2.321928000	<br> \hline
+0.4	&	1.321928100	<br> \hline
+0.5	&	1.000000000	<br> \hline
+0.6	&	0.736965600	<br> \hline
+0.7	&	0.514573200	<br> \hline
+0.8	&	0.321928090	<br> \hline
+0.9	&	0.152003090	<br> \hline
+0.95	&	0.074000580	<br> \hline
+0.99	&	0.014499570	<br> \hline
+0.99999	&	0.000014427	<br> \hline
+0.9999999	&	0.000000144	<br> \hline
+\end{tabular} 
+\end{center}
+}
+
+
+
+----------------------------------------------
+\subsection*{Entropy}
+
+The entropy of a probability distribution is a number that describes the degree of uncertainty or disorder the distribution represents.
+
+
+
+*  Assume we have a set of two mutually exclusive propositions (or equivalently, a random experiment with two possible outcomes). Assume all two possibilities are equally likely.
+
+*  Then our advance uncertainty about the eventual outcome is rather small - we know in advance it will be one of exactly two known alternatives.
+
+*  Assume now we have a set of a million alternatives - all of them equally likely - rather than two.
+
+It seems clear that our uncertainty now about the eventual outcome will be much bigger.
+
+#### Formal definitions}
+
+Given a discrete probability distribution function f, the entropy H of the distribution (measured in bits) is given by 
+
+\[H=-\sum_{\forall i : f(x_i) \ne 0}^{} f(x_{i}) log_{2} f(x_{i} )\]
+\subsection*{Mutual Information}
+
+Theory of the probability of transmission of messages with specified accuracy when the bits of information constituting the messages are subject, with certain probabilities, to transmission failure, distortion, and accidental additions.
+%-------------------------------------------------------------------------------%
+
+### Information Theory}
+\begin{itemize}\item 
+The fundamental quantities of information theory entropy, relative
+entropy, and mutual information are defined as functionals of
+probability distributions.
+*  In turn, they characterize the behavior
+of long sequences of random variables and allow us to estimate the
+probabilities of rare events (large deviation theory) and to find
+the best error exponent in hypothesis tests.
+*  
+
+The initial questions treated by information theory lay in the
+areas of data compression and transmission. The answers are
+quantities such as entropy and mutual information, which are
+functions of the probability distributions that underlie the
+process of communication. 
+*  A few definitions will aid the initial
+discussion. We repeat these definitions in Chapter 2. The entropy
+of a random variable X with a probability mass function p(x) is
+defined by $H(X) = -\sum x p(x) log2 p(x)$. 
+
+
+
+%-------------------------------------------------------------------------------%
+
+We use logarithms to base 2. The entropy will then be measured in
+bits. The entropy is a measure of the average uncertainty in the
+random variable. It is the number of bits on average required to
+describe the random variable.
+
+
+%-------------------------------------------------------------------------------%
+
+### Example}Consider a random variable that has a
+uniform distribution over 32 outcomes. To identify an outcome, we
+need a label that takes on 32 different values. Thus, 5-bit
+strings suffice as labels. The entropy of this random variable is
+$H(X) = - \sum p(i) log p(i) = log 32 = 5 bits$, (1.2) which
+agrees with the number of bits needed to describe X. In this case,
+all the outcomes have representations of the same length.
+
+
+
+
+
+%-----------------------------------------------------------------------------------------------%
+{
+	### Information Entrophy}
+	Entropy is the uncertainty of a single random variable. We can
+	define conditional entropy $H(X|Y)$, which is the entropy of a
+	random variable conditional on the knowledge of another random
+	variable. The reduction in uncertainty due to another random
+	variable is called the mutual information.
+
+	Information entropy is a measure of the uncertainty associated
+	with a random variable. The term by itself in this context usually
+	refers to the Shannon entropy, which quantifies, in the sense of
+	an expected value, the information contained in a message, usually
+	in units such as bits.
+	
+	The Shannon entropy is denoted by $H(X)$ and is defined as
+	\begin{equation}
+	H(X) =   - \sum_{i=1}^np(x_i)\log_b p(x_i).
+	\end{equation}
+
+### Example}
+	
+	A source language has 5 symbols A, B, C, D and E.  The associated
+	probabilities of these symbols are 0.35, 0.25, 0.20, 0.10 and
+	0.10, respectively.
+	
+	
+		*  Calculate the entropy of the source language. *  Define a
+		Huffman binary code for the source language. *  Calculate the
+		efficiency of this code.
+	
+}
+
+
+### Information Theory}
+
+Information theory provides a quantitative measure of the information contained in message signal and allows us to determine the capacity of a communication system to transfer this information from source to destination. <br> <br><br> ln this part of the course, we will explore some basic ideas involved in information theory and source coding.
+
+
+
+
+*  Information theory is a process that focuses on the task of quantifying information. 
+*  The quantification of information is achieved by identifying viable methods of compressing and communicating data without causing 
+and degradation in the integrity of the data. 
+*  Information theory can be utilized in a number of different fields, including quantum computing, 
+data analysis and cryptography.
+
+
+
+
+*  The origin of modern informational theory is usually attributed to Claude E. Shannon.
+*  His work A Mathematical Theory of Communication, first published in 1948, 
+lays the foundation for the quantification and compression of data into viable units that may be stored for easy retrieval later. 
+*  His basic approach provided the tools necessary to enhance the efficiency of early mainframe computer systems, and translated easily into 
+the advent of desktop computers during the decade of the 1970’s.
+
+
+*  As a branch of both electrical engineering and applied mathematics, information theory seeks to uncover the most efficient 
+methods of conveying data, within the limits inherent in the data proper. *  The idea is to ensure that the mass transit of data does 
+not in any way decrease the quality, even if the data is compressed in some manner. 
+
+*  Ideally, the data can be restored to its original form upon reaching its destination. 
+*  In some cases, however, the goal is to allow data in one form to be converted for mass transmission, 
+received at the point of termination, and easily converted into a format other than the original without losing any of the transmitted information.
+<p>
+
+
+
+### What is Information?}
+
+ *   What is meant by the ``information" contained in an event?
+*  If we are formally to defined a quantitative measure of information contained in an event, this measure should have some intuitive properties such as:
+ *  [1.] Information contained in events ought to be defined in terms of some measure of the uncertainty of the events.
+*  [2.] Less certain events ought to contain more information than more certain events.
+*  [3.] The information of unrelated / independent events taken as a single event should equal the sum of the information of the unrelated events.
+<p>
+
+*  A natural measure of the uncertainty of an event is the probability of $A$ denoted $P(A)$.
+<p>
+
+#### 1) Information sources:}
+
+An information source is an object that produces an event, the outcome of which is selected at
+random according to a probability distribution.  <br> <br><br> A practical source in a communication system is a
+device that produces messages, and it can be either analog or discrete (we deal mainly
+with the discrete sources, since analog sources can be transformed to discrete sources) <br> <br><br> A discrete information source is a
+source that has only a finite set of symbols as possible outputs. The set of source symbols is called the
+\textbf{\emph{source alphabet}}, and the elements of the set are called \textbf{\emph{ symbols}} or \textbf{\emph{letters}}.
+
+-------------------------------------------------------------------------------------------------------%
+
+### Memory}
+ *  Information sources can be classified as having memory or being memoryless.
+*  A source with
+memory is one for which a current symbol depends on the previous symbols.\item A memoryless source is
+one for which each symbol produced is independent of the previous symbols.
+
+*  A discrete memoryless sources (DMS) can be characterized by the list of the symbols, the
+probability assignment to these symbols, and the specification of the rate of generating these symbols by the source.\end{itemize}
+
+
+%----------------------------------------------------------------------------------------------------------%
+

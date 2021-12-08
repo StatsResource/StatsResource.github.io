@@ -6,6 +6,29 @@ Column {.tabset}
 
 ### The Gamma Distribution
 
+
+The gamma distribution can be parameterized in terms of a shape parameter $\alpha$ = k and an inverse scale parameter $\beta$, called a rate parameter.
+A random variable X that is gamma-distributed with shape $\alpha$ and rate $\beta$ is denoted
+\[
+X \sim  \textrm{Gamma}(\alpha,\beta)
+\]
+
+
+{
+
+\[\scriptstyle\mathbf{E}[ X] = \frac{\alpha}{\beta}\]
+
+
+\[
+\scriptstyle \operatorname{Var}[ X] = \frac{\alpha}{\beta^2}
+\]
+}
+
+-------------------
+By the central limit theorem, if $\alpha$ is large, then gamma distribution can be approximated by the normal distribution with mean and standard deviation\[\mu = \frac{\alpha}{\beta}\] 
+\[\sigma=\frac{\sqrt{\alpha}}{\beta}\]
+
+
 <h5>The Gamma Distribution</h5>
 
 

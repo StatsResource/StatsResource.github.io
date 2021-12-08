@@ -1,0 +1,57 @@
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+### Categorisation of Codes}
+\begin{enumerate}
+*  Fixed Length Codes
+*  Variable Length Codes
+*  Distinct Codes
+*  Prefix-Free Codes
+*  Uniquely decodable codes
+*  Instantaneous Codes
+*  Optimal Codes
+\end{enumerate}
+
+%---------------------------------------------------------------------------------------------------------------------------------------%
+
+
+* [1.] Fixed-Length Codes: A fixed-length code is one whose code word length is fixed. Code l and code Z of Table 10»l are
+fixed-length codes with length 2.
+* [2.] Variable-Length Codes: A variable-length code is one whose code word length is not Exed, All codes of Table l0-l except
+codes 1 and 2 are variable-length codes.
+* [3.] Distinct Codes:
+A code is distinct if each code word is distinguishable from other code words. All codes of Table
+10-1 except code 1 arc distinct codes—notice the codes for xl and xi.
+* [4.] Prefix-Free Codes:
+A code in which no code word can be formed by adding code symbols to another code word is
+called a prefixghoa code. Thus, in a prefix»frce code no code word is a prcfx of another. Codes 2, 4,
+and 6 of Table 10-l are prefix-free codes.
+
+
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
+
+#### 5. Uniquely Decodable Codes}
+A distinct code is uniquely devudable if the original source sequence can be reconstructed perfectly
+from the encoded binary sequence. Note that code 3 of Table 10-1 is not a uniquely decodable code.
+For example, the binary sequence 1001 may correspond to the source sequences xzxgxz orxzxlxlxz.
+<br> <br><br>
+A sufticient condition to ensure that a code is uniquely decodable is that no code word is a prefix of
+another. Thus, the prefix-free codes 2, 4, and 6 are uniquely decodable codes. Note that the pretix—t`ree
+condition is not a necessary condition for unique decodability. \i<br><br> For example, code 5 of Table l0-l does
+not satisfy the prefix-free condition, and yet it is uniquely decodable since the bit 0 indicates the
+beginning of each code word of the code.
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------%
+
+#### 6. Instantaneous Codes}
+A uniquely decodable code is cmlled an inrtanruneous code if the end of any code word is
+recognizable without examining subsequent code symbols. The instantaneous codes have the property
+previously mentioned that no code word is a pretix of another code word. For this reason, prefix-free
+codes are sometimes called instantaneous codes.
+#### 7. Optimal Codes}
+A code is said to be optimal if it is instantaneous and has mini.mu.rn average length L for a given
+source with a given probability assignment for the source symbols.
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------%

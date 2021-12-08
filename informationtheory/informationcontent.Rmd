@@ -1,0 +1,35 @@
+{Information content of a Discrete Memoryless Source}
+
+*  The amount of information contained in an event is closely related to its uncertainty.
+*  Messages containing knowledge of high probability of occurrence convey relatively little information.
+
+*  We note that if an event is certain (that is, the event occurs with probability of 1), then we can say that it conveys zero \textit{information}.
+
+*  Conversely - very unlikely events are ``high information" events ( e.g. Alarms).
+
+
+Thus, a mathematical measure of information should be a function of the probability of the outcome and should satisfy the following axioms:
+
+* [1.] Information should be proportional to the uncertainty of an outcome.
+* [2.] Information contained in independent outcomes should add (see axioms).
+
+
+
+%----------------------------------------------------------------------------------------------------------%
+
+{Information Content of a Symbol}
+
+
+*  Consider a DMS, denoted by X, with alphabet ${x,.x2. ...,x_n}$.
+*  The information content of a symbol
+$x_l$, denoted by $I(x_i)$, is defined by
+
+\[  I(x_i)  = \mbox{log}_b\left( \frac{1}{ P(x_i)}\right) =  -\mbox{log}_b[ P(x_i) ]  \]
+
+
+where $P(x_i)$ is the probability of occurrence of symbol $x_i$. *  ( We will discuss what $b$ is shortly.)
+
+
+
+
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%
