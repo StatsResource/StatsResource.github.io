@@ -1,0 +1,102 @@
+Pareto Distribution {data-navmenu="Continuous Distributions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### The Pareto Type I distribution
+
+<h5> The Pareto Type I distribution</h5>
+
+The Pareto Type I distribution is 
+a continuous distribution, parameterized with  the shape parameter $\alpha > 0$, and location parameter $x_\mathrm{m} > 0$.
+
+
+
+
+#### Formulas
+
+#### Parameters
+
+
+*  ${\displaystyle x_{\mathrm {m} }>0}$ scale (real)
+*  ${\displaystyle \alpha >0}$ shape (real)
+
+
+#### Distribution
+
+* <b>Support</b>\[{\displaystyle x\in [x_{\mathrm {m} },\infty )}\]
+* <b>PDF</b>\[f_X(x) = {\displaystyle {\frac {\alpha x_{\mathrm {m} }^{\alpha }}{x^{\alpha +1}}}}\]
+* <b>CDF </b>\[F_X(x) = {\displaystyle 1-\left({\frac {x_{\mathrm {m} }}{x}}\right)^{\alpha }}\]
+* <b>Quantile</b>\[Q_p = {\displaystyle x_{\mathrm {m} }{(1-p)}^{-{\frac {1}{\alpha }}}}\]
+
+
+#### Method of Moments
+\[{ \displaystyle
+\frac{\operatorname{Var}(X)}{ E(X)^2} = \frac
+{\frac{\lambda ^{2}\alpha }{(\alpha -1)^{2}(\alpha -2)}}{ \frac{\lambda^2}{(\alpha -1)^2}}  = \frac{\alpha}{\alpha-2}}\]
+
+
+
+
+#### Cumulative distribution function
+
+The cumulative distribution function of a Pareto random variable with parameters $\alpha$ and $x_m$ is
+\[F_X(x) = \begin{cases}
+1-\left(\frac{x_\mathrm{m}}{x}\right)^\alpha & \mbox{for } x \ge x_\mathrm{m}, \\
+0 & \mbox{for }x < x_\mathrm{m}.
+\end{cases}
+\]
+
+
+#### The mean excess loss function
+Suppose that a property owner is exposed to a random loss X. The property owner buys an insurance policy with a deductible d such that the insurer will pay a claim in the amount of $X-d$ if a loss occurs with $Y>d$. 
+
+The insurer will pay nothing if the loss is below the deductible. Whenever a loss is above $d$, what is the average claim the insurer will have to pay? This is one way to look at ***mean excess loss function***, which represents the expected excess loss over a threshold conditional on the event that the threshold has been exceeded. 
+
+Thus the mean excess loss function is \[e_Y(d)=E(Y-d \lvert X>d),\] a function of the deductible $d$.
+
+
+#### Formulas
+* The mean excess loss for Pareto Type I is \[e(X)=d/(\alpha-1)\]
+* The mean excess loss for Pareto Type II is \[e(X)=(d+\theta)/(\alpha-1).\]
+
+
+They are both increasing functions of the deductible $d$. This means that the larger the deductible, the larger the expected claim if such a large loss occurs. If a random loss is modeled by such a distribution, it is a catastrophic risk situation.
+
+
+In general, an increasing mean excess loss function is an indication of a heavy tailed distribution. On the other hand, a decreasing mean excess loss function indicates a light tailed distribution. The exponential distribution has a constant mean excess loss function and is considered a medium tailed distribution.
+
+
+
+### Exercises
+
+<h4> Worked Examples</h4>
+
+<h5> Exercises 28</h5>
+The random variable X is an insurer’s annual hurricane-related loss. Suppose that the density function of X is:
+	\[
+	\displaystyle  f(x)=\left\{ \begin{array}{ll}                     \displaystyle  \frac{2.2 \ (250)^{2.2}}{x^{3.2}} &\ X > 250 \\           \text{ } & \text{ } \\           \displaystyle  0 &\ \text{otherwise}           \end{array} \right.
+	\]
+Calculate the inter-quartile range of annual hurricane-related loss.
+	
+----	
+	
+<h5> Exercises 29 </h5>
+Claim size for an auto insurance coverage follows a Pareto Type II Lomax distribution with mean 7.5 and variance 243.75. 
+
+a. Determine the probability that a randomly selected claim will be greater than 10.
+
+---
+
+<h5> Exercises 30</h5>
+
+Losses follow a Pareto Type II distribution with shape parameter $\alpha>1$ and scale parameter $\theta$. 
+
+* The value of the mean excess loss function at $x=8$ is 32. 
+* The value of the mean excess loss function at $x=16$ is 48. 
+
+a. Determine the value of the mean excess loss function at $x=32$.
+
+-------
+

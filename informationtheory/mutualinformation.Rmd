@@ -6,10 +6,10 @@
 
 #### Entropy
 
-\item Entropy is the uncertainty of a single random variable. 
-\item We can define \textbf{\emph{conditional entropy }}$H(X|Y)$, which is the entropy of a random variable
+*  Entropy is the uncertainty of a single random variable. 
+*  We can define \textbf{\emph{conditional entropy }}$H(X|Y)$, which is the entropy of a random variable
 conditional on the knowledge of another random variable. 
-\item The reduction in uncertainty due to another random variable is called the \textbf{\emph{mutual information}}.
+*  The reduction in uncertainty due to another random variable is called the \textbf{\emph{mutual information}}.
 
 
 #### A. Conditional and Joint Entropies
@@ -26,64 +26,61 @@ with m inputs and n outputs:
 
 
 
- \textbf{Mutual Information}
+### Mutual Information
 Mutual information is one of many quantities that measures how much one random variables gives about another. It is a dimensionless quantity. Mutual Informaiton can be thought of as the reduction in uncertainty about one random variable given knowledge of another. 
-\begin{itemize}\item High mutual information indicates a large reduction in uncertainty, \item low mutual information indicates a small reduction, \item  zero mutual information between two random variables means the variables are independent.
-\end{itemize}
+*  High mutual information indicates a large reduction in uncertainty, *  low mutual information indicates a small reduction, *   zero mutual information between two random variables means the variables are independent.
+
 Efficient communication systems have high mutual information.
 
-%---------------------------------------------------------------------------------------------------------------------------------------%
-
- \textbf{Mutual Information}
+#### Mutual Information}
 
 \textbf{Joint Entropies:}\\
 Using the input probabilities $P(x_i)$, output probabilities $P(y_i)$, transition probabilities $P(y_i|x_i)$,
 and joint probabilities $P(x_i,y_j)$, we can define the following various entropy functions for a channel
 with m inputs and n outputs:
 
-\begin{itemize}
-\item $H(X) = - \sum ^{m}_{i=1} P(x_i) \mbox{log}_2 P(x_i)$%; P(x;) (10.21)
-\item $H(Y) = - \sum ^{n}_{j=1} P(y_j) \mbox{log}_2 P(y_j)$
-\item $H(X, Y)= - \sum ^{n}_{j=1}\sum ^{m}_{i=1} P(x_i,y_j) \mbox{log}_2 P(x_i,y_j)$
-\end{itemize}
+
+*  $H(X) = - \sum ^{m}_{i=1} P(x_i) \mbox{log}_2 P(x_i)$%; P(x;) (10.21)
+*  $H(Y) = - \sum ^{n}_{j=1} P(y_j) \mbox{log}_2 P(y_j)$
+*  $H(X, Y)= - \sum ^{n}_{j=1}\sum ^{m}_{i=1} P(x_i,y_j) \mbox{log}_2 P(x_i,y_j)$
 
 
-%---------------------------------------------------------------------------------------------------------------------------------------%
+----------------------------------------------------------------------------------------------------------------------------------
 
-\noindent \textbf{Mutual Information: Joint Entropy}
+#### Mutual Information: Joint Entropy
 
-These entropies can be interpreted as follows:\begin{itemize}\item $ H(X)$ is the average uncertainty of the channel input,
-and $H(Y)$ is the average uncertainty of the channel output.\item  The joint entropy $H(X,Y)$ is the average uncertainty of the communication channel as a
-whole.\end{itemize}
+These entropies can be interpreted as follows:*  $ H(X)$ is the average uncertainty of the channel input,
+and $H(Y)$ is the average uncertainty of the channel output.*   The joint entropy $H(X,Y)$ is the average uncertainty of the communication channel as a
+whole.
 
-%---------------------------------------------------------------------------------------------------------------------------------------%
 
-\noindent \textbf{Mutual Information: Conditional Entropy}
-\begin{itemize}
-\item The conditional entropy $H(X|Y)$ is a
+
+#### Mutual Information: Conditional Entropy
+
+*  The conditional entropy $H(X|Y)$ is a
 measure of the average uncertainty remaining about the channel input after the channel output has
-been observed. \item This is sometimes called the equivocation of X with respect to Y.  \item The
+been observed. *  This is sometimes called the equivocation of X with respect to Y.  *  The
 conditional entropy $H(Y|X)$ is the average uncertainty of the channel output given that X was
 transmitted.
-\end{itemize}
-\begin{itemize}
-\item $H(X|Y)= - \sum ^{n}_{j=1}\sum ^{m}_{i=1} P(x_i,y_j) \mbox{log}_2 P(x_i|y_j)$
-\item $H(Y|X)= - \sum ^{n}_{j=1}\sum ^{m}_{i=1} P(x_i,y_j) \mbox{log}_2 P(y_j|x_i)$
-\end{itemize}
 
-%-----------------------------------------------------------------------------------------------%
 
-\noindent \textbf{Mutual Information : Useful Identities}
+*  $H(X|Y)= - \sum ^{n}_{j=1}\sum ^{m}_{i=1} P(x_i,y_j) \mbox{log}_2 P(x_i|y_j)$
+*  $H(Y|X)= - \sum ^{n}_{j=1}\sum ^{m}_{i=1} P(x_i,y_j) \mbox{log}_2 P(y_j|x_i)$
+
+
+<p>
+
+### Mutual Information : Useful Identities
 Two useful relationships among the types of entropies are
-\begin{itemize}
-\item $H(X,Y)=H(X|Y)+H(Y) $
-\item $H(X,Y)=H(Y|X)+H(X) $
-\end{itemize}
+
+*  $H(X,Y)=H(X|Y)+H(Y) $
+*  $H(X,Y)=H(Y|X)+H(X) $
+
 (Remark : compare to identities in probability theory)
 
-%-----------------------------------------------------------------------------------------------%
+------------------------------------------------------------------------------------------
 
-\noindent \textbf{Mutual Information : Useful Identities}
+\textbf{Mutual Information : Useful Identities}
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{./11BMutualInfo}
@@ -98,7 +95,7 @@ Two useful relationships among the types of entropies are
 
 
 
-\noindent \textbf{Mutual Information}
+\textbf{Mutual Information}
 The mutual information $I(X; Y)$ of a channel is defined by
 \[ I(X; Y) = H(X) -  H(X|Y) \mbox{    (b/symbol) } \]
 
