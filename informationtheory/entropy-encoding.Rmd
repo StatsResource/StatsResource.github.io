@@ -1,18 +1,3 @@
-{
-\noindent \textbf{Data compression(1)}
-Data compression is the science (and art) of representing information in a compact form. Having been the domain of a relatively small group of engineers and scientists, it is now ubiquitous. \\ \bigskip It has been one of the critical enabling technologies for the on-going digital multimedia revolution for decades. Without compression techniques, none of the ever-growing Internet, digital TV, mobile communication or increasing video communication would have been practical developments. \\ \bigskip
-}
-%-----------------------------------------------------------------------------------------------%
-{
-\noindent \textbf{Data compression(1)}
-
-Data compression is an active research area in computer science. By "compressing data", we actually mean deriving techniques or, more specifically, designing efficient algorithms to:
-
-
-\item represent data in a less redundant fashion
-\item remove the redundancy in data
-\item implement coding, including both encoding and decoding.
-<p>
 
 
 %----------------------------------------------------------------------------------%

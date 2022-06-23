@@ -1,7 +1,9 @@
 
 
-{Entropy}
+Entropy
+==================================
 
+<h4> Entropy</h4>
 *  The quantity $H(X)$ is called the \emph{\textbf{entropy}} of source $X$. *  It is a measure of the average information content per random symbol.
 *  The source entropy $H(X)$ can be considered as the average amount of uncertainty
 within source $X$ that is resolved by use of the alphabet.

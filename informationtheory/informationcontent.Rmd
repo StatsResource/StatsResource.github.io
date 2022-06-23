@@ -1,3 +1,6 @@
+Discrete Memoryless Source
+==========================================
+
 ### Discrete Memoryless Source
 
 Information content of a Discrete Memoryless Source

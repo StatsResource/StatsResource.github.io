@@ -1,0 +1,76 @@
+---
+title: "Information Theory"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+Information Theory
+==================
+
+### Introduction to Information Theory
+Information theory is a process that focuses on the task of quantifying information. 
+The quantification of information is achieved by identifying viable methods of compressing and communicating data without causing 
+and degradation in the integrity of the data. Information theory can be utilized in a number of different fields, including quantum computing, 
+data analysis and cryptography.
+<p>
+
+#### Clause Shannon
+
+The origin of modern informational theory is usually attributed to Claude E. Shannon. His work A Mathematical Theory of Communication, first published in 1948, 
+lays the foundation for the quantification and compression of data into viable units that may be stored for easy retrieval later. 
+His basic approach provided the tools necessary to enhance the efficiency of early mainframe computer systems, and translated easily into 
+the advent of desktop computers during the decade of the 1970’s.
+
+<p>
+
+As a branch of both electrical engineering and applied mathematics, information theory seeks to uncover the most efficient 
+methods of conveying data, within the limits inherent in the data proper. The idea is to ensure that the mass transit of data does 
+not in any way decrease the quality, even if the data is compressed in some manner. 
+
+Ideally, the data can be restored to its original form upon reaching its destination. 
+In some cases, however, the goal is to allow data in one form to be converted for mass transmission, 
+received at the point of termination, and easily converted into a format other than the original without losing any of the transmitted information.
+
+
+```{r child = 'entropy.Rmd'}
+```
+
+
+```{r child = 'codeclassification.Rmd'}
+```
+
+
+Data compression
+=================================
+<h4> Data Compression</h4>
+Data compression is the science (and art) of representing information in a compact form. Having been the domain of a relatively small group of engineers and scientists, it is now ubiquitous.
+<p>
+It has been one of the critical enabling technologies for the on-going digital multimedia revolution for decades. Without compression techniques, none of the ever-growing Internet, digital TV, mobile communication or increasing video communication would have been practical developments. <p>
+
+<p>
+
+Data compression is an active research area in computer science. By "compressing data", we actually mean deriving techniques or, more specifically, designing efficient algorithms to:
+
+
+1. represent data in a less redundant fashion
+2. remove the redundancy in data
+3. implement coding, including both encoding and decoding.
+<p>
+
+
+
+```{r child = 'informationcontent.Rmd'}
+```
+
+```{r child = 'informationrate.Rmd'}
+```
+
+```{r child = 'kraftinequality.rmd'}
+```
+

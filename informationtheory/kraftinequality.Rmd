@@ -1,3 +1,5 @@
+Kraft Inequality
+===============================
 
 ### Kraft inequality
 
@@ -6,10 +8,11 @@ code word corresponding to x is $n$.
 *  A necessary and sufficient condition for the existence of an instantaneous binary code is
  
  \[ K = \sum^{m}_{i=1}2^{-n_i} \leq 1 \]
+ 
 which is known as the ***Kraft inequality***.
 
 *  Note that the Kraft inequality assures us of the existence of an instantaneously decodable code
 with code word lengths that satisfy the inequality. But it does not show us how to obtain these code
 words, nor does it say that any code that satisfies the inequality is automatically uniquely decodable
 
--------------------------------------------------------------------------------------------------------------------------------------------
+<p>
