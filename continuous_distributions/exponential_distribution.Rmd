@@ -1,0 +1,246 @@
+Exponential Distribution {data-navmenu="Probability Distribution"}
+====================================
+
+Column {.tabset}
+-------------------------------------------------------------
+
+
+### Exponential Distribution 
+
+
+Certain events happen at unpredictable intervals. But for some reason, no matter how recent or long ago last event was, the probability that another event will occur within the next hour is exactly the same (say, 10\%). The same holds for any other time interval (say, second). Moreover, the number of events within any given time interval is statistically independent of numbers of events in other intervals that do not overlap the given interval. Also, two events never occur simultaneously.
+
+
+
+
+\subsection*{Exponential distribution}
+
+The Exponential Distribution may be used to answer the following questions:
+
+* How much time will elapse before an earthquake occurs in a given region?
+* How long do we need to wait before a customer enters our shop?
+* How long will it take before a call center receives the next phone call?
+* How long will a piece of machinery work without breaking down?
+<p>
+
+
+
+
+
+* All these questions concern the time we need to wait before a given event occurs. If this waiting time is unknown, it is often appropriate to think of it as a random variable having an exponential distribution.
+* Roughly speaking, the time $X$ we need to wait before an event occurs has an exponential distribution if the probability that the event occurs during a certain time interval is proportional to the length of that time interval.
+
+<p>
+
+\newpage 
+%Then the number of events per day is Poisson distributed.
+
+\subsection*{Lifetimes}
+
+* The exponential distribution plays a central role in a large class of problems related to the concept of "lifetime". 
+For example, an electronic component might be known to have a lifetime of, say, 10.000h. 
+* This means that the component is expected to fail after about 10.000h of use. 
+* But of course, this is an average value, and some components from the same batch will last less than 10.000 hours, while others will last longer. 
+* So the lifetime of a component is a random variable.
+<p>
+
+
+%\newpage
+%\subsection*{Formal definition}
+%
+%Let X be a stochastic variable taking non-negative integer values with probability density function
+%
+%\[ P(X=k)=f(k)= e^{-\lambda} \frac{\lambda ^k}{k!}.\] 
+%Then X follows the Poisson distribution with parameter $\lambda$.
+
+
+
+\noindent X : Lifetime of an item
+
+
+* $P(X \geq 5)$ : probability that the lifetime of a randomly selected item will exceed 5 years.
+
+* $P(X \leq 5)$ : probability that the lifetime of a randomly selected item will not exceed 5 years.
+
+* $\lambda$ : Rate Parameter 
+* $\mu$: average lifetime for items ($1/\lambda$)
+<p>
+
+
+\newpage 
+
+
+\subsection*{Probability Density Function}
+
+\noindent The probability density function (PDF) of an exponential distribution is
+
+\[
+f(x;\lambda) = \begin{cases}
+\lambda e^{-\lambda x}, & x \ge 0, \\
+0, & x < 0.
+\end{cases}\]
+\noindent The parameter $\lambda$  is called \textbf{\emph{rate}} parameter. It is the inverse of the expected duration ($\mu$).\\ \bigskip
+
+\noindent (If the expected duration is 5 (e.g. five minutes) then the rate parameter value is 0.2.)
+
+
+
+%------------------------------------------------------------------------%
+
+\subsection*{Cumulative Distribution Function}
+\noindent The cumulative distribution function (CDF) of an exponential distribution is
+
+\[
+P(X \leq x) = F(x) = \begin{cases}
+1-e^{-\lambda x}, & x \ge 0, \\
+0, & x < 0.
+\end{cases}\]
+
+\noindent (\textbf{Important}) The CDF can be written as the probability of the lifetime being less than some value $x$.
+
+\[ P(X \leq x) = 1-e^{-\lambda x} \]
+
+
+
+\noindent The complement of the CDF (i.e. $P(X \geq x)$ is
+
+\[
+P(X \geq x) = \begin{cases}
+e^{-\lambda x}, & x \ge 0, \\
+0, & x < 0.
+\end{cases}\]
+
+\newpage 
+
+
+
+
+
+
+
+%------------------------------------------------------------------------%
+
+\subsection*{Expected Value and Variance}
+%---------------------------------------------------------------------%
+
+Here $\lambda > 0$ is the parameter of the distribution, often called the \textbf{rate parameter}. 
+
+The distribution is supported on the interval $[0, \infty)$.The expected value $E(X)$ of an exponentially distributed random variable $X$, specifed with the \textbf{rate parameter} $\lambda$
+\[ X \sim \mbox{exp}(\lambda)  \]
+is computed using the following formula
+\[ E(X) = \frac{1}{\lambda}. \]
+The expected value is also known as the exponential mean $\mu$.
+\smallskip
+\noindent The variance of an exponential random variable $X$ is:
+\[\operatorname{Var}(X) = \frac{1}{\lambda^2}\]
+
+\noindent Suppose $\lambda=0.1$
+
+
+\[
+E(X) = \frac{1}{\lambda} = \frac{1}{0.1} = 10 \]
+The variance of an exponential random variable $X$ is:
+
+\[\operatorname{Var}(X) = \frac{1}{\lambda^2} = 100\]
+
+
+
+
+
+%------------------------------------------------------------------------%
+
+\newpage 
+\subsection*{Exponential Distribution: Relationship to Poisson Mean}
+
+* The Exponential Rate parameter ($\lambda$) is directly related to the Poisson mean (m).
+* If we expect 12 occurrences per hour, then what is the rate of occurrences?
+* We would expected to wait 1/12 of an hour (i.e. 5 minutes) between occurrences.
+* Be mindful to keep your time units consistent, if working with both Poisson and Exponential.
+* If working in minutes, our rate parameter values is $\lambda$ = 0.20 (i.e. 1/5).
+%* (This could be the basis of an exam question).
+<p>
+
+
+
+
+%----------------------------------------------%
+
+% Given that, for an exponential distributed process (where durations are denominated in terms of hours)  the rate parameter is $\lambda$ 
+
+
+\newpage 
+
+\subsection*{The Memoryless property}
+
+* The most interesting property of the exponential distribution is the \textbf{\emph{memoryless}} property. 
+* By this , we mean that if  the lifetime of a component is exponentially distributed, then an item which has been in use for some time is a good as a brand new item with regards to the likelihood of failure.
+* 
+The exponential distribution is the only distribution that has this property.
+<p>
+
+The exponential distribution is a \textbf{\textit{memoryless distribution}}.
+
+
+* Suppose you buy a new mobile phone. What is the probability of a fault within six months?
+
+* Suppose you have this mobile phone for 12 months. What is the probability of a fault with six months?
+
+* Under the assumption, the property of being memoryless means that, for both situations, the probability of a fault within six months is the same.
+
+%* (The assumption of a constant would be unsuitable in many cases)
+<p>
+
+
+
+\large 
+
+\section{The Exponential Distribution}
+A continuous random variable having p.d.f. f(x), where:
+$f(x) = \lambda x e ^{-\lambda x} $
+is said to have an exponential distribution, with parameter $\lambda$. 
+The cumulative distribution is given by:
+$F(x) = 1 – e^{\lambda x}$
+
+Expectation and Variance
+$E(X) = 1 / \lambda$
+$V(X) = 1 / \lambda^2$
+
+
+%===========================================================================%
+\end{document}
+
+
+%\subsection{The Exponential Distribution}
+%A continuous random variable having p.d.f. f(x), where:
+%$f(x) = \lambda x e ^{-\lambda x} $
+%is said to have an exponential distribution, with parameter $\lambda$. 
+%The cumulative distribution is given by:
+%$F(x) = 1 – e^{\lambda x}$
+
+
+
+
+
+
+% - https://www.soa.org/Files/Edu/edu-exam-p-sample-quest.pdf
+
+
+%----------------------------------------------%
+
+% Given that, for an exponential distributed process (where durations are denominated in terms of hours)  the rate parameter is $\lambda$ 
+
+
+
+% Use the \texttt{R} code on the following slide to help answer these questions.
+
+
+
+
+
+
+\frame{
+\frametitle{The Memoryless property}
+The most interesting property of the exponential distribution is the \textbf{\emph{memoryless}} property. By this , we mean that if  the lifetime of a component is exponentially distributed, then an item which has been in use for some time is a good as a brand new item with regards to the likelihood of failure.
+
+The exponential distribution is the only distribution that has this property.
+}

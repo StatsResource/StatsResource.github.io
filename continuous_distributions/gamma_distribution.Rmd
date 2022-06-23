@@ -1,0 +1,47 @@
+Gamma Distribution {data-navmenu="Probability Distribution"}
+====================================
+
+Column {.tabset}
+-------------------------------------------------------------
+
+
+### Gamma Distribution
+
+#### Applications
+The gamma distribution can be used a range of disciplines including queuing models, climatology, and financial services. 
+%Examples of events that may be modeled by gamma distribution include:
+
+*  The amount of rainfall accumulated in a reservoir
+*  The size of loan defaults or aggregate insurance claims
+*  The flow of items through manufacturing and distribution processes
+*  The load on web servers
+%*  The many and varied forms of telecom exchange
+
+
+### Gamma Distribution
+
+There are three different parametrizations in common use: \bigskip
+
+*  With a shape parameter k and a scale parameter $\theta$. \bigskip
+*  With a shape parameter $\alpha = k$ and an inverse scale parameter $\beta = 1/\theta$, called a rate parameter. \bigskip
+*  With a shape parameter k and a mean parameter $\mu = k/\beta$.
+
+
+### Gamma Distribution: Probability density function (pdf)
+
+\[{\frac {1}{\Gamma (k)\theta ^{k}}}x^{k\,-\,1}e^{-{\frac {x}{\theta }}}\]
+
+\[{\frac {\beta ^{\alpha }}{\Gamma (\alpha )}}x^{\alpha \,-\,1}e^{-\beta x}\]
+
+<p>
+
+
+### Gamma Distribution 
+
+The random variable $T$, follows a gamma distribution with shape parameter $n$ and rate parameter $\lambda$. 
+The survival function, cdf and the density function are:
+
+\[\displaystyle P(T >t)=\sum \limits_{k=0}^{n-1} \frac{e^{-\lambda t} \ (\lambda t)^k}{k!}\]
+\[\displaystyle P(T  \le t)=1-\sum \limits_{k=0}^{n-1} \frac{e^{-\lambda t} \ (\lambda t)^k}{k!}=\sum \limits_{k=n}^{\infty} \frac{e^{-\lambda t} \ (\lambda t)^k}{k!}\]
+
+\[\displaystyle f_{T }(t)=\frac{1}{(n-1)!} \ \lambda^n \ t^{n-1} \ e^{-\lambda t}\]

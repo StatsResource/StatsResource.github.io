@@ -1,0 +1,31 @@
+Weibull Distribution {data-navmenu="Probability Distribution"}
+====================================
+
+Column {.tabset}
+-------------------------------------------------------------
+
+
+### Weibull Distribution 
+
+
+The probability density function of $X$ is
+
+
+\[\begin{aligned} f(x;\alpha, \beta)&=\frac{\alpha}{\beta} \bigg(\dfrac{x}{\beta}\bigg)^{\alpha-1}e^{-\big(\dfrac{x}{\beta}\big)^\alpha};\;  \end{aligned} \]
+where $x>0$ and $\alpha,\beta>0$
+
+
+<p>
+\noindent The distribution function of X is
+
+\[\begin{aligned} F(x) &= 1- e^{-\big(x/\beta\big)^\alpha}. \end{aligned} \]
+\[F(x)=1 - \operatorname{Exp}\left( - (x/\beta )^\alpha\right) .\]
+
+
+\noindent The mean and variance of a Weibull random variable can be expressed as
+
+\[{\displaystyle \operatorname {E} (X)=\beta \Gamma \left(1+{\frac {1}{\alpha}}\right)\,}\]
+and
+
+\[{\displaystyle \operatorname {Var} (X)=\beta ^{2}\left[\Gamma \left(1+{\frac {2}{\alpha}}\right)-\left(\Gamma \left(1+{\frac {1}{\alpha}}\right)\right)^{2}\right]\,.}\]
+

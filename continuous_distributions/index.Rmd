@@ -1,0 +1,30 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r child = 'exponential_distribution.Rmd'}
+```
+
+```{r child = 'uniform_distribution.Rmd'}
+```
+
+
+
+
+```{r child = 'Weibull_distribution.Rmd'}
+```
+```{r child = 'lognormal_distribution.Rmd'}
+```
+
+```{r child = 'gamma_distribution.Rmd'}
+```
