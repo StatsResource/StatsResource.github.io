@@ -1,0 +1,76 @@
+Binomial Distribution {data-navmenu="Tutorial Questions"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Tutorial Questions
+(a)  Four  per cent of PCB boards purchased over the Internet from the Far East have some defect.  From a large consignment of boards, 50 are chosen at random.  What is the probability that:
+
+a. 3 or more boards have some defect?
+b. Exactly 2 boards are defective?
+c. Less than 3 boards are defective?
+d. If more than 5 boards from the 50 were defective what action would you take? (justify)
+
+----
+
+<h4> Worked Example </h4>
+
+Flaws occur in a hard wood timbers  at the rate of 1.5 per linear  metre section.  Calculate the probability that:
+
+a. 3 or more flaws will occur in a 3  metre length 
+b. Exactly 4 flaws will occur in a 10 metre length
+c. 8 or less flaws will occur in a 6  metre length 
+
+
+----
+
+<h4> Worked Example </h4>
+
+There is a constant probability of 0.05  that the power supply in telecoms network will not start.  
+You are requested to calculate the probability that the power supply will fail the 5th time it is activated.
+
+
+
+---
+
+For a digital communication channel, the probability of a bit being received in error is $10\%$. Consider the case where 100 bits are transmitted. Answer the following questions.
+
+\begin{itemize}
+\item[i] (3 marks)	What is the probability that the number of bits received in error is 10?
+\item[ii] (2 marks) What is the probability that the number of bits received in error is greater than 10?
+\item[iii] (2 marks)	What is the probability that the number of bits received in error does not exceed 20?
+\end{itemize}
+
+---
+
+\newpage 
+An examination contains 20 multiple choice questions with four choices per questions. 
+A pass is obtained by answering  10 questions correctly. 
+Calculate the probability that a student who chooses the answer to each question at random will pass the examination.  ( Answer : 0.0139 )
+
+\newpage 
+\noindent Suppose that a student is taking a multiple-choice exam in which each question has four choices.
+Suppose that she has no knowledge of the correct answer to any of the questions. Furthermore suppose that she selects one of the possible choices at random as her answer.
+\begin{itemize}
+\item If there are five multiple-choice questions on the exam, what is the probability that she will answer four questions correctly.
+\item  What is the probability that she will answer none of the questions correctly?
+\item  What is the probability that she will answer at least two questions correctly?
+\end{itemize}
+
+
+### Worked Example
+
+ Commuter trains have a probability 0.1 of delay
+between Dublin and Maynooth. Supposing that the delays are all independent,
+what is the probability that out of 10 journeys between Dublin and
+Mullinar more than 8 do not have a delay.
+
+*  Reconsider the question : What is the probability that there is less than 2 delays.
+*  $X$ is the variable for `delays', with Binomial parameters $n=10$, $p=0.1$
+*  $P(X < 2) = P(X \leq 1) = P(X=0)+P(X=1)$
+*  $P(X=0)$
+\[P(X=0)= {10 \choose 0} \times 0.1^0  \times 0.9^10 = 0.34868\]
+*  $P(X=1)$
+\[P(X=1)= {10 \choose 1} \times 0.1^1  \times 0.9^9 = 0.38742\]
+*  $P(X < 2) = = 0.38742 + 0.34868 = 0.73610.$

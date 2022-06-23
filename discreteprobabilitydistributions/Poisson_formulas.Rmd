@@ -1,0 +1,51 @@
+Poisson Process {data-navmenu="Poisson Distrubition"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+
+### Poisson Distribution 
+A Poisson random variable is the number of successes that result from a Poisson experiment.
+
+The probability distribution of a Poisson random variable is called a Poisson distribution.
+
+Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the following formula:
+
+\textbf{The Poisson Probability Distribution}
+
+*   The number of occurrences in a unit period (or space)
+*   The expected number of occurrences is $m$
+
+
+#### Poisson Formulas
+The probability that there will be $k$ occurrences in a unit time period is denoted $P(X=k)$, and is computed as follows.
+<p>
+\[ P(X = k)=\frac{m^k e^{-m}}{k!} \]
+
+
+#### Poisson Formulas
+Given that there is on average 2 occurrences per hour, what is the probability of no occurences in the next hour? \\ i.e. Compute $P(X=0)$ given that $m=2$
+<p>
+\[ P(X = 0)=\frac{2^0 e^{-2}}{0!} \]
+
+
+*   $2^0$ = 1
+*   $0!$ = 1
+
+The equation reduces to
+\[ P(X = 0)=e^{-2} = 0.1353\]
+
+#### Poisson Formulas
+What is the probability of one occurrences in the next hour? \\ i.e. Compute $P(X=1)$ given that $m=2$
+<p>
+\[ P(X = 1)=\frac{2^1 e^{-2}}{1!} \]
+\normalsize
+
+*  $2^1$ = 2
+*  $1!$ = 1
+
+The equation reduces to
+\[ P(X = 1) = 2 \times e^{-2} = 0.2706\]
+	}
+	%---------------------------------------------------------------------------%
