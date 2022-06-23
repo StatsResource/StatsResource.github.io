@@ -1,0 +1,36 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r child = 'Poisson_experiment.Rmd'}
+```
+
+```{r child = 'Poisson_formulas.Rmd'}
+```
+
+
+
+
+```{r child = 'geometric.Rmd'}
+```
+```{r child = 'hypergeometric.Rmd'}
+```
+```{r child = 'Poisson_approximation.Rmd'}
+```
+
+```{r child = 'binomial_tutorial_questions.Rmd'}
+```
+
+
+
+
