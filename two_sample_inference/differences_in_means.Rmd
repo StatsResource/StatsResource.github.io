@@ -1,0 +1,72 @@
+Differences in Means {data-navmenu="Diffence In Means"}
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Differences in Means
+
+<h4> Difference in Two means </h4>
+For this calculation, we will assume that the variances in each of the two populations are equal. This assumption is called the assumption of homogeneity of variance.
+
+The first step is to compute the estimate of the standard error of the difference between means ().
+
+\[ S.E.(\bar{X}-\bar{Y}) = \sqrt{\frac{s^2_x}{n_x} + \frac{s^2_y}{n_y}} \]
+
+
+*  $s^2_x$ and $s^2_x$ is the variance of both samples.
+*  $n_x$ and $n_y$ is the sample size of both samples.
+
+The degrees of freedom is $n_x + n_y -2$.
+
+
+
+<p>
+
+
+### Computing the Confidence Interval
+ 
+Standard Error for difference of two means (small aggregate sample)
+
+\[ S.E.(\bar{x}-\bar{y}) = \sqrt{  s^2_p \left({1\over n_x}+{1\over n_y} \right)} \]
+
+Pooled Variance $s^2_p$ is computed as:
+
+\[ s^2_p = \frac{(n_x-1)s^2_x + (n_y-1)s^2_y}{(n_x-1) + (n_y-1)} \]
+
+<h5>Differences in Means</h5>
+
+### Examples
+
+\section*{Question 4 (Two Sample Means, small samples, one tailed)}
+The working lifetimes of 100 of both of two different types of batteries were observed. The mean lifetime for the sample of type 1 batteries was 25 hrs with a standard deviation of 4hrs. The mean lifetime for the sample of type 1 batteries was 23 hrs with a standard deviation of 3hrs. 
+\begin{center}
+\begin{tabular}{|c||c|}
+\hline 
+Type 1 & Type 2 \\ \hline \hline
+$n_1$ = 100 & $n_2$ = 100 \\ \hline
+$x_1$ = 25 hours & $x_1$ = 23 hours \\ \hline
+$s_1$ = 4 hours & $s_1$ = 3 hours \\ \hline
+\end{tabular} 
+\end{center}
+\begin{itemize}
+*   Test the hypothesis that the mean working lifetimes of these batteries do not differ at a significance level of 5\% .
+
+*   Calculate a 95\% confidence interval for the difference between the average working lifetimes of these batteries. 
+*   Using this confidence interval, test the hypothesis that battery 1 on average works for 3 hours longer than battery 2.
+\end{itemize}
+
+### Important Formulas
+
+<h4> Standard Error Formula for Two Large Samples <h4> 
+\[ S.E.(\bar{x}_1 - \bar{x}_2)  = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} \]
+
+<h4> Standard Error Formula for Two Small Samples <h4> 
+
+Standard Error for difference of two means (small aggregate sample)
+
+\[ S.E.(\bar{x}-\bar{y}) = \sqrt{  s^2_p \left({1\over n_x}+{1\over n_y} \right)} \]
+
+Pooled Variance $s^2_p$ is computed as:
+
+\[ s^2_p = \frac{(n_x-1)s^2_x + (n_y-1)s^2_y}{(n_x-1) + (n_y-1)} \]

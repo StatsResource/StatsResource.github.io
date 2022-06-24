@@ -1,0 +1,33 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+
+```{r child = 'Proportions.Rmd'}
+```
+
+
+
+```{r child = 'HypothesisTesting.Rmd'}
+```
+
+
+```{r child = 'Proportions.Rmd'}
+```
+
+```{r child = 'SmallSamples.rmd'}
+```
+
+```{r child = 'DixonQTest.Rmd'}
+```
+

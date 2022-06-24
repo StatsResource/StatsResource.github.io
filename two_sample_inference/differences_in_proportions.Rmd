@@ -29,6 +29,12 @@ The approach described in this lesson is valid whenever the following conditions
 * Each sample includes at least 10 successes and 10 failures.
 * The samples comprises less than 10\% of their respective populations.
 
+Confidence Interval {data-navmenu="Difference In Proportions"}
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
+
 
 ### Confidence Interval
 
@@ -131,6 +137,11 @@ The pooled estimate of the population proportion, based on the proportions obtai
 
 
 
+Worked Examples {data-navmenu="Difference In Proportions"}
+====================================================================
+
+Column {.tabset}
+-------------------------------------------------
 
 
 

@@ -1,0 +1,22 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r child = 'differences_in_proportions.Rmd'}
+```
+
+```{r child = 'differences_in_means.Rmd'}
+```
+
+
+

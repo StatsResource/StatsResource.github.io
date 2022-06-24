@@ -15,14 +15,14 @@ Use the Dixon Q-Test to determine whether or not there is an outlier value prese
 
 
 
-\[\LARGE \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]
+\[ \{19, 36,33,  25, 30, 28, 31,36, 29, 37\}\]
 
 <p>
 --------------------------------------------------
 
 *  Arrange the data set into ascending order.
 
-\[\LARGE \{ 19, 25, 28, 29, 30, 31, 33, 36, 36, 37\} \]
+\[ \{ 19, 25, 28, 29, 30, 31, 33, 36, 36, 37\} \]
 
 *  Here the potential outlier is the lowest value, i.e. 19
 

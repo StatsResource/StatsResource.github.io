@@ -1,0 +1,33 @@
+---
+title: "StatsResource"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r child = 'survivalanalysis.Rmd'}
+```
+
+```{r child = 'censoring.Rmd'}
+```
+
+```{r child = 'coxmodels.Rmd'}
+```
+
+
+
+```{r child = 'NelsonAalenEstimators.Rmd'}
+```
+```{r child = 'KaplanMeierEstimators.Rmd'}
+```
+
+
+
+
