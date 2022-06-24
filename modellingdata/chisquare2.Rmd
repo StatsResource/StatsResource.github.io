@@ -10,17 +10,17 @@ Column {.tabset}
 
 
 
-A $\chi^2$ test is carried out on tabular data containing counts, e.g. the
+* A $\chi^2$ test is carried out on tabular data containing counts, e.g. the
 number of animals that died, the number of days of rain, the
 number of stocks that grew in value, etc.
 <p>
-Usually have two qualitative variables, each with a number of
+* Usually have two qualitative variables, each with a number of
 levels, and want to determine if there is a relationship between the
 two variables, e.g. hair colour and eye colour, social status and
 crime rates, house price and house size, gender and left/right
 handedness.
 </p><p>
-The data are presented in a contingency table:
+* The data are presented in a contingency table:
 right-handed left-handed TOTAL
 </p><p>
 \begin{tabular}{|c|c|c|c|}
@@ -46,7 +46,15 @@ H0 was true.
 
 
 <pre><code>
-\section{Section 3. Chi-squared Test of Independence}
+
+Chi-squared Test of Independence {data-navmenu="Chi-Square Tests"}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Chi-squared Test of Independence
+
 Two random variables x and y are called independent if the probability distribution of one variable is not affected by the presence of another.
 
 Assume $f_{ij}$ is the observed frequency count of events belonging to both i-th category of x and j-th category of y. 
@@ -90,16 +98,6 @@ help(normal)
 Test the hypothesis whether the students smoking habit is independent of their exercise level at 0.05 significance level.
 Solution
 We apply the chisq.test function to the contingency table tbl, and found the p-value to be 0.4828.
-<pre><code>
-
-
-
-
-
-
-
-</code></pre>
-
 
 <pre><code>
 > chisq.test(tbl) 
@@ -159,6 +157,13 @@ The hypothesis to be tested is
 
 The values that we collect from our sample are called the observed (O) frequencies (counts). Now need to calculate the expected (E)
 frequencies, i.e. the values we would expect to see in the table, if H0 was true.
+
+
+Chi-squared Test of Independence {data-navmenu="Chi Square Tests"}
+====================================================================
+
+Column {.tabset}
+---------------------------------------------
 
 
 ### Chi-squared Test of Independence
@@ -286,6 +291,7 @@ Total & 150 & 180 & 270 &  \textbf{600}\\ \hline
 \end{tabular} 
 \end{center}
 
+<p>
 
 
 
@@ -378,7 +384,7 @@ For example, consider the hypothetical experiment on the effectiveness of early 
 <p>
 
 
-#### {Chi-Square Test of Association}
+### Worked Example
 
 
 
@@ -408,9 +414,13 @@ An inspection of the contingency table shows that subjects in the experimental c
  
  
 <p>
+Chi-Square Test of Association {data-navmenu="Chi Square Tests"}
+====================================================================
 
+Column {.tabset}
+---------------------------------------------
 
-#### {Chi-Square Test of Association}
+### {Chi-Square Test of Association}
 
 
 Null hypothesis
@@ -422,44 +432,34 @@ For this example, this is equivalent to saying that the intervention program has
 If the columns are not contingent on the rows, then the rows and column frequencies are independent. If this was the case, on average an equal proportion would graduate and fail fron both experimental and control groups. Under this hypothesis, any differences between the observation and the expected values can be attributed to the random sampling effects.
  
  
-%---------------------------------------------%
+<p>
 
-
-#### {Chi-Square Test of Association}
-
-
-
-Alternative hypothesis
+#### Alternative hypothesis
  
 As always, the alternative hypothesis is the opposite of the null hypothesis, that there is a relationship between row and column frequencies.
 This is equivalent to saying that the intervention program does have an effect on a students performance; that the program does indeed improve the chance of graduating. 
  
 A statistical procedure is carried out to determine the p-value associated with this test. A decision to reject the null hypothesis is based on this p-value.
  
+<p>
+
+#### Expected values
  
-%---------------------------------------------%
-
-
-#### {Chi-Square Test of Association}
-
-
-
-Expected values
+* The first step in computing the chi square test of independence is to compute the expected frequency for each cell under the assumption that the null hypothesis is true.
+* To calculate the expected frequency of the first cell in the example (experimental condition, graduated), first calculate the proportion of subjects that graduated without considering the condition they were in. The table below shows that of the 167 subjects in the experiment, 116 graduated.
  
-The first step in computing the chi square test of independence is to compute the expected frequency for each cell under the assumption that the null hypothesis is true. To calculate the expected frequency of the first cell in the example (experimental condition, graduated), first calculate the proportion of subjects that graduated without considering the condition they were in. The table below shows that of the 167 subjects in the experiment, 116 graduated.
- 
-Therefore, 116/167 graduated. If the null hypothesis were true, the expected frequency for the first cell would equal the product of the number of people in the experimental condition (85) and the proportion of people graduating (116/167). This is equal to (85)(116)/167 = 59.042. Therefore, the expected frequency for this cell is 59.042. The general formula for expected cell frequencies is:
+* Therefore, 116/167 graduated. If the null hypothesis were true, the expected frequency for the first cell would equal the product of the number of people in the experimental condition (85) and the proportion of people graduating (116/167). 
+* This is equal to (85)(116)/167 = 59.042. Therefore, the expected frequency for this cell is 59.042. The general formula for expected cell frequencies is:
  
   
 where
  
-Eij is the expected frequency for the cell in the ith row and the jth column
-Tiis the total number of subjects in the ith row
-Tj is the total number of subjects in the jth column
-N is the total number of subjects in the whole table. 
+* Eij is the expected frequency for the cell in the ith row and the jth column
+* Tiis the total number of subjects in the ith row
+* Tj is the total number of subjects in the jth column
+* N is the total number of subjects in the whole table. 
 
-%---------------------------------------------%
-
+<p>
 
 #### {Chi-Square Test of Association}
 
@@ -493,23 +493,16 @@ Total
 The formula for chi square test for independence is 
  
  
-%---------------------------------------------%
+<p>
 
-
-#### {Chi-Square Test of Association}
-
-
- 
-Degrees of Freedom 
+#### Degrees of Freedom 
 The degrees of freedom are equal to (R-1)(C-1) where R is the number of rows and C is the number of columns. In this example, R = 2 and C = 2, so df = (2-1)(2-1) = 1.
  
 The chi square test statistic is compared to a critical value of the chi-square distribution with degrees of freedom (R-1)(C-1). This is a one tailed test. The null hypothesis is rejected if the test statistic is greater than the critical value. Alternatively a p-value will be computed and compared to a pre-specified significance level.
  
- 
-%---------------------------------------------%
+<p>
 
-
-#### {Chi-Square Test of Association}
+#### p-value
 
 
 A computational procedure will determine that for df = 1, a chi square test statistic of 22.01 has a probability value less than 0.0001.
@@ -519,13 +512,9 @@ The results for the example on the effects of the early childhood intervention e
 The proportion of students from the early-intervention group who graduated from high school was 0.86 whereas the proportion from the control group who graduated was only 0.52. The difference in proportions is significant, χ²(1, N = 167) = 22.01, p < 0.001.
  
  
-%---------------------------------------------%
+<p>
 
-
-#### {Chi-Square Test of Association}
-
-
-Example 2 
+### Example 2 
  
 The same procedures are used for analyses with more than two rows and/or more than two columns. For example, consider the following hypothetical experiment: A drug that decreases anxiety is given to one group of subjects before they attempted to play a game of chess against a computer. The control group was given a placebo. The contingency table is shown below, with expected values in brackets.
  
@@ -558,8 +547,7 @@ Total
  
 As in the previous example, each expected frequency is computed by multiplying the row total by the column total and dividing by the total number of subjects.
  
-%---------------------------------------------%
-
+<p>
 
 #### {Chi-Square Test of Association}
 
@@ -567,10 +555,9 @@ As in the previous example, each expected frequency is computed by multiplying t
 For example, the expected frequency for the "Drug-Lose" condition is the product of the row total (40) and the column total (25) divided by the total number of subjects (70): (40)(25)/70 = 14.29. 
  
  
-%---------------------------------------------%
+<p>
 
-
-#### {Chi-Square Test of Association}
+#### DEgrees of Freedom
 
 
 The chi square is calculated using the formula:
@@ -579,7 +566,7 @@ The chi square is calculated using the formula:
  
  
  
-The df are (R-1)(C-1) = (2-1)(3-1) = 2.
+The df are $(R-1)(C-1) = (2-1)(3-1) = 2$.
 
  
 <p>
@@ -594,7 +581,7 @@ The number of subjects winning,losing,and drawing as a function of drug conditio
 <p>
 
 
-Comments on the Chi-square test 
+#### Comments on the Chi-square test 
  
 The formula for chi square yields a statistic that is only approximately a chi square distribution. In order for the approximation to be adequate, the total number of subjects should be at least 20.
  
@@ -620,7 +607,7 @@ Necessarily the test for pearon's correlation is the equivalent of the test of t
 The decision to reject or fail to reject is based on the p-value. 
  
  
-2)  F-Test for Equality of Two Standard Deviations.
+#### 2)  F-Test for Equality of Two Standard Deviations.
  
 An F-test is used to test if the standard deviations of two populations are equal. 
 The two-tailed version tests against the alternative that the standard deviations are not equal. The one-tailed version only tests in one direction, that is the standard deviation from the first population is either greater than (or less than ) the second population standard deviation .
@@ -636,7 +623,7 @@ Ha:ij  for some i and j
 The simple two-sample test for means  is based on the assumption of equal variance of both samples. If the variances are not the same, the analysis for the two-sample must vary accordingly.
  
  
-3) Tests for distributions
+#### 3) Tests for distributions
  
 The Kolmorgorov-Smirnov test and the Anderson-Darling test are formulated as follows:
  

@@ -176,23 +176,33 @@ pre code {
 <h3>
 Chi-squared Test
 </h3>
-A <span class="math inline">\(\chi^2\)</span> test is carried out on tabular data containing counts, e.g. the number of animals that died, the number of days of rain, the number of stocks that grew in value, etc.
-<p>
-Usually have two qualitative variables, each with a number of levels, and want to determine if there is a relationship between the two variables, e.g. hair colour and eye colour, social status and crime rates, house price and house size, gender and left/right handedness.
+<ul>
+<li>A <span class="math inline">\(\chi^2\)</span> test is carried out on tabular data containing counts, e.g. the number of animals that died, the number of days of rain, the number of stocks that grew in value, etc.
+<p></li>
+<li>Usually have two qualitative variables, each with a number of levels, and want to determine if there is a relationship between the two variables, e.g. hair colour and eye colour, social status and crime rates, house price and house size, gender and left/right handedness.
+</p>
+<p></li>
+<li>The data are presented in a contingency table: right-handed left-handed TOTAL
 </p>
 <p>
-The data are presented in a contingency table: right-handed left-handed TOTAL
 </p>
-<p>
-</p>
-<p>
+<p></li>
+</ul>
 The hypothesis to be tested is:<br> * <span class="math inline">\(H0 :\)</span>There is no relationship between gender and left/right-handedness<br> * <span class="math inline">\(H1 :\)</span>There is a relationship between gender and left/right-handedness<br>
 </p>
 <p>
 The values that we collect from our sample are called the observed (O) frequencies (counts). Now need to calculate the expected (E) frequencies, i.e. the values we would expect to see in the table, if H0 was true.
 </p>
 <pre><code>
-\section{Section 3. Chi-squared Test of Independence}
+
+Chi-squared Test of Independence {data-navmenu=&quot;Chi-Square Tests&quot;}
+=====================================
+
+Column {.tabset}
+-------------------------------------------------
+
+### Chi-squared Test of Independence
+
 Two random variables x and y are called independent if the probability distribution of one variable is not affected by the presence of another.
 
 Assume $f_{ij}$ is the observed frequency count of events belonging to both i-th category of x and j-th category of y. 
@@ -230,16 +240,7 @@ help(normal)
 </pre>
 <p>
 </code></pre>
-Test the hypothesis whether the students smoking habit is independent of their exercise level at 0.05 significance level. Solution We apply the chisq.test function to the contingency table tbl, and found the p-value to be 0.4828.
-<pre><code>
-
-
-
-
-
-
-
-</code></pre>
+<p>Test the hypothesis whether the students smoking habit is independent of their exercise level at 0.05 significance level. Solution We apply the chisq.test function to the contingency table tbl, and found the p-value to be 0.4828.</p>
 <pre><code>
 &gt; chisq.test(tbl) 
  
@@ -287,7 +288,13 @@ chisq.test(ctbl)
 </ul>
 <p>The values that we collect from our sample are called the observed (O) frequencies (counts). Now need to calculate the expected (E) frequencies, i.e. the values we would expect to see in the table, if H0 was true.</p>
 </div>
-<div id="chi-squared-test-of-independence" class="section level3">
+</div>
+</div>
+<div id="chi-squared-test-of-independence" class="section level1" data-navmenu="Chi Square Tests">
+<h1 data-navmenu="Chi Square Tests">Chi-squared Test of Independence</h1>
+<div id="column-1" class="section level2 tabset">
+<h2 class="tabset">Column</h2>
+<div id="chi-squared-test-of-independence-1" class="section level3">
 <h3>Chi-squared Test of Independence</h3>
 <p>Two random variables x and y are called independent if the probability distribution of one variable is not affected by the presence of another.</p>
 <p>Assume <span class="math inline">\(f_{ij}\)</span> is the observed frequency count of events belonging to both i-th category of x and j-th category of y. Also assume eij to be the corresponding expected count if x and yare independent.</p>
@@ -364,6 +371,7 @@ chisq.test(ctbl)
 <h3>{Chi-Square Test of Association}</h3>
 <p>% Writing</p>
 <p>Expected values for all of the other cells can be computed the same way.</p>
+<p>
 </div>
 <div id="critical-value" class="section level3">
 <h3>Critical Value</h3>
@@ -402,12 +410,6 @@ chisq.test(ctbl)
 <li>Consider the hypothetical experiment on the effectiveness of early childhood intervention programs described in another section.</li>
 <li>In the experimental group, 73 of 85 students graduated from high school. In the control group, only 43 of 82 students graduated. These data are depicted in the contingency table shown below.</li>
 </ul>
-<p>—————————————————————– %</p>
-</div>
-<div id="chi-square-test-for-goodness-of-fit" class="section level4">
-<h4>{Chi Square test for goodness of fit}</h4>
-<p>The chi-squared test applied to contingency tables.</p>
-<p>The Chi-squared test is the most commonly used test for frequency data and goodness-of-fit. In theory, it is nonparametric but because it has no parametric equivalent, it is not classified as such. It is not an exact test and with the current level of computing facilities, there is not much excuse not to use Fishers exact test for <span class="math inline">\(2\times2\)</span> contingency table analysis instead of Chi-squared test.</p>
 <hr />
 </div>
 <div id="chi-square-test-of-association-4" class="section level4">
@@ -423,78 +425,92 @@ chisq.test(ctbl)
 <p>For example, consider the hypothetical experiment on the effectiveness of early childhood intervention programs.</p>
 <p>
 </div>
-<div id="chi-square-test-of-association-6" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
+</div>
+<div id="worked-example" class="section level3">
+<h3>Worked Example</h3>
 <p>In the experimental group, 73 of 85 students graduated from high school. In the control group, only 43 of 82 students graduated. These data are depicted in the contingency table shown below.</p>
 <p>Graduated Failed to Graduate Total Experimental 73 12 85 Control 43 39 82 Total 116 51 167 The cell entries are cell frequencies. The top left cell with a “73” in it means that 73 subjects in the experimental condition went on to graduate from high school; 12 subjects in the experimental condition did not.</p>
 <p>An inspection of the contingency table shows that subjects in the experimental condition were more likely to graduate than were subjects in the control condition. Thus, the column a subject is in (graduated or failed to graduate) is contingent upon (depends on) the row the subject is in (experimental or control condition).</p>
 <p>
 </div>
-<div id="chi-square-test-of-association-7" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
+</div>
+</div>
+<div id="chi-square-test-of-association-6" class="section level1" data-navmenu="Chi Square Tests">
+<h1 data-navmenu="Chi Square Tests">Chi-Square Test of Association</h1>
+<div id="column-2" class="section level2 tabset">
+<h2 class="tabset">Column</h2>
+<div id="chi-square-test-of-association-7" class="section level3">
+<h3>{Chi-Square Test of Association}</h3>
 <p>Null hypothesis</p>
 <p>The test of whether the columns are contingent on the rows is called the chi square test of independence. The null hypothesis is that there is no relationship between row and column frequencies.</p>
 <p>For this example, this is equivalent to saying that the intervention program has no effects on a students performance ; students from both groups are equally as likely to graduate, and that the program does not improve the chance of graduating.</p>
 <p>If the columns are not contingent on the rows, then the rows and column frequencies are independent. If this was the case, on average an equal proportion would graduate and fail fron both experimental and control groups. Under this hypothesis, any differences between the observation and the expected values can be attributed to the random sampling effects.</p>
-<p>%———————————————%</p>
-</div>
-<div id="chi-square-test-of-association-8" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
-<p>Alternative hypothesis</p>
+<p>
+<div id="alternative-hypothesis" class="section level4">
+<h4>Alternative hypothesis</h4>
 <p>As always, the alternative hypothesis is the opposite of the null hypothesis, that there is a relationship between row and column frequencies. This is equivalent to saying that the intervention program does have an effect on a students performance; that the program does indeed improve the chance of graduating.</p>
 <p>A statistical procedure is carried out to determine the p-value associated with this test. A decision to reject the null hypothesis is based on this p-value.</p>
-<p>%———————————————%</p>
+<p>
 </div>
-<div id="chi-square-test-of-association-9" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
-<p>Expected values</p>
-<p>The first step in computing the chi square test of independence is to compute the expected frequency for each cell under the assumption that the null hypothesis is true. To calculate the expected frequency of the first cell in the example (experimental condition, graduated), first calculate the proportion of subjects that graduated without considering the condition they were in. The table below shows that of the 167 subjects in the experiment, 116 graduated.</p>
-<p>Therefore, 116/167 graduated. If the null hypothesis were true, the expected frequency for the first cell would equal the product of the number of people in the experimental condition (85) and the proportion of people graduating (116/167). This is equal to (85)(116)/167 = 59.042. Therefore, the expected frequency for this cell is 59.042. The general formula for expected cell frequencies is:</p>
+<div id="expected-values" class="section level4">
+<h4>Expected values</h4>
+<ul>
+<li><p>The first step in computing the chi square test of independence is to compute the expected frequency for each cell under the assumption that the null hypothesis is true.</p></li>
+<li><p>To calculate the expected frequency of the first cell in the example (experimental condition, graduated), first calculate the proportion of subjects that graduated without considering the condition they were in. The table below shows that of the 167 subjects in the experiment, 116 graduated.</p></li>
+<li><p>Therefore, 116/167 graduated. If the null hypothesis were true, the expected frequency for the first cell would equal the product of the number of people in the experimental condition (85) and the proportion of people graduating (116/167).</p></li>
+<li><p>This is equal to (85)(116)/167 = 59.042. Therefore, the expected frequency for this cell is 59.042. The general formula for expected cell frequencies is:</p></li>
+</ul>
 <p>where</p>
-<p>Eij is the expected frequency for the cell in the ith row and the jth column Tiis the total number of subjects in the ith row Tj is the total number of subjects in the jth column N is the total number of subjects in the whole table.</p>
-<p>%———————————————%</p>
+<ul>
+<li>Eij is the expected frequency for the cell in the ith row and the jth column</li>
+<li>Tiis the total number of subjects in the ith row</li>
+<li>Tj is the total number of subjects in the jth column</li>
+<li>N is the total number of subjects in the whole table.</li>
+</ul>
+<p>
 </div>
-<div id="chi-square-test-of-association-10" class="section level4">
+<div id="chi-square-test-of-association-8" class="section level4">
 <h4>{Chi-Square Test of Association}</h4>
 <p>Once the expected cell frequencies are computed, it is convenient to enter them into the original table as shown below. The expected frequencies are in brackets.</p>
 <p>Graduated Failed to Graduate Total Experimental 73 (59.042) 12 (25.958) 85 Control 43 (56.958)</p>
 <p>39 (25.042) 82 Total 116 51 167 The formula for chi square test for independence is</p>
-<p>%———————————————%</p>
+<p>
 </div>
-<div id="chi-square-test-of-association-11" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
-<p>Degrees of Freedom The degrees of freedom are equal to (R-1)(C-1) where R is the number of rows and C is the number of columns. In this example, R = 2 and C = 2, so df = (2-1)(2-1) = 1.</p>
+<div id="degrees-of-freedom" class="section level4">
+<h4>Degrees of Freedom</h4>
+<p>The degrees of freedom are equal to (R-1)(C-1) where R is the number of rows and C is the number of columns. In this example, R = 2 and C = 2, so df = (2-1)(2-1) = 1.</p>
 <p>The chi square test statistic is compared to a critical value of the chi-square distribution with degrees of freedom (R-1)(C-1). This is a one tailed test. The null hypothesis is rejected if the test statistic is greater than the critical value. Alternatively a p-value will be computed and compared to a pre-specified significance level.</p>
-<p>%———————————————%</p>
+<p>
 </div>
-<div id="chi-square-test-of-association-12" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
+<div id="p-value" class="section level4">
+<h4>p-value</h4>
 <p>A computational procedure will determine that for df = 1, a chi square test statistic of 22.01 has a probability value less than 0.0001.</p>
 <p>The results for the example on the effects of the early childhood intervention example could be reported as follows: The proportion of students from the early-intervention group who graduated from high school was 0.86 whereas the proportion from the control group who graduated was only 0.52. The difference in proportions is significant, χ²(1, N = 167) = 22.01, p &lt; 0.001.</p>
-<p>%———————————————%</p>
+<p>
 </div>
-<div id="chi-square-test-of-association-13" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
-<p>Example 2</p>
+</div>
+<div id="example-2" class="section level3">
+<h3>Example 2</h3>
 <p>The same procedures are used for analyses with more than two rows and/or more than two columns. For example, consider the following hypothetical experiment: A drug that decreases anxiety is given to one group of subjects before they attempted to play a game of chess against a computer. The control group was given a placebo. The contingency table is shown below, with expected values in brackets.</p>
 <p>Condition Win Lose Draw Total Drug 12 (14.29) 18 (14.29) 10 (11.43) 40 Placebo 13 (10.71) 7 (10.71) 10 (8.57) 30 Total 25 25 20 70</p>
 <p>As in the previous example, each expected frequency is computed by multiplying the row total by the column total and dividing by the total number of subjects.</p>
-<p>%———————————————%</p>
-</div>
-<div id="chi-square-test-of-association-14" class="section level4">
+<p>
+<div id="chi-square-test-of-association-9" class="section level4">
 <h4>{Chi-Square Test of Association}</h4>
 <p>For example, the expected frequency for the “Drug-Lose” condition is the product of the row total (40) and the column total (25) divided by the total number of subjects (70): (40)(25)/70 = 14.29.</p>
-<p>%———————————————%</p>
+<p>
 </div>
-<div id="chi-square-test-of-association-15" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
+<div id="degrees-of-freedom-1" class="section level4">
+<h4>DEgrees of Freedom</h4>
 <p>The chi square is calculated using the formula:</p>
-<p>The df are (R-1)(C-1) = (2-1)(3-1) = 2.</p>
+<p>The df are <span class="math inline">\((R-1)(C-1) = (2-1)(3-1) = 2\)</span>.</p>
 <p>
 <p>A chi square table shows that the probability of a chi square of 3.52 with 2 degrees of freedom is 0.172. Therefore, the effect of the drug is not significant.</p>
 <p>The experiment on the effect of the anti-anxiety drug on chess playing could be reported as: The number of subjects winning,losing,and drawing as a function of drug condition is shown in figure below. Although subjects receiving the drug performed slightly worse than subjects not receiving the drug, the difference was not significant, χ²(2, N = 70) = 3.52, p = 0.17.</p>
 <p>
-<p>Comments on the Chi-square test</p>
+</div>
+<div id="comments-on-the-chi-square-test" class="section level4">
+<h4>Comments on the Chi-square test</h4>
 <p>The formula for chi square yields a statistic that is only approximately a chi square distribution. In order for the approximation to be adequate, the total number of subjects should be at least 20.</p>
 <p>Some authors claim that the correction for continuity should be used whenever an expected cell frequency is below 5. Research in statistics has shown that this practice is not advisable.</p>
 </div>
@@ -508,16 +524,15 @@ chisq.test(ctbl)
 <p>In several scientific analyses (e..g calibration studies) , it is important to test whether the true value of the intercept. The test is formulated as follows.</p>
 <p>Necessarily the test for pearon’s correlation is the equivalent of the test of the slope. The null hypothesis is that the true value is zero, against the alternative hypothesis which states that it is not zero.</p>
 <p>The decision to reject or fail to reject is based on the p-value.</p>
-<ol start="2" style="list-style-type: decimal">
-<li>F-Test for Equality of Two Standard Deviations.</li>
-</ol>
+<div id="f-test-for-equality-of-two-standard-deviations." class="section level4">
+<h4>2) F-Test for Equality of Two Standard Deviations.</h4>
 <p>An F-test is used to test if the standard deviations of two populations are equal. The two-tailed version tests against the alternative that the standard deviations are not equal. The one-tailed version only tests in one direction, that is the standard deviation from the first population is either greater than (or less than ) the second population standard deviation .</p>
 <p>Levene’s test is used to test if multiple samples have equal variances. Equal variances across samples is called homogeneity of variance.</p>
 <p>Ha:ij for some i and j</p>
 <p>The simple two-sample test for means is based on the assumption of equal variance of both samples. If the variances are not the same, the analysis for the two-sample must vary accordingly.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Tests for distributions</li>
-</ol>
+</div>
+<div id="tests-for-distributions" class="section level4">
+<h4>3) Tests for distributions</h4>
 <p>The Kolmorgorov-Smirnov test and the Anderson-Darling test are formulated as follows:</p>
 <pre><code>     Ho:  The data follows a specified distribution.  
      Ha:  The data do not follow the specified distribution </code></pre>
@@ -525,82 +540,6 @@ chisq.test(ctbl)
 <p>The Shapiro-Wilk test is another procedure which specifically tests for the normal distribution</p>
 <pre><code>     Ho:  The data follows the normal distribution.  
      Ha:  The data do not follow the normal distribution </code></pre>
-</div>
-<div id="tests-for-goodness-of-fit" class="section level3">
-<h3>Tests for Goodness of Fit</h3>
-<ul>
-<li>Basic Counting Model</li>
-<li>Goodness of Fit Statistics</li>
-<li>Testing with unknown parameters</li>
-<li>Testing for association in two-way tables</li>
-</ul>
-<div id="pearsons-chi-squared-test" class="section level4">
-<h4>{Pearson’s chi-squared test}</h4>
-<p>Chi Square</p>
-<ul>
-<li><p>Observed Values</p></li>
-<li><p>Expected Values (under the null hypothesis)</p></li>
-</ul>
-<p>Are the differences between Observed values and the Expected values small enough to be due to random error (i.e. null hypothesis is valid) or too large for the null hypothesis to be feasible?</p>
-<hr />
-<p>
-<p>Expected values for each cell</p>
-<p>Row Total Column Total Overall Total</p>
-<p>E-O/E</p>
-<hr />
-<p>
-</div>
-<div id="degrees-of-freedom" class="section level4">
-<h4>{Degrees of freedom}</h4>
-<p><span class="math display">\[df=(r-1)(c-1)\]</span></p>
-<ul>
-<li>[r] = number of rows</li>
-<li>[c] = number of columns</li>
-</ul>
-<p>2 rows and 3 columns r = 2 c = 3 <span class="math display">\[df= (2-1)(3-1) = (1)(2) = 2\]</span></p>
-<hr />
-<p>
-<p>Pearson’s chi-squared test uses a measure of goodness of fit which is the sum of differences between observed and expected outcome frequencies (that is, counts of observations), each squared and divided by the expectation: <span class="math display">\[ \chi^2 = \sum_{i=1}^n {\frac{(O_i - E_i)}{E_i}^2} \]</span> where:</p>
-<ul>
-<li>[Oi] = an observed frequency (i.e. count) for bin i</li>
-<li>[Ei] = an expected (theoretical) frequency for bin i, asserted by the null hypothesis.</li>
-</ul>
-<hr />
-<p>
-<p>Also for larger contingency tables, the G-test (log-likelihood ratio test) may be a better choice. The Chi-square value is obtained by summing up the values (residual2/fit) for each cell in a contingency. In this formula, residual is the difference between the observed value and its expected counterpart and fit is the expected value.</p>
-<hr />
-<p> The approximation of the Chi-square statistic in small <span class="math inline">\(2\times2\)</span> tables can be improved by reducing the absolute value of differences between expected and observed frequencies by 0.5 before squaring. This correction, which makes the estimation more conservative, is usually applied when the table contains only small observed frequencies (<span class="math inline">\(&lt;20\)</span>).</p>
-<p>The effect of this correction is to bring the distribution based on discontinuous frequencies nearer to the continuous Chi-squared distribution. This correction is best suited to the contingency tables with fixed marginal totals. Its use in other types of contingency tables (for independence and homogeneity) results in very conservative significance probabilities. This correction is no longer needed since exact tests are available.</p>
-<hr />
-<p>
-</div>
-<div id="chi-square-test-of-association-16" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
-<p>Expected Value for a Cell</p>
-<p><span class="math display">\[ = \frac{\mbox{Column Total}  \times \mbox{Row Total} } {\mbox{Overall Total}}  \]</span></p>
-<ul>
-<li>Compute the expected values for each cell in the following table.</li>
-<li>One of the expected values (both A and Y) is given.</li>
-</ul>
-<hr />
-</div>
-<div id="chi-square-test-of-association-17" class="section level4">
-<h4>{Chi-Square Test of Association}</h4>
-<p><br />
-</p>
-<ul>
-<li>Row 2 : Row Total = 400</li>
-<li>Column 1 : Column Total = 150</li>
-<li>Overall Total = 600</li>
-</ul>
-<p>Expected value for Cell<span class="math inline">\(_{(2,1)}\)</span></p>
-<p><span class="math display">\[ E_{(2,1)} = frac{400 \times 150}{600} = \frac{60,000}{600} = 100 \]</span></p>
-<hr />
-<p>
-<hr />
-<p>
-<hr />
-<p>
 </div>
 </div>
 </div>

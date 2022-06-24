@@ -1,0 +1,101 @@
+%========================================================%
+\begin{frame}
+\frametitle{Chi Square Test For Independence}
+\large
+\noindent \textbf{Simpsons Paradox}
+\begin{itemize}
+\item The nature of an association between two traits may change and
+even reverse direction when the data from several groups is
+combined into a single group.
+For example, consider the following data regarding admissions to a
+university.
+\item The Physics department accepted 60 applications from 100 males
+and 20 applications from 30 females.
+\item The Fine Arts department accepted 10 applications from 100
+males and 30 applications from 170 females.
+\end{itemize}
+%- 18/25
+
+\end{frame}
+%========================================================%
+\begin{frame}
+\frametitle{Chi Square Test For Independence}
+\large
+\noindent \textbf{Simpsons Paradox}
+\begin{itemize}
+\item Hence, the Physics department accepted 60\% of applications from
+males and 66.7\% of applications from females. 
+\item The Fine Arts
+department accepted 10\% of applications from males and 17.6\% of
+applications from females.
+\item Hence, in both departments females are slightly more successful.
+\end{itemize}
+%- 19/25
+\end{frame}
+%========================================================%
+\begin{frame}
+\frametitle{Chi Square Test For Independence}
+\large
+\noindent \textbf{Simpsons Paradox}
+\begin{itemize}
+\item Combining the departments, we obtain the following contingency
+\item Combining the results females are less successful.
+\item We now test the null hypothesis that acceptance is independent of
+sex. 
+\item The alternative is that acceptance is associated with sex (i.e.
+the likelihood of acceptance depends on sex).
+\end{itemize}
+%- 20/25
+
+\end{frame}
+%========================================================%
+\begin{frame}
+\frametitle{Chi Square Test For Independence}
+\large
+Testing the null hypothesis at the 5\% level, the critical value is
+$\chi^2_{(
+r-1)(c-1),)}$ = $\chi^2_{(1,0.05)}$ = 3.841.
+Since t > $\chi^2_{(1,0.05)}$ = 3.841, we reject the null hypothesis.
+\begin{itemize}
+\item We conclude that acceptance is associated with sex. Looking at
+the table which compares the observed and expected values,
+females are less likely to be accepted than expected.
+\item Hence, using this data we might conclude that there is evidence
+that females are discriminated against.
+\end{itemize}
+%- Slide 23 / 25
+\end{frame}
+%========================================================%
+
+\frametitle{Chi Square Test For Independence}
+\large
+\begin{itemize}
+\item However, in both departments a female is more likely to be
+accepted.
+\item On average, females are less likely to be accepted since they are
+more likely to apply to the fine arts department and the fine arts
+department rejects a higher proportion of applications.
+\end{itemize}
+%%- 24
+\end{frame}
+%========================================================%
+
+\frametitle{Chi Square Test For Independence}
+
+\noindent \textbf{Lurking variables}
+In this case department is what we call a hidden or lurking variable.
+A hidden or lurking variable is a variable which may influence the
+observed results, but is not considered in the analysis.
+For example, women’s salaries are significantly lower on average
+that men’s salaries.
+\begin{enumerate}
+\item Can this be used as evidence that women are
+discriminated against?
+\item What are the lurking variables which may explain
+such a difference?
+\item How should we test whether females are
+discriminated against with regard to salary?
+\end{enumerate}
+%%25 / 25
+\end{frame}
+\end{document}
