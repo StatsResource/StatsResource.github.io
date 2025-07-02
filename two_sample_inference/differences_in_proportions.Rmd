@@ -4,31 +4,6 @@ Difference in proportions {data-navmenu="Inference Procedures"}
 Column {.tabset}
 -------------------------------------------------
 
-### Differences in Means
-
-
-* We can also construct a confidence interval for the difference between two sample proportions, $\pi_1 - \pi_2$. 
-* The point estimate is the difference in sample proportions for tho both groups , $\hat{p}_1- \hat{p}_2$.
-<p>
-
-The approach described in this lesson is valid whenever the following conditions are met:
-
-
-*  Both samples are simple random samples.
-*  The samples are independent.
-*  Each sample includes at least 10 successes and 10 failures.
-*  The samples comprises less than 10\% of their respective populations.
-
------------------------------------------------
-<h4> Estimation Requirements</h4>
-The approach described in this lesson is valid whenever the following conditions are met:
-
-
-* Both samples are simple random samples.
-* The samples are independent.
-* Each sample includes at least 10 successes and 10 failures.
-* The samples comprises less than 10\% of their respective populations.
-
 Confidence Interval {data-navmenu="Difference In Proportions"}
 ====================================================================
 
@@ -37,45 +12,6 @@ Column {.tabset}
 
 
 ### Confidence Interval
-
-
-### Confidence Interval for the Difference Between Two Proportions
-
-*  A confidence interval gives us some idea of the range of values which an unknown population parameter (such as the mean or variance) is likely to take based on a given set of sample data.
-
-*  Many occasions arise where we have to compare the proportions of two different populations. 
-*  For example, a firm may want to compare the proportions of defective items produced by different machines; medical researchers may want to compare the proportions of men and women who suffer heart attacks etc. 
-*  A confidence interval for the difference between two proportions would specify a range of values within which the difference between the two true population proportions may lie, for such examples.
-
-*  The procedure for obtaining such an interval is based on the sample proportions, p1 and p2, from their respective overall populations.
-
-### Standard Error
-
-<h4> Compute the standard Error</h4>
-
-\[ S.E. (\hat{p}_1 - \hat{p}_2) =
-\sqrt{ \left[{\hat{p}_1 \times (1 - \hat{p}_1) \over n_1}\right] + \left[{\hat{p}_2 \times (1 - \hat{p}_2) \over n_2}\right] } \]
-
-\[ S.E. (\hat{p}_1 - \hat{p}_2) =
-\sqrt{ \left[{40 \times 60 \over 400}\right] + \left[{30 \times 70 \over 300}\right] }  = \sqrt{ \left[{2400 \over 400}\right] + \left[{2100\over 300}\right] } \]
-
-\[ S.E. (\hat{p}_1 - \hat{p}_2)
-= \sqrt{ 6 + 7 } = 3.6\% \]
-
-
-### Standard Error for Difference of Proportions
-
-\[ S.E. (\hat{p}_1 - \hat{p}_2) =
-\sqrt{ \left[{\hat{p}_1 \times (1 - \hat{p}_1) \over n_1}\right] + \left[{\hat{p}_2 \times (1 - \hat{p}_2) \over n_2}\right] } \]
-
-*  $\hat{p}_1$ and $\hat{p}_2$ are the sample proportions of groups 1 and 2 respectively.
-*  $n_1$ and $n_2$ are the sample sizes of groups 1 and 2 respectively.
-
-N.B. This formula will be provided in the exam paper. Also, there is no accounting for small samples.
-
-
-
-
 
 ### Testing the Difference Between Two Population Proportions
 
