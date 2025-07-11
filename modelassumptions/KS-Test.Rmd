@@ -1,3 +1,99 @@
+Here’s your content on the **Kolmogorov-Smirnov (K-S) test** cleaned up, restructured, and formatted into tidy Markdown for clarity:
+
+---
+
+# Kolmogorov-Smirnov Test (K-S Test)
+
+## Purpose
+
+The K-S test evaluates whether:
+
+- A single sample follows a specified **continuous distribution**  
+- **Two samples** come from the **same distribution**
+
+---
+
+## Hypotheses
+
+### One-Sample K-S Test
+
+- \( H_0 \): The data follow a specified distribution  
+- \( H_1 \): The data do not follow the specified distribution  
+
+> *Note: The distribution must be continuous and fully specified (i.e., known parameters).*
+
+### Two-Sample K-S Test
+
+- \( H_0 \): The two data sets are from the same distribution  
+- \( H_1 \): The two data sets are from different distributions  
+
+---
+
+## Test Statistic
+
+- Denoted as \( D \): the **maximum absolute difference** between the cumulative distribution functions (CDFs) of the observed and expected distributions.
+- In the two-sample case, it compares the empirical CDFs of both samples.
+
+---
+
+## Characteristics of the K-S Test
+
+✅ **Advantages:**
+
+- The distribution of the test statistic \( D \) **does not depend** on the underlying cumulative distribution.
+- It is an **exact test** (unlike chi-square, which requires large sample sizes).
+
+⚠️ **Limitations:**
+
+1. Only applicable to **continuous distributions**.
+2. More sensitive near the **center** than in the **tails**.
+3. Requires the distribution to be **fully specified**. If parameters (mean, variance) are **estimated from the data**, the usual critical values are not valid; simulations may be needed.
+
+> Because of limitations 2 and 3, analysts often prefer the **Anderson-Darling test**, which gives more weight to the tails—but it’s only available for select distributions.
+
+---
+
+## R Examples
+
+### Example 1: Similar Normal Distributions (Same Parameters)
+
+```r
+X <- rnorm(16, mean=20, sd=5)
+Y <- rnorm(18, mean=21, sd=4)
+ks.test(X, Y)
+```
+
+**Output:**
+```
+Two-sample Kolmogorov-Smirnov test
+D = 0.2153, p-value = 0.7348
+alternative hypothesis: two-sided
+```
+
+→ No evidence to reject the null hypothesis; distributions may be the same.
+
+---
+
+### Example 2: Same Distribution Type, Different Parameters
+
+```r
+X <- rnorm(16, mean=20, sd=5)
+Z <- rnorm(16, mean=14, sd=5)
+ks.test(X, Z)
+```
+
+**Output:**
+```
+Two-sample Kolmogorov-Smirnov test
+D = 0.5625, p-value = 0.0112
+alternative hypothesis: two-sided
+```
+
+→ Reject the null hypothesis; samples likely from different distributions despite both being normal.
+
+---
+
+Let me know if you’d like this turned into a revision handout, interactive quiz, or summary chart.
 
 ### Kolmogorov-Smirnov test
 The Kolmogorov-Smirnov test is defined by:
